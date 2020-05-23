@@ -1,0 +1,257 @@
+---
+title: "Modeling 1 Workspace"
+author: "Mario Giacomazzo"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,warning=F)
+options(scipen=999)
+library(tidyverse)    #Essential Functions
+```
+
+```{r}
+set.seed(216)
+x1=rpois(10000,20)
+set.seed(216)
+x2=rpois(10000,5)
+set.seed(216)
+y = 8 + 1.08*x1+0.9*x2+rnorm(10000,1)
+DATA=tibble(vert=y,shroom=x1,exercise=x2)
+head(DATA)
+```
+
+```{r}
+set.seed(216)
+DATA$SPLIT=sample(x=c("TRAIN","TEST"),size=10000,
+                  replace=T,prob=c(0.85,0.15))
+TRAIN=DATA %>%  filter(SPLIT=="TRAIN")
+TEST=DATA %>% filter(SPLIT=="TEST")
+glimpse(TRAIN)
+glimpse(TEST)
+```
+
+```{r}
+TRAIN %>% summarize(mean=mean(vert),sd=sd(vert),min=min(vert),max=max(vert))
+```
+
+
+```{r,message=F,warning=F}
+ggplot(TRAIN) + geom_histogram(aes(x=vert),fill="lightskyblue2") + theme_dark()
+```
+
+```{r}
+MODEL0 = function(DATA,COEF){
+  FIT=COEF[1]
+}
+```
+
+```{r}
+MSE0=function(DATA,COEF){
+  ERROR=DATA$vert-MODEL0(DATA,COEF)
+  LOSS=mean(ERROR^2)
+  return(LOSS)
+}
+MAE0=function(DATA,COEF){
+  ERROR=DATA$vert-MODEL0(DATA,COEF)
+  LOSS=mean(abs(ERROR))
+  return(LOSS)
+}
+```
+
+```{r}
+COEF0=tibble(
+  beta0=seq(16,55,length=100)
+)
+```
+
+```{r}
+TRAIN %>% ggplot()+ geom_point(aes(x="",y=vert),color="lightskyblue2") +
+    geom_hline(yintercept=COEF0$beta0,alpha=0.4,color="white")+xlab("") +theme_dark()
+```
+
+```{r}
+COEF0 %>% 
+  mutate(MSE=purrr::map_dbl(beta0,MSE0,DATA=TRAIN),
+         MAE=purrr::map_dbl(beta0,MAE0,DATA=TRAIN),
+         rankMSE=rank(MSE),rankMAE=rank(MAE)) %>%
+         filter(rankMSE<5,rankMAE<5)
+  
+```
+
+```{r}
+BESTMSE0=optim(par=16,fn=MSE0,DATA=TRAIN)
+BESTMSE0$par
+BESTMAE0=optim(par=16,fn=MAE0,DATA=TRAIN)
+BESTMAE0$par
+```
+
+```{r}
+LM0=lm(vert~1,data=TRAIN)
+coef(LM0)
+```
+
+```{r}
+TEST %>% ggplot()+
+  xlab("") + theme_minimal()+ geom_point(aes(x="",y=vert),color="lightskyblue2")+
+  geom_point(aes(x="",y=34.53),color="white",stroke=2)+theme_dark()
+```
+
+```{r}
+ggplot(data=TRAIN) +
+  geom_point(aes(x=shroom,y=vert),color="lightskyblue2") + theme_dark()
+```
+
+```{r}
+MODEL1A = function(DATA,COEF){
+  FIT=COEF[1]+COEF[2]*DATA$shroom
+}
+```
+
+```{r}
+MSE1A=function(DATA,COEF){
+  ERROR=DATA$vert-MODEL1A(DATA,COEF)
+  LOSS=mean(ERROR^2)
+  return(LOSS)
+}
+MAE1A=function(DATA,COEF){
+  ERROR=DATA$vert-MODEL1A(DATA,COEF)
+  LOSS=mean(abs(ERROR))
+  return(LOSS)
+}
+```
+
+```{r}
+set.seed(216)
+COEF1A=tibble(
+  beta0=runif(10000,0,10),
+  beta1=runif(10000,0,10)
+)
+```
+
+```{r}
+TRAIN %>% ggplot()+ geom_point(aes(x=shroom,y=vert),color="lightskyblue2") +
+    geom_abline(aes(intercept=COEF1A$beta0,slope=COEF1A$beta1),alpha=0.1,data=COEF1A,color="white")+theme_dark()
+```
+
+```{r}
+COEF1A %>% 
+  mutate(MSE=apply(COEF1A,1,MSE1A,DATA=TRAIN),
+         MAE=apply(COEF1A,1,MAE1A,DATA=TRAIN),
+         rankMSE=rank(MSE),rankMAE=rank(MAE)) %>%
+         filter(rankMSE<5,rankMAE<5)
+```
+
+```{r}
+ggplot(data=TRAIN) +
+  geom_point(aes(x=shroom,y=vert),color="lightskyblue2") + theme_dark() +
+  geom_abline(aes(intercept=9.4,slope=1.24),color="white",size=1.5)
+  
+```
+
+```{r}
+ggplot(data=TEST) +
+  geom_point(aes(x=shroom,y=vert),color="lightskyblue2") + theme_dark() +
+  geom_abline(aes(intercept=9.4,slope=1.24),color="white",size=1.5)
+  
+```
+
+```{r}
+ggplot(data=TRAIN) +
+  geom_point(aes(x=exercise,y=vert),color="lightskyblue2") + theme_dark()
+```
+
+```{r}
+MODEL1B = function(DATA,COEF){
+  FIT=COEF[1]+COEF[2]*DATA$exercise
+}
+```
+
+```{r}
+MSE1B=function(DATA,COEF){
+  ERROR=DATA$vert-MODEL1B(DATA,COEF)
+  LOSS=mean(ERROR^2)
+  return(LOSS)
+}
+MAE1B=function(DATA,COEF){
+  ERROR=DATA$vert-MODEL1B(DATA,COEF)
+  LOSS=mean(abs(ERROR))
+  return(LOSS)
+}
+```
+
+```{r}
+BESTMSE1B=optim(par=c(0,0),fn=MSE1B,DATA=TRAIN)
+BESTMSE1B$par
+BESTMAE1B=optim(par=c(0,0),fn=MAE1B,DATA=TRAIN)
+BESTMAE1B$par
+```
+
+```{r}
+ggplot(data=TRAIN) +
+  geom_point(aes(x=exercise,y=vert),color="lightskyblue2") + theme_dark() +
+  geom_abline(aes(intercept=31,slope=0.85),color="white",size=1.5)
+  
+```
+
+```{r}
+ggplot(data=TEST) +
+  geom_point(aes(x=exercise,y=vert),color="lightskyblue2") + theme_dark() +
+  geom_abline(aes(intercept=31,slope=0.85),color="white",size=1.5)
+  
+```
+
+```{r}
+ggplot(data=TRAIN) +
+  geom_point(aes(x=shroom,y=exercise,color=vert),stroke=2)+ theme_minimal() +
+  scale_color_gradient2(low="red",mid="white",high="blue",midpoint=35)
+```
+
+```{r}
+LM2=lm(vert~shroom+exercise,data=TRAIN)
+summary(LM2)
+```
+
+```{r}
+MODEL2 = function(DATA,COEF){
+  FIT=COEF[1]+COEF[2]*DATA$shroom+COEF[3]*DATA$exercise
+}
+```
+
+```{r}
+MSE2=function(DATA,COEF){
+  ERROR=DATA$vert-MODEL2(DATA,COEF)
+  LOSS=mean(ERROR^2)
+  return(LOSS)
+}
+MAE2=function(DATA,COEF){
+  ERROR=DATA$vert-MODEL2(DATA,COEF)
+  LOSS=mean(abs(ERROR))
+  return(LOSS)
+}
+```
+
+```{r}
+DATA %>% mutate(predict.vert=MODEL2(DATA=DATA,COEF=coef(LM2))) %>%
+  ggplot()+geom_point(aes(x=vert,y=predict.vert,
+              color=factor(SPLIT,levels=c("TRAIN","TEST"))),alpha=0.2) + 
+  theme_minimal() + geom_abline(intercept=0,slope=1) +
+  guides(color=guide_legend(title="Dataset")) + xlab("Vertical (in)") +
+  ylab("Predicted Vertical (in) Under MODEL 2")
+```
+
+```{r}
+MODELS=c("MODEL 0","MODEL 1A","MODEL 1B","MODEL 2")
+MSE=c(MSE0(TEST,c(34.53)),
+      MSE1A(TEST,c(9.4,1.24)),
+      MSE1B(TEST,c(31,0.85)),
+      MSE2(TEST,c(9,1.07,0.9)))
+MAE=c(MAE0(TEST,c(34.53)),
+      MAE1A(TEST,c(9.4,1.24)),
+      MAE1B(TEST,c(31,0.85)),
+      MAE2(TEST,c(9,1.07,0.9)))
+COMPARE=tibble(MODELS=MODELS,MSE=MSE,MAE=MAE)
+print(COMPARE)
+```
+

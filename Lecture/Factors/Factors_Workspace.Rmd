@@ -1,0 +1,261 @@
+---
+title: "Lecture 17 Workspace"
+author: "Mario Giacomazzo"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,warning=F)
+options(scipen=999)
+library(tidyverse)    #Essential Functions
+library(forcats)
+```
+
+```{r}
+eye.colors=c("Brown","Hazel","Blue","Green","Amber")
+
+set.seed(320)
+eye.sample=tibble(eye=sample(eye.colors,size=50, 
+                    prob=c(0.55,0.05,0.08,0.02,0.05),replace=T))
+
+ggplot(data=eye.sample) +
+  geom_bar(aes(x=eye),fill="lightskyblue1") + 
+  scale_x_discrete(drop=F) +
+  xlab("Eye Color") + ylab("Count") +
+  theme_minimal()
+```
+
+```{r}
+set.seed(320)
+eye.sample2=tibble(eye=factor(sample(eye.colors,size=50, 
+                    prob=c(0.55,0.05,0.08,0.02,0.05),replace=T),levels=eye.colors))
+
+ggplot(data=eye.sample2) +
+  geom_bar(aes(x=eye),fill="lightskyblue1") + 
+  scale_x_discrete(drop=F) +
+  xlab("Eye Color") + ylab("Count") +
+  theme_minimal()
+```
+
+```{r}
+survey.levels=c("Magical","Alright","Regular","Inferior","Offensive")
+
+set.seed(80)
+survey.sample=tibble(result=sample(c("Magical","Alright","Regular","Inferior","Ofensive"),size=80,
+                                   prob=c(0.1,0.4,0.2,0.1,0.2),replace=T))
+ggplot(data=survey.sample) +
+  geom_bar(aes(x=result),fill="lightskyblue1") +
+  scale_x_discrete(drop=F) +
+  xlab("Survey Result") + ylab("Count") +
+  theme_minimal()
+```
+
+```{r}
+survey.levels=c("Magical","Alright","Regular","Inferior","Offensive")
+
+set.seed(80)
+survey.sample=tibble(result=factor(sample(c("Magical","Alright","Regular","Inferior","Ofensive"),size=80,
+                                   prob=c(0.1,0.4,0.2,0.1,0.2),replace=T),levels=survey.levels))
+ggplot(data=survey.sample) +
+  geom_bar(aes(x=result),fill="lightskyblue1") +
+  scale_x_discrete(drop=F) +
+  xlab("Survey Result") + ylab("Count") +
+  theme_minimal()
+```
+
+```{r}
+set.seed(80)
+urbanicity.sample=tibble(result=sample(1:4,size=1000,
+                     prob=c(0.5,0.3,0.18,0.02),replace=T))
+ggplot(data=urbanicity.sample) +
+  geom_bar(aes(x=result),fill="lightskyblue1") +
+  xlab("") + ylab("Count") +
+  theme_minimal()
+```
+
+
+```{r}
+urbanicity=c("Metro","Burbs","Rural","Isolated")
+
+set.seed(80)
+urbanicity.sample=tibble(result=factor(sample(1:4,size=1000,
+                    prob=c(0.5,0.3,0.18,0.02),replace=T),levels=1:4,labels=urbanicity))
+ggplot(data=urbanicity.sample) +
+  geom_bar(aes(x=result),fill="lightskyblue1") +
+  xlab("") + ylab("Count") +
+  theme_minimal()
+```
+
+```{r}
+Height = c("Tall","Short","Tall",
+           "Tall","Short","Medium",
+           "Short","Medium","Tall")
+Height.fct = as.factor(Height)
+print(Height)
+levels(Height)
+print(Height.fct)
+levels(Height.fct)
+```
+
+```{r}
+Height2.fct = factor(Height,levels=c("Short","Medium","Tall"))
+levels(Height2.fct)
+print(Height2.fct)
+```
+
+```{r}
+Height3.fct = factor(Height,levels=c("Short","Medium","Tall"),
+                     labels=c("S","M","T"))
+levels(Height3.fct)
+print(Height3.fct)
+
+Height4.fct = factor(Height,levels=c("Short","Medium","Tall"),
+                     labels=c("Short","Not Short","Not Short"))
+levels(Height4.fct)
+print(Height4.fct)
+```
+
+```{r}
+ggplot(data=tibble(x=Height.fct)) +
+  geom_bar(aes(x),fill="lightskyblue1") +
+  theme_minimal()
+```
+
+```{r}
+ggplot(data=tibble(x=Height2.fct)) +
+  geom_bar(aes(x),fill="lightskyblue1") +
+  theme_minimal()
+```
+
+```{r}
+ggplot(data=tibble(x=Height3.fct)) +
+  geom_bar(aes(x),fill="lightskyblue1") +
+  theme_minimal()
+```
+
+```{r}
+ggplot(data=tibble(x=Height4.fct)) +
+  geom_bar(aes(x),fill="lightskyblue1") +
+  theme_minimal()
+```
+
+```{r}
+Social=gss_cat
+glimpse(Social)
+```
+
+```{r}
+race.summary = Social %>%
+            group_by(race) %>%
+            summarize(
+              n=n(),
+              avg.age=mean(age,na.rm=T),
+              avg.tv=mean(tvhours,na.rm=T)
+            )
+race.summary
+
+levels(Social$race)
+levels(race.summary$race)
+```
+
+```{r}
+ggplot(race.summary) + 
+  geom_point(aes(x=avg.tv,y=race),size=4) +
+  xlab("") + ylab("") +
+  theme_minimal()
+```
+
+```{r}
+ggplot(race.summary) +
+  geom_point(aes(x=avg.tv,y=fct_reorder(race,avg.tv)),size=4) +
+  xlab("") + ylab("") +
+  theme_minimal()
+```
+
+```{r}
+ggplot(Social) +
+  geom_boxplot(aes(x=fct_reorder(race,tvhours,fun=median,na.rm=T),
+                   y=tvhours)) +
+  xlab("") + ylab("") +
+  theme_minimal()
+```
+
+```{r}
+head(Social[,c("race","rincome")])
+str(Social[,c("race","rincome")])
+levels(Social$race)
+levels(Social$rincome)
+```
+
+```{r}
+ggplot(Social) +
+  geom_boxplot(aes(x=rincome,y=tvhours)) +
+  coord_flip() +
+  theme_minimal()
+```
+
+```{r}
+ggplot(Social) +
+  geom_boxplot(aes(x=fct_rev(rincome),y=tvhours)) +
+  coord_flip() +
+  theme_minimal()
+```
+
+```{r}
+ggplot(Social) +
+  geom_boxplot(aes(x=fct_rev(fct_relevel(rincome,"Not applicable")),
+                   y=tvhours)) +
+  coord_flip() +
+  theme_minimal()
+```
+
+```{r}
+Marriage = Social %>%
+              count(marital) %>%
+              mutate(prop=n/sum(n))
+print(Marriage)
+```
+
+```{r}
+Marriage2 = Social %>%
+              mutate(marital2=fct_recode(marital,
+                      "Unknown" = "No answer",
+                      "Single" = "Never married"
+              )) %>%
+              count(marital,marital2) %>%
+              mutate(prop=n/sum(n))
+print(Marriage2)
+```
+
+
+```{r}
+levels(Social$marital)
+Marriage3 = Social %>%
+              mutate(marital2=fct_collapse(marital,
+                      Alone = levels(marital)[c(2,4,5)],
+                      Together = levels(marital)[c(6)],
+                      Confused = levels(marital)[c(1,3)]
+              )) %>% 
+              group_by(marital,marital2) %>%
+              summarize(n=n()) %>% 
+              ungroup() %>%
+              mutate(prop=n/sum(n))
+print(Marriage3)
+```
+
+```{r}
+Marriage4 = Social %>%
+              mutate(marital2=fct_lump(marital)) %>% 
+              count(marital,marital2) %>%
+              mutate(prop=n/sum(n))
+print(Marriage4)
+```
+
+```{r}
+Marriage5 = Social %>%
+              mutate(marital2=fct_lump(marital,2)) %>% 
+              count(marital,marital2) %>%
+              mutate(prop=n/sum(n))
+print(Marriage5)
+```

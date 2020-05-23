@@ -1,0 +1,140 @@
+options(scipen=999)
+library(tidyverse)    #Essential Functions
+library(modelr)
+DATA=read_csv("AirWaterTemp.csv",col_types=cols()) #River Data
+#1.1
+NEST.DATA = DATA %>% group_by(L) %>% nest()
+head(NEST.DATA)
+#1.2
+NEST.DATA %>% filter(L==103) %>% unnest() %>% glimpse()
+NEST.DATA %>% filter(L!=103) %>% unnest() %>% glimpse()
+#1.3
+DATA2=DATA
+DATA2$linpred=NA
+TEST = NEST.DATA %>% filter(L==103) %>% unnest()
+TRAIN  = NEST.DATA %>% filter(L!=103) %>% unnest()
+linmod=lm(W~dplyr::lag(A,1),data=TRAIN)
+linmodpred=predict(linmod,newdata=TEST)
+DATA2$linpred[which(DATA2$L==103)]=linmodpred
+head(DATA2)
+#1.4
+DATA2=DATA
+DATA2$linpred=NA
+for(k in unique(DATA2$L)){
+TEST = NEST.DATA %>% filter(L==k) %>% unnest()
+TRAIN  = NEST.DATA %>% filter(L!=k) %>% unnest()
+linmod=lm(W~A,data=TRAIN)
+linmodpred=predict(linmod,newdata=TEST)
+DATA2$linpred[which(DATA2$L==k)]=linmodpred
+}
+#1.5
+RMSE.func=function(actual,predict){
+mse=mean((actual-predict)^2,na.rm=T)
+rmse=sqrt(mse)
+return(rmse)
+}
+RMSE.func(actual=DATA2$W,predict=DATA2$linpred)
+ggplot(data=DATA) +
+geom_point(aes(x=A,y=W))
+#2.1
+ggplot(data=DATA) +
+geom_point(aes(x=A,y=W,color=MONTH)) +
+ggplot(data=DATA) +
+geom_point(aes(x=A,y=W,color=MONTH))
+#2.1
+ggplot(data=DATA) +
+geom_point(aes(x=MONTH,y=W,color=A)) +
+ggplot(data=DATA) +
+geom_point(aes(x=MONTH,y=W,color=A))
+#2.1
+ggplot(data=DATA) +
+geom_point(aes(x=JULIAN_DAY,y=W,color=A))
+ggplot(data=DATA) +
+geom_point(aes(x=JULIAN_DAY,y=W,color=A)) +
+xlab("Day of Year") + ylab("Max Water Temperature")+
+guides(color=guide_legend(title="Max Air Temperature"))
+ggplot(data=DATA) +
+geom_point(aes(x=JULIAN_DAY,y=W,color=A)) +
+xlab("Day of Year") + ylab("Max Water Temperature")+
+guides(color=guide_legend(title="Max Air Temperature"))
+ggplot(data=DATA) +
+geom_point(aes(x=JULIAN_DAY,y=W,color=A)) +
+xlab("Day of Year") + ylab("Max Water Temperature")+
+guides(color=guide_legend(title="Max Air Temperature")) +
+theme_minimal()
+ggplot(data=DATA) +
+geom_point(aes(x=JULIAN_DAY,y=W,color=A)) +
+xlab("Day of Year") + ylab("Max Water Temperature")+
+guides(color=guide_legend(title="Max Air Temperature")) +
+theme_minimal()
+ggplot(data=DATA) +
+geom_point(aes(x=JULIAN_DAY,y=W,color=A)) +
+xlab("Day of Year") + ylab("Max Water Temperature") +
+guides(color=guide_legend(title="Max Air \nTemperature")) +
+theme_minimal()
+ggplot(data=DATA) +
+geom_point(aes(x=JULIAN_DAY,y=W,color=A)) +
+xlab("Day of Year") + ylab("Max Water Temperature")
+ggplot(data=DATA) +
+geom_point(aes(x=JULIAN_DAY,y=W,color=A)) +
+xlab("Day of Year") + ylab("Max Water Temperature") +
+guides(color=guide_legend(title="Max Air \nTemperature"))
+ggplot(data=DATA) +
+geom_point(aes(x=JULIAN_DAY,y=W,color=A)) +
+xlab("Day of Year") + ylab("Max Water Temperature") +
+guides(color=guide_legend(title="Max Air \nTemperature")) +
+theme_minimal()
+ggplot(data=DATA) +
+geom_point(aes(x=JULIAN_DAY,y=W,color=A),alpha=0.3) +
+xlab("Day of Year") + ylab("Max Water Temperature") +
+guides(color=guide_legend(title="Max Air \nTemperature")) +
+theme_minimal()
+knitr::opts_chunk$set(echo = TRUE,warning=F)
+options(scipen=999)
+library(tidyverse)    #Essential Functions
+library(modelr)       #Helpful Functions in Modeling
+library(purrr)
+library(broom)
+DATA=read_csv("AirWaterTemp.csv",col_types=cols()) #River Data
+NEST.DATA %>% filter(L==103) %>% unnest() %>% glimpse()
+knitr::opts_chunk$set(echo = TRUE,warning=F)
+options(scipen=999)
+library(tidyverse)    #Essential Functions
+library(modelr)       #Helpful Functions in Modeling
+library(purrr)
+library(broom)
+DATA=read_csv("AirWaterTemp.csv",col_types=cols()) #River Data
+head(DATA)
+NEST.DATA = DATA %>% group_by(L) %>% nest()
+head(NEST.DATA)
+NEST.DATA %>% filter(L==103) %>% unnest() %>% glimpse()
+NEST.DATA %>% filter(L!=103) %>% unnest() %>% glimpse()
+DATA2=DATA
+DATA2$linpred=NA
+TEST = NEST.DATA %>% filter(L==103) %>% unnest()
+TRAIN  = NEST.DATA %>% filter(L!=103) %>% unnest()
+linmod=lm(W~A,data=TRAIN)
+linmodpred=predict(linmod,newdata=TEST)
+DATA2$linpred[which(DATA2$L==103)]=linmodpred
+head(DATA2)
+set.seed(100)
+rnorm(20)
+sample(c(1,2,3),100)
+set.seed(100)
+sample(c(1,2,3),100,replace=T)
+?map2
+library(map2)
+?purrr:map2
+library("purrr", lib.loc="~/R/win-library/3.5")
+x=c(A,B,AB,O)
+which(c(T,F,T,T,F))
+x=c("A","B","AB","O")
+which(x=="A")
+which(x=="B")
+which(x=="AB")
+matrix(NA,3,3)
+z=matrix(NA,3,3)
+z[1,3]
+z[1,3]=15
+z
+unique(DATA2$L)

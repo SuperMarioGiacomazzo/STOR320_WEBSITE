@@ -1,0 +1,21 @@
+---
+title: "Lecture 20 Workspace"
+author: "Mario Giacomazzo"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,warning=F)
+options(scipen=999)
+library(tidyverse)    #Essential Functions
+```
+
+```{r}
+colors.func = function(distribution=c("Normal","Gamma","Exponential"),size=1000,shape.gamma){
+  y=switch(distribution,"Normal"=rnorm(size),"Gamma"=rgamma(size,shape=shape.gamma),"Exponential"=rexp(size))
+  return(y)
+}
+
+colors.func(distribution="Gamma",size=50,v=1)
+```

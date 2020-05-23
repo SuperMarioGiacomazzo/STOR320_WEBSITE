@@ -1,0 +1,60 @@
+---
+title: '**Final Paper**'
+geometry: margin=2
+output:
+  html_document:
+    theme: cosmo
+    toc: yes
+    toc_float: yes
+  pdf_document:
+    toc: yes
+---
+
+<style type="text/css">
+.main-container {
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+
+# **Purpose**
+
+The purpose of the final paper is to summarize results for two interesting questions using a combination of figures, tables, and modeling techniques. Written communication is an integral part of data science. This is your opportunity to develop a high quality blog post/article that could potentially be published to the web and used in future job interviews.
+
+# **Requirements**
+
+After the exploratory data analysis, your group should have two questions that are interesting, relevant, and worth sharing to the world. These questions should involve multiple variables and should be answerable by predictive modeling techniques. Be innovative and creative. Do not try to answer questions that have obvious solutions or have been extensively studied. Pick questions that would spark a reader or fellow researcher to ask more questions or engage in discussion.
+
+The final paper consists of four sections: Introduction, Data, Results, and Conclusion. Each section will be graded separately and follow a rubric with a combination of objective and subjective requirements. Provided on the course website is a simple Rmarkdown template with predefined headings. The template also contains requirements and suggestions for each of the four sections.
+
+The Deliverer is responsible for compiling all the information into the RMarkdown template provided on the course website. This document should be carefully proofread and submitted as an HTML file via Sakai by the due date.  A minimum 2 point penalty will be given, if this document is submitted late. This penalty applies to your entire group.
+
+In the final HTML document, there should be absolutely no R code. The writing and proofreading of the document should be shared by all members of the group. In each section, there are points removed for spelling and grammatical errors. All figures should have appropriate legends, titles, and colors. All tables should be displayed in HTML format using the `xtable` or `kable` packages. Each required figure and table is worth 2 points. The first point is for the appropriateness of the figure/table for the situation and the second point is based on aesthetics. You are encouraged to use Markdown syntax for subsections, bold, italic, hyperlink, tables, etc.
+
+Five points of the final project is based on an average score measuring overall contribution as seen by you and the other members of your group. Each group member should score every person in their group on a continuous scale from 0 (Bad) to 5 (Good). You are encouraged to score yourself, but this will not be used in the final calculation. Before the due date of the final paper, every member is required to upload a CSV document with two columns to Sakai. The first column should contain the full names of all members of the group, including yourself, and the second column should contain the score that indicates the level of contribution. An example CSV template is provided on the course website. You are encouraged to download this template and modify the names and ranks. If there are any particular members that were extremely helpful or extremely useless, please send me an email. Your name and this information will remain private between me and you. If you fail to submit this group scoring via Sakai, I will give the other members a score of 5.
+
+# **Rubric**
+
+|Requirement|Points|
+|-------|------:|
+|Introduction: 2 Questions Clearly Defined|2 Points|
+|Introduction: Am I Interested?|2 Points|
+|Introduction: Free of Spelling and Grammatical Errors|1 Point|
+|Data: Adequately Describes Data|2 Points|
+|Data: 1 Descriptive Table| 2 Points|
+|Data: 1 Descriptive Figure| 2 Points|
+|Data: Free of Spelling and Grammatical Errors|1 Point|
+|Results: Appropriate Methods Using Multiple Models|3 Points|
+|Results: Adequately Explains Results| 3 Points|
+|Results: 4 Figures and/or Tables| 8 Points|
+|Results: Free of Spelling and Grammatical Errors|2 Points|
+|Conclusion: Summarize Questions with Results |2 Points|
+|Conclusion: Do I Want to Learn More? |2 Points|
+|Conclusion: Free of Spelling and Grammatical Errors|1 Point|
+|Overall: No R Code|1 Point|
+|Overall: Followed RMarkdown Template|1 Point|
+|Individual Score|5 Points|
+|**Total**|**40 Points**|
+|||
+

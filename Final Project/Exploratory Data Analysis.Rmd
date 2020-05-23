@@ -1,0 +1,51 @@
+---
+title: '**Exploratory Data Analysis**'
+geometry: margin=2
+output:
+  html_document:
+    theme: cosmo
+    toc: yes
+    toc_float: yes
+  pdf_document:
+    toc: yes
+---
+
+<style type="text/css">
+.main-container {
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+
+# **Purpose**
+
+The purpose of the exploratory analysis is to utilize tabular and visual devices to investigate answers to proposed initial questions, to devise more complex follow-up questions, and then explore answers for the follow-up questions. Serious time and attention should be given to the exploratory data analysis since much of the information and results will directly lead to future modeling for statistical inference. This is your group's opportunity to creatively dive into your data to pick out parts that are relevant and interesting for sharing with the class in presentation and for communicating with the instructor in written paper.
+
+# **Requirements**
+
+In the project proposal, each member of your group should have created 2 initial questions that the Creator should have proposed to the Instructor or Instructional Assistant (IA). For the exploratory data analysis, each member of the group will create 1 table or figure that explore answers to the questions he or she came up with. As a team, you will then come up with 4 follow-up questions that stem from what you learned from your initial investigation. These 4 follow-up questions should be more advanced and specific. For 2 of the 4 follow-up questions, you are required to create a table or figure that explore answers. Finally, your group will have to write a short 2 paragraph summary that summarizes what you discovered in your exploratory data analysis. The first paragraph should summarize what you discovered from your investigation of the initial questions and the second paragraph shoud summarize what you discovered from your investigation of the follow-up questions. 
+
+For this part, each member should be responsible for the table or figure that answers each of the 2 questions assigned to them. Meet as a team to discuss your discoveries and develop 4 additional more-interesting questions. As a group determine which tables and/or figures would be a good first start at trying to explore answers for 2 of the 4 follow-up questions. Figure out how you will delegate the responsibility for creation of the tables and or figures and the writing of the 2 paragraph summary. I recommend doing tables or figures for all 4 follow-up questions as a team and then discussing the results to determine which of the 2 are most worthy for discussion in the exploratory data analysis.
+
+The Interpreter should schedule a 5 minute meeting during office hours of either the Instructor or Instructional Assistant (IA). To reserve your 5 minute time slot, email ahead of time. Time slots will be priortized according to email and posted on a google spreadsheet linked on the website. I highly recommend scheduling your meeting as soon as possible to ensure you have a spot before the deadline. If your Interpreter fails to schedule the project proposal meeting before the deadline, a minimum 2 point penalty will be given. This penalty applies to your entire group.
+
+In the meeting, the Interpreter should effectively provide an overview of what the entire group discovered from investigating the initial questions and from investigating the follow-up questions. The Interpreter should explain to the Instructor or IA the current status of the group project and provide the vision of the group on the finishing of the project. The four follow-up questions should be shared along with any future plans for investigating these follow up questions. The Interpeter should have at least four tables and/or figures that highlight instances of statistical learning about the data. These tables and/or figures should be ready on a laptop to show the instructor or IA.
+
+The Deliverer is responsible for compiling all the information into the RMarkdown template provided on the course website. This document should be carefully proofread and submitted as an HTML file via Sakai by the due date. A minimum 2 point penalty will be given, if this document is submitted late. This penalty applies to your entire group. The tables and figures for the initial questions should be generated using R code chunks. The R code and output should be displayed in the HTML file. The 2 paragraph summary should be written in complete sentences and free of grammatical/spelling errors.
+
+# **Rubric**
+
+|Requirement|Points|
+|-------|------:|
+|1 Table or Figure for Each Initial Question|4 Points|
+|4 Follow-Up Questions Proposed|4 Points|
+|2 Tables and/or Figures for 2/4 Follow-Up Questions|2 Points|
+|Summary Paragraphs on Topic and Follow Instructions|4 Points|
+|Effective Communication of Results in Meeting|3 Points|
+|Written Summary Free of Errors|1 Point|
+|Followed RMarkdown Template|1 Point|
+|HTML Document Submitted|1 Point|
+|**Total**|**20 Points**|
+|||
+

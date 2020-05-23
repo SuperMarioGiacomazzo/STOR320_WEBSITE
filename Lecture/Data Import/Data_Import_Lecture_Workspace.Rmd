@@ -1,0 +1,106 @@
+---
+title: "Lecture 11 Workspace"
+author: "Mario Giacomazzo"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,warning=F)
+options(scipen=999)
+library(tidyverse)    #Essential Functions
+library(knitr)        #kable() for HTML Tables
+library(kableExtra)   #HTML Table Styling
+```
+
+```{r}
+library(readr)
+```
+
+```{r}
+UniRank=read_csv(file="D:/Mario Documents/UNC/STOR 320/STOR320_WEBSITE/Lecture/Lecture 11/Example/cwurData.csv",
+                 col_names=T)
+glimpse(UniRank)
+```
+
+```{r}
+SHSAT=read_csv(file="Example/D5 SHSAT Registrations and Testers.csv")
+glimpse(SHSAT)
+```
+
+```{r,message=F}
+Housing=read_csv(file="Example/thads2013n.txt")
+head(Housing,5)
+```
+
+```{r,message=F}
+Housing2=read_csv(file="Example/thads2013n.txt") %>%
+          select(METRO3,REGION,VALUE,ASSISTED)
+head(Housing2,5)
+```
+
+
+```{r,message=F}
+FreshBeats=read_csv(url("https://think.cs.vt.edu/corgis/csv/music/music.csv?forcedownload=1"))
+
+FreshBeats2=FreshBeats %>%
+  filter(artist.name=="Word") %>%
+  arrange(desc(artist.hotttnesss)) %>%
+  select(artist.hotttnesss,artist.name,title)
+```
+
+```{r}
+setwd("Example")
+write_csv(FreshBeats2,"FreshBeats2.csv")
+```
+
+```{r}
+DATA=tribble(
+  ~x, ~y, ~`:(`,
+  #--/--/--
+  "a",2,3.6,
+  "b",1,8.5
+) 
+DATA
+```
+
+```{r}
+#Extract by Variable Name
+DATA$x
+DATA$":("
+DATA[["y"]]
+DATA[,c("x",":(")]
+```
+
+
+```{r}
+#Extract by Location
+DATA[[1]]
+DATA[,3]
+DATA[2,]
+DATA[2,2:3]
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

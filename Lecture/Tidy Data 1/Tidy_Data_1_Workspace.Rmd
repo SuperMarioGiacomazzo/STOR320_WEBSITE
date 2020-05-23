@@ -1,0 +1,201 @@
+---
+title: "Lecture 12 Workspace"
+author: "Mario Giacomazzo"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,warning=F)
+options(scipen=999)
+library(tidyverse)    #Essential Functions
+library(knitr)        #kable() for HTML Tables
+library(kableExtra)   #HTML Table Styling
+```
+
+```{r}
+library(readr)
+```
+
+```{r}
+untidy1=tribble(
+~subject,  ~sex, ~control, ~cond1, ~cond2,
+1, "M", 7.9,  12.3, 10.7,
+2, "F", 6.3,  10.6, 11.1,
+3, "F", 9.5,  13.1, 13.8,
+4, "M", 11.5, 13.4, 12.9
+)
+untidy1
+```
+
+```{r}
+tidy1a=untidy1 %>%
+  gather(control:cond2,key="Treatment",value="Outcome")
+tidy1a
+```
+
+```{r}
+tidy1b=untidy1 %>%
+  gather(3:5, key="Treatment",value="Outcome",factor_key=T)
+glimpse(tidy1b)
+str(tidy1b$Treatment)
+```
+
+```{r}
+ggplot(tidy1b)+
+  geom_point(aes(x=Treatment,y=Outcome,color=sex),
+             size=4) + theme_minimal()
+```
+
+```{r}
+untidy2=tribble(
+~subject,  ~sex, ~`0.3`, ~`0.6`, ~`0.8`,
+1, "M", 7.9,  12.3, 10.7,
+2, "F", 6.3,  10.6, 11.1,
+3, "F", 9.5,  13.1, 13.8,
+4, "M", 11.5, 13.4, 12.9
+)
+untidy2
+```
+
+```{r}
+tidy2a=untidy2 %>%
+  gather(`0.3`:`0.8`,key="Dosage",value="Outcome")
+glimpse(tidy2a)
+```
+
+```{r}
+tidy2b=untidy2 %>%
+  gather(`0.3`:`0.8`,key="Dosage",value="Outcome",convert=T)
+glimpse(tidy2b)
+```
+
+```{r}
+ggplot(tidy2b) +
+  geom_line(aes(x=Dosage,y=Outcome,color=as.character(subject))) + theme_minimal()
+```
+
+```{r}
+untidy3=tribble(
+~Pack,  ~Type, ~Measure, ~Value,
+1, "Regular", "Count",  15,
+1, "Regular", "Percent Blue", 0.2,
+2, "Peanut", "Count",  12,
+2, "Peanut", "Percent Blue", 0.3,
+)
+untidy3
+```
+
+```{r}
+tidy3=untidy3 %>%
+  spread(key=Measure,value=Value)
+tidy3
+```
+
+```{r}
+tidy3 %>%
+  mutate(nBlue=Count*`Percent Blue`) %>%
+  select(-Count,-`Percent Blue`)
+```
+
+```{r}
+untidy4=tribble(
+~Pack,  ~Type, ~PropBlue, ~Date,
+1, "Regular", "3/15",  "9-28-2018",
+2, "Regular", "2/15", "9-30-2018",
+3, "Peanut", "4/12",  "9-28-2018",
+4, "Peanut", "5/13", "9-30-2018",
+)
+untidy4
+```
+
+```{r}
+tidy4a=untidy4 %>%
+  separate(PropBlue, into=c("nBlue","Total"),sep="/") %>%
+  separate(Date, into=c("M","D","Y"),sep="-")
+glimpse(tidy4a)
+```
+
+```{r}
+tidy4b=untidy4 %>%
+  separate(PropBlue, into=c("nBlue","Total"),sep="/",
+           convert=T) %>%
+  separate(Date, into=c("M","D","Y"),sep="-",
+           convert=T)
+glimpse(tidy4b)
+```
+
+```{r}
+ggplot(tidy4b) +
+  geom_point(aes(x=D,y=nBlue,color=Type),size=4) +
+  theme_minimal()
+```
+
+```{r}
+untidy5=tribble(
+~Pack,  ~Type, ~Day, ~Month,
+1, "Regular", 1,  8,
+2, "Regular", 2, 8,
+3, "Regular", 3,  9,
+4, "Regular", 4, 9,
+)
+untidy5
+```
+
+```{r}
+tidy5=untidy5 %>%
+  unite(swag,Day,Month,sep=":(")
+tidy5
+```
+
+```{r}
+missing=tibble(
+          year=c(1,1,1,1,2,2,3,3,3,3,4,4,4,4),
+          quarter=c(1,2,3,4,2,3,1,2,3,4,1,2,3,4),
+          wage=c(10.50,10.50,10.50,11.00,11.00,11.23,11.23,11.23,12,NA,12,NA,13.04,13.04),
+        )
+missing
+```
+
+```{r}
+missing %>%
+  spread(key=year,value=wage)
+```
+
+```{r}
+missing %>%
+  spread(key=quarter,value=wage)
+```
+
+```{r}
+missing %>%
+  spread(quarter,wage) %>%
+  gather(quarter,wage,`1`:`4`,na.rm=T)
+```
+
+```{r}
+missing %>%
+  spread(quarter,wage) %>%
+  gather(quarter,wage,`1`:`4`)
+```
+
+```{r}
+missing %>%
+  complete(year,quarter)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

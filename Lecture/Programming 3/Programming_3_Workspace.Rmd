@@ -1,0 +1,155 @@
+---
+title: "Lecture 20 Workspace"
+author: "Mario Giacomazzo"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,warning=F)
+options(scipen=999)
+library(tidyverse)    #Essential Functions
+```
+
+```{r}
+dplyr::lag
+```
+
+```{r}
+Uptown.Func1 = function(x,k=1){
+  t=length(x)
+  y=c(rep(NA,t))
+  for(i in (k+1):t){
+    y[i]=x[i-k]
+  }
+  return(y)
+}
+```
+
+```{r}
+Uptown.Func2 = function(x,k){
+  t=length(x)
+  y1=x[1:(t-k)]
+  y2=c(rep(NA,k),y1)
+  return(y2)
+}
+```
+
+
+```{r}
+Value=c(35, 32, 30, 31, 27, 25)
+Uptown.Func1(x=Value)
+Uptown.Func2(x=Value,k=1)
+Uptown.Func1(x=Value,k=3)
+Uptown.Func2(x=Value,k=3)
+```
+
+```{r}
+Summary.func = function(data){
+  min=min(data)
+  max=max(data)
+  q1=quantile(data,0.25)
+  q2=quantile(data,0.5)
+  q3=quantile(data,0.75)
+  y=c(min,q1,q2,q3,max)
+  names(y)=c("Min","Q1","Q2","Q3","Max")
+  return(y)
+}
+```
+
+```{r}
+Summary.func(data=Ecdat::Airq$airq)
+```
+
+```{r}
+head(forcats::gss_cat)
+```
+
+```{r}
+ob=forcats::gss_cat$tvhours
+h0=4
+a=0.05
+
+ttest = function(ob,h0,a){
+  n=length(ob)
+  ts=(mean(ob,na.rm=T)-h0)/(sd(ob,na.rm=T)/sqrt(n))
+  pval=2*pt(-abs(ts),df=n-1)
+  conclusion = if(pval<a){
+                  "Reject Null Hypothesis"
+                } else{
+                  "Fail to Reject Null Hypothesis"
+                }
+  plot=ggplot() + 
+    geom_bar(aes(x=ob),fill="lightskyblue1") +
+    theme_minimal() + geom_vline(xintercept=h0)
+  return(list(ts=ts,pval=pval,
+         conclusion=conclusion,plot=plot))
+}
+```
+
+```{r}
+ttest(ob=forcats::gss_cat$tvhours,h0=4,a=0.05)
+```
+
+```{r}
+ttest(ob=forcats::gss_cat$tvhours,h0=3,a=0.05)
+```
+
+
+```{r}
+CLT = function(n,S,D=c(1,2)){
+  if(D==1){
+    initial=rnorm(1000000)
+  } else if(D==2){
+    initial=rgamma(1000000,shape=1/2,rate=1/2)
+  }
+  t.mean=mean(initial)
+  t.se=sd(initial)/sqrt(n)
+  
+  mean.sample=rep(NA,S)
+  for(k in 1:S){
+    if(D==1){
+      sample=rnorm(n)
+    } else if(D==2){
+      sample=rgamma(n,shape=0.5,rate=0.5)
+    }
+    mean.sample[k]=mean(sample)
+  }
+  s.mean=mean(mean.sample)
+  s.se=sd(mean.sample)
+  
+  plot=ggplot()+
+    geom_histogram(aes(x=mean.sample),
+    fill="lightskyblue1")+
+    theme_minimal()
+  
+  OUT=list(theory.mean=t.mean,
+           theory.se=t.se,
+           sim.mean=s.mean,
+           sim.se=s.se,
+           plot=plot)
+  return(OUT)
+}
+```
+
+```{r}
+CLT(1,1000,D=2)$plot
+```
+
+```{r}
+OUT=CLT(10,1000,D=2)
+OUT[[5]]+scale_x_continuous(limits=c(0,6))+
+  geom_vline(xintercept=OUT$theory.mean,linetype="dashed")
+```
+
+```{r}
+OUT=CLT(100,1000,D=2)
+OUT[[5]]+scale_x_continuous(limits=c(0,6))+
+  geom_vline(xintercept=OUT$theory.mean,linetype="dashed")
+```
+
+```{r}
+OUT=CLT(1000,1000,D=2)
+OUT[[5]]+scale_x_continuous(limits=c(0,6))+
+  geom_vline(xintercept=OUT$theory.mean,linetype="dashed")
+```

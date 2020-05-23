@@ -1,0 +1,189 @@
+---
+title: "Lecture 27 Workspace"
+author: "Mario Giacomazzo"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,warning=F)
+options(scipen=999)
+library(tidyverse)    #Essential Functions
+library(modelr)
+library(broom)
+CONDIMENT=read_csv("Condiments.csv")
+```
+
+```{r}
+ggplot(CONDIMENT) +
+  geom_histogram(aes(x=Enjoyment),fill="lightskyblue2") +
+  theme_minimal()
+```
+
+```{r}
+ggplot(CONDIMENT) +
+  geom_bar(aes(x=Food),fill="lightskyblue2") +
+  theme_minimal(base_size=18)
+```
+
+```{r}
+ggplot(CONDIMENT) +
+  geom_bar(aes(x=Condiment),fill="lightskyblue2") +
+  theme_minimal(base_size=18)
+```
+
+
+```{r}
+EvsF.Model=lm(Enjoyment~Food,data=CONDIMENT)
+tidy(EvsF.Model)
+```
+
+```{r}
+CONDIMENT$Food[1:6]
+head(model_matrix(CONDIMENT, Enjoyment~Food))
+```
+
+```{r}
+CONDIMENT %>%
+  add_predictions(model=EvsF.Model,var="EvF.Pred") %>%
+  ggplot() +
+  geom_boxplot(aes(x=Food,y=Enjoyment),color="lightskyblue2") +
+  geom_point(aes(x=Food,y=EvF.Pred),size=4) + 
+  theme_minimal()
+```
+
+
+```{r}
+EvsC.Model=lm(Enjoyment~Condiment,data=CONDIMENT)
+tidy(EvsC.Model)
+```
+
+```{r}
+EvsCF.Model=lm(Enjoyment~Food+Condiment,data=CONDIMENT)
+tidy(EvsCF.Model)
+```
+
+```{r}
+GRID=CONDIMENT %>%
+      data_grid(
+        Food=unique(Food),
+        Condiment=unique(Condiment)
+      )
+print(GRID)
+```
+
+
+```{r}
+GRID2=as.data.frame(cbind(GRID,predict(EvsCF.Model,
+                          newdata=GRID,
+                          interval="confidence")))
+print(GRID2)
+```
+
+```{r}
+ggplot(GRID2) +
+  geom_pointrange(aes(x=Food,y=fit,ymin=lwr,ymax=upr,color=Condiment),
+                  position=position_dodge(width=0.5),size=1.5) +
+  theme_minimal()+theme(text=element_text(size=20))
+```
+
+
+```{r}
+EvFC.Full.Model=lm(Enjoyment~Food+Condiment+Food*Condiment,data=CONDIMENT)
+tidy(EvFC.Full.Model)
+```
+
+```{r}
+head(CONDIMENT[,2:3])
+head(model_matrix(CONDIMENT,
+  Enjoyment~Food+Condiment+Food*Condiment)) %>% 
+  rename(Int=1,F=2,C=3,FC=4)
+```
+
+```{r}
+as.data.frame(cbind(GRID,predict(EvFC.Full.Model,
+                          newdata=GRID,
+                          interval="confidence"))) %>%
+  ggplot() +
+  geom_pointrange(aes(x=Food,y=fit,ymin=lwr,ymax=upr,color=Condiment),
+                  position=position_dodge(width=0.5),size=1.5) +
+  theme_minimal()+theme(text=element_text(size=20))
+```
+
+```{r}
+IRIS=iris[,c(1,2,5)]
+names(IRIS)=c("L","W","S")
+head(IRIS)
+```
+
+```{r}
+ggplot(IRIS)+
+  geom_point(aes(x=L,y=W,color=S))+
+  geom_smooth(aes(x=L,y=W,color=S))+
+  theme_minimal()
+```
+
+```{r}
+model1=lm(W~L,IRIS)
+tidy(model1)
+model2=lm(W~L+S,IRIS)
+tidy(model2)
+model3=lm(W~L+S+L*S,IRIS)
+tidy(model3)
+```
+
+```{r}
+IRIS %>%
+  gather_predictions(model1,model2,model3)%>%
+  glimpse()
+```
+
+```{r}
+IRIS %>%
+  gather_predictions(model1,model2,model3) %>%
+  ggplot() +
+    geom_point(aes(x=L,y=W,color=S)) +
+    geom_line(aes(x=L,y=pred,color=S),size=2)+
+    theme_minimal()+
+    facet_grid(model~.)
+```
+
+```{r}
+model_matrix(IRIS,W~L+S+L*S)
+```
+
+```{r}
+tidy(model3)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+```{r}
+#CONDIMENT %>% gather(Food:Condiment,key="Group")
+# sd(CONDIMENT$Enjoyment)
+# se=CONDIMENT %>%
+#   add_residuals(model=EvsF.Model,var="EvF.Res") %>%
+#   .$EvF.Res %>%sd()
+# glance(EvsF.Model)
+# predict(EvsF.Model,se.fit=T,interval="confidence")
+```
+

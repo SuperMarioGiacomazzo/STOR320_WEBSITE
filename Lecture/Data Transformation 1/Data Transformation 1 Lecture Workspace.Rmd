@@ -1,0 +1,282 @@
+---
+title: "Lecture 4 Workspace"
+author: "Mario Giacomazzo"
+date: "August 25, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(nycflights13)
+library(tidyverse)
+```
+
+
+```{r}
+flights
+```
+
+```{r}
+x=3
+y=4
+x<y
+x>y
+x!=y
+x==y
+```
+
+```{r}
+x=1/49
+y=49
+x*y==1
+```
+
+```{r}
+x*y
+near(x*y,1)
+```
+
+```{r}
+x=T
+y=F
+
+#Basic
+x&y
+x|y
+!x
+
+#Combined
+!x|!y
+!(x&y)
+!x&!y
+```
+
+
+```{r}
+male.age=c(NA,20,21,35,22,NA)
+female.age=c(21,NA,23,33,22,NA)
+age.data=tibble(ma=male.age,fa=female.age)
+age.data
+
+is.na(male.age)
+na.omit(age.data)
+mean(male.age)
+mean(male.age,na.rm=T)
+```
+
+
+```{r}
+filter(flights,is.na(air_time))
+filter(flights,!is.na(air_time))
+na.omit(flights)
+```
+
+```{r}
+head(flights)
+```
+
+```{r}
+head(arrange(flights,day,dep_time))
+```
+
+
+```{r}
+head(arrange(flights,desc(day),dep_time))
+```
+
+```{r}
+miss.data=tibble(x=c(1,1,NA,3,3,NA),
+                 y=c(NA,4,NA,5,NA,7))
+miss.data
+```
+
+```{r}
+arrange(miss.data,x)
+```
+
+```{r}
+arrange(miss.data,desc(x))
+```
+
+```{r}
+order(miss.data$x)
+order(desc(miss.data$x))
+is.na(miss.data$x)
+order(is.na(miss.data$x))
+order(is.na(miss.data$x),
+      decreasing=T)
+```
+
+
+
+
+```{r}
+names(flights)
+```
+
+```{r}
+data1=select(flights,year,month,day)
+names(data1)
+```
+
+
+```{r}
+data2=select(flights,dep_time:arr_delay)
+names(data2)
+```
+
+```{r}
+data3=select(flights,-(dep_time:arr_delay))
+names(data3)
+```
+
+```{r}
+length(names(flights))
+data4=select(flights,c(1,3,8,12))
+names(data4)
+```
+
+```{r}
+length(names(flights))
+data5=select(flights,-c(1,3,8,12))
+names(data5)
+```
+
+
+
+```{r}
+data6=select(flights,starts_with("dep"))
+names(data6)
+```
+
+```{r}
+data7=select(flights,ends_with("delay"))
+names(data7)
+```
+
+```{r}
+data8=select(flights,contains("ar"))
+names(data8)
+```
+
+```{r}
+data9=select(flights,yr=year)
+names(data9)
+data10=rename(flights,yr=year)
+names(data10)
+```
+
+```{r}
+head(flights)
+data11=select(flights,dep_time,arr_time,
+              air_time,everything())
+head(data11)
+```
+
+```{r}
+flights_sml<-select(flights,year:day,
+                    starts_with("dep"),
+                    starts_with("arr"),
+                    distance,air_time)
+head(flights_sml)
+```
+
+```{r}
+mutate_flights_sml<-mutate(flights_sml,
+                           gain=arr_delay-dep_delay,
+                           speed=distance/air_time*60)
+head(select(mutate_flights_sml,gain,speed,everything()))
+```
+
+```{r}
+transmute_flights_sml<-transmute(flights_sml,
+                           gain=arr_delay-dep_delay,
+                           speed=distance/air_time*60)
+head(select(transmute_flights_sml,gain,speed,everything()))
+```
+
+```{r}
+flights1=transmute(flights,
+          dep_time,
+          hour=dep_time%/%100,
+          minute=dep_time%%100)
+flights1
+```
+
+```{r}
+flights2=transmute(flights1,
+          dep_time,
+          hour,
+          minute,
+          hrs_since_midnight=hour+minute/60)
+flights2
+```
+
+
+```{r}
+flights3=select(flights,distance)
+ggplot(flights3) + 
+  geom_density(aes(x=distance))
+```
+
+```{r}
+flights4=transmute(flights3,
+                   logdist=log(distance))
+ggplot(flights4) +
+  geom_density(aes(x=logdist))
+```
+
+```{r}
+flights5=transmute(flights,
+            dep_delay,
+            lag1_dep_delay=lag(dep_delay))
+flights5
+```
+
+```{r}
+ggplot(data=flights5)+
+  geom_point(aes(x=lag1_dep_delay,
+                 y=dep_delay))
+```
+
+```{r}
+flights6<-transmute(filter(flights,origin=="LGA",
+            dest=="CLE",carrier=="UA"),dep_delay,
+            rollsum_dep_delay=cumsum(dep_delay),
+            time_hour)
+flights6
+```
+
+```{r}
+ggplot(flights6)+
+  geom_line(aes(x=time_hour,y=rollsum_dep_delay))
+```
+
+```{r}
+options(scipen=999)
+flights7<-arrange(transmute(filter(flights,
+            origin=="LGA",dest=="CLE",
+            carrier=="UA"),air=air_time,
+              rank_air=min_rank(air_time),
+              percentile=percent_rank(air_time),
+              ecdf_air=cume_dist(air_time),
+              airtile5=ntile(air,5)),
+              air)
+flights7
+ggplot(data=flights7) +
+  geom_line(aes(x=air,y=ecdf_air)) + 
+  geom_segment(mapping=aes(x=70,y=0,
+               xend=70,yend=0.625),
+               linetype=4)+
+  geom_segment(mapping=aes(x=58,y=.625,
+                xend=70,yend=0.625),
+                linetype=4)+
+  geom_vline(xintercept=58) + 
+  geom_hline(yintercept=0)
+   
+```
+
+
+
+
+

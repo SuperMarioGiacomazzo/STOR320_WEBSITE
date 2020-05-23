@@ -1,0 +1,199 @@
+---
+title: "Analysis 2: Joining Cholesterol with Crimes and Web Scraping Wikipedia"
+author: "FIRSTNAME LASTNAME"
+date:  "`r format(Sys.time(), '%B %d, %Y')`"
+output: html_document
+---
+
+#Instructions
+
+**Overview:** For each question, show your R code that you used to answer each question in the provided chunks. When a written response is required, be sure to answer the entire question in complete sentences outside the code chunks. When figures are required, be sure to follow all requirements to receive full credit. Point values are assigned for every part of this analysis.
+
+**Helpful:** Make sure you knit the document as you go through the assignment. Check all your results in the created HTML file.
+
+**Submission:** Submit via an electronic document on Sakai. Must be submitted as an HTML file generated in RStudio. 
+
+```{r setup, include=F}
+options(scipen=999)
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(rvest)
+```
+
+#Introduction
+
+Does high cholesterol lead to high crime rates? Probably not, but web scraping will definitely lead to lower crime rates. This data analysis assignment is separated into three parts which cover material from the lectures on tidy data, joins, and webscraping. In Part 1, you will demonstrate the basic concept of joins by connecting relational data involving a cholesterol study. For this segment, spreading and gathering will be utilized to create a single tidy dataset ready for analysis. In Part 2, we will join all 5 datasets from the lecture series on web scraping. Part 3 will require an understanding of web scraping to import a table found on Wikipedia directly into R. The following R code reads in all datasets required for this assignment.
+
+```{r,message=F}
+# Data for Part 1
+CHOL1=read_csv("Cholesterol.csv")
+CHOL2=read_csv("Cholesterol2.csv")
+
+# Data for Part 2
+VIOLENT=read_csv("FINAL_VIOLENT.csv")
+ZIP=read_csv("FINAL_ZIP.csv")
+STATE_ABBREV=read_csv("FINAL_STATE_ABBREV.csv")
+CENSUS=read_csv("FINAL_CENSUS.csv")
+S_VS_D=read_csv("FINAL_SAFE_VS_DANGEROUS.CSV")
+
+```
+
+
+
+
+
+
+
+#Assignment
+
+## Part 1: Cholesterol Experiment
+
+The data frame `CHOL1` contains experimental results from randomly assigning *18* people to one of two competing margarine brands "A" and "B". The cholesterol of these patients was measured before the once before using the margarine brand, once after *4* weeks with the margarine brand, and then again after *8* weeks with the margarine brand. Researchers want to see if there is benefit of these brands of margarine on reducing an individual's cholesterol and want to determine if there is a statistically significant difference between the two competing brands. 
+ 
+###Q1 *(3 Points)*
+
+Start by examing the tables `CHOL1` and `CHOL2` and answering the following questions with *Yes* or *No* responses.
+
+Is the variable `ID` in `CHOL1` a primary key? 
+
+Answer *(1 Point)*: (Yes/No)
+
+Is the variable, `Margarine` in `CHOL1` a primary key?
+
+Answer *(1 Point)*: (Yes/No)
+
+Is the variable, `Brand` in `CHOL2` a primary key? 
+
+Answer *(1 Point)*: (Yes/No)
+
+###Q2 *(2 Points)*
+
+In a new data frame called `CHOL1a` based on `CHOL1`, rename the variables `After4weeks` and `After8weeks` to nonsynctactic variable names `4` and `8`, respectively. Use `names(CHOL1a)` to display this modification.
+
+```{r}
+#
+```
+
+###Q3 *(4 Points)*
+
+Use the `gather()` function on `CHOL1a` to create a new numeric variable called `Week` that contains numeric values *4* or *8* and a new numeric variable called `Response` that contains the Cholesterol after the corresponding number of weeks. Create a new data frame called `CHOL1b` with these modifications and use `str(Chol1b)` to show that both variables have been created correctly and are indeed numeric (an integer variable is a specific type of numeric variable).
+
+```{r}
+#
+```
+
+###Q4 *(4 Points)*
+
+Now working with `CHOL2`, we want to spread the variable `Statistic` across multiple columns. Do this in a new data frame called `CHOL2a` and use `print(CHOL2a)` to display the modified complete table.
+
+```{r}
+#
+```
+
+###Q5 *(3 Points)*
+
+Start by examing the tables `CHOL1b` and `CHOL2a` and answering the following questions with *Yes* or *No* responses.
+
+Is the variable `ID` in `CHOL1b` a primary key? 
+
+Answer *(1 Point)*: (Yes/No)
+
+Is the variable, `Margarine` in `CHOL1b` a primary key?
+
+Answer *(1 Point)*: (Yes/No)
+
+Is the variable, `Brand` in `CHOL2a` a primary key? 
+
+Answer *(1 Point)*: (Yes/No)
+
+###Q6 *(4 Points)*
+
+Get the nutritional facts of the different margarine brands in `CHOL2a` into the experimental results found in `CHOL1b` using a join. Create a new data frame named `CHOL.COMBINED` and display the table using `head(CHOL.COMBINED)`. This final data frame should contain *36* observations and *10* variables.
+
+```{r}
+#
+```
+
+
+
+
+
+
+
+
+## Part 2: Linking Important Information to 2015 Violent Crimes Data
+
+In the web scraping lectures, we created *5* CSV files. In this section, we are going to merge all of that data into one object called `FINAL.VIOLENT`. Follow the steps carefully to ensure you obey all instructions or you are likely to become a victim of a violent crime. **This is a joke and not a threat. I will not murder you if you don't follow the steps carefully. That is what hitmen/hitwomen are for.**
+
+###Q1 *(2 Points)*
+
+The dataset `S_VS_D` contains a variable `CLASS` where "S=Safe" and "D=Dangerous" according to the article *[These Are the 2018 Safest and Most Dangerous States in the U.S](https://www.securitysales.com/fire-intrusion/2018-safest-most-dangerous-states-us/)* by [Steve Karantzoulidis](https://www.securitysales.com/author/stevek/). We seek to compare the violent crime statistics for states not in this list. Use a filtering join to create a new data frame called `VIOLENT2` that only contains violent crime statistics from the states not represented in the data frame `S_VS_D`.  Use `str(VIOLENT2)` to display the variables and the dimensions of `VIOLENT2`.
+
+
+```{r}
+#
+```
+
+###Q2 *(4 Points)*
+
+Start by creating a new data set called `VIOLENT3` based on `VIOLENT2` that fixes some problems in the variable `City`. Specifically, we would like to change "Louisville Metro", "Nashville Metropolitan", and "Washington" to "Louisville", "Nashville", and "Washington Dc", respectively. 
+
+Next, create a new data frame named `VIOLENT4` that connects the population change and density measures from 2019 contained in `CENSUS` to the cities and states in `VIOLENT3`. Use `head(VIOLENT4)` to give a preview of the new merged dataset.
+
+Finally, in a complete sentence, identify any location(s) (Cities and States) missing census information.
+
+Code and Output *(2 Points)*:
+```{r}
+#
+```
+
+Answer *(2 Points)*: (Place Answer Here Using Complete Sentences) 
+
+
+###Q3 *(6 Points)*
+
+Either ambitiously using one step or less-ambitiously using multiple steps add the longitude and latitude information provided in `ZIP` to the cities and states in `VIOLENT4`. You will need to use `STATE_ABBREV` data to link these two data frames. Your final data frame named `FINAL.VIOLENT` should contain all of the information in `VIOLENT4` along with the variables `lat` and `lon` from `ZIP`. There should be **no** state abbreviations in `FINAL.VIOLENT` since this information is redundant. Use `str(FINAL.VIOLENT)` to demonstrate that everything worked as planned out by your imperial commander Dr. Mario. 
+
+In `FINAL.VIOLENT` identify what cities are missing latitude and longitude. Closely, inspect both the `ZIP` and `VIOLENT4` data frames. Report the location(s) missing geographical informationand explain in complete sentences why this happened. 
+
+Finally, challenge yourself and attempt to fix this problem in a new data frame called `FINAL.VIOLENT.FIX`. Use a combination of `str()` and `filter()` to only display the data in `FINAL.VIOLENT.FIX` for the location(s) that `FINAL.VIOLENT` was missing latitude and longitude. Do this in the second code chunk below.
+
+Code and Output *(4 Points)*:
+```{r}
+#
+```
+
+Answer *(1 Points)*: (Place Answer Here Using Complete Sentences) 
+
+Code and Output *(1 Point)*:
+```{r}
+#
+```
+
+
+
+
+
+## Part 3: Web Scraping a Table From Wikipedia
+
+Wikipedia contains a rough estimate of a billion tables. Search through Wikipedia pages and identify an article, completely unrelated to crimes data, that contains an HTML table that has at least *5* rows and *3* columns. You will be required to web scrape the table into a data frame or tibble into R. This portion will require a minor knowledge of the `rvest` package. Utilize information from the web scraping lectures and tutorials to assist you with this.
+
+###Q1 *(4 Points)*
+
+What is the URL of the Wikipedia page you plan on webscraping (Knit the Document and Check the Hyperlink)? 
+
+Answer *(2 Points)*: (Copy and Paste Wikipedia URL Here) 
+
+In *2* to *5* sentences, Identify and describe the specific table you plan on web scraping. State the variables in *1* of the sentences.
+
+Answer *(2 Points)*: (Place Answer Here Using Complete Sentences) 
+
+###Q2 *(4 Points)*
+
+Utilize the functions `read_html()` and `html_table()` to web scrape the specific table you described above. Internet access will be required for these functions to work. Create an R data frame named `DATA` which contains the information from the Wikipedia table. All code should be contained in the R code chunk below. Finally, use the `print()` function to display the table to demonstrate that everything worked as planned. The variable names and the content should match the table on the Wikipedia page you chose exactly. You are not required to perform any cleaning of this data.
+
+```{r}
+#
+```
+
+

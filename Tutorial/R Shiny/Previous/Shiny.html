@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)http://127.0.0.1:3890/shiny.Rmd -->
+<html class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <script type="application/shiny-singletons"></script>  <script type="application/html-dependencies">json2[2014.02.04];jquery[1.12.4];babel-polyfill[6.7.2];shiny[0.14.2]</script><script src="./Shiny_files/json2-min.js"></script>
+<script src="./Shiny_files/jquery.min.js"></script>
+<script src="./Shiny_files/babel-polyfill.min.js"></script>
+<link href="./Shiny_files/shiny.css" rel="stylesheet">
+<script src="./Shiny_files/shiny.min.js"></script>  <script src="./Shiny_files/rmd_loader.js"></script>
+  <link href="./Shiny_files/rmd_loader.css" rel="stylesheet">
+
+<meta name="0" content="[object Object]"><link rel="stylesheet" type="text/css" href="./Shiny_files/cosmo.min.css"><script src="./Shiny_files/bootstrap.min.js"></script><script src="./Shiny_files/html5shiv.min.js"></script><script src="./Shiny_files/respond.min.js"></script><script src="./Shiny_files/jquery-ui.min.js"></script><link rel="stylesheet" type="text/css" href="./Shiny_files/jquery.tocify.css"><script src="./Shiny_files/jquery.tocify.js"></script><script src="./Shiny_files/tabsets.js"></script><link rel="stylesheet" type="text/css" href="./Shiny_files/default.css"><script src="./Shiny_files/highlight.js"></script><script src="./Shiny_files/htmlwidgets.js"></script><script src="./Shiny_files/datatables.js"></script><link rel="stylesheet" type="text/css" href="./Shiny_files/jquery.dataTables.min.css"><link rel="stylesheet" type="text/css" href="./Shiny_files/jquery.dataTables.extra.css"><script src="./Shiny_files/jquery.dataTables.min.js"></script><link rel="stylesheet" type="text/css" href="./Shiny_files/rmd_perf.css"><script src="./Shiny_files/rmd_perf.js"></script><meta name="0" content="[object Object]"><script src="./Shiny_files/rsiframe.js"></script>
+
+
+
+<meta name="generator" content="pandoc">
+
+
+<meta name="author" content="STOR 390">
+
+
+<title>Shiny</title>
+
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs && document.readyState && document.readyState === "complete") {
+   window.setTimeout(function() {
+      hljs.initHighlighting();
+   }, 0);
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="./Shiny_files/styles.css" type="text/css">
+
+<script type="text/javascript" src="./Shiny_files/MathJax.js"></script><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 5px 0px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -khtml-border-radius: 5px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 1px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: .7em}
+.MathJax_MenuRadioCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuLabel {padding: 1px 2em 3px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #DDDDDD; margin: 4px 3px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: #606872; color: white}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style></head>
+
+<body><div id="MathJax_Message" style="display: none;"></div>
+  <div>
+    <div data-display-if="!output.__reactivedoc__" style="display: none;">
+      <div id="rmd_loader_wrapper">
+        <div id="rmd_loader">
+          <img src="./Shiny_files/rmd_loader.gif">
+          <p>Loading</p>
+        </div>
+      </div>
+    </div>
+    <div id="__reactivedoc__" class="shiny-html-output shiny-bound-output">
+
+
+
+
+
+
+
+<style type="text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("section-TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#section-TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#section-TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#section-TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="section-TOC" class="tocify">
+<ul id="tocify-header1" class="tocify-header list-group"><li class="tocify-item list-group-item" data-unique="hello_shiny">Hello Shiny!</li></ul><ul id="tocify-header2" class="tocify-header list-group"><li class="tocify-item list-group-item" data-unique="key_components_of_a_shiny_app">Key components of a Shiny app</li><ul class="tocify-subheader list-group" data-tag="2"><li class="tocify-item list-group-item" data-unique="file_structure">File structure</li></ul></ul><ul id="tocify-header3" class="tocify-header list-group"><li class="tocify-item list-group-item" data-unique="basics_of_reactivity" style="cursor: pointer;">Basics of reactivity</li><ul class="tocify-subheader list-group" data-tag="2"><li class="tocify-item list-group-item" data-unique="ui_input_functions_or_shiny_widgets">UI input functions or Shiny widgets</li><li class="tocify-item list-group-item" data-unique="ui_output_functions">UI output functions</li><li class="tocify-item list-group-item" data-unique="server_render_functions">Server render functions</li><li class="tocify-item list-group-item" data-unique="renderui">renderUI</li></ul></ul><ul id="tocify-header4" class="tocify-header list-group"><li class="tocify-item list-group-item" data-unique="app_layout">App layout</li><ul class="tocify-subheader list-group" data-tag="2"><li class="tocify-item list-group-item" data-unique="basic_layout">Basic layout</li><li class="tocify-item list-group-item" data-unique="basic_layout_with_tabs">Basic layout with tabs</li><li class="tocify-item list-group-item" data-unique="shinydashboard">shinydashboard</li></ul></ul><ul id="tocify-header5" class="tocify-header list-group"><li class="tocify-item list-group-item" data-unique="dealing_with_data">Dealing with data</li><ul class="tocify-subheader list-group" data-tag="2"><li class="tocify-item list-group-item" data-unique="globalr">global.R</li><li class="tocify-item list-group-item" data-unique="reactive_expressions">Reactive expressions</li></ul></ul><ul id="tocify-header6" class="tocify-header list-group"><li class="tocify-item list-group-item" data-unique="interactive_visualization">Interactive visualization</li></ul><ul id="tocify-header7" class="tocify-header list-group"><li class="tocify-item list-group-item" data-unique="more_cool_shiny_stuff">More cool Shiny stuff</li><ul class="tocify-subheader list-group" data-tag="2"><li class="tocify-item list-group-item" data-unique="datatables">DataTables</li><li class="tocify-item list-group-item" data-unique="dynamic_document_generation_(pdfhtmlword)">Dynamic document generation (pdf/html/word)</li><li class="tocify-item list-group-item" data-unique="shiny_modules">Shiny modules</li><li class="tocify-item list-group-item" data-unique="hosting_apps">Hosting apps</li></ul></ul><ul id="tocify-header8" class="tocify-header list-group"><li class="tocify-item list-group-item" data-unique="additional_materials">Additional materials</li></ul></div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="fluid-row" id="section-header">
+
+
+
+<h1 class="title toc-ignore"><strong>Shiny</strong></h1>
+<h3 class="subtitle"><em>Introduction to web application development with Shiny</em></h3>
+<h4 class="author"><em><a href="https://idc9.github.io/stor390/">STOR 390</a></em></h4>
+
+</div>
+
+
+<p>You can make interactive web applications easily and entirely in R with Shiny. Shiny apps are a great way to share your analysis with others without them having to run any R themselves.</p>
+<p>This lecture will cover</p>
+<ul>
+<li>first Shiny app</li>
+<li>the basics of reactivity</li>
+<li>renderUI</li>
+<li>app layouts</li>
+<li>interactive visualization</li>
+<li>extra:
+<ul>
+<li>DataTables</li>
+<li>pdf/html/word generation</li>
+<li>modules</li>
+<li>hosting apps</li>
+</ul></li>
+</ul>
+<div id="section-hello-shiny" class="section level1">
+<div name="hello_shiny" data-unique="hello_shiny"></div><h1><strong>Hello Shiny!</strong></h1>
+<p>Running the code below in the R console will start up a simple Shiny app that plots a histogram and lets the user choose the number of bins in the histogram using a slider. The code that powers the app is included, and relevant parts of the code will be highlighted yellow as you interact with the app.</p>
+<pre class="r"><code class="r"><span class="keyword">if</span> <span class="paren">(</span><span class="operator">!</span><span class="keyword">require</span><span class="paren">(</span><span class="string">'shiny'</span><span class="paren">)</span><span class="paren">)</span> <span class="identifier">install.packages</span><span class="paren">(</span><span class="string">"shiny"</span><span class="paren">)</span>
+<span class="identifier">runExample</span><span class="paren">(</span><span class="string">"01_hello"</span><span class="paren">)</span></code></pre>
+<div class="figure">
+<img src="./Shiny_files/hello_shiny_screenshot.jpeg">
+
+</div>
+</div>
+<div id="section-key-components-of-a-shiny-app" class="section level1">
+<div name="key_components_of_a_shiny_app" data-unique="key_components_of_a_shiny_app"></div><h1><strong>Key components of a Shiny app</strong></h1>
+<p>A Shiny app is composed of two fundamental parts:</p>
+<ul>
+<li><strong>ui</strong> - This codes the <strong>user interface</strong> that controls the layout and appearance of the app.</li>
+<li><strong>server</strong> - This codes the computations and plots that show up in the user interface.</li>
+</ul>
+<div id="section-file-structure" class="section level2">
+<div name="file_structure" data-unique="file_structure"></div><h2>File structure</h2>
+<p>These two parts can either be included in one file called <strong>app.R</strong> or in two separate files called <strong>ui.R</strong> and <strong>server.R</strong>. Both methods work equivalently, and it’s a matter of preference which one you choose and may depend on if your app is very short or long.</p>
+<p>This is the bare minimum code (it does nothing - a blank page shows up) if the app is on one <strong>app.R</strong> file:</p>
+<pre class="r"><code class="r"><span class="keyword">library</span><span class="paren">(</span><span class="identifier">shiny</span><span class="paren">)</span>
+
+<span class="identifier">ui</span> <span class="operator">&lt;-</span> <span class="identifier">fluidPage</span><span class="paren">(</span><span class="paren">)</span>
+
+<span class="identifier">server</span> <span class="operator">&lt;-</span> <span class="keyword">function</span><span class="paren">(</span><span class="identifier">input</span>, <span class="identifier">output</span><span class="paren">)</span> <span class="paren">{</span><span class="paren">}</span>
+
+<span class="identifier">shinyApp</span><span class="paren">(</span><span class="identifier">ui</span> <span class="operator">=</span> <span class="identifier">ui</span>, <span class="identifier">server</span> <span class="operator">=</span> <span class="identifier">server</span><span class="paren">)</span></code></pre>
+<p>For two separate files, <strong>ui.R</strong> will contain</p>
+<pre class="r"><code class="r"><span class="keyword">library</span><span class="paren">(</span><span class="identifier">shiny</span><span class="paren">)</span>
+
+<span class="identifier">shinyUI</span><span class="paren">(</span><span class="identifier">fluidPage</span><span class="paren">(</span>
+<span class="paren">)</span><span class="paren">)</span></code></pre>
+<p>and <strong>server.R</strong> has</p>
+<pre class="r"><code class="r"><span class="keyword">library</span><span class="paren">(</span><span class="identifier">shiny</span><span class="paren">)</span>
+
+<span class="identifier">shinyServer</span><span class="paren">(</span><span class="keyword">function</span><span class="paren">(</span><span class="identifier">input</span>, <span class="identifier">output</span><span class="paren">)</span> <span class="paren">{</span>
+<span class="paren">}</span><span class="paren">)</span></code></pre>
+<p>If the two files are stored in a directory called <code>my_app</code>, then you can run the app with:</p>
+<pre class="r"><code class="r"><span class="identifier">runApp</span><span class="paren">(</span><span class="string">"my_app"</span><span class="paren">)</span></code></pre>
+<p>Extra: if you want your code to show up alongside your app like in the example, then change the display mode to <code>showcase</code>.</p>
+<pre class="r"><code class="r"><span class="identifier">runApp</span><span class="paren">(</span><span class="string">"my_app"</span>, <span class="identifier">display.mode</span> <span class="operator">=</span> <span class="string">"showcase"</span><span class="paren">)</span></code></pre>
+</div>
+</div>
+<div id="section-basics-of-reactivity" class="section level1">
+<div name="basics_of_reactivity" data-unique="basics_of_reactivity"></div><h1><strong>Basics of reactivity</strong></h1>
+<p>The coolness of Shiny apps comes from its use of reactivity. This means that your apps come alive when you build reactive objects that interact with the user.</p>
+<p>You construct a reactive object in two parts:</p>
+<ul>
+<li><strong>ui</strong>: In the user-interface or ui part of your code, specify the type of object you want to include. This can be an <em>input</em> or <em>widget</em> object like a checkbox, drop-down menu or even a spreadsheet, or an <em>output</em> object like a plot, a table or just text display.</li>
+<li><strong>server</strong>: In the server part of your code, you code this object up.</li>
+</ul>
+<p>Here’s the same example as before (with the histogram code rewritten with ggplot2).</p>
+<p>In the <strong>ui</strong> section below, there is an input/widget object <code>sliderInput</code> that codes for a slider that the user can use to choose the number of bins in the histogram, and there’s an output object <code>plotObject</code> that displays the histogram.</p>
+<p>In the <strong>server</strong> section below, the code that generates the histogram is returned in a <code>renderPlot</code> function that is saved to the <code>output</code> vector under the same outputId <code>distPlot</code> as specified in <code>plotOutput</code>. The user-supplied number of bins from the slider is available in the <code>input</code> vector under the same inputId <code>bins</code> as in <code>sliderInput</code>.</p>
+<pre class="r"><code class="r"><span class="keyword">library</span><span class="paren">(</span><span class="identifier">shiny</span><span class="paren">)</span>
+<span class="keyword">library</span><span class="paren">(</span><span class="identifier">ggplot2</span><span class="paren">)</span>
+
+<span class="identifier">ui</span> <span class="operator">&lt;-</span> <span class="identifier">fluidPage</span><span class="paren">(</span>
+    
+    <span class="comment"># Sidebar with a slider input for the number of bins</span>
+    <span class="identifier">sidebarLayout</span><span class="paren">(</span>
+        <span class="identifier">sidebarPanel</span><span class="paren">(</span>
+            <span class="identifier">sliderInput</span><span class="paren">(</span><span class="identifier">inputId</span> <span class="operator">=</span> <span class="string">"bins"</span>,
+                        <span class="identifier">label</span> <span class="operator">=</span> <span class="string">"Number of bins:"</span>,
+                        <span class="identifier">min</span> <span class="operator">=</span> <span class="number">1</span>,
+                        <span class="identifier">max</span> <span class="operator">=</span> <span class="number">50</span>,
+                        <span class="identifier">value</span> <span class="operator">=</span> <span class="number">30</span><span class="paren">)</span>
+        <span class="paren">)</span>,
+        
+        <span class="comment"># Show a plot of the generated distribution</span>
+        <span class="identifier">mainPanel</span><span class="paren">(</span>
+            <span class="identifier">plotOutput</span><span class="paren">(</span><span class="identifier">outputId</span> <span class="operator">=</span> <span class="string">"distPlot"</span><span class="paren">)</span>
+        <span class="paren">)</span>
+    <span class="paren">)</span>
+    
+<span class="paren">)</span>
+
+<span class="identifier">server</span> <span class="operator">&lt;-</span> <span class="keyword">function</span><span class="paren">(</span><span class="identifier">input</span>, <span class="identifier">output</span><span class="paren">)</span> <span class="paren">{</span>
+    
+    <span class="comment"># Expression that generates a histogram. The expression is</span>
+    <span class="comment"># wrapped in a call to renderPlot to indicate that:</span>
+    <span class="comment">#</span>
+    <span class="comment">#  1) It is "reactive" and therefore should be automatically</span>
+    <span class="comment">#     re-executed when inputs change</span>
+    <span class="comment">#  2) Its output type is a plot</span>
+    
+    <span class="identifier">output</span><span class="operator">$</span><span class="identifier">distPlot</span> <span class="operator">&lt;-</span> <span class="identifier">renderPlot</span><span class="paren">(</span><span class="paren">{</span>
+        
+        <span class="identifier">ggplot</span><span class="paren">(</span><span class="identifier">faithful</span>, <span class="identifier">aes</span><span class="paren">(</span><span class="identifier">x</span> <span class="operator">=</span> <span class="identifier">waiting</span><span class="paren">)</span><span class="paren">)</span> <span class="operator">+</span>
+            <span class="identifier">geom_histogram</span><span class="paren">(</span><span class="identifier">bins</span> <span class="operator">=</span> <span class="identifier">input</span><span class="operator">$</span><span class="identifier">bins</span>, <span class="identifier">colour</span> <span class="operator">=</span> <span class="string">"white"</span><span class="paren">)</span>
+        
+    <span class="paren">}</span><span class="paren">)</span>
+    
+<span class="paren">}</span>
+
+<span class="identifier">shinyApp</span><span class="paren">(</span><span class="identifier">ui</span> <span class="operator">=</span> <span class="identifier">ui</span>, <span class="identifier">server</span> <span class="operator">=</span> <span class="identifier">server</span>,
+         <span class="identifier">options</span> <span class="operator">=</span> <span class="identifier">list</span><span class="paren">(</span><span class="identifier">height</span> <span class="operator">=</span> <span class="number">500</span><span class="paren">)</span><span class="paren">)</span></code></pre>
+<iframe width="100%" height="500" class="shiny-frame" src="./Shiny_files/saved_resource.html"></iframe>
+<p>Below are tables of the possible input/output and render functions available to construct reactive objects in the app with.</p>
+<div id="section-ui-input-functions-or-shiny-widgets" class="section level2">
+<div name="ui_input_functions_or_shiny_widgets" data-unique="ui_input_functions_or_shiny_widgets"></div><h2>UI input functions or Shiny widgets</h2>
+<p>Shiny widgets are web elements that enable your user to interact with the app. There are several standard widgets available in Shiny. You can play with them at the <a href="http://shiny.rstudio.com/gallery/widget-gallery.html">Shiny widgets gallery</a>.</p>
+<div class="figure">
+<img src="./Shiny_files/shiny_widgets.png" alt="Shiny Widgets Gallery">
+<p class="caption">Shiny Widgets Gallery</p>
+</div>
+<table class="table table-condensed">
+<thead>
+<tr class="header">
+<th>input function</th>
+<th>widget</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>actionButton</td>
+<td>Action Button</td>
+</tr>
+<tr class="even">
+<td>checkboxGroupInput</td>
+<td>A group of check boxes</td>
+</tr>
+<tr class="odd">
+<td>checkboxInput</td>
+<td>A single check box</td>
+</tr>
+<tr class="even">
+<td>dateInput</td>
+<td>A pair of calendars for selecting a date range</td>
+</tr>
+<tr class="odd">
+<td>fileInput</td>
+<td>A file upload control wizard</td>
+</tr>
+<tr class="even">
+<td>helpText</td>
+<td>Help text that can be added to an input form</td>
+</tr>
+<tr class="odd">
+<td>numericInput</td>
+<td>A field to enter numbers</td>
+</tr>
+<tr class="even">
+<td>radioButtons</td>
+<td>A set of radio buttons</td>
+</tr>
+<tr class="odd">
+<td>selectInput</td>
+<td>A box with choices to select from</td>
+</tr>
+<tr class="even">
+<td>sliderInput</td>
+<td>A slider bar</td>
+</tr>
+<tr class="odd">
+<td>submitButton</td>
+<td>A submit button</td>
+</tr>
+<tr class="even">
+<td>textInput</td>
+<td>A field to enter text</td>
+</tr>
+</tbody>
+</table>
+<p>The first two arguments to a widget function is always</p>
+<ul>
+<li><strong>inputId</strong>: Give an unique id to the widget so that the server side knows how to access it</li>
+<li><strong>label</strong>: This is the text that shows up next to the widget to guide the user.</li>
+</ul>
+<p>The rest of the arguments depend on the function of the widget. For example, the <code>sliderInput</code> from the earlier example requires the setting of the minimum and maximum value of the slider, as well as the value it should be set as default when the user loads the app.</p>
+<pre class="r"><code class="r"><span class="identifier">sliderInput</span><span class="paren">(</span><span class="identifier">inputId</span> <span class="operator">=</span> <span class="string">"bins"</span>,
+            <span class="identifier">label</span> <span class="operator">=</span> <span class="string">"Number of bins:"</span>,
+            <span class="identifier">min</span> <span class="operator">=</span> <span class="number">1</span>,
+            <span class="identifier">max</span> <span class="operator">=</span> <span class="number">50</span>,
+            <span class="identifier">value</span> <span class="operator">=</span> <span class="number">30</span><span class="paren">)</span></code></pre>
+</div>
+<div id="section-ui-output-functions" class="section level2">
+<div name="ui_output_functions" data-unique="ui_output_functions"></div><h2>UI output functions</h2>
+<table class="table table-condensed">
+<thead>
+<tr class="header">
+<th>output function</th>
+<th>creates</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>htmlOutput</td>
+<td>raw HTML</td>
+</tr>
+<tr class="even">
+<td>imageOutput</td>
+<td>image</td>
+</tr>
+<tr class="odd">
+<td>plotOutput</td>
+<td>plot</td>
+</tr>
+<tr class="even">
+<td>tableOutput</td>
+<td>table</td>
+</tr>
+<tr class="odd">
+<td>textOutput</td>
+<td>text</td>
+</tr>
+<tr class="even">
+<td>uiOutput</td>
+<td>raw HTML</td>
+</tr>
+<tr class="odd">
+<td>verbatimTextOutput</td>
+<td>text</td>
+</tr>
+</tbody>
+</table>
+<p>The one required argument to an output function is the <code>outputId</code>, which helps connect it to the render function on the server side that generates the output.</p>
+<p>On the <strong>ui</strong> side:</p>
+<pre class="r"><code class="r"><span class="identifier">plotOutput</span><span class="paren">(</span><span class="identifier">outputId</span> <span class="operator">=</span> <span class="string">"distPlot"</span><span class="paren">)</span></code></pre>
+<p>On the <strong>server</strong> side:</p>
+<pre class="r"><code class="r"><span class="identifier">output</span><span class="operator">$</span><span class="identifier">distPlot</span> <span class="operator">&lt;-</span> <span class="identifier">renderPlot</span><span class="paren">(</span><span class="paren">{</span>
+    
+  <span class="paren">[</span><span class="keyword">...</span><span class="identifier">put</span> <span class="identifier">your</span> <span class="identifier">plotting</span> <span class="identifier">code</span> <span class="identifier">here</span><span class="keyword">...</span><span class="paren">]</span>
+    
+<span class="paren">}</span><span class="paren">)</span></code></pre>
+</div>
+<div id="section-server-render-functions" class="section level2">
+<div name="server_render_functions" data-unique="server_render_functions"></div><h2>Server render functions</h2>
+<table class="table table-condensed">
+<thead>
+<tr class="header">
+<th>render function</th>
+<th>creates</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>renderImage</td>
+<td>images</td>
+</tr>
+<tr class="even">
+<td>renderPlot</td>
+<td>plots</td>
+</tr>
+<tr class="odd">
+<td>renderPrint</td>
+<td>any printed output</td>
+</tr>
+<tr class="even">
+<td>renderTable</td>
+<td>data frame, matrix, other table like structures</td>
+</tr>
+<tr class="odd">
+<td>renderText</td>
+<td>character strings</td>
+</tr>
+<tr class="even">
+<td>renderUI</td>
+<td>a Shiny tag object or HTML</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="section-renderui" class="section level2">
+<div name="renderui" data-unique="renderui"></div><h2>renderUI</h2>
+<p>One of the more powerful render functions is renderUI() - it enables us to generate dynamic UI, i.e.&nbsp;construct reactive objects that depend on user input. We illustrate how it works with a toy example that requires this function.</p>
+<p>Let’s say we are selecting colors for plotting in R, and we want to help the user narrow down the choices through color families.</p>
+<p>If the user wants a red color, then the drop-down menu can display only the red options. We can’t put a <code>selectInput</code> drop down menu in <strong>ui</strong> when we can’t populate the choices argument with the correct list of colors that depend on what the user chooses in the <code>radioButtons</code>. This means that we need to dynamically generate this <code>selectInput</code> inside <code>renderUI</code> (on the <strong>server</strong> side!) based on the user-chosen color family <code>input$color_family</code>.</p>
+<pre class="r"><code class="r"><span class="keyword">library</span><span class="paren">(</span><span class="identifier">shiny</span><span class="paren">)</span>
+
+<span class="identifier">color_list</span> <span class="operator">&lt;-</span> <span class="identifier">list</span><span class="paren">(</span><span class="identifier">red</span> <span class="operator">=</span> <span class="identifier">c</span><span class="paren">(</span><span class="string">"tomato"</span>, <span class="string">"violetred"</span>, <span class="string">"firebrick"</span><span class="paren">)</span>,
+                   <span class="identifier">green</span> <span class="operator">=</span> <span class="identifier">c</span><span class="paren">(</span><span class="string">"chartreuse"</span>, <span class="string">"forestgreen"</span>, <span class="string">"olivedrab"</span><span class="paren">)</span>,
+                   <span class="identifier">blue</span> <span class="operator">=</span> <span class="identifier">c</span><span class="paren">(</span><span class="string">"navy"</span>, <span class="string">"dodgerblue"</span>, <span class="string">"torquoise"</span><span class="paren">)</span><span class="paren">)</span>
+
+<span class="identifier">ui</span> <span class="operator">&lt;-</span> <span class="identifier">fluidPage</span><span class="paren">(</span>
+    
+    <span class="identifier">radioButtons</span><span class="paren">(</span><span class="identifier">inputId</span> <span class="operator">=</span> <span class="string">"color_family"</span>,
+                 <span class="identifier">label</span> <span class="operator">=</span> <span class="string">"Choose a color family"</span>,
+                 <span class="identifier">choices</span> <span class="operator">=</span> <span class="identifier">c</span><span class="paren">(</span><span class="string">"red"</span>, <span class="string">"green"</span>, <span class="string">"blue"</span><span class="paren">)</span><span class="paren">)</span>,
+    
+    <span class="identifier">uiOutput</span><span class="paren">(</span><span class="identifier">outputId</span> <span class="operator">=</span> <span class="string">"color_selector"</span><span class="paren">)</span>,
+    
+    <span class="identifier">verbatimTextOutput</span><span class="paren">(</span><span class="identifier">outputId</span> <span class="operator">=</span> <span class="string">"color_chosen"</span><span class="paren">)</span>
+    
+<span class="paren">)</span>
+
+<span class="identifier">server</span> <span class="operator">&lt;-</span> <span class="keyword">function</span><span class="paren">(</span><span class="identifier">input</span>, <span class="identifier">output</span><span class="paren">)</span> <span class="paren">{</span>
+    
+    <span class="identifier">output</span><span class="operator">$</span><span class="identifier">color_selector</span> <span class="operator">&lt;-</span> <span class="identifier">renderUI</span><span class="paren">(</span><span class="paren">{</span>
+        
+        <span class="identifier">selectInput</span><span class="paren">(</span><span class="identifier">inputId</span> <span class="operator">=</span> <span class="string">"color"</span>,
+                    <span class="identifier">label</span> <span class="operator">=</span> <span class="string">"Select color"</span>,
+                    <span class="identifier">choices</span> <span class="operator">=</span> <span class="identifier">color_list</span><span class="paren">[</span><span class="identifier">input</span><span class="operator">$</span><span class="identifier">color_family</span><span class="paren">]</span><span class="paren">)</span>
+        
+    <span class="paren">}</span><span class="paren">)</span>
+        
+    <span class="identifier">output</span><span class="operator">$</span><span class="identifier">color_chosen</span> <span class="operator">&lt;-</span> <span class="identifier">renderText</span><span class="paren">(</span><span class="paren">{</span>
+        <span class="identifier">paste</span><span class="paren">(</span><span class="string">"You chose this color:"</span>, <span class="identifier">input</span><span class="operator">$</span><span class="identifier">color</span><span class="paren">)</span>
+    <span class="paren">}</span><span class="paren">)</span>
+    
+    
+<span class="paren">}</span>
+
+<span class="identifier">shinyApp</span><span class="paren">(</span><span class="identifier">ui</span> <span class="operator">=</span> <span class="identifier">ui</span>, <span class="identifier">server</span> <span class="operator">=</span> <span class="identifier">server</span>,
+         <span class="identifier">options</span> <span class="operator">=</span> <span class="identifier">list</span><span class="paren">(</span><span class="identifier">height</span> <span class="operator">=</span> <span class="number">300</span><span class="paren">)</span><span class="paren">)</span></code></pre>
+<iframe width="100%" height="300" class="shiny-frame" src="./Shiny_files/saved_resource(1).html"></iframe>
+</div>
+</div>
+<div id="section-app-layout" class="section level1">
+<div name="app_layout" data-unique="app_layout"></div><h1><strong>App layout</strong></h1>
+<p>Designing the layout of the user interface is a critical component of app development. The goal is to make an app that is intuitive and friendly to use so people will actually want to use it! This requires thoughtful planning and lot of iterations as you test different layouts on your users.</p>
+<div id="section-basic-layout" class="section level2">
+<div name="basic_layout" data-unique="basic_layout"></div><h2>Basic layout</h2>
+<pre class="r"><code class="r"><span class="keyword">library</span><span class="paren">(</span><span class="identifier">shiny</span><span class="paren">)</span>
+
+<span class="identifier">ui</span> <span class="operator">&lt;-</span> <span class="identifier">fluidPage</span><span class="paren">(</span>
+    
+    <span class="identifier">titlePanel</span><span class="paren">(</span><span class="string">"title panel"</span><span class="paren">)</span>,
+    
+    <span class="identifier">sidebarLayout</span><span class="paren">(</span>
+        <span class="identifier">sidebarPanel</span><span class="paren">(</span> <span class="string">"sidebar panel"</span><span class="paren">)</span>,
+        <span class="identifier">mainPanel</span><span class="paren">(</span><span class="string">"main panel"</span><span class="paren">)</span>
+    <span class="paren">)</span>
+    
+<span class="paren">)</span>
+
+<span class="identifier">server</span> <span class="operator">&lt;-</span> <span class="keyword">function</span><span class="paren">(</span><span class="identifier">input</span>, <span class="identifier">output</span><span class="paren">)</span> <span class="paren">{</span><span class="paren">}</span>
+
+<span class="identifier">shinyApp</span><span class="paren">(</span><span class="identifier">ui</span> <span class="operator">=</span> <span class="identifier">ui</span>, <span class="identifier">server</span> <span class="operator">=</span> <span class="identifier">server</span><span class="paren">)</span></code></pre>
+<div class="figure">
+<img src="./Shiny_files/shiny_layout.png" alt="Basic app layout">
+<p class="caption">Basic app layout</p>
+</div>
+</div>
+<div id="section-basic-layout-with-tabs" class="section level2">
+<div name="basic_layout_with_tabs" data-unique="basic_layout_with_tabs"></div><h2>Basic layout with tabs</h2>
+<p>Another nice way to organize a layout is through tabs:</p>
+<pre class="r"><code class="r"><span class="keyword">library</span><span class="paren">(</span><span class="identifier">shiny</span><span class="paren">)</span>
+
+<span class="identifier">ui</span> <span class="operator">&lt;-</span> <span class="identifier">fluidPage</span><span class="paren">(</span>
+    
+    <span class="identifier">titlePanel</span><span class="paren">(</span><span class="string">"title panel"</span><span class="paren">)</span>,
+    
+    <span class="identifier">sidebarLayout</span><span class="paren">(</span>
+        <span class="identifier">sidebarPanel</span><span class="paren">(</span> <span class="string">"sidebar panel"</span><span class="paren">)</span>,
+        <span class="identifier">mainPanel</span><span class="paren">(</span><span class="identifier">tabsetPanel</span><span class="paren">(</span>
+            <span class="identifier">tabPanel</span><span class="paren">(</span><span class="string">"Plot"</span>, <span class="string">"put plot here!"</span><span class="paren">)</span>,
+            <span class="identifier">tabPanel</span><span class="paren">(</span><span class="string">"Summary"</span><span class="paren">)</span>,
+            <span class="identifier">tabPanel</span><span class="paren">(</span><span class="string">"Table"</span><span class="paren">)</span>
+        <span class="paren">)</span>
+        <span class="paren">)</span>
+    <span class="paren">)</span>
+    
+<span class="paren">)</span>
+
+<span class="identifier">server</span> <span class="operator">&lt;-</span> <span class="keyword">function</span><span class="paren">(</span><span class="identifier">input</span>, <span class="identifier">output</span><span class="paren">)</span> <span class="paren">{</span><span class="paren">}</span>
+
+<span class="identifier">shinyApp</span><span class="paren">(</span><span class="identifier">ui</span> <span class="operator">=</span> <span class="identifier">ui</span>, <span class="identifier">server</span> <span class="operator">=</span> <span class="identifier">server</span><span class="paren">)</span></code></pre>
+<div class="figure">
+<img src="./Shiny_files/shiny_tabsets.png" alt="Basic app layout with tabsets">
+<p class="caption">Basic app layout with tabsets</p>
+</div>
+</div>
+<div id="section-shinydashboard" class="section level2">
+<div name="shinydashboard" data-unique="shinydashboard"></div><h2>shinydashboard</h2>
+<p>A popular and easy way to create dashboard apps is with <a href="https://rstudio.github.io/shinydashboard/">shinydashboard</a>.</p>
+<p>You need to specify three parts:</p>
+<ul>
+<li>header</li>
+<li>sidebar</li>
+<li>body</li>
+</ul>
+<p>Here’s the basic skeleton of how to specify these parts:</p>
+<pre class="r"><code class="r"><span class="keyword">library</span><span class="paren">(</span><span class="identifier">shiny</span><span class="paren">)</span>
+<span class="keyword">library</span><span class="paren">(</span><span class="identifier">shinydashboard</span><span class="paren">)</span>
+
+<span class="identifier">ui</span> <span class="operator">&lt;-</span> <span class="identifier">dashboardPage</span><span class="paren">(</span>
+    <span class="identifier">dashboardHeader</span><span class="paren">(</span><span class="paren">)</span>,
+    <span class="identifier">dashboardSidebar</span><span class="paren">(</span><span class="paren">)</span>,
+    <span class="identifier">dashboardBody</span><span class="paren">(</span><span class="paren">)</span>
+<span class="paren">)</span>
+
+<span class="identifier">server</span> <span class="operator">&lt;-</span> <span class="keyword">function</span><span class="paren">(</span><span class="identifier">input</span>, <span class="identifier">output</span><span class="paren">)</span> <span class="paren">{</span> <span class="paren">}</span>
+
+<span class="identifier">shinyApp</span><span class="paren">(</span><span class="identifier">ui</span>, <span class="identifier">server</span><span class="paren">)</span></code></pre>
+<p>Here’s an example with some parts filled out:</p>
+<pre class="r"><code class="r"><span class="keyword">library</span><span class="paren">(</span><span class="identifier">shiny</span><span class="paren">)</span>
+<span class="keyword">library</span><span class="paren">(</span><span class="identifier">shinydashboard</span><span class="paren">)</span>
+
+<span class="identifier">ui</span> <span class="operator">&lt;-</span> <span class="identifier">dashboardPage</span><span class="paren">(</span>
+    <span class="identifier">dashboardHeader</span><span class="paren">(</span><span class="identifier">title</span> <span class="operator">=</span> <span class="string">"My Dashboard"</span><span class="paren">)</span>,
+    <span class="identifier">dashboardSidebar</span><span class="paren">(</span>
+        <span class="identifier">sidebarMenu</span><span class="paren">(</span>
+            <span class="identifier">menuItem</span><span class="paren">(</span><span class="string">"About"</span>, <span class="identifier">tabName</span> <span class="operator">=</span> <span class="string">"about_tab"</span>, <span class="identifier">icon</span> <span class="operator">=</span> <span class="identifier">icon</span><span class="paren">(</span><span class="string">"info"</span><span class="paren">)</span><span class="paren">)</span>
+        <span class="paren">)</span>
+    <span class="paren">)</span>,
+    <span class="identifier">dashboardBody</span><span class="paren">(</span><span class="string">"This is the body!"</span><span class="paren">)</span>
+<span class="paren">)</span>
+
+<span class="identifier">server</span> <span class="operator">&lt;-</span> <span class="keyword">function</span><span class="paren">(</span><span class="identifier">input</span>, <span class="identifier">output</span><span class="paren">)</span> <span class="paren">{</span> <span class="paren">}</span>
+
+<span class="identifier">shinyApp</span><span class="paren">(</span><span class="identifier">ui</span>, <span class="identifier">server</span><span class="paren">)</span></code></pre>
+<div class="figure">
+<img src="./Shiny_files/shinydashboard_filled.png" alt="shinydashboard">
+<p class="caption">shinydashboard</p>
+</div>
+</div>
+</div>
+<div id="section-dealing-with-data" class="section level1">
+<div name="dealing_with_data" data-unique="dealing_with_data"></div><h1><strong>Dealing with data</strong></h1>
+<p>Now that we know how to set up an app, what are some ways to interact with data?</p>
+<div id="section-global.r" class="section level2">
+<div name="globalr" data-unique="globalr"></div><h2>global.R</h2>
+<p>Data can be loaded from files in a Shiny specific file called <strong>global.R</strong>. Anything run in that file will be available in the global environment, which means that both <strong>ui.R</strong> and <strong>server.R</strong> can access the variables and functions.</p>
+<p>Things that you can typically include in <strong>global.R</strong>:</p>
+<ul>
+<li>reading in data files <code>my_data &lt;- read_csv("data/my_data_file.csv")</code></li>
+<li>loading packages <code>library(dplyr)</code></li>
+<li>sourcing helper scripts <code>source(my_utils.R)</code></li>
+<li>constant variables <code>my_colors &lt;- c("orange", "blue")</code></li>
+<li>helper functions that aren’t Shiny reactive functions <code>calculate_percent &lt;- function(...)</code></li>
+<li>database connnections <code>db_conn &lt;- dplyr::src_postgres(...db_credentials...)</code></li>
+</ul>
+</div>
+<div id="section-reactive-expressions" class="section level2">
+<div name="reactive_expressions" data-unique="reactive_expressions"></div><h2>Reactive expressions</h2>
+<p>Reactive expressions are a way for your app to update efficiently when users interact with it. They are a bit nuanced to use - here’s the RStudio tutorial on them <a href="https://shiny.rstudio.com/tutorial/lesson6/" class="uri">https://shiny.rstudio.com/tutorial/lesson6/</a>.</p>
+<p>In general, any code you put in a <code>render</code> function will continually be updated, even if you don’t necessarily need them to be rerun every single time. This will slow down your app considerably. If you want to use data inside a <code>render</code> function that does not need to be updated every time if <code>input</code> doesn’t change, then you can wrap your data inside a reactive expression that can be called inside <code>render</code>. The reactive expression will only recalculate if <code>input</code> has changed.</p>
+<pre class="r"><code class="r"><span class="keyword">library</span><span class="paren">(</span><span class="identifier">shiny</span><span class="paren">)</span>
+
+<span class="identifier">ui</span> <span class="operator">&lt;-</span> <span class="identifier">fluidPage</span><span class="paren">(</span>
+    
+    <span class="identifier">sliderInput</span><span class="paren">(</span><span class="identifier">inputId</span> <span class="operator">=</span> <span class="string">"rate"</span>,
+                <span class="identifier">label</span> <span class="operator">=</span> <span class="string">"Choose rate"</span>,
+                <span class="identifier">min</span> <span class="operator">=</span> <span class="number">0</span>,
+                <span class="identifier">max</span> <span class="operator">=</span> <span class="number">1</span>, 
+                <span class="identifier">value</span> <span class="operator">=</span> <span class="number">0.5</span><span class="paren">)</span>,
+    
+    <span class="identifier">textOutput</span><span class="paren">(</span><span class="identifier">outputId</span> <span class="operator">=</span> <span class="string">"pct_std"</span><span class="paren">)</span>,
+    
+    <span class="identifier">textOutput</span><span class="paren">(</span><span class="identifier">outputId</span> <span class="operator">=</span> <span class="string">"pct_half"</span><span class="paren">)</span>
+    
+<span class="paren">)</span>
+
+<span class="identifier">server</span> <span class="operator">&lt;-</span> <span class="keyword">function</span><span class="paren">(</span><span class="identifier">input</span>, <span class="identifier">output</span><span class="paren">)</span> <span class="paren">{</span>
+    
+    <span class="identifier">my_percent</span> <span class="operator">&lt;-</span> <span class="identifier">reactive</span><span class="paren">(</span><span class="paren">{</span>
+        <span class="identifier">input</span><span class="operator">$</span><span class="identifier">rate</span> <span class="operator">*</span> <span class="number">100</span>
+    <span class="paren">}</span><span class="paren">)</span>
+    
+    <span class="identifier">my_half_percent</span> <span class="operator">&lt;-</span> <span class="identifier">reactive</span><span class="paren">(</span><span class="paren">{</span>
+        <span class="identifier">my_percent</span><span class="paren">(</span><span class="paren">)</span> <span class="operator">/</span> <span class="number">2</span>
+    <span class="paren">}</span><span class="paren">)</span>
+    
+    <span class="identifier">output</span><span class="operator">$</span><span class="identifier">pct_std</span> <span class="operator">&lt;-</span> <span class="identifier">renderText</span><span class="paren">(</span><span class="paren">{</span>
+        <span class="identifier">paste0</span><span class="paren">(</span><span class="string">"This is my percent: "</span>, <span class="identifier">my_percent</span><span class="paren">(</span><span class="paren">)</span>, <span class="string">"%"</span><span class="paren">)</span>
+    <span class="paren">}</span><span class="paren">)</span>
+    
+    <span class="identifier">output</span><span class="operator">$</span><span class="identifier">pct_half</span> <span class="operator">&lt;-</span> <span class="identifier">renderText</span><span class="paren">(</span><span class="paren">{</span>
+        <span class="identifier">paste0</span><span class="paren">(</span><span class="string">"This is my percent by half: "</span>, <span class="identifier">my_half_percent</span><span class="paren">(</span><span class="paren">)</span>, <span class="string">"%"</span><span class="paren">)</span>
+    <span class="paren">}</span><span class="paren">)</span>
+    
+<span class="paren">}</span>
+
+<span class="identifier">shinyApp</span><span class="paren">(</span><span class="identifier">ui</span> <span class="operator">=</span> <span class="identifier">ui</span>, <span class="identifier">server</span> <span class="operator">=</span> <span class="identifier">server</span>,
+         <span class="identifier">options</span> <span class="operator">=</span> <span class="identifier">list</span><span class="paren">(</span><span class="identifier">height</span> <span class="operator">=</span> <span class="number">200</span><span class="paren">)</span><span class="paren">)</span></code></pre>
+<iframe width="100%" height="200" class="shiny-frame" src="./Shiny_files/saved_resource(2).html"></iframe>
+<ul>
+<li>Reactive expressions depend on the status of <code>input</code> values or values from other reactive expressions.</li>
+<li>You can create reactive expressions with <code>reactive({})</code>.</li>
+<li>You can access a reactive expression with its name followed by <code>()</code>.</li>
+<li>You can only call a reactive expression within a <code>reactive</code> or <code>render</code> function.</li>
+</ul>
+</div>
+</div>
+<div id="section-interactive-visualization" class="section level1">
+<div name="interactive_visualization" data-unique="interactive_visualization"></div><h1><strong>Interactive visualization</strong></h1>
+<p>There are several well-developed packages for generating interactive graphics in a Shiny app:</p>
+<ul>
+<li><a href="https://shiny.rstudio.com/articles/plot-interaction.html">Shiny built-in support for interacting with static plots</a></li>
+<li><a href="https://plot.ly/">plotly</a></li>
+<li><a href="https://rstudio.github.io/leaflet/shiny.html">Leaflet</a> for interactive maps</li>
+<li><a href="http://www.htmlwidgets.org/">htmlwidgets for R</a> - use JavaScript visualization libraries &amp; <a href="http://rstudio.github.io/crosstalk/">Crosstalk</a> - add-on to htmlwidgets</li>
+<li><a href="http://ggvis.rstudio.com/interactivity.html">ggvis</a></li>
+</ul>
+<pre class="r"><code class="r"><span class="identifier">suppressMessages</span><span class="paren">(</span><span class="keyword">library</span><span class="paren">(</span><span class="identifier">plotly</span><span class="paren">)</span><span class="paren">)</span>
+<span class="keyword">library</span><span class="paren">(</span><span class="identifier">shiny</span><span class="paren">)</span>
+
+<span class="identifier">ui</span> <span class="operator">&lt;-</span> <span class="identifier">fluidPage</span><span class="paren">(</span>
+  <span class="identifier">plotlyOutput</span><span class="paren">(</span><span class="string">"plot"</span><span class="paren">)</span>,
+  <span class="identifier">verbatimTextOutput</span><span class="paren">(</span><span class="string">"hover"</span><span class="paren">)</span>,
+  <span class="identifier">verbatimTextOutput</span><span class="paren">(</span><span class="string">"click"</span><span class="paren">)</span>
+<span class="paren">)</span>
+
+<span class="identifier">server</span> <span class="operator">&lt;-</span> <span class="keyword">function</span><span class="paren">(</span><span class="identifier">input</span>, <span class="identifier">output</span><span class="paren">)</span> <span class="paren">{</span>
+
+  <span class="identifier">output</span><span class="operator">$</span><span class="identifier">plot</span> <span class="operator">&lt;-</span> <span class="identifier">renderPlotly</span><span class="paren">(</span><span class="paren">{</span>
+    <span class="identifier">plot_ly</span><span class="paren">(</span><span class="identifier">x</span> <span class="operator">=</span> <span class="identifier">rnorm</span><span class="paren">(</span><span class="number">10</span><span class="paren">)</span>, <span class="identifier">y</span> <span class="operator">=</span> <span class="identifier">rnorm</span><span class="paren">(</span><span class="number">10</span><span class="paren">)</span>, <span class="identifier">z</span> <span class="operator">=</span> <span class="identifier">rnorm</span><span class="paren">(</span><span class="number">10</span><span class="paren">)</span>, <span class="identifier">type</span> <span class="operator">=</span> <span class="string">"scatter3d"</span><span class="paren">)</span>
+  <span class="paren">}</span><span class="paren">)</span>
+
+  <span class="identifier">output</span><span class="operator">$</span><span class="identifier">hover</span> <span class="operator">&lt;-</span> <span class="identifier">renderPrint</span><span class="paren">(</span><span class="paren">{</span>
+    <span class="identifier">d</span> <span class="operator">&lt;-</span> <span class="identifier">event_data</span><span class="paren">(</span><span class="string">"plotly_hover"</span><span class="paren">)</span>
+    <span class="keyword">if</span> <span class="paren">(</span><span class="identifier">is.null</span><span class="paren">(</span><span class="identifier">d</span><span class="paren">)</span><span class="paren">)</span> <span class="string">"Hover events appear here (unhover to clear)"</span> <span class="keyword">else</span> <span class="identifier">d</span>
+  <span class="paren">}</span><span class="paren">)</span>
+
+  <span class="identifier">output</span><span class="operator">$</span><span class="identifier">click</span> <span class="operator">&lt;-</span> <span class="identifier">renderPrint</span><span class="paren">(</span><span class="paren">{</span>
+    <span class="identifier">d</span> <span class="operator">&lt;-</span> <span class="identifier">event_data</span><span class="paren">(</span><span class="string">"plotly_click"</span><span class="paren">)</span>
+    <span class="keyword">if</span> <span class="paren">(</span><span class="identifier">is.null</span><span class="paren">(</span><span class="identifier">d</span><span class="paren">)</span><span class="paren">)</span> <span class="string">"Click events appear here (double-click to clear)"</span> <span class="keyword">else</span> <span class="identifier">d</span>
+  <span class="paren">}</span><span class="paren">)</span>
+
+<span class="paren">}</span>
+
+<span class="identifier">shinyApp</span><span class="paren">(</span><span class="identifier">ui</span>, <span class="identifier">server</span>,
+         <span class="identifier">options</span> <span class="operator">=</span> <span class="identifier">list</span><span class="paren">(</span><span class="identifier">height</span> <span class="operator">=</span> <span class="number">800</span><span class="paren">)</span><span class="paren">)</span></code></pre>
+<iframe width="100%" height="800" class="shiny-frame" src="./Shiny_files/saved_resource(3).html"></iframe>
+</div>
+<div id="section-more-cool-shiny-stuff" class="section level1">
+<div name="more_cool_shiny_stuff" data-unique="more_cool_shiny_stuff"></div><h1><strong>More cool Shiny stuff</strong></h1>
+<div id="section-datatables" class="section level2">
+<div name="datatables" data-unique="datatables"></div><h2>DataTables</h2>
+<p>The Javascript library DataTables provides very powerful functionality to working with data tables in a web browser. Shiny apps can tap this through the R package <a href="https://rstudio.github.io/DT/">DT</a> that interfaces with DataTables.</p>
+<p>Some of the useful things implemented are:</p>
+<ul>
+<li>selecting rows in the table</li>
+<li>search capabilities</li>
+<li>sorting columns</li>
+<li>filter columns</li>
+<li>showing user-specified number of rows</li>
+<li>styling such as highlighting and formatting</li>
+</ul>
+<p>Here’s a minimal example that you can run in the R console:</p>
+<pre class="r"><code class="r"><span class="identifier">suppressMessages</span><span class="paren">(</span><span class="keyword">library</span><span class="paren">(</span><span class="identifier">DT</span><span class="paren">)</span><span class="paren">)</span>
+<span class="identifier">datatable</span><span class="paren">(</span><span class="identifier">iris</span><span class="paren">)</span></code></pre>
+<div id="htmlwidget-81c2311b3cd801c73d94" style="width:100%;height:auto;" class="datatables html-widget html-widget-static-bound"><div id="DataTables_Table_0_wrapper" class="dataTables_wrapper no-footer"><div class="dataTables_length" id="DataTables_Table_0_length"><label>Show <select name="DataTables_Table_0_length" aria-controls="DataTables_Table_0" class=""><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> entries</label></div><div id="DataTables_Table_0_filter" class="dataTables_filter"><label>Search:<input type="search" class="" placeholder="" aria-controls="DataTables_Table_0"></label></div><table class="display dataTable no-footer" id="DataTables_Table_0" role="grid" aria-describedby="DataTables_Table_0_info">
+  <thead>
+    <tr role="row"><th class="sorting_disabled" rowspan="1" colspan="1" aria-label=" "> </th><th class="dt-right sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Sepal.Length: activate to sort column ascending">Sepal.Length</th><th class="dt-right sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Sepal.Width: activate to sort column ascending">Sepal.Width</th><th class="dt-right sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Petal.Length: activate to sort column ascending">Petal.Length</th><th class="dt-right sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Petal.Width: activate to sort column ascending">Petal.Width</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Species: activate to sort column ascending">Species</th></tr>
+  </thead>
+<tbody><tr role="row" class="odd"><td>1</td><td class=" dt-right">5.1</td><td class=" dt-right">3.5</td><td class=" dt-right">1.4</td><td class=" dt-right">0.2</td><td>setosa</td></tr><tr role="row" class="even"><td>2</td><td class=" dt-right">4.9</td><td class=" dt-right">3</td><td class=" dt-right">1.4</td><td class=" dt-right">0.2</td><td>setosa</td></tr><tr role="row" class="odd"><td>3</td><td class=" dt-right">4.7</td><td class=" dt-right">3.2</td><td class=" dt-right">1.3</td><td class=" dt-right">0.2</td><td>setosa</td></tr><tr role="row" class="even"><td>4</td><td class=" dt-right">4.6</td><td class=" dt-right">3.1</td><td class=" dt-right">1.5</td><td class=" dt-right">0.2</td><td>setosa</td></tr><tr role="row" class="odd"><td>5</td><td class=" dt-right">5</td><td class=" dt-right">3.6</td><td class=" dt-right">1.4</td><td class=" dt-right">0.2</td><td>setosa</td></tr><tr role="row" class="even"><td>6</td><td class=" dt-right">5.4</td><td class=" dt-right">3.9</td><td class=" dt-right">1.7</td><td class=" dt-right">0.4</td><td>setosa</td></tr><tr role="row" class="odd"><td>7</td><td class=" dt-right">4.6</td><td class=" dt-right">3.4</td><td class=" dt-right">1.4</td><td class=" dt-right">0.3</td><td>setosa</td></tr><tr role="row" class="even"><td>8</td><td class=" dt-right">5</td><td class=" dt-right">3.4</td><td class=" dt-right">1.5</td><td class=" dt-right">0.2</td><td>setosa</td></tr><tr role="row" class="odd"><td>9</td><td class=" dt-right">4.4</td><td class=" dt-right">2.9</td><td class=" dt-right">1.4</td><td class=" dt-right">0.2</td><td>setosa</td></tr><tr role="row" class="even"><td>10</td><td class=" dt-right">4.9</td><td class=" dt-right">3.1</td><td class=" dt-right">1.5</td><td class=" dt-right">0.1</td><td>setosa</td></tr></tbody></table><div class="dataTables_info" id="DataTables_Table_0_info" role="status" aria-live="polite">Showing 1 to 10 of 150 entries</div><div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_0_paginate"><a class="paginate_button previous disabled" aria-controls="DataTables_Table_0" data-dt-idx="0" tabindex="0" id="DataTables_Table_0_previous">Previous</a><span><a class="paginate_button current" aria-controls="DataTables_Table_0" data-dt-idx="1" tabindex="0">1</a><a class="paginate_button " aria-controls="DataTables_Table_0" data-dt-idx="2" tabindex="0">2</a><a class="paginate_button " aria-controls="DataTables_Table_0" data-dt-idx="3" tabindex="0">3</a><a class="paginate_button " aria-controls="DataTables_Table_0" data-dt-idx="4" tabindex="0">4</a><a class="paginate_button " aria-controls="DataTables_Table_0" data-dt-idx="5" tabindex="0">5</a><span class="ellipsis">…</span><a class="paginate_button " aria-controls="DataTables_Table_0" data-dt-idx="6" tabindex="0">15</a></span><a class="paginate_button next" aria-controls="DataTables_Table_0" data-dt-idx="7" tabindex="0" id="DataTables_Table_0_next">Next</a></div></div></div>
+<script type="application/json" data-for="htmlwidget-81c2311b3cd801c73d94">{"x":{"filter":"none","data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50","51","52","53","54","55","56","57","58","59","60","61","62","63","64","65","66","67","68","69","70","71","72","73","74","75","76","77","78","79","80","81","82","83","84","85","86","87","88","89","90","91","92","93","94","95","96","97","98","99","100","101","102","103","104","105","106","107","108","109","110","111","112","113","114","115","116","117","118","119","120","121","122","123","124","125","126","127","128","129","130","131","132","133","134","135","136","137","138","139","140","141","142","143","144","145","146","147","148","149","150"],[5.1,4.9,4.7,4.6,5,5.4,4.6,5,4.4,4.9,5.4,4.8,4.8,4.3,5.8,5.7,5.4,5.1,5.7,5.1,5.4,5.1,4.6,5.1,4.8,5,5,5.2,5.2,4.7,4.8,5.4,5.2,5.5,4.9,5,5.5,4.9,4.4,5.1,5,4.5,4.4,5,5.1,4.8,5.1,4.6,5.3,5,7,6.4,6.9,5.5,6.5,5.7,6.3,4.9,6.6,5.2,5,5.9,6,6.1,5.6,6.7,5.6,5.8,6.2,5.6,5.9,6.1,6.3,6.1,6.4,6.6,6.8,6.7,6,5.7,5.5,5.5,5.8,6,5.4,6,6.7,6.3,5.6,5.5,5.5,6.1,5.8,5,5.6,5.7,5.7,6.2,5.1,5.7,6.3,5.8,7.1,6.3,6.5,7.6,4.9,7.3,6.7,7.2,6.5,6.4,6.8,5.7,5.8,6.4,6.5,7.7,7.7,6,6.9,5.6,7.7,6.3,6.7,7.2,6.2,6.1,6.4,7.2,7.4,7.9,6.4,6.3,6.1,7.7,6.3,6.4,6,6.9,6.7,6.9,5.8,6.8,6.7,6.7,6.3,6.5,6.2,5.9],[3.5,3,3.2,3.1,3.6,3.9,3.4,3.4,2.9,3.1,3.7,3.4,3,3,4,4.4,3.9,3.5,3.8,3.8,3.4,3.7,3.6,3.3,3.4,3,3.4,3.5,3.4,3.2,3.1,3.4,4.1,4.2,3.1,3.2,3.5,3.6,3,3.4,3.5,2.3,3.2,3.5,3.8,3,3.8,3.2,3.7,3.3,3.2,3.2,3.1,2.3,2.8,2.8,3.3,2.4,2.9,2.7,2,3,2.2,2.9,2.9,3.1,3,2.7,2.2,2.5,3.2,2.8,2.5,2.8,2.9,3,2.8,3,2.9,2.6,2.4,2.4,2.7,2.7,3,3.4,3.1,2.3,3,2.5,2.6,3,2.6,2.3,2.7,3,2.9,2.9,2.5,2.8,3.3,2.7,3,2.9,3,3,2.5,2.9,2.5,3.6,3.2,2.7,3,2.5,2.8,3.2,3,3.8,2.6,2.2,3.2,2.8,2.8,2.7,3.3,3.2,2.8,3,2.8,3,2.8,3.8,2.8,2.8,2.6,3,3.4,3.1,3,3.1,3.1,3.1,2.7,3.2,3.3,3,2.5,3,3.4,3],[1.4,1.4,1.3,1.5,1.4,1.7,1.4,1.5,1.4,1.5,1.5,1.6,1.4,1.1,1.2,1.5,1.3,1.4,1.7,1.5,1.7,1.5,1,1.7,1.9,1.6,1.6,1.5,1.4,1.6,1.6,1.5,1.5,1.4,1.5,1.2,1.3,1.4,1.3,1.5,1.3,1.3,1.3,1.6,1.9,1.4,1.6,1.4,1.5,1.4,4.7,4.5,4.9,4,4.6,4.5,4.7,3.3,4.6,3.9,3.5,4.2,4,4.7,3.6,4.4,4.5,4.1,4.5,3.9,4.8,4,4.9,4.7,4.3,4.4,4.8,5,4.5,3.5,3.8,3.7,3.9,5.1,4.5,4.5,4.7,4.4,4.1,4,4.4,4.6,4,3.3,4.2,4.2,4.2,4.3,3,4.1,6,5.1,5.9,5.6,5.8,6.6,4.5,6.3,5.8,6.1,5.1,5.3,5.5,5,5.1,5.3,5.5,6.7,6.9,5,5.7,4.9,6.7,4.9,5.7,6,4.8,4.9,5.6,5.8,6.1,6.4,5.6,5.1,5.6,6.1,5.6,5.5,4.8,5.4,5.6,5.1,5.1,5.9,5.7,5.2,5,5.2,5.4,5.1],[0.2,0.2,0.2,0.2,0.2,0.4,0.3,0.2,0.2,0.1,0.2,0.2,0.1,0.1,0.2,0.4,0.4,0.3,0.3,0.3,0.2,0.4,0.2,0.5,0.2,0.2,0.4,0.2,0.2,0.2,0.2,0.4,0.1,0.2,0.2,0.2,0.2,0.1,0.2,0.2,0.3,0.3,0.2,0.6,0.4,0.3,0.2,0.2,0.2,0.2,1.4,1.5,1.5,1.3,1.5,1.3,1.6,1,1.3,1.4,1,1.5,1,1.4,1.3,1.4,1.5,1,1.5,1.1,1.8,1.3,1.5,1.2,1.3,1.4,1.4,1.7,1.5,1,1.1,1,1.2,1.6,1.5,1.6,1.5,1.3,1.3,1.3,1.2,1.4,1.2,1,1.3,1.2,1.3,1.3,1.1,1.3,2.5,1.9,2.1,1.8,2.2,2.1,1.7,1.8,1.8,2.5,2,1.9,2.1,2,2.4,2.3,1.8,2.2,2.3,1.5,2.3,2,2,1.8,2.1,1.8,1.8,1.8,2.1,1.6,1.9,2,2.2,1.5,1.4,2.3,2.4,1.8,1.8,2.1,2.4,2.3,1.9,2.3,2.5,2.3,1.9,2,2.3,1.8],["setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","versicolor","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica","virginica"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> \u003c/th>\n      <th>Sepal.Length\u003c/th>\n      <th>Sepal.Width\u003c/th>\n      <th>Petal.Length\u003c/th>\n      <th>Petal.Width\u003c/th>\n      <th>Species\u003c/th>\n    \u003c/tr>\n  \u003c/thead>\n\u003c/table>","options":{"columnDefs":[{"className":"dt-right","targets":[1,2,3,4]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false},"selection":{"mode":"multiple","selected":null,"target":"row"}},"evals":[],"jsHooks":[]}</script>
+<p>Here’s how that table gets into a Shiny app:</p>
+<pre class="r"><code class="r"><span class="keyword">library</span><span class="paren">(</span><span class="identifier">shiny</span><span class="paren">)</span>
+
+<span class="identifier">ui</span> <span class="operator">&lt;-</span> <span class="identifier">fluidPage</span><span class="paren">(</span>
+    <span class="identifier">DT</span><span class="operator">:</span><span class="operator">:</span><span class="identifier">dataTableOutput</span><span class="paren">(</span><span class="string">'tbl'</span><span class="paren">)</span>
+<span class="paren">)</span>
+
+<span class="identifier">server</span> <span class="operator">&lt;-</span> <span class="keyword">function</span><span class="paren">(</span><span class="identifier">input</span>, <span class="identifier">output</span><span class="paren">)</span> <span class="paren">{</span>
+    <span class="identifier">output</span><span class="operator">$</span><span class="identifier">tbl</span> <span class="operator">=</span> <span class="identifier">DT</span><span class="operator">:</span><span class="operator">:</span><span class="identifier">renderDataTable</span><span class="paren">(</span>
+        <span class="identifier">iris</span>
+    <span class="paren">)</span>
+<span class="paren">}</span>
+
+<span class="identifier">shinyApp</span><span class="paren">(</span><span class="identifier">ui</span>, <span class="identifier">server</span><span class="paren">)</span></code></pre>
+</div>
+<div id="section-dynamic-document-generation-pdfhtmlword" class="section level2">
+<div name="dynamic_document_generation_(pdfhtmlword)" data-unique="dynamic_document_generation_(pdfhtmlword)"></div><h2>Dynamic document generation (pdf/html/word)</h2>
+<p>You can enable users to dynamically compile Rmarkdown into documents that he/she can then download. For example, a scientist can choose an experiment from a table in an app, look at the results in different kinds of plots, and then select certain plots to be included in an official report generated by the app.</p>
+<p>Here’s a working example that takes a name and uses that as the author of a report.<br>
+You’ll notice that it needs a rmarkdown template to fill in the user inputs and compile. The header of the file <code>report.Rmd</code> looks like:</p>
+<pre class="r"><code class="r"><span class="operator">-</span><span class="operator">-</span><span class="operator">-</span>
+<span class="identifier">title</span><span class="operator">:</span> <span class="string">"My Report"</span>
+<span class="identifier">author</span><span class="operator">:</span> <span class="string">"`r input$user_name`"</span>
+<span class="identifier">date</span><span class="operator">:</span> <span class="string">"`r format(Sys.time(), '%B %d, %Y')`"</span>
+<span class="identifier">output</span><span class="operator">:</span> <span class="identifier">html_document</span>
+<span class="operator">-</span><span class="operator">-</span><span class="operator">-</span></code></pre>
+<pre class="r"><code class="r"><span class="keyword">library</span><span class="paren">(</span><span class="identifier">shiny</span><span class="paren">)</span>
+<span class="keyword">library</span><span class="paren">(</span><span class="identifier">rmarkdown</span><span class="paren">)</span>
+
+<span class="identifier">ui</span> <span class="operator">&lt;-</span> <span class="identifier">fluidPage</span><span class="paren">(</span>
+    
+    <span class="identifier">textInput</span><span class="paren">(</span><span class="identifier">inputId</span> <span class="operator">=</span> <span class="string">'user_name'</span>,
+              <span class="identifier">label</span> <span class="operator">=</span> <span class="string">'Name'</span><span class="paren">)</span>,
+    
+    <span class="identifier">radioButtons</span><span class="paren">(</span><span class="identifier">inputId</span> <span class="operator">=</span> <span class="string">'format'</span>, 
+                 <span class="identifier">label</span> <span class="operator">=</span> <span class="string">'Run Report Format'</span>, 
+                 <span class="identifier">c</span><span class="paren">(</span><span class="string">'PDF'</span>, <span class="string">'HTML'</span>, <span class="string">'Word'</span><span class="paren">)</span>,
+                 <span class="identifier">inline</span> <span class="operator">=</span> <span class="literal">TRUE</span><span class="paren">)</span>,
+    
+    <span class="identifier">downloadButton</span><span class="paren">(</span><span class="string">'generate_report'</span><span class="paren">)</span>
+    
+<span class="paren">)</span>
+
+<span class="identifier">server</span> <span class="operator">&lt;-</span> <span class="keyword">function</span><span class="paren">(</span><span class="identifier">input</span>, <span class="identifier">output</span><span class="paren">)</span> <span class="paren">{</span>
+    
+    <span class="identifier">output</span><span class="operator">$</span><span class="identifier">generate_report</span> <span class="operator">&lt;-</span> <span class="identifier">downloadHandler</span><span class="paren">(</span>
+        
+        <span class="identifier">filename</span> <span class="operator">=</span> <span class="keyword">function</span><span class="paren">(</span><span class="paren">)</span> <span class="paren">{</span>
+            
+            <span class="identifier">paste0</span><span class="paren">(</span><span class="string">"my_report"</span>, <span class="string">"."</span>,
+                   <span class="keyword">switch</span><span class="paren">(</span>
+                       <span class="identifier">input</span><span class="operator">$</span><span class="identifier">format</span>, <span class="identifier">PDF</span> <span class="operator">=</span> <span class="string">'pdf'</span>, <span class="identifier">HTML</span> <span class="operator">=</span> <span class="string">'html'</span>, <span class="identifier">Word</span> <span class="operator">=</span> <span class="string">'docx'</span>
+                   <span class="paren">)</span><span class="paren">)</span>
+            
+        <span class="paren">}</span>,
+        
+        <span class="identifier">content</span> <span class="operator">=</span> <span class="keyword">function</span><span class="paren">(</span><span class="identifier">file</span><span class="paren">)</span> <span class="paren">{</span>
+            
+            <span class="identifier">markdownFile</span> <span class="operator">&lt;-</span> <span class="string">'report.Rmd'</span>
+            <span class="identifier">src</span> <span class="operator">&lt;-</span> <span class="identifier">normalizePath</span><span class="paren">(</span><span class="identifier">markdownFile</span><span class="paren">)</span>
+
+            <span class="identifier">owd</span> <span class="operator">&lt;-</span> <span class="identifier">setwd</span><span class="paren">(</span><span class="identifier">tempdir</span><span class="paren">(</span><span class="paren">)</span><span class="paren">)</span>
+            <span class="identifier">on.exit</span><span class="paren">(</span><span class="identifier">setwd</span><span class="paren">(</span><span class="identifier">owd</span><span class="paren">)</span><span class="paren">)</span>
+            <span class="identifier">file.copy</span><span class="paren">(</span><span class="identifier">src</span>, <span class="identifier">markdownFile</span>, <span class="identifier">overwrite</span> <span class="operator">=</span> <span class="literal">TRUE</span><span class="paren">)</span>
+
+            <span class="identifier">out</span> <span class="operator">&lt;-</span> <span class="identifier">render</span><span class="paren">(</span><span class="identifier">markdownFile</span>, <span class="keyword">switch</span><span class="paren">(</span>
+                <span class="identifier">input</span><span class="operator">$</span><span class="identifier">format</span>,
+                <span class="identifier">PDF</span> <span class="operator">=</span> <span class="identifier">pdf_document</span><span class="paren">(</span><span class="paren">)</span>, <span class="identifier">HTML</span> <span class="operator">=</span> <span class="identifier">html_document</span><span class="paren">(</span><span class="paren">)</span>, <span class="identifier">Word</span> <span class="operator">=</span> <span class="identifier">word_document</span><span class="paren">(</span><span class="paren">)</span>
+            <span class="paren">)</span><span class="paren">)</span>
+            <span class="identifier">file.rename</span><span class="paren">(</span><span class="identifier">out</span>, <span class="identifier">file</span><span class="paren">)</span>
+            
+        <span class="paren">}</span>
+    <span class="paren">)</span>
+    
+<span class="paren">}</span>
+
+<span class="identifier">shinyApp</span><span class="paren">(</span><span class="identifier">ui</span> <span class="operator">=</span> <span class="identifier">ui</span>, <span class="identifier">server</span> <span class="operator">=</span> <span class="identifier">server</span>,
+         <span class="identifier">options</span> <span class="operator">=</span> <span class="identifier">list</span><span class="paren">(</span><span class="identifier">height</span> <span class="operator">=</span> <span class="number">300</span><span class="paren">)</span><span class="paren">)</span></code></pre>
+<iframe width="100%" height="300" class="shiny-frame" src="./Shiny_files/saved_resource(4).html"></iframe>
+</div>
+<div id="section-shiny-modules" class="section level2">
+<div name="shiny_modules" data-unique="shiny_modules"></div><h2>Shiny modules</h2>
+<p>Large and complex Shiny apps will have many many lines of code. Having it all in just one or two files can get very disorganized and unreadable. Just like how we modularize reusable R code into functions, we can modularize Shiny code into <a href="https://shiny.rstudio.com/articles/modules.html">Shiny modules</a>!</p>
+<p>You can construct a Shiny module with two functions - one for the UI and one for the server.</p>
+<p>This lecture won’t go into detail on how it works - it can get complicated but here’s a simple module that will function if you run it.</p>
+<p>Some key points:</p>
+<ul>
+<li><code>linkedScatter</code> is the module - <code>linkedScatterUI()</code> specifies the UI, <code>linkedScatter()</code> specifies the server part of the module (this requires the <code>session</code> argument after <code>input</code> and <code>output</code>).</li>
+<li>You use <code>callModule()</code> to call the module in the main server part.</li>
+<li>Object ids need to be wrapped with the namespace function (<code>NS()</code>) in the module so that it enforces unique ids across the entire app.</li>
+<li>You can return things with a module and supply it as an input into another module.</li>
+</ul>
+<pre class="r"><code class="r"><span class="keyword">library</span><span class="paren">(</span><span class="identifier">shiny</span><span class="paren">)</span>
+
+<span class="identifier">linkedScatterUI</span> <span class="operator">&lt;-</span> <span class="keyword">function</span><span class="paren">(</span><span class="identifier">id</span><span class="paren">)</span> <span class="paren">{</span>
+    <span class="identifier">ns</span> <span class="operator">&lt;-</span> <span class="identifier">NS</span><span class="paren">(</span><span class="identifier">id</span><span class="paren">)</span>
+    
+    <span class="identifier">fluidRow</span><span class="paren">(</span>
+        <span class="identifier">column</span><span class="paren">(</span><span class="number">6</span>, <span class="identifier">plotOutput</span><span class="paren">(</span><span class="identifier">ns</span><span class="paren">(</span><span class="string">"plot1"</span><span class="paren">)</span>, <span class="identifier">brush</span> <span class="operator">=</span> <span class="identifier">ns</span><span class="paren">(</span><span class="string">"brush"</span><span class="paren">)</span><span class="paren">)</span><span class="paren">)</span>,
+        <span class="identifier">column</span><span class="paren">(</span><span class="number">6</span>, <span class="identifier">plotOutput</span><span class="paren">(</span><span class="identifier">ns</span><span class="paren">(</span><span class="string">"plot2"</span><span class="paren">)</span>, <span class="identifier">brush</span> <span class="operator">=</span> <span class="identifier">ns</span><span class="paren">(</span><span class="string">"brush"</span><span class="paren">)</span><span class="paren">)</span><span class="paren">)</span>
+    <span class="paren">)</span>
+<span class="paren">}</span>
+
+<span class="identifier">linkedScatter</span> <span class="operator">&lt;-</span> <span class="keyword">function</span><span class="paren">(</span><span class="identifier">input</span>, <span class="identifier">output</span>, <span class="identifier">session</span>, <span class="identifier">data</span>, <span class="identifier">left</span>, <span class="identifier">right</span><span class="paren">)</span> <span class="paren">{</span>
+    <span class="comment"># Yields the data frame with an additional column "selected_"</span>
+    <span class="comment"># that indicates whether that observation is brushed</span>
+    <span class="identifier">dataWithSelection</span> <span class="operator">&lt;-</span> <span class="identifier">reactive</span><span class="paren">(</span><span class="paren">{</span>
+        <span class="identifier">brushedPoints</span><span class="paren">(</span><span class="identifier">data</span><span class="paren">(</span><span class="paren">)</span>, <span class="identifier">input</span><span class="operator">$</span><span class="identifier">brush</span>, <span class="identifier">allRows</span> <span class="operator">=</span> <span class="literal">TRUE</span><span class="paren">)</span>
+    <span class="paren">}</span><span class="paren">)</span>
+    
+    <span class="identifier">output</span><span class="operator">$</span><span class="identifier">plot1</span> <span class="operator">&lt;-</span> <span class="identifier">renderPlot</span><span class="paren">(</span><span class="paren">{</span>
+        <span class="identifier">scatterPlot</span><span class="paren">(</span><span class="identifier">dataWithSelection</span><span class="paren">(</span><span class="paren">)</span>, <span class="identifier">left</span><span class="paren">(</span><span class="paren">)</span><span class="paren">)</span>
+    <span class="paren">}</span><span class="paren">)</span>
+    
+    <span class="identifier">output</span><span class="operator">$</span><span class="identifier">plot2</span> <span class="operator">&lt;-</span> <span class="identifier">renderPlot</span><span class="paren">(</span><span class="paren">{</span>
+        <span class="identifier">scatterPlot</span><span class="paren">(</span><span class="identifier">dataWithSelection</span><span class="paren">(</span><span class="paren">)</span>, <span class="identifier">right</span><span class="paren">(</span><span class="paren">)</span><span class="paren">)</span>
+    <span class="paren">}</span><span class="paren">)</span>
+    
+    <span class="keyword">return</span><span class="paren">(</span><span class="identifier">dataWithSelection</span><span class="paren">)</span>
+<span class="paren">}</span>
+
+<span class="identifier">scatterPlot</span> <span class="operator">&lt;-</span> <span class="keyword">function</span><span class="paren">(</span><span class="identifier">data</span>, <span class="identifier">cols</span><span class="paren">)</span> <span class="paren">{</span>
+    <span class="identifier">ggplot</span><span class="paren">(</span><span class="identifier">data</span>, <span class="identifier">aes_string</span><span class="paren">(</span><span class="identifier">x</span> <span class="operator">=</span> <span class="identifier">cols</span><span class="paren">[</span><span class="number">1</span><span class="paren">]</span>, <span class="identifier">y</span> <span class="operator">=</span> <span class="identifier">cols</span><span class="paren">[</span><span class="number">2</span><span class="paren">]</span><span class="paren">)</span><span class="paren">)</span> <span class="operator">+</span>
+        <span class="identifier">geom_point</span><span class="paren">(</span><span class="identifier">aes</span><span class="paren">(</span><span class="identifier">color</span> <span class="operator">=</span> <span class="identifier">selected_</span><span class="paren">)</span><span class="paren">)</span> <span class="operator">+</span>
+        <span class="identifier">scale_color_manual</span><span class="paren">(</span><span class="identifier">values</span> <span class="operator">=</span> <span class="identifier">c</span><span class="paren">(</span><span class="string">"black"</span>, <span class="string">"#66D65C"</span><span class="paren">)</span>, <span class="identifier">guide</span> <span class="operator">=</span> <span class="literal">FALSE</span><span class="paren">)</span>
+<span class="paren">}</span>
+
+
+<span class="identifier">ui</span> <span class="operator">&lt;-</span> <span class="identifier">fixedPage</span><span class="paren">(</span>
+    <span class="identifier">h2</span><span class="paren">(</span><span class="string">"Module example"</span><span class="paren">)</span>,
+    <span class="identifier">linkedScatterUI</span><span class="paren">(</span><span class="string">"scatters"</span><span class="paren">)</span>,
+    <span class="identifier">textOutput</span><span class="paren">(</span><span class="string">"summary"</span><span class="paren">)</span>
+<span class="paren">)</span>
+
+<span class="identifier">server</span> <span class="operator">&lt;-</span> <span class="keyword">function</span><span class="paren">(</span><span class="identifier">input</span>, <span class="identifier">output</span>, <span class="identifier">session</span><span class="paren">)</span> <span class="paren">{</span>
+    <span class="identifier">df</span> <span class="operator">&lt;-</span> <span class="identifier">callModule</span><span class="paren">(</span><span class="identifier">linkedScatter</span>, <span class="string">"scatters"</span>, <span class="identifier">reactive</span><span class="paren">(</span><span class="identifier">mpg</span><span class="paren">)</span>,
+                     <span class="identifier">left</span> <span class="operator">=</span> <span class="identifier">reactive</span><span class="paren">(</span><span class="identifier">c</span><span class="paren">(</span><span class="string">"cty"</span>, <span class="string">"hwy"</span><span class="paren">)</span><span class="paren">)</span>,
+                     <span class="identifier">right</span> <span class="operator">=</span> <span class="identifier">reactive</span><span class="paren">(</span><span class="identifier">c</span><span class="paren">(</span><span class="string">"drv"</span>, <span class="string">"hwy"</span><span class="paren">)</span><span class="paren">)</span>
+    <span class="paren">)</span>
+    
+    <span class="identifier">output</span><span class="operator">$</span><span class="identifier">summary</span> <span class="operator">&lt;-</span> <span class="identifier">renderText</span><span class="paren">(</span><span class="paren">{</span>
+        <span class="identifier">sprintf</span><span class="paren">(</span><span class="string">"%d observation(s) selected"</span>, <span class="identifier">nrow</span><span class="paren">(</span><span class="identifier">dplyr</span><span class="operator">:</span><span class="operator">:</span><span class="identifier">filter</span><span class="paren">(</span><span class="identifier">df</span><span class="paren">(</span><span class="paren">)</span>, <span class="identifier">selected_</span><span class="paren">)</span><span class="paren">)</span><span class="paren">)</span>
+    <span class="paren">}</span><span class="paren">)</span>
+<span class="paren">}</span>
+
+<span class="identifier">shinyApp</span><span class="paren">(</span><span class="identifier">ui</span>, <span class="identifier">server</span>,
+         <span class="identifier">options</span> <span class="operator">=</span> <span class="identifier">list</span><span class="paren">(</span><span class="identifier">height</span> <span class="operator">=</span> <span class="number">600</span><span class="paren">)</span><span class="paren">)</span></code></pre>
+<iframe width="100%" height="600" class="shiny-frame" src="./Shiny_files/saved_resource(5).html"></iframe>
+</div>
+<div id="section-hosting-apps" class="section level2">
+<div name="hosting_apps" data-unique="hosting_apps"></div><h2>Hosting apps</h2>
+<p>Once you’ve made your awesome Shiny app, how do you share it with world or at least the people you’ve designed it for? Remember that apps are great because the user does not need to download and install R or know any R code whatsoever to be able to use them. But this means that the app has to be hosted somewhere that does have R, shiny, and all the required packages installed.</p>
+<p>The easiest way to host your app is to have RStudio host it for you at <a href="https://www.shinyapps.io/" class="uri">https://www.shinyapps.io/</a>. The pros are that you don’t have to worry about any IT infrastructure in maintaining your own server; but if your app processes sensitive or confidential data or you don’t want the public to be able to access it, then you either have to pay RStudio for more capabilities over the free version or deploy apps yourself with <a href="https://www.rstudio.com/products/shiny/shiny-server/">Shiny Server</a> - locally or on the cloud.</p>
+</div>
+</div>
+<div id="section-additional-materials" class="section level1">
+<div name="additional_materials" data-unique="additional_materials"></div><h1><strong>Additional materials</strong></h1>
+<ul>
+<li><a href="https://www.rstudio.com/wp-content/uploads/2016/01/shiny-cheatsheet.pdf">RStudio Shiny Cheatsheet</a></li>
+<li><a href="https://shiny.rstudio.com/tutorial/">RStudio Teach Yourself Shiny</a></li>
+<li><a href="https://www.rstudio.com/resources/webinars/how-to-start-with-shiny-part-1/">RStudio Webinar - How to start with Shiny – Part 1</a></li>
+<li><a href="https://github.com/rstudio/shiny-examples">RStudio Shiny Examples</a></li>
+<li><a href="https://www.showmeshiny.com/">Show Me Shiny App Gallery</a></li>
+<li><a href="http://deanattali.com/blog/building-shiny-apps-tutorial/">Building Shiny apps - an interactive tutorial</a></li>
+<li><a href="https://github.com/rstudio/reactivity-tutorial">RStudio Reactivity Tutorial</a></li>
+<li><a href="https://plot.ly/r/shiny-gallery/">Plotly Shiny Gallery</a></li>
+<li><a href="https://shiny.rstudio.com/articles/persistent-data-storage.html">Persistent data storage</a></li>
+<li><a href="https://shiny.rstudio.com/articles/reactivity-overview.html">RStudio Reactivity Overview</a></li>
+<li><a href="https://www.rstudio.com/resources/webinars/understanding-shiny-modules/">RStudio Understanding Shiny Modules Webinar</a></li>
+</ul>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "mathjax-local/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+
+</div>
+  </div>
+
+
+
+</body></html>

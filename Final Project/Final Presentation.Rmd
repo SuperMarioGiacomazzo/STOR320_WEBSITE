@@ -1,0 +1,51 @@
+---
+title: '**Final Presentation**'
+geometry: margin=2
+output:
+  html_document:
+    theme: cosmo
+    toc: yes
+    toc_float: yes
+  pdf_document:
+    toc: yes
+---
+
+<style type="text/css">
+.main-container {
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+
+# **Purpose**
+
+The purpose of the final presentation is to verbally communicate your group's process to answer a question using data. A slideshow with appropriate visuals and text should be utilized. This is your group's opportunity to enthusiastically share your findings with your classmates.
+
+# **Requirements**
+
+In 4 to 7 minutes, you will focus your presentation on a single question. Ideally, this should be 1 of the 2 questions you will write about in your final paper. A slideshow should be used to organize the information. First, you should creatively introduce the question and orally defend why your group found this particular question interesting. Next, you should briefly discuss the data your group used to answer this question. The original source of the data should be given. The source is not the website where you found the data, but who is responsible for gathering the original data. Figures and tables can be used to highlight variables of interest. Last, you should explain the statistical methods you employed to answer the question and the results you discovered. I recommend using multiple modeling techniques.
+
+During the presentation, I will subjectively assess how well the question is explained, how well the methods are explained, and how well the content is organized on a scale from 0 to 3. The quality of slides will also be subjectively scored on a scale from 0 to 3. Slides should not be cluttered, too wordy, unreadable, or plain. A minimum of 4 visuals is required. Eye contact and body language will also be subjectively assessed on a scale from 0 to 3. The Orator should not be reading the slides. This is a short presentation that should be well rehearsed.
+
+The Orator is solely responsible for giving the presentation. All members should help develop the slides, organize the information, and provide an audience for the Orator to practice. Everyone should proofread the slides since grammatical and spelling errors will result in a loss of points. While the Orator is presenting, the other members are free to either stand in front of the class or remain seated. After 7 minutes, I will abruptly cut off your presentation.
+
+The final presentations will take place on the final exam day as scheduled by the university. Presentations will be ordered according to the group's number. The Deliverer is responsible for submitting the slides to Sakai. The slides are due before the presentations begin. Attendance of all members is required. Each member that fails to attend will automatically lose five points from their individual grade. 
+
+
+# **Rubric**
+
+|Requirement|Points|
+|-------|------:|
+|Explanation of Question of Interest|3 Points|
+|Explanation of Methods|3 Points|
+|Organization of Content|3 Points|
+|Eye Contact and Body Language|3 Points|
+|Quality of Slides|3 Points|
+|4 Visuals|4 Points|
+|Grammatical and/or Spelling Errors|2 Points|
+|Between 4 and 7 Minutes|2 Points|
+|Slides Submitted on Sakai|2 Points|
+|Attendance| 5 Points|
+|**Total**|**30 Points**|
+|||

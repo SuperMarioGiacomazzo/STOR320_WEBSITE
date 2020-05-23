@@ -1,0 +1,89 @@
+---
+title: "Lecture 3 Workspace"
+author: "Mario Giacomazzo"
+date: "August 25, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+
+```{r}
+#Numeric Vector Named x
+x=c(3,2,1,5,7,8) 
+#Prints x
+x
+#Third Element of x
+x[3] 
+#Character Vector Named y
+y=c("H","T","H","T","H","T") 
+#Fifth Element of y
+y[5] 
+#3x2 Matrix Named z
+z=matrix(c(3,2,1,5,7,8),
+  nrow=2,ncol=3,byrow=T)
+#Prints z
+z
+#First Row of z
+z[1,]
+#1st and 3rd Column of z
+z[,c(1,3)]
+```
+
+```{r}
+#Create Tibble named tbl
+tbl<-tibble(x=x,y=y)
+#Print tbl
+tbl
+```
+
+
+```{r}
+#Create Dataframe named df
+df<-data.frame(x=x,y=y)
+#Print df
+df
+```
+
+
+```{r}
+#Create Plot
+plot1<-ggplot(data=tbl) +
+        geom_point(aes(x=x,y=y))
+#Prints Plot
+plot1
+```
+
+
+```{r}
+#Randomly Draw 1000 Samples from 
+#Normal Distribution with Mean=5 and SD=10
+x=rnorm(1000,mean=5,sd=10)
+mean(x) #Prints Sample Mean
+sd(x)   #Prints Sample SD
+quantile(x) #Default Quantiles (Min,Quartiles,Max)
+quantile(x,probs=c(0.05,0.95)) #Middle 90%'
+```
+
+
+```{r}
+quant.x=quantile(x,probs=c(0.05,0.95))
+ggplot(data=tibble(x=x))+
+  geom_density(aes(x=x))+
+  geom_vline(xintercept=quant.x,col="red")
+```
+
+
+
+
+
+
+
+
+
+
+
+

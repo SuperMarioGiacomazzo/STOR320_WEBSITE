@@ -1,0 +1,104 @@
+---
+title: "Lab 6"
+author: "FIRSTNAME LASTNAME"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Instructions
+
+**Exercises:**  4 (Pg. 302); 1 (Pgs. 316-317); 1 (Pgs. 328-329); 1, 2 (Pgs. 353-354)
+
+**Submission:** Submit via an electronic document on Sakai. Must be submitted as a HTML file generated in RStudio. All assigned problems are chosen according to the textbook *R for Data Science*. You do not need R code to answer every question. If you answer without using R code, delete the code chunk. If the question requires R code, make sure you display R code. If the question requires a figure, make sure you display a figure. A lot of the questions can be answered in written response, but require R code and/or figures for understanding and explaining.
+
+```{r, include=FALSE}
+library(tidyverse)
+```
+
+# Chapter 16 (Pg. 302)
+
+##  Exercise 4
+
+### a)
+```{r}
+#
+```
+
+### b)
+```{r}
+#
+```
+
+### c)
+```{r}
+#
+```
+
+### d)
+```{r}
+#
+```
+
+# Chapter 17 (Pgs. 316-317)
+
+##  Exercise 1
+
+### a)
+```{r}
+#
+```
+
+### b)
+```{r}
+#
+```
+
+### c)
+```{r}
+#
+```
+
+### d)
+```{r}
+#
+```
+
+# Chapter 17 (Pgs. 328-329)
+
+##  Exercise 1
+
+### a)
+```{r}
+#
+```
+
+### b)
+```{r}
+#
+```
+
+### c)
+```{r}
+#
+```
+
+### d)
+```{r}
+#
+```
+
+# Chapter 18 (Pgs. 353-354)
+
+##  Exercise 1
+```{r}
+#
+```
+
+##  Exercise 2
+```{r}
+#
+```

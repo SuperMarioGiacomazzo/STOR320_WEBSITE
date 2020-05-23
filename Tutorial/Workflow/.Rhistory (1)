@@ -1,0 +1,27 @@
+?geom_smooth
+library(tidyverse)
+?geom_smooth
+p1<-ggplot(data=PE) +
+geom_point(aes(x=year,y=demVote,color=as.factor(south)),size=2)
+# This is a good place to put libraries required for using the ggplot function
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse) #Loads the tidyverse package for ggplot
+library(pscl) #Loads the pscl package for the dataset
+library(gridExtra) #Allows us to combine ggplots into a nice layout
+PE=presidentialElections
+p1<-ggplot(data=PE) +
+geom_point(aes(x=year,y=demVote,color=as.factor(south)),size=2)
+p1
+p2<-p1+xlab("")+ylab("% Democratic")+ggtitle("USA Change in Democratic Vote")
+p2
+PE=presidentialElections
+PE=presidentialElections
+# This is a good place to put libraries required for using the ggplot function
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse) #Loads the tidyverse package for ggplot
+library(pscl) #Loads the pscl package for the dataset
+library(gridExtra) #Allows us to combine ggplots into a nice layout
+PE=presidentialElections
+p1<-ggplot(data=PE) +
+geom_point(aes(x=year,y=demVote,color=as.factor(south)),size=2)
+p1

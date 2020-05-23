@@ -1,0 +1,188 @@
+---
+title: "Lecture 14 Workspace"
+author: "Mario Giacomazzo"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,warning=F)
+options(scipen=999)
+library(tidyverse)    #Essential Functions
+library(xtable)
+```
+
+```{r}
+set.seed(32)
+Transaction = tibble(
+  Name=c(rep(c("Harry","Billy","George"),each=3),"Fred"),
+  Purchase=rpois(10,lambda=10)+0.99,
+  Day=as.integer(sample(c(1:4),10,replace=T)),
+  Month=as.integer(rep(3,10))
+)
+Transaction=arrange(Transaction,Day)
+Transaction$ID=as.integer(c(1001,1023,1027,1039,1042,1043,1048,1051,1063,1072))
+```
+
+```{r}
+Sales = tibble(
+  Day=1:4,
+  Month=as.integer(rep(3,4)),
+  Sales=rpois(4,lambda=45)+rnorm(4)
+)
+```
+
+```{r}
+Survey=tibble(
+  Name=c("Harry","Billy","George","Merri"),
+  Age=as.integer(c(35,43,61,52)),
+  Overall=as.integer(c(3,5,2,5)),
+  Service=as.integer(c(4,3,1,5)),
+  Food=as.integer(c(5,4,1,5))
+)
+```
+
+
+
+```{r}
+Order=tibble(
+  ID=1001:1063,
+  Coupon=rbinom(length(1001:1063),size=1,prob=0.5),
+  GiftCard=rbinom(length(1001:1063),size=1,prob=0.2),
+  Item=sample(c("Pork","Beef","Poultry","Seafood","Veggie"),length(1001:1063),replace=T)
+)
+```
+
+
+```{r,results="asis"}
+print(xtable(Transaction,align=c("cccccc")),include.rownames=F,type="html",
+      html.table.attributes="align='center',
+                             rules='rows',
+                             width=40%,
+                             frame='hsides',
+                             border-spacing=5px")
+```
+
+```{r,results="asis"}
+print(xtable(Sales,align=c("cccc")),include.rownames=F,type="html",
+      html.table.attributes="align='center',
+                             rules='rows',
+                             width=40%,
+                             frame='hsides',
+                             border-spacing=5px")
+```
+
+```{r,results="asis"}
+print(xtable(Survey,align=c("cccccc")),include.rownames=F,type="html",
+      html.table.attributes="align='center',
+                             rules='rows',
+                             width=40%,
+                             frame='hsides',
+                             border-spacing=5px")
+```
+
+```{r,results="asis"}
+print(xtable(head(Order,10),align=c("ccccc")),include.rownames=F,type="html",
+      html.table.attributes="align='center',
+                             rules='rows',
+                             width=40%,
+                             frame='hsides',
+                             border-spacing=5px")
+```
+
+```{r}
+Transaction %>%
+  count(ID) %>%
+  filter(n>1)
+```
+
+```{r}
+Transaction %>%
+  count(Name) %>%
+  filter(n>1)
+```
+
+```{r}
+identical(unique(Transaction$ID),Transaction$ID)
+identical(unique(Transaction$Name),Transaction$Name)
+```
+
+```{r}
+Sales %>%
+  count(Month)
+Sales %>%
+  count(Day,Month)
+```
+
+```{r}
+Survey %>%
+  count(Name)
+Transaction %>%
+  count(Name)
+```
+
+
+```{r}
+SurveyTrans=inner_join(Survey,Transaction,by="Name")
+SurveyTrans
+```
+
+```{r}
+SurveyTrans2=left_join(Survey,Transaction,by="Name")
+SurveyTrans2
+```
+
+```{r}
+SurveyTrans3=right_join(Survey,Transaction,by="Name")
+SurveyTrans3
+```
+
+```{r}
+SurveyTrans4=full_join(Survey,Transaction,by="Name")
+SurveyTrans4
+```
+
+```{r}
+SurveyTrans5 = Transaction %>%
+                group_by(Name) %>%
+                summarize(n=n(),Avg.Purchase=mean(Purchase)) %>%
+                inner_join(Survey,by="Name")
+SurveyTrans5
+```
+
+
+```{r}
+SalesTrans = inner_join(Sales,Transaction)
+SalesTrans
+```
+
+```{r}
+Sales2 = Sales %>% 
+          rename(D=Day,M=Month)
+Trans2 = Transaction %>% 
+          group_by(Day,Month,Name) %>% 
+          summarize(sumPurchase=sum(Purchase)) %>%
+          ungroup()
+
+SalesTrans2=left_join(Trans2, Sales2, 
+                      by=c("Day"="D","Month"="M")) %>%
+                transmute(Day=Day,Month=Month,Name=Name,
+                          perSales=sumPurchase/Sales)
+```
+
+```{r,results="asis"}
+print(xtable(SalesTrans2,align=c("ccccc")),include.rownames=F,type="html",
+      html.table.attributes="align='center',
+                             rules='rows',
+                             width=40%,
+                             frame='hsides',
+                             border-spacing=5px")
+```
+
+```{r}
+semi_join(Order,Transaction)
+```
+
+```{r}
+anti_join(Order,Transaction)
+```

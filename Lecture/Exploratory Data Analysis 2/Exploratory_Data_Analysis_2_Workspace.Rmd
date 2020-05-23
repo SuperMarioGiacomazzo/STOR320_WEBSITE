@@ -1,0 +1,79 @@
+---
+title: "Lecture 9 Workspace"
+author: "Mario Giacomazzo"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,warning=F)
+options(scipen=999)
+library(tidyverse)    #Essential Functions
+library(knitr)        #kable() for HTML Tables
+library(kableExtra)   #HTML Table Styling
+```
+
+```{r}
+ggplot(data=diamonds) + 
+  geom_point(aes(x=carat,y=price),color="lightskyblue1",alpha=0.1) + 
+  theme_dark()
+```
+
+```{r}
+diamonds %>%
+  summarize(n=n(),avgprice=mean(price),sdprice=sd(price),
+            avgcarat=mean(carat),sdcarat=sd(carat),
+            correlation=cor(price,carat))
+```
+
+```{r}
+ggplot(diamonds) + 
+  geom_point(aes(x=carat,y=price)) +
+  geom_smooth(aes(x=carat,y=price),method="lm")
+```
+
+```{r}
+library(modelr)
+lin.mod=lm(price~carat,data=diamonds)
+diamonds.lin.resid = diamonds %>%
+  add_residuals(mod=lin.mod)
+ggplot(data=diamonds.lin.resid) + 
+  geom_point(aes(x=carat,y=resid))
+```
+
+```{r}
+ggplot(diamonds) + 
+  geom_point(aes(x=carat,y=price)) +
+  geom_smooth(aes(x=carat,y=price),method="lm",
+              formula=y~exp(x))
+```
+
+```{r}
+exp.mod=lm(price~exp(carat),data=diamonds)
+diamonds.exp.resid = diamonds %>%
+  add_residuals(mod=exp.mod)
+ggplot(data=diamonds.exp.resid) + 
+  geom_point(aes(x=carat,y=resid)) +
+  coord_cartesian(xlim=c(0,2.5),
+                  ylim=c(-25000,25000))
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

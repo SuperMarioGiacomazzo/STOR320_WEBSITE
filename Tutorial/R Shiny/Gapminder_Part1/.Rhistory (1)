@@ -1,0 +1,146 @@
+shiny::runApp()
+library(shiny)
+library(tidyverse)
+library(broom)
+library(purrr)
+library(gapminder)
+gapminder2=gapminder
+names(gapminder2)=c("Country","Continent","Year","Life Expectancy","Population","GDP")
+gapminder2 %>%
+select(Country,Continent,Year,input$INvariable)%>%
+filter(Country %in% input$INcountry) %>%
+arrange(Year)
+gapminder2 %>%
+select(Country,Continent,Year,input$INvariable)%>%
+filter(Country %in% input$INcountry) %>%
+arrange(Year)
+gapminder2 %>%
+select(Country,Continent,Year,`Life Expectancy`)%>%
+filter(Country %in% c("United States","Albania")) %>%
+arrange(Year)
+gapminder2 %>%
+select(Country,Continent,Year,`Life Expectancy`)%>%
+filter(Country %in% c("United States","Albania")) %>%
+arrange(Year) %>%
+summarize(n=n())
+gapminder2 %>%
+select(Country,Continent,Year,`Life Expectancy`)%>%
+filter(Country %in% c("United States","Albania")) %>%
+arrange(Year) %>%
+group_by(Country) %>%
+summarize(n=n())
+gapminder2 %>%
+select(Country,Continent,Year,`Life Expectancy`)%>%
+filter(Country %in% c("United States","Albania")) %>%
+arrange(Year) %>%
+group_by(Country) %>%
+summarize(n=n(),min=min(`Life Expectancy`))
+gapminder2 %>%
+select(Country,Continent,Year,`Life Expectancy`)%>%
+filter(Country %in% c("United States","Albania")) %>%
+arrange(Year) %>%
+group_by(Country) %>%
+summarize(N=n(),
+MIN=min(`Life Expectancy`),
+Q1=quantile(`Life Expectancy`,0.25),
+)
+gapminder2 %>%
+select(Country,Continent,Year,`Life Expectancy`)%>%
+filter(Country %in% c("United States","Albania")) %>%
+arrange(Year) %>%
+group_by(Country) %>%
+summarize(N=n(),
+MIN=min(`Life Expectancy`),
+Q1=quantile(`Life Expectancy`,0.25),
+)
+gapminder2 %>%
+select(Country,Continent,Year,`Life Expectancy`)%>%
+filter(Country %in% c("United States","Albania")) %>%
+arrange(Year) %>%
+group_by(Country) %>%
+summarize(N=n(),
+MIN=min(`Life Expectancy`),
+Q1=quantile(`Life Expectancy`,0.25),
+Q2=quantile(`Life Expectancy`,0.5),
+Q3=quantile(`Life Expectancy`,0.75),
+MAX=max(`Life Expectancy`)
+)
+gapminder2 %>%
+select(Country,Continent,Year,`Life Expectancy`)%>%
+filter(Country %in% c("United States","Albania")) %>%
+arrange(Year) %>%
+group_by(Country) %>%
+summarize(N=n(),
+MIN=min(`Life Expectancy`),
+Q1=quantile(`Life Expectancy`,0.25),
+Q2=quantile(`Life Expectancy`,0.5),
+Q3=quantile(`Life Expectancy`,0.75),
+MAX=max(`Life Expectancy`)
+RANGE=MIN-MAX
+)
+gapminder2 %>%
+select(Country,Continent,Year,`Life Expectancy`)%>%
+filter(Country %in% c("United States","Albania")) %>%
+arrange(Year) %>%
+group_by(Country) %>%
+summarize(N=n(),
+MIN=min(`Life Expectancy`),
+Q1=quantile(`Life Expectancy`,0.25),
+Q2=quantile(`Life Expectancy`,0.5),
+Q3=quantile(`Life Expectancy`,0.75),
+MAX=max(`Life Expectancy`),
+RANGE=MIN-MAX
+)
+`Life Expectancy`[12]-`Life Expectancy`[1]
+gapminder2 %>%
+select(Country,Continent,Year,`Life Expectancy`)%>%
+filter(Country %in% c("United States","Albania")) %>%
+arrange(Year) %>%
+group_by(Country) %>%
+summarize(N=n(),
+MIN=min(`Life Expectancy`),
+Q1=quantile(`Life Expectancy`,0.25),
+Q2=quantile(`Life Expectancy`,0.5),
+Q3=quantile(`Life Expectancy`,0.75),
+MAX=max(`Life Expectancy`),
+CHANGE=`Life Expectancy`[12]-`Life Expectancy`[1]
+)
+gapminder2 %>%
+select(Country,Continent,Year,`Life Expectancy`)%>%
+filter(Country %in% c("United States","Albania")) %>%
+arrange(Year)
+runApp('D:/Mario Documents/UNC/STOR 320/STOR320_WEBSITE/Tutorial/Tutorial 17/Gapminder_Part2')
+runApp('D:/Mario Documents/UNC/STOR 320/STOR320_WEBSITE/Tutorial/Tutorial 17/Gapminder_Part2')
+gapminder2 %>%
+select(Country,Continent,Year,`Life Expectancy`)%>%
+filter(Country %in% c("United States","Albania")) %>%
+arrange(Year) %>%
+group_by(Country) %>%
+summarize(N=n(),
+MIN=min(`Life Expectancy`),
+Q1=quantile(`Life Expectancy`,0.25),
+Q2=quantile(`Life Expectancy`,0.5),
+Q3=quantile(`Life Expectancy`,0.75),
+MAX=max(`Life Expectancy`),
+CHANGE=`Life Expectancy`[12]-`Life Expectancy`[1]
+)
+runApp('D:/Mario Documents/UNC/STOR 320/STOR320_WEBSITE/Tutorial/Tutorial 17/Gapminder_Part2')
+runApp('D:/Mario Documents/UNC/STOR 320/STOR320_WEBSITE/Tutorial/Tutorial 17/Gapminder_Part2')
+runApp('D:/Mario Documents/UNC/STOR 320/STOR320_WEBSITE/Tutorial/Tutorial 17/Gapminder_Part2')
+runApp('D:/Mario Documents/UNC/STOR 320/STOR320_WEBSITE/Tutorial/Tutorial 17/Gapminder_Part2')
+runApp('D:/Mario Documents/UNC/STOR 320/STOR320_WEBSITE/Tutorial/Tutorial 17/Gapminder_Part2')
+runApp('D:/Mario Documents/UNC/STOR 320/STOR320_WEBSITE/Tutorial/Tutorial 17/Gapminder_Part2')
+runApp('D:/Mario Documents/UNC/STOR 320/STOR320_WEBSITE/Tutorial/Tutorial 17/Gapminder_Part2')
+runApp('D:/Mario Documents/UNC/STOR 320/STOR320_WEBSITE/Tutorial/Tutorial 17/Gapminder_Part2')
+runApp('D:/Mario Documents/UNC/STOR 320/STOR320_WEBSITE/Tutorial/Tutorial 17/Gapminder_Part3')
+shiny::runApp()
+runApp('D:/Mario Documents/UNC/STOR 320/STOR320_WEBSITE/Tutorial/R Shiny/Gapminder_Start')
+runApp('D:/Mario Documents/UNC/STOR 320/STOR320_WEBSITE/Tutorial/R Shiny/Gapminder_Start')
+runApp('D:/Mario Documents/UNC/STOR 320/STOR320_WEBSITE/Tutorial/R Shiny/Gapminder_Part2')
+runApp('D:/Mario Documents/UNC/STOR 320/STOR320_WEBSITE/Tutorial/R Shiny/Gapminder_Part3')
+runApp('D:/Mario Documents/UNC/STOR 320/STOR320_WEBSITE/Tutorial/R Shiny/Gapminder_Part3')
+runApp('D:/Mario Documents/UNC/STOR 320/STOR320_WEBSITE/Tutorial/R Shiny/Gapminder_Start')
+runApp('D:/Mario Documents/UNC/STOR 320/STOR320_WEBSITE/Tutorial/R Shiny/Default')
+runApp('D:/Mario Documents/UNC/STOR 320/STOR320_WEBSITE/Tutorial/R Shiny/Default')
+shiny::runApp()
+runApp('D:/Mario Documents/UNC/STOR 320/STOR320_WEBSITE/Tutorial/R Shiny/Gapminder_Part2')

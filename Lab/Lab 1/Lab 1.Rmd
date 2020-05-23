@@ -1,0 +1,137 @@
+---
+title: "Lab 1"
+author: "FIRSTNAME LASTNAME"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Instructions
+
+**Exercises:** 1-5 (Pgs. 6-7); 1-2, 5 (Pg. 12); 1-5 (Pgs. 20-21); Open Response
+
+**Submission:** Submit via an electronic document on Sakai. Must be submitted as a HTML file generated in RStudio. All assigned problems are chosen according to the textbook *R for Data Science*. You do not need R code to answer every question. If you answer without using R code, delete the code chunk. If the question requires R code, make sure you display R code. If the question requires a figure, make sure you display a figure. A lot of the questions can be answered in written response, but require R code and/or figures for understanding and explaining.
+
+```{r, include=FALSE}
+library(tidyverse)
+library(ggplot2)
+```
+
+# Chapter 1 (Pgs. 6-7)
+
+##  Exercise 1
+```{r}
+ggplot(data=mpg)
+```
+
+I see absolutely nothing. There is just a blank space for a graph. Why am I even doing this nonsense?
+
+## Exercise 2
+```{r}
+dim(mpg)
+nrow(mpg)
+ncol(mpg)
+```
+There are 234 rows and 11 columns in the dataset **mpg**.
+
+##  Exercise 3
+```{r, eval=FALSE}
+?mpg
+```
+
+```{r}
+unique(mpg$drv)
+```
+
+
+The variable **drg** is a factor variable that takes the following values:
+
+- "f" = front-wheel drive
+- "r" = rear-wheel drive
+- "4" = 4-wheel drive
+
+##  Excercise 4
+```{r}
+ggplot(data=mpg,aes(x=hwy,y=cyl)) +
+  geom_point() + 
+  xlab("Highway Miles Per Gallon") +
+  ylab("Number of Cylinders")
+```
+
+
+##  Excercise 5
+```{r}
+ggplot(data=mpg,aes(x=class,y=drv)) + 
+  geom_point() + 
+  xlab("Type of Car") +
+  ylab("Type of Drive")
+```
+
+Scatter plots are not meant to visualize the relationship between two categorical/qualitative variables. 
+
+# Chapter 1 (Pg. 12)
+
+##  Exercise 1
+```{r}
+#
+```
+
+##  Exercise 2
+```{r}
+#
+```
+
+##  Exercise 5
+```{r}
+#
+```
+
+# Chapter 1 (Pgs. 20-21)
+
+##  Exercise 1
+```{r}
+#
+```
+
+##  Exercise 2
+```{r}
+#
+```
+
+##  Exercise 3
+```{r}
+#
+```
+
+##  Exercise 4
+```{r}
+#
+```
+
+##  Exercise 5
+
+I don't know if they will look different. Let me check.
+
+```{r}
+ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + 
+  geom_point() + 
+  geom_smooth()
+
+ggplot() + 
+  geom_point(data = mpg, mapping = aes(x = displ, y = hwy)) + 
+  geom_smooth(data = mpg, mapping = aes(x = displ, y = hwy))
+```
+
+They do not look different. I am incredibly surprised.
+
+# Open Response
+
+For this exercise, use the **diamonds** dataset in the tidyverse. Use `?diamonds` to get more information about the dataset.
+
+## Step 1: Select 1 numeric variable and 2 categorical variables. Create a graphic using `geom_boxplot()` and `facet_wrap` to illustrate the empirical distributions of the sample.
+
+
+## Step 2: Choose 2 numeric variables and 2 categorical variables and creatively illustrate the relationship between all the variables. 

@@ -1,0 +1,254 @@
+---
+title: '**STOR 320: Intro to Data Science**'
+geometry: margin=2
+output:
+  html_document:
+    theme: cosmo
+    toc: yes
+    toc_float: yes
+    includes:
+      in_header: "favicon.html"
+  pdf_document:
+    toc: yes
+---
+
+<style type="text/css">
+
+div {
+color: #13294B;
+}
+
+#TOC {
+  color: #4B9CD3;
+}
+
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
+  color: #4B9CD3;
+  background-color: #13294B;
+}
+
+a:link {
+    color: #4B9CD3;
+    text-decoration: none;
+}
+
+a:visited {
+        text-decoration: none;
+color: #4B9CD3;
+
+}
+a:hover {
+color: #4B9CD3;
+background-color: #13294B;
+}
+
+.main-container {
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+} 
+
+</style>
+
+This course is an application-driven introduction to data science. Statistical and computational tools are valued throughout the modern workplace from Silicon Valley startups, to marine biology labs, to Wall Street firms. These tools require technical skills such as programming and statistics. They also require professional skills such as communication, teamwork, problem solving, and critical thinking.
+
+<div class="row">
+  <div class="column">
+
+- Instructor: **[Mario Giacomazzo](http://www.supermariogiacomazzo.com/)**
+
+- Instructional Assistants: 
+    - **[Pavlos Zoubouglou](http://stat-or.unc.edu/people/graduate-students-department)**
+    - **[Peter Lin](http://stat-or.unc.edu/people/graduate-students-department)**
+    
+
+- Course Syllabus: **[Section 1](https://drive.google.com/file/d/1GCWeZarTqsu7HajnJqCC8vPNjC3q1LXC/view?usp=sharing)**
+
+- Zoom Links:
+    - **[Lectures:](https://unc.zoom.us/j/98063448751)** 11:30AM to 1PM
+    - **[Dr. Mario Office Hours:](https://unc.zoom.us/j/94479071959)** 30 Min Before and After Class 
+    - **[Pavlos Office Hours:]()**
+    - **[Peter Office Hours:]()**
+
+  </div>
+  <div class="column">
+  <img src="UNC_Logo.png" width="140px" height="auto">
+  </div>
+</div> 
+
+
+# **Course Material**
+
+| Date | Lecture | Slides | Tutorial |
+|------|---------|--------:|---------:|
+|Jun. 22|Introduction | [Slides](https://drive.google.com/file/d/1_8O_HETMg_MS_jj7zjgfUXKv3QUASBl2/view?usp=sharing)||
+||Data Visualization| [Slides](https://drive.google.com/file/d/1OTIdPsv2ap5qsaWLfuw9q5aGY2lMabRw/view?usp=sharing) | [Tutorial](Tutorial/Data Visualization/Tutorial.html) ([.Rmd](https://drive.google.com/file/d/1e0ThTHdZzxsWWg5PI-dG-IURkN1P-bPg/view?usp=sharing)) |
+|Jun. 23|Workflow in RMarkdown|[Slides](https://drive.google.com/file/d/1DDl31rRmNHJ17GCIKuLvGpkymxF8uayH/view?usp=sharing)| [Tutorial](Tutorial/Workflow/Tutorial.html) ([.zip](https://drive.google.com/file/d/1bLEU0GucAtlX4-VXUydwkesuW3d0pEVB/view?usp=sharing))|
+|Jun. 24|Data Transformation I|[Slides](https://drive.google.com/file/d/1Zs7-azEFAW1W3sJIHf0kvlfAi49sVFzM/view?usp=sharing)||
+||Data Transformation II|[Slides](https://drive.google.com/file/d/1W35ZO5yKH0k-yI3ogr7ilN0r5Fn85Rat/view?usp=sharing)|[Tutorial](Tutorial/Data Transformation 1/Tutorial.html) ([.Rmd](https://drive.google.com/file/d/1y0UuxOQcwgBS53Cc_COBCOoL832NiXzi/view?usp=sharing))|
+|Jun. 25|Data Transformation III|[Slides](https://drive.google.com/file/d/1kUU2hO2YLJUrrNOv4Uy7tOK8GZcPGqL7/view?usp=sharing)||
+||Data Transformation IV|[Slides](https://drive.google.com/file/d/1UGMfheOImYQt63gJ0D_rdLKrlgTQZOjK/view?usp=sharing)|[Tutorial](Tutorial/Data Transformation 2/Tutorial.html) ([.zip](https://drive.google.com/file/d/1CbVYRmSw7vZua-9ppvsgtcLKuAjhRf-f/view?usp=sharing))|
+|Jun. 26|Exploratory Data Analysis I|[Slides](https://drive.google.com/file/d/1cwBrbCBpG0nvmcfXrlrpHT5BxREVjr0P/view?usp=sharing)||
+||Exploratory Data Analysis II|[Slides](https://drive.google.com/file/d/1HV2oJ5a_dVLBoSCctZr1ir8wzIgoMGVq/view?usp=sharing)|[Tutorial](Tutorial/Exploratory Data Analysis/Tutorial.html) ([.Rmd](https://drive.google.com/file/d/1NQ5QuKC7ZzaajFkGH39_y-H9gMrAmgjZ/view?usp=sharing))||
+|July 1|Final Project I|[Slides](https://drive.google.com/file/d/1McGiOljDvGVYgK6CM28d_Ic_mNzQ5SLl/view?usp=sharing)||
+||Data Import|[Slides](https://drive.google.com/file/d/15KvLv179xjfvYSMuoGDKmwicuT0F2UKG/view?usp=sharing)||
+|Jul. 2|Tidy Data I|[Slides](https://drive.google.com/file/d/1F7eczxlPWwL_YfeuXXpOmbjgHAe7Pnjf/view?usp=sharing)||
+||Tidy Data II|[Slides](https://drive.google.com/file/d/1WTsPbnuezz_1ZxI35LwwXPJL7VYlzK8G/view?usp=sharing)|[Tutorial](Tutorial/Tidy/Tutorial.html)  ([.Rmd](https://drive.google.com/file/d/1C0p16A8v5NkGio6lKpP6kDxdfjA0X9cq/view?usp=sharing))|
+|Jul. 3|Web Scraping I|[Slides](https://drive.google.com/file/d/1-JD0sGCSN1oXUf3CA0uT9Yu_l1TPyx6c/view?usp=sharing)|[Tutorial](Tutorial/Web Scraping 1/Tutorial.html)  ([.Rmd](https://drive.google.com/file/d/1wYT8HjbkzcqZO7AWhxyEM35LfxfP9a2P/view?usp=sharing))|
+|Jul. 4|Firework Day|||
+|Jul. 5|Web Scraping II|[Slides](https://drive.google.com/file/d/1Fc-JOvHoaHT8fhUfZmC6uFEaWxipSJrT/view?usp=sharing)|[Tutorial](Tutorial/Web Scraping 2/Tutorial.html)  ([.zip](https://drive.google.com/file/d/1k86bdmm4tRT2GGyamBlQNXkxfCcSvTl1/view?usp=sharing))|
+|Jul. 8|Joins I|[Slides](https://drive.google.com/file/d/1M88xOe34SWkbm7lCQMNX6RQAm_mhCEjk/view?usp=sharing)||
+||Joins II|[Slides](https://drive.google.com/file/d/1wgEmOgwbjbnZbIBaHSiRg_tAbuumAS9I/view?usp=sharing)||
+|Jul. 9|Final Project II|[Slides](https://drive.google.com/file/d/1d_5k7uTRT9knsm3m4S_QVrjVUNWhfRrz/view?usp=sharing)||
+||Factors|[Slides](https://drive.google.com/file/d/1BuLCYOoCn779L9sr4JwgTbh9QiqBJ38P/view?usp=sharing)||
+|Jul. 10|Programming I|[Slides](https://drive.google.com/file/d/1SOOh8FZGw7xnhfWCy4g_kMASuB2nFJ6s/view?usp=sharing)|[Tutorial](Tutorial/Programming 1/Tutorial.html) ([.Rmd](https://drive.google.com/file/d/1mjCIq_f64-G_nNAnqUkZQRHQhDlXS_iM/view?usp=sharing))|
+||Programming II|[Slides](https://drive.google.com/file/d/1P_rX98E698AzmxOqKi06Sm0alsX-bfvd/view?usp=sharing)|[Tutorial](Tutorial/Programming 2/Tutorial.html) ([.Rmd](https://drive.google.com/file/d/1t5LYZnGtC3q-4Mbgx9FDkXw0l-E2nijR/view?usp=sharing))|
+|Jul. 11|Programming III|[Slides](https://drive.google.com/file/d/1AWk4fcXrVkM4Xm_GxEPrYwONXGpKvCxw/view?usp=sharing)|| -->
+||Programming IV|[Slides](https://drive.google.com/file/d/1Sptc4vvRs5MfCgr_uqRS1NHX6fkD0-Wl/view?usp=sharing)||
+|Jul. 12|Modeling I|[Slides](https://drive.google.com/file/d/1Kn1cfghAWIcdBk_u8MBdbNT-bR15BJ8V/view?usp=sharing)||
+|Jul. 15|Modeling II|[Slides](https://drive.google.com/file/d/1uKhequdrElCylMVL33G7DA1Bc-z3kHIq/view?usp=sharing)|[Tutorial](Tutorial/Modeling 2/Tutorial.html) ([.zip](https://drive.google.com/file/d/13Gr4khQHj5xwf7bF0ixxCgRjs4z69S_z/view?usp=sharing))|
+||Modeling III|[Slides](https://drive.google.com/file/d/1N9lLVOSXYImIIgKVYfHY0STJ076WczxV/view?usp=sharing)|[Tutorial](Tutorial/Modeling 3/Tutorial.html) ([.zip](https://drive.google.com/file/d/1w92U22YHiUd9agVaQuKnweirOwrLIOj-/view?usp=sharing))|
+|Jul. 16|Modeling IV|[Slides](https://drive.google.com/file/d/17mIXSqjMvuVLIYLrNhpNeuqMorcfYwUd/view?usp=sharing)|[Tutorial](Tutorial/Modeling 4/Tutorial.html) ([.zip](https://drive.google.com/file/d/1f8D4xLKPwavJWy93d5DDJU2yr1B6gPt4/view?usp=sharing))|
+|Jul. 17|Modeling V|[Slides](https://drive.google.com/file/d/12o1WJNz6uSfLbl-_V2ITamxfhgLEJydM/view?usp=sharing)||
+|Jul. 18|Modeling VI|[Slides](https://drive.google.com/file/d/1-yDT0up68BCgNpU3r5pSFOFeJ5Mejpuz/view?usp=sharing)||
+|Jul. 19|Modeling VII|[Slides](https://drive.google.com/file/d/1yh3bjv7yXn2vfLAvAsGXyEc560PHA2Yo/view?usp=sharing)|[Tutorial](Tutorial/Modeling 7/Tutorial.html) ([.Rmd](https://drive.google.com/file/d/1NXGQgiXSe8zP9e-bXhm0oSNuud96JYZo/view?usp=sharing))|
+|Jul. 22|Modeling VIII|[Slides](https://drive.google.com/file/d/1zp-zG4ii5PZdlpaq95v5S9MO5LsEXh1X/view?usp=sharing)|[Tutorial](Tutorial/Modeling 8/Tutorial.html) ([.Rmd](https://drive.google.com/file/d/1kAvZvjiPmvcya91-cW-nAHZez-rjV2ZK/view?usp=sharing))|
+||Modeling IX|[Slides](https://drive.google.com/file/d/1DgDOKe2Nj8hqZJCUAlYeatb0mGtGqeGC/view?usp=sharing)|[Tutorial](Tutorial/Modeling 9/Tutorial.html) ([.Rmd](https://drive.google.com/file/d/11HqvjhKyHWr7TdSRMx8yteHhfESd-hrk/view?usp=sharing))|
+|Jul. 23|Modeling X|[Slides](https://drive.google.com/file/d/1T9FMiYSmDr4WC3pLuyxvVVvDEhpy7ScQ/view?usp=sharing)||
+|Jul 24|Data Ethics|[Slides](https://drive.google.com/file/d/1-TEYP07GJXMzqM42hgYxat-PcfOLbf6S/view?usp=sharing)||
+|Jul. 25|R Shiny|[Slides](https://drive.google.com/file/d/1tzDNVSmNEsfajomAzeyKbN-zMWp0LXZp/view?usp=sharing)|[Tutorial](https://drmariogiacomazzo.shinyapps.io/Gapminder_Part3/) ([.zip](https://drive.google.com/file/d/1psNB-HGjdZoW-kWb2nWZHe6WDTtHno1P/view?usp=sharing))|||||
+|Jul. 26|Final Papers|||
+|Jul. 29|Final Presentations|||
+<!-- |Mar. 11|Spring Break|||||| -->
+<!-- |Mar. 13|Spring Break|||||| -->
+<!-- |Mar. 15|Spring Break|||||| -->
+<!--  -->
+<!--  -->
+<!--  -->
+<!--  -->
+<!--  -->
+<!--  -->
+<!-- |Apr. 8|Industry 1 ([RTI](https://www.rti.org/))|[Slides](https://drive.google.com/file/d/1HIPrBx6sziouGscIVwzcbW5yNk4lUCdT/view?usp=sharing)  [1](https://www.bjs.gov/content/pub/pdf/ardprs1516pf.pdf) [2](https://www.theguardian.com/us-news/2015/dec/13/justice-department-database-police-killings-counted-statistics) [3](https://www.theguardian.com/us-news/2016/dec/15/us-police-killings-department-of-justice-program) [4](https://www.youtube.com/watch?v=EPih38jWiqQ&list=PLnRE5K-bsWwH_isDyub8nCM5XCfjDdHRy&index=8)  [5](https://www.datascience.com/blog/data-science-for-social-good-counting-arrest-related-deaths)|||||| -->
+<!--  -->
+<!--  -->
+<!-- |Apr. 15|Advanced Shiny ([Frances Tong](https://twitter.com/francestong?lang=en))|[Slides](https://francestong.shinyapps.io/stor320_shiny/)||||| -->
+<!-- |Apr. 17|API ([Marshall Markham](https://www.linkedin.com/in/marshall-markham-840ab24a))|[Slides](https://drive.google.com/file/d/1gcD8aeBFZb8BVaphdMYHOcOvPB858lNW/view?usp=sharing)|[Tutorial](https://drive.google.com/file/d/1yHZUKjU0qP9lENbykYFfwY0awMzO6YiE/view?usp=sharing) ([.zip](https://drive.google.com/file/d/1FruE-GOsKHwnl6B2Bb-kgCsuj965FydE/view?usp=sharing))|||| -->
+<!-- |Apr. 19|Good Friday|||||| -->
+<!-- |Apr. 22|Industry 2 ([MetLife](https://jobs.metlife.com/cary-jobs))|||||| -->
+<!-- |Apr. 24|Communication ([Iain Carmichael](https://idc9.github.io))|[Slides](https://drive.google.com/file/d/1Ydo2XCIMQDF3tm-KeqVrjYnkJUlQOEej/view?usp=sharing)|[Tutorial](Tutorial/Communication/communication) ([.zip](https://drive.google.com/file/d/1HCN66SqqF6eMlX-ZfLBfwy8fD5IGE68i/view?usp=sharing))|||| -->
+<!--  -->
+<!--  -->
+
+
+# **Assignment Tracker**
+
+All Lab and Analysis assignments are to be submitted via **[Sakai](https://sakai.unc.edu/welcome/)**. 
+
+| Assigned | Lab (L) | Analysis (A) |Solutions| Due Date (Time) |
+|----------|:--------:|:-------------:|:-------------:|----------------:|
+| June 22  | [L1](Lab/Lab 1/Lab_1.html) ([.Rmd](https://drive.google.com/file/d/1jXtRTRStUBiAmceTc0rVuxWq0_wsqJ7r/view?usp=sharing))|||June 26 (5 PM) |
+| June 28 | [L2](Lab/Lab 2/Lab_2.html) ([.Rmd](https://drive.google.com/file/d/1qbrv--zda43E3xj4YlxiqNeLwZjccwOu/view?usp=sharing))|||July 1 (5 PM) |
+| July 1 || [A1](Analysis/Analysis 1/Analysis_1.html) ([.zip](https://drive.google.com/file/d/13J08S62sSh7MazcrQbiRBlWtlzqmx0VW/view?usp=sharing))||July 5 (5 PM) |
+| July 5 | [L3](Lab/Lab 3/Lab_3.html) ([.Rmd](https://drive.google.com/file/d/14R9FxL7_vBam--s25QYYRM1N4TOs4nTu/view?usp=sharing))|||July 8 (5 PM)|
+| July 8 | [L4](Lab/Lab 4/Lab_4.html) ([.Rmd](https://drive.google.com/file/d/1zLBecpK4G7LSusTdWzYJtoz_FT60tYeb/view?usp=sharing))|||July 10 (5 PM)|
+| July 10|| [A2](Analysis/Analysis 2/Analysis_2.html) ([.zip](https://drive.google.com/file/d/1I5sckP-XEic_N9iYR7-8CpIrxjQ0PJgV/view?usp=sharing))||July 12 (5 PM)|
+| July 12 | [L5](Lab/Lab 5/Lab_5.html) ([.Rmd](https://drive.google.com/file/d/1nfW4gDWLtADfke1ooVnoTFMmdsut0uk2/view?usp=sharing))|||July 15  (5 PM)|
+| July 15 || [A3](Analysis/Analysis 3/Analysis_3.html) ([.zip](https://drive.google.com/file/d/1Z7GI0vTDktiW6yyis02CGY4eMDejDfr1/view?usp=sharing))||July 19 (5 PM)|
+| July 19  | [L6](Lab/Lab 6/Lab_6.html) ([.Rmd](https://drive.google.com/file/d/16zexYq73NJdJkIfg0D226VSIeJfevUzB/view?usp=sharing)) |||July 22 (5 PM)|
+| July 22 | [L7](Lab/Lab 7/Lab_7.html) ([.Rmd](https://drive.google.com/file/d/1eeQAFuUfsb5MSv9szKHtZ3ExLhgIvbNc/view?usp=sharing)) |||July 24 (5 PM)|
+| July 24   |        |  [A4](Analysis/Analysis 4/Analysis_4.html) ([.zip](https://drive.google.com/file/d/1veOCeyVo6nhNo1jrzFPO9QIwoMXPaMga/view?usp=sharing))||July 29 (5 PM)|
+|          |        |             |           |
+
+# **Final Project Details**
+
+For the final project, each section of STOR 320 will be divided (ideally) into reasearch groups of size 5. To ensure fairness, students will be assigned randomly based on the `sample` function in **R**. May God have mercy on your souls. 
+
+## Research Group Assignments
+
+To find your research group, see the **[spreadsheet]()** sponsored by Google.
+
+## Four Roles
+
+Although everyone is responsible for the entire project, each member of the group will be assigned a specific role for accountability and consistency. These four specific roles are described as follows:
+
+- **The Creator:** Schedule and Meet with Dr. Mario to Propose Your Group's Research Idea
+
+- **The Interpreter:** Schedule and Meet with Dr. Mario to Share Findings from Exploratory Analysis
+
+- **The Orator(s):** Give a Captivating 4 Minute Slideshow Presentation During Final Exam Day
+
+- **The Deliverer:** Deliver Your Group from Evil by Editing and Submitting the Exploratory Analysis and Final Written Paper via SAKAI Before the Deadline
+
+## Four Parts Including Point Values
+
+This final project will be divided into four parts worth a total of 100 points. Each part will have a clear rubric as non-subjective as possible. The parts along with total point values are found below:
+
+* **[P1: Project Proposal](Final Project/Project_Proposal.html)** *(10 Points)*
+    + [Data World](https://data.world/)
+    + [US Government Data](https://www.data.gov/)
+    + [Kaggle](https://www.kaggle.com/)
+    + [Free Data Info I](https://www.forbes.com/sites/bernardmarr/2016/02/12/big-data-35-brilliant-and-free-data-sources-for-2016/#63f06f60b54d)
+    + [Free Data Info II](https://r-dir.com/reference/datasets.html)
+
+
+* **[P2: Exploratory Data Analysis](Final Project/Exploratory_Data_Analysis.html)** *(20 Points)*
+    + [Template](Final Project/EDA_Template.html) ([.Rmd](https://drive.google.com/file/d/1EM2JXvZ9aHX8oLeB5z1MIWFgDCjAFKvn/view?usp=sharing))
+    
+* **[P3: Final Written Paper](Final Project/Final_Paper.html)** *(40 Points)*
+    + [Template](Final Project/Final_Paper_Template.html) ([.Rmd](https://drive.google.com/file/d/16kLjQmszVA5nJyUPwwPy94BltOog6YSO/view?usp=sharing))
+    + [Rank Spreadsheet](https://drive.google.com/file/d/1GMfQRhnKrjmzPK8mrMIr_RLDXBJFQRoZ/view?usp=sharing)
+    
+* **[P4: Final Presentation](Final Project/Final_Presentation.html)** *(30 Points)*
+
+    
+## Due Dates of Individual Parts
+
+| Part | Description |Method of Submission| Due Date (Time) |
+|------|-------------|-------------------|----------------:|
+| P1  | Project Proposal| Sakai + Meeting    | July 5 (5PM)|
+| P2  | Exploratory Data Analysis |Sakai + Meeting| July 19 (5PM)|
+| P3  | Final Written Paper|Sakai|July 26 (5 PM)|
+| P4  | Final Presentation|Sakai + Class| July 29 (11:30 AM)|
+||||
+
+
+# **Reading**
+
+- **[R for Data Science](https://drive.google.com/file/d/1Wca-b3m6CTbBQqO7tUEh_CdD3xVgjYVb/view?usp=sharing)** (R4DS)
+
+- **[R Programming for Data Science](https://drive.google.com/file/d/1XVF5v4MTBhIp_dq9MzTI0TtPfVrF6eaZ/view?usp=sharing)** (RP4DS)
+
+- **[Text Mining with R](https://www.tidytextmining.com/)** (TMwR)
+
+- **[The Art of R Programming](https://drive.google.com/file/d/1gR7Yr9-pIZ-f315bZCXfDj9yPWaZDflD/view?usp=sharing)** (AoRP)
+
+- **[A First Course in Statistical Programming with R](https://drive.google.com/file/d/1NBadpF5MLWI3AFsyWo3nbpQnL8sWeZdT/view?usp=sharing)** (FCSPR)
+
+- **[ModernDive](https://moderndive.com/index.html)** (MD)
+
+- **[An Introduction to Statistical Learning](https://drive.google.com/file/d/1jKxVWG89KvWr_-70sOeEeLK4CUB09sRu/view?usp=sharing)** (ISLR)
+
+# **Additional resources**
+
+- **[Rmarkdown Cheat Sheet](https://www.rstudio.com/wp-content/uploads/2016/03/rmarkdown-cheatsheet-2.0.pdf)**
+
+- **[ggplot2 Cheat Sheet](https://www.rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf)**
+
+- **[Color Options](https://paulvanderlaken.files.wordpress.com/2017/08/ggplot2-color-colours-names-cheatsheet.png?w=559&amp;h=1024)**
+
+- **[Data Wrangling Cheat Sheet](https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf)**
+
+- **[R Shiny Cheat Sheet](https://shiny.rstudio.com/images/shiny-cheatsheet.pdf)**
+
+This page was last updated on `r Sys.time()` Eastern Time.

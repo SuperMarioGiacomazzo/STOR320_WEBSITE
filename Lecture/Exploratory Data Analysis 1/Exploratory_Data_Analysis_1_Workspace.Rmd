@@ -1,0 +1,125 @@
+---
+title: "Lecture 8 Workspace"
+author: "Mario Giacomazzo"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,warning=F)
+options(scipen=999)
+library(tidyverse)    #Essential Functions
+library(knitr)        #kable() for HTML Tables
+library(kableExtra)   #HTML Table Styling
+library(Ecdat)        #Get Wage1 Dataset
+```
+
+
+```{r}
+Wage=as.tibble(Wages1) %>%
+  rename(experience=exper) %>%
+  arrange(school)
+```
+
+```{r}
+mean(Wage$sex=="female")
+```
+
+```{r}
+Wage %>% 
+  group_by(sex) %>%
+  summarize(n=n())
+```
+
+```{r}
+ggplot(data=Wage) +
+  geom_bar(aes(x=sex,y=..count../sum(..count..)),fill="lightskyblue") + 
+  ylab("Relative Frequency") + xlab("") +
+  theme_dark()
+```
+
+
+```{r}
+Wage %>%
+  summarize(n=n(),avg=mean(wage),sd=sd(wage),
+            median=median(wage),iqr=IQR(wage))
+```
+
+
+```{r}
+ggplot(data=Wage) +
+  geom_histogram(aes(x=wage,y=..count../sum(..count..)),
+                 fill="lightskyblue",color="black",bins=60) + 
+  theme_dark() +  
+  ylab("Relative Frequency") + xlab("Wage ($/Hr)")
+```
+
+```{r}
+Wage2=Wage %>%
+        filter(between(wage,0,30))
+summarize(Wage,n())
+summarize(Wage2,n())
+```
+
+```{r}
+Wage3=Wage %>%
+      mutate(wage=ifelse(wage>30,NA,wage))
+summarize(Wage,n())
+summarize(Wage3,n())
+```
+
+```{r}
+ggplot(data=diamonds) +
+  geom_count(mapping=aes(x=cut,y=color))
+```
+
+```{r}
+diamonds%>%
+  group_by(cut, color)%>%
+  summarize(n=n())%>%
+  subset(select=c("cut","color","n"))%>%  
+  spread(cut, n)
+```
+
+```{r}
+sum.diamond1=diamonds %>%
+             group_by(color,cut) %>%
+             summarize(n=n()) %>%
+             mutate(prop=n/sum(n))
+head(sum.diamond1,2)
+```
+
+```{r}
+sum.diamond2=diamonds %>%
+             group_by(color,cut) %>%
+             summarize(n=n()) %>%
+             ungroup() %>%
+             mutate(prop=n/sum(n))
+head(sum.diamond2,2)
+```
+
+```{r}
+sum(sum.diamond1$n)
+(sum.diamond1$n/sum(sum.diamond1$n))[1:2]
+sum(sum.diamond1$prop)
+sum(sum.diamond2$n)
+(sum.diamond2$n/sum(sum.diamond2$n))[1:2]
+sum(sum.diamond2$prop)
+```
+
+```{r}
+diamonds %>%
+  group_by(color,cut) %>%
+  summarize(n=n()) %>%
+  ungroup() %>%
+  mutate(prop=n/sum(n)) %>%
+ggplot(mapping = aes(x = color, y = cut)) +
+geom_tile(mapping = aes(fill = prop))
+```
+
+```{r}
+library(hexbin)
+ggplot(data = diamonds) +
+geom_hex(mapping = aes(x = carat, y = price))
+```
+

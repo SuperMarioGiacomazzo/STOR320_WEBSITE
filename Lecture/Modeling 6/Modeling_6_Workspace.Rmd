@@ -1,0 +1,124 @@
+---
+title: "Lecture 28 Workspace"
+author: "Mario Giacomazzo"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,warning=F)
+options(scipen=999)
+library(tidyverse)    #Essential Functions
+library(modelr)
+library(broom)
+library(titanic)
+```
+
+```{r}
+TRAIN=titanic_train[,c(2,3,5,6,7,8,10,12)]
+TEST=titanic_test[,c(2,4,5,6,7,9,11)]
+```
+
+```{r}
+ggplot(TRAIN) + geom_point(aes(x=Fare,y=Survived)) + theme_minimal() +
+  geom_smooth(aes(x=Fare,y=Survived),method="lm",alpha=0.3,color="gold") +
+  geom_smooth(aes(x=Fare,y=Survived),method="glm",
+              method.args=list(family="binomial"),color="deepskyblue1") +
+  geom_hline(yintercept=0.5,linetype="dashed",size=2,alpha=0.3)
+```
+
+```{r}
+ggplot(TRAIN) + geom_point(aes(x=Age,y=Survived)) + theme_minimal() +
+  geom_smooth(aes(x=Age,y=Survived),method="glm",
+              method.args=list(family="binomial"),color="deepskyblue1") +
+  geom_hline(yintercept=0.5,linetype="dashed",size=2,alpha=0.3)
+```
+
+```{r}
+TRAIN %>% 
+  mutate(Sex=factor(Sex)) %>% 
+  group_by(Sex) %>% 
+  summarize(Prop.Survived=mean(Survived)) %>%
+  ggplot() + 
+  geom_bar(aes(x=Sex,y=Prop.Survived),
+           stat="Identity",fill="deepskyblue1") +
+  theme_minimal() +
+  theme(text=element_text(size=20))
+  
+```
+
+```{r}
+set.seed(216)
+sample.in=sample(1:dim(TRAIN)[1],size=floor(0.8*dim(TRAIN)[1]))
+TRAIN.IN=TRAIN[sample.in,c("Survived","Fare","Sex","Age")]
+TRAIN.OUT=TRAIN[-sample.in,c("Survived","Fare","Sex","Age")]
+```
+
+
+```{r}
+logmod1=glm(Survived~.^3,family="binomial",data=TRAIN.IN)
+tidy(logmod1)[,c("term","estimate","p.value")]
+logmod2=glm(Survived~.*.,family="binomial",data=TRAIN.IN)
+tidy(logmod2)[,c("term","estimate","p.value")]
+logmod3=glm(Survived~.,family="binomial",data=TRAIN.IN)
+tidy(logmod3)[,c("term","estimate","p.value")]
+```
+
+```{r}
+TRAIN.OUT2 = TRAIN.OUT %>% 
+             mutate(p1=predict(logmod1,newdata=TRAIN.OUT,type="response"),
+                    p2=predict(logmod2,newdata=TRAIN.OUT,type="response"),
+                    p3=predict(logmod3,newdata=TRAIN.OUT,type="response")) %>%
+             select(Survived,p1,p2,p3) %>%
+             mutate(S1=ifelse(p1<0.5,0,1),
+                    S2=ifelse(p2<0.5,0,1),
+                    S3=ifelse(p3<0.5,0,1))
+head(TRAIN.OUT2,10)
+```
+
+```{r}
+TRAIN.OUT3=na.omit(TRAIN.OUT2)
+head(TRAIN.OUT3,20)
+mean(TRAIN.OUT3$S1==TRAIN.OUT3$S2)
+mean(TRAIN.OUT3$S2==TRAIN.OUT3$S3)
+```
+
+```{r}
+TRAIN.OUT4=TRAIN.OUT3 %>% select(-p2,-S2)
+head(TRAIN.OUT4,8)
+```
+
+```{r}
+TRAIN.OUT5 = TRAIN.OUT4 %>%
+              select(-p1,-p3) %>%
+              mutate(Survived=factor(Survived),S1=factor(S1),S3=factor(S3)) %>%
+              mutate(Survived=fct_recode(Survived,"Survived"="1","Died"="0"),
+                     S1=fct_recode(S1,"Will Survive"="1","Will Die"="0"),
+                     S3=fct_recode(S3,"Will Survive"="1","Will Die"="0")) %>%
+              mutate(Survived=factor(Survived,levels=c("Survived","Died")),
+                     S1=factor(S1,levels=c("Will Survive","Will Die")),
+                     S3=factor(S3,levels=c("Will Survive","Will Die")))
+head(TRAIN.OUT5)
+```
+
+
+```{r}
+RESULTS1=table(TRAIN.OUT5$Survived,TRAIN.OUT5$S1) %>% 
+            prop.table()
+print(RESULTS1)
+RESULTS3=table(TRAIN.OUT5$Survived,TRAIN.OUT5$S3) %>% 
+            prop.table()
+print(RESULTS3)
+```
+
+```{r}
+ERROR.RESULTS = tibble(
+    Model=c("3 Way","No Way"),
+    Sensitivity=c(RESULTS1[1,1]/sum(RESULTS1[1,]),RESULTS3[1,1]/sum(RESULTS3[1,])),
+    Specificity=c(RESULTS1[2,2]/sum(RESULTS1[2,]),RESULTS3[2,2]/sum(RESULTS3[2,])),
+    FPR=c(RESULTS1[2,1]/sum(RESULTS1[2,]),RESULTS3[2,1]/sum(RESULTS3[2,])),
+    FNR=c(RESULTS1[1,2]/sum(RESULTS1[1,]),RESULTS3[1,2]/sum(RESULTS3[1,]))
+)
+print(ERROR.RESULTS)
+```
+
