@@ -76,10 +76,10 @@ This course is an application-driven introduction to data science. Statistical a
 - Course Syllabus: **[Section 1](https://drive.google.com/file/d/1GCWeZarTqsu7HajnJqCC8vPNjC3q1LXC/view?usp=sharing)**
 
 - Zoom Links:
-    - **[Lectures:](https://unc.zoom.us/j/98063448751)** 11:30AM to 1PM
+    - **[Lectures:](https://unc.zoom.us/j/98063448751)** Daily from 11:30AM to 1PM
     - **[Dr. Mario Office Hours:](https://unc.zoom.us/j/94479071959)** 30 Min Before and After Class 
-    - **[Pavlos Office Hours:]()**
-    - **[Peter Office Hours:]()**
+    - **[Pavlos Office Hours:](https://unc.zoom.us/j/2903979720)** Daily from 8AM to 9AM
+    - **[Peter Office Hours:](https://unc.zoom.us/j/631940383)** Daily from 2:30PM to 3:30PM
 
   </div>
   <div class="column">
@@ -128,9 +128,7 @@ This course is an application-driven introduction to data science. Statistical a
 |Jul. 21|Modeling X|[Slides](https://drive.google.com/file/d/1T9FMiYSmDr4WC3pLuyxvVVvDEhpy7ScQ/view?usp=sharing)||
 |Jul. 22|Data Ethics|[Slides](https://drive.google.com/file/d/1-TEYP07GJXMzqM42hgYxat-PcfOLbf6S/view?usp=sharing)||
 |Jul. 23|R Shiny|[Slides](https://drive.google.com/file/d/1tzDNVSmNEsfajomAzeyKbN-zMWp0LXZp/view?usp=sharing)|[Tutorial](https://drmariogiacomazzo.shinyapps.io/Gapminder_Part3/) ([.zip](https://drive.google.com/file/d/1psNB-HGjdZoW-kWb2nWZHe6WDTtHno1P/view?usp=sharing))|||||
-|Jul. 24|Final Papers|||
-|Jul. 27|Presentation Preparation|||
-|Jul. 28|Final Presentations|||
+|Jul. 27|Final Presentations|||
 
 
 
@@ -140,22 +138,22 @@ All Lab and Analysis assignments are to be submitted via **[Sakai](https://sakai
 
 | Assigned | Lab (L) | Analysis (A) |Solutions| Due Date (Time) |
 |----------|:--------:|:-------------:|:-------------:|----------------:|
-| June 22  | [L1](Lab/Lab 1/Lab_1.html) ([.Rmd](https://drive.google.com/file/d/1jXtRTRStUBiAmceTc0rVuxWq0_wsqJ7r/view?usp=sharing))|||June 26 (5 PM) |
-| June 28 | [L2](Lab/Lab 2/Lab_2.html) ([.Rmd](https://drive.google.com/file/d/1qbrv--zda43E3xj4YlxiqNeLwZjccwOu/view?usp=sharing))|||July 1 (5 PM) |
-| July 1 || [A1](Analysis/Analysis 1/Analysis_1.html) ([.zip](https://drive.google.com/file/d/13J08S62sSh7MazcrQbiRBlWtlzqmx0VW/view?usp=sharing))||July 5 (5 PM) |
-| July 5 | [L3](Lab/Lab 3/Lab_3.html) ([.Rmd](https://drive.google.com/file/d/14R9FxL7_vBam--s25QYYRM1N4TOs4nTu/view?usp=sharing))|||July 8 (5 PM)|
-| July 8 | [L4](Lab/Lab 4/Lab_4.html) ([.Rmd](https://drive.google.com/file/d/1zLBecpK4G7LSusTdWzYJtoz_FT60tYeb/view?usp=sharing))|||July 10 (5 PM)|
-| July 10|| [A2](Analysis/Analysis 2/Analysis_2.html) ([.zip](https://drive.google.com/file/d/1I5sckP-XEic_N9iYR7-8CpIrxjQ0PJgV/view?usp=sharing))||July 12 (5 PM)|
-| July 12 | [L5](Lab/Lab 5/Lab_5.html) ([.Rmd](https://drive.google.com/file/d/1nfW4gDWLtADfke1ooVnoTFMmdsut0uk2/view?usp=sharing))|||July 15  (5 PM)|
-| July 15 || [A3](Analysis/Analysis 3/Analysis_3.html) ([.zip](https://drive.google.com/file/d/1Z7GI0vTDktiW6yyis02CGY4eMDejDfr1/view?usp=sharing))||July 19 (5 PM)|
-| July 19  | [L6](Lab/Lab 6/Lab_6.html) ([.Rmd](https://drive.google.com/file/d/16zexYq73NJdJkIfg0D226VSIeJfevUzB/view?usp=sharing)) |||July 22 (5 PM)|
-| July 22 | [L7](Lab/Lab 7/Lab_7.html) ([.Rmd](https://drive.google.com/file/d/1eeQAFuUfsb5MSv9szKHtZ3ExLhgIvbNc/view?usp=sharing)) |||July 24 (5 PM)|
-| July 24   |        |  [A4](Analysis/Analysis 4/Analysis_4.html) ([.zip](https://drive.google.com/file/d/1veOCeyVo6nhNo1jrzFPO9QIwoMXPaMga/view?usp=sharing))||July 29 (5 PM)|
+| June 22  | [L1](Lab/Lab 1/Lab_1.html) ([.Rmd]())|||June 24 (5 PM) |
+| June 24 | [L2](Lab/Lab 2/Lab_2.html) ([.Rmd]())|||June 26 (5 PM) |
+| June 26 || [A1](Analysis/Analysis 1/Analysis_1.html) ([.zip]())||June 29 (5 PM) |
+| June 29 | [L3](Lab/Lab 3/Lab_3.html) ([.Rmd]())|||July 1 (5 PM)|
+| July 1 | [L4](Lab/Lab 4/Lab_4.html) ([.Rmd]())|||July 6 (5 PM)|
+| July 6|| [A2](Analysis/Analysis 2/Analysis_2.html) ([.zip]())||July 8 (5 PM)|
+| July 8 | [L5](Lab/Lab 5/Lab_5.html) ([.Rmd]())|||July 10  (5 PM)|
+| July 10 || [A3](Analysis/Analysis 3/Analysis_3.html) ([.zip]())||July 13 (5 PM)|
+| July 13  | [L6](Lab/Lab 6/Lab_6.html) ([.Rmd]()) |||July 15 (5 PM)|
+| July 15 | [L7](Lab/Lab 7/Lab_7.html) ([.Rmd]()) |||July 17 (5 PM)|
+| July 17   |        |  [A4](Analysis/Analysis 4/Analysis_4.html) ([.zip]())||July 20 (5 PM)|
 |          |        |             |           |
 
 # **Final Project Details**
 
-For the final project, each section of STOR 320 will be divided (ideally) into reasearch groups of size 5. To ensure fairness, students will be assigned randomly based on the `sample` function in **R**. May God have mercy on your souls. 
+For the final project, each section of STOR 320 will be divided (ideally) into reasearch groups of size 5. To ensure fairness, students will be assigned randomly based on the `sample` function in **R**. If you don't get in a group you like, try being better at luck.
 
 ## Research Group Assignments
 
@@ -199,10 +197,10 @@ This final project will be divided into four parts worth a total of 100 points. 
 
 | Part | Description |Method of Submission| Due Date (Time) |
 |------|-------------|-------------------|----------------:|
-| P1  | Project Proposal| Sakai + Meeting    | July 5 (5PM)|
-| P2  | Exploratory Data Analysis |Sakai + Meeting| July 19 (5PM)|
-| P3  | Final Written Paper|Sakai|July 24 (5 PM)|
-| P4  | Final Presentation|Sakai + Class| July 28 (11:30 AM)|
+| P1  | Project Proposal| Sakai | July 2 (5PM)|
+| P2  | Exploratory Data Analysis |Sakai | July 14 (5PM)|
+| P3  | Final Written Paper|Sakai|July 23 (5PM)|
+| P4  | Final Presentation|Sakai + Class| July 27 (11:30AM -2:30PM)|
 ||||
 
 
