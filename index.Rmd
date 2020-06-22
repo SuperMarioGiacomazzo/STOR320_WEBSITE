@@ -73,7 +73,7 @@ This course is an application-driven introduction to data science. Statistical a
     - **[Peter Lin](http://stat-or.unc.edu/people/graduate-students-department)**
     
 
-- Course Syllabus: **[Section 1](https://drive.google.com/file/d/1GCWeZarTqsu7HajnJqCC8vPNjC3q1LXC/view?usp=sharing)**
+- Course Syllabus: **[Section 1](https://drive.google.com/file/d/1YOGDAWKjznaFnUW7uZO8nciixMZO9XY5/view?usp=sharing)**
 
 - Zoom Links:
     - **[Lectures:](https://unc.zoom.us/j/98063448751)** Daily from 11:30AM to 1PM
@@ -138,16 +138,16 @@ All Lab and Analysis assignments are to be submitted via **[Sakai](https://sakai
 
 | Assigned | Lab (L) | Analysis (A) |Solutions| Due Date (Time) |
 |----------|:--------:|:-------------:|:-------------:|----------------:|
-| June 22  | [L1](Lab/Lab 1/Lab_1.html) ([.Rmd]())|||June 24 (5 PM) |
-| June 24 | [L2](Lab/Lab 2/Lab_2.html) ([.Rmd]())|||June 26 (5 PM) |
+| June 22  | [L1](Lab/Lab 1/Lab_1.html) ([.Rmd](https://drive.google.com/file/d/18x6JIRsASRmar21fNFcCz5u4tZdhJga8/view?usp=sharing))|||June 24 (5 PM) |
+| June 24 | [L2](Lab/Lab 2/Lab_2.html) ([.Rmd](https://drive.google.com/file/d/1A3v6XoatscGa5WE9K-rDAlKOiETtlN06/view?usp=sharing))|||June 26 (5 PM) |
 | June 26 || [A1](Analysis/Analysis 1/Analysis_1.html) ([.zip]())||June 29 (5 PM) |
-| June 29 | [L3](Lab/Lab 3/Lab_3.html) ([.Rmd]())|||July 1 (5 PM)|
-| July 1 | [L4](Lab/Lab 4/Lab_4.html) ([.Rmd]())|||July 6 (5 PM)|
+| June 29 | [L3](Lab/Lab 3/Lab_3.html) ([.Rmd](https://drive.google.com/file/d/1A3v6XoatscGa5WE9K-rDAlKOiETtlN06/view?usp=sharing))|||July 1 (5 PM)|
+| July 1 | [L4](Lab/Lab 4/Lab_4.html) ([.Rmd](https://drive.google.com/file/d/1EvKorkEPsFKCpWLYEncqD_O4ZIEfI4nb/view?usp=sharing))|||July 6 (5 PM)|
 | July 6|| [A2](Analysis/Analysis 2/Analysis_2.html) ([.zip]())||July 8 (5 PM)|
-| July 8 | [L5](Lab/Lab 5/Lab_5.html) ([.Rmd]())|||July 10  (5 PM)|
+| July 8 | [L5](Lab/Lab 5/Lab_5.html) ([.Rmd](https://drive.google.com/file/d/1MflNYSHEUxm5IvoFf950pejj4mTROJmR/view?usp=sharing))|||July 10  (5 PM)|
 | July 10 || [A3](Analysis/Analysis 3/Analysis_3.html) ([.zip]())||July 13 (5 PM)|
-| July 13  | [L6](Lab/Lab 6/Lab_6.html) ([.Rmd]()) |||July 15 (5 PM)|
-| July 15 | [L7](Lab/Lab 7/Lab_7.html) ([.Rmd]()) |||July 17 (5 PM)|
+| July 13  | [L6](Lab/Lab 6/Lab_6.html) ([.Rmd](https://drive.google.com/file/d/1GPfHPQLhrCayiaO3kmGkVCPjAyAicl1C/view?usp=sharing)) |||July 15 (5 PM)|
+| July 15 | [L7](Lab/Lab 7/Lab_7.html) ([.Rmd](https://drive.google.com/file/d/1_-m7iz9Ju8oXbrXd4bwN1IvtnMBiyHu4/view?usp=sharing)) |||July 17 (5 PM)|
 | July 17   |        |  [A4](Analysis/Analysis 4/Analysis_4.html) ([.zip]())||July 20 (5 PM)|
 |          |        |             |           |
 
