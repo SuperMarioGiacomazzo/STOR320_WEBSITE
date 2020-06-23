@@ -92,8 +92,8 @@ This course is an application-driven introduction to data science. Statistical a
 
 | Date | Lecture | Slides | Tutorial |
 |------|---------|--------:|---------:|
-|Jun. 22| [Introduction](https://unc.zoom.us/rec/share/-ItrJb_6yjpJZIGSzGD_aLIaBrz5aaa8hnNI_voFykp2EQkXPuxTJ-md03_hgjKe) | [Slides](https://drive.google.com/file/d/1atF84I-_13yvKfzxfNS-XjECwWzrND21/view?usp=sharing)||
-|| [Data Visualization](https://unc.zoom.us/rec/share/-ItrJb_6yjpJZIGSzGD_aLIaBrz5aaa8hnNI_voFykp2EQkXPuxTJ-md03_hgjKe) | [Slides](https://drive.google.com/file/d/1TAZ9vnNm-Nz3Aw-GCHfOC0RpmkRus39Z/view?usp=sharing) | [Tutorial](Tutorial/Data Visualization/Tutorial.html) ([.Rmd](https://drive.google.com/file/d/1e0ThTHdZzxsWWg5PI-dG-IURkN1P-bPg/view?usp=sharing)) |
+|Jun. 22| [Introduction](https://unc.zoom.us/rec/share/_s0lEbTx1UxJe43c6HPPXqIZToWmX6a803Ab_fpcnkhFwSeeGyKuyXTyInuxKtap?startTime=1592839447000) | [Slides](https://drive.google.com/file/d/1atF84I-_13yvKfzxfNS-XjECwWzrND21/view?usp=sharing)||
+|| [Data Visualization](https://unc.zoom.us/rec/share/_s0lEbTx1UxJe43c6HPPXqIZToWmX6a803Ab_fpcnkhFwSeeGyKuyXTyInuxKtap?startTime=1592839447000) | [Slides](https://drive.google.com/file/d/1TAZ9vnNm-Nz3Aw-GCHfOC0RpmkRus39Z/view?usp=sharing) | [Tutorial](Tutorial/Data Visualization/Tutorial.html) ([.Rmd](https://drive.google.com/file/d/1e0ThTHdZzxsWWg5PI-dG-IURkN1P-bPg/view?usp=sharing)) |
 |Jun. 23|Workflow in RMarkdown|[Slides](https://drive.google.com/file/d/1DDl31rRmNHJ17GCIKuLvGpkymxF8uayH/view?usp=sharing)| [Tutorial](Tutorial/Workflow/Tutorial.html) ([.zip](https://drive.google.com/file/d/1bLEU0GucAtlX4-VXUydwkesuW3d0pEVB/view?usp=sharing))|
 |Jun. 24|Data Transformation I|[Slides](https://drive.google.com/file/d/16N-lYhh0tn2J4SfUBXeVcLvffiAMll56/view?usp=sharing)||
 ||Data Transformation II|[Slides](https://drive.google.com/file/d/1dKHDweumhPHaybDO9Q_gFAMEbSfwwWkQ/view?usp=sharing)|[Tutorial](Tutorial/Data Transformation 1/Tutorial.html) ([.Rmd](https://drive.google.com/file/d/1y0UuxOQcwgBS53Cc_COBCOoL832NiXzi/view?usp=sharing))|
