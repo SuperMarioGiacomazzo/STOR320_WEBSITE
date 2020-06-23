@@ -95,18 +95,18 @@ This course is an application-driven introduction to data science. Statistical a
 |Jun. 22| [Introduction](https://unc.zoom.us/rec/share/_s0lEbTx1UxJe43c6HPPXqIZToWmX6a803Ab_fpcnkhFwSeeGyKuyXTyInuxKtap?startTime=1592839447000) | [Slides](https://drive.google.com/file/d/1atF84I-_13yvKfzxfNS-XjECwWzrND21/view?usp=sharing)||
 || [Data Visualization](https://unc.zoom.us/rec/share/_s0lEbTx1UxJe43c6HPPXqIZToWmX6a803Ab_fpcnkhFwSeeGyKuyXTyInuxKtap?startTime=1592839447000) | [Slides](https://drive.google.com/file/d/1TAZ9vnNm-Nz3Aw-GCHfOC0RpmkRus39Z/view?usp=sharing) | [Tutorial](Tutorial/Data Visualization/Tutorial.html) ([.Rmd](https://drive.google.com/file/d/1e0ThTHdZzxsWWg5PI-dG-IURkN1P-bPg/view?usp=sharing)) |
 |Jun. 23|Workflow in RMarkdown|[Slides](https://drive.google.com/file/d/1DDl31rRmNHJ17GCIKuLvGpkymxF8uayH/view?usp=sharing)| [Tutorial](Tutorial/Workflow/Tutorial.html) ([.zip](https://drive.google.com/file/d/1bLEU0GucAtlX4-VXUydwkesuW3d0pEVB/view?usp=sharing))|
-|Jun. 24|Data Transformation I|[Slides](https://drive.google.com/file/d/16N-lYhh0tn2J4SfUBXeVcLvffiAMll56/view?usp=sharing)||
-||Data Transformation II|[Slides](https://drive.google.com/file/d/1dKHDweumhPHaybDO9Q_gFAMEbSfwwWkQ/view?usp=sharing)|[Tutorial](Tutorial/Data Transformation 1/Tutorial.html) ([.Rmd](https://drive.google.com/file/d/1y0UuxOQcwgBS53Cc_COBCOoL832NiXzi/view?usp=sharing))|
-|Jun. 25|Data Transformation III|[Slides]()||
-||Data Transformation IV|[Slides]()|[Tutorial](Tutorial/Data Transformation 2/Tutorial.html) ([.zip](https://drive.google.com/file/d/1CbVYRmSw7vZua-9ppvsgtcLKuAjhRf-f/view?usp=sharing))|
-|Jun. 26|Exploratory Data Analysis I|[Slides]()||
-||Exploratory Data Analysis II|[Slides]()|[Tutorial](Tutorial/Exploratory Data Analysis/Tutorial.html) ([.Rmd](https://drive.google.com/file/d/1NQ5QuKC7ZzaajFkGH39_y-H9gMrAmgjZ/view?usp=sharing))||
-|June 29|Final Project I|[Slides]()||
+|Jun. 24|Data Transformation I|[Slides](https://drive.google.com/file/d/16N-lYhh0tn2J4SfUBXeVcLvffiAMll56/view?usp=sharing)|[Tutorial](Tutorial/Data Transformation 1/Tutorial.html) ([.Rmd](https://drive.google.com/file/d/1sqkoYplrob0I7igiW_tB_L2zHzRy_P5N/view?usp=sharing))|
+||Data Transformation II|[Slides](https://drive.google.com/file/d/16N-lYhh0tn2J4SfUBXeVcLvffiAMll56/view?usp=sharing)|[Tutorial](Tutorial/Data Transformation 2/Tutorial.html) ([.Rmd](https://drive.google.com/file/d/1rjXnR0oYNeZo0nWkX4AEB_jnFjseM8yv/view?usp=sharing))|
+|Jun. 25|Data Transformation III|[Slides](https://drive.google.com/file/d/1kUU2hO2YLJUrrNOv4Uy7tOK8GZcPGqL7/view?usp=sharing)||
+||Data Transformation IV|[Slides](https://drive.google.com/file/d/1UGMfheOImYQt63gJ0D_rdLKrlgTQZOjK/view?usp=sharing)|[Tutorial](Tutorial/Data Transformation 2/Tutorial.html) ([.zip](https://drive.google.com/file/d/1CbVYRmSw7vZua-9ppvsgtcLKuAjhRf-f/view?usp=sharing))|
+|Jun. 26|Exploratory Data Analysis I|[Slides](https://drive.google.com/file/d/1cwBrbCBpG0nvmcfXrlrpHT5BxREVjr0P/view?usp=sharing)||
+||Exploratory Data Analysis II|[Slides](https://drive.google.com/file/d/1HV2oJ5a_dVLBoSCctZr1ir8wzIgoMGVq/view?usp=sharing)|[Tutorial](Tutorial/Exploratory Data Analysis/Tutorial.html) ([.Rmd](https://drive.google.com/file/d/1NQ5QuKC7ZzaajFkGH39_y-H9gMrAmgjZ/view?usp=sharing))||
+|June 29|Final Project I|[Slides](https://drive.google.com/file/d/1VRTM5jW8TjjWHMcizNjjA0ewemwNvyuC/view?usp=sharing)||
 ||Data Import|[Slides](https://drive.google.com/file/d/15KvLv179xjfvYSMuoGDKmwicuT0F2UKG/view?usp=sharing)||
-|June 30|Tidy Data I|[Slides]()||
-||Tidy Data II|[Slides]()|[Tutorial](Tutorial/Tidy/Tutorial.html)  ([.Rmd](https://drive.google.com/file/d/1C0p16A8v5NkGio6lKpP6kDxdfjA0X9cq/view?usp=sharing))|
-|Jul. 1|Web Scraping I|[Slides]()|[Tutorial](Tutorial/Web Scraping 1/Tutorial.html)  ([.Rmd](https://drive.google.com/file/d/1wYT8HjbkzcqZO7AWhxyEM35LfxfP9a2P/view?usp=sharing))|
-|Jul. 2|Web Scraping II|[Slides]()|[Tutorial](Tutorial/Web Scraping 2/Tutorial.html)  ([.zip](https://drive.google.com/file/d/1k86bdmm4tRT2GGyamBlQNXkxfCcSvTl1/view?usp=sharing))|
+|June 30|Tidy Data I|[Slides](https://drive.google.com/file/d/1U-TRjdBEHXaU_Q52Xunkxpd0Yie9oZdn/view?usp=sharing)||
+||Tidy Data II|[Slides](https://drive.google.com/file/d/1WTsPbnuezz_1ZxI35LwwXPJL7VYlzK8G/view?usp=sharing)|[Tutorial](Tutorial/Tidy/Tutorial.html)  ([.Rmd](https://drive.google.com/file/d/1C0p16A8v5NkGio6lKpP6kDxdfjA0X9cq/view?usp=sharing))|
+|Jul. 1|Web Scraping I|[Slides](https://drive.google.com/file/d/1hSfA_YS7WhV-hkfXhz-_eVWVY6zt5fil/view?usp=sharing)|[Tutorial](Tutorial/Web Scraping 1/Tutorial.html)  ([.Rmd](https://drive.google.com/file/d/1wYT8HjbkzcqZO7AWhxyEM35LfxfP9a2P/view?usp=sharing))|
+|Jul. 2|Web Scraping II|[Slides](https://drive.google.com/file/d/10WIwlmZuRakieBpIhg5MGLjodeOLIpCR/view?usp=sharing)|[Tutorial](Tutorial/Web Scraping 2/Tutorial.html)  ([.zip](https://drive.google.com/file/d/1k86bdmm4tRT2GGyamBlQNXkxfCcSvTl1/view?usp=sharing))|
 |Jul. 3|Fireworks Eve|||
 |Jul. 6|Joins I|[Slides]()||
 ||Joins II|[Slides]()||
