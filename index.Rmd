@@ -104,9 +104,9 @@ This course is an application-driven introduction to data science. Statistical a
 |June 29|Final Project I|[Slides](https://drive.google.com/file/d/1VRTM5jW8TjjWHMcizNjjA0ewemwNvyuC/view?usp=sharing)||
 ||Data Import|[Slides](https://drive.google.com/file/d/15KvLv179xjfvYSMuoGDKmwicuT0F2UKG/view?usp=sharing)||
 |June 30|Tidy Data I|[Slides](https://drive.google.com/file/d/1U-TRjdBEHXaU_Q52Xunkxpd0Yie9oZdn/view?usp=sharing)||
-||Tidy Data II|[Slides](https://drive.google.com/file/d/1WTsPbnuezz_1ZxI35LwwXPJL7VYlzK8G/view?usp=sharing)|[Tutorial](Tutorial/Tidy/Tutorial.html)  ([.Rmd](https://drive.google.com/file/d/1C0p16A8v5NkGio6lKpP6kDxdfjA0X9cq/view?usp=sharing))|
-|Jul. 1|Web Scraping I|[Slides](https://drive.google.com/file/d/1hSfA_YS7WhV-hkfXhz-_eVWVY6zt5fil/view?usp=sharing)|[Tutorial](Tutorial/Web Scraping 1/Tutorial.html)  ([.Rmd](https://drive.google.com/file/d/1wYT8HjbkzcqZO7AWhxyEM35LfxfP9a2P/view?usp=sharing))|
-|Jul. 2|Web Scraping II|[Slides](https://drive.google.com/file/d/10WIwlmZuRakieBpIhg5MGLjodeOLIpCR/view?usp=sharing)|[Tutorial](Tutorial/Web Scraping 2/Tutorial.html)  ([.zip](https://drive.google.com/file/d/1k86bdmm4tRT2GGyamBlQNXkxfCcSvTl1/view?usp=sharing))|
+||Tidy Data II|[Slides](https://drive.google.com/file/d/1WTsPbnuezz_1ZxI35LwwXPJL7VYlzK8G/view?usp=sharing)|[Tutorial](Tutorial/Tidy Data 2/Tutorial.html)  ([.Rmd](https://drive.google.com/file/d/1C0p16A8v5NkGio6lKpP6kDxdfjA0X9cq/view?usp=sharing))|
+|Jul. 1|Web Scraping I|[Slides](https://drive.google.com/file/d/1hSfA_YS7WhV-hkfXhz-_eVWVY6zt5fil/view?usp=sharing)|[Tutorial](Tutorial/Web Scraping 1/Tutorial.html)  ([.Rmd](https://drive.google.com/file/d/1H_rEai7Y9dG5C1Papo-zsgvek8SzE2-M/view?usp=sharing))|
+|Jul. 2|Web Scraping II|[Slides](https://drive.google.com/file/d/10WIwlmZuRakieBpIhg5MGLjodeOLIpCR/view?usp=sharing)|[Tutorial](Tutorial/Web Scraping 2/Tutorial.html)  ([.zip](https://drive.google.com/file/d/1r76UjOcWSUC_pcNj6LNvXDdKioZCTqeK/view?usp=sharing))|
 |Jul. 3|Fireworks Eve|||
 |Jul. 6|Joins I|[Slides](https://drive.google.com/file/d/1M88xOe34SWkbm7lCQMNX6RQAm_mhCEjk/view?usp=sharing)||
 ||Joins II|[Slides](https://drive.google.com/file/d/1wgEmOgwbjbnZbIBaHSiRg_tAbuumAS9I/view?usp=sharing)||
