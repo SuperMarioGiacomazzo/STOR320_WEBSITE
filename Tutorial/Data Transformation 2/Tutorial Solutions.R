@@ -1,70 +1,74 @@
 library(tidyverse)
 library(nycflights13)
-library(knitr)
-library(kableExtra)
 
 names(flights)
 
+#Part 1:
+f1a=filter(flights,flight==807)
 
-#Part 1
-flight.summary = 
-  
-  #Initiate the Data Set Summarized
-  flights %>%
-          
-  #Use mutate() to Create a Measure of Accuracy Based on Delay Variables Measured in Minutes
-  mutate(
-    dep_min=(dep_time%/%100)*60+dep_time%%100,
-    sched_dep_min=(sched_dep_time%/%100)*60+sched_dep_time%%100,
-    arr_min=(arr_time%/%100)*60+arr_time%%100,
-    sched_arr_min=(sched_arr_time%/%100)*60+sched_arr_time%%100,
-    dep_delay_min=dep_min-sched_dep_min,
-    arr_delay_min=arr_min-sched_arr_min,
-    accuracy=sqrt((dep_delay_min)^2+abs(arr_delay_min)^2)
-  ) %>%
-  
-  #Use filter() to Remove Observations Missing Your Accuracy Measure.
-  filter(!is.na(accuracy)) %>%
-  
-  #Use group_by() for future aggregation for each combination of origin, destination, and carrier
-  group_by(origin,dest,carrier) %>%
+f1b=select(f1a,flight,carrier,origin,dest)
 
-  #Use summarize() to capture the count, mean of accuracy,variance of accuracy, and mean of distance for each combination of origin, destination, and carrier
-  summarize(
-    count=n(),
-    mean.acc=mean(accuracy),
-    var.acc=var(accuracy),
-    mean.dist=mean(distance)
-  ) %>%
-  
-  #Use filter() to remove all scenarios where the count variable Created is Less than or Equal to 10
-  filter(!(count<=10)) %>%
-  
-  #Ungroup Future Modifications based on combination of origin, destination, and carrier
-  ungroup() %>%
-  
-  #Use mutate() to convert the count variable into a variable called proportion representing the proportion of flights under each combination of origin, destination, and carrier
-  mutate(proportion=count/sum(count))
+f1c=rename(f1b,destination=dest)
 
-#Part 2
-png(file="graph1.png",width=600,height=400)
-ggplot(data=flight.summary) +
-  geom_point(aes(x=mean.dist,y=mean.acc,color=origin)) +
-  geom_smooth(aes(x=mean.dist,y=mean.acc,color=origin),se=F,method="lm")
-dev.off()
+f1d=arrange(f1c,carrier,origin,destination)
+head(f1d,5)
 
-png(file="graph2.png",width=600,height=400)
-ggplot(data=filter(flight.summary,mean.dist<3000)) +
-  geom_point(aes(x=mean.dist,y=mean.acc,color=origin)) +
-  geom_smooth(aes(x=mean.dist,y=mean.acc,color=origin),se=F,method="lm")
-dev.off()
+f1e=arrange(f1d,desc(carrier),desc(origin),desc(destination))
+head(f1e,18)
 
+#Part2
+f2a=transmute(flights,
+          dep_hr=dep_time%/%100+(dep_time%%100)/60,
+          sched_dep_hr=sched_dep_time%/%100+(sched_dep_time%%100)/60,
+          arr_hr=arr_time%/%100+(arr_time%%100)/60,
+          sched_arr_hr=sched_arr_time%/%100+(sched_arr_time%%100)/60)
+names(f2a)
+head(f2a)
+
+f2b=mutate(f2a,
+           dep_delay_hr=dep_hr-sched_dep_hr,
+           arr_delay_hr=arr_hr-sched_arr_hr)
+
+f2c=mutate(f2b,
+           gain_hr=arr_delay_hr-dep_delay_hr,
+           percent_gain_hr=percent_rank(gain_hr))
+
+f2d=filter(f2c,percent_gain_hr<0.1|percent_gain_hr>0.9)
+
+f2e=arrange(f2d,desc(percent_gain_hr))
+head(f2e,5)
+
+f2e.pipedream = flights %>%
+  transmute(dep_hr=dep_time%/%100+(dep_time%%100)/60,
+            sched_dep_hr=sched_dep_time%/%100+(sched_dep_time%%100)/60,
+            arr_hr=arr_time%/%100+(arr_time%%100)/60,
+            sched_arr_hr=sched_arr_time%/%100+(sched_arr_time%%100)/60) %>%
+  mutate(dep_delay_hr=dep_hr-sched_dep_hr,
+         arr_delay_hr=arr_hr-sched_arr_hr) %>%
+  mutate(gain_hr=arr_delay_hr-dep_delay_hr,
+         percent_gain_hr=percent_rank(gain_hr)) %>%
+  filter(percent_gain_hr<0.1|percent_gain_hr>0.9) %>%
+  arrange(desc(percent_gain_hr))
+
+identical(f2e,f2e.pipedream)
 
 #Part 3
-flight.summary2 = 
-  flight.summary %>%
-  mutate(rank=min_rank(mean.acc)) %>%
-  filter(min_rank(mean.acc)<=5 | min_rank(desc(mean.acc))<=5) %>%
-  arrange(rank)
+f.accuracy<-mutate(flights,
+                   dep_hr=dep_time%/%100+(dep_time%%100)/60,
+                   sched_dep_hr=sched_dep_time%/%100+(sched_dep_time%%100)/60,
+                   arr_hr=arr_time%/%100+(arr_time%%100)/60,
+                   sched_arr_hr=sched_arr_time%/%100+(sched_arr_time%%100)/60,
+                   dep_delay_hr=dep_hr-sched_dep_hr,
+                   arr_delay_hr=arr_hr-sched_arr_hr,
+                   accuracy=abs(dep_delay)+(arr_delay))
+head(f.accuracy,5)
 
+f.accuracy2=select(f.accuracy,carrier,accuracy)
 
+carrier.summary<-f.accuracy2 %>%
+                    group_by(carrier) %>%
+                    summarize(
+                      mean.accuracy=mean(accuracy,na.rm=T),
+                      sd.accuracy=sd(accuracy,na.rm=T)
+                    )
+carrier.summary

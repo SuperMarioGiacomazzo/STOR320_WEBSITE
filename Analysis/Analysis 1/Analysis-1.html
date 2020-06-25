@@ -408,7 +408,7 @@ summary {
 ##  $ nonstsal             : logi [1:12646] NA NA NA NA NA NA ...
 ##  $ totalsal             : num [1:12646] 49128 33257 139405 181000 41098 ...
 ##  $ stservyr             : num [1:12646] 1 5 2 20 6 8 6 1 19 1 ...</code></pre>
-<p>You will notice that the variable “hiredate” is recorded as a character. The following code will first modify the original dataset to change this to a date variable with the format <em>mm/dd/yyyy</em>. Then, we will remove the hyphens to create a numeric variable as <em>yyyymmdd</em>. Finally, in the spirit of tidyverse, we will convert this data frame to a tibble</p>
+<p>You will notice that the variable “hiredate” is recorded as a character. The following code will first modify the original dataset to change this to a date variable with the format <em>mm/dd/yyyy</em>. Then, we will remove the hyphens to create a numeric variable as <em>yyyymmdd</em>. Finally, in the spirit of tidyverse, we will convert this data frame to a tibble.</p>
 <pre class="r"><code>salary$hiredate=as.Date(salary$hiredate, format=&quot;%m/%d/%Y&quot;)
 salary$hiredate=as.numeric(gsub(&quot;-&quot;,&quot;&quot;,salary$hiredate))
 salary=as.tibble(salary)</code></pre>

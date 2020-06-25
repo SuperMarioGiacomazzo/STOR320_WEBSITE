@@ -44,7 +44,7 @@ Next, we will examine the type of data contains in these different variables.
 str(salary,give.attr=F)
 ```
 
-You will notice that the variable "hiredate" is recorded as a character. The following code will first modify the original dataset to change this to a date variable with the format *mm/dd/yyyy*. Then, we will remove the hyphens to create a numeric variable as *yyyymmdd*. Finally, in the spirit of tidyverse, we will convert this data frame to a tibble
+You will notice that the variable "hiredate" is recorded as a character. The following code will first modify the original dataset to change this to a date variable with the format *mm/dd/yyyy*. Then, we will remove the hyphens to create a numeric variable as *yyyymmdd*. Finally, in the spirit of tidyverse, we will convert this data frame to a tibble.
 
 ```{r}
 salary$hiredate=as.Date(salary$hiredate, format="%m/%d/%Y")
