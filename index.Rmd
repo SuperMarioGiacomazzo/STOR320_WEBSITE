@@ -141,7 +141,7 @@ All Lab and Analysis assignments are to be submitted via **[Sakai](https://sakai
 | June 22  | [L1](Lab/Lab 1/Lab-1.html) ([.Rmd](https://drive.google.com/file/d/18x6JIRsASRmar21fNFcCz5u4tZdhJga8/view?usp=sharing))|||June 24 (5 PM) |
 | June 24 | [L2](Lab/Lab 2/Lab-2.html) ([.Rmd](https://drive.google.com/file/d/1A3v6XoatscGa5WE9K-rDAlKOiETtlN06/view?usp=sharing))|||June 26 (5 PM) |
 | June 26 || [A1](Analysis/Analysis 1/Analysis-1.html) ([.zip](https://drive.google.com/file/d/1AqSqbBKYw7Zn2nD0r3QWfYN2q-z7EXMi/view?usp=sharing))||June 29 (5 PM) |
-| June 29 | [L3](Lab/Lab 3/Lab-3.html) ([.Rmd](https://drive.google.com/file/d/1A3v6XoatscGa5WE9K-rDAlKOiETtlN06/view?usp=sharing))|||July 1 (5 PM)|
+| June 29 | [L3](Lab/Lab 3/Lab-3.html) ([.Rmd](https://drive.google.com/file/d/1VA1nwnJxm1usbB-jVv3v2YefTc_j4IbO/view?usp=sharing))|||July 1 (5 PM)|
 | July 1 | [L4](Lab/Lab 4/Lab-4.html) ([.Rmd](https://drive.google.com/file/d/1EvKorkEPsFKCpWLYEncqD_O4ZIEfI4nb/view?usp=sharing))|||July 6 (5 PM)|
 | July 6|| [A2]() ([.zip]())||July 8 (5 PM)|
 | July 8 | [L5](Lab/Lab 5/Lab-5.html) ([.Rmd](https://drive.google.com/file/d/1MflNYSHEUxm5IvoFf950pejj4mTROJmR/view?usp=sharing))|||July 10  (5 PM)|
@@ -227,6 +227,8 @@ This final project will be divided into four parts worth a total of 100 points. 
 - **[Installing R Studio](https://www.rstudio.com/products/rstudio/#Desktop)**
 
 - **[Additional Necessary Tools for Mac Users](https://mac.r-project.org/tools/)**
+
+- **[Instructions for Accessing R Studio on the UNC Server](https://drive.google.com/file/d/1ATZO-wpuqzHbXVnJqm7wXpt-yfMbo2Jy/view?usp=sharing)**
 
 - **[Rmarkdown Cheat Sheet](https://www.rstudio.com/wp-content/uploads/2016/03/rmarkdown-cheatsheet-2.0.pdf)**
 
