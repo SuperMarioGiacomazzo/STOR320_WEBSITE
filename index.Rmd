@@ -163,11 +163,11 @@ To find your research group, see the **[spreadsheet](https://docs.google.com/spr
 
 Although everyone is responsible for the entire project, each member of the group will be assigned a specific role for accountability and consistency. These four specific roles are described as follows:
 
-- **The Creator:** Schedule and Meet with Dr. Mario to Propose Your Group's Research Idea
+- **The Creator:** Schedule and Meet with Dr. Mario to Propose Your Group's Research Idea, Lead Designer in Slides
 
-- **The Interpreter:** Schedule and Meet with Dr. Mario to Share Findings from Exploratory Analysis
+- **The Interpreter:** Schedule and Meet with Dr. Mario to Share Findings from Exploratory Analysis, Evaluate Practice Presentation
 
-- **The Orator(s):** Give a Captivating 4 Minute Slideshow Presentation During Final Exam Day
+- **The Orator(s):** Give a Captivating 3-5 Minute Slideshow Presentation During Final Exam Day
 
 - **The Deliverer:** Deliver Your Group from Evil by Editing and Submitting the Exploratory Analysis and Final Written Paper via SAKAI Before the Deadline
 
