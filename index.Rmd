@@ -157,7 +157,7 @@ For the final project, each section of STOR 320 will be divided (ideally) into r
 
 ## Research Group Assignments
 
-To find your research group, see the **[spreadsheet]()** sponsored by Google.
+To find your research group, see the **[spreadsheet](https://docs.google.com/spreadsheets/d/1fJj80X_zaLh3nv-u63HtT_U930GDizc4xJXFo-wSAPA/edit?usp=sharing)** sponsored by Google.
 
 ## Four Roles
 
@@ -176,6 +176,7 @@ Although everyone is responsible for the entire project, each member of the grou
 This final project will be divided into four parts worth a total of 100 points. Each part will have a clear rubric as non-subjective as possible. The parts along with total point values are found below:
 
 * **[P1: Project Proposal](Final Project/Project_Proposal.html)** *(10 Points)*
+    + [Template](Final Project/Project-Proposal-Template.html)([.Rmd](https://drive.google.com/file/d/1m5pgDs0NvqdgSMkMR18OCWL6l1egqqYm/view?usp=sharing))
     + [Data World](https://data.world/)
     + [US Government Data](https://www.data.gov/)
     + [Kaggle](https://www.kaggle.com/)
@@ -184,11 +185,11 @@ This final project will be divided into four parts worth a total of 100 points. 
 
 
 * **[P2: Exploratory Data Analysis](Final Project/Exploratory_Data_Analysis.html)** *(20 Points)*
-    + [Template](Final Project/EDA_Template.html) ([.Rmd](https://drive.google.com/file/d/1EM2JXvZ9aHX8oLeB5z1MIWFgDCjAFKvn/view?usp=sharing))
+    + [Template](Final Project/EDA_Template.html) ([.Rmd](https://drive.google.com/file/d/1SA0GxcotacNXisPoKgX-TGLEjwMdhZjc/view?usp=sharing))
     
 * **[P3: Final Written Paper](Final Project/Final_Paper.html)** *(40 Points)*
-    + [Template](Final Project/Final_Paper_Template.html) ([.Rmd](https://drive.google.com/file/d/16kLjQmszVA5nJyUPwwPy94BltOog6YSO/view?usp=sharing))
-    + [Rank Spreadsheet](https://drive.google.com/file/d/1GMfQRhnKrjmzPK8mrMIr_RLDXBJFQRoZ/view?usp=sharing)
+    + [Template](Final Project/Final_Paper_Template.html)([.Rmd](https://drive.google.com/file/d/13Qah0T0cZ3N_A_xhlw_I36CJrh1jqBVT/view?usp=sharing))
+    + [Group Scoring](https://forms.gle/T9dmCLGQfxfKbVej8)
     
 * **[P4: Final Presentation](Final Project/Final_Presentation.html)** *(30 Points)*
 
@@ -197,11 +198,19 @@ This final project will be divided into four parts worth a total of 100 points. 
 
 | Part | Description |Method of Submission| Due Date (Time) |
 |------|-------------|-------------------|----------------:|
-| P1  | Project Proposal| Sakai | July 2 (5PM)|
-| P2  | Exploratory Data Analysis |Sakai | July 14 (5PM)|
+| P1  | Project Proposal| Zoom + Sakai | July 2 (5PM)|
+| P2  | Exploratory Data Analysis | Zoom + Sakai | July 14 (5PM)|
 | P3  | Final Written Paper|Sakai|July 23 (5PM)|
 | P4  | Final Presentation|Sakai + Class| July 27 (11:30AM -2:30PM)|
 ||||
+
+## Above Average Final Projects
+
+- **[Pokemon](Final Project/SP2019_EX1.html)**
+- **[Seattle Housing](Final Project/SP2019_EX2.html)**
+- **[Missing Migrants](Final Project/SU2019_EX1.html)**
+- **[Youtube](Final Project/FA2019_EX1.html)**
+- **[CDC](Final Project/FA2019_EX2.html)**
 
 
 # **Reading**
@@ -219,6 +228,7 @@ This final project will be divided into four parts worth a total of 100 points. 
 - **[ModernDive](https://moderndive.com/index.html)** (MD)
 
 - **[An Introduction to Statistical Learning](https://drive.google.com/file/d/1jKxVWG89KvWr_-70sOeEeLK4CUB09sRu/view?usp=sharing)** (ISLR)
+
 
 # **Additional resources**
 

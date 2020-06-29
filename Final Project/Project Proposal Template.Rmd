@@ -1,0 +1,33 @@
+---
+title: "Project Proposal"
+author: "STOR 320.01 Group PLACE_GROUP_NUMBER_HERE (Ex: STOR 320.01 Group 12)"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+# Project Roles
+
+- **Creator:** FIRSTNAME LASTNAME
+- **Interpreter:** FIRSTNAME LASTNAME
+- **Orator 1:** FIRSTNAME LASTNAME
+- **Orator 2:** FIRSTNAME LASTNAME
+- **Deliverer:** FIRSTNAME LASTNAME
+
+
+# Ininitial Questions
+
+- **Question 1:** (Ex. What is the relationship between percent of people wearing masks and the percent of people with the virus?)
+- **Question 2:**
+- **Question 3:**
+- **Question 4:**
+- **Question 5:**
+- **Question 6:**
+- **Question 7:**
+- **Question 8:**
+- **Question 9:**
+- **Question 10:**
