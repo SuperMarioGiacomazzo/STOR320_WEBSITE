@@ -1,0 +1,201 @@
+Name,State,Change,Density
+New York,New York,0.25,11056
+Los Angeles,California,0.67,3343
+Chicago,Illinois,-0.32,4550
+Houston,Texas,0.8,1431
+Phoenix,Arizona,1.91,1276
+Philadelphia,Pennsylvania,0.18,4537
+San Antonio,Texas,1.59,1312
+San Diego,California,1.09,1728
+Dallas,Texas,1.52,1567
+San Jose,California,0.26,2248
+Austin,Texas,1.8,1205
+Jacksonville,Florida,1.48,476
+Fort Worth,Texas,2.23,1023
+San Francisco,California,1,7388
+Columbus,Ohio,1.14,1572
+Charlotte,North Carolina,1.79,1121
+Indianapolis,Indiana,0.33,923
+Seattle,Washington,2.79,3532
+Denver,Colorado,1.81,1844
+Washington DC,District Of Columbia,1.54,4506
+El Paso,Texas,0.65,1045
+Boston,Massachusetts,1.05,5549
+Nashville,Tennessee,0.94,551
+Portland,Oregon,1.4,1931
+Las Vegas,Nevada,1.6,1903
+Detroit,Michigan,-0.53,1843
+Oklahoma City,Oklahoma,1.19,421
+Memphis,Tennessee,-0.27,788
+Louisville,Kentucky,0.24,909
+Baltimore,Maryland,-1.12,2836
+Milwaukee,Wisconsin,-0.74,2336
+Albuquerque,New Mexico,0.32,1165
+Tucson,Arizona,0.42,876
+Fresno,California,0.67,1811
+Sacramento,California,1.19,2030
+Mesa,Arizona,1.28,1409
+Atlanta,Georgia,1.94,1450
+Kansas City,Missouri,1.33,614
+Colorado Springs,Colorado,1.98,979
+Miami,Florida,2.65,5276
+Raleigh,North Carolina,1.87,1293
+Long Beach,California,-0.28,3578
+Virginia Beach,Virginia,0.16,718
+Omaha,Nebraska,0.38,1267
+Oakland,California,0.5,2945
+Minneapolis,Minnesota,0.84,3033
+Arlington,Texas,1.06,1634
+Tampa,Florida,2.2,1373
+Tulsa,Oklahoma,0,788
+New Orleans,Louisiana,0.44,904
+Wichita,Kansas,0.22,943
+Bakersfield,California,1.02,1001
+Cleveland,Ohio,-0.52,1887
+Aurora,Colorado,0.92,935
+Anaheim,California,0.49,2756
+Honolulu,Hawaii,-0.07,2238
+Riverside,California,1.04,1592
+Santa Ana,California,0.06,4762
+Lexington Fayette,Kentucky,1.13,449
+Corpus Christi,Texas,0.37,729
+Henderson,Nevada,2.62,1170
+Stockton,California,0.8,1969
+St. Paul,Minnesota,0.93,2310
+Pittsburgh,Pennsylvania,-0.08,2112
+St. Louis,Missouri,-1.14,1876
+Cincinnati,Ohio,0.05,1483
+Anchorage,Alaska,-0.04,67
+Orlando,Florida,2.3,1091
+Irvine,California,3.59,1749
+Plano,Texas,0.96,1586
+Greensboro,North Carolina,0.6,878
+Lincoln,Nebraska,1.3,1212
+Newark,New Jersey,0.23,4538
+Durham,North Carolina,2.01,978
+Toledo,Ohio,-0.42,1316
+St. Petersburg,Florida,1.6,1712
+Chula Vista,California,0.79,2128
+Fort Wayne,Indiana,0.63,941
+Scottsdale,Arizona,2.6,560
+Jersey City,New Jersey,0.11,6916
+Laredo,Texas,0.93,981
+Madison,Wisconsin,1.51,1325
+Lubbock,Texas,1.48,798
+Reno,Nevada,1.8,920
+Chandler,Arizona,1.43,1536
+Glendale,Arizona,1.07,1648
+Buffalo,New York,-0.57,2415
+North Las Vegas,Nevada,1.81,993
+Gilbert,Arizona,1.92,1427
+Winston Salem,North Carolina,0.68,720
+Chesapeake,Virginia,1.03,280
+Irving,Texas,0.94,1412
+Norfolk,Virginia,-0.42,1754
+Fremont,California,0.72,1188
+Hialeah,Florida,-0.28,4215
+Richmond,Virginia,1.54,1507
+Boise City,Idaho,1.26,1092
+Garland,Texas,-0.54,1565
+Baton Rouge,Louisiana,-0.27,1015
+Spokane,Washington,1.3,1261
+Tacoma,Washington,1.66,1725
+Modesto,California,0.96,1963
+San Bernardino,California,0.32,1370
+Fontana,California,1.29,1956
+Des Moines,Iowa,0.3,949
+Oxnard,California,0.64,3022
+Moreno Valley,California,0.98,1594
+Birmingham,Alabama,-0.18,558
+Fayetteville,North Carolina,0.56,544
+Rochester,New York,-0.41,2227
+Amarillo,Texas,0.61,774
+Port St. Lucie,Florida,2.99,658
+Yonkers,New York,0.22,4333
+Mckinney,Texas,5.02,1160
+Grand Prairie,Texas,1.69,1072
+Salt Lake City,Utah,1.16,697
+Grand Rapids,Michigan,0.68,1742
+Little Rock,Arkansas,0.17,649
+Huntsville,Alabama,1.08,361
+Huntington Beach,California,-0.2,2859
+Augusta Richmond County Consolidated Government Balance,Georgia,0.14,253
+Overland Park,Kansas,1.5,1016
+Montgomery,Alabama,-0.45,477
+Tempe,Arizona,2.37,1894
+Akron,Ohio,-0.31,1219
+Cape Coral,Florida,2.6,711
+Tallahassee,Florida,0.57,746
+Frisco,Texas,5.24,1096
+Mobile,Alabama,-0.25,530
+Columbus,Georgia,-1.12,341
+Knoxville,Tennessee,0.55,741
+Shreveport,Louisiana,-1.18,678
+Brownsville,Texas,0.59,546
+Worcester,Massachusetts,0.01,1907
+Santa Clarita,California,0.35,1078
+Sioux Falls,South Dakota,1.52,914
+Fort Lauderdale,Florida,0.6,2031
+Vancouver,Washington,1.32,1496
+Rancho Cucamonga,California,0.98,1755
+Chattanooga,Tennessee,0.75,490
+Newport News,Virginia,-0.09,1013
+Ontario,California,1.38,1396
+Providence,Rhode Island,0.12,3774
+Elk Grove,California,1.91,1649
+Salem,Oregon,1.84,1407
+Oceanside,California,0.19,1652
+Santa Rosa,California,0.24,1650
+Corona,California,1.81,1723
+Eugene,Oregon,1.78,1537
+Garden Grove,California,0.11,3772
+Peoria,Arizona,2.18,385
+Pembroke Pines,Florida,1.18,2043
+Fort Collins,Colorado,1.39,1183
+Cary,North Carolina,1.59,1164
+Springfield,Missouri,0.35,793
+Jackson,Mississippi,-1.07,570
+Alexandria,Virginia,1.64,4233
+Hayward,California,0.73,1377
+Hollywood,Florida,1.93,2284
+Lakewood,Colorado,1.27,1442
+Lancaster,California,-0.06,654
+Salinas,California,0.34,2598
+Sunnyvale,California,1.06,2769
+Palmdale,California,-0.05,572
+Clarksville,Tennessee,0.86,608
+Kansas City,Kansas,0.43,475
+Springfield,Massachusetts,-0.13,1859
+Escondido,California,0.36,1589
+Pomona,California,0.06,2570
+Pasadena,Texas,-0.21,1349
+Killeen,Texas,1.87,1082
+Macon Bibb County,Georgia,-0.52,233
+Joliet,Illinois,0.31,906
+Murfreesboro,Tennessee,4.1,990
+Mcallen,Texas,1.62,988
+Savannah,Georgia,0.45,556
+Naperville,Illinois,0.18,1476
+Paterson,New Jersey,-0.02,6742
+Thornton,Colorado,2.35,1571
+Bellevue,Washington,1.24,1694
+Torrance,California,-0.3,2750
+Rockford,Illinois,-0.53,872
+Miramar,Florida,1.44,1900
+Bridgeport,Connecticut,-0.8,3426
+Mesquite,Texas,-0.37,1163
+Fullerton,California,0.33,2446
+Denton,Texas,1.91,571
+Waco,Texas,1.75,615
+Syracuse,New York,-0.48,2180
+Roseville,California,1.99,1263
+Orange,California,0.05,2143
+Surprise,Arizona,1.83,502
+Dayton,Ohio,-0.06,971
+Charleston,South Carolina,1.4,496
+Olathe,Kansas,1.06,886
+Midland,Texas,1.04,721
+West Valley City,Utah,0.43,1506
+Columbia,South Carolina,0.24,387
+Warren,Michigan,-0.14,1512
+Hamn,Virginia,-0.71,995

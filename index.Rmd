@@ -101,8 +101,8 @@ This course is an application-driven introduction to data science. Statistical a
 || [Data Transformation IV](https://unc.zoom.us/rec/share/95FMJeDX5kVOebfM8ALUdZR-HKD7aaa82ygWrvANyUwjhoLGSwjRQ0AmxNfBvwzo?startTime=1593097312000) |[Slides](https://drive.google.com/file/d/1UGMfheOImYQt63gJ0D_rdLKrlgTQZOjK/view?usp=sharing)|[Tutorial](Tutorial/Data Transformation 2/Tutorial.html) ([.zip](https://drive.google.com/file/d/1CbVYRmSw7vZua-9ppvsgtcLKuAjhRf-f/view?usp=sharing))|
 |Jun. 26| [Exploratory Data Analysis I](https://unc.zoom.us/rec/share/vPwlLY7a8F9OeJXXtB72ZLM-WaHpaaa8h3Adr_EKzE1Tl_ndp6zeHEthF3hQpAhg?startTime=1593184525000) |[Slides](https://drive.google.com/file/d/1cwBrbCBpG0nvmcfXrlrpHT5BxREVjr0P/view?usp=sharing)||
 || [Exploratory Data Analysis II](https://unc.zoom.us/rec/share/vPwlLY7a8F9OeJXXtB72ZLM-WaHpaaa8h3Adr_EKzE1Tl_ndp6zeHEthF3hQpAhg?startTime=1593184525000) |[Slides](https://drive.google.com/file/d/1HV2oJ5a_dVLBoSCctZr1ir8wzIgoMGVq/view?usp=sharing)|[Tutorial](Tutorial/Exploratory Data Analysis 2/Tutorial.html) ([.Rmd](https://drive.google.com/file/d/1NQ5QuKC7ZzaajFkGH39_y-H9gMrAmgjZ/view?usp=sharing))||
-|June 29|Final Project I|[Slides](https://drive.google.com/file/d/1VRTM5jW8TjjWHMcizNjjA0ewemwNvyuC/view?usp=sharing)||
-||Data Import|[Slides](https://drive.google.com/file/d/15KvLv179xjfvYSMuoGDKmwicuT0F2UKG/view?usp=sharing)||
+|June 29| [Final Project I](https://unc.zoom.us/rec/share/1_ROAe31_F1LXrfs1UXDCoM_T4vkaaa82ycc_6EIzUqDIAV2wmzla9ix7KMmcLQx?startTime=1593444156000) |[Slides](https://drive.google.com/file/d/1VRTM5jW8TjjWHMcizNjjA0ewemwNvyuC/view?usp=sharing)||
+|| [Data Import](https://unc.zoom.us/rec/share/1_ROAe31_F1LXrfs1UXDCoM_T4vkaaa82ycc_6EIzUqDIAV2wmzla9ix7KMmcLQx?startTime=1593444156000) |[Slides](https://drive.google.com/file/d/15KvLv179xjfvYSMuoGDKmwicuT0F2UKG/view?usp=sharing)||
 |June 30|Tidy Data I|[Slides](https://drive.google.com/file/d/1U-TRjdBEHXaU_Q52Xunkxpd0Yie9oZdn/view?usp=sharing)||
 ||Tidy Data II|[Slides](https://drive.google.com/file/d/1WTsPbnuezz_1ZxI35LwwXPJL7VYlzK8G/view?usp=sharing)|[Tutorial](Tutorial/Tidy Data 2/Tutorial.html)  ([.Rmd](https://drive.google.com/file/d/1C0p16A8v5NkGio6lKpP6kDxdfjA0X9cq/view?usp=sharing))|
 |Jul. 1|Web Scraping I|[Slides](https://drive.google.com/file/d/1hSfA_YS7WhV-hkfXhz-_eVWVY6zt5fil/view?usp=sharing)|[Tutorial](Tutorial/Web Scraping 1/Tutorial.html)  ([.Rmd](https://drive.google.com/file/d/1H_rEai7Y9dG5C1Papo-zsgvek8SzE2-M/view?usp=sharing))|
@@ -143,7 +143,7 @@ All Lab and Analysis assignments are to be submitted via **[Sakai](https://sakai
 | June 26 || [A1](Analysis/Analysis 1/Analysis-1.html) ([.zip](https://drive.google.com/file/d/1AqSqbBKYw7Zn2nD0r3QWfYN2q-z7EXMi/view?usp=sharing))||June 29 (5 PM) |
 | June 29 | [L3](Lab/Lab 3/Lab-3.html) ([.Rmd](https://drive.google.com/file/d/1VA1nwnJxm1usbB-jVv3v2YefTc_j4IbO/view?usp=sharing))|||July 1 (5 PM)|
 | July 1 | [L4](Lab/Lab 4/Lab-4.html) ([.Rmd](https://drive.google.com/file/d/1EvKorkEPsFKCpWLYEncqD_O4ZIEfI4nb/view?usp=sharing))|||July 6 (5 PM)|
-| July 6|| [A2]() ([.zip]())||July 8 (5 PM)|
+| July 6|| [A2](Analysis/Analysis 2/Analysis-2.html) ([.zip](https://drive.google.com/file/d/11NkA0vLzi46SX6w_j7smUQaBDo-fQyny/view?usp=sharing))||July 8 (5 PM)|
 | July 8 | [L5](Lab/Lab 5/Lab-5.html) ([.Rmd](https://drive.google.com/file/d/1MflNYSHEUxm5IvoFf950pejj4mTROJmR/view?usp=sharing))|||July 10  (5 PM)|
 | July 10 || [A3]() ([.zip]())||July 13 (5 PM)|
 | July 13  | [L6](Lab/Lab 6/Lab-6.html) ([.Rmd](https://drive.google.com/file/d/1GPfHPQLhrCayiaO3kmGkVCPjAyAicl1C/view?usp=sharing)) |||July 15 (5 PM)|

@@ -1,0 +1,84 @@
+State,City,Population,Total,Murder,Rape,Robbery,Assault
+New Mexico,Albuquerque,559721,965.8,7.7,72.2,301.2,584.8
+California,Anaheim,349471,363.7,5.2,36.9,125.6,196
+Alaska,Anchorage,301239,1070.9,8.6,171.6,206.1,684.5
+Texas,Arlington,387565,502.1,2.1,53.7,136.5,309.9
+Georgia,Atlanta,464710,1119.6,20.2,36.6,429.3,633.5
+Colorado,Aurora,360237,460.8,6.7,97.7,124.1,232.3
+Texas,Austin,938728,372.5,2.5,51.9,99,219.2
+California,Bakersfield,373887,484.1,5.9,19,175.2,284
+Maryland,Baltimore,621252,1535.9,57.8,46.2,694.2,740.1
+Massachusetts,Boston,665258,706.8,5.7,36.1,233.1,431.9
+New York,Buffalo,258096,1118.6,15.9,67,400.2,635.4
+Arizona,Chandler,258875,189.3,0.4,30.5,44,114.3
+North Carolina,Charlotte,877817,677.6,6.9,24.6,221.8,424.2
+Illinois,Chicago,2728695,903.8,23.8,52.5,353.6,480.2
+California,Chula Vista,265215,265.8,2.3,23.8,90.1,149.7
+Ohio,Cincinnati,298478,925,22.1,79.1,423.1,400.7
+Ohio,Cleveland,388655,1334.3,16.2,124,769.3,424.8
+Colorado,Colorado Springs,452410,438.3,5.5,75.4,83.1,274.3
+Ohio,Columbus,860090,546.3,9.1,95.1,264.2,177.9
+Texas,Corpus Christi,324326,645,5.2,86.9,121.5,431.4
+Texas,Dallas,1301977,694.2,10.4,60.1,320.8,302.8
+Colorado,Denver,682418,673.9,7.8,80.3,180.2,405.6
+Michigan,Detroit,673225,1759.6,43.4,78.7,513.5,1123.5
+North Carolina,Durham,257911,847.2,13.2,28.7,286.1,519.2
+Texas,El Paso,686077,366.6,2.5,46.9,59.8,257.4
+Indiana,Fort Wayne,259712,378.9,9.6,37.3,171.7,160.2
+Texas,Fort Worth,829731,525.4,6.7,62.2,118.2,338.2
+California,Fresno,520837,551.2,7.5,32.1,194.3,317.4
+North Carolina,Greensboro,285950,597,9.1,25.2,185.3,377.3
+Nevada,Henderson,282554,168.5,1.4,34.7,63.7,68.7
+Hawaii,Honolulu,999307,243.9,1.5,31.8,89.7,120.9
+Texas,Houston,2275221,966.7,13.3,43.3,451.7,458.3
+Indiana,Indianapolis,863675,1288,17.1,78.4,440.2,752.3
+California,Irvine,258198,55.8,0.8,10.5,22.1,22.5
+Florida,Jacksonville,867258,648.3,11.2,54.3,161.2,421.6
+New Jersey,Jersey City,265159,521.6,10.2,36.6,207,267.8
+Missouri,Kansas City,473373,1417.3,23,77.3,359.8,957.2
+Texas,Laredo,256280,379.3,3.1,51.9,63.2,261
+Nevada,Las Vegas,1562134,920.7,8.1,70.9,320.7,521
+Kentucky,Lexington,314077,332.4,4.8,51.9,162.7,113
+Nebraska,Lincoln,276585,370.6,0.4,69.8,77.4,223.1
+California,Long Beach,476318,580.7,7.6,37.2,221.3,314.7
+California,Los Angeles,3962726,634.8,7.1,55.7,225.9,346
+Kentucky,Louisville Metro,680550,631.8,11.9,30.1,227,362.8
+Tennessee,Memphis,657936,1740.1,20.5,80.6,475.9,1163.2
+Arizona,Mesa,471034,418.7,3.4,51.2,86.6,277.5
+Florida,Miami,437969,1021.3,17.1,18.3,383.8,602.1
+Wisconsin,Milwaukee,600400,1596.1,24.2,72.6,624.4,874.9
+Minnesota,Minneapolis,413479,1062.9,11.4,98.4,458.5,494.6
+Alabama,Mobile,250346,610.8,9.6,46.3,160.6,394.3
+Tennessee,Nashville Metropolitan,658029,1101,10.9,77,280.7,732.3
+Louisiana,New Orleans,393447,949.6,41.7,104,380.5,423.4
+New York,New York,8537673,585.8,3.4,14,198.2,357.2
+New Jersey,Newark,279110,1077.7,33.3,17.6,688.6,338.2
+California,Oakland,419481,1442.5,20.3,67.9,784.3,570
+Oklahoma,Oklahoma City,630621,765.6,11.6,76.1,189,488.9
+Nebraska,Omaha,452252,515,10.6,38.5,144.8,321.1
+Florida,Orlando,268438,940.6,11.9,67.8,194.5,666.4
+Pennsylvania,Philadelphia,1567810,1029,17.9,84.3,431.5,495.3
+Arizona,Phoenix,1559744,593.8,7.2,65.1,193.6,327.8
+Pennsylvania,Pittsburgh,306870,706.2,18.6,26.7,279.6,381.3
+Texas,Plano,282968,153,1.4,32.2,41,78.5
+Oregon,Portland,615672,472.8,4.2,42.6,137.6,288.5
+North Carolina,Raleigh,428993,392.3,2.8,18.4,141,230.1
+California,Riverside,323064,446,3.1,42.4,161,239.6
+California,Sacramento,489717,737.4,8.8,21.4,239.7,467.4
+Texas,San Antonio,1463586,587.2,6.4,71.7,135.7,373.4
+California,San Diego,1400467,398.6,2.6,40.4,98.4,257.1
+California,San Francisco,863782,776.8,6.1,39.8,417.9,312.9
+California,San Jose,1031458,329.6,2.9,36.4,110.5,179.8
+California,Santa Ana,337304,482.1,3.6,45.7,155.1,277.8
+Washington,Seattle,683700,598.7,3.4,21.1,224.1,350.2
+Missouri,St. Louis,317095,1817.1,59.8,82.9,564.5,1110.4
+Minnesota,St. Paul,300721,703.3,5.3,67.8,237.4,392.7
+Florida,St. Petersburg,255821,741.9,5.5,53.2,224,459.3
+California,Stockton,304890,1352,16.1,44.3,375.2,916.4
+Florida,Tampa,364383,630.7,9.3,21.1,184.1,416
+Ohio,Toledo,279552,1128.9,8.6,81.6,322.7,716.1
+Arizona,Tucson,529675,655.5,5.9,79.7,199.9,370
+Oklahoma,Tulsa,401520,903.6,13.7,90.9,212.7,586.3
+Virginia,Virginia Beach,452797,138.3,4.2,22.7,59.6,51.7
+District Of Columbia,Washington,672228,1202.6,24.1,73.5,506.4,598.6
+Kansas,Wichita,389824,984.8,6.9,89.5,188,700.3
