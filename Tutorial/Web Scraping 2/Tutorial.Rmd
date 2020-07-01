@@ -57,7 +57,6 @@ US_CENSUS = URL.US_CENSUS %>%
               .[[1]] %>%
               select(c(2,3,6,7) )
 str(US_CENSUS)
-names()
 ```
 
 ## Chunk 2: Population Change and Density Variables to Numeric

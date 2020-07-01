@@ -412,7 +412,7 @@ str(VIOLENT)</code></pre>
 <div id="chunk-2-initial-selection-of-violent-crimes-and-cleaning" class="section level2">
 <h2>Chunk 2: Initial Selection of Violent Crimes and Cleaning</h2>
 <p>You probably noticed an issue with the first row. Why do you think this occurred? Carefully, examine the webpage table to identify the cause. Also, we only want the violent crime statistics for each city and state. What columns do we need to keep?</p>
-<pre class="r"><code>VIOLENT2=VIOLENT[-1,1:8]
+<pre class="r"><code>VIOLENT2=VIOLENT[-c(1:2),1:8]
 colnames(VIOLENT2)=c(&quot;State&quot;,&quot;City&quot;,&quot;Population&quot;,&quot;Total&quot;,&quot;Murder&quot;,&quot;Rape&quot;,&quot;Robbery&quot;,&quot;Assault&quot;)
 str(VIOLENT2)</code></pre>
 </div>
@@ -483,6 +483,7 @@ STATE_ABBREV = URL.STATE_ABBREV %&gt;%
                 html_table(fill=T) %&gt;%
                 .[[3]] %&gt;%
                 .[-1,]
+
 head(STATE_ABBREV)</code></pre>
 </div>
 <div id="chunk-2-transforming-the-table" class="section level2">

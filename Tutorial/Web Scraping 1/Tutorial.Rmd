@@ -63,7 +63,7 @@ str(VIOLENT)
 You probably noticed an issue with the first row. Why do you think this occurred? Carefully, examine the webpage table to identify the cause. Also, we only want the violent crime statistics for each city and state. What columns do we need to keep?
 
 ```{r, eval=F}
-VIOLENT2=VIOLENT[-1,1:8]
+VIOLENT2=VIOLENT[-c(1:2),1:8]
 colnames(VIOLENT2)=c("State","City","Population","Total","Murder","Rape","Robbery","Assault")
 str(VIOLENT2)
 ```
@@ -154,6 +154,7 @@ STATE_ABBREV = URL.STATE_ABBREV %>%
                 html_table(fill=T) %>%
                 .[[3]] %>%
                 .[-1,]
+
 head(STATE_ABBREV)
 ```
 
