@@ -10,6 +10,9 @@ knitr::opts_chunk$set(echo = TRUE,warning=F)
 options(scipen=999)
 library(tidyverse)    #Essential Functions
 library(rvest)        #Read Tables From Webpages
+#install.packages("devtools")
+library(devtools)
+#install_github("cran/noncensus")
 library(noncensus)    #Contains Zip Codes for US Cities
 ```
 
@@ -42,7 +45,7 @@ search may not give you all the information you want, but you will often be prov
 
 Many Wikipedia pages contain information organized in tables. Consider the [US Crime Rates](https://en.wikipedia.org/wiki/List_of_United_States_cities_by_crime_rate#Crime_rates_per_100.2C000_people_.282012.29) table that provides the crime rates per 100,000 people for major metropolitan areas in the United States. Statistics are given for violent crimes, property crimes and arson. We desire to convert the HTML table into an R data frame object so we can utilize this information in future analysis.
 
-##Chunk 1: Initial Web Scraping Attempt
+## Chunk 1: Initial Web Scraping Attempt
 
 Using `rvest` functions such as `read_html()` and `html_table()`, we create a data frame called `VIOLENT` that contains all information read from the desired Wikipedia page.
 
@@ -55,7 +58,7 @@ VIOLENT = URL.VIOLENT %>%
 str(VIOLENT)
 ```
 
-##Chunk 2: Initial Selection of Violent Crimes and Cleaning
+## Chunk 2: Initial Selection of Violent Crimes and Cleaning
 
 You probably noticed an issue with the first row. Why do you think this occurred? Carefully, examine the webpage table to identify the cause. Also, we only want the violent crime statistics for each city and state. What columns do we need to keep?
 
@@ -65,7 +68,7 @@ colnames(VIOLENT2)=c("State","City","Population","Total","Murder","Rape","Robber
 str(VIOLENT2)
 ```
 
-##Chunk 3: Fixing Variable Types
+## Chunk 3: Fixing Variable Types
 
 The subheadings in the Wikipedia table create problems when parsed to data frame. The presence of this problem causes known numeric variables to be treated as categorical variables. We need to use functions inside and outside `tidyverse` to fix this issue.
 
@@ -75,7 +78,7 @@ VIOLENT3=VIOLENT2 %>%
 str(VIOLENT3)
 ```
 
-##Chunk 4: Identifying Problematic Cases in `City`
+## Chunk 4: Identifying Problematic Cases in `City`
 
 Using `str_detect()` we can identify cases in `City` where unwanted characters {",","0" to "9"} make an appearance.
 
@@ -83,7 +86,7 @@ Using `str_detect()` we can identify cases in `City` where unwanted characters {
 VIOLENT3[str_detect(VIOLENT3$City,"[,(0-9){1}]"),]$City
 ```
 
-##Chunk 5: Cleaning Problematic Cities
+## Chunk 5: Cleaning Problematic Cities
 
 The unwanted characters {",","0" to "9"} are special, but not our friends. In Wikipedia, they were used for indicating footnote information. We need to efficiently fix these occurrences by banishing them to the abyss. We see this in both cities and states. Also, there are other scenarios where cities have unusual names that may be problematic when involving additional data. 
 
@@ -107,7 +110,7 @@ write_csv(VIOLENT6,"FINAL_VIOLENT.CSV")
 
 The [`noncensus`](https://cran.r-project.org/web/packages/noncensus/noncensus.pdf) package in R contains preloaded datasets useful for population studies. Imagine if we wanted to plot the crime information from `VIOLENT6` on a US map. What information would we need?
 
-##Chunk 1: Read in ZIP Data
+## Chunk 1: Read in ZIP Data
 
 The data in `zip_codes` provided in the `noncensus` package gives us important geographical information for all US cities.
 
@@ -117,7 +120,7 @@ ZIP=zip_codes
 str(ZIP)
 ```
 
-##Chunk 2: Summarize for Joining
+## Chunk 2: Summarize for Joining
 
 Many US metropolitan areas cover multiple zip codes. Using `group_by()` and `summarize()`, we can obtain the average position for each combination of city and state.
 
@@ -129,7 +132,7 @@ ZIP2 = ZIP %>%
 write_csv(ZIP2,"FINAL_ZIP.CSV")
 ```
 
-##Chunk 3: Assessing Future Join Issues
+## Chunk 3: Assessing Future Join Issues
 
 Run the code below. What makes merging `ZIP2` with `VIOLENT6` problematic? 
 
@@ -142,7 +145,7 @@ head(ZIP2,3)
 
 Using your favorite search engine, you can look up the government established abbreviations for each state in the US of A. An HTML table found at https://state.1keydata.com/state-abbreviations.php makes this connection for us. However, the way this data is presented is not in the *tidy* spirit. Soap can't clean this, unless it is the [Dove Beauty Bar](https://www.dove.com/us/en/washing-and-bathing/beauty-bar.html).
 
-##Chunk 1: Web Scraping Table of State Abbreviations
+## Chunk 1: Web Scraping Table of State Abbreviations
 
 ```{r, eval=F}
 URL.STATE_ABBREV = "https://state.1keydata.com/state-abbreviations.php"
@@ -154,7 +157,7 @@ STATE_ABBREV = URL.STATE_ABBREV %>%
 head(STATE_ABBREV)
 ```
 
-##Chunk 2: Transforming the Table
+## Chunk 2: Transforming the Table
 
 ```{r, eval=F}
 STATE_ABBREV_TOP = STATE_ABBREV[,1:2]

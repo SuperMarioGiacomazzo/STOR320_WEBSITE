@@ -45,7 +45,7 @@ The data frame `VIOLENT` links city and state names to violent crime statistics,
 
 Recall the Wikipedia page listing the [crime rates](https://en.wikipedia.org/wiki/List_of_United_States_cities_by_crime_rate) of US cities. This information comes from an FBI report from 2015. Suppose we wanted to investigate the effect of crime in 2015 on current population data in 2019. An HTML table, provided online, reports the [2019 population density and percentage change](http://worldpopulationreview.com/us-cities/) of 100 major US cities. Why is this information useful when related to violent crimes and what would you expect to discover?
 
-##Chunk 1: Web Scraping and Variable Selection
+## Chunk 1: Web Scraping and Variable Selection
 
 We start by web scraping the population statistics table into R using functions from `rvest`. Additionally, we only select the variables of interest `Change` and `2019 Density` and the keys `Name` and `State` required to link this information to violent crimes. 
 
@@ -55,17 +55,18 @@ US_CENSUS = URL.US_CENSUS %>%
               read_html() %>%
               html_table(header=T,fill=T) %>%
               .[[1]] %>%
-              select(Name, State, Change, `2019 Density`)
+              select(c(2,3,6,7) )
 str(US_CENSUS)
+names()
 ```
 
-##Chunk 2: Population Change and Density Variables to Numeric
+## Chunk 2: Population Change and Density Variables to Numeric
 
 Ideally, variables `Change` and `2019 Density` should be numeric. The following code starts by giving the variable `2019 Density` a more succinct name and then continues to provide the necessary mutations required to converting character vectors to numeric vectors. 
 
 ```{r,eval=F}
 US_CENSUS2 = US_CENSUS %>%
-                rename(Density=`2019 Density`) %>%
+                rename(Density=names(US_CENSUS)[4]) %>%
                 mutate(Change=as.numeric(str_replace(Change,"%",""))) %>%
                 mutate(Density=str_replace_all(Density,"[,]",""))
 
@@ -85,7 +86,7 @@ write_csv(US_CENSUS3,"FINAL_CENSUS.CSV")
 
 An article at https://www.securitysales.com/fire-intrusion/2018-safest-most-dangerous-states-us/ summarizes a study performed by [WalletHub](https://wallethub.com/edu/safest-states-to-live-in/4566/) which compared all 50 states using 48 key safety indicators. The article provides a link to the source along with lists providing the 10 most safest and 10 most dangerous states. 
 
-##Chunk 1: Web Scraping Top 10 Most Safe and Least Safe States
+## Chunk 1: Web Scraping Top 10 Most Safe and Least Safe States
 
 Using [SelectorGadget](https://selectorgadget.com/), we point-and-click the text information we want on the webpage. This is the list of state names which comprise the most safe and most dangerous states. After deselecting the information we don't want, we can identify the CSS selector that links to the HTML element we want to scrape. Specifically for this case, the CSS selector is *#articleContentWrapper li*. The `html_nodes()` function in `rvest` locates in the HTML code where this CSS selector is being used to present the information visually on the webpage. Since this information is text, we use `html_text()` to read the list of states from the subsetted HTML code into a vector names `SAFE_VS_DANGEROUS`. 
 
@@ -100,7 +101,7 @@ SAFE_VS_DANGEROUS = URL.SAFE_VS_DANGEROUS %>%
 print(SAFE_VS_DANGEROUS)
 ```
 
-##Chunk 2: Create a Data Frame Useful for Joining
+## Chunk 2: Create a Data Frame Useful for Joining
 
 Upon inspection of `SAFE_VS_DANGEROUS`, we notice that this vector of length *20* contains the top 10 most safe states and most dangerous states in the order they appear on the website. We create  new data frame combining these states with their classification, according to the website, that indicates whether a state is considered safe or dangerous. By linking this information to the violent crimes dataset, we can determine analytically the extent to which violent crimes were considered in this expert opinion. This may lead to either disagreement or agreement with the expert opinion. **The most important thing here is that we don't behave like the miserable bloggers who wave their flag of ignorance with anecdotal evidence.**
 
