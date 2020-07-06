@@ -109,8 +109,8 @@ This course is an application-driven introduction to data science. Statistical a
 || [Web Scraping II](https://unc.zoom.us/rec/share/95U2EK_Z3TlIUKfnwgKGZPAFAo7caaa8gCYe-KJZnh10uopZ1uhhdR-UcEm_Ngkr?startTime=1593617143000) |[Slides](https://drive.google.com/file/d/10WIwlmZuRakieBpIhg5MGLjodeOLIpCR/view?usp=sharing)|[Tutorial](Tutorial/Web Scraping 2/Tutorial.html)  ([.zip](https://drive.google.com/file/d/1r76UjOcWSUC_pcNj6LNvXDdKioZCTqeK/view?usp=sharing))|
 |Jul. 2|Group Work Day|||
 |Jul. 3|Fireworks Eve|||
-|Jul. 6|Joins I|[Slides](https://drive.google.com/file/d/1M88xOe34SWkbm7lCQMNX6RQAm_mhCEjk/view?usp=sharing)||
-||Joins II|[Slides](https://drive.google.com/file/d/1wgEmOgwbjbnZbIBaHSiRg_tAbuumAS9I/view?usp=sharing)||
+|Jul. 6| [Joins I](https://unc.zoom.us/rec/share/7slUaL3U3HxIZaf16WjkBLQFO9vqeaa81HNKr6EEyE1JfmI5HQC4MbcQKXIuoFWp ) |[Slides](https://drive.google.com/file/d/1M88xOe34SWkbm7lCQMNX6RQAm_mhCEjk/view?usp=sharing)||
+|| [Joins II](https://unc.zoom.us/rec/share/7slUaL3U3HxIZaf16WjkBLQFO9vqeaa81HNKr6EEyE1JfmI5HQC4MbcQKXIuoFWp ) |[Slides](https://drive.google.com/file/d/1wgEmOgwbjbnZbIBaHSiRg_tAbuumAS9I/view?usp=sharing)||
 |Jul. 7|Final Project II|[Slides](https://drive.google.com/file/d/1dnBkv6iKBgP2O0hTEJ9YQ-A2Kd8c-0a_/view?usp=sharing)||
 ||Factors|[Slides](https://drive.google.com/file/d/1BuLCYOoCn779L9sr4JwgTbh9QiqBJ38P/view?usp=sharing)||
 |Jul. 8|Programming I|[Slides](https://drive.google.com/file/d/1DmCKrAvXzTvDQ3x3KN1xCtMxzcrZsgBH/view?usp=sharing)|[Tutorial](Tutorial/Programming 1/Tutorial.html) ([.Rmd](https://drive.google.com/file/d/1mjCIq_f64-G_nNAnqUkZQRHQhDlXS_iM/view?usp=sharing))|
