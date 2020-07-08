@@ -13,57 +13,57 @@ library(tidyverse)
 # read_csv()
 ```
 
-#Creator: FIRSTNAME LASTNAME
+# Creator: FIRSTNAME LASTNAME
 
-###Q1: WRITE_QUESTION_HERE
-
-```{r}
-#
-```
-
-###Q2: WRITE_QUESTION_HERE
+### Q1: WRITE_QUESTION_HERE
 
 ```{r}
 #
 ```
 
-#Interpreter: FIRSTNAME LASTNAME
-
-###Q1: WRITE_QUESTION_HERE
+### Q2: WRITE_QUESTION_HERE
 
 ```{r}
 #
 ```
 
-###Q2: WRITE_QUESTION_HERE
+# Interpreter: FIRSTNAME LASTNAME
+
+### Q1: WRITE_QUESTION_HERE
 
 ```{r}
 #
 ```
 
-#Orator: FIRSTNAME LASTNAME
-
-###Q1: WRITE_QUESTION_HERE
+### Q2: WRITE_QUESTION_HERE
 
 ```{r}
 #
 ```
 
-###Q2: WRITE_QUESTION_HERE
+# Orator: FIRSTNAME LASTNAME
+
+### Q1: WRITE_QUESTION_HERE
 
 ```{r}
 #
 ```
 
-#Deliverer: FIRSTNAME LASTNAME
-
-###Q1: WRITE_QUESTION_HERE
+### Q2: WRITE_QUESTION_HERE
 
 ```{r}
 #
 ```
 
-###Q2: WRITE_QUESTION_HERE
+# Deliverer: FIRSTNAME LASTNAME
+
+### Q1: WRITE_QUESTION_HERE
+
+```{r}
+#
+```
+
+### Q2: WRITE_QUESTION_HERE
 
 ```{r}
 #
@@ -92,7 +92,7 @@ SHOW AT LEAST 2 TABLES OR FIGURES BELOW THAT EXPLORE ANSWERS FOR THE QUESTIONS Y
 #
 ```
 
-#Summary
+# Summary
 
 GIVE A 2 PARAGRAPH SUMMARY. 
 

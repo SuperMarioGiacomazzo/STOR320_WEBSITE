@@ -50,7 +50,7 @@ if(x > 0){
 
 ## Chunk 3: Potential Problem of *If-Else* Statements
 ```{r,eval=F}
-x= BLANK
+x = BLANK
 if(x > 0){
   print(log(x))
 }
@@ -160,7 +160,7 @@ a=10
 r=-0.75
 theoretical.limit=a/(1-r)
 
-K=BLANK #How Many Steps Do You Want to Save?
+K=10 #How Many Steps Do You Want to Save?
 
 summation=rep(NA,(K+1))
 summation[1]=a

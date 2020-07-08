@@ -113,8 +113,8 @@ This course is an application-driven introduction to data science. Statistical a
 || [Joins II](https://unc.zoom.us/rec/share/7slUaL3U3HxIZaf16WjkBLQFO9vqeaa81HNKr6EEyE1JfmI5HQC4MbcQKXIuoFWp ) |[Slides](https://drive.google.com/file/d/1wgEmOgwbjbnZbIBaHSiRg_tAbuumAS9I/view?usp=sharing)||
 |Jul. 7| [Final Project II](https://unc.zoom.us/rec/share/3MV3IPbTxDJOSaP90X3YXLUTGbq0eaa823VL-PoPxU-PDKzvtrcLEdoCftC67DPs ) |[Slides](https://drive.google.com/file/d/1dnBkv6iKBgP2O0hTEJ9YQ-A2Kd8c-0a_/view?usp=sharing)||
 || [Factors](https://unc.zoom.us/rec/share/3MV3IPbTxDJOSaP90X3YXLUTGbq0eaa823VL-PoPxU-PDKzvtrcLEdoCftC67DPs ) |[Slides](https://drive.google.com/file/d/1BuLCYOoCn779L9sr4JwgTbh9QiqBJ38P/view?usp=sharing)||
-|Jul. 8|Programming I|[Slides](https://drive.google.com/file/d/1DmCKrAvXzTvDQ3x3KN1xCtMxzcrZsgBH/view?usp=sharing)|[Tutorial](Tutorial/Programming 1/Tutorial.html) ([.Rmd](https://drive.google.com/file/d/1mjCIq_f64-G_nNAnqUkZQRHQhDlXS_iM/view?usp=sharing))|
-||Programming II|[Slides](https://drive.google.com/file/d/1et9VIGvGjLOQ5dXc8cxJkFWRNkH_YCmU/view?usp=sharing)|[Tutorial](Tutorial/Programming 2/Tutorial.html) ([.Rmd](https://drive.google.com/file/d/1t5LYZnGtC3q-4Mbgx9FDkXw0l-E2nijR/view?usp=sharing))|
+|Jul. 8| [Programming I](https://unc.zoom.us/rec/share/y5NSdOys8FxLGpWQ5gLyfKIgD6n3eaa80HQerPZfnRsdzL35Jui30GE2m8Yo0sne ) |[Slides](https://drive.google.com/file/d/1DmCKrAvXzTvDQ3x3KN1xCtMxzcrZsgBH/view?usp=sharing)|[Tutorial](Tutorial/Programming 1/Tutorial.html) ([.Rmd](https://drive.google.com/file/d/1mjCIq_f64-G_nNAnqUkZQRHQhDlXS_iM/view?usp=sharing))|
+|| [Programming II](https://unc.zoom.us/rec/share/y5NSdOys8FxLGpWQ5gLyfKIgD6n3eaa80HQerPZfnRsdzL35Jui30GE2m8Yo0sne ) |[Slides](https://drive.google.com/file/d/1et9VIGvGjLOQ5dXc8cxJkFWRNkH_YCmU/view?usp=sharing)|[Tutorial](Tutorial/Programming 2/Tutorial.html) ([.Rmd](https://drive.google.com/file/d/1t5LYZnGtC3q-4Mbgx9FDkXw0l-E2nijR/view?usp=sharing))|
 |Jul. 9|Programming III|[Slides](https://drive.google.com/file/d/1AWk4fcXrVkM4Xm_GxEPrYwONXGpKvCxw/view?usp=sharing)|| -->
 ||Programming IV|[Slides](https://drive.google.com/file/d/1Sptc4vvRs5MfCgr_uqRS1NHX6fkD0-Wl/view?usp=sharing)||
 |Jul. 10|Modeling I|[Slides](https://drive.google.com/file/d/1HsXbt9c5GFkSv8sRTC5XlTL_4Q8b44dT/view?usp=sharing)||
@@ -146,10 +146,10 @@ All Lab and Analysis assignments are to be submitted via **[Sakai](https://sakai
 | July 1 | [L4](Lab/Lab 4/Lab-4.html) ([.Rmd](https://drive.google.com/file/d/1EvKorkEPsFKCpWLYEncqD_O4ZIEfI4nb/view?usp=sharing))|||July 6 (5 PM)|
 | July 6|| [A2](Analysis/Analysis 2/Analysis-2.html) ([.zip](https://drive.google.com/file/d/11NkA0vLzi46SX6w_j7smUQaBDo-fQyny/view?usp=sharing))||July 8 (5 PM)|
 | July 8 | [L5](Lab/Lab 5/Lab-5.html) ([.Rmd](https://drive.google.com/file/d/1MflNYSHEUxm5IvoFf950pejj4mTROJmR/view?usp=sharing))|||July 10  (5 PM)|
-| July 10 || [A3]() ([.zip]())||July 13 (5 PM)|
+| July 10 || [A3](Analysis/Analysis 3/Analysis_3.html) ([.zip](https://drive.google.com/file/d/1lOhwRmbwlgWfEnXO_M-MOVp0dH8afDG6/view?usp=sharing))||July 13 (5 PM)|
 | July 13  | [L6](Lab/Lab 6/Lab-6.html) ([.Rmd](https://drive.google.com/file/d/1GPfHPQLhrCayiaO3kmGkVCPjAyAicl1C/view?usp=sharing)) |||July 15 (5 PM)|
 | July 15 | [L7](Lab/Lab 7/Lab-7.html) ([.Rmd](https://drive.google.com/file/d/1_-m7iz9Ju8oXbrXd4bwN1IvtnMBiyHu4/view?usp=sharing)) |||July 17 (5 PM)|
-| July 17   |        |  [A4]() ([.zip]())||July 20 (5 PM)|
+| July 17   |        |  [A4](Analysis/Analysis 4/Analysis_4.html) ([.zip](https://drive.google.com/file/d/15u5o6GNvOp9ubbmuMCs8pchWwYRDYu_j/view?usp=sharing))||July 20 (5 PM)|
 |          |        |             |           |
 
 # **Final Project Details**
@@ -186,10 +186,10 @@ This final project will be divided into four parts worth a total of 100 points. 
 
 
 * **[P2: Exploratory Data Analysis](Final Project/Exploratory_Data_Analysis.html)** *(20 Points)*
-    + [Template](Final Project/EDA_Template.html) ([.Rmd](https://drive.google.com/file/d/1SA0GxcotacNXisPoKgX-TGLEjwMdhZjc/view?usp=sharing))
+    + [Template](Final Project/EDA-Template.html) ([.Rmd](https://drive.google.com/file/d/1SA0GxcotacNXisPoKgX-TGLEjwMdhZjc/view?usp=sharing))
     
 * **[P3: Final Written Paper](Final Project/Final_Paper.html)** *(40 Points)*
-    + [Template](Final Project/Final_Paper_Template.html)([.Rmd](https://drive.google.com/file/d/13Qah0T0cZ3N_A_xhlw_I36CJrh1jqBVT/view?usp=sharing))
+    + [Template](Final Project/Final-Paper-Template.html)([.Rmd](https://drive.google.com/file/d/13Qah0T0cZ3N_A_xhlw_I36CJrh1jqBVT/view?usp=sharing))
     + [Group Scoring](https://forms.gle/T9dmCLGQfxfKbVej8)
     
 * **[P4: Final Presentation](Final Project/Final_Presentation.html)** *(30 Points)*
