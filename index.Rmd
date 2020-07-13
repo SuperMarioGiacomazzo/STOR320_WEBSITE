@@ -186,7 +186,7 @@ This final project will be divided into four parts worth a total of 100 points. 
 
 
 * **[P2: Exploratory Data Analysis](Final Project/Exploratory_Data_Analysis.html)** *(20 Points)*
-    + [Template](Final Project/EDA-Template.html) ([.Rmd](https://drive.google.com/file/d/1SA0GxcotacNXisPoKgX-TGLEjwMdhZjc/view?usp=sharing))
+    + [Template](Final Project/EDA-Template.html) ([.Rmd](https://drive.google.com/file/d/1zNI0hX9CTg9d77mHOKxebgdwDEmqYebf/view?usp=sharing))
     
 * **[P3: Final Written Paper](Final Project/Final_Paper.html)** *(40 Points)*
     + [Template](Final Project/Final-Paper-Template.html)([.Rmd](https://drive.google.com/file/d/13Qah0T0cZ3N_A_xhlw_I36CJrh1jqBVT/view?usp=sharing))
