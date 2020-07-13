@@ -23,9 +23,9 @@ head(DATA)
 ```
 
 
-#Part 1: Examining the Relationship
+# Part 1: Examining the Relationship
 
-##Chunk 1: Overall Relationship
+## Chunk 1: Overall Relationship
 ```{r,echo=F,eval=T,message=F}
 ggplot(data=DATA) +
   geom_point(aes(x=A,y=W),alpha=0.3)+
