@@ -139,13 +139,13 @@ All Lab and Analysis assignments are to be submitted via **[Sakai](https://sakai
 
 | Assigned | Lab (L) | Analysis (A) |Solutions| Due Date (Time) |
 |----------|:--------:|:-------------:|:-------------:|----------------:|
-| June 22  | [L1](Lab/Lab 1/Lab-1.html) ([.Rmd](https://drive.google.com/file/d/18x6JIRsASRmar21fNFcCz5u4tZdhJga8/view?usp=sharing))||[L1](Lab/Lab 1/Lab_1_Solutions.html) |June 24 (5 PM) |
-| June 24 | [L2](Lab/Lab 2/Lab-2.html) ([.Rmd](https://drive.google.com/file/d/1A3v6XoatscGa5WE9K-rDAlKOiETtlN06/view?usp=sharing))||[L2](Lab/Lab 2/Lab_2_Soln_TK.html)|June 26 (5 PM) |
-| June 26 || [A1](Analysis/Analysis 1/Analysis-1.html) ([.zip](https://drive.google.com/file/d/1AqSqbBKYw7Zn2nD0r3QWfYN2q-z7EXMi/view?usp=sharing))|[A1](Analysis/Analysis 1/Solutions-1.html)|June 29 (5 PM) |
-| June 29 | [L3](Lab/Lab 3/Lab-3.html) ([.Rmd](https://drive.google.com/file/d/1VA1nwnJxm1usbB-jVv3v2YefTc_j4IbO/view?usp=sharing))||[L3](Lab/Lab 3/Lab_3_Solutions.html)|July 1 (5 PM)|
-| July 1 | [L4](Lab/Lab 4/Lab-4.html) ([.Rmd](https://drive.google.com/file/d/1EvKorkEPsFKCpWLYEncqD_O4ZIEfI4nb/view?usp=sharing))||[L4](Lab/Lab 4/Lab_4_Solutions.html)|July 6 (5 PM)|
-| July 6|| [A2](Analysis/Analysis 2/Analysis-2.html) ([.zip](https://drive.google.com/file/d/11NkA0vLzi46SX6w_j7smUQaBDo-fQyny/view?usp=sharing))||July 8 (5 PM)|
-| July 8 | [L5](Lab/Lab 5/Lab-5.html) ([.Rmd](https://drive.google.com/file/d/1MflNYSHEUxm5IvoFf950pejj4mTROJmR/view?usp=sharing))|||July 10  (5 PM)|
+| June 22  | [L1](Lab/Lab 1/Lab-1.html) ([.Rmd](https://drive.google.com/file/d/18x6JIRsASRmar21fNFcCz5u4tZdhJga8/view?usp=sharing))||[L1](Solutions/Lab_1_Solutions.html) |June 24 (5 PM) |
+| June 24 | [L2](Lab/Lab 2/Lab-2.html) ([.Rmd](https://drive.google.com/file/d/1A3v6XoatscGa5WE9K-rDAlKOiETtlN06/view?usp=sharing))||[L2](Solutions/Lab_2_Soln_TK.html)|June 26 (5 PM) |
+| June 26 || [A1](Analysis/Analysis 1/Analysis-1.html) ([.zip](https://drive.google.com/file/d/1AqSqbBKYw7Zn2nD0r3QWfYN2q-z7EXMi/view?usp=sharing))|[A1](Solutions/Solutions-1.html)|June 29 (5 PM) |
+| June 29 | [L3](Lab/Lab 3/Lab-3.html) ([.Rmd](https://drive.google.com/file/d/1VA1nwnJxm1usbB-jVv3v2YefTc_j4IbO/view?usp=sharing))||[L3](Solutions/Lab_3_Solutions.html)|July 1 (5 PM)|
+| July 1 | [L4](Lab/Lab 4/Lab-4.html) ([.Rmd](https://drive.google.com/file/d/1EvKorkEPsFKCpWLYEncqD_O4ZIEfI4nb/view?usp=sharing))||[L4](Solutions/Lab_4_Solutions.html)|July 6 (5 PM)|
+| July 6|| [A2](Analysis/Analysis 2/Analysis-2.html) ([.zip](https://drive.google.com/file/d/11NkA0vLzi46SX6w_j7smUQaBDo-fQyny/view?usp=sharing))|[A2](Solutions/Solutions-2.html)|July 8 (5 PM)|
+| July 8 | [L5](Lab/Lab 5/Lab-5.html) ([.Rmd](https://drive.google.com/file/d/1MflNYSHEUxm5IvoFf950pejj4mTROJmR/view?usp=sharing))||[L5](Solutions/Lab_5_Soln_TK.html)|July 10  (5 PM)|
 | July 10 || [A3](Analysis/Analysis 3/Analysis_3.html) ([.zip](https://drive.google.com/file/d/1lOhwRmbwlgWfEnXO_M-MOVp0dH8afDG6/view?usp=sharing))||July 13 (5 PM)|
 | July 13  | [L6](Lab/Lab 6/Lab-6.html) ([.Rmd](https://drive.google.com/file/d/1GPfHPQLhrCayiaO3kmGkVCPjAyAicl1C/view?usp=sharing)) |||July 15 (5 PM)|
 | July 15 | [L7](Lab/Lab 7/Lab-7.html) ([.Rmd](https://drive.google.com/file/d/1_-m7iz9Ju8oXbrXd4bwN1IvtnMBiyHu4/view?usp=sharing)) |||July 17 (5 PM)|
