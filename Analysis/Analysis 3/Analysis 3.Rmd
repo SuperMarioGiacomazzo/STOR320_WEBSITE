@@ -202,7 +202,7 @@ Now we will do the same thing that we did in the previous question except we wil
 
 Code and Output:
 ```{r,eval=F}
-OUTPUT.B=as.tibble(matrix(NA,20,3)) #DO NOT CHANGE
+OUTPUT.B=data.frame(matrix(NA,20,3)) #DO NOT CHANGE
 names(OUTPUT.B)=c("DAY","median","IQR") #DO NOT CHANGE
 
 for(k in unique(DATA2$DAY)){
