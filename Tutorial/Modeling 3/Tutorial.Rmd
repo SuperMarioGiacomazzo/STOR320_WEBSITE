@@ -186,7 +186,7 @@ The function `save.image()` in R can be used to save all objects in the global e
 For more information on *.Rdata* file types, see https://fileinfo.com/extension/rdata for help.
 
 ```{r,eval=F}
-save.image("Tutorial12.Rdata")
+save.image("Tutorial.Rdata")
 ```
 
 
