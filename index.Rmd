@@ -124,8 +124,8 @@ This course is an application-driven introduction to data science. Statistical a
 |Jul. 15|[Modeling V](https://unc.zoom.us/rec/share/_-gvF7PS6CBLWKPO43zNc5cfR5i9T6a8gCMX-KIOn04QxljCoEE6tZkdZBkfOX96)|[Slides](https://drive.google.com/file/d/12o1WJNz6uSfLbl-_V2ITamxfhgLEJydM/view?usp=sharing)||
 |Jul. 16|[Modeling VI](https://unc.zoom.us/rec/share/zvdyN-Cprk9JHKfjtGfgVLQcL6O7eaa8gylLrKYLnh1IPZ0vAw8C7pef9ZqIVdBT)|[Slides](https://drive.google.com/file/d/1-yDT0up68BCgNpU3r5pSFOFeJ5Mejpuz/view?usp=sharing)||
 |Jul. 17|[Modeling VII](https://unc.zoom.us/rec/share/5JZtEIrs-j5Iftb9znDHVfAiFJ7ieaa81CYWrKcExUmvQafA6sKHIU6s52GkCO_T)|[Slides](https://drive.google.com/file/d/1Bi04Ytc6JqXkUcU7C-MeeOGtUK9Tr5cd/view?usp=sharing)|[Tutorial](Tutorial/Modeling 7/Tutorial.html) ([.Rmd](https://drive.google.com/file/d/1NXGQgiXSe8zP9e-bXhm0oSNuud96JYZo/view?usp=sharing))|
-|Jul. 20|Modeling VIII|[Slides](https://drive.google.com/file/d/1zp-zG4ii5PZdlpaq95v5S9MO5LsEXh1X/view?usp=sharing)|[Tutorial](Tutorial/Modeling 8/Tutorial.html) ([.Rmd](https://drive.google.com/file/d/1kAvZvjiPmvcya91-cW-nAHZez-rjV2ZK/view?usp=sharing))|
-||Modeling IX|[Slides](https://drive.google.com/file/d/1DgDOKe2Nj8hqZJCUAlYeatb0mGtGqeGC/view?usp=sharing)|[Tutorial](Tutorial/Modeling 9/Tutorial.html) ([.Rmd](https://drive.google.com/file/d/11HqvjhKyHWr7TdSRMx8yteHhfESd-hrk/view?usp=sharing))|
+|Jul. 20|[Modeling VIII](https://unc.zoom.us/rec/share/tNRYJa_Jy29OE9bvs3_WeKEcRZb_T6a80HAc_PNcmRuInUviNRYtKjYeNUgwBRzu )|[Slides](https://drive.google.com/file/d/1zp-zG4ii5PZdlpaq95v5S9MO5LsEXh1X/view?usp=sharing)|[Tutorial](Tutorial/Modeling 8/Tutorial.html) ([.Rmd](https://drive.google.com/file/d/1kAvZvjiPmvcya91-cW-nAHZez-rjV2ZK/view?usp=sharing))|
+||[Modeling IX](https://unc.zoom.us/rec/share/tNRYJa_Jy29OE9bvs3_WeKEcRZb_T6a80HAc_PNcmRuInUviNRYtKjYeNUgwBRzu )|[Slides](https://drive.google.com/file/d/1DgDOKe2Nj8hqZJCUAlYeatb0mGtGqeGC/view?usp=sharing)|[Tutorial](Tutorial/Modeling 9/Tutorial.html) ([.Rmd](https://drive.google.com/file/d/11HqvjhKyHWr7TdSRMx8yteHhfESd-hrk/view?usp=sharing))|
 |Jul. 21|Group Work Day|||
 |Jul. 22|Data Ethics|[Slides](https://drive.google.com/file/d/1Hji5bw9x9NsjUuOL2qUVAr4nfbc3dn74/view?usp=sharing)||
 |Jul. 23|R Shiny|[Slides](https://drive.google.com/file/d/1tzDNVSmNEsfajomAzeyKbN-zMWp0LXZp/view?usp=sharing)|[Tutorial](https://drmariogiacomazzo.shinyapps.io/Gapminder_Part3/) ([.zip](https://drive.google.com/file/d/1psNB-HGjdZoW-kWb2nWZHe6WDTtHno1P/view?usp=sharing))|||||
@@ -146,9 +146,9 @@ All Lab and Analysis assignments are to be submitted via **[Sakai](https://sakai
 | July 1 | [L4](Lab/Lab 4/Lab-4.html) ([.Rmd](https://drive.google.com/file/d/1EvKorkEPsFKCpWLYEncqD_O4ZIEfI4nb/view?usp=sharing))||[L4](Solutions/Lab_4_Solutions.html)|July 6 (5 PM)|
 | July 6|| [A2](Analysis/Analysis 2/Analysis-2.html) ([.zip](https://drive.google.com/file/d/11NkA0vLzi46SX6w_j7smUQaBDo-fQyny/view?usp=sharing))|[A2](Solutions/Solutions-2.html)|July 8 (5 PM)|
 | July 8 | [L5](Lab/Lab 5/Lab-5.html) ([.Rmd](https://drive.google.com/file/d/1MflNYSHEUxm5IvoFf950pejj4mTROJmR/view?usp=sharing))||[L5](Solutions/Lab_5_Soln_TK.html)|July 10  (5 PM)|
-| July 10 || [A3](Analysis/Analysis 3/Analysis_3.html) ([.zip](https://drive.google.com/file/d/1lOhwRmbwlgWfEnXO_M-MOVp0dH8afDG6/view?usp=sharing))||July 13 (5 PM)|
-| July 13  | [L6](Lab/Lab 6/Lab-6.html) ([.Rmd](https://drive.google.com/file/d/1GPfHPQLhrCayiaO3kmGkVCPjAyAicl1C/view?usp=sharing)) |||July 15 (5 PM)|
-| July 15 | [L7](Lab/Lab 7/Lab-7.html) ([.Rmd](https://drive.google.com/file/d/1_-m7iz9Ju8oXbrXd4bwN1IvtnMBiyHu4/view?usp=sharing)) |||July 17 (5 PM)|
+| July 10 || [A3](Analysis/Analysis 3/Analysis_3.html) ([.zip](https://drive.google.com/file/d/1lOhwRmbwlgWfEnXO_M-MOVp0dH8afDG6/view?usp=sharing))|[A3](Solutions/Solutions_3.html)|July 13 (5 PM)|
+| July 13  | [L6](Lab/Lab 6/Lab-6.html) ([.Rmd](https://drive.google.com/file/d/1GPfHPQLhrCayiaO3kmGkVCPjAyAicl1C/view?usp=sharing)) ||[L6](Solutions/Lab_6_Solutions.html)|July 15 (5 PM)|
+| July 15 | [L7](Lab/Lab 7/Lab-7.html) ([.Rmd](https://drive.google.com/file/d/1_-m7iz9Ju8oXbrXd4bwN1IvtnMBiyHu4/view?usp=sharing)) ||[L7](Solutions/Lab_7_Solutions.html)|July 17 (5 PM)|
 | July 17   |        |  [A4](Analysis/Analysis 4/Analysis_4.html) ([.zip](https://drive.google.com/file/d/15u5o6GNvOp9ubbmuMCs8pchWwYRDYu_j/view?usp=sharing))||July 20 (5 PM)|
 |          |        |             |           |
 
