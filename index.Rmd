@@ -189,7 +189,7 @@ This final project will be divided into four parts worth a total of 100 points. 
     + [Template](Final Project/EDA-Template.html) ([.Rmd](https://drive.google.com/file/d/1zNI0hX9CTg9d77mHOKxebgdwDEmqYebf/view?usp=sharing))
     
 * **[P3: Final Written Paper](Final Project/Final_Paper.html)** *(40 Points)*
-    + [Template](Final Project/Final-Paper-Template.html)([.Rmd](https://drive.google.com/file/d/13Qah0T0cZ3N_A_xhlw_I36CJrh1jqBVT/view?usp=sharing))
+    + [Template](Final Project/Final-Paper-Template.html)([.Rmd](https://drive.google.com/file/d/19oG11IaUnAkPe8BUE7SAXS2BOeVLIZdT/view?usp=sharing))
     + [Group Scoring](https://forms.gle/T9dmCLGQfxfKbVej8)
     
 * **[P4: Final Presentation](Final Project/Final_Presentation.html)** *(30 Points)*
