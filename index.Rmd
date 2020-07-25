@@ -127,8 +127,8 @@ This course is an application-driven introduction to data science. Statistical a
 |Jul. 20|[Modeling VIII](https://unc.zoom.us/rec/share/tNRYJa_Jy29OE9bvs3_WeKEcRZb_T6a80HAc_PNcmRuInUviNRYtKjYeNUgwBRzu )|[Slides](https://drive.google.com/file/d/1zp-zG4ii5PZdlpaq95v5S9MO5LsEXh1X/view?usp=sharing)|[Tutorial](Tutorial/Modeling 8/Tutorial.html) ([.Rmd](https://drive.google.com/file/d/1kAvZvjiPmvcya91-cW-nAHZez-rjV2ZK/view?usp=sharing))|
 ||[Modeling IX](https://unc.zoom.us/rec/share/tNRYJa_Jy29OE9bvs3_WeKEcRZb_T6a80HAc_PNcmRuInUviNRYtKjYeNUgwBRzu )|[Slides](https://drive.google.com/file/d/1DgDOKe2Nj8hqZJCUAlYeatb0mGtGqeGC/view?usp=sharing)|[Tutorial](Tutorial/Modeling 9/Tutorial.html) ([.Rmd](https://drive.google.com/file/d/11HqvjhKyHWr7TdSRMx8yteHhfESd-hrk/view?usp=sharing))|
 |Jul. 21|Group Work Day|||
-|Jul. 22|Data Ethics|[Slides](https://drive.google.com/file/d/1Hji5bw9x9NsjUuOL2qUVAr4nfbc3dn74/view?usp=sharing)||
-|Jul. 23|R Shiny|[Slides](https://drive.google.com/file/d/1tzDNVSmNEsfajomAzeyKbN-zMWp0LXZp/view?usp=sharing)|[Tutorial](https://drmariogiacomazzo.shinyapps.io/Gapminder_Part3/) ([.zip](https://drive.google.com/file/d/1psNB-HGjdZoW-kWb2nWZHe6WDTtHno1P/view?usp=sharing))|||||
+|Jul. 22| [Data Ethics](https://unc.zoom.us/rec/share/7scyBrfS-TxLUon32U6HXYkuH43Zaaa8gykf-vNfyUj2-6Y1RPWnVg1KTo-RHSBJ ) |[Slides](https://drive.google.com/file/d/1Hji5bw9x9NsjUuOL2qUVAr4nfbc3dn74/view?usp=sharing)||
+|Jul. 23|[R Shiny](https://unc.zoom.us/rec/share/_pFMHuj1xlNOEs_y2hHOQ_c5PLnhT6a8gXIWqKYPyk7x2yez_d4C8hLcphl-7Ppj)|[Slides](https://drive.google.com/file/d/1tzDNVSmNEsfajomAzeyKbN-zMWp0LXZp/view?usp=sharing)|[Tutorial](https://drmariogiacomazzo.shinyapps.io/Gapminder_Part3/) ([.zip](https://drive.google.com/file/d/1psNB-HGjdZoW-kWb2nWZHe6WDTtHno1P/view?usp=sharing))|||||
 |Jul. 27|Final Presentations|||
 
 
