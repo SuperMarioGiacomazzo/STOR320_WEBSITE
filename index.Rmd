@@ -73,7 +73,7 @@ This course is an application-driven introduction to data science. Statistical a
     - **[Sam Booth](http://stat-or.unc.edu/people/graduate-students-department)**
     - **[Kevin O'Connor](http://stat-or.unc.edu/people/graduate-students-department)**
 
-- Course Syllabus: **[Section 2]()**
+- Course Syllabus: **[Section 2](https://drive.google.com/file/d/1YOGDAWKjznaFnUW7uZO8nciixMZO9XY5/view?usp=sharing)**
 
   </div>
   <div class="column">
@@ -86,8 +86,9 @@ This course is an application-driven introduction to data science. Statistical a
     - **[Lectures:](https://unc.zoom.us/j/95493131315)** MWF from 1:20PM to 2:10PM
     - **[Dr. Mario Office Hours:](https://unc.zoom.us/j/96354599519)** T from 9AM to 3PM
     - **[Pavlos Office Hours:](https://unc.zoom.us/j/2903979720)** M from 9AM to 10AM & F from 2:25PM to 3:25PM 
-    - **[Sam Office Hours:]()** 
-    - **[Kevin Office Hours:]()**
+    - **[Sam Office Hours:](https://www.google.com/url?q=https://unc.zoom.us/j/5891075192&sa=D&source=calendar&usd=2&usg=AOvVaw1qfNrxxYJgipgmYOTHVJcV)** W from 3PM to 5PM
+    - **[Kevin Office Hours 1:](https://unc.zoom.us/j/95627644766)** Th from 4PM to 5PM
+    - **[Kevin Office Hours 2:](https://unc.zoom.us/j/97664652543)** F from 1PM to 2PM
 
 
 # **Course Material**
