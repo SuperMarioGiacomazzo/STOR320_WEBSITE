@@ -75,6 +75,14 @@ This course is an application-driven introduction to data science. Statistical a
 
 - Course Syllabus: **[Section 2](https://drive.google.com/file/d/1YOGDAWKjznaFnUW7uZO8nciixMZO9XY5/view?usp=sharing)**
 
+- Lab Sections:
+    - 320.403: Th from 8AM to 8:50AM by Pavlos
+    - 320.404: Th from 8AM to 8:50AM by Sam
+    - 320.405: Th from 6:30PM to 7:20AM by Kevin
+    - 320.406: Th from 7:30PM to 8:20AM by Kevin
+
+- **[University Approved Absences](https://unc-ch.formstack.com/forms/university_approved_absence_request?sso=5f3154c3179f5)**: Fill out the online form.
+
   </div>
   <div class="column">
   <img src="UNC_Logo.png" width="140px" height="auto">
