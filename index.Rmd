@@ -148,16 +148,16 @@ All HW and Analysis assignments are to be submitted via **[Sakai](https://sakai.
 
 | Assigned | HW (HW) | Analysis (A) |Solutions| Due Date (Time) |
 |----------|:--------:|:-------------:|:-------------:|----------------:|
-| August 10  | [HW1]() ([.Rmd]())||[L1]() |August 14 (5 PM) |
-| August 14 | [HW2]() ([.Rmd]())||[L2]()|August 21  (5 PM) |
+| August 10  | [HW1](Homework/HW-1.html) ([.Rmd](https://drive.google.com/file/d/18x6JIRsASRmar21fNFcCz5u4tZdhJga8/view?usp=sharing))||[HW1]() |August 14 (5 PM) |
+| August 14 | [HW2]() ([.Rmd]())||[HW2]()|August 21  (5 PM) |
 | August 21 || [A1]() ([.zip]())|[A1]()|September 4 (5 PM) |
-| September 4 | [HW3]() ([.Rmd]())||[L3]()|September 11 (5 PM)|
-| September 11 | [L4]() ([.Rmd]())||[L4]()|September  18 (5 PM)|
+| September 4 | [HW3]() ([.Rmd]())||[HW3]()|September 11 (5 PM)|
+| September 11 | [L4]() ([.Rmd]())||[HW4]()|September  18 (5 PM)|
 | September 18|| [A2]() ([.zip]())|[A2]()|October 2 (5 PM)|
-| October 2 | [HW5]() ([.Rmd]())||[L5]()|October 9  (5 PM)|
+| October 2 | [HW5]() ([.Rmd]())||[HW5]()|October 9  (5 PM)|
 | October 9 || [A3]() ([.zip]())|[A3]()|October 23 (5 PM)|
-| October 23  | [HW6]() ([.Rmd]()) ||[L6]()|October 30 (5 PM)|
-| October 30 | [HW7]() ([.Rmd]()) ||[L7]()|November 6 (5 PM)|
+| October 23  | [HW6]() ([.Rmd]()) ||[HW6]()|October 30 (5 PM)|
+| October 30 | [HW7]() ([.Rmd]()) ||[HW7]()|November 6 (5 PM)|
 | November 6   ||  [A4]() ([.zip]())|[A4]()|November 13 (5 PM)|
 |          |        |             |           |
 
