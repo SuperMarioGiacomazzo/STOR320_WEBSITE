@@ -156,7 +156,7 @@ All HW and Analysis assignments are to be submitted via **[Sakai](https://sakai.
 
 | Assigned | Homework (HW) | Analysis (A) |Solutions| Due Date (Time) |
 |----------|:--------:|:-------------:|:-------------:|----------------:|
-| August 10  | [HW1](Homework/HW 1/HW-1.html) ([.Rmd](https://drive.goole.com/file/d/18x6JIRsASRmar21fNFcCz5u4tZdhJga8/view?usp=sharing))||[HW1]() |August 14 (5 PM) |
+| August 10  | [HW1](Homework/HW 1/HW-1.html) ([.Rmd](https://drive.google.com/file/d/18x6JIRsASRmar21fNFcCz5u4tZdhJga8/view?usp=sharing))||[HW1]() |August 14 (5 PM) |
 | August 14 | [HW2](Homework/HW 2/HW-2.html) ([.Rmd](https://drive.google.com/file/d/1A3v6XoatscGa5WE9K-rDAlKOiETtlN06/view?usp=sharing))||[HW2]()|August 21  (5 PM) |
 | August 21 || [A1]() ([.zip]())|[A1]()|September 4 (5 PM) |
 | September 4 | [HW3](Homework/HW 3/HW-3.html) ([.Rmd](https://drive.google.com/file/d/1VA1nwnJxm1usbB-jVv3v2YefTc_j4IbO/view?usp=sharing))||[HW3]()|September 11 (5 PM)|
