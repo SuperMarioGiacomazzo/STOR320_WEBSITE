@@ -111,7 +111,7 @@ This course is an application-driven introduction to data science. Statistical a
 |Aug. 12| [Data Visualization](https://unc.zoom.us/rec/share/3JRtdK3XqVxOSdLz60j5C_cRJK_iaaa80XMdr_EJzB4VI-oHVHbu8yZYGDzIK3gs?startTime=1597252758000) | [Slides](https://drive.google.com/file/d/1TAZ9vnNm-Nz3Aw-GCHfOC0RpmkRus39Z/view?usp=sharing) |[Preview](Supplement/Data Visualization/Supplement.html)([.Rmd](https://drive.google.com/file/d/1-aDRkpDTnW4MngduemT2q_NZHjZ1nJyA/view?usp=sharing))|
 |Aug. 14| [Workflow in RMarkdown](https://unc.zoom.us/rec/share/ue12F470x09IRY33-E_ZS_QYJqvfaaa8hylIrKIIzRoIC75jinsI6mv4OQYieAWW?startTime=1597425448000) |[Slides](https://drive.google.com/file/d/1DDl31rRmNHJ17GCIKuLvGpkymxF8uayH/view?usp=sharing)||
 |Aug. 17| [Data Transformation I](https://unc.zoom.us/rec/share/wdIsc7P_yHNJfs_r1kruHaEsTrXmaaa803dP8vsFyBu_zKpK5csxSjXrtv3bzGpX?startTime=1597684800000) |[Slides](https://drive.google.com/file/d/16N-lYhh0tn2J4SfUBXeVcLvffiAMll56/view?usp=sharing)||
-|Aug. 19| Data Transformation I (Cont.) |[Slides](https://drive.google.com/file/d/16N-lYhh0tn2J4SfUBXeVcLvffiAMll56/view?usp=sharing)||
+|Aug. 19| [Data Transformation I (Cont.)](https://unc.zoom.us/rec/share/9-wqLJ3u7UFLTdLJ8HrPefAdGr28eaa81XJIqaYEmU9_Da20wfAwipQlgIs6qts-?startTime=1597857484000) |[Slides](https://drive.google.com/file/d/16N-lYhh0tn2J4SfUBXeVcLvffiAMll56/view?usp=sharing)||
 |Aug. 21| Data Transformation II |[Slides](https://drive.google.com/file/d/1dKHDweumhPHaybDO9Q_gFAMEbSfwwWkQ/view?usp=sharing)||
 |Aug. 24| Data Transformation III |[Slides](https://drive.google.com/file/d/1kUU2hO2YLJUrrNOv4Uy7tOK8GZcPGqL7/view?usp=sharing)||
 |Aug. 26| Data Transformation IV |[Slides](https://drive.google.com/file/d/1UGMfheOImYQt63gJ0D_rdLKrlgTQZOjK/view?usp=sharing)||
