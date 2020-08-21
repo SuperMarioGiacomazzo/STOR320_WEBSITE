@@ -223,7 +223,7 @@ This final project will be divided into four parts worth a total of 100 points. 
 | P1  | Project Proposal| Zoom + Sakai | September 4 (5PM)|
 | P2  | Exploratory Data Analysis | Zoom + Sakai | October 9 (5PM)|
 | P3  | Final Written Paper|Sakai| November 16 (5PM)|
-| P4  | Final Presentation|Sakai + Class| TBD (TBD)|
+| P4  | Final Presentation|Sakai + Class| November 23 (12PM)|
 ||||
 
 ## Above Average Final Projects
