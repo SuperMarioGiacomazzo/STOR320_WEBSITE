@@ -1,0 +1,216 @@
+---
+title: "Analysis 1: UNC Salaries"
+author: "FIRSTNAME LASTNAME"
+date:  "`r format(Sys.time(), '%B %d, %Y')`"
+output: html_document
+---
+
+# Instructions
+
+**Overview:** For each question, show your R code that you used to answer each question in the provided chunks. When a written response is required, be sure to answer the entire question in complete sentences outside the code chunks. When figures are required, be sure to follow all requirements to receive full credit. Point values are assigned for every part of this analysis.
+
+**Helpful:** Make sure you knit the document as you go through the assignment. Check all your results in the created HTML file.
+
+**Submission:** Submit via an electronic document on Sakai. Must be submitted as an HTML file generated in RStudio. 
+
+# Introduction
+
+Universities are typically opaque, bureaucratic institutions. To be transparent to tax payers, many public schools, such as the University of North Carolina, openly report **[salary information](http://www.newsobserver.com/news/databases/public-salaries/)**. In this assignment, we will analyze this information to answer pivotal questions that have endured over the course of time. The most recent salary data for UNC-Chapel Hill faculty and staff has already been downloaded in CSV format and titled *"UNC_System_Salaries Search and Report.csv"*. If you scan the spreadsheet, you will notice that Dr. Mario is not listed. People get depressed when they see that many digits after the decimal.
+
+To answer all the questions, you will need the R package `tidyverse` to make figures and utilize `dplyr` functions.
+
+
+```{r setup, include=F}
+options(scipen=999)
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+# Data Information
+
+Make sure the CSV data file is contained in the folder of your RMarkdown file. First, we start by using the `read_csv` function from the `readr` package found within the tidyverse. The code below executes this process by creating a tibble in your R environment named "salary".
+```{r, message=F}
+salary=read_csv("UNC_System_Salaries Search and Report.csv")
+```
+
+Now, we will explore the information that is contained in this dataset. The code below provides the names of the variables contained in the dataset.
+
+```{r}
+names(salary)
+```
+
+Next, we will examine the type of data contains in these different variables. 
+```{r}
+str(salary,give.attr=F)
+```
+
+You will notice that the variable "hiredate" is recorded as a character. The following code will first modify the original dataset to change this to a date variable with the format *mm/dd/yyyy*. Then, we will remove the hyphens to create a numeric variable as *yyyymmdd*. Finally, in the spirit of tidyverse, we will convert this data frame to a tibble.
+
+```{r}
+salary$hiredate=as.Date(salary$hiredate, format="%m/%d/%Y")
+salary$hiredate=as.numeric(gsub("-","",salary$hiredate))
+salary=as.tibble(salary)
+```
+
+Now, we will use `head()` to view of first five rows and the modifications made to the original data. The rest of the assignment will extend off this modified dataset named `salary` which by now should be in your global environment.
+```{r}
+head(salary,5)
+```
+
+# Assignment
+
+
+## Part 1: Reducing the Data to a Smaller Set of Interest
+
+
+### Q1 *(2 Points)* 
+
+Create a new dataset named `salary2` that only contains the following variables:
+
+- "Name"
+
+- "dept"
+
+- "position"
+
+- "hiredate"
+
+- "exempt"
+
+- "totalsal"
+
+Then, use the `names()` function to display the variable names of `salary2`.
+```{r}
+#
+```
+
+### Q2 *(2 Points)*
+
+Now, we modify `salary2`. Rename the variables "dept","position","exempt","totalsal" to "Department","Job","Exempt", and "Salary", respectively. Do this for a new dataset called `salary3` and use `names()` to display the variable names of `salary3`.
+```{r}
+#
+```
+ 
+### Q3 *(2 Points)*
+
+Now, we modify `salary3`. Create a new variable called "HireYear" that only contains the first four digits of the variable "hiredate" in a new dataset named `salary4`. *Hint: Use the concept seen in the conversion of flight times to minutes since midnight.* Use the function `str()` to ensure that your new variable "HireYear" reports the year of the date that the employee was hired.
+
+```{r}
+#
+```
+
+### Q4 *(2 points)*
+
+Now, we modify `salary4`. Create a new variable called "YrsEmployed" which reports the number of full years the employee has worked at UNC. Assume that all employees are hired January 1. Create a new dataset named `salary5` and again use `str()` to display the variables in `salary5`.
+```{r}
+#
+```
+
+### Q5 *(4 points)*
+
+Now, we modify `salary5` to create our final dataset named `salary.final`. Use the pipe `%>%` to make the following changes:
+
+- Drop the variables "hiredate" and "HireYear". 
+
+- Sort the observations first by "Department" and then by "YrsEmployed". 
+
+- Rearrange the variables so that "YrsEmployed" and "Salary" are the first two variables in the dataset, in that order, without removing any of the other variables.
+
+After you have used the `%>%` to make these changes, use the function `head()` to display the first 10 rows of `salary.final`.
+
+```{r}
+#
+```
+
+## Part 2: Answering Questions Based on All Data
+
+### Q6 *(2 Points)*
+
+What is the average salary of employees in the Law Department?
+
+Code *(1 Point)*:
+```{r}
+#
+```
+
+Answer *(1 Point)*: (Place Answer Here Using Complete Sentences)
+
+### Q7 *(4 Points)* 
+
+How many employees have worked in Family Medicine between 5 and 8 years (inclusive) and are exempt from personnel act?
+
+Code *(2 Points)*:
+```{r}
+#
+```
+
+Answer *(2 Points)*: (Place Answer Here Using Complete Sentences)
+
+### Q8 *(4 Points)*
+
+What is the mean salary of employees from the Linguistics department who are professors, associate professors, or assistant professors?
+
+Code *(2 Points)*:
+```{r}
+#
+```
+
+Answer *(2 Points)*: (Place Answer Here Using Complete Sentences)
+
+## Part 3: Answering Questions Based on Summarized Data
+
+### Q9 *(4 Points)*
+
+Based off the data in `salary.final`, create a grouped summary based off combinations of "Department" and "YrsEmployed". Call the new tibble `deptyear_summary`. Your summarized tibble, `deptyear_summary`, should report all of the following statistics with corresponding variable names in the following order.
+
+- "n" = number of employees for each combination
+
+- "mean" = average salary for each combination
+
+- "sd" = standard deviation of salary for each combination.
+
+- "min" = minimum salary for each combination.
+
+- "max" = maximum salary for each combination
+
+In the process, make sure you use `ungroup()` with the pipe `%>%` to release the grouping so future work is no longer group specific. Following the creation of `deptyear_summary`, prove that your code worked by using `head()` to view the first 10 rows.
+
+```{r}
+#
+```
+
+### Q10 *(4 Points)*
+
+Using the summarized data in `deptyear_summary`, use the `dplyr` functions to identify the 3 departments that award the lowest average salary for employees who have been employed for 3 years. The output should only show the 3 departments along with the corresponding years employeed, which should all be 3, and the four summarizing statistics created. 
+
+Furthermore, explain why the standard deviation for one of the 3 departments in your list has a salary standard deviation of "NaN". What does this mean and how did it occur?
+
+Code *(2 Points)*:
+```{r}
+#
+```
+
+Answer *(2 Points)*: (Place Answer Here Using Complete Sentences)
+
+### Q11 *(4 points)*
+
+Create a scatter plot using `geom_point()` along with fitted lines using `geom_smooth` with the argument `method="lm"` showing the linear relationship between average salary and the years employeed. For this plot, use the summarized data in `deptyear_summary`. Following the plot, please explain what this plot suggests about the relationship between the salary a UNC employee makes and how many years that employee has served. Make reference to the figure and use descriptive adjectives (i.e. "strong", "weak", etc.) and terms (i.e. "positive", "negative", etc.) that are appropriate for discussing linear relationships.
+
+Code and Figure *(2 Points)*:
+```{r}
+#
+```
+
+Answer *(2 Points)*: (Place Answer Here Using Complete Sentences)
+
+### Q12 *(6 Points)*
+
+The purpose of summarizing the data was to analyze the previously discussed linear relationship by group. In `deptyear_summary`, there are 702 unique departments represented. You can verify this by using `length(unique(deptyear_summary$Department))`. In this part, I want you to select 5 academic departments, not previously discussed, and in one figure, display the scatter plots and fitted regression lines representing the relationship between average salary and years employed in 5 different colors. Then, in complete sentences, I want you to state what departments you chose and explain the differences and/or similarities between the groups regarding the previously mentioned relationship. Compare departments on the starting salary and the rate of increase in salary based on the fitted lines.
+
+
+Code and Figure: *(3 Points)*:
+```{r}
+#
+```
+
+Answer *(3 Points)*: (Place Answer Here Using Complete Sentences)
