@@ -114,7 +114,7 @@ This course is an application-driven introduction to data science. Statistical a
 |Aug. 19| [Data Transformation I (Cont.)](https://unc.zoom.us/rec/share/9-wqLJ3u7UFLTdLJ8HrPefAdGr28eaa81XJIqaYEmU9_Da20wfAwipQlgIs6qts-?startTime=1597857484000) |[Slides](https://drive.google.com/file/d/16N-lYhh0tn2J4SfUBXeVcLvffiAMll56/view?usp=sharing)||
 |Aug. 21| [Data Transformation II](https://unc.zoom.us/rec/share/_u5VBbvX12NLTZ3cyELQV6ItD47bX6a81idI_aELyKIF4iAipjxrB6mpR_3LpXs?startTime=1598030426000) |[Slides](https://drive.google.com/file/d/1dKHDweumhPHaybDO9Q_gFAMEbSfwwWkQ/view?usp=sharing)||
 |Aug. 24| [Going Viral](https://www.youtube.com/watch?v=ERdwqcEEHsQ) |||
-|Aug. 26| Data Transformation III |[Slides](https://drive.google.com/file/d/1kUU2hO2YLJUrrNOv4Uy7tOK8GZcPGqL7/view?usp=sharing)||
+|Aug. 26| [Data Transformation III](https://unc.zoom.us/rec/share/99AvPY3T2mNLZ5HX0HD_Yrd_JdnhT6a8hCQc-fsKmkngZpLnUjElAqsSVn85Fv5o?startTime=1598462353000) |[Slides](https://drive.google.com/file/d/1kUU2hO2YLJUrrNOv4Uy7tOK8GZcPGqL7/view?usp=sharing)||
 |Aug. 28| Data Transformation IV |[Slides](https://drive.google.com/file/d/1UGMfheOImYQt63gJ0D_rdLKrlgTQZOjK/view?usp=sharing)||
 |Aug. 31| Exploratory Data Analysis I |[Slides](https://drive.google.com/file/d/1cwBrbCBpG0nvmcfXrlrpHT5BxREVjr0P/view?usp=sharing)||
 |Sep. 2| Exploratory Data Analysis II |[Slides](https://drive.google.com/file/d/1HV2oJ5a_dVLBoSCctZr1ir8wzIgoMGVq/view?usp=sharing)||
@@ -160,8 +160,8 @@ All HW and Analysis assignments are to be submitted via **[Sakai](https://sakai.
 
 | Assigned | Homework (HW) | Analysis (A) |Solutions| Due Date (Time) |
 |----------|:--------:|:-------------:|:-------------:|----------------:|
-| August 10  | [HW1](Homework/HW 1/HW-1.html) ([.Rmd](https://drive.google.com/file/d/18x6JIRsASRmar21fNFcCz5u4tZdhJga8/view?usp=sharing))||[HW1](Solutions/Lab_1_Solutions.html) |August 14 (5 PM) |
-| August 14 | [HW2](Homework/HW 2/HW-2.html) ([.Rmd](https://drive.google.com/file/d/1A3v6XoatscGa5WE9K-rDAlKOiETtlN06/view?usp=sharing))||[HW2]()|August 21  (5 PM) |
+| August 10  | [HW1](Homework/HW 1/HW-1.html) ([.Rmd](https://drive.google.com/file/d/18x6JIRsASRmar21fNFcCz5u4tZdhJga8/view?usp=sharing))||[HW1](Solutions/HW_1_Solutions.html) |August 14 (5 PM) |
+| August 14 | [HW2](Homework/HW 2/HW-2.html) ([.Rmd](https://drive.google.com/file/d/1A3v6XoatscGa5WE9K-rDAlKOiETtlN06/view?usp=sharing))||[HW2](Solutions/HW_2_Solutions.html)|August 21  (5 PM) |
 | August 21 || [A1](Analysis/Analysis 1/Analysis-1.html) ([.zip](https://drive.google.com/file/d/1OUF_eAap8IqcCkq4wrudj8aAOtpq3dlY/view?usp=sharing))|[A1]()|September 4 (5 PM) |
 | September 4 | [HW3](Homework/HW 3/HW-3.html) ([.Rmd](https://drive.google.com/file/d/1VA1nwnJxm1usbB-jVv3v2YefTc_j4IbO/view?usp=sharing))||[HW3]()|September 11 (5 PM)|
 | September 11 | [HW4](Homework/HW 4/HW-4.html) ([.Rmd](https://drive.google.com/file/d/1EvKorkEPsFKCpWLYEncqD_O4ZIEfI4nb/view?usp=sharing))||[HW4]()|September  18 (5 PM)|
