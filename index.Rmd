@@ -115,7 +115,7 @@ This course is an application-driven introduction to data science. Statistical a
 |Aug. 21| [Data Transformation II](https://unc.zoom.us/rec/share/_u5VBbvX12NLTZ3cyELQV6ItD47bX6a81idI_aELyKIF4iAipjxrB6mpR_3LpXs?startTime=1598030426000) |[Slides](https://drive.google.com/file/d/1dKHDweumhPHaybDO9Q_gFAMEbSfwwWkQ/view?usp=sharing)||
 |Aug. 24| [Going Viral](https://www.youtube.com/watch?v=ERdwqcEEHsQ) |||
 |Aug. 26| [Data Transformation III](https://unc.zoom.us/rec/share/99AvPY3T2mNLZ5HX0HD_Yrd_JdnhT6a8hCQc-fsKmkngZpLnUjElAqsSVn85Fv5o?startTime=1598462353000) |[Slides](https://drive.google.com/file/d/1kUU2hO2YLJUrrNOv4Uy7tOK8GZcPGqL7/view?usp=sharing)||
-|Aug. 28| Data Transformation IV |[Slides](https://drive.google.com/file/d/1UGMfheOImYQt63gJ0D_rdLKrlgTQZOjK/view?usp=sharing)||
+|Aug. 28| [Data Transformation IV](https://unc.zoom.us/rec/share/tddVEaHy6GxIa43Lx36DB4AFEYnPX6a8gXAe_fAKzU1ulNzOLhxp_KJO-bSy3u2y?startTime=1598635091000) |[Slides](https://drive.google.com/file/d/1UGMfheOImYQt63gJ0D_rdLKrlgTQZOjK/view?usp=sharing)||
 |Aug. 31| Exploratory Data Analysis I |[Slides](https://drive.google.com/file/d/1cwBrbCBpG0nvmcfXrlrpHT5BxREVjr0P/view?usp=sharing)||
 |Sep. 2| Exploratory Data Analysis II |[Slides](https://drive.google.com/file/d/1HV2oJ5a_dVLBoSCctZr1ir8wzIgoMGVq/view?usp=sharing)||
 |Sep. 4| Final Project I |[Slides](https://drive.google.com/file/d/1VRTM5jW8TjjWHMcizNjjA0ewemwNvyuC/view?usp=sharing)||
