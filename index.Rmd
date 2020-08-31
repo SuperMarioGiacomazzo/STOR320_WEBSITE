@@ -116,7 +116,7 @@ This course is an application-driven introduction to data science. Statistical a
 |Aug. 24| [Going Viral](https://www.youtube.com/watch?v=ERdwqcEEHsQ) |||
 |Aug. 26| [Data Transformation III](https://unc.zoom.us/rec/share/99AvPY3T2mNLZ5HX0HD_Yrd_JdnhT6a8hCQc-fsKmkngZpLnUjElAqsSVn85Fv5o?startTime=1598462353000) |[Slides](https://drive.google.com/file/d/1kUU2hO2YLJUrrNOv4Uy7tOK8GZcPGqL7/view?usp=sharing)||
 |Aug. 28| [Data Transformation IV](https://unc.zoom.us/rec/share/tddVEaHy6GxIa43Lx36DB4AFEYnPX6a8gXAe_fAKzU1ulNzOLhxp_KJO-bSy3u2y?startTime=1598635091000) |[Slides](https://drive.google.com/file/d/1UGMfheOImYQt63gJ0D_rdLKrlgTQZOjK/view?usp=sharing)||
-|Aug. 31| Exploratory Data Analysis I |[Slides](https://drive.google.com/file/d/1cwBrbCBpG0nvmcfXrlrpHT5BxREVjr0P/view?usp=sharing)||
+|Aug. 31| [Exploratory Data Analysis I](https://unc.zoom.us/rec/share/yPRvIuHwymRLT7PqtEvbZpExT8e-X6a8h3VK-vQIy0u2FUBCx0RhIR_QhzLbDe4S?startTime=1598893727000) |[Slides](https://drive.google.com/file/d/1cwBrbCBpG0nvmcfXrlrpHT5BxREVjr0P/view?usp=sharing)||
 |Sep. 2| Exploratory Data Analysis II |[Slides](https://drive.google.com/file/d/1HV2oJ5a_dVLBoSCctZr1ir8wzIgoMGVq/view?usp=sharing)||
 |Sep. 4| Final Project I |[Slides](https://drive.google.com/file/d/1VRTM5jW8TjjWHMcizNjjA0ewemwNvyuC/view?usp=sharing)||
 |Sep. 7|No Labor Day|||
@@ -220,7 +220,7 @@ This final project will be divided into four parts worth a total of 100 points. 
 
 | Part | Description |Method of Submission| Due Date (Time) |
 |------|-------------|-------------------|----------------:|
-| P1  | Project Proposal| Zoom + Sakai | September 4 (5PM)|
+| P1  | Project Proposal| Zoom + Sakai | September 11 (5PM)|
 | P2  | Exploratory Data Analysis | Zoom + Sakai | October 9 (5PM)|
 | P3  | Final Written Paper|Sakai| November 16 (5PM)|
 | P4  | Final Presentation|Sakai + Class| November 23 (12PM)|
