@@ -122,7 +122,7 @@ This course is an application-driven introduction to data science. Statistical a
 |Sep. 7|No Labor Day|||
 |Sep. 9| [Data Import](https://unc.zoom.us/rec/share/CrAs1SfI55c2iuwtG_pzBhmh7czlPTGVSzEFCURUze66oz00Qj8PuTOSLuxdTXzT.XRzI0NQQ4vx21g6B?startTime=1599671991000) | [Slides](https://drive.google.com/file/d/15KvLv179xjfvYSMuoGDKmwicuT0F2UKG/view?usp=sharing)||
 |Sep. 11| [Tidy Data I](https://unc.zoom.us/rec/share/yIrR3gagbzH2LfRtHZSNPizFx1sTM98cT1qkafSt-c-ssUUkWlZ7iem6Qd8hxwQ.5Dgzy4m3uIwOmnF0?startTime=1599844669000) |[Slides](https://drive.google.com/file/d/1U-TRjdBEHXaU_Q52Xunkxpd0Yie9oZdn/view?usp=sharing)||
-|Sep. 14| Tidy Data II |[Slides](https://drive.google.com/file/d/1WTsPbnuezz_1ZxI35LwwXPJL7VYlzK8G/view?usp=sharing)||
+|Sep. 14| [Tidy Data II](https://unc.zoom.us/rec/share/UjaRF2VdKWlZlQtd-OoUEWzDKhcsgCufcI3PagrjEtxFSBtFZ9Zj5gt1RPXY6le9.nHaLvdOqtBtjrfXc?startTime=1600104155000) |[Slides](https://drive.google.com/file/d/1WTsPbnuezz_1ZxI35LwwXPJL7VYlzK8G/view?usp=sharing)||
 |Sep. 16| Web Scraping I |[Slides](https://drive.google.com/file/d/1hSfA_YS7WhV-hkfXhz-_eVWVY6zt5fil/view?usp=sharing)||
 |Sep. 18| Web Scraping II |[Slides](https://drive.google.com/file/d/10WIwlmZuRakieBpIhg5MGLjodeOLIpCR/view?usp=sharing)||
 |Sep. 21| Joins I |[Slides](https://drive.google.com/file/d/1M88xOe34SWkbm7lCQMNX6RQAm_mhCEjk/view?usp=sharing)||

@@ -184,6 +184,24 @@ missing %>%
   complete(year,quarter)
 ```
 
+```{r}
+library(MASS)
+library(tidyverse)
+Aids=Aids2
+names(Aids)
+
+Aids %>%
+  dplyr::select(sex,status) %>%
+  group_by(sex,status) %>%
+  summarize(count=n()) %>%
+  mutate(prop=count/sum(count)) %>%
+  dplyr::select(-count) %>%
+  spread(key=status,value=prop) 
+
+
+```
+
+
 
 
 
