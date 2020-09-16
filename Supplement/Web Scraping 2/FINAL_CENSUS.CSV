@@ -1,0 +1,201 @@
+Name,State,Change,Density
+New York,New York,1.62,10699
+Los Angeles,California,5.81,3306
+Chicago,Illinois,-0.12,4575
+Houston,Texas,11.55,1412
+Phoenix,Arizona,17.51,1270
+Philadelphia,Pennsylvania,4.16,4577
+San Antonio,Texas,18.39,1256
+San Diego,California,10.81,1715
+Dallas,Texas,15.15,1571
+San Jose,California,8.3,2245
+Austin,Texas,22.54,1193
+Fort Worth,Texas,24.53,1041
+Jacksonville,Florida,12.54,479
+Columbus,Ohio,16.6,1624
+Charlotte,North Carolina,22.58,1138
+San Francisco,California,11.23,7376
+Indianapolis,Indiana,6.62,935
+Seattle,Washington,28.25,3606
+Denver,Colorado,21.68,1849
+Washington,District of Columbia,19.11,4552
+Boston,Massachusetts,14.35,5673
+El Paso,Texas,5.36,1028
+Nashville,Tennessee,11.34,547
+Detroit,Michigan,-6.17,1857
+Portland,Oregon,13.44,1922
+Las Vegas,Nevada,13.24,1803
+Oklahoma City,Oklahoma,12.56,417
+Memphis,Tennessee,-0.76,788
+Louisville,Kentucky,4.82,916
+Baltimore,Maryland,-4.92,2816
+Milwaukee,Wisconsin,-1.56,2351
+Albuquerque,New Mexico,2.63,1157
+Tucson,Arizona,5.07,898
+Fresno,California,8.13,1811
+Mesa,Arizona,19.65,1475
+Atlanta,Georgia,22.03,1490
+Sacramento,California,11.66,2061
+Kansas City,Missouri,9.65,619
+Miami,Florida,21.34,5217
+Colorado Springs,Colorado,15.55,962
+Raleigh,North Carolina,18.61,1276
+Omaha,Nebraska,4.39,1289
+Long Beach,California,0.17,3528
+Virginia Beach,Virginia,2.05,707
+Minneapolis,Minnesota,14.1,3125
+Oakland,California,11.18,3006
+Tampa,Florida,22.74,1401
+Arlington,Texas,10,1624
+Tulsa,Oklahoma,1.05,775
+Bakersfield,California,11.68,1006
+New Orleans,Louisiana,12.18,889
+Wichita,Kansas,1.58,929
+Aurora,Colorado,17.38,958
+Cleveland,Ohio,-4.21,1885
+Anaheim,California,4.69,2708
+Honolulu,Hawaii,1.12,2187
+Riverside,California,10.05,1598
+San Juan,Puerto Rico,-13.29,3234
+Santa Ana,California,1.55,4662
+Henderson,Nevada,28.17,1201
+Lexington,Kentucky,10.73,447
+Corpus Christi,Texas,6.59,787
+Stockton,California,8.39,1969
+St. Paul,Minnesota,9.26,2317
+Cincinnati,Ohio,3.25,1520
+Irvine,California,42.44,1788
+Greensboro,North Carolina,11.26,897
+Pittsburgh,Pennsylvania,-3.45,2056
+Lincoln,Nebraska,13.36,1179
+St. Louis,Missouri,-7.99,1837
+Orlando,Florida,21.91,1019
+Plano,Texas,10.46,1554
+Anchorage,Alaska,-2.62,65
+Newark,New Jersey,2.06,4524
+Durham,North Carolina,22.55,973
+Chula Vista,California,13.34,2157
+St. Petersburg,Florida,10.85,1697
+Jersey City,New Jersey,9.15,7100
+Fort Wayne,Indiana,6.62,946
+Toledo,Ohio,-5.71,1298
+Chandler,Arizona,13.61,1593
+Laredo,Texas,11.76,967
+Madison,Wisconsin,12.97,1285
+Scottsdale,Arizona,20.5,550
+Lubbock,Texas,13.01,747
+Reno,Nevada,15.29,924
+Gilbert,Arizona,23.64,1460
+Buffalo,New York,-2.32,2441
+Glendale,Arizona,12.53,1595
+North Las Vegas,Nevada,17.1,1000
+Winston-Salem,North Carolina,9.45,733
+Chesapeake,Virginia,10.98,283
+Garland,Texas,8.48,1669
+Irving,Texas,12.39,1403
+Hialeah,Florida,7.87,4351
+Norfolk,Virginia,-0.31,1756
+Fremont,California,11.63,1194
+Boise,Idaho,11.93,1082
+Paradise,Nevada,4.71,1931
+Richmond,Virginia,13.61,1495
+Arlington,Virginia,11.64,3443
+Spokane,Washington,6.56,1254
+Tacoma,Washington,12.3,1727
+Modesto,California,7.6,1965
+Fontana,California,10.76,1959
+Des Moines,Iowa,6.29,954
+San Bernardino,California,3.73,1353
+Baton Rouge,Louisiana,-5.52,968
+Frisco,Texas,81.96,1219
+Salt Lake City,Utah,14.36,744
+Moreno Valley,California,9.65,1604
+Oxnard,California,7.18,3096
+Santa Clarita,California,3.1,1149
+Birmingham,Alabama,-1.32,552
+McKinney,Texas,56.82,1203
+Port St. Lucie,Florida,25.22,669
+Fayetteville,North Carolina,-1.29,537
+Grand Rapids,Michigan,9.19,1771
+Glendale,California,6.8,2595
+Rochester,New York,-3.16,2200
+Huntsville,Alabama,12.13,365
+Amarillo,Texas,5.63,767
+Huntington Beach,California,5.56,2887
+Spring Valley,Nevada,11.95,2319
+Cape Coral,Florida,28.93,727
+Tallahassee,Florida,9.7,766
+Yonkers,New York,1.33,4266
+Aurora,Illinois,0.36,1706
+Grand Prairie,Texas,12.76,1060
+Akron,Ohio,-0.43,1235
+Little Rock,Arkansas,1.78,635
+Montgomery,Alabama,-4.04,476
+Overland Park,Kansas,12.98,1010
+Augusta,Georgia,0.06,251
+Tempe,Arizona,19.65,1876
+Sunrise Manor,Nevada,1.88,2232
+Knoxville,Tennessee,7.08,747
+Sioux Falls,South Dakota,23.29,940
+Columbus,Georgia,-0.95,338
+Mobile,Alabama,-3.99,517
+Ontario,California,13.56,1442
+Vancouver,Washington,11.27,1477
+Worcester,Massachusetts,2.5,1927
+Fort Lauderdale,Florida,11.11,2061
+Chattanooga,Tennessee,7.96,497
+Shreveport,Louisiana,-8.49,661
+Brownsville,Texas,4.76,536
+Peoria,Arizona,16.35,395
+Rancho Cucamonga,California,8.3,1733
+Salem,Oregon,15.92,1427
+Providence,Rhode Island,0.45,3753
+Eugene,Oregon,13.93,1560
+Elk Grove,California,15.65,1630
+Santa Rosa,California,1.04,1608
+Newport News,Virginia,-2.13,991
+Pembroke Pines,Florida,14.03,2092
+Oceanside,California,5.38,1656
+Cary,North Carolina,27.79,1151
+Fort Collins,Colorado,19,1167
+Corona,California,11.72,1653
+Garden Grove,California,-0.5,3662
+Springfield,Missouri,6.31,795
+Alexandria,Virginia,17.77,4285
+Bayamon,Puerto Rico,-11.08,2367
+Clarksville,Tennessee,23.24,643
+Enterprise,Nevada,51.47,1241
+Hayward,California,11.45,1368
+Jackson,Mississippi,-7.86,556
+Lakewood,Colorado,11.12,1423
+Lancaster,California,1.15,650
+Hollywood,Florida,12.21,2240
+Palmdale,California,2.18,569
+Salinas,California,3.12,2565
+Springfield,Massachusetts,1.21,1884
+Bellevue,Washington,20.48,1784
+Killeen,Texas,19.38,1090
+Kansas City,Kansas,5.29,475
+Macon County,Georgia,-2.11,236
+Sunnyvale,California,8.52,2671
+Pomona,California,2.23,2560
+Escondido,California,5.41,1575
+Pasadena,Texas,1.58,1346
+Murfreesboro,Tennessee,37.93,945
+Naperville,Illinois,4.78,1484
+Joliet,Illinois,0.39,892
+Paterson,New Jersey,-0.36,6694
+Savannah,Georgia,6.01,542
+Rockford,Illinois,-5.31,870
+Midland,Texas,30.31,753
+McAllen,Texas,9.2,848
+Waco,Texas,14.84,626
+Roseville,California,20.14,1261
+Torrance,California,-0.88,2708
+Thornton,Colorado,20.52,1548
+Metairie,Louisiana,3.61,2382
+Miramar,Florida,17.11,1917
+Bridgeport,Connecticut,-1.28,3437
+Olathe,Kansas,13.14,895
+Denton,Texas,21.46,570
+Surprise,Arizona,20.71,508
