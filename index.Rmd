@@ -123,29 +123,29 @@ This course is an application-driven introduction to data science. Statistical a
 |Sep. 9| [Data Import](https://unc.zoom.us/rec/share/CrAs1SfI55c2iuwtG_pzBhmh7czlPTGVSzEFCURUze66oz00Qj8PuTOSLuxdTXzT.XRzI0NQQ4vx21g6B?startTime=1599671991000) | [Slides](https://drive.google.com/file/d/15KvLv179xjfvYSMuoGDKmwicuT0F2UKG/view?usp=sharing)||
 |Sep. 11| [Tidy Data I](https://unc.zoom.us/rec/share/yIrR3gagbzH2LfRtHZSNPizFx1sTM98cT1qkafSt-c-ssUUkWlZ7iem6Qd8hxwQ.5Dgzy4m3uIwOmnF0?startTime=1599844669000) |[Slides](https://drive.google.com/file/d/1U-TRjdBEHXaU_Q52Xunkxpd0Yie9oZdn/view?usp=sharing)||
 |Sep. 14| [Tidy Data II](https://unc.zoom.us/rec/share/UjaRF2VdKWlZlQtd-OoUEWzDKhcsgCufcI3PagrjEtxFSBtFZ9Zj5gt1RPXY6le9.nHaLvdOqtBtjrfXc?startTime=1600104155000) |[Slides](https://drive.google.com/file/d/1WTsPbnuezz_1ZxI35LwwXPJL7VYlzK8G/view?usp=sharing)||
-|Sep. 16| Web Scraping I |[Slides](https://drive.google.com/file/d/1hSfA_YS7WhV-hkfXhz-_eVWVY6zt5fil/view?usp=sharing)|[Preview](Supplement/Web Scraping 1/Supplement.html)([.Rmd](https://drive.google.com/file/d/1vPXx61kJK87KMH8IsSDdk2C9Jt9xm1WR/view?usp=sharing))|
-|Sep. 18| Web Scraping II |[Slides](https://drive.google.com/file/d/10WIwlmZuRakieBpIhg5MGLjodeOLIpCR/view?usp=sharing)|[Preview]()([.Rmd]())|
-|Sep. 21| Joins I |[Slides](https://drive.google.com/file/d/1M88xOe34SWkbm7lCQMNX6RQAm_mhCEjk/view?usp=sharing)||
-|Sep. 23| Joins II |[Slides](https://drive.google.com/file/d/1wgEmOgwbjbnZbIBaHSiRg_tAbuumAS9I/view?usp=sharing)||
-|Sep. 25| Final Project II |[Slides](https://drive.google.com/file/d/1dnBkv6iKBgP2O0hTEJ9YQ-A2Kd8c-0a_/view?usp=sharing)||
-|Sep. 28| Factors |[Slides](https://drive.google.com/file/d/1BuLCYOoCn779L9sr4JwgTbh9QiqBJ38P/view?usp=sharing)||
-|Sep. 30| Programming I |[Slides](https://drive.google.com/file/d/1DmCKrAvXzTvDQ3x3KN1xCtMxzcrZsgBH/view?usp=sharing)||
-|Oct. 2| Programming II |[Slides](https://drive.google.com/file/d/1et9VIGvGjLOQ5dXc8cxJkFWRNkH_YCmU/view?usp=sharing)||
-|Oct. 5| Programming III |[Slides](https://drive.google.com/file/d/1AWk4fcXrVkM4Xm_GxEPrYwONXGpKvCxw/view?usp=sharing)||
-|Oct. 7| Programming IV |[Slides](https://drive.google.com/file/d/1Sptc4vvRs5MfCgr_uqRS1NHX6fkD0-Wl/view?usp=sharing)||
-|Oct. 9|Modeling I|[Slides](https://drive.google.com/file/d/1HsXbt9c5GFkSv8sRTC5XlTL_4Q8b44dT/view?usp=sharing)||
+|Sep. 16| [Web Scraping I](https://unc.zoom.us/rec/share/2zV7mqSdoCY7ANorLWZiv0vlsU91-Od1m_n_bu-lh3-RW6R6JWjq1z1wB301ip25.G1KdgcEUsnwwn7Op?startTime=1600276826000) |[Slides](https://drive.google.com/file/d/1hSfA_YS7WhV-hkfXhz-_eVWVY6zt5fil/view?usp=sharing)|[Preview](Supplement/Web Scraping 1/Supplement.html)([.Rmd](https://drive.google.com/file/d/1vPXx61kJK87KMH8IsSDdk2C9Jt9xm1WR/view?usp=sharing))|
+|Sep. 18| Web Scraping II |[Slides](https://drive.google.com/file/d/1hSfA_YS7WhV-hkfXhz-_eVWVY6zt5fil/view?usp=sharing)|[Preview](Supplement/Web Scraping 1/Supplement.html)([.Rmd](https://drive.google.com/file/d/1vPXx61kJK87KMH8IsSDdk2C9Jt9xm1WR/view?usp=sharing))|
+|Sep. 21| Web Scraping III |[Slides](https://drive.google.com/file/d/10WIwlmZuRakieBpIhg5MGLjodeOLIpCR/view?usp=sharing)|[Preview]()([.Rmd]())|
+|Sep. 23| Joins I |[Slides](https://drive.google.com/file/d/1M88xOe34SWkbm7lCQMNX6RQAm_mhCEjk/view?usp=sharing)||
+|Sep. 25| Joins II |[Slides](https://drive.google.com/file/d/1wgEmOgwbjbnZbIBaHSiRg_tAbuumAS9I/view?usp=sharing)||
+|Sep. 28| Final Project II |[Slides](https://drive.google.com/file/d/1dnBkv6iKBgP2O0hTEJ9YQ-A2Kd8c-0a_/view?usp=sharing)||
+|Sep. 30| Factors |[Slides](https://drive.google.com/file/d/1BuLCYOoCn779L9sr4JwgTbh9QiqBJ38P/view?usp=sharing)||
+|Oct. 2| Programming I |[Slides](https://drive.google.com/file/d/1DmCKrAvXzTvDQ3x3KN1xCtMxzcrZsgBH/view?usp=sharing)||
+|Oct. 5| Programming II |[Slides](https://drive.google.com/file/d/1et9VIGvGjLOQ5dXc8cxJkFWRNkH_YCmU/view?usp=sharing)||
+|Oct. 7| Programming III |[Slides](https://drive.google.com/file/d/1AWk4fcXrVkM4Xm_GxEPrYwONXGpKvCxw/view?usp=sharing)||
+|Oct. 9| Programming IV |[Slides](https://drive.google.com/file/d/1Sptc4vvRs5MfCgr_uqRS1NHX6fkD0-Wl/view?usp=sharing)||
 |Oct. 12|University Day|||
-|Oct. 14|Modeling II|[Slides](https://drive.google.com/file/d/1uKhequdrElCylMVL33G7DA1Bc-z3kHIq/view?usp=sharing)||
-|Oct. 16|Modeling II|[Slides](https://drive.google.com/file/d/1N9lLVOSXYImIIgKVYfHY0STJ076WczxV/view?usp=sharing)||
-|Oct. 19|Modeling IV|[Slides](https://drive.google.com/file/d/17mIXSqjMvuVLIYLrNhpNeuqMorcfYwUd/view?usp=sharing)||
-|Oct. 21|Modeling V|[Slides](https://drive.google.com/file/d/12o1WJNz6uSfLbl-_V2ITamxfhgLEJydM/view?usp=sharing)||
-|Oct. 23|Modeling VI|[Slides](https://drive.google.com/file/d/1-yDT0up68BCgNpU3r5pSFOFeJ5Mejpuz/view?usp=sharing)||
-|Oct. 26|Modeling VII|[Slides](https://drive.google.com/file/d/1Bi04Ytc6JqXkUcU7C-MeeOGtUK9Tr5cd/view?usp=sharing)||
-|Oct. 28|Modeling VIII|[Slides](https://drive.google.com/file/d/1zp-zG4ii5PZdlpaq95v5S9MO5LsEXh1X/view?usp=sharing)||
-|Oct. 30|Modeling IX|[Slides](https://drive.google.com/file/d/1DgDOKe2Nj8hqZJCUAlYeatb0mGtGqeGC/view?usp=sharing)||
-|Nov. 2|Data Ethics |[Slides](https://drive.google.com/file/d/1Hji5bw9x9NsjUuOL2qUVAr4nfbc3dn74/view?usp=sharing)||
-|Nov. 4|R Shiny|[Slides](https://drive.google.com/file/d/1tzDNVSmNEsfajomAzeyKbN-zMWp0LXZp/view?usp=sharing)||
-|Nov. 6||||
+|Oct. 14|Modeling I|[Slides](https://drive.google.com/file/d/1HsXbt9c5GFkSv8sRTC5XlTL_4Q8b44dT/view?usp=sharing)||
+|Oct. 16|Modeling II|[Slides](https://drive.google.com/file/d/1uKhequdrElCylMVL33G7DA1Bc-z3kHIq/view?usp=sharing)||
+|Oct. 19|Modeling II|[Slides](https://drive.google.com/file/d/1N9lLVOSXYImIIgKVYfHY0STJ076WczxV/view?usp=sharing)||
+|Oct. 21|Modeling IV|[Slides](https://drive.google.com/file/d/17mIXSqjMvuVLIYLrNhpNeuqMorcfYwUd/view?usp=sharing)||
+|Oct. 23|Modeling V|[Slides](https://drive.google.com/file/d/12o1WJNz6uSfLbl-_V2ITamxfhgLEJydM/view?usp=sharing)||
+|Oct. 26|Modeling VI|[Slides](https://drive.google.com/file/d/1-yDT0up68BCgNpU3r5pSFOFeJ5Mejpuz/view?usp=sharing)||
+|Oct. 28|Modeling VII|[Slides](https://drive.google.com/file/d/1Bi04Ytc6JqXkUcU7C-MeeOGtUK9Tr5cd/view?usp=sharing)||
+|Oct. 30|Modeling VIII|[Slides](https://drive.google.com/file/d/1zp-zG4ii5PZdlpaq95v5S9MO5LsEXh1X/view?usp=sharing)||
+|Nov. 2|Modeling IX|[Slides](https://drive.google.com/file/d/1DgDOKe2Nj8hqZJCUAlYeatb0mGtGqeGC/view?usp=sharing)||
+|Nov. 4|Data Ethics |[Slides](https://drive.google.com/file/d/1Hji5bw9x9NsjUuOL2qUVAr4nfbc3dn74/view?usp=sharing)||
+|Nov. 6|R Shiny|[Slides](https://drive.google.com/file/d/1tzDNVSmNEsfajomAzeyKbN-zMWp0LXZp/view?usp=sharing)||
 |Nov. 9||||
 |Nov. 11||||
 |Nov. 13||||
