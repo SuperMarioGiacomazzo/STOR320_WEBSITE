@@ -1,5 +1,5 @@
 ---
-title: "Analysis 2: Joining Cholesterol with Crimes and Web Scraping Wikipedia"
+title: "Analysis 2: Connecting Country Level Data"
 author: "FIRSTNAME LASTNAME"
 date:  "`r format(Sys.time(), '%B %d, %Y')`"
 output: html_document
@@ -14,173 +14,194 @@ output: html_document
 **Submission:** Submit via an electronic document on Sakai. Must be submitted as an HTML file generated in RStudio. 
 
 ```{r setup, include=F}
-options(scipen=999)
 knitr::opts_chunk$set(echo = TRUE)
-library(tidyverse)
+options(scipen=999)
+library(tidyverse) 
 library(rvest)
 ```
 
 # Introduction
 
-Does high cholesterol lead to high crime rates? Probably not, but web scraping will definitely lead to lower crime rates. This data analysis assignment is separated into three parts which cover material from the lectures on tidy data, joins, and webscraping. In Part 1, you will demonstrate the basic concept of joins by connecting relational data involving a cholesterol study. For this segment, spreading and gathering will be utilized to create a single tidy dataset ready for analysis. In Part 2, we will join all 5 datasets from the lecture series on web scraping. Part 3 will require an understanding of web scraping to import a table found on Wikipedia directly into R. The following R code reads in all datasets required for this assignment.
+Many times in data science, your data will be split between many different sources, some of which may be online. In this analysis assignment, we will webscrape country level data from multiple websites, clean the data individually, and merge the data. The website [Worldometers](https://www.worldometers.info/) contains very interesting country level data that when connected may allow us to learn interesting things about the wonderful world in which we exist:
 
-```{r,message=F}
-# Data for Part 1
-CHOL1=read_csv("Cholesterol.csv")
-CHOL2=read_csv("Cholesterol2.csv")
-
-# Data for Part 2
-VIOLENT=read_csv("FINAL_VIOLENT.csv")
-ZIP=read_csv("FINAL_ZIP.csv")
-STATE_ABBREV=read_csv("FINAL_STATE_ABBREV.csv")
-CENSUS=read_csv("FINAL_CENSUS.csv")
-S_VS_D=read_csv("FINAL_SAFE_VS_DANGEROUS.CSV")
-
-```
-
-
-
+Follow the steps to accomplish specific tasks, and do not modify code on lines with the comment **#DO NOT CHANGE**. Add code in R code chunks wherever you see COMPLETE. After completing each code chunk, change `eval=FALSE` to `eval=TRUE` and **knit** the document.
 
 # Assignment
 
-## Part 1: Cholesterol Experiment
+## Part 1: GDP by Country
 
-The data frame `CHOL1` contains experimental results from randomly assigning *18* people to one of two competing margarine brands "A" and "B". The cholesterol of these patients was measured before the once before using the margarine brand, once after *4* weeks with the margarine brand, and then again after *8* weeks with the margarine brand. Researchers want to see if there is benefit of these brands of margarine on reducing an individual's cholesterol and want to determine if there is a statistically significant difference between the two competing brands. 
+Information at [Worldometer GDP](https://www.worldometers.info/gdp/gdp-by-country/) contains GDP data from 2017 published by the world bank. GDP is the monetary value of goods and services produced within a country over a period of time. On this website, GDP is presented in dollars.
  
 ### Q1 *(3 Points)*
 
-Start by examing the tables `CHOL1` and `CHOL2` and answering the following questions with *Yes* or *No* responses.
+Webscrape the data from https://www.worldometers.info/gdp/gdp-by-country/ into a data frame in R called `GDP`. If done correctly, you should have a new object in R called `GDP` which is a data frame with 189 observations and 8 variables.
 
-Is the variable `ID` in `CHOL1` a primary key? 
+```{r,eval=FALSE}
+URL.GDP="https://www.worldometers.info/gdp/gdp-by-country/" #DO NOT CHANGE
 
-Answer *(1 Point)*: ANSWER_HERE
+GDP = COMPLETE
 
-Is the variable, `Margarine` in `CHOL1` a primary key?
-
-Answer *(1 Point)*: ANSWER_HERE
-
-Is the variable, `Brand` in `CHOL2` a primary key? 
-
-Answer *(1 Point)*: ANSWER_HERE
+head(GDP) #DO NOT CHANGE
+```
 
 ### Q2 *(2 Points)*
 
-In a new data frame called `CHOL1a` based on `CHOL1`, rename the variables `After4weeks` and `After8weeks` to nonsynctactic variable names `4` and `8`, respectively. Use `names(CHOL1a)` to display this modification.
+Remove the first and fourth variables from `GDP` and create a new data frame named `GDP2` based on this change.
 
-```{r}
-#
+```{r,eval=FALSE}
+GDP2 = COMPLETE
+
+head(GDP2) #DO NOT CHANGE
 ```
 
-### Q3 *(4 Points)*
+### Q3 *(3 Points)*
 
-Use the `gather()` function on `CHOL1a` to create a new numeric variable called `Week` that contains numeric values *4* or *8* and a new numeric variable called `Response` that contains the Cholesterol after the corresponding number of weeks. Create a new data frame called `CHOL1b` with these modifications and use `str(Chol1b)` to show that both variables have been created correctly and are indeed numeric (an integer variable is a specific type of numeric variable).
+Create a new data frame named `GDP3` based off `GDP2` where the variables `GDP (nominal, 2017)`,`GDP  growth`, `Population (2017)`, `GDP  per capita`, and `Share of World GDP` to `GDP`, `Growth`, `Population`, `PerCapita`, and `Share`, respectively. Be careful!! In the original variable names, there are two spaces between "GDP" and "growth" in `GDP growth` and two spaces between "GDP" and "per capita" in GDP  per capita`.
 
-```{r}
-#
+```{r,eval=FALSE}
+GDP3 = COMPLETE
+
+names(GDP3) #DO NOT CHANGE
 ```
 
-### Q4 *(4 Points)*
 
-Now working with `CHOL2`, we want to spread the variable `Statistic` across multiple columns. Do this in a new data frame called `CHOL2a` and use `print(CHOL2a)` to display the modified complete table.
+### Q4 *(3 Points)*
 
-```{r}
-#
+Next, we must clean the data so there are no dollar signs or percent signs in the data using `str_replace()`. The dollar sign is a special character and must be referenced as `\\$`. Create a new data frame named `GDP4` where the dollar signs and percent signs are removed from all necessary variables.
+
+```{r, eval=FALSE}
+COMPLETE
+
+str(GDP4) #DO NOT CHANGE
 ```
 
 ### Q5 *(3 Points)*
 
-Start by examing the tables `CHOL1b` and `CHOL2a` and answering the following questions with *Yes* or *No* responses.
+Next, create a new data frame named `GDP5` where all commas are removed from potentially numeric variables using `str_replace_all()`.
 
-Is the variable `ID` in `CHOL1b` a primary key? 
+```{r, eval=FALSE}
+COMPLETE
 
-Answer *(1 Point)*: ANSWER_HERE
+str(GDP5) #DO NOT CHANGE
+```
 
-Is the variable, `Margarine` in `CHOL1b` a primary key?
+### Q6 *(2 Points)*
 
-Answer *(1 Point)*: ANSWER_HERE
+Use the `as.numeric()` function to create a new data frame called `GDP6` where all the variables except `Country` are changed to numeric variables.
 
-Is the variable, `Brand` in `CHOL2a` a primary key? 
+```{r, eval=FALSE}
+COMPLETE
 
-Answer *(1 Point)*: ANSWER_HERE
-
-### Q6 *(4 Points)*
-
-Get the nutritional facts of the different margarine brands in `CHOL2a` into the experimental results found in `CHOL1b` using a join. Create a new data frame named `CHOL.COMBINED` and display the table using `head(CHOL.COMBINED)`. This final data frame should contain *36* observations and *10* variables.
-
-```{r}
-#
+str(GDP6) #DO NOT CHANGE
 ```
 
 
-## Part 2: Linking Important Information to 2015 Violent Crimes Data
+### Q7 *(2 Points)*
 
-In the zipped folder, there are *5* CSV files. In this section, we are going to merge all of that data into one object called `FINAL.VIOLENT`. Follow the steps carefully to ensure you obey all instructions or you are likely to become a victim of a violent crime. **This is a joke and not a threat. I will not murder you if you don't follow the steps carefully. That is what hitmen/hitwomen are for.**
+Rewrite over the original `GDP` variable with a new variable called `GDP` that is in **trillions of dollars** rather than in actual dollars. Rewrite over the original `Population` variable with a new variable of the same name that is in **millions of people** rather than in actual people. You are scaling the original variables to change the units. Save your changes in a new data frame called `GDP7`.
 
-### Q1 *(2 Points)*
+```{r, eval=FALSE}
+COMPLETE
 
-The dataset `S_VS_D` contains a variable `CLASS` where "S=Safe" and "D=Dangerous" according to the article *[These Are the 2018 Safest and Most Dangerous States in the U.S](https://www.securitysales.com/fire-intrusion/2018-safest-most-dangerous-states-us/)* by [Steve Karantzoulidis](https://www.securitysales.com/author/stevek/). We seek to compare the violent crime statistics for states not in this list. Use a filtering join to create a new data frame called `VIOLENT2` that only contains violent crime statistics from the states not represented in the data frame `S_VS_D`.  Use `str(VIOLENT2)` to display the variables and the dimensions of `VIOLENT2`.
-
-
-```{r}
-#
+GDP7[1:10,c(2,4)]  #DO NOT CHANGE
 ```
 
-### Q2 *(4 Points)*
+## Part 2: More Relevant Data for Countries
 
-Start by creating a new data set called `VIOLENT3` based on `VIOLENT2` that fixes some problems in the variable `City`. Specifically, we would like to change "Louisville Metro", "Nashville Metropolitan", and "Washington" to "Louisville", "Nashville", and "Washington DC", respectively. 
+Check out the Wikipedia page https://en.wikipedia.org/wiki/Education_Index which contains education metrics for all countries from 2015 which were released in the 2016 Human Development Report.
 
-Next, create a new data frame named `VIOLENT4` that connects the population change and density measures from 2019 contained in `CENSUS` to the cities and states in `VIOLENT3`. Use `head(VIOLENT4)` to give a preview of the new merged dataset.
-
-Finally, in a complete sentence, identify any location(s) (Cities and States) missing census information.
-
-Code and Output *(2 Points)*:
-```{r}
-#
-```
-
-Answer *(2 Points)*: ANSWER_HERE
-
-
-### Q3 *(6 Points)*
-
-Either ambitiously using one step or less-ambitiously using multiple steps add the longitude and latitude information provided in `ZIP` to the cities and states in `VIOLENT4`. You will need to use `STATE_ABBREV` data to link these two data frames. Your final data frame named `FINAL.VIOLENT` should contain all of the information in `VIOLENT4` along with the variables `lat` and `lon` from `ZIP`. There should be **no** state abbreviations in `FINAL.VIOLENT` since this information is redundant. Use `str(FINAL.VIOLENT)` to demonstrate that everything worked as planned out by your imperial commander Dr. Mario. 
-
-In `FINAL.VIOLENT` identify what cities are missing latitude and longitude. Closely, inspect both the `ZIP` and `VIOLENT4` data frames. Report the location(s) missing geographical informationand explain in complete sentences why this happened. 
-
-Finally, challenge yourself and attempt to fix this problem in a new data frame called `FINAL.VIOLENT.FIX`. Use a combination of `str()` and `filter()` to only display the data in `FINAL.VIOLENT.FIX` for the location(s) that `FINAL.VIOLENT` was missing latitude and longitude. Do this in the second code chunk below.
-
-Code and Output *(4 Points)*:
-```{r}
-#
-```
-
-Answer *(1 Points)*: ANSWER_HERE
-
-Code and Output *(1 Point)*:
-```{r}
-#
-```
-
-
-## Part 3: Web Scraping a Table From Wikipedia
-
-Wikipedia contains a rough estimate of a billion tables. Search through Wikipedia pages and identify an article, completely unrelated to crimes data, that contains an HTML table that has at least *5* rows and *3* columns. You will be required to web scrape the table into a data frame or tibble into R. This portion will require a minor knowledge of the `rvest` package. Utilize information from the web scraping lectures and tutorials to assist you with this.
+Check out the Johns Hopkins page https://coronavirus.jhu.edu/data/mortality which contains education metrics for all countries from 2015 which were released in the 2016 Human Development Report.
 
 ### Q1 *(4 Points)*
 
-What is the URL of the Wikipedia page you plan on webscraping (Knit the Document and Check the Hyperlink)? 
+Webscrape the data from https://en.wikipedia.org/wiki/Education_Index into a data frame in R called `EDU` and only keep the 2 variables with each country's name along with its education index. 
 
-Answer *(2 Points)*: <URL_HERE>
+```{r,eval=FALSE}
+URL.EDU="https://en.wikipedia.org/wiki/Education_Index" #DO NOT CHANGE
 
-In *2* to *5* sentences, Identify and describe the specific table you plan on web scraping. State the variables in *1* of the sentences.
+EDU = COMPLETE
 
-Answer *(2 Points)*: ANSWER_HERE
+head(EDU) #DO NOT CHANGE
+```
+
 
 ### Q2 *(4 Points)*
 
-Utilize the functions `read_html()` and `html_table()` to web scrape the specific table you described above. Internet access will be required for these functions to work. Create an R data frame named `DATA` which contains the information from the Wikipedia table. All code should be contained in the R code chunk below. Finally, use the `print()` function to display the table to demonstrate that everything worked as planned. The variable names and the content should match the table on the Wikipedia page you chose exactly. You are not required to perform any cleaning of this data. As long as the content of the table you describe matches `DATA`, then you are good. Don't worry if the table bleeds over multiple pages.
+Webscrape the data from https://coronavirus.jhu.edu/data/mortality into a data frame in R called `COVID` and make the variables named `Confirmed`, `Deaths`, and `Case-Fatality` numeric by first removing the commas and percent signs and then by using the `as.numeric()` function.
 
-```{r}
+```{r,eval=FALSE}
+URL.COVID="https://coronavirus.jhu.edu/data/mortality" #DO NOT CHANGE
+
+COVID = COMPLETE
+
+str(COVID) #DO NOT CHANGE
+```
+
+## Part 3: Merging the Datasets and Follow-up 
+
+Now, we are going to merge the datasets for maximum gains. Make sure you carefully read the instructions for each question. Be very careful in this part of the assignment.
+
+### Q1 *(2 Points)*
+
+The dataset named `GDP7` is our primary dataset. Create a new dataset called `GDP7.EDU` that brings the education data from `EDU` into the dataset `GDP7`. 
+
+```{r,eval=FALSE}
+COMPLETE
+
+head(GDP7.EDU)
+```
+
+
+### Q2 *(3 Points)*
+
+Use code to find out how many countries in `GDP7.EDU` have missing values for Education Index. Place your code and answer in the appropriate spaces below.
+
+Code *(1 Point)*:
+```{r,eval=FALSE}
+COMPLETE
+```
+
+Answer *(2 Point)*: (Place your answer here in complete sentences.)
+
+
+### Q3 *(3 Points)*
+
+Closely inspect the original datasets and answer the following questions about `GDP7.EDU` in complete sentences. You can use the code chunk below if needed, but this is not required. If you don't reference the appropriate dataset or you are not specific in your answers, you will get 0 points.
+
+```{r,eval=FALSE}
 #
+```
+
+Why is there no education index for Russia in the dataset `GDP7.EDU`?
+
+Answer *(1 Point)*: (Place your answer here in complete sentences.)
+
+Why is there no education index for the Democratic Republic of the Congo in the dataset `GDP7.EDU`?
+
+Answer *(1 Point)*: (Place your answer here in complete sentences.)
+
+Why is there no education index for the Marshall Islands in the dataset `GDP7.EDU`?
+
+Answer *(1 Point)*: (Place your answer here in complete sentences.)
+
+
+### Q4 *(2 Points)*
+
+Suppose we want to see if countries with higher GDP are less affected by the coronavirus. Merge the data from `GDP7` into the the data frame named `COVID` to create a new dataset named `GDP7.COVID`.
+
+```{r,eval=FALSE}
+COMPLETE
+
+head(GDP7.COVID) #DO NOT CHANGE
+```
+
+### Q5 *(3 Points)*
+
+In the data frame you created `GDP7.COVID`, there are some countries without GDP that are definitely in the dataset `GDP7`. Fix the country names in the dataset `COVID` for the countries: "United States", "South Korea", "Sao Tome and Principe". Then, redo the merge from the previous question, creating a new dataset named `GDP7.COVID.2`. Make sure the merge doesn't miss the GDP's for these specific countries, and remember that you are joining the data from `GDP7` into the modified coronavirus dataset.
+
+```{r, eval=FALSE}
+COMPLETE
+
+head(filter(GDP7.COVID.2,Country %in% c("United States","South Korea", "Sao Tome & Principe"))) #DO NOT CHANGE
 ```
 
