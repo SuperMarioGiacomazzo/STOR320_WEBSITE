@@ -67,15 +67,9 @@ Ideally, variables `Change` and `2019 Density` should be numeric. The following 
 US_CENSUS2 = US_CENSUS %>%
                 rename(Density=names(US_CENSUS)[4]) %>%
                 mutate(Change=as.numeric(str_replace(Change,"%",""))) %>%
-                mutate(Density=str_replace_all(Density,"[,]",""))
+                mutate(Density=as.numeric(str_replace_all(Density,"[,]","")))
 
-US_CENSUS2$Density[1] #Example              
-str_replace(US_CENSUS2$Density[1],"/.*","") #Test
-
-US_CENSUS3 =US_CENSUS2 %>%
-              mutate(Density = as.numeric(str_replace(Density,"/.*","")))
-str(US_CENSUS3)
-write_csv(US_CENSUS3,"FINAL_CENSUS.CSV")
+write_csv(US_CENSUS2,"FINAL_CENSUS.CSV")
 ```
 
 
