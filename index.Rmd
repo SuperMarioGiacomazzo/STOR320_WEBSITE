@@ -128,7 +128,7 @@ This course is an application-driven introduction to data science. Statistical a
 |Sep. 21| [Web Scraping III](https://unc.zoom.us/rec/share/njNRZ-tk2a9HcOVoCozeTVihueDulKb3HtQGc74LftQLdlqEsNgLapeFU9BTz1Ct.IMoWZ2cAuygGHnnv?startTime=1600708682000) |[Slides](https://drive.google.com/file/d/10WIwlmZuRakieBpIhg5MGLjodeOLIpCR/view?usp=sharing)|[Preview](Supplement/Web Scraping 2/Supplement.html)([.zip](https://drive.google.com/file/d/14FPd8gUEa0tSk_fUch-NBr-noBhcl9RJ/view?usp=sharing))|
 |Sep. 23| [Joins I](https://unc.zoom.us/rec/share/kAFLgg3DwZohnDi6aBeqtDHxBJVnfwQ3hWhmf09Ixi8picg8_9oCTkAsj-QvxebY.kGI8i94kUxjVtx6S?startTime=1600881607000) |[Slides](https://drive.google.com/file/d/1M88xOe34SWkbm7lCQMNX6RQAm_mhCEjk/view?usp=sharing)||
 |Sep. 25| [Joins II](https://unc.zoom.us/rec/share/S_ASwok-QCjWNEEWRgm7RLj8IU2-uz3LrFxyqJ2X_5rtBSnU5isMaG8WvZKBIhJ2.3rgBIDRkee5x_aP1?startTime=1601054435000) |[Slides](https://drive.google.com/file/d/1wgEmOgwbjbnZbIBaHSiRg_tAbuumAS9I/view?usp=sharing)||
-|Sep. 28| Final Project II |[Slides](https://drive.google.com/file/d/1dnBkv6iKBgP2O0hTEJ9YQ-A2Kd8c-0a_/view?usp=sharing)||
+|Sep. 28| [Final Project II](https://unc.zoom.us/rec/share/gFZmt_cp4sFX52nyYAmATUEx6YiWuaC71AC9MSg4IRWi-LRDw7fe4GnnrfdaS8WJ.3LDM--w5PCHfo2p7?startTime=1601313230000) |[Slides](https://drive.google.com/file/d/1dnBkv6iKBgP2O0hTEJ9YQ-A2Kd8c-0a_/view?usp=sharing)||
 |Sep. 30| Factors |[Slides](https://drive.google.com/file/d/1BuLCYOoCn779L9sr4JwgTbh9QiqBJ38P/view?usp=sharing)||
 |Oct. 2| Programming I |[Slides](https://drive.google.com/file/d/1DmCKrAvXzTvDQ3x3KN1xCtMxzcrZsgBH/view?usp=sharing)||
 |Oct. 5| Programming II |[Slides](https://drive.google.com/file/d/1et9VIGvGjLOQ5dXc8cxJkFWRNkH_YCmU/view?usp=sharing)||
