@@ -1,0 +1,128 @@
+---
+title: "STOR 320 Tutorial on Programming 2"
+author: "Mario Giacomazzo"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,warning=F)
+options(scipen=999)
+library(tidyverse)    #Essential Functions
+library(Ecdat)        #Contains Economic Datasets
+```
+
+# Introduction
+
+In this tutorial, we will try to understand some fundamental control structures used in statistical programming. In the beginning, we will separately analyze different control structures. The ultimate goal is to combine these methods to solve all our computing and life problems. If you can imagine it, R can do it. Programming R is downright magical. If Morpheus calls, pick up the phone.
+
+#Part 2: Loops
+
+##Chunk 4: Correlation Matrix for Variables in `Cigar` from `Ecdat`
+```{r,eval=F}
+Cigar=Ecdat::Cigar
+head(Cigar)
+print(round(cor(Cigar),3))
+```
+
+##Chunk 5: Using a Double Loop to Create a Correlation Matrix
+```{r,eval=F}
+CORR.CIGAR1=matrix(NA,9,9) #Empty Matrix Initialized
+rownames(CORR.CIGAR1)=names(Cigar)
+colnames(CORR.CIGAR1)=names(Cigar)
+
+seq_along(names(Cigar))
+
+for(j in seq_along(names(Cigar))){
+  for(k in seq_along(names(Cigar))){
+    CORR.CIGAR1[j,k]=cor(Cigar[,j],Cigar[,k])
+  }
+}
+print(round(CORR.CIGAR1,3))
+
+CORR.CIGAR2=matrix(NA,8,8)
+rownames(CORR.CIGAR2)=names(Cigar)[-1]
+colnames(CORR.CIGAR2)=names(Cigar)[-1]
+for(j in 1:8){
+  for(k in 1:8){
+    CORR.CIGAR2[BLANK,BLANK]=cor(Cigar[,BLANK],Cigar[,BLANK])
+  }
+}
+print(round(CORR.CIGAR2,3))
+
+```
+
+##Chunk 6: Correlation Matrix for Variables in `HI` from `Ecdat`
+```{r,eval=F}
+HealthInsurance=Ecdat::HI
+head(HealthInsurance)
+#print(round(cor(HealthInsurance),3)) #Try this Code
+```
+
+##Chunk 7: Using a Double Loop to Compute *5*-Number Summary for Numeric Variables
+```{r,eval=F}
+var.names = names(HealthInsurance)
+
+FiveSum.HI = matrix(NA,length(var.names),6)
+colnames(FiveSum.HI) = c("Variable","Min","Q1","Q2","Q3","Max")
+
+for(VAR in seq_along(var.names)){
+  if(is.numeric(HealthInsurance[,VAR])){
+    MIN=min(HealthInsurance[,VAR])
+    Q1=quantile(HealthInsurance[,VAR],0.25)
+    Q2=median(HealthInsurance[,VAR],0.5)
+    Q3=quantile(HealthInsurance[,VAR],0.75)
+    MAX=max(HealthInsurance[,VAR])
+    FiveSum.HI[VAR,]=c(names(HealthInsurance)[VAR],MIN,Q1,Q2,Q3,MAX)
+  } else {
+    cat(str_c("Variable ",var.names[VAR]," is not numeric\n"))
+    FiveSum.HI[VAR,]=c(names(HealthInsurance)[VAR],rep(NA,5))
+  }
+}
+print(as.tibble(na.omit(FiveSum.HI)))
+
+FiveSum.HI2 = NULL
+Numeric.names = NULL
+for(VAR in seq_along(var.names)){
+  if(is.numeric(HealthInsurance[,VAR])){
+    MIN=min(HealthInsurance[,VAR])
+    Q1=quantile(HealthInsurance[,VAR],0.25)
+    Q2=median(HealthInsurance[,VAR],0.5)
+    Q3=quantile(HealthInsurance[,VAR],0.75)
+    MAX=max(HealthInsurance[,VAR])
+    FiveSum.HI2=rbind(FiveSum.HI2,c(MIN,Q1,Q2,Q3,MAX))
+    Numeric.names=c(Numeric.names,var.names[VAR])
+  } 
+}
+FiveSum.HI3=as.tibble(cbind(Numeric.names,as.tibble(FiveSum.HI2)))
+names(FiveSum.HI3) = c("Variable","Min","Q1","Q2","Q3","Max")
+print(na.omit(FiveSum.HI3))
+```
+
+#Part 3: Simple Random Sampling
+
+##Chunk 1: Sampling from Known Distributions
+```{r,eval=F}
+x1=rnorm(BLANK,mean=3,sd=2)
+ggplot()+geom_histogram(aes(x1))
+
+x2=rbinom(BLANK,size=10,prob=1/6)
+ggplot()+geom_bar(aes(x2))
+```
+
+##Chunk 2: Experiment for Flipping Coins 
+```{r,eval=F}
+prop=rep(NA,1000)
+for(k in 1:1000){
+  set.seed(k)
+  x=sample(c("H","T"),size=k,replace=T,prob=c(BLANK,1-BLANK))
+  prop[k]=mean(x=="H")
+}
+ggplot() + 
+  geom_line(aes(x=1:1000,y=prop),alpha=0.5) + 
+  geom_hline(yintercept=BLANK,linetype="dashed",color="red",size=2) +
+  theme_minimal()
+```
+
+
+

@@ -130,8 +130,8 @@ This course is an application-driven introduction to data science. Statistical a
 |Sep. 25| [Joins II](https://unc.zoom.us/rec/share/S_ASwok-QCjWNEEWRgm7RLj8IU2-uz3LrFxyqJ2X_5rtBSnU5isMaG8WvZKBIhJ2.3rgBIDRkee5x_aP1?startTime=1601054435000) |[Slides](https://drive.google.com/file/d/1wgEmOgwbjbnZbIBaHSiRg_tAbuumAS9I/view?usp=sharing)||
 |Sep. 28| [Final Project II](https://unc.zoom.us/rec/share/gFZmt_cp4sFX52nyYAmATUEx6YiWuaC71AC9MSg4IRWi-LRDw7fe4GnnrfdaS8WJ.3LDM--w5PCHfo2p7?startTime=1601313230000) |[Slides](https://drive.google.com/file/d/1dnBkv6iKBgP2O0hTEJ9YQ-A2Kd8c-0a_/view?usp=sharing)||
 |Sep. 30| Factors |[Slides](https://drive.google.com/file/d/1BuLCYOoCn779L9sr4JwgTbh9QiqBJ38P/view?usp=sharing)||
-|Oct. 2| Programming I |[Slides](https://drive.google.com/file/d/1DmCKrAvXzTvDQ3x3KN1xCtMxzcrZsgBH/view?usp=sharing)||
-|Oct. 5| Programming II |[Slides](https://drive.google.com/file/d/1et9VIGvGjLOQ5dXc8cxJkFWRNkH_YCmU/view?usp=sharing)||
+|Oct. 2| Programming I |[Slides](https://drive.google.com/file/d/1DmCKrAvXzTvDQ3x3KN1xCtMxzcrZsgBH/view?usp=sharing)| [Preview](Supplement/Programming 1/Supplement.html)([.Rmd](https://boardgamegeek.com/browse/boardgame/page/1)) |
+|Oct. 5| Programming II |[Slides](https://drive.google.com/file/d/1et9VIGvGjLOQ5dXc8cxJkFWRNkH_YCmU/view?usp=sharing)| [Preview](Supplement/Programming 2/Supplement.html)([.Rmd](https://drive.google.com/file/d/1gh1QFV2AaIe7GDD9pxg7p6s2fSpvEAew/view?usp=sharing)) |
 |Oct. 7| Programming III |[Slides](https://drive.google.com/file/d/1AWk4fcXrVkM4Xm_GxEPrYwONXGpKvCxw/view?usp=sharing)||
 |Oct. 9| Programming IV |[Slides](https://drive.google.com/file/d/1Sptc4vvRs5MfCgr_uqRS1NHX6fkD0-Wl/view?usp=sharing)||
 |Oct. 12|Modeling I|[Slides](https://drive.google.com/file/d/1HsXbt9c5GFkSv8sRTC5XlTL_4Q8b44dT/view?usp=sharing)||
