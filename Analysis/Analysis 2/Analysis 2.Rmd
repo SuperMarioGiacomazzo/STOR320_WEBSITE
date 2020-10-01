@@ -148,7 +148,7 @@ The dataset named `GDP7` is our primary dataset. Create a new dataset called `GD
 ```{r,eval=FALSE}
 COMPLETE
 
-head(GDP7.EDU)
+head(GDP7.EDU) #DO NOT CHANGE
 ```
 
 
