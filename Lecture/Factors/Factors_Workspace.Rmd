@@ -10,6 +10,7 @@ knitr::opts_chunk$set(echo = TRUE,warning=F)
 options(scipen=999)
 library(tidyverse)    #Essential Functions
 library(forcats)
+library(knitr)
 ```
 
 ```{r}
@@ -175,10 +176,13 @@ ggplot(race.summary) +
 
 ```{r}
 ggplot(Social) +
-  geom_boxplot(aes(x=fct_reorder(race,tvhours,fun=median,na.rm=T),
+  geom_boxplot(aes(x=fct_reorder(race,tvhours,.fun=median,na.rm=T),
                    y=tvhours)) +
   xlab("") + ylab("") +
   theme_minimal()
+
+
+
 ```
 
 ```{r}
@@ -258,4 +262,52 @@ Marriage5 = Social %>%
               count(marital,marital2) %>%
               mutate(prop=n/sum(n))
 print(Marriage5)
+```
+
+
+```{r}
+NewAge = Social %>%
+            mutate(new.age=cut(age,3))
+
+str(NewAge)
+```
+
+```{r}
+levels(NewAge$new.age)
+```
+
+```{r}
+NewAge = Social %>%
+            mutate(new.age=cut(age,pretty(age,3)))
+
+levels(NewAge$new.age)
+```
+
+```{r}
+NewAge = Social %>%
+            mutate(new.age=cut(age,3,
+                    labels=c("Young","Middle","Old")))
+
+levels(NewAge$new.age)
+```
+
+```{r}
+NewAge = Social %>%
+            mutate(new.age=cut(age,
+                      quantile(Social$age,c(0,0.25,0.5,0.75,1),na.rm=T)))
+
+levels(NewAge$new.age)
+```
+
+
+```{r}
+NewAge = Social %>%
+            mutate(age=cut(age,4))
+
+library(expss)
+
+NewAge=select(NewAge,age,marital) %>% 
+        apply_labels(age="Age",marital="Marital Status")
+
+cro_cases(NewAge$age,list(NewAge$marital,total()))
 ```
