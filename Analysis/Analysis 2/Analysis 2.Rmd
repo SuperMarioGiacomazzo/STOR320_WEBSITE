@@ -195,7 +195,7 @@ COMPLETE
 head(GDP7.COVID) #DO NOT CHANGE
 ```
 
-### Q5 *(3 Points)*
+### Q5 *(4 Points)*
 
 In the data frame you created `GDP7.COVID`, there are some countries without GDP that are definitely in the dataset `GDP7`. Fix the country names in the dataset `COVID` for the countries: "United States", "South Korea", "Sao Tome and Principe". Then, redo the merge from the previous question, creating a new dataset named `GDP7.COVID.2`. Make sure the merge doesn't miss the GDP's for these specific countries, and remember that you are joining the data from `GDP7` into the modified coronavirus dataset.
 
