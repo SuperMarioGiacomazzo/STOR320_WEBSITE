@@ -1,5 +1,5 @@
 ---
-title: "STOR 320 Tutorial on Programming 2"
+title: "Supplement for Programming 2"
 author: "Mario Giacomazzo"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 output: html_document
@@ -16,16 +16,16 @@ library(Ecdat)        #Contains Economic Datasets
 
 In this tutorial, we will try to understand some fundamental control structures used in statistical programming. In the beginning, we will separately analyze different control structures. The ultimate goal is to combine these methods to solve all our computing and life problems. If you can imagine it, R can do it. Programming R is downright magical. If Morpheus calls, pick up the phone.
 
-#Part 2: Loops
+# Part 2: Loops
 
-##Chunk 4: Correlation Matrix for Variables in `Cigar` from `Ecdat`
+## Chunk 4: Correlation Matrix for Variables in `Cigar` from `Ecdat`
 ```{r,eval=F}
 Cigar=Ecdat::Cigar
 head(Cigar)
 print(round(cor(Cigar),3))
 ```
 
-##Chunk 5: Using a Double Loop to Create a Correlation Matrix
+## Chunk 5: Using a Double Loop to Create a Correlation Matrix
 ```{r,eval=F}
 CORR.CIGAR1=matrix(NA,9,9) #Empty Matrix Initialized
 rownames(CORR.CIGAR1)=names(Cigar)
@@ -52,14 +52,14 @@ print(round(CORR.CIGAR2,3))
 
 ```
 
-##Chunk 6: Correlation Matrix for Variables in `HI` from `Ecdat`
+## Chunk 6: Correlation Matrix for Variables in `HI` from `Ecdat`
 ```{r,eval=F}
 HealthInsurance=Ecdat::HI
 head(HealthInsurance)
 #print(round(cor(HealthInsurance),3)) #Try this Code
 ```
 
-##Chunk 7: Using a Double Loop to Compute *5*-Number Summary for Numeric Variables
+## Chunk 7: Using a Double Loop to Compute *5*-Number Summary for Numeric Variables
 ```{r,eval=F}
 var.names = names(HealthInsurance)
 
@@ -99,9 +99,9 @@ names(FiveSum.HI3) = c("Variable","Min","Q1","Q2","Q3","Max")
 print(na.omit(FiveSum.HI3))
 ```
 
-#Part 3: Simple Random Sampling
+# Part 3: Simple Random Sampling
 
-##Chunk 1: Sampling from Known Distributions
+## Chunk 1: Sampling from Known Distributions
 ```{r,eval=F}
 x1=rnorm(BLANK,mean=3,sd=2)
 ggplot()+geom_histogram(aes(x1))
@@ -110,7 +110,7 @@ x2=rbinom(BLANK,size=10,prob=1/6)
 ggplot()+geom_bar(aes(x2))
 ```
 
-##Chunk 2: Experiment for Flipping Coins 
+## Chunk 2: Experiment for Flipping Coins 
 ```{r,eval=F}
 prop=rep(NA,1000)
 for(k in 1:1000){
