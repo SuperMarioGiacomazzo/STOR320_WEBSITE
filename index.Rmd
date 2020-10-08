@@ -132,13 +132,13 @@ This course is an application-driven introduction to data science. Statistical a
 |Sep. 30| [Factors](https://unc.zoom.us/rec/share/XmM81LE5mPvHnvi6wqW9Vj8cKmfCeNQ2JL1KFwFHDHTXGkDe3ubIBPyrf_unNA.10MoMyG2S4_ze_hp?startTime=1601486351000) |[Slides](https://drive.google.com/file/d/1BuLCYOoCn779L9sr4JwgTbh9QiqBJ38P/view?usp=sharing)||
 |Oct. 2| [Factors (Cont.)](https://unc.zoom.us/rec/share/2HP7rUkJrAU2pngF82fzvQevgE1-Y8vz5csTbiP6vaoQ6J9MaAL7MQJNLSF64XBY.H8z2E_LZ2wBcQXXN?startTime=1601659112000) |[Slides](https://drive.google.com/file/d/1BuLCYOoCn779L9sr4JwgTbh9QiqBJ38P/view?usp=sharing)||
 |Oct. 5| [Programming I](https://unc.zoom.us/rec/share/X5XHmKGY7A12WE1NnLXg1yawc2QmXp803Kon-aSJwzIoQhPd-g-3Ym6deKTMtg.vxGhtEAjBGjDW2YM?startTime=1601918423000) |[Slides](https://drive.google.com/file/d/1DmCKrAvXzTvDQ3x3KN1xCtMxzcrZsgBH/view?usp=sharing)| [Preview](Supplement/Programming 1/Supplement.html)([.Rmd](https://drive.google.com/file/d/1FIsPl6dhRmzhGiTmt-ZQIq8Byqf8s4tl/view?usp=sharing)) |
-|Oct. 7| Programming II |[Slides](https://drive.google.com/file/d/1et9VIGvGjLOQ5dXc8cxJkFWRNkH_YCmU/view?usp=sharing)| [Preview](Supplement/Programming 2/Supplement.html)([.Rmd](https://drive.google.com/file/d/1gh1QFV2AaIe7GDD9pxg7p6s2fSpvEAew/view?usp=sharing)) |
+|Oct. 7| [Programming II](https://unc.zoom.us/rec/share/ExY1-bsjMXrJhJD0kV9uWqGC7qxYriIvcc9WxpiXdvjoxVYA2itLbbLqlKEhGgg0.3nP38b4ZDu_SVQE4?startTime=1602091211000) |[Slides](https://drive.google.com/file/d/1et9VIGvGjLOQ5dXc8cxJkFWRNkH_YCmU/view?usp=sharing)| [Preview](Supplement/Programming 2/Supplement.html)([.Rmd](https://drive.google.com/file/d/1gh1QFV2AaIe7GDD9pxg7p6s2fSpvEAew/view?usp=sharing)) |
 |Oct. 9|Mental Health Day|||
 |Oct. 12| Programming III |[Slides](https://drive.google.com/file/d/1AWk4fcXrVkM4Xm_GxEPrYwONXGpKvCxw/view?usp=sharing)||
 |Oct. 14| Programming IV |[Slides](https://drive.google.com/file/d/1Sptc4vvRs5MfCgr_uqRS1NHX6fkD0-Wl/view?usp=sharing)||
 |Oct. 16|Modeling I|[Slides](https://drive.google.com/file/d/1HsXbt9c5GFkSv8sRTC5XlTL_4Q8b44dT/view?usp=sharing)||
-|Oct. 19|Modeling II|[Slides](https://drive.google.com/file/d/1uKhequdrElCylMVL33G7DA1Bc-z3kHIq/view?usp=sharing)||
-|Oct. 21|Modeling II|[Slides](https://drive.google.com/file/d/1N9lLVOSXYImIIgKVYfHY0STJ076WczxV/view?usp=sharing)||
+|Oct. 19|Modeling II|[Slides](https://drive.google.com/file/d/1uKhequdrElCylMVL33G7DA1Bc-z3kHIq/view?usp=sharing)| [Preview](Supplement/Modeling 2/Supplement.html)([.zip](https://drive.google.com/file/d/1v9KMXdLArGP1AWrQhrGPjOU44LjZ0Noh/view?usp=sharing)) |
+|Oct. 21|Modeling III|[Slides](https://drive.google.com/file/d/1N9lLVOSXYImIIgKVYfHY0STJ076WczxV/view?usp=sharing)| [Preview](Supplement/Modeling 3/Supplement.html)([.zip](https://drive.google.com/file/d/15hBJp-W3BtBiiQ1GVg3awt8y5064CKKh/view?usp=sharing)) |
 |Oct. 23|Modeling IV|[Slides](https://drive.google.com/file/d/17mIXSqjMvuVLIYLrNhpNeuqMorcfYwUd/view?usp=sharing)||
 |Oct. 26|Modeling V|[Slides](https://drive.google.com/file/d/12o1WJNz6uSfLbl-_V2ITamxfhgLEJydM/view?usp=sharing)||
 |Oct. 28|Modeling VI|[Slides](https://drive.google.com/file/d/1-yDT0up68BCgNpU3r5pSFOFeJ5Mejpuz/view?usp=sharing)||

@@ -1,0 +1,123 @@
+---
+title: "STOR 320 Tutorial on Modeling 4"
+author: "Mario Giacomazzo"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,warning=F)
+options(scipen=999)
+library(tidyverse)    #Essential Functions
+library(modelr)       #Helpful Functions in Modeling
+library(purrr)
+library(broom)
+DATA=read_csv("AirWaterTemp.csv",col_types=cols()) #River Data
+```
+
+# Introduction
+
+We will continue our work with daily water temperature and air temperature data observed for `r length(unique(DATA$L))` rivers in Spain. In the preview below, `W` represents the daily maximum water temperature and `A` represents the daily maximum air temperature. The data contains almost a full year of data for each of the `r length(unique(DATA$L))` different rivers.
+
+```{r,echo=F}
+head(DATA)
+```
+
+Using the data, we seek to identify the best model for predicting the maximum water temperature given the maximum air temperature. Previously, we randomly selected 3 rivers to act as a test set. All models were evaluated based on the randomly selected test set. In this tutorial, we explore approaches that ensure that all data is used for both model training and model testing.
+
+In this tutorial, we apply helpful functions in the `purrr`, `modelr`, and `broom` packages. See the following links for helpful articles on performing cross-validation within the tidyverse: [Link 1](http://sjspielman.org/bio5312_fall2017/files/kfold_supplement.pdf), [Link 2](https://drsimonj.svbtle.com/k-fold-cross-validation-with-modelr-and-broom), and [Link 3](https://www.r-bloggers.com/easy-cross-validation-in-r-with-modelr/).
+
+
+#Part 1: Intelligent Use of Locations for Cross-Validation
+
+##Chunk 1: List-Column of Data Split By Location
+```{r,eval=T,message=F}
+NEST.DATA = DATA %>% group_by(L) %>% nest()
+head(NEST.DATA)
+```
+
+##Chunk 2: Combining `filter()` with `unnest()` To Split Data
+```{r,eval=T,message=F}
+NEST.DATA %>% filter(L==103) %>% unnest() %>% glimpse()
+NEST.DATA %>% filter(L!=103) %>% unnest() %>% glimpse()
+```
+
+##Chunk 3: Fit Train Data, Predict Test Data, and Save Results
+```{r,eval=T}
+DATA2=DATA
+DATA2$linpred=NA
+
+TEST = NEST.DATA %>% filter(L==103) %>% unnest()
+TRAIN  = NEST.DATA %>% filter(L!=103) %>% unnest()
+
+linmod=lm(W~A,data=TRAIN)
+linmodpred=predict(linmod,newdata=TEST)
+
+DATA2$linpred[which(DATA2$L==103)]=linmodpred
+head(DATA2)
+```
+
+##Chunk 4: Create a Loop to Iterate Process for Each Location
+```{r,eval=F}
+#
+```
+
+##Chunk 5: Calcuate Cross-Validated RMSE
+```{r,eval=F}
+RMSE.func=function(actual,predict){
+  
+}
+RMSE.func(actual=DATA2$W,predict=DATA2$linpred)
+```
+
+
+#Part 2: K-Fold CV for Polynomial Model Evaluation
+
+##Chunk 1: Exploratory Figures
+```{r,echo=F,eval=F}
+ggplot(data=DATA) +
+  geom_point(aes(x=JULIAN_DAY,y=W,color=A),alpha=0.3) + 
+  xlab("Day of Year") + ylab("Max Water Temperature") +
+  guides(color=guide_legend(title="Max Air \nTemperature")) +
+  theme_minimal()
+```
+
+##Chunk 2: Polynomial Fitting
+```{r,eval=F}
+polymodel=lm(W~poly(A,4)+poly(JULIAN_DAY,3),data=na.omit(DATA))
+tidy(polymodel)
+glance(polymodel)
+```
+
+## Chunk 3: Splitting Data for Cross-Validation
+```{r,eval=F}
+DATA3=na.omit(DATA) %>% crossv_kfold(10)
+head(DATA3)
+```
+
+## Chunk 4: Fitted Models and Predictions
+```{r,eval=F}
+train.model.func=function(data,i,j){
+  mod=lm(W~poly(A,i)+poly(JULIAN_DAY,j),data=data)
+  return(mod)
+}
+
+i=4
+j=3
+
+DATA4=DATA3 %>% 
+       mutate(tr.model=map(train,train.model.func,i=i,j=j))
+head(DATA4)
+```
+
+## Chunk 5: Predicted Values and Cross-Validated RMSE
+```{r,eval=F}
+DATA4.PREDICT = DATA4 %>% 
+          mutate(predict=map2(test,tr.model,~augment(.y,newdata=.x))) %>%
+          select(predict) %>%
+          unnest()
+head(DATA4.PREDICT)
+RMSE.func(actual=DATA4.PREDICT$W,predict=DATA4.PREDICT$.fitted)
+```
+
+
