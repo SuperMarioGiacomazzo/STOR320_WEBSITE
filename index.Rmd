@@ -133,8 +133,8 @@ This course is an application-driven introduction to data science. Statistical a
 |Oct. 2| [Factors (Cont.)](https://unc.zoom.us/rec/share/2HP7rUkJrAU2pngF82fzvQevgE1-Y8vz5csTbiP6vaoQ6J9MaAL7MQJNLSF64XBY.H8z2E_LZ2wBcQXXN?startTime=1601659112000) |[Slides](https://drive.google.com/file/d/1BuLCYOoCn779L9sr4JwgTbh9QiqBJ38P/view?usp=sharing)||
 |Oct. 5| [Programming I](https://unc.zoom.us/rec/share/X5XHmKGY7A12WE1NnLXg1yawc2QmXp803Kon-aSJwzIoQhPd-g-3Ym6deKTMtg.vxGhtEAjBGjDW2YM?startTime=1601918423000) |[Slides](https://drive.google.com/file/d/1DmCKrAvXzTvDQ3x3KN1xCtMxzcrZsgBH/view?usp=sharing)| [Preview](Supplement/Programming 1/Supplement.html)([.Rmd](https://drive.google.com/file/d/1FIsPl6dhRmzhGiTmt-ZQIq8Byqf8s4tl/view?usp=sharing)) |
 |Oct. 7| [Programming II](https://unc.zoom.us/rec/share/ExY1-bsjMXrJhJD0kV9uWqGC7qxYriIvcc9WxpiXdvjoxVYA2itLbbLqlKEhGgg0.3nP38b4ZDu_SVQE4?startTime=1602091211000) |[Slides](https://drive.google.com/file/d/1et9VIGvGjLOQ5dXc8cxJkFWRNkH_YCmU/view?usp=sharing)| [Preview](Supplement/Programming 2/Supplement.html)([.Rmd](https://drive.google.com/file/d/1gh1QFV2AaIe7GDD9pxg7p6s2fSpvEAew/view?usp=sharing)) |
-|Oct. 9|Mental Health Day|||
-|Oct. 12| Programming III |[Slides](https://drive.google.com/file/d/1AWk4fcXrVkM4Xm_GxEPrYwONXGpKvCxw/view?usp=sharing)||
+|Oct. 9| [Mental Health Day](https://www.youtube.com/watch?v=gwmv_KGdceA) |||
+|Oct. 12| [Programming III](https://unc.zoom.us/rec/share/Oy1Z7RR9lpD3emdCbM6VnSWudvAAtDSntBHyplfcJC4009XcFlAzxHVZMKNEjFjQ.x9S5VcoJm0qqbygZ?startTime=1602522993000) |[Slides](https://drive.google.com/file/d/1AWk4fcXrVkM4Xm_GxEPrYwONXGpKvCxw/view?usp=sharing)||
 |Oct. 14| Programming IV |[Slides](https://drive.google.com/file/d/1Sptc4vvRs5MfCgr_uqRS1NHX6fkD0-Wl/view?usp=sharing)||
 |Oct. 16|Modeling I|[Slides](https://drive.google.com/file/d/1HsXbt9c5GFkSv8sRTC5XlTL_4Q8b44dT/view?usp=sharing)||
 |Oct. 19|Modeling II|[Slides](https://drive.google.com/file/d/1uKhequdrElCylMVL33G7DA1Bc-z3kHIq/view?usp=sharing)| [Preview](Supplement/Modeling 2/Supplement.html)([.zip](https://drive.google.com/file/d/1v9KMXdLArGP1AWrQhrGPjOU44LjZ0Noh/view?usp=sharing)) |
