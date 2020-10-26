@@ -139,7 +139,7 @@ This course is an application-driven introduction to data science. Statistical a
 |Oct. 16| [Modeling I](https://unc.zoom.us/rec/share/62Hg-e1XmdU6xlTsxyIxfm7F3jV6WS_aFfzaaDh-xlfD8PMIfqtpKZ8kVzYFC83X.N3a2qL06uLZRU8cz?startTime=1602868394000) |[Slides](https://drive.google.com/file/d/1HsXbt9c5GFkSv8sRTC5XlTL_4Q8b44dT/view?usp=sharing)||
 |Oct. 19| [Research Week](https://unc.zoom.us/rec/share/EAn-HC2Q_xYocnVw2CynyBzwhgEWuUqla5Y8Y-E64UOI_7n3b9IR9KmclnV3QkRi.BnhZbwcY0OxAYHpG?startTime=1603127997000) |||
 |Oct. 21| [Modeling II](https://unc.zoom.us/rec/share/xZCfmOqjztp8hj-9xnvAYnF96ZHS1VDpjyG0m2XsLnbyF3fBUMT7no3XlvSyiZ0a.zKXUx7rHjlb7KAVo?startTime=1603300774000) |[Slides](https://drive.google.com/file/d/1uKhequdrElCylMVL33G7DA1Bc-z3kHIq/view?usp=sharing)| [Preview](Supplement/Modeling 2/Supplement.html)([.zip](https://drive.google.com/file/d/1v9KMXdLArGP1AWrQhrGPjOU44LjZ0Noh/view?usp=sharing)) |
-|Oct. 23|Modeling III|[Slides](https://drive.google.com/file/d/1N9lLVOSXYImIIgKVYfHY0STJ076WczxV/view?usp=sharing)| [Preview](Supplement/Modeling 3/Supplement.html)([.zip](https://drive.google.com/file/d/15hBJp-W3BtBiiQ1GVg3awt8y5064CKKh/view?usp=sharing)) |
+|Oct. 23| [Modeling III](https://unc.zoom.us/rec/share/yyvBCWg2pFB2SrS-YMBpqrGDQWqoczhZnfEu0iqWp0nB6YiTPqHTF3mscTZiJdfN.4Ueebkti8RqNIn1I?startTime=1603473569000) |[Slides](https://drive.google.com/file/d/1N9lLVOSXYImIIgKVYfHY0STJ076WczxV/view?usp=sharing)| [Preview](Supplement/Modeling 3/Supplement.html)([.zip](https://drive.google.com/file/d/15hBJp-W3BtBiiQ1GVg3awt8y5064CKKh/view?usp=sharing)) |
 |Oct. 26|Modeling IV|[Slides](https://drive.google.com/file/d/17mIXSqjMvuVLIYLrNhpNeuqMorcfYwUd/view?usp=sharing)||
 |Oct. 28|Modeling V|[Slides](https://drive.google.com/file/d/12o1WJNz6uSfLbl-_V2ITamxfhgLEJydM/view?usp=sharing)||
 |Oct. 30|Modeling VI|[Slides](https://drive.google.com/file/d/1-yDT0up68BCgNpU3r5pSFOFeJ5Mejpuz/view?usp=sharing)||
@@ -170,7 +170,7 @@ All HW and Analysis assignments are to be submitted via **[Sakai](https://sakai.
 | October 9 || [A3](Analysis/Analysis 3/Analysis-3.html) ([.zip](https://drive.google.com/file/d/163M1M-UVU7VnOHnc2Mb1vr8HhpcnWFca/view?usp=sharing))|[A3]()|October 23 (5 PM)|
 | October 23  | [HW6](Homework/HW 6/HW-6.html) ([.Rmd](https://drive.google.com/file/d/1GPfHPQLhrCayiaO3kmGkVCPjAyAicl1C/view?usp=sharing)) ||[HW6]()|October 30 (5 PM)|
 | October 30 | [HW7](Homework/HW 7/HW-7.html) ([.Rmd](https://drive.google.com/file/d/1_-m7iz9Ju8oXbrXd4bwN1IvtnMBiyHu4/view?usp=sharing)) ||[HW7]()|November 6 (5 PM)|
-| November 6   ||  [A4]() ([.zip]())|[A4]()|November 13 (5 PM)|
+| November 6   ||  [A4](Analysis/Analysis 4/Analysis-4.html) ([.zip](https://drive.google.com/file/d/1QzPoaCHiYuJcYBZHWgZFVxNFvyvj506K/view?usp=sharing))|[A4]()|November 13 (5 PM)|
 |          |        |             |           |
 
 # **Final Project Details**

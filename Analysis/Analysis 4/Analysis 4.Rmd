@@ -1,0 +1,235 @@
+---
+title: "Analysis 4: Model Selection Via K-Fold CV"
+author: "FIRSTNAME LASTNAME"
+date:  "`r format(Sys.time(), '%B %d, %Y')`"
+output: html_document
+---
+
+#Instructions
+
+**Overview:** For each question, show your R code that you used to answer each question in the provided chunks. When a written response is required, be sure to answer the entire question in complete sentences outside the code chunks. When figures are required, be sure to follow all requirements to receive full credit. Point values are assigned for every part of this analysis.
+
+**Helpful:** Make sure you knit the document as you go through the assignment. Check all your results in the created HTML file.
+
+**Submission:** Submit via an electronic document on Sakai. Must be submitted as an HTML file generated in RStudio. 
+
+```{r setup, include=F}
+options(scipen=999)
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(modelr)
+library(broom)
+library(purrr)
+```
+
+#Introduction
+
+The rivers of the world are home to numerous fish species whose existence is dependent on the temperature of the water. Specifically for salmonid, read this [article](https://www.waterboards.ca.gov/northcoast/water_issues/programs/tmdls/shasta_river/060707/28appendixaetheeffectsoftemperatureonsteelheadtroutcohosalmonandchinooksalmonbiologyandfunction.pdf) by Katharine Carter, an environmental scientist and lover of fish from sunny California. Salmonid varieties all thrive under different temperature ranges and issues arise when river temperatures are outside these ranges.
+
+> It's a cool place and they say it gets colder. You're bundled up now wait 'til you get older.
+
+As we have been notified, it's getting hot in here. Global warming is happening, and these fish are getting heatstroke. You can take my snow, but hands off my fish. I need that high quality protein and omega-3 fatty acids for mad gains. Because of these "fake" facts, protectors of the water have become interested in developing predictive models for maximum water temperature. 
+
+> But the meteor men beg to differ. Judging by the hole in the satellite picture.
+
+Below is a preview of a dataset containing close to a full year of daily observed maximum air and maximum water temperatures for 31 different rivers in Spain. The variable `D` represents the Julian day and takes values from *1* to *365*. The variable `L` identifies 31 different measurement station locations. Variables `W` and `A` are the maximum water and air temperatures, respectively. Finally, the variable named `T` for time maintains the order of the data according to when it was observed.  For the sake of our sanity, all days missing important information have been removed using `na.omit()`.
+
+```{r,message=F}
+DATA=na.omit(read_csv("AirWaterTemp.csv"))
+glimpse(DATA)
+```
+
+>The ice we skate is getting pretty thin. The water's getting warm so you might as well swim.
+
+What is the point of stealing your tuition, if I cannot grab some fish? The model below is an expression of a family of polynomial regression models that use `A` and `D` to explain the variation in `W`. Every choice of $I$ and $J$ leads to a different model. For our purpose, we would like to consider all possible subset models where $I\leq 7$ and $J\leq 7$. To choose the best model, we rely on cross-validation (CV) to estimate out-of-sample root mean squared error (RMSE). The best choice of $I$ and $J$ minimize prediction error. I highly recommend seeing the previous [Tutorial](https://supermariogiacomazzo.github.io/STOR320_WEBSITE/Tutorial/Modeling%204/Tutorial.html) which provides necessary code to complete this assignment. If you don't look at this tutorial, you will be miserable like these fish.
+
+$$W = a+\sum\limits_{i=1}^I b_i A^i + \sum\limits_{j=1}^J c_j D^j + \epsilon$$
+
+>My world's on fire. How about yours? That's the way I like it and I'll never get bored.
+
+Where every you see `COMPLETE`, there is code required for you to write. Lines of code where you see `#DO NOT CHANGE` are meant to not be touched. The output that results from these lines is what will be graded. As you go through the assignment, knit the document to HTML. Make sure you change `eval=F` to `eval=T`. Check your final HTML document before you submit. 
+
+#Assignment
+
+##Part 1: Cross-Validated RMSE for Each Choice of $I$ and $J$
+
+###Q1 *(2 Points)*
+
+In a previous [Tutorial](https://supermariogiacomazzo.github.io/STOR320_WEBSITE/Tutorial/Modeling%204/Tutorial.html), I demonstrated how to use 10-Fold CV to obtain an out-of-sample RMSE when $I=4$ and $J=3$. In this assignment, we will also use 10 folds. Using `crossv_kfold()`, create a new dataframe called `DATA2` that contains two new variables `train` and `test` that are list-columns. 
+
+Code and Output:
+```{r,eval=F}
+set.seed(216) #DO NOT CHANGE
+
+COMPLETE
+
+head(DATA2) #DO NOT CHANGE
+```
+
+###Q2 *(3 Points)*
+
+Create a function called `RMSE.func()` that takes two vector arguments called *actual* and *predict* representing actual responses in the data and predicted responses from a model, respectively. This function should output the RMSE, which measures the overall error between actual and predicted values.
+
+Code and Output:
+```{r,eval=F}
+x=c(1,3,4) #DO NOT CHANGE
+y=c(0,0,0) #DO NOT CHANGE
+
+COMPLETE
+
+RMSE.func(actual=x,predict=y) #DO NOT CHANGE
+```
+
+###Q3 *(10 Points)*
+
+For a specific $I$ and $J$, the following function fits the desired polynomial model to a given set of data. This function can be utilized to fit polynomial regression models of varying degrees. 
+```{r}
+train.model.func=function(data,I,J){
+  mod=lm(W~poly(A,I)+poly(D,J),data=data)
+  return(mod)
+}
+```
+
+In the code chunk below, we begin by initiating an empty $7 \times 7$ matrix of missing values called `OUT.RMSE`. Each row corresponds to a different choice of $I$ and each column corresponds to a different choice of $J$. Apply the code in the previous [Tutorial](https://supermariogiacomazzo.github.io/STOR320_WEBSITE/Tutorial/Modeling%204/Tutorial.html) in a double loop that performs 10-Fold CV to estimate out-of-sample RMSE under each polynomial model where $I \in \{1,2,3, \cdots,7\}$ and $J \in \{1,2,3, \cdots,7\}$ and then saves the RMSE in the $(I,J)$-cell of the matrix `OUT.RMSE`.
+
+Code and Output:
+```{r,eval=F}
+OUT.RMSE=matrix(NA,7,7) #DO NOT CHANGE
+
+COMPLETE
+
+print(OUT.RMSE) #DO NOT CHANGE
+```
+
+
+##Part 2: Comparing Top 5 Models
+
+In the code chunk below, we start by making the information found the summarized information in `OUT.RMSE` tidy. There are three columns in `OUT.RMSE2` that links the cross-validated RMSE to all considered combinations of $I$ and $J$. Change `eval=F` to `eval=T` before knitting to HTML.
+
+```{r, eval=F}
+OUT.RMSE2=as.tibble(OUT.RMSE) %>% 
+  mutate(I=1:7) %>% 
+  rename(`1`=V1,`2`=V2,`3`=V3,`4`=V4,`5`=V5,`6`=V6,`7`=V7) %>%
+  select(I,everything()) %>%
+  gather(`1`:`7`,key="J",value="RMSE",convert=T) %>%
+  mutate(I=as.factor(I),J=as.factor(J))
+head(OUT.RMSE2)
+```
+
+###Q1 *(2 Points)*
+
+Create a tibble called `BEST5.RMSE` which contains the rows in `OUT.RMSE2` corresponding to the best five models according to the RMSE and sorted from best to worst.
+
+Code and Output:
+```{r,eval=F}
+COMPLETE
+
+head(BEST5.RMSE) #DO NOT CHANGE
+```
+
+###Q2 *(3 Points)*
+
+Now, observe the figure below that shows the change in maximum water temperature ($W$) across Julian days ($D$). Change `eval=F` to `eval=T` before knitting to HTML.
+
+```{r,eval=F}
+ggplot(DATA) +
+  geom_point(aes(x=D,y=W),alpha=0.05,stroke=0) +
+  theme_minimal() +
+  xlab("Julian Day")+
+  ylab("Max Water Temperature")
+```
+
+Using `mutate()`, we create a tibble `BEST5.DATA` based off `DATA`. The new object `BEST5.DATA` contains 5 columns of predictions under the top 5 models based on the values of `I` and `J` in `BEST5.RMSE`. The five columns of predictions should be given names `First`, `Second`, `Third`, `Fourth`,`Fifth`, in order from best to worst. Change `eval=F` to `eval=T` before knitting to HTML. 
+
+```{r,eval=F}
+BEST5.DATA=DATA %>%
+            mutate(First=predict(lm(W~poly(A,as.numeric(BEST5.RMSE$I[1]))+poly(D,as.numeric(BEST5.RMSE$J[1])),data=DATA)),
+                   Second=predict(lm(W~poly(A,as.numeric(BEST5.RMSE$I[2]))+poly(D,as.numeric(BEST5.RMSE$J[2])),data=DATA)),
+                   Third=predict(lm(W~poly(A,as.numeric(BEST5.RMSE$I[3]))+poly(D,as.numeric(BEST5.RMSE$J[3])),data=DATA)),
+                   Fourth=predict(lm(W~poly(A,as.numeric(BEST5.RMSE$I[4]))+poly(D,as.numeric(BEST5.RMSE$J[4])),data=DATA)),
+                   Fifth=predict(lm(W~poly(A,as.numeric(BEST5.RMSE$I[5]))+poly(D,as.numeric(BEST5.RMSE$J[5])),data=DATA)))
+```
+
+Then, I want you to use the pipe `%>%` with `gather()` to create a new tibble called `BEST5.DATA2` that gathers all the predictions. A variable named `Model` should contain the values "First","Second","Third","Fourth", and "Fifth". A variable named `Predict` should contain the predictions corresponding to the appropriate models. In `gather()`, be sure to set `factor_key=T` to ensure that the new variable `Model` is a factor variable with ordered levels logically from "First" to "Fifth".
+
+Code and Output:
+```{r,eval=F}
+COMPLETE
+
+head(BEST5.DATA2) #DO NOT CHANGE
+```
+
+
+###Q3 *(5 Points)*
+
+Create a figure that overlays the raw and predicted maximum water temperatures for the top 5 models given the Julian Day. The raw data needs to be shown in a scatter plot using `geom_point()` with `alpha=0.05` and `stroke=0` . The predictions should be created using `geom_line()` with different colors for each of the Models. Label the x-axis "Julian Day" and the y-axis "Max Water Temperature". In a complete sentence, explain how the predicted maximum water temperatures differ for the top five models.
+
+Code and Output *(3 Points)*:
+```{r,eval=F}
+ggplot(BEST5.DATA2) +
+  COMPLETE
+```
+
+Answer *(2 Points)*: ANSWER IN COMPLETE SENTENCES HERE
+
+
+###Q4 *(3 Points)*
+
+The following two figures show the marginal change in the average out-of-sample RMSE as $I$ and $J$ increase. Based on these figures, what $I$ and $J$ would you recommend going forward? Critically, think about what these figures are telling us. Give a reason for your answer based on these graphics. Answer the question below the two figures in complete sentences. Change `eval=F` to `eval=T` before knitting to HTML.
+
+```{r,fig.width=8,fig.height=4,fig.show='hold',fig.align='center',echo=F,eval=F}
+OUT.RMSE2 %>% 
+  group_by(I) %>% 
+  summarize(avgRMSE=mean(RMSE))%>%
+  ungroup() %>%
+    ggplot() +
+    geom_point(aes(x=I,y=avgRMSE))+
+    geom_line(aes(x=I,y=avgRMSE,group=1)) +
+    theme_minimal()
+
+OUT.RMSE2 %>% 
+  group_by(J) %>% 
+  summarize(avgRMSE=mean(RMSE))%>%
+  ungroup() %>%
+    ggplot() +
+    geom_point(aes(x=J,y=avgRMSE))+
+    geom_line(aes(x=J,y=avgRMSE,group=1)) +
+    theme_minimal()
+```
+
+
+Answer: ANSWER IN COMPLETE SENTENCES HERE
+
+##Part 3: Plots of Best Model
+
+###Q1 *(4 Points)*
+
+I want you to create a simple function called `BEST.func()` that outputs a vector of length 2 where the first element is the $I$ and the second element is the $J$ that corresponds to the lowest RMSE. The output vector should be a numeric vector and not a tibble with factor variables. The only argument called "data" should be a data frame that is identical in format to `OUT.RMSE2`. The last line will process the function when `data=OUT.RMSE2` and save the best choices of `I` and `J` to an object called `BEST.CHOICE` and then print out the vector of length 2 with the ideal $I$ and $J$ leading to the smallest RMSE. I advise using the function `which.min()`.
+
+Code and Output:
+```{r,eval=F}
+BEST.func=function(data){
+  COMPLETE
+}
+
+BEST.CHOICE=BEST.func(data=OUT.RMSE2) #DO NOT CHANGE
+print(BEST.CHOICE) #DO NOT CHANGE
+```
+
+###Q2 *(4 Points)*
+
+Based on the best model, I want you to obtain the fitted values for all observations in `DATA`. Then, I want you to create a figure that shows the relationship between the fitted maximum water temperatures under the best model  and the actual maximum water temperatures. In this figure, you should label the x-axis "Actual Max Water Temperature" and the y-axis "Fitted Max Water Temperature". There should also be a 45 degree reference line with y-intercept equal to 0 indicating perfect prediction. Make this reference line the color "red". The function `predict()` or `augment()` could be helpful here along with the previously created function `train.model.func()`.
+
+Code and Output:
+```{r,eval=F}
+COMPLETE
+```
+
+###Q3 *(4 Points)*
+
+Based on the best model, I want you to obtain the residuals for all observations in `DATA`. Then, I want you to create a scatterplot that shows the different residuals over day `D`. In this figure, you should label the x-axis "Day" and the y-axis "Residual".  There should also be a horizontal reference line at 0 indicating perfect prediction. Make this reference line the color "red". The function `residuals()`, works similar to `predict()`, but outputs the residuals and not the fitted values.
+
+Code and Output:
+```{r,eval=F}
+COMPLETE
+```

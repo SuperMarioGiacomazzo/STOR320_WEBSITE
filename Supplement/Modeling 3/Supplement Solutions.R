@@ -96,6 +96,7 @@ ggplot(data=EXAMPLE) +
 #4.2
 logistic.model=function(COEF,DATA){
   pred=COEF[1]+COEF[2]/(1+exp(COEF[3]-COEF[4]*DATA$A))
+  return(pred)
 }
 MSE.logistic=function(COEF,DATA){
   error=DATA$W-logistic.model(DATA=DATA,COEF=COEF)
@@ -106,7 +107,7 @@ MSE.logistic=function(COEF,DATA){
 
 #4.3
 logistic.mod=optim(
-  par=c(min(TRAIN$W,na.rm=T),
+  par=c(0, # Changed from min(TRAIN$W,na.rm=T)
         max(TRAIN$W,na.rm=T)-min(TRAIN$W,na.rm=T),
         median(TRAIN$A,na.rm=T),
         1),           #Smart Starting Values
@@ -121,12 +122,17 @@ TRAIN6=TRAIN5 %>% mutate(logpred=logistic.model(COEF=logistic.mod$par,DATA=TRAIN
 TEST6=TEST5 %>% mutate(logpred=logistic.model(COEF=logistic.mod$par,DATA=TEST5),
                          logres=W-logpred)
 
+ggplot(data=TRAIN6) +
+  geom_point(aes(x=A,y=W)) +
+  geom_line(aes(x=A,y=logpred),color="red")
+
 
 #Intermission
 save.image("Tutorial11.Rdata")
 
 
 #5.1
+
 TEST6 %>%
   select(L,A,W,linpred,poly2pred,poly3pred,poly4pred,logpred)%>%
   gather(linpred:logpred,key="Model",value="Pred",factor_key=T) %>%
