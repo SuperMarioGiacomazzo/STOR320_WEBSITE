@@ -370,11 +370,14 @@ summary {
 </div>
 
 
-<p>#Instructions</p>
+<div id="instructions" class="section level1">
+<h1>Instructions</h1>
 <p><strong>Overview:</strong> For each question, show your R code that you used to answer each question in the provided chunks. When a written response is required, be sure to answer the entire question in complete sentences outside the code chunks. When figures are required, be sure to follow all requirements to receive full credit. Point values are assigned for every part of this analysis.</p>
 <p><strong>Helpful:</strong> Make sure you knit the document as you go through the assignment. Check all your results in the created HTML file.</p>
 <p><strong>Submission:</strong> Submit via an electronic document on Sakai. Must be submitted as an HTML file generated in RStudio.</p>
-<p>#Introduction</p>
+</div>
+<div id="introduction" class="section level1">
+<h1>Introduction</h1>
 <p>The rivers of the world are home to numerous fish species whose existence is dependent on the temperature of the water. Specifically for salmonid, read this <a href="https://www.waterboards.ca.gov/northcoast/water_issues/programs/tmdls/shasta_river/060707/28appendixaetheeffectsoftemperatureonsteelheadtroutcohosalmonandchinooksalmonbiologyandfunction.pdf">article</a> by Katharine Carter, an environmental scientist and lover of fish from sunny California. Salmonid varieties all thrive under different temperature ranges and issues arise when river temperatures are outside these ranges.</p>
 <blockquote>
 <p>It’s a cool place and they say it gets colder. You’re bundled up now wait ’til you get older.</p>
@@ -402,9 +405,13 @@ glimpse(DATA)</code></pre>
 <p>My world’s on fire. How about yours? That’s the way I like it and I’ll never get bored.</p>
 </blockquote>
 <p>Where every you see <code>COMPLETE</code>, there is code required for you to write. Lines of code where you see <code>#DO NOT CHANGE</code> are meant to not be touched. The output that results from these lines is what will be graded. As you go through the assignment, knit the document to HTML. Make sure you change <code>eval=F</code> to <code>eval=T</code>. Check your final HTML document before you submit.</p>
-<p>#Assignment</p>
-<p>##Part 1: Cross-Validated RMSE for Each Choice of <span class="math inline">\(I\)</span> and <span class="math inline">\(J\)</span></p>
-<p>###Q1 <em>(2 Points)</em></p>
+</div>
+<div id="assignment" class="section level1">
+<h1>Assignment</h1>
+<div id="part-1-cross-validated-rmse-for-each-choice-of-i-and-j" class="section level2">
+<h2>Part 1: Cross-Validated RMSE for Each Choice of <span class="math inline">\(I\)</span> and <span class="math inline">\(J\)</span></h2>
+<div id="q1-2-points" class="section level3">
+<h3>Q1 <em>(2 Points)</em></h3>
 <p>In a previous <a href="https://supermariogiacomazzo.github.io/STOR320_WEBSITE/Tutorial/Modeling%204/Tutorial.html">Tutorial</a>, I demonstrated how to use 10-Fold CV to obtain an out-of-sample RMSE when <span class="math inline">\(I=4\)</span> and <span class="math inline">\(J=3\)</span>. In this assignment, we will also use 10 folds. Using <code>crossv_kfold()</code>, create a new dataframe called <code>DATA2</code> that contains two new variables <code>train</code> and <code>test</code> that are list-columns.</p>
 <p>Code and Output:</p>
 <pre class="r"><code>set.seed(216) #DO NOT CHANGE
@@ -412,7 +419,9 @@ glimpse(DATA)</code></pre>
 COMPLETE
 
 head(DATA2) #DO NOT CHANGE</code></pre>
-<p>###Q2 <em>(3 Points)</em></p>
+</div>
+<div id="q2-3-points" class="section level3">
+<h3>Q2 <em>(3 Points)</em></h3>
 <p>Create a function called <code>RMSE.func()</code> that takes two vector arguments called <em>actual</em> and <em>predict</em> representing actual responses in the data and predicted responses from a model, respectively. This function should output the RMSE, which measures the overall error between actual and predicted values.</p>
 <p>Code and Output:</p>
 <pre class="r"><code>x=c(1,3,4) #DO NOT CHANGE
@@ -421,7 +430,9 @@ y=c(0,0,0) #DO NOT CHANGE
 COMPLETE
 
 RMSE.func(actual=x,predict=y) #DO NOT CHANGE</code></pre>
-<p>###Q3 <em>(10 Points)</em></p>
+</div>
+<div id="q3-10-points" class="section level3">
+<h3>Q3 <em>(10 Points)</em></h3>
 <p>For a specific <span class="math inline">\(I\)</span> and <span class="math inline">\(J\)</span>, the following function fits the desired polynomial model to a given set of data. This function can be utilized to fit polynomial regression models of varying degrees.</p>
 <pre class="r"><code>train.model.func=function(data,I,J){
   mod=lm(W~poly(A,I)+poly(D,J),data=data)
@@ -434,7 +445,10 @@ RMSE.func(actual=x,predict=y) #DO NOT CHANGE</code></pre>
 COMPLETE
 
 print(OUT.RMSE) #DO NOT CHANGE</code></pre>
-<p>##Part 2: Comparing Top 5 Models</p>
+</div>
+</div>
+<div id="part-2-comparing-top-5-models" class="section level2">
+<h2>Part 2: Comparing Top 5 Models</h2>
 <p>In the code chunk below, we start by making the information found the summarized information in <code>OUT.RMSE</code> tidy. There are three columns in <code>OUT.RMSE2</code> that links the cross-validated RMSE to all considered combinations of <span class="math inline">\(I\)</span> and <span class="math inline">\(J\)</span>. Change <code>eval=F</code> to <code>eval=T</code> before knitting to HTML.</p>
 <pre class="r"><code>OUT.RMSE2=as.tibble(OUT.RMSE) %&gt;% 
   mutate(I=1:7) %&gt;% 
@@ -443,13 +457,16 @@ print(OUT.RMSE) #DO NOT CHANGE</code></pre>
   gather(`1`:`7`,key=&quot;J&quot;,value=&quot;RMSE&quot;,convert=T) %&gt;%
   mutate(I=as.factor(I),J=as.factor(J))
 head(OUT.RMSE2)</code></pre>
-<p>###Q1 <em>(2 Points)</em></p>
+<div id="q1-2-points-1" class="section level3">
+<h3>Q1 <em>(2 Points)</em></h3>
 <p>Create a tibble called <code>BEST5.RMSE</code> which contains the rows in <code>OUT.RMSE2</code> corresponding to the best five models according to the RMSE and sorted from best to worst.</p>
 <p>Code and Output:</p>
 <pre class="r"><code>COMPLETE
 
 head(BEST5.RMSE) #DO NOT CHANGE</code></pre>
-<p>###Q2 <em>(3 Points)</em></p>
+</div>
+<div id="q2-3-points-1" class="section level3">
+<h3>Q2 <em>(3 Points)</em></h3>
 <p>Now, observe the figure below that shows the change in maximum water temperature (<span class="math inline">\(W\)</span>) across Julian days (<span class="math inline">\(D\)</span>). Change <code>eval=F</code> to <code>eval=T</code> before knitting to HTML.</p>
 <pre class="r"><code>ggplot(DATA) +
   geom_point(aes(x=D,y=W),alpha=0.05,stroke=0) +
@@ -468,17 +485,25 @@ head(BEST5.RMSE) #DO NOT CHANGE</code></pre>
 <pre class="r"><code>COMPLETE
 
 head(BEST5.DATA2) #DO NOT CHANGE</code></pre>
-<p>###Q3 <em>(5 Points)</em></p>
+</div>
+<div id="q3-5-points" class="section level3">
+<h3>Q3 <em>(5 Points)</em></h3>
 <p>Create a figure that overlays the raw and predicted maximum water temperatures for the top 5 models given the Julian Day. The raw data needs to be shown in a scatter plot using <code>geom_point()</code> with <code>alpha=0.05</code> and <code>stroke=0</code> . The predictions should be created using <code>geom_line()</code> with different colors for each of the Models. Label the x-axis “Julian Day” and the y-axis “Max Water Temperature”. In a complete sentence, explain how the predicted maximum water temperatures differ for the top five models.</p>
 <p>Code and Output <em>(3 Points)</em>:</p>
 <pre class="r"><code>ggplot(BEST5.DATA2) +
   COMPLETE</code></pre>
 <p>Answer <em>(2 Points)</em>: ANSWER IN COMPLETE SENTENCES HERE</p>
-<p>###Q4 <em>(3 Points)</em></p>
+</div>
+<div id="q4-3-points" class="section level3">
+<h3>Q4 <em>(3 Points)</em></h3>
 <p>The following two figures show the marginal change in the average out-of-sample RMSE as <span class="math inline">\(I\)</span> and <span class="math inline">\(J\)</span> increase. Based on these figures, what <span class="math inline">\(I\)</span> and <span class="math inline">\(J\)</span> would you recommend going forward? Critically, think about what these figures are telling us. Give a reason for your answer based on these graphics. Answer the question below the two figures in complete sentences. Change <code>eval=F</code> to <code>eval=T</code> before knitting to HTML.</p>
 <p>Answer: ANSWER IN COMPLETE SENTENCES HERE</p>
-<p>##Part 3: Plots of Best Model</p>
-<p>###Q1 <em>(4 Points)</em></p>
+</div>
+</div>
+<div id="part-3-plots-of-best-model" class="section level2">
+<h2>Part 3: Plots of Best Model</h2>
+<div id="q1-4-points" class="section level3">
+<h3>Q1 <em>(4 Points)</em></h3>
 <p>I want you to create a simple function called <code>BEST.func()</code> that outputs a vector of length 2 where the first element is the <span class="math inline">\(I\)</span> and the second element is the <span class="math inline">\(J\)</span> that corresponds to the lowest RMSE. The output vector should be a numeric vector and not a tibble with factor variables. The only argument called “data” should be a data frame that is identical in format to <code>OUT.RMSE2</code>. The last line will process the function when <code>data=OUT.RMSE2</code> and save the best choices of <code>I</code> and <code>J</code> to an object called <code>BEST.CHOICE</code> and then print out the vector of length 2 with the ideal <span class="math inline">\(I\)</span> and <span class="math inline">\(J\)</span> leading to the smallest RMSE. I advise using the function <code>which.min()</code>.</p>
 <p>Code and Output:</p>
 <pre class="r"><code>BEST.func=function(data){
@@ -487,14 +512,21 @@ head(BEST5.DATA2) #DO NOT CHANGE</code></pre>
 
 BEST.CHOICE=BEST.func(data=OUT.RMSE2) #DO NOT CHANGE
 print(BEST.CHOICE) #DO NOT CHANGE</code></pre>
-<p>###Q2 <em>(4 Points)</em></p>
+</div>
+<div id="q2-4-points" class="section level3">
+<h3>Q2 <em>(4 Points)</em></h3>
 <p>Based on the best model, I want you to obtain the fitted values for all observations in <code>DATA</code>. Then, I want you to create a figure that shows the relationship between the fitted maximum water temperatures under the best model and the actual maximum water temperatures. In this figure, you should label the x-axis “Actual Max Water Temperature” and the y-axis “Fitted Max Water Temperature”. There should also be a 45 degree reference line with y-intercept equal to 0 indicating perfect prediction. Make this reference line the color “red”. The function <code>predict()</code> or <code>augment()</code> could be helpful here along with the previously created function <code>train.model.func()</code>.</p>
 <p>Code and Output:</p>
 <pre class="r"><code>COMPLETE</code></pre>
-<p>###Q3 <em>(4 Points)</em></p>
+</div>
+<div id="q3-4-points" class="section level3">
+<h3>Q3 <em>(4 Points)</em></h3>
 <p>Based on the best model, I want you to obtain the residuals for all observations in <code>DATA</code>. Then, I want you to create a scatterplot that shows the different residuals over day <code>D</code>. In this figure, you should label the x-axis “Day” and the y-axis “Residual”. There should also be a horizontal reference line at 0 indicating perfect prediction. Make this reference line the color “red”. The function <code>residuals()</code>, works similar to <code>predict()</code>, but outputs the residuals and not the fitted values.</p>
 <p>Code and Output:</p>
 <pre class="r"><code>COMPLETE</code></pre>
+</div>
+</div>
+</div>
 
 
 
