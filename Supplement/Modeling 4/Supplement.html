@@ -11,7 +11,7 @@
 
 <meta name="author" content="Mario Giacomazzo" />
 
-<meta name="date" content="2020-10-26" />
+<meta name="date" content="2020-10-28" />
 
 <title>Supplement for Modeling 4</title>
 
@@ -365,7 +365,7 @@ summary {
 
 <h1 class="title toc-ignore">Supplement for Modeling 4</h1>
 <h4 class="author">Mario Giacomazzo</h4>
-<h4 class="date">October 26, 2020</h4>
+<h4 class="date">October 28, 2020</h4>
 
 </div>
 
@@ -384,8 +384,11 @@ summary {
 ## 6          6  2003   103  10.7  12.4     6     1     6</code></pre>
 <p>Using the data, we seek to identify the best model for predicting the maximum water temperature given the maximum air temperature. Previously, we randomly selected 3 rivers to act as a test set. All models were evaluated based on the randomly selected test set. In this tutorial, we explore approaches that ensure that all data is used for both model training and model testing.</p>
 <p>In this tutorial, we apply helpful functions in the <code>purrr</code>, <code>modelr</code>, and <code>broom</code> packages. See the following links for helpful articles on performing cross-validation within the tidyverse: <a href="http://sjspielman.org/bio5312_fall2017/files/kfold_supplement.pdf">Link 1</a>, <a href="https://drsimonj.svbtle.com/k-fold-cross-validation-with-modelr-and-broom">Link 2</a>, and <a href="https://www.r-bloggers.com/easy-cross-validation-in-r-with-modelr/">Link 3</a>.</p>
-<p>#Part 1: Intelligent Use of Locations for Cross-Validation</p>
-<p>##Chunk 1: List-Column of Data Split By Location</p>
+</div>
+<div id="part-1-intelligent-use-of-locations-for-cross-validation" class="section level1">
+<h1>Part 1: Intelligent Use of Locations for Cross-Validation</h1>
+<div id="chunk-1-list-column-of-data-split-by-location" class="section level2">
+<h2>Chunk 1: List-Column of Data Split By Location</h2>
 <pre class="r"><code>NEST.DATA = DATA %&gt;% group_by(L) %&gt;% nest()
 head(NEST.DATA)</code></pre>
 <pre><code>## # A tibble: 6 x 2
@@ -398,7 +401,9 @@ head(NEST.DATA)</code></pre>
 ## 4   111 &lt;tibble [365 x 7]&gt;
 ## 5   112 &lt;tibble [366 x 7]&gt;
 ## 6   118 &lt;tibble [366 x 7]&gt;</code></pre>
-<p>##Chunk 2: Combining <code>filter()</code> with <code>unnest()</code> To Split Data</p>
+</div>
+<div id="chunk-2-combining-filter-with-unnest-to-split-data" class="section level2">
+<h2>Chunk 2: Combining <code>filter()</code> with <code>unnest()</code> To Split Data</h2>
 <pre class="r"><code>NEST.DATA %&gt;% filter(L==103) %&gt;% unnest() %&gt;% glimpse()</code></pre>
 <pre><code>## Rows: 365
 ## Columns: 8
@@ -423,7 +428,9 @@ head(NEST.DATA)</code></pre>
 ## $ TIME       &lt;dbl&gt; 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 1...
 ## $ MONTH      &lt;dbl&gt; 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,...
 ## $ DAY        &lt;dbl&gt; 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 1...</code></pre>
-<p>##Chunk 3: Fit Train Data, Predict Test Data, and Save Results</p>
+</div>
+<div id="chunk-3-fit-train-data-predict-test-data-and-save-results" class="section level2">
+<h2>Chunk 3: Fit Train Data, Predict Test Data, and Save Results</h2>
 <pre class="r"><code>DATA2=DATA
 DATA2$linpred=NA
 
@@ -444,9 +451,13 @@ head(DATA2)</code></pre>
 ## 4          4  2003   103  10.9  10.8     4     1     4    10.5
 ## 5          5  2003   103  10.8  11.7     5     1     5    11.1
 ## 6          6  2003   103  10.7  12.4     6     1     6    11.5</code></pre>
-<p>##Chunk 4: Create a Loop to Iterate Process for Each Location</p>
+</div>
+<div id="chunk-4-create-a-loop-to-iterate-process-for-each-location" class="section level2">
+<h2>Chunk 4: Create a Loop to Iterate Process for Each Location</h2>
 <pre class="r"><code>#</code></pre>
-<p>##Chunk 5: Calcuate Cross-Validated RMSE</p>
+</div>
+<div id="chunk-5-calcuate-cross-validated-rmse" class="section level2">
+<h2>Chunk 5: Calcuate Cross-Validated RMSE</h2>
 <pre class="r"><code>RMSE.func=function(actual,predict){
   
 }
@@ -457,6 +468,7 @@ RMSE.func(actual=DATA2$W,predict=DATA2$linpred)</code></pre>
 <pre class="r"><code>polymodel=lm(W~poly(A,4)+poly(JULIAN_DAY,3),data=na.omit(DATA))
 tidy(polymodel)
 glance(polymodel)</code></pre>
+</div>
 <div id="chunk-3-splitting-data-for-cross-validation" class="section level2">
 <h2>Chunk 3: Splitting Data for Cross-Validation</h2>
 <pre class="r"><code>DATA3=na.omit(DATA) %&gt;% crossv_kfold(10)
