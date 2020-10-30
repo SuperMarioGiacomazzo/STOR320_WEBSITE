@@ -1,5 +1,5 @@
 ---
-title: "STOR 320 Tutorial on Modeling 9"
+title: "Supplement for Modeling 9"
 author: "Mario Giacomazzo"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 output: html_document

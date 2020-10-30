@@ -142,10 +142,10 @@ This course is an application-driven introduction to data science. Statistical a
 |Oct. 23| [Modeling III](https://unc.zoom.us/rec/share/yyvBCWg2pFB2SrS-YMBpqrGDQWqoczhZnfEu0iqWp0nB6YiTPqHTF3mscTZiJdfN.4Ueebkti8RqNIn1I?startTime=1603473569000) |[Slides](https://drive.google.com/file/d/1N9lLVOSXYImIIgKVYfHY0STJ076WczxV/view?usp=sharing)| [Preview](Supplement/Modeling 3/Supplement.html)([.zip](https://drive.google.com/file/d/15hBJp-W3BtBiiQ1GVg3awt8y5064CKKh/view?usp=sharing)) |
 |Oct. 26| [Modeling IV](https://unc.zoom.us/rec/share/GxjhJbt12LwrQp_4CTDrNGMg2Z2mfk27sGSRVxr0hp-mpMeONqDaZy1hEgm76MXY.ZDDQNpE2SBjpcRvP?startTime=1603732772000) |[Slides](https://drive.google.com/file/d/17mIXSqjMvuVLIYLrNhpNeuqMorcfYwUd/view?usp=sharing)| [Preview](Supplement/Modeling 4/Supplement.html)([.zip](https://drive.google.com/file/d/1gwi-J7pdjXWS69Bu-AVKv4Xu1hVQrjSa/view?usp=sharing)) |
 |Oct. 28| [Modeling V](https://unc.zoom.us/rec/share/ZQnTHLgYjhlFl159DQsoeLXvDNuhHd02VQfPDtLtPAQ0g-_TLWI4IUapDNB1vLi8.YzvKtGpe0WoxYsk1?startTime=1603905603000) |[Slides](https://drive.google.com/file/d/12o1WJNz6uSfLbl-_V2ITamxfhgLEJydM/view?usp=sharing)||
-|Oct. 30|Modeling VI|[Slides](https://drive.google.com/file/d/1-yDT0up68BCgNpU3r5pSFOFeJ5Mejpuz/view?usp=sharing)||
-|Nov. 2|Modeling VII|[Slides](https://drive.google.com/file/d/1Bi04Ytc6JqXkUcU7C-MeeOGtUK9Tr5cd/view?usp=sharing)||
-|Nov. 4|Modeling VIII|[Slides](https://drive.google.com/file/d/1zp-zG4ii5PZdlpaq95v5S9MO5LsEXh1X/view?usp=sharing)||
-|Nov. 6|Modeling IX|[Slides](https://drive.google.com/file/d/1DgDOKe2Nj8hqZJCUAlYeatb0mGtGqeGC/view?usp=sharing)||
+|Oct. 30| Modeling VI |[Slides](https://drive.google.com/file/d/1-yDT0up68BCgNpU3r5pSFOFeJ5Mejpuz/view?usp=sharing)||
+|Nov. 2|Modeling VII|[Slides](https://drive.google.com/file/d/1Bi04Ytc6JqXkUcU7C-MeeOGtUK9Tr5cd/view?usp=sharing)| [Preview](Supplement/Modeling 7/Supplement.html)([.zip](https://drive.google.com/file/d/1ON8XxM28xfq_Mhc04-NuJs_mm6dWQP-e/view?usp=sharing)) |
+|Nov. 4|Modeling VIII|[Slides](https://drive.google.com/file/d/1zp-zG4ii5PZdlpaq95v5S9MO5LsEXh1X/view?usp=sharing)| [Preview](Supplement/Modeling 8/Supplement.html)([.zip](https://drive.google.com/file/d/15JGWTShjR0T6GTv4ogMfpW5sb7jnqiXV/view?usp=sharing)) |
+|Nov. 6|Modeling IX|[Slides](https://drive.google.com/file/d/1DgDOKe2Nj8hqZJCUAlYeatb0mGtGqeGC/view?usp=sharing)| [Preview](Supplement/Modeling 9/Supplement.html)([.zip](https://drive.google.com/file/d/1IhIUfUsYm889-q8tHIH5jboHGSldKr83/view?usp=sharing)) |
 |Nov. 9|R Shiny|[Slides](https://drive.google.com/file/d/1tzDNVSmNEsfajomAzeyKbN-zMWp0LXZp/view?usp=sharing)||
 |Nov. 11|Advanced Shiny ([Frances Tong](https://twitter.com/francestong?lang=en))|[Slides](https://francestong.shinyapps.io/stor320_shiny/)|||||
 |Nov. 13|Data Ethics |[Slides](https://drive.google.com/file/d/1Hji5bw9x9NsjUuOL2qUVAr4nfbc3dn74/view?usp=sharing)||
