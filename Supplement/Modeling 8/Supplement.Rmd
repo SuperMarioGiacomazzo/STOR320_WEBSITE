@@ -90,7 +90,7 @@ tibble(ACTUAL=ACTUAL,KEEP=KEEP) %>%
 
 ##Chunk 4: Modifying the Cutoff For P-Values
 ```{r,eval=F}
-Cutoff = CHOICE
+Cutoff = CUTOFF
 
 COEF=rep(NA,200)
 P.VAL=rep(NA,200)
