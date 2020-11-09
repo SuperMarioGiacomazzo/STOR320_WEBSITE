@@ -146,8 +146,8 @@ This course is an application-driven introduction to data science. Statistical a
 |Nov. 2| [Modeling VII](https://unc.zoom.us/rec/share/sNvbRVWhBgkdkHa5KUk9PEuAUedvviFsEbktmKoR0x_rdoDk3q5WZx9IW2isugtw.zd93n7A__0MRqwan?startTime=1604341200000) |[Slides](https://drive.google.com/file/d/1Bi04Ytc6JqXkUcU7C-MeeOGtUK9Tr5cd/view?usp=sharing)| [Preview](Supplement/Modeling 7/Supplement.html)([.Rmd](https://drive.google.com/file/d/1ON8XxM28xfq_Mhc04-NuJs_mm6dWQP-e/view?usp=sharing)) |
 |Nov. 4| [Modeling VIII](https://unc.zoom.us/rec/share/p95DbG-_KWAH_dzq_mmP_zA--UY3QPsjHdn1NxEptArfn0Km-mkSC6PxvadJbqz-.3aIy1m0flF2TE56R?startTime=1604514023000) |[Slides](https://drive.google.com/file/d/1zp-zG4ii5PZdlpaq95v5S9MO5LsEXh1X/view?usp=sharing)| [Preview](Supplement/Modeling 8/Supplement.html)([.Rmd](https://drive.google.com/file/d/15JGWTShjR0T6GTv4ogMfpW5sb7jnqiXV/view?usp=sharing)) |
 |Nov. 6| [Modeling IX](https://unc.zoom.us/rec/share/dTx7x98QcFZppOUfqph-38eJoG3xTXlshRAZ9_c6q8gf-koJBjUqxCTPVX68WaHK.nT6HgEsjPlI0krTX?startTime=1604686729000) |[Slides](https://drive.google.com/file/d/1DgDOKe2Nj8hqZJCUAlYeatb0mGtGqeGC/view?usp=sharing)| [Preview](Supplement/Modeling 9/Supplement.html)([.Rmd](https://drive.google.com/file/d/1IhIUfUsYm889-q8tHIH5jboHGSldKr83/view?usp=sharing)) |
-|Nov. 9|R Shiny|[Slides](https://drive.google.com/file/d/1tzDNVSmNEsfajomAzeyKbN-zMWp0LXZp/view?usp=sharing)||
-|Nov. 11|Advanced Shiny ([Frances Tong](https://twitter.com/francestong?lang=en))|[Slides](https://francestong.shinyapps.io/stor320_shiny/)|||||
+|Nov. 9|R Shiny|[Slides](https://drive.google.com/file/d/1tzDNVSmNEsfajomAzeyKbN-zMWp0LXZp/view?usp=sharing)|[Preview](https://drmariogiacomazzo.shinyapps.io/Gapminder_Part3/)([.zip](https://drive.google.com/file/d/1B-3RH_7gQmK-JWVHe7Xf4qA39NR-5XBd/view?usp=sharing))|
+|Nov. 11|Advanced Shiny ([Frances Tong](https://twitter.com/francestong?lang=en))|[Slides](https://francestong.shinyapps.io/stor320_shiny/)||
 |Nov. 13|Data Ethics |[Slides](https://drive.google.com/file/d/1Hji5bw9x9NsjUuOL2qUVAr4nfbc3dn74/view?usp=sharing)||
 |Nov. 16|Final Project Work Day|||
 |||||
