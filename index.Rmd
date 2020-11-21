@@ -169,8 +169,8 @@ All HW and Analysis assignments are to be submitted via **[Sakai](https://sakai.
 | October 2 | [HW5](Homework/HW 5/HW-5.html) ([.Rmd](https://drive.google.com/file/d/1MflNYSHEUxm5IvoFf950pejj4mTROJmR/view?usp=sharing))||[HW5](Solutions/HW_5_Solutions.html)|October 9  (5 PM)|
 | October 9 || [A3](Analysis/Analysis 3/Analysis-3.html) ([.zip](https://drive.google.com/file/d/163M1M-UVU7VnOHnc2Mb1vr8HhpcnWFca/view?usp=sharing))|[A3](Solutions/Solutions-3.html)|October 23 (5 PM)|
 | October 23  | [HW6](Homework/HW 6/HW-6.html) ([.Rmd](https://drive.google.com/file/d/1GPfHPQLhrCayiaO3kmGkVCPjAyAicl1C/view?usp=sharing)) ||[HW6](Solutions/HW_6_Solutions.html)|October 30 (5 PM)|
-| October 30 | [HW7](Homework/HW 7/HW-7.html) ([.Rmd](https://drive.google.com/file/d/1_-m7iz9Ju8oXbrXd4bwN1IvtnMBiyHu4/view?usp=sharing)) ||[HW7]()|November 6 (5 PM)|
-| November 6   ||  [A4](Analysis/Analysis 4/Analysis-4.html) ([.zip](https://drive.google.com/file/d/1QzPoaCHiYuJcYBZHWgZFVxNFvyvj506K/view?usp=sharing))|[A4]()|November 13 (5 PM)|
+| October 30 | [HW7](Homework/HW 7/HW-7.html) ([.Rmd](https://drive.google.com/file/d/1_-m7iz9Ju8oXbrXd4bwN1IvtnMBiyHu4/view?usp=sharing)) ||[HW7](Solutions/HW_7_Solutions.html)|November 6 (5 PM)|
+| November 6   ||  [A4](Analysis/Analysis 4/Analysis-4.html) ([.zip](https://drive.google.com/file/d/1QzPoaCHiYuJcYBZHWgZFVxNFvyvj506K/view?usp=sharing))|[A4](Solutions/Solutions-4.html)|November 13 (5 PM)|
 |          |        |             |           |
 
 # **Final Project Details**
