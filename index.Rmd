@@ -145,10 +145,10 @@ This course is an application-driven introduction to data science. Statistical a
 |Oct. 30| [Modeling VI](https://unc.zoom.us/rec/share/L57JQCXQJ6aQb6Jcoi6gme4M7HLh0xUtLgh_Dmu4OSW3SEjOpq9XAFWyBy7LBHeq.jss3eJ5Blrm34hyT?startTime=1604078240000) |[Slides](https://drive.google.com/file/d/1-yDT0up68BCgNpU3r5pSFOFeJ5Mejpuz/view?usp=sharing)||
 |Nov. 2| [Modeling VII](https://unc.zoom.us/rec/share/sNvbRVWhBgkdkHa5KUk9PEuAUedvviFsEbktmKoR0x_rdoDk3q5WZx9IW2isugtw.zd93n7A__0MRqwan?startTime=1604341200000) |[Slides](https://drive.google.com/file/d/1Bi04Ytc6JqXkUcU7C-MeeOGtUK9Tr5cd/view?usp=sharing)| [Preview](Supplement/Modeling 7/Supplement.html)([.Rmd](https://drive.google.com/file/d/1ON8XxM28xfq_Mhc04-NuJs_mm6dWQP-e/view?usp=sharing)) |
 |Nov. 4| [Modeling VIII](https://unc.zoom.us/rec/share/p95DbG-_KWAH_dzq_mmP_zA--UY3QPsjHdn1NxEptArfn0Km-mkSC6PxvadJbqz-.3aIy1m0flF2TE56R?startTime=1604514023000) |[Slides](https://drive.google.com/file/d/1zp-zG4ii5PZdlpaq95v5S9MO5LsEXh1X/view?usp=sharing)| [Preview](Supplement/Modeling 8/Supplement.html)([.Rmd](https://drive.google.com/file/d/15JGWTShjR0T6GTv4ogMfpW5sb7jnqiXV/view?usp=sharing)) |
-|Nov. 6| [Modeling IX](https://unc.zoom.us/rec/share/dTx7x98QcFZppOUfqph-38eJoG3xTXlshRAZ9_c6q8gf-koJBjUqxCTPVX68WaHK.nT6HgEsjPlI0krTX?startTime=1604686729000) |[Slides](https://drive.google.com/file/d/1DgDOKe2Nj8hqZJCUAlYeatb0mGtGqeGC/view?usp=sharing)| [Preview](Supplement/Modeling 9/Supplement.html)([.Rmd](https://drive.google.com/file/d/1IhIUfUsYm889-q8tHIH5jboHGSldKr83/view?usp=sharing)) |
-|Nov. 9| [R Shiny](https://unc.zoom.us/rec/share/AN2ilnjZxiO_qjcrSecwNGCF9rPb9ku2reMudO-NO6fBThCdrgP7f48HcpGGbCNa.7V4nxufj8iRxacGy?startTime=1604946029000) |[Slides](https://drive.google.com/file/d/1tzDNVSmNEsfajomAzeyKbN-zMWp0LXZp/view?usp=sharing)|[Preview](https://drmariogiacomazzo.shinyapps.io/Gapminder_Part3/)([.zip](https://drive.google.com/file/d/1B-3RH_7gQmK-JWVHe7Xf4qA39NR-5XBd/view?usp=sharing))|
-|Nov. 11| [Advanced Shiny ](https://unc.zoom.us/rec/share/SS6ttueeEAEs_zoonp8H68K7kSdBnriJrwZ8vFK8mP1wwIix6T__hc_xBBEbX9kn.D6FiVyqBnE4ggO73?startTime=1605118781000)([Frances Tong](https://twitter.com/francestong?lang=en)) |[Slides](https://francestong.shinyapps.io/stor320_shiny/)||
-|Nov. 13| [Data Ethics](https://unc.zoom.us/rec/share/MwfqWrcvOKmrFCl3W4txFXCim-jSbbbA7kavehaNZTOWhmIwE5PRfnqmivdWUpog.85RTPTopn67BcbK1?startTime=1605291521000) |[Slides](https://drive.google.com/file/d/1Hji5bw9x9NsjUuOL2qUVAr4nfbc3dn74/view?usp=sharing)||
+|Nov. 6| [Modeling IX]() |[Slides](https://drive.google.com/file/d/1DgDOKe2Nj8hqZJCUAlYeatb0mGtGqeGC/view?usp=sharing)| [Preview](Supplement/Modeling 9/Supplement.html)([.Rmd](https://drive.google.com/file/d/1IhIUfUsYm889-q8tHIH5jboHGSldKr83/view?usp=sharing)) |
+|Nov. 9| [R Shiny]() |[Slides](https://drive.google.com/file/d/1tzDNVSmNEsfajomAzeyKbN-zMWp0LXZp/view?usp=sharing)|[Preview](https://drmariogiacomazzo.shinyapps.io/Gapminder_Part3/)([.zip](https://drive.google.com/file/d/1B-3RH_7gQmK-JWVHe7Xf4qA39NR-5XBd/view?usp=sharing))|
+|Nov. 11| [Advanced Shiny ]()([Frances Tong](https://twitter.com/francestong?lang=en)) |[Slides](https://francestong.shinyapps.io/stor320_shiny/)||
+|Nov. 13| [Data Ethics]() |[Slides](https://drive.google.com/file/d/1Hji5bw9x9NsjUuOL2qUVAr4nfbc3dn74/view?usp=sharing)||
 |Nov. 16|Final Project Work Day|||
 |||||
 
@@ -160,17 +160,6 @@ All HW and Analysis assignments are to be submitted via **[Sakai](https://sakai.
 
 | Assigned | Homework (HW) | Analysis (A) |Solutions| Due Date (Time) |
 |----------|:--------:|:-------------:|:-------------:|----------------:|
-| August 10  | [HW1](Homework/HW 1/HW-1.html) ([.Rmd](https://drive.google.com/file/d/18x6JIRsASRmar21fNFcCz5u4tZdhJga8/view?usp=sharing))||[HW1](Solutions/HW_1_Solutions.html) |August 14 (5 PM) |
-| August 14 | [HW2](Homework/HW 2/HW-2.html) ([.Rmd](https://drive.google.com/file/d/1A3v6XoatscGa5WE9K-rDAlKOiETtlN06/view?usp=sharing))||[HW2](Solutions/HW_2_Solutions.html)|August 21  (5 PM) |
-| August 21 || [A1](Analysis/Analysis 1/Analysis-1.html) ([.zip](https://drive.google.com/file/d/1OUF_eAap8IqcCkq4wrudj8aAOtpq3dlY/view?usp=sharing))|[A1](Solutions/Solutions-1.html)|September 4 (5 PM) |
-| September 4 | [HW3](Homework/HW 3/HW-3.html) ([.Rmd](https://drive.google.com/file/d/1VA1nwnJxm1usbB-jVv3v2YefTc_j4IbO/view?usp=sharing))||[HW3](Solutions/HW_3_Solutions.html)|September 11 (5 PM)|
-| September 11 | [HW4](Homework/HW 4/HW-4.html) ([.Rmd](https://drive.google.com/file/d/1EvKorkEPsFKCpWLYEncqD_O4ZIEfI4nb/view?usp=sharing))||[HW4](Solutions/HW_4_Solutions.html)|September  18 (5 PM)|
-| September 18|| [A2](Analysis/Analysis 2/Analysis-2.html) ([.zip](https://drive.google.com/file/d/1mB4dOuuniX3LnlhgUjrYchvYlPa7p0eJ/view?usp=sharing))|[A2](Solutions/Solutions-2.html)|October 2 (5 PM)|
-| October 2 | [HW5](Homework/HW 5/HW-5.html) ([.Rmd](https://drive.google.com/file/d/1MflNYSHEUxm5IvoFf950pejj4mTROJmR/view?usp=sharing))||[HW5](Solutions/HW_5_Solutions.html)|October 9  (5 PM)|
-| October 9 || [A3](Analysis/Analysis 3/Analysis-3.html) ([.zip](https://drive.google.com/file/d/163M1M-UVU7VnOHnc2Mb1vr8HhpcnWFca/view?usp=sharing))|[A3](Solutions/Solutions-3.html)|October 23 (5 PM)|
-| October 23  | [HW6](Homework/HW 6/HW-6.html) ([.Rmd](https://drive.google.com/file/d/1GPfHPQLhrCayiaO3kmGkVCPjAyAicl1C/view?usp=sharing)) ||[HW6](Solutions/HW_6_Solutions.html)|October 30 (5 PM)|
-| October 30 | [HW7](Homework/HW 7/HW-7.html) ([.Rmd](https://drive.google.com/file/d/1_-m7iz9Ju8oXbrXd4bwN1IvtnMBiyHu4/view?usp=sharing)) ||[HW7](Solutions/HW_7_Solutions.html)|November 6 (5 PM)|
-| November 6   ||  [A4](Analysis/Analysis 4/Analysis-4.html) ([.zip](https://drive.google.com/file/d/1QzPoaCHiYuJcYBZHWgZFVxNFvyvj506K/view?usp=sharing))|[A4](Solutions/Solutions-4.html)|November 13 (5 PM)|
 |          |        |             |           |
 
 # **Final Project Details**
