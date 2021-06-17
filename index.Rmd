@@ -69,17 +69,14 @@ This course is an application-driven introduction to data science. Statistical a
 - Instructor: **[Mario Giacomazzo](http://www.supermariogiacomazzo.com/)**
 
 - Lab Instructors: 
-    - **[Pavlos Zoubouglou](http://stat-or.unc.edu/people/graduate-students-department)**
-    - **[Sam Booth](http://stat-or.unc.edu/people/graduate-students-department)**
-    - **[Kevin O'Connor](http://stat-or.unc.edu/people/graduate-students-department)**
+    - **[Kentaro Hoffman](http://stat-or.unc.edu/people/graduate-students-department)**
+    - **[Haixu Ma](http://stat-or.unc.edu/people/graduate-students-department)**
 
-- Course Syllabus: **[Section 2](https://drive.google.com/file/d/1YOGDAWKjznaFnUW7uZO8nciixMZO9XY5/view?usp=sharing)**
+- Course Syllabus: **[Section 1](Syllabi/STOR 320 Section 2 Syllabus.pdf)**
 
 - Lab Sections:
-    - 320.403: Th from 8AM to 8:50AM by Pavlos
-    - 320.405: Th from 6:30PM to 7:20AM by Kevin
-    - 320.406: Th from 7:30PM to 8:20AM by Kevin
-    - 320.407: Th from 6:30PM to 7:20AM by Sam
+    - 320.400: F from 3PM to 5PM by Kentaro
+    - 320.401: F from 3PM to 5PM by Haixu
     
 - **[University Approved Absences](https://unc-ch.formstack.com/forms/university_approved_absence_request?sso=5f3154c3179f5)**: Fill out the online form.
 
@@ -91,65 +88,57 @@ This course is an application-driven introduction to data science. Statistical a
 
 
 - Zoom Links:
-    - **[Lectures:](https://unc.zoom.us/j/95493131315)** MWF from 1:20PM to 2:10PM
-    - **[Lab 320.403:](https://unc.zoom.us/j/2903979720)** Th from 8AM to 8:50AM
-    - **[Lab 320.405:](https://unc.zoom.us/j/97112351811)** Th from 6:30PM to 7:20AM
-    - **[Lab 320.406:](https://unc.zoom.us/j/97112351811)** Th from 7:30PM to 8:20AM
-    - **[Lab 320.407:](https://unc.zoom.us/j/5891075192)** Th from 6:30PM to 7:20PM
-    - **[Dr. Mario Office Hours:](https://unc.zoom.us/j/96354599519)** T from 9AM to 3PM
-    - **[Pavlos Office Hours:](https://unc.zoom.us/j/2903979720)** M from 9AM to 10AM & F from 2:25PM to 3:25PM 
-    - **[Sam Office Hours:](https://www.google.com/url?q=https://unc.zoom.us/j/5891075192&sa=D&source=calendar&usd=2&usg=AOvVaw1qfNrxxYJgipgmYOTHVJcV)** W from 3PM to 5PM
-    - **[Kevin Office Hours 1:](https://unc.zoom.us/j/95627644766)** Th from 4PM to 5PM
-    - **[Kevin Office Hours 2:](https://unc.zoom.us/j/97664652543)** F from 1PM to 2PM
+    - **[Lectures:](https://unc.zoom.us/j/96699599976?pwd=U2c3MWFMRWttaDRqUCsrU1RMWlZHUT09)** M-Th from 3PM to 5PM
+    - **[Lab 320.400:](https://unc.zoom.us/j/92961532515)** F from 3PM to 5PM
+    - **[Lab 320.401:]()** F from 3PM to 5PM
+    - **[Dr. Mario Office Hours:](https://unc.zoom.us/j/94748742288)** M-F from 8AM to 9AM
+    - **[Kentaro's Office Hours:](https://unc.zoom.us/j/92961532515)** M-F from 5PM to 6PM
+    - **[Haixu's Office Hours:]()** M-F from 1:30PM to 2:30PM
 
 
 # **Course Material**
 
 | Date | Lecture | Slides | Supplement |
 |------|---------|--------:|---------:|
-|Aug. 10| [Introduction](https://unc.zoom.us/rec/share/45c2NLGz50JIXNbjsRHyWLUMRq3fT6a8hHca-PYOy0v8qSDJCL3fFKv04U768GUl?startTime=1597079403000) | [Slides](https://drive.google.com/file/d/1atF84I-_13yvKfzxfNS-XjECwWzrND21/view?usp=sharing)||
-|Aug. 12| [Data Visualization](https://unc.zoom.us/rec/share/3JRtdK3XqVxOSdLz60j5C_cRJK_iaaa80XMdr_EJzB4VI-oHVHbu8yZYGDzIK3gs?startTime=1597252758000) | [Slides](https://drive.google.com/file/d/1TAZ9vnNm-Nz3Aw-GCHfOC0RpmkRus39Z/view?usp=sharing) |[Preview](Supplement/Data Visualization/Supplement.html)([.Rmd](https://drive.google.com/file/d/1-aDRkpDTnW4MngduemT2q_NZHjZ1nJyA/view?usp=sharing))|
-|Aug. 14| [Workflow in RMarkdown](https://unc.zoom.us/rec/share/ue12F470x09IRY33-E_ZS_QYJqvfaaa8hylIrKIIzRoIC75jinsI6mv4OQYieAWW?startTime=1597425448000) |[Slides](https://drive.google.com/file/d/1DDl31rRmNHJ17GCIKuLvGpkymxF8uayH/view?usp=sharing)||
-|Aug. 17| [Data Transformation I](https://unc.zoom.us/rec/share/wdIsc7P_yHNJfs_r1kruHaEsTrXmaaa803dP8vsFyBu_zKpK5csxSjXrtv3bzGpX?startTime=1597684800000) |[Slides](https://drive.google.com/file/d/16N-lYhh0tn2J4SfUBXeVcLvffiAMll56/view?usp=sharing)||
-|Aug. 19| [Data Transformation I (Cont.)](https://unc.zoom.us/rec/share/9-wqLJ3u7UFLTdLJ8HrPefAdGr28eaa81XJIqaYEmU9_Da20wfAwipQlgIs6qts-?startTime=1597857484000) |[Slides](https://drive.google.com/file/d/16N-lYhh0tn2J4SfUBXeVcLvffiAMll56/view?usp=sharing)||
-|Aug. 21| [Data Transformation II](https://unc.zoom.us/rec/share/_u5VBbvX12NLTZ3cyELQV6ItD47bX6a81idI_aELyKIF4iAipjxrB6mpR_3LpXs?startTime=1598030426000) |[Slides](https://drive.google.com/file/d/1dKHDweumhPHaybDO9Q_gFAMEbSfwwWkQ/view?usp=sharing)||
-|Aug. 24| [Going Viral](https://www.youtube.com/watch?v=ERdwqcEEHsQ) |||
-|Aug. 26| [Data Transformation III](https://unc.zoom.us/rec/share/99AvPY3T2mNLZ5HX0HD_Yrd_JdnhT6a8hCQc-fsKmkngZpLnUjElAqsSVn85Fv5o?startTime=1598462353000) |[Slides](https://drive.google.com/file/d/1kUU2hO2YLJUrrNOv4Uy7tOK8GZcPGqL7/view?usp=sharing)||
-|Aug. 28| [Data Transformation IV](https://unc.zoom.us/rec/share/tddVEaHy6GxIa43Lx36DB4AFEYnPX6a8gXAe_fAKzU1ulNzOLhxp_KJO-bSy3u2y?startTime=1598635091000) |[Slides](https://drive.google.com/file/d/1UGMfheOImYQt63gJ0D_rdLKrlgTQZOjK/view?usp=sharing)||
-|Aug. 31| [Exploratory Data Analysis I](https://unc.zoom.us/rec/share/yPRvIuHwymRLT7PqtEvbZpExT8e-X6a8h3VK-vQIy0u2FUBCx0RhIR_QhzLbDe4S?startTime=1598893727000) |[Slides](https://drive.google.com/file/d/1cwBrbCBpG0nvmcfXrlrpHT5BxREVjr0P/view?usp=sharing)||
-|Sep. 2| [Exploratory Data Analysis II](https://unc.zoom.us/rec/share/NdvX5hLuc74EUWQNoV_995h0IVQBaCZ4KWWN4lP4AeX6ILbNtYJV2vLDZ7sgg_Dx.0BQEcKG_iMaqlQdQ?startTime=1599067001000) |[Slides](https://drive.google.com/file/d/1HV2oJ5a_dVLBoSCctZr1ir8wzIgoMGVq/view?usp=sharing)||
-|Sep. 4| [Final Project I](https://unc.zoom.us/rec/share/NBnFEzyrsUqnqNhnKuw2avtAvS6AzqRfForXcraXP4AJMHA8359lJpxAi1H36nvJ.aAI5nvKF_m7QlqwB?startTime=1599239995000) |[Slides](https://drive.google.com/file/d/1VRTM5jW8TjjWHMcizNjjA0ewemwNvyuC/view?usp=sharing)||
-|Sep. 7|No Labor Day|||
-|Sep. 9| [Data Import](https://unc.zoom.us/rec/share/CrAs1SfI55c2iuwtG_pzBhmh7czlPTGVSzEFCURUze66oz00Qj8PuTOSLuxdTXzT.XRzI0NQQ4vx21g6B?startTime=1599671991000) | [Slides](https://drive.google.com/file/d/15KvLv179xjfvYSMuoGDKmwicuT0F2UKG/view?usp=sharing)||
-|Sep. 11| [Tidy Data I](https://unc.zoom.us/rec/share/yIrR3gagbzH2LfRtHZSNPizFx1sTM98cT1qkafSt-c-ssUUkWlZ7iem6Qd8hxwQ.5Dgzy4m3uIwOmnF0?startTime=1599844669000) |[Slides](https://drive.google.com/file/d/1U-TRjdBEHXaU_Q52Xunkxpd0Yie9oZdn/view?usp=sharing)||
-|Sep. 14| [Tidy Data II](https://unc.zoom.us/rec/share/UjaRF2VdKWlZlQtd-OoUEWzDKhcsgCufcI3PagrjEtxFSBtFZ9Zj5gt1RPXY6le9.nHaLvdOqtBtjrfXc?startTime=1600104155000) |[Slides](https://drive.google.com/file/d/1WTsPbnuezz_1ZxI35LwwXPJL7VYlzK8G/view?usp=sharing)||
-|Sep. 16| [Web Scraping I](https://unc.zoom.us/rec/share/2zV7mqSdoCY7ANorLWZiv0vlsU91-Od1m_n_bu-lh3-RW6R6JWjq1z1wB301ip25.G1KdgcEUsnwwn7Op?startTime=1600276826000) |[Slides](https://drive.google.com/file/d/1hSfA_YS7WhV-hkfXhz-_eVWVY6zt5fil/view?usp=sharing)|[Preview](Supplement/Web Scraping 1/Supplement.html)([.Rmd](https://drive.google.com/file/d/1vPXx61kJK87KMH8IsSDdk2C9Jt9xm1WR/view?usp=sharing))|
-|Sep. 18| [Web Scraping II](https://unc.zoom.us/rec/share/dHmWUAamTRiESp0pC45OXh0PcAJySkDgWRPqU4Xvfx3U9nlukFlmKDptOlPpBsjI.PNnMvDGIZkDwmBuD?startTime=1600449250000) |[Slides](https://drive.google.com/file/d/1hSfA_YS7WhV-hkfXhz-_eVWVY6zt5fil/view?usp=sharing)|[Preview](Supplement/Web Scraping 1/Supplement.html)([.Rmd](https://drive.google.com/file/d/1vPXx61kJK87KMH8IsSDdk2C9Jt9xm1WR/view?usp=sharing))|
-|Sep. 21| [Web Scraping III](https://unc.zoom.us/rec/share/njNRZ-tk2a9HcOVoCozeTVihueDulKb3HtQGc74LftQLdlqEsNgLapeFU9BTz1Ct.IMoWZ2cAuygGHnnv?startTime=1600708682000) |[Slides](https://drive.google.com/file/d/10WIwlmZuRakieBpIhg5MGLjodeOLIpCR/view?usp=sharing)|[Preview](Supplement/Web Scraping 2/Supplement.html)([.zip](https://drive.google.com/file/d/14FPd8gUEa0tSk_fUch-NBr-noBhcl9RJ/view?usp=sharing))|
-|Sep. 23| [Joins I](https://unc.zoom.us/rec/share/kAFLgg3DwZohnDi6aBeqtDHxBJVnfwQ3hWhmf09Ixi8picg8_9oCTkAsj-QvxebY.kGI8i94kUxjVtx6S?startTime=1600881607000) |[Slides](https://drive.google.com/file/d/1M88xOe34SWkbm7lCQMNX6RQAm_mhCEjk/view?usp=sharing)||
-|Sep. 25| [Joins II](https://unc.zoom.us/rec/share/S_ASwok-QCjWNEEWRgm7RLj8IU2-uz3LrFxyqJ2X_5rtBSnU5isMaG8WvZKBIhJ2.3rgBIDRkee5x_aP1?startTime=1601054435000) |[Slides](https://drive.google.com/file/d/1wgEmOgwbjbnZbIBaHSiRg_tAbuumAS9I/view?usp=sharing)||
-|Sep. 28| [Final Project II](https://unc.zoom.us/rec/share/gFZmt_cp4sFX52nyYAmATUEx6YiWuaC71AC9MSg4IRWi-LRDw7fe4GnnrfdaS8WJ.3LDM--w5PCHfo2p7?startTime=1601313230000) |[Slides](https://drive.google.com/file/d/1dnBkv6iKBgP2O0hTEJ9YQ-A2Kd8c-0a_/view?usp=sharing)||
-|Sep. 30| [Factors](https://unc.zoom.us/rec/share/XmM81LE5mPvHnvi6wqW9Vj8cKmfCeNQ2JL1KFwFHDHTXGkDe3ubIBPyrf_unNA.10MoMyG2S4_ze_hp?startTime=1601486351000) |[Slides](https://drive.google.com/file/d/1BuLCYOoCn779L9sr4JwgTbh9QiqBJ38P/view?usp=sharing)||
-|Oct. 2| [Factors (Cont.)](https://unc.zoom.us/rec/share/2HP7rUkJrAU2pngF82fzvQevgE1-Y8vz5csTbiP6vaoQ6J9MaAL7MQJNLSF64XBY.H8z2E_LZ2wBcQXXN?startTime=1601659112000) |[Slides](https://drive.google.com/file/d/1BuLCYOoCn779L9sr4JwgTbh9QiqBJ38P/view?usp=sharing)||
-|Oct. 5| [Programming I](https://unc.zoom.us/rec/share/X5XHmKGY7A12WE1NnLXg1yawc2QmXp803Kon-aSJwzIoQhPd-g-3Ym6deKTMtg.vxGhtEAjBGjDW2YM?startTime=1601918423000) |[Slides](https://drive.google.com/file/d/1DmCKrAvXzTvDQ3x3KN1xCtMxzcrZsgBH/view?usp=sharing)| [Preview](Supplement/Programming 1/Supplement.html)([.Rmd](https://drive.google.com/file/d/1FIsPl6dhRmzhGiTmt-ZQIq8Byqf8s4tl/view?usp=sharing)) |
-|Oct. 7| [Programming II](https://unc.zoom.us/rec/share/ExY1-bsjMXrJhJD0kV9uWqGC7qxYriIvcc9WxpiXdvjoxVYA2itLbbLqlKEhGgg0.3nP38b4ZDu_SVQE4?startTime=1602091211000) |[Slides](https://drive.google.com/file/d/1et9VIGvGjLOQ5dXc8cxJkFWRNkH_YCmU/view?usp=sharing)| [Preview](Supplement/Programming 2/Supplement.html)([.Rmd](https://drive.google.com/file/d/1gh1QFV2AaIe7GDD9pxg7p6s2fSpvEAew/view?usp=sharing)) |
-|Oct. 9| [Mental Health Day](https://www.youtube.com/watch?v=gwmv_KGdceA) |||
-|Oct. 12| [Programming III](https://unc.zoom.us/rec/share/Oy1Z7RR9lpD3emdCbM6VnSWudvAAtDSntBHyplfcJC4009XcFlAzxHVZMKNEjFjQ.x9S5VcoJm0qqbygZ?startTime=1602522993000) |[Slides](https://drive.google.com/file/d/1AWk4fcXrVkM4Xm_GxEPrYwONXGpKvCxw/view?usp=sharing)||
-|Oct. 14| [Programming IV](https://unc.zoom.us/rec/share/Er5foVTDsRDWTaGzIpSJI0-QUT8rUpm1MekbROQP9iy74-4qJs3YzBmKY6kc0GCN.rMaPqrhBlqksuYyr?startTime=1602695996000) |[Slides](https://drive.google.com/file/d/1Sptc4vvRs5MfCgr_uqRS1NHX6fkD0-Wl/view?usp=sharing)||
-|Oct. 16| [Modeling I](https://unc.zoom.us/rec/share/62Hg-e1XmdU6xlTsxyIxfm7F3jV6WS_aFfzaaDh-xlfD8PMIfqtpKZ8kVzYFC83X.N3a2qL06uLZRU8cz?startTime=1602868394000) |[Slides](https://drive.google.com/file/d/1HsXbt9c5GFkSv8sRTC5XlTL_4Q8b44dT/view?usp=sharing)||
-|Oct. 19| [Research Week](https://unc.zoom.us/rec/share/EAn-HC2Q_xYocnVw2CynyBzwhgEWuUqla5Y8Y-E64UOI_7n3b9IR9KmclnV3QkRi.BnhZbwcY0OxAYHpG?startTime=1603127997000) |||
-|Oct. 21| [Modeling II](https://unc.zoom.us/rec/share/xZCfmOqjztp8hj-9xnvAYnF96ZHS1VDpjyG0m2XsLnbyF3fBUMT7no3XlvSyiZ0a.zKXUx7rHjlb7KAVo?startTime=1603300774000) |[Slides](https://drive.google.com/file/d/1uKhequdrElCylMVL33G7DA1Bc-z3kHIq/view?usp=sharing)| [Preview](Supplement/Modeling 2/Supplement.html)([.zip](https://drive.google.com/file/d/1v9KMXdLArGP1AWrQhrGPjOU44LjZ0Noh/view?usp=sharing)) |
-|Oct. 23| [Modeling III](https://unc.zoom.us/rec/share/yyvBCWg2pFB2SrS-YMBpqrGDQWqoczhZnfEu0iqWp0nB6YiTPqHTF3mscTZiJdfN.4Ueebkti8RqNIn1I?startTime=1603473569000) |[Slides](https://drive.google.com/file/d/1N9lLVOSXYImIIgKVYfHY0STJ076WczxV/view?usp=sharing)| [Preview](Supplement/Modeling 3/Supplement.html)([.zip](https://drive.google.com/file/d/15hBJp-W3BtBiiQ1GVg3awt8y5064CKKh/view?usp=sharing)) |
-|Oct. 26| [Modeling IV](https://unc.zoom.us/rec/share/GxjhJbt12LwrQp_4CTDrNGMg2Z2mfk27sGSRVxr0hp-mpMeONqDaZy1hEgm76MXY.ZDDQNpE2SBjpcRvP?startTime=1603732772000) |[Slides](https://drive.google.com/file/d/17mIXSqjMvuVLIYLrNhpNeuqMorcfYwUd/view?usp=sharing)| [Preview](Supplement/Modeling 4/Supplement.html)([.zip](https://drive.google.com/file/d/1gwi-J7pdjXWS69Bu-AVKv4Xu1hVQrjSa/view?usp=sharing)) |
-|Oct. 28| [Modeling V](https://unc.zoom.us/rec/share/ZQnTHLgYjhlFl159DQsoeLXvDNuhHd02VQfPDtLtPAQ0g-_TLWI4IUapDNB1vLi8.YzvKtGpe0WoxYsk1?startTime=1603905603000) |[Slides](https://drive.google.com/file/d/12o1WJNz6uSfLbl-_V2ITamxfhgLEJydM/view?usp=sharing)||
-|Oct. 30| [Modeling VI](https://unc.zoom.us/rec/share/L57JQCXQJ6aQb6Jcoi6gme4M7HLh0xUtLgh_Dmu4OSW3SEjOpq9XAFWyBy7LBHeq.jss3eJ5Blrm34hyT?startTime=1604078240000) |[Slides](https://drive.google.com/file/d/1-yDT0up68BCgNpU3r5pSFOFeJ5Mejpuz/view?usp=sharing)||
-|Nov. 2| [Modeling VII](https://unc.zoom.us/rec/share/sNvbRVWhBgkdkHa5KUk9PEuAUedvviFsEbktmKoR0x_rdoDk3q5WZx9IW2isugtw.zd93n7A__0MRqwan?startTime=1604341200000) |[Slides](https://drive.google.com/file/d/1Bi04Ytc6JqXkUcU7C-MeeOGtUK9Tr5cd/view?usp=sharing)| [Preview](Supplement/Modeling 7/Supplement.html)([.Rmd](https://drive.google.com/file/d/1ON8XxM28xfq_Mhc04-NuJs_mm6dWQP-e/view?usp=sharing)) |
-|Nov. 4| [Modeling VIII](https://unc.zoom.us/rec/share/p95DbG-_KWAH_dzq_mmP_zA--UY3QPsjHdn1NxEptArfn0Km-mkSC6PxvadJbqz-.3aIy1m0flF2TE56R?startTime=1604514023000) |[Slides](https://drive.google.com/file/d/1zp-zG4ii5PZdlpaq95v5S9MO5LsEXh1X/view?usp=sharing)| [Preview](Supplement/Modeling 8/Supplement.html)([.Rmd](https://drive.google.com/file/d/15JGWTShjR0T6GTv4ogMfpW5sb7jnqiXV/view?usp=sharing)) |
-|Nov. 6| [Modeling IX]() |[Slides](https://drive.google.com/file/d/1DgDOKe2Nj8hqZJCUAlYeatb0mGtGqeGC/view?usp=sharing)| [Preview](Supplement/Modeling 9/Supplement.html)([.Rmd](https://drive.google.com/file/d/1IhIUfUsYm889-q8tHIH5jboHGSldKr83/view?usp=sharing)) |
-|Nov. 9| [R Shiny]() |[Slides](https://drive.google.com/file/d/1tzDNVSmNEsfajomAzeyKbN-zMWp0LXZp/view?usp=sharing)|[Preview](https://drmariogiacomazzo.shinyapps.io/Gapminder_Part3/)([.zip](https://drive.google.com/file/d/1B-3RH_7gQmK-JWVHe7Xf4qA39NR-5XBd/view?usp=sharing))|
-|Nov. 11| [Advanced Shiny ]()([Frances Tong](https://twitter.com/francestong?lang=en)) |[Slides](https://francestong.shinyapps.io/stor320_shiny/)||
-|Nov. 13| [Data Ethics]() |[Slides](https://drive.google.com/file/d/1Hji5bw9x9NsjUuOL2qUVAr4nfbc3dn74/view?usp=sharing)||
-|Nov. 16|Final Project Work Day|||
+|June 28| Introduction | [Slides](Lecture/Introduction/Intro_Lecture.pdf)||
+||Data Visualization|[Slides](Lecture/Data_Visualization_Lecture.pdf)|[Preview](Supplement/Data Visualization/Supplement.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Supplement/Data%20Visualization/Supplement.Rmd))|
+|June 29| Workflow in RMarkdown | [Slides](Lecture/Workflow/Workflow_Lecture.pdf) ||
+||Data Transformation I| [Slides](Lecture/Data Transormation 1/Data_Transformation_1_Lecture.pdf) ||
+|June 30| Data Transformation II | [Slides](Lecture/Data Transormation 2/Data_Transformation_2_Lecture.pdf)||
+|| Data Transformation III | [Slides](Lecture/Data Transormation 3/Data_Transformation_3_Lecture.pdf)||
+|| Data Transformation IV | [Slides](Lecture/Data Transormation 4/Data_Transformation_4_Lecture.pdf)||
+|July 1| Exploratory Data Analysis I  | [Slides](Lecture/Exploratory Data Analysis 1/Exploratory_Data_Analysis_1_Lecture.pdf) ||
+|| Exploratory Data Analysis II |[Slides](Lecture/Exploratory Data Analysis 2/Exploratory_Data_Analysis_2_Lecture.pdf)||
+||Final Project I| [Slides](Lecture/Final Project 1/Final_Project_1_Lecture.pdf)||
+|July 5| [No Class](https://www.youtube.com/watch?v=0E4haJHYUJw) |||
+|July 6|Final Project I| [Slides](Lecture/Final Project 1/Final_Project_1_Lecture.pdf)||
+|| Data Import | [Slides](Lecture/Data Import/Data_Import_Lecture.pdf)||
+|July 7|Tidy Data 1| ||
+|| Tidy Data 2 |||
+|July 8|Web Scraping I| ||
+|| Web Scraping II |||
+|July 12|Joins I| ||
+|| Joins II |||
+|July 13| Final Project II| ||
+|| Factors |||
+|July 14|Programming I| ||
+|| Programming II|||
+|July 15| Programming III| ||
+|| Programming IV| ||
+|July 19|Modeling 1|||
+||Modeling 2| ||
+|July 20| Modeling 3|||
+||Modeling 4| ||
+|July 21| Modeling 5|||
+||Modeling 6| ||
+|July 22|Modeling 7|||
+||Modeling 8| ||
+|July 26|Modeling 9|||
+|July 27| R Shiny |||
+||Data Ethics| ||
+|July 28|Final Paper|||
+|July 29|Final Paper|||
+||| ||
 |||||
 
 
@@ -160,7 +149,18 @@ All HW and Analysis assignments are to be submitted via **[Sakai](https://sakai.
 
 | Assigned | Homework (HW) | Analysis (A) |Solutions| Due Date (Time) |
 |----------|:--------:|:-------------:|:-------------:|----------------:|
-|          |        |             |           |
+| June 28  | [HW1](Homework/HW1.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Homework/HW%201/HW%201.Rmd))       |       |           |   June 30 (5:00 PM)     |
+| June 30  | [HW2](Homework/HW2.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Homework/HW%202/HW%202.Rmd))       |       |           |   July 2 (5:00 PM)     |
+| July 2  |        | [A1]()([.Rmd]())      |           |   July 7 (5:00 PM)     |
+| July 7  | [HW3](Homework/HW3.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Homework/HW%203/HW%203.Rmd))       |       |           |   July 9 (5:00 PM)     |
+| July 9  | [HW4](Homework/HW4.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Homework/HW%204/HW%204.Rmd))       |       |           |   July 12 (5:00 PM)     |
+| July 12  |  | [A2]()([.Rmd]())        |           |   July 14 (5:00 PM)     |
+| July 14  | [HW5](Homework/HW5.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Homework/HW%205/HW%205.Rmd))       |       |           |   July 16 (5:00 PM)     |
+| July 16  |  | [A3]()([.Rmd]())        |           |   July 19 (5:00 PM)     |
+| July 19  | [HW6](Homework/HW6.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Homework/HW%206/HW%206.Rmd))       |       |           |   July 21 (5:00 PM)     |
+| July 21  | [HW7](Homework/HW7.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Homework/HW%207/HW%207.Rmd))       |       |           |   July 23 (5:00 PM)     |
+| July 23  |      | [A4]()([.Rmd]())          |           |   July 28 (5:00 PM)     |
+|          |        |             |           |      |
 
 # **Final Project Details**
 
@@ -168,7 +168,7 @@ For the final project, each section of STOR 320 will be divided (ideally) into r
 
 ## Research Group Assignments
 
-To find your research group, see the **[Spreadsheet](https://docs.google.com/spreadsheets/d/1qzf9iBSHhMaBxhliKLp1mzdvyKBvKUkBMIbyt0ddwms/edit?usp=sharing)** sponsored by Google.
+To find your research group, see the **[Spreadsheet]()** sponsored by Google.
 
 ## Four Roles
 
@@ -180,7 +180,7 @@ Although everyone is responsible for the entire project, each member of the grou
 
 - **The Orator(s):** Give a Captivating 3-5 Minute Slideshow Presentation During Final Exam Day
 
-- **The Deliverer:** Deliver Your Group from Evil by Editing and Submitting the Exploratory Analysis and Final Written Paper via SAKAI Before the Deadline
+- **The Deliverer:** Deliver Your Group from Evil by Editing and Submitting all Deliverables to Sakai
 
 ## Four Parts Including Point Values
 
@@ -209,10 +209,10 @@ This final project will be divided into four parts worth a total of 100 points. 
 
 | Part | Description |Method of Submission| Due Date (Time) |
 |------|-------------|-------------------|----------------:|
-| P1  | Project Proposal| Zoom + Sakai | September 11 (5PM)|
-| P2  | Exploratory Data Analysis | Zoom + Sakai | October 9 (5PM)|
-| P3  | Final Written Paper|Sakai| November 16 (5PM)|
-| P4  | Final Presentation|Sakai + Class| November 23 (12PM)|
+| P1  | Project Proposal| Zoom + Sakai | July 8 (11:59PM)|
+| P2  | Exploratory Data Analysis | Zoom + Sakai | July 22 (11:59PM)|
+| P3  | Final Written Paper|Sakai| July 29 (11:59PM)|
+| P4  | Final Presentation|Sakai + Class| August 3 (3:00PM)|
 ||||
 
 ## Above Average Final Projects
@@ -264,3 +264,19 @@ This final project will be divided into four parts worth a total of 100 points. 
 - **[R Shiny Cheat Sheet](https://shiny.rstudio.com/images/shiny-cheatsheet.pdf)**
 
 This page was last updated on `r Sys.time()` Eastern Time.
+
+
+
+<!-- |Oct. 16| [Modeling I](https://unc.zoom.us/rec/share/62Hg-e1XmdU6xlTsxyIxfm7F3jV6WS_aFfzaaDh-xlfD8PMIfqtpKZ8kVzYFC83X.N3a2qL06uLZRU8cz?startTime=1602868394000) |[Slides](https://drive.google.com/file/d/1HsXbt9c5GFkSv8sRTC5XlTL_4Q8b44dT/view?usp=sharing)|| -->
+<!-- |Oct. 21| [Modeling II](https://unc.zoom.us/rec/share/xZCfmOqjztp8hj-9xnvAYnF96ZHS1VDpjyG0m2XsLnbyF3fBUMT7no3XlvSyiZ0a.zKXUx7rHjlb7KAVo?startTime=1603300774000) |[Slides](https://drive.google.com/file/d/1uKhequdrElCylMVL33G7DA1Bc-z3kHIq/view?usp=sharing)| [Preview](Supplement/Modeling 2/Supplement.html)([.zip](https://drive.google.com/file/d/1v9KMXdLArGP1AWrQhrGPjOU44LjZ0Noh/view?usp=sharing)) | -->
+<!-- |Oct. 23| [Modeling III](https://unc.zoom.us/rec/share/yyvBCWg2pFB2SrS-YMBpqrGDQWqoczhZnfEu0iqWp0nB6YiTPqHTF3mscTZiJdfN.4Ueebkti8RqNIn1I?startTime=1603473569000) |[Slides](https://drive.google.com/file/d/1N9lLVOSXYImIIgKVYfHY0STJ076WczxV/view?usp=sharing)| [Preview](Supplement/Modeling 3/Supplement.html)([.zip](https://drive.google.com/file/d/15hBJp-W3BtBiiQ1GVg3awt8y5064CKKh/view?usp=sharing)) | -->
+<!-- |Oct. 26| [Modeling IV](https://unc.zoom.us/rec/share/GxjhJbt12LwrQp_4CTDrNGMg2Z2mfk27sGSRVxr0hp-mpMeONqDaZy1hEgm76MXY.ZDDQNpE2SBjpcRvP?startTime=1603732772000) |[Slides](https://drive.google.com/file/d/17mIXSqjMvuVLIYLrNhpNeuqMorcfYwUd/view?usp=sharing)| [Preview](Supplement/Modeling 4/Supplement.html)([.zip](https://drive.google.com/file/d/1gwi-J7pdjXWS69Bu-AVKv4Xu1hVQrjSa/view?usp=sharing)) | -->
+<!-- |Oct. 28| [Modeling V](https://unc.zoom.us/rec/share/ZQnTHLgYjhlFl159DQsoeLXvDNuhHd02VQfPDtLtPAQ0g-_TLWI4IUapDNB1vLi8.YzvKtGpe0WoxYsk1?startTime=1603905603000) |[Slides](https://drive.google.com/file/d/12o1WJNz6uSfLbl-_V2ITamxfhgLEJydM/view?usp=sharing)|| -->
+<!-- |Oct. 30| [Modeling VI](https://unc.zoom.us/rec/share/L57JQCXQJ6aQb6Jcoi6gme4M7HLh0xUtLgh_Dmu4OSW3SEjOpq9XAFWyBy7LBHeq.jss3eJ5Blrm34hyT?startTime=1604078240000) |[Slides](https://drive.google.com/file/d/1-yDT0up68BCgNpU3r5pSFOFeJ5Mejpuz/view?usp=sharing)|| -->
+<!-- |Nov. 2| [Modeling VII](https://unc.zoom.us/rec/share/sNvbRVWhBgkdkHa5KUk9PEuAUedvviFsEbktmKoR0x_rdoDk3q5WZx9IW2isugtw.zd93n7A__0MRqwan?startTime=1604341200000) |[Slides](https://drive.google.com/file/d/1Bi04Ytc6JqXkUcU7C-MeeOGtUK9Tr5cd/view?usp=sharing)| [Preview](Supplement/Modeling 7/Supplement.html)([.Rmd](https://drive.google.com/file/d/1ON8XxM28xfq_Mhc04-NuJs_mm6dWQP-e/view?usp=sharing)) | -->
+<!-- |Nov. 4| [Modeling VIII](https://unc.zoom.us/rec/share/p95DbG-_KWAH_dzq_mmP_zA--UY3QPsjHdn1NxEptArfn0Km-mkSC6PxvadJbqz-.3aIy1m0flF2TE56R?startTime=1604514023000) |[Slides](https://drive.google.com/file/d/1zp-zG4ii5PZdlpaq95v5S9MO5LsEXh1X/view?usp=sharing)| [Preview](Supplement/Modeling 8/Supplement.html)([.Rmd](https://drive.google.com/file/d/15JGWTShjR0T6GTv4ogMfpW5sb7jnqiXV/view?usp=sharing)) | -->
+<!-- |Nov. 6| [Modeling IX]() |[Slides](https://drive.google.com/file/d/1DgDOKe2Nj8hqZJCUAlYeatb0mGtGqeGC/view?usp=sharing)| [Preview](Supplement/Modeling 9/Supplement.html)([.Rmd](https://drive.google.com/file/d/1IhIUfUsYm889-q8tHIH5jboHGSldKr83/view?usp=sharing)) | -->
+<!-- |Nov. 9| [R Shiny]() |[Slides](https://drive.google.com/file/d/1tzDNVSmNEsfajomAzeyKbN-zMWp0LXZp/view?usp=sharing)|[Preview](https://drmariogiacomazzo.shinyapps.io/Gapminder_Part3/)([.zip](https://drive.google.com/file/d/1B-3RH_7gQmK-JWVHe7Xf4qA39NR-5XBd/view?usp=sharing))| -->
+<!-- |Nov. 11| [Advanced Shiny ]()([Frances Tong](https://twitter.com/francestong?lang=en)) |[Slides](https://francestong.shinyapps.io/stor320_shiny/)|| -->
+<!-- |Nov. 13| [Data Ethics]() |[Slides](https://drive.google.com/file/d/1Hji5bw9x9NsjUuOL2qUVAr4nfbc3dn74/view?usp=sharing)|| -->
+<!-- |Nov. 16|Final Project Work Day||| -->
