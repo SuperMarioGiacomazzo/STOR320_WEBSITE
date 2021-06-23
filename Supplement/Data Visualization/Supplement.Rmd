@@ -38,7 +38,7 @@ In this dataset, there are 83 observations and 11 variables.
 
 # ggplot Discovery
 
-##Barplot Examples
+## Barplot Examples
 ```{r}
 ggplot(data=msleep2) +
   geom_bar(aes(x=vore))

@@ -100,8 +100,8 @@ This course is an application-driven introduction to data science. Statistical a
 
 | Date | Lecture | Slides | Supplement |
 |------|---------|--------:|---------:|
-|June 28| Introduction | [Slides](Lecture/Introduction/Intro_Lecture.pdf)||
-||Data Visualization|[Slides](Lecture/Data_Visualization_Lecture.pdf)|[Preview](Supplement/Data Visualization/Supplement.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Supplement/Data%20Visualization/Supplement.Rmd))|
+|June 28| [Introduction](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=445d8ab1-6f83-4302-af45-ad500023e7ed) | [Slides](Lecture/Introduction/Intro_Lecture.pdf)||
+||[Data Visualization](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=445d8ab1-6f83-4302-af45-ad500023e7ed)|[Slides](Lecture/Data_Visualization_Lecture.pdf)|[Preview](Supplement/Data Visualization/Supplement.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Supplement/Data%20Visualization/Supplement.Rmd))|
 |June 29| Workflow in RMarkdown | [Slides](Lecture/Workflow/Workflow_Lecture.pdf) ||
 ||Data Transformation I| [Slides](Lecture/Data Transormation 1/Data_Transformation_1_Lecture.pdf) ||
 |June 30| Data Transformation II | [Slides](Lecture/Data Transormation 2/Data_Transformation_2_Lecture.pdf)||
