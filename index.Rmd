@@ -91,7 +91,7 @@ This course is an application-driven introduction to data science. Statistical a
     - **[Lectures:](https://unc.zoom.us/j/96699599976?pwd=U2c3MWFMRWttaDRqUCsrU1RMWlZHUT09)** M-Th from 3PM to 5PM, (PW: supermario)
     - **[Lab 320.400:](https://unc.zoom.us/j/92961532515)** F from 3PM to 5PM
     - **[Lab 320.401:](https://unc.zoom.us/j/98250322923?from=addon)** F from 3PM to 5PM
-    - **[Dr. Mario Office Hours:](https://unc.zoom.us/j/94748742288)** M-F from 8AM to 9AM
+    - **[Dr. Mario Office Hours:](https://unc.zoom.us/j/94748742288)** M-F from 9AM to 10AM
     - **[Kentaro's Office Hours:](https://unc.zoom.us/j/92961532515)** M-F from 5PM to 6PM
     - **[Haixu's Office Hours:](https://unc.zoom.us/j/98250322923?from=addon)** M-F from 1:30PM to 2:30PM
 
@@ -149,16 +149,16 @@ All HW and Analysis assignments are to be submitted via **[Sakai](https://sakai.
 
 | Assigned | Homework (HW) | Analysis (A) |Solutions| Due Date (Time) |
 |----------|:--------:|:-------------:|:-------------:|----------------:|
-| June 28  | [HW1](Homework/HW1.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Homework/HW%201/HW%201.Rmd))       |       |           |   June 30 (5:00 PM)     |
-| June 30  | [HW2](Homework/HW2.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Homework/HW%202/HW%202.Rmd))       |       |           |   July 2 (5:00 PM)     |
+| June 28  | [HW1](Homework/HW 1/HW-1.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Homework/HW%201/HW%201.Rmd))       |       |           |   June 30 (5:00 PM)     |
+| June 30  | [HW2](Homework/HW 2/HW-2.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Homework/HW%202/HW%202.Rmd))       |       |           |   July 2 (5:00 PM)     |
 | July 2  |        | [A1]()([.Rmd]())      |           |   July 7 (5:00 PM)     |
-| July 7  | [HW3](Homework/HW3.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Homework/HW%203/HW%203.Rmd))       |       |           |   July 9 (5:00 PM)     |
-| July 9  | [HW4](Homework/HW4.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Homework/HW%204/HW%204.Rmd))       |       |           |   July 12 (5:00 PM)     |
+| July 7  | [HW3](Homework/HW 3/HW-3.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Homework/HW%203/HW%203.Rmd))       |       |           |   July 9 (5:00 PM)     |
+| July 9  | [HW4](Homework/HW 4/HW-4.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Homework/HW%204/HW%204.Rmd))       |       |           |   July 12 (5:00 PM)     |
 | July 12  |  | [A2]()([.Rmd]())        |           |   July 14 (5:00 PM)     |
-| July 14  | [HW5](Homework/HW5.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Homework/HW%205/HW%205.Rmd))       |       |           |   July 16 (5:00 PM)     |
+| July 14  | [HW5](Homework/HW 5/HW-5.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Homework/HW%205/HW%205.Rmd))       |       |           |   July 16 (5:00 PM)     |
 | July 16  |  | [A3]()([.Rmd]())        |           |   July 19 (5:00 PM)     |
-| July 19  | [HW6](Homework/HW6.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Homework/HW%206/HW%206.Rmd))       |       |           |   July 21 (5:00 PM)     |
-| July 21  | [HW7](Homework/HW7.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Homework/HW%207/HW%207.Rmd))       |       |           |   July 23 (5:00 PM)     |
+| July 19  | [HW6](Homework/HW 6/HW-6.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Homework/HW%206/HW%206.Rmd))       |       |           |   July 21 (5:00 PM)     |
+| July 21  | [HW7](Homework/HW 7/HW-7.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Homework/HW%207/HW%207.Rmd))       |       |           |   July 23 (5:00 PM)     |
 | July 23  |      | [A4]()([.Rmd]())          |           |   July 28 (5:00 PM)     |
 |          |        |             |           |      |
 
@@ -251,9 +251,9 @@ This final project will be divided into four parts worth a total of 100 points. 
 
 - **[Instructions for Accessing R Studio on the UNC Server](https://drive.google.com/file/d/1ATZO-wpuqzHbXVnJqm7wXpt-yfMbo2Jy/view?usp=sharing)**
 
-- **[Rmarkdown Cheat Sheet](https://www.rstudio.com/wp-content/uploads/2016/03/rmarkdown-cheatsheet-2.0.pdf)**
+- **[Rmarkdown Cheat Sheet](https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf)**
 
-- **[ggplot2 Cheat Sheet](https://www.rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf)**
+- **[ggplot2 Cheat Sheet](https://github.com/rstudio/cheatsheets/raw/master/data-visualization-2.1.pdf)**
 
 - **[Color Options](https://paulvanderlaken.files.wordpress.com/2017/08/ggplot2-color-colours-names-cheatsheet.png?w=559&amp;h=1024)**
 
