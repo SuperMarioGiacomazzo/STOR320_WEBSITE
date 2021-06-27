@@ -104,12 +104,12 @@ This course is an application-driven introduction to data science. Statistical a
 ||[Data Visualization](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=445d8ab1-6f83-4302-af45-ad500023e7ed)|[Slides](Lecture/Data_Visualization_Lecture.pdf)|[Preview](Supplement/Data Visualization/Supplement.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Supplement/Data%20Visualization/Supplement.Rmd))|
 |June 29| [Workflow in RMarkdown](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2c971d4c-fc53-4c59-b91e-ad500134e423) | [Slides](Lecture/Workflow/Workflow_Lecture.pdf) ||
 || [Data Transformation I](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2c971d4c-fc53-4c59-b91e-ad500134e423) | [Slides](Lecture/Data Transormation 1/Data_Transformation_1_Lecture.pdf) ||
-|June 30| Data Transformation II | [Slides](Lecture/Data Transormation 2/Data_Transformation_2_Lecture.pdf)||
-|| Data Transformation III | [Slides](Lecture/Data Transormation 3/Data_Transformation_3_Lecture.pdf)||
-|| Data Transformation IV | [Slides](Lecture/Data Transormation 4/Data_Transformation_4_Lecture.pdf)||
-|July 1| Exploratory Data Analysis I  | [Slides](Lecture/Exploratory Data Analysis 1/Exploratory_Data_Analysis_1_Lecture.pdf) ||
-|| Exploratory Data Analysis II |[Slides](Lecture/Exploratory Data Analysis 2/Exploratory_Data_Analysis_2_Lecture.pdf)||
-||Final Project I| [Slides](Lecture/Final Project 1/Final_Project_1_Lecture.pdf)||
+|June 30| [Data Transformation II](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=96c34d13-a772-428d-a213-ad500164b1ec) | [Slides](Lecture/Data Transormation 2/Data_Transformation_2_Lecture.pdf)||
+|| [Data Transformation III](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=96c34d13-a772-428d-a213-ad500164b1ec) | [Slides](Lecture/Data Transormation 3/Data_Transformation_3_Lecture.pdf)||
+|| [Data Transformation IV](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=96c34d13-a772-428d-a213-ad500164b1ec) | [Slides](Lecture/Data Transormation 4/Data_Transformation_4_Lecture.pdf)||
+|July 1| [Exploratory Data Analysis I](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b29b7d84-7fa7-45a2-b480-ad5100382e0e)  | [Slides](Lecture/Exploratory Data Analysis 1/Exploratory_Data_Analysis_1_Lecture.pdf) ||
+|| [Exploratory Data Analysis II](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b29b7d84-7fa7-45a2-b480-ad5100382e0e) |[Slides](Lecture/Exploratory Data Analysis 2/Exploratory_Data_Analysis_2_Lecture.pdf)||
+|| [Final Project I](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b29b7d84-7fa7-45a2-b480-ad5100382e0e) | [Slides](Lecture/Final Project 1/Final_Project_1_Lecture.pdf)||
 |July 5| [No Class](https://www.youtube.com/watch?v=0E4haJHYUJw) |||
 |July 6|Final Project I| [Slides](Lecture/Final Project 1/Final_Project_1_Lecture.pdf)||
 || Data Import | [Slides](Lecture/Data Import/Data_Import_Lecture.pdf)||
