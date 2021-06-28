@@ -93,7 +93,7 @@ This course is an application-driven introduction to data science. Statistical a
     - **[Lab 320.401:](https://unc.zoom.us/j/98250322923?from=addon)** F from 3PM to 5PM
     - **[Dr. Mario Office Hours:](https://unc.zoom.us/j/94748742288)** M-F from 9AM to 10AM
     - **[Kentaro's Office Hours:](https://unc.zoom.us/j/92961532515)** M-F from 5PM to 6PM
-    - **[Haixu's Office Hours:](https://unc.zoom.us/j/95473527183)** M-F from 1:30PM to 2:30PM
+    - **[Haixu's Office Hours:](https://unc.zoom.us/j/98250322923?from=addon)** M-F from 1:30PM to 2:30PM **[Wed. Only](https://unc.zoom.us/j/95473527183)** 
 
 
 # **Course Material**
