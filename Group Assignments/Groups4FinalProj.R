@@ -4,34 +4,27 @@ library(tidyverse)
 library(readxl)
 
 #Read Rosters
-LAB3=read_excel("STOR_320_403.xlsx")
-LAB5=read_excel("STOR_320_405.xlsx")
-LAB6=read_excel("STOR_320_406.xlsx")
-LAB7=read_excel("STOR_320_407.xlsx")
+LAB0=read_excel("STOR320_400.xlsx")
+LAB1=read_excel("STOR320_401.xlsx")
+
 
 #Gather Names
-LAB3_NAMES=LAB3[6:dim(LAB3)[1],1]$STOR320.002.FA20
-LAB5_NAMES=LAB5[6:dim(LAB5)[1],1]$STOR320.002.FA20
-LAB6_NAMES=LAB6[6:dim(LAB6)[1],1]$STOR320.002.FA20
-LAB7_NAMES=LAB7[6:dim(LAB7)[1],1]$STOR320.002.FA20
+LAB0_NAMES=LAB0[6:dim(LAB0)[1],1]$STOR320.001.S221
+LAB1_NAMES=LAB1[6:dim(LAB1)[1],1]$STOR320.001.S221
 
 #Random Assignment
 set.seed(216,sample.kind="Rejection")
-LAB3_NAMES_2=sample(LAB3_NAMES,size=length(LAB3_NAMES))
-LAB5_NAMES_2=sample(LAB5_NAMES,size=length(LAB5_NAMES))
-LAB6_NAMES_2=sample(LAB6_NAMES,size=length(LAB6_NAMES))
-LAB7_NAMES_2=sample(LAB7_NAMES,size=length(LAB7_NAMES))
+LAB0_NAMES_2=sample(LAB0_NAMES,size=length(LAB0_NAMES))
+LAB1_NAMES_2=sample(LAB1_NAMES,size=length(LAB1_NAMES))
 
 #Group Numbers
-LAB3_GROUPS=rep(1:5,length=length(LAB3_NAMES_2))
-LAB5_GROUPS=rep(6:10,length=length(LAB5_NAMES_2))
-LAB6_GROUPS=rep(11:15,length=length(LAB6_NAMES_2))
-LAB7_GROUPS=rep(16:19,length=length(LAB7_NAMES_2))
+LAB0_GROUPS=rep(1:3,each=5,length=length(LAB0_NAMES_2))
+LAB1_GROUPS=rep(4:5,each=5,length=length(LAB1_NAMES_2))
 
 #Bring Names with Groups
 
-GROUPS=tibble(Names=c(LAB3_NAMES_2,LAB5_NAMES_2,LAB6_NAMES_2,LAB7_NAMES_2),
-       Groups=c(LAB3_GROUPS,LAB5_GROUPS,LAB6_GROUPS,LAB7_GROUPS)) %>% 
+GROUPS=tibble(Names=c(LAB0_NAMES_2,LAB1_NAMES_2),
+       Groups=c(LAB0_GROUPS,LAB1_GROUPS)) %>% 
         arrange(Groups)
 
 #Save Datasets

@@ -111,31 +111,31 @@ This course is an application-driven introduction to data science. Statistical a
 || [Exploratory Data Analysis II](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b29b7d84-7fa7-45a2-b480-ad5100382e0e) |[Slides](Lecture/Exploratory Data Analysis 2/Exploratory_Data_Analysis_2_Lecture.pdf)||
 || [Final Project I](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b29b7d84-7fa7-45a2-b480-ad5100382e0e) | [Slides](Lecture/Final Project 1/Final_Project_1_Lecture.pdf)||
 |July 5| [No Class](https://www.youtube.com/watch?v=0E4haJHYUJw) |||
-|July 6|Final Project I| [Slides](Lecture/Final Project 1/Final_Project_1_Lecture.pdf)||
-|| Data Import | [Slides](Lecture/Data Import/Data_Import_Lecture.pdf)||
-|July 7|Tidy Data 1| ||
-|| Tidy Data 2 |||
-|July 8|Web Scraping I| ||
-|| Web Scraping II |||
-|July 12|Joins I| ||
-|| Joins II |||
-|July 13| Final Project II| ||
-|| Factors |||
-|July 14|Programming I| ||
-|| Programming II|||
-|July 15| Programming III| ||
+|July 6| Data Import | [Slides](Lecture/Data Import/Data_Import_Lecture.pdf)||
+||Tidy Data 1| [Slides](Lecture/Tidy Data 1/Tidy_Data_1_Lecture.pdf) ||
+|July 7| Tidy Data 2 | [Slides](Lecture/Tidy Data 2/Tidy_Data_2_Lecture.pdf) ||
+||Web Scraping I| [Slides](Lecture/Web Scraping 1/Web_Scraping_1_Lecture.pdf) | [Preview](Supplement/Web Scraping 1/Supplement.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Supplement/Web%20Scraping%201/Supplement.Rmd)) |
+|July 8| Web Scraping II | [Slides](Lecture/Web Scraping 2/Web_Scraping_2_Lecture.pdf) | [Preview](Supplement/Web Scraping 2/Supplement.html)([.zip](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Supplement/Web%20Scraping%202/Supplement.zip)) |
+||Joins I| [Slides](Lecture/Joins 1/Joins_1_Lecture.pdf) ||
+|July 12| Joins II | [Slides](Lecture/Joins 2/Joins_2_Lecture.pdf) ||
+|| Final Project II| [Slides](Lecture/Final Project 2/Final_Project_2_Lecture.pdf) ||
+|July 13| Factors |||
+||Programming I| ||
+|July 14| Programming II|||
+|| Programming III| ||
 || Programming IV| ||
-|July 19|Modeling 1|||
+|July 15|Modeling 1|||
 ||Modeling 2| ||
-|July 20| Modeling 3|||
+|July 19| Modeling 3|||
 ||Modeling 4| ||
-|July 21| Modeling 5|||
+|July 20| Modeling 5|||
 ||Modeling 6| ||
-|July 22|Modeling 7|||
+|July 21|Modeling 7|||
 ||Modeling 8| ||
-|July 26|Modeling 9|||
-|July 27| R Shiny |||
+|July 22|Modeling 9|||
+|July 26| R Shiny |||
 ||Data Ethics| ||
+|July 27|Final Paper|||
 |July 28|Final Paper|||
 |July 29|Final Paper|||
 ||| ||
@@ -168,7 +168,20 @@ For the final project, each section of STOR 320 will be divided (ideally) into r
 
 ## Research Group Assignments
 
-To find your research group, see the **[Spreadsheet]()** sponsored by Google.
+To find your research group, see the table below:
+
+```{r,echo=F,results="asis",message=F}
+library(DT)
+library(tidyverse)
+
+setwd("D:/Mario Documents/UNC/STOR 320/STOR320_WEBSITE/Group Assignments")
+
+Groups=read.csv(file="STOR320 Group Assignments - 2.csv")
+
+datatable(Groups,class="display",options = list(scrollX=F,
+            columnDefs = list(list(className = 'dt-center', targets = 0:1))),rownames=F)
+
+```
 
 ## Four Roles
 
