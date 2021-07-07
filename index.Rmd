@@ -111,8 +111,8 @@ This course is an application-driven introduction to data science. Statistical a
 || [Exploratory Data Analysis II](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b29b7d84-7fa7-45a2-b480-ad5100382e0e) |[Slides](Lecture/Exploratory Data Analysis 2/Exploratory_Data_Analysis_2_Lecture.pdf)||
 || [Final Project I](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b29b7d84-7fa7-45a2-b480-ad5100382e0e) | [Slides](Lecture/Final Project 1/Final_Project_1_Lecture.pdf)||
 |July 5| [No Class](https://www.youtube.com/watch?v=0E4haJHYUJw) |||
-|July 6| Data Import | [Slides](Lecture/Data Import/Data_Import_Lecture.pdf)||
-||Tidy Data 1| [Slides](Lecture/Tidy Data 1/Tidy_Data_1_Lecture.pdf) ||
+|July 6| [Data Import](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=aefa6878-3eca-4341-a9c2-ad5d0162a941) | [Slides](Lecture/Data Import/Data_Import_Lecture.pdf)||
+|| [Tidy Data 1](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=aefa6878-3eca-4341-a9c2-ad5d0162a941) | [Slides](Lecture/Tidy Data 1/Tidy_Data_1_Lecture.pdf) ||
 |July 7| Tidy Data 2 | [Slides](Lecture/Tidy Data 2/Tidy_Data_2_Lecture.pdf) ||
 ||Web Scraping I| [Slides](Lecture/Web Scraping 1/Web_Scraping_1_Lecture.pdf) | [Preview](Supplement/Web Scraping 1/Supplement.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Supplement/Web%20Scraping%201/Supplement.Rmd)) |
 |July 8| Web Scraping II | [Slides](Lecture/Web Scraping 2/Web_Scraping_2_Lecture.pdf) | [Preview](Supplement/Web Scraping 2/Supplement.html)([.zip](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Supplement/Web%20Scraping%202/Supplement.zip)) |
