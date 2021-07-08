@@ -33,7 +33,7 @@ In this tutorial, we will learn how to scrape the web for information. We will l
     +  **[Video 3](https://www.youtube.com/watch?v=gSbuwYdNYLM)**
 
 * Information on Open Source SelectorGadget
-    + **[Blog](https://cran.r-project.org/web/packages/rvest/vignettes/selectorgadget.html)**
+    + **[Blog](https://rvest.tidyverse.org/articles/articles/selectorgadget.html)**
     + **[Video](https://www.youtube.com/watch?v=A5LIHrpZBnY)**
 
 
@@ -74,6 +74,7 @@ The subheadings in the Wikipedia table create problems when parsed to data frame
 
 ```{r, eval=F}
 VIOLENT3=VIOLENT2 %>%
+            mutate_at(3:8,str_replace_all,pattern=",",replacement="") %>%
             mutate_at(3:8,as.numeric)
 str(VIOLENT3)
 ```
@@ -83,8 +84,9 @@ str(VIOLENT3)
 Using `str_detect()` we can identify cases in `City` where unwanted characters {",","0" to "9"} make an appearance.
 
 ```{r, eval=F}
-VIOLENT3[str_detect(VIOLENT3$City,"[,(0-9){1}]"),]$City
-VIOLENT3[str_detect(VIOLENT3$State,"[,(0-9){1}]"),]$State
+VIOLENT3[str_detect(VIOLENT3$City,"[,(0-9)]{1}"),]$City
+VIOLENT3[str_detect(VIOLENT3$City,"[:digit:]"),]$City
+VIOLENT3[str_detect(VIOLENT3$State,"[,(0-9)]{1}"),]$State
 ```
 
 ## Chunk 5: Cleaning Problematic Cities
@@ -93,14 +95,17 @@ The unwanted characters {",","0" to "9"} are special, but not our friends. In Wi
 
 ```{r, eval=F}
 VIOLENT4 = VIOLENT3 %>%
-              mutate(City=str_replace_all(City,"[,(0-9){1}]","")) %>%
-              mutate(State=str_replace_all(State,"[,(0-9){1}]",""))
+              mutate(City=str_replace_all(City,"[,(0-9)]{1}","")) %>%
+              mutate(State=str_replace_all(State,"[,(0-9)]{1}",""))
 
 VIOLENT5 = VIOLENT4 %>% 
               mutate(City=ifelse(City=="Charlotte-Mecklenburg","Charlotte",City))
 
 VIOLENT6 = VIOLENT5 %>%
-              mutate(City=str_replace(City," Metro",""))
+              mutate(City=str_replace(City," Metro","")) %>%
+              mutate(State=str_replace(State," U.S. state","")) %>%
+              mutate(State=str_replace(State," state",""))
+              
 
 write_csv(VIOLENT6,"FINAL_VIOLENT.CSV")
 ```

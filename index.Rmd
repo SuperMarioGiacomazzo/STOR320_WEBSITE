@@ -113,8 +113,8 @@ This course is an application-driven introduction to data science. Statistical a
 |July 5| [No Class](https://www.youtube.com/watch?v=0E4haJHYUJw) |||
 |July 6| [Data Import](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=aefa6878-3eca-4341-a9c2-ad5d0162a941) | [Slides](Lecture/Data Import/Data_Import_Lecture.pdf)||
 || [Tidy Data 1](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=aefa6878-3eca-4341-a9c2-ad5d0162a941) | [Slides](Lecture/Tidy Data 1/Tidy_Data_1_Lecture.pdf) ||
-|July 7| Tidy Data 2 | [Slides](Lecture/Tidy Data 2/Tidy_Data_2_Lecture.pdf) ||
-||Web Scraping I| [Slides](Lecture/Web Scraping 1/Web_Scraping_1_Lecture.pdf) | [Preview](Supplement/Web Scraping 1/Supplement.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Supplement/Web%20Scraping%201/Supplement.Rmd)) |
+|July 7| [Tidy Data 2](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2d03f632-1967-48e7-9030-ad5e01760e13) | [Slides](Lecture/Tidy Data 2/Tidy_Data_2_Lecture.pdf) ||
+|| [Web Scraping I](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2d03f632-1967-48e7-9030-ad5e01760e13) | [Slides](Lecture/Web Scraping 1/Web_Scraping_1_Lecture.pdf) | [Preview](Supplement/Web Scraping 1/Supplement.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Supplement/Web%20Scraping%201/Supplement.Rmd)) |
 |July 8| Web Scraping II | [Slides](Lecture/Web Scraping 2/Web_Scraping_2_Lecture.pdf) | [Preview](Supplement/Web Scraping 2/Supplement.html)([.zip](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Supplement/Web%20Scraping%202/Supplement.zip)) |
 ||Joins I| [Slides](Lecture/Joins 1/Joins_1_Lecture.pdf) ||
 |July 12| Joins II | [Slides](Lecture/Joins 2/Joins_2_Lecture.pdf) ||
@@ -149,12 +149,12 @@ All HW and Analysis assignments are to be submitted via **[Sakai](https://sakai.
 
 | Assigned | Homework (HW) | Analysis (A) |Solutions| Due Date (Time) |
 |----------|:--------:|:-------------:|:-------------:|----------------:|
-| June 28  | [HW1](Homework/HW 1/HW-1.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Homework/HW%201/HW%201.Rmd))       |       |           |   June 30 (5:00 PM)     |
-| June 30  | [HW2](Homework/HW 2/HW-2.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Homework/HW%202/HW%202.Rmd))       |       |           |   July 2 (5:00 PM)     |
+| June 28  | [HW1](Homework/HW 1/HW-1.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Homework/HW%201/HW%201.Rmd))       |       | [Solutions](Solutions/HW_1_Solutions.html) |   June 30 (5:00 PM)     |
+| June 30  | [HW2](Homework/HW 2/HW-2.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Homework/HW%202/HW%202.Rmd))       |       |[Solutions](Solutions/HW_2_Solutions.html)|   July 2 (5:00 PM)     |
 | July 2  |        | [A1](Analysis/Analysis 1/Analysis-1.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/blob/master/Analysis/Analysis%201/Analysis%201.zip))      |           |   July 7 (5:00 PM)     |
 | July 7  | [HW3](Homework/HW 3/HW-3.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Homework/HW%203/HW%203.Rmd))       |       |           |   July 9 (5:00 PM)     |
 | July 9  | [HW4](Homework/HW 4/HW-4.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Homework/HW%204/HW%204.Rmd))       |       |           |   July 12 (5:00 PM)     |
-| July 12  |  | [A2]()([.Rmd]())        |           |   July 14 (5:00 PM)     |
+| July 12  |  | [A2](Analysis/Analysis 2/Analysis-2.html)([.zip]())        |           |   July 14 (5:00 PM)     |
 | July 14  | [HW5](Homework/HW 5/HW-5.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Homework/HW%205/HW%205.Rmd))       |       |           |   July 16 (5:00 PM)     |
 | July 16  |  | [A3]()([.Rmd]())        |           |   July 19 (5:00 PM)     |
 | July 19  | [HW6](Homework/HW 6/HW-6.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Homework/HW%206/HW%206.Rmd))       |       |           |   July 21 (5:00 PM)     |
@@ -179,7 +179,7 @@ setwd("D:/Mario Documents/UNC/STOR 320/STOR320_WEBSITE/Group Assignments")
 Groups=read.csv(file="STOR320 Group Assignments - 2.csv")
 
 datatable(Groups,class="display",options = list(scrollX=F,
-            columnDefs = list(list(className = 'dt-center', targets = 0:1))),rownames=F)
+            columnDefs = list(list(className = 'dt-center', targets = 0:4))),rownames=F)
 
 ```
 

@@ -9,11 +9,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
-<meta name="author" content="Mario Giacomazzo" />
+<meta name="author" content="Tom Keefe" />
 
-<meta name="date" content="2021-07-07" />
+<meta name="date" content="2018-08-30" />
 
-<title>Supplement for Web Scraping 1</title>
+<title>HW 2 Solutions</title>
 
 <script>/*! jQuery v1.11.3 | (c) 2005, 2015 jQuery Foundation, Inc. | jquery.org/license */
 !function(a,b){"object"==typeof module&&"object"==typeof module.exports?module.exports=a.document?b(a,!0):function(a){if(!a.document)throw new Error("jQuery requires a window with a document");return b(a)}:b(a)}("undefined"!=typeof window?window:this,function(a,b){var c=[],d=c.slice,e=c.concat,f=c.push,g=c.indexOf,h={},i=h.toString,j=h.hasOwnProperty,k={},l="1.11.3",m=function(a,b){return new m.fn.init(a,b)},n=/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g,o=/^-ms-/,p=/-([\da-z])/gi,q=function(a,b){return b.toUpperCase()};m.fn=m.prototype={jquery:l,constructor:m,selector:"",length:0,toArray:function(){return d.call(this)},get:function(a){return null!=a?0>a?this[a+this.length]:this[a]:d.call(this)},pushStack:function(a){var b=m.merge(this.constructor(),a);return b.prevObject=this,b.context=this.context,b},each:function(a,b){return m.each(this,a,b)},map:function(a){return this.pushStack(m.map(this,function(b,c){return a.call(b,c,b)}))},slice:function(){return this.pushStack(d.apply(this,arguments))},first:function(){return this.eq(0)},last:function(){return this.eq(-1)},eq:function(a){var b=this.length,c=+a+(0>a?b:0);return this.pushStack(c>=0&&b>c?[this[c]]:[])},end:function(){return this.prevObject||this.constructor(null)},push:f,sort:c.sort,splice:c.splice},m.extend=m.fn.extend=function(){var a,b,c,d,e,f,g=arguments[0]||{},h=1,i=arguments.length,j=!1;for("boolean"==typeof g&&(j=g,g=arguments[h]||{},h++),"object"==typeof g||m.isFunction(g)||(g={}),h===i&&(g=this,h--);i>h;h++)if(null!=(e=arguments[h]))for(d in e)a=g[d],c=e[d],g!==c&&(j&&c&&(m.isPlainObject(c)||(b=m.isArray(c)))?(b?(b=!1,f=a&&m.isArray(a)?a:[]):f=a&&m.isPlainObject(a)?a:{},g[d]=m.extend(j,f,c)):void 0!==c&&(g[d]=c));return g},m.extend({expando:"jQuery"+(l+Math.random()).replace(/\D/g,""),isReady:!0,error:function(a){throw new Error(a)},noop:function(){},isFunction:function(a){return"function"===m.type(a)},isArray:Array.isArray||function(a){return"array"===m.type(a)},isWindow:function(a){return null!=a&&a==a.window},isNumeric:function(a){return!m.isArray(a)&&a-parseFloat(a)+1>=0},isEmptyObject:function(a){var b;for(b in a)return!1;return!0},isPlainObject:function(a){var b;if(!a||"object"!==m.type(a)||a.nodeType||m.isWindow(a))return!1;try{if(a.constructor&&!j.call(a,"constructor")&&!j.call(a.constructor.prototype,"isPrototypeOf"))return!1}catch(c){return!1}if(k.ownLast)for(b in a)return j.call(a,b);for(b in a);return void 0===b||j.call(a,b)},type:function(a){return null==a?a+"":"object"==typeof a||"function"==typeof a?h[i.call(a)]||"object":typeof a},globalEval:function(b){b&&m.trim(b)&&(a.execScript||function(b){a.eval.call(a,b)})(b)},camelCase:function(a){return a.replace(o,"ms-").replace(p,q)},nodeName:function(a,b){return a.nodeName&&a.nodeName.toLowerCase()===b.toLowerCase()},each:function(a,b,c){var d,e=0,f=a.length,g=r(a);if(c){if(g){for(;f>e;e++)if(d=b.apply(a[e],c),d===!1)break}else for(e in a)if(d=b.apply(a[e],c),d===!1)break}else if(g){for(;f>e;e++)if(d=b.call(a[e],e,a[e]),d===!1)break}else for(e in a)if(d=b.call(a[e],e,a[e]),d===!1)break;return a},trim:function(a){return null==a?"":(a+"").replace(n,"")},makeArray:function(a,b){var c=b||[];return null!=a&&(r(Object(a))?m.merge(c,"string"==typeof a?[a]:a):f.call(c,a)),c},inArray:function(a,b,c){var d;if(b){if(g)return g.call(b,a,c);for(d=b.length,c=c?0>c?Math.max(0,d+c):c:0;d>c;c++)if(c in b&&b[c]===a)return c}return-1},merge:function(a,b){var c=+b.length,d=0,e=a.length;while(c>d)a[e++]=b[d++];if(c!==c)while(void 0!==b[d])a[e++]=b[d++];return a.length=e,a},grep:function(a,b,c){for(var d,e=[],f=0,g=a.length,h=!c;g>f;f++)d=!b(a[f],f),d!==h&&e.push(a[f]);return e},map:function(a,b,c){var d,f=0,g=a.length,h=r(a),i=[];if(h)for(;g>f;f++)d=b(a[f],f,c),null!=d&&i.push(d);else for(f in a)d=b(a[f],f,c),null!=d&&i.push(d);return e.apply([],i)},guid:1,proxy:function(a,b){var c,e,f;return"string"==typeof b&&(f=a[b],b=a,a=f),m.isFunction(a)?(c=d.call(arguments,2),e=function(){return a.apply(b||this,c.concat(d.call(arguments)))},e.guid=a.guid=a.guid||m.guid++,e):void 0},now:function(){return+new Date},support:k}),m.each("Boolean Number String Function Array Date RegExp Object Error".split(" "),function(a,b){h["[object "+b+"]"]=b.toLowerCase()});function r(a){var b="length"in a&&a.length,c=m.type(a);return"function"===c||m.isWindow(a)?!1:1===a.nodeType&&b?!0:"array"===c||0===b||"number"==typeof b&&b>0&&b-1 in a}var s=function(a){var b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u="sizzle"+1*new Date,v=a.document,w=0,x=0,y=ha(),z=ha(),A=ha(),B=function(a,b){return a===b&&(l=!0),0},C=1<<31,D={}.hasOwnProperty,E=[],F=E.pop,G=E.push,H=E.push,I=E.slice,J=function(a,b){for(var c=0,d=a.length;d>c;c++)if(a[c]===b)return c;return-1},K="checked|selected|async|autofocus|autoplay|controls|defer|disabled|hidden|ismap|loop|multiple|open|readonly|required|scoped",L="[\\x20\\t\\r\\n\\f]",M="(?:\\\\.|[\\w-]|[^\\x00-\\xa0])+",N=M.replace("w","w#"),O="\\["+L+"*("+M+")(?:"+L+"*([*^$|!~]?=)"+L+"*(?:'((?:\\\\.|[^\\\\'])*)'|\"((?:\\\\.|[^\\\\\"])*)\"|("+N+"))|)"+L+"*\\]",P=":("+M+")(?:\\((('((?:\\\\.|[^\\\\'])*)'|\"((?:\\\\.|[^\\\\\"])*)\")|((?:\\\\.|[^\\\\()[\\]]|"+O+")*)|.*)\\)|)",Q=new RegExp(L+"+","g"),R=new RegExp("^"+L+"+|((?:^|[^\\\\])(?:\\\\.)*)"+L+"+$","g"),S=new RegExp("^"+L+"*,"+L+"*"),T=new RegExp("^"+L+"*([>+~]|"+L+")"+L+"*"),U=new RegExp("="+L+"*([^\\]'\"]*?)"+L+"*\\]","g"),V=new RegExp(P),W=new RegExp("^"+N+"$"),X={ID:new RegExp("^#("+M+")"),CLASS:new RegExp("^\\.("+M+")"),TAG:new RegExp("^("+M.replace("w","w*")+")"),ATTR:new RegExp("^"+O),PSEUDO:new RegExp("^"+P),CHILD:new RegExp("^:(only|first|last|nth|nth-last)-(child|of-type)(?:\\("+L+"*(even|odd|(([+-]|)(\\d*)n|)"+L+"*(?:([+-]|)"+L+"*(\\d+)|))"+L+"*\\)|)","i"),bool:new RegExp("^(?:"+K+")$","i"),needsContext:new RegExp("^"+L+"*[>+~]|:(even|odd|eq|gt|lt|nth|first|last)(?:\\("+L+"*((?:-\\d)?\\d*)"+L+"*\\)|)(?=[^-]|$)","i")},Y=/^(?:input|select|textarea|button)$/i,Z=/^h\d$/i,$=/^[^{]+\{\s*\[native \w/,_=/^(?:#([\w-]+)|(\w+)|\.([\w-]+))$/,aa=/[+~]/,ba=/'|\\/g,ca=new RegExp("\\\\([\\da-f]{1,6}"+L+"?|("+L+")|.)","ig"),da=function(a,b,c){var d="0x"+b-65536;return d!==d||c?b:0>d?String.fromCharCode(d+65536):String.fromCharCode(d>>10|55296,1023&d|56320)},ea=function(){m()};try{H.apply(E=I.call(v.childNodes),v.childNodes),E[v.childNodes.length].nodeType}catch(fa){H={apply:E.length?function(a,b){G.apply(a,I.call(b))}:function(a,b){var c=a.length,d=0;while(a[c++]=b[d++]);a.length=c-1}}}function ga(a,b,d,e){var f,h,j,k,l,o,r,s,w,x;if((b?b.ownerDocument||b:v)!==n&&m(b),b=b||n,d=d||[],k=b.nodeType,"string"!=typeof a||!a||1!==k&&9!==k&&11!==k)return d;if(!e&&p){if(11!==k&&(f=_.exec(a)))if(j=f[1]){if(9===k){if(h=b.getElementById(j),!h||!h.parentNode)return d;if(h.id===j)return d.push(h),d}else if(b.ownerDocument&&(h=b.ownerDocument.getElementById(j))&&t(b,h)&&h.id===j)return d.push(h),d}else{if(f[2])return H.apply(d,b.getElementsByTagName(a)),d;if((j=f[3])&&c.getElementsByClassName)return H.apply(d,b.getElementsByClassName(j)),d}if(c.qsa&&(!q||!q.test(a))){if(s=r=u,w=b,x=1!==k&&a,1===k&&"object"!==b.nodeName.toLowerCase()){o=g(a),(r=b.getAttribute("id"))?s=r.replace(ba,"\\$&"):b.setAttribute("id",s),s="[id='"+s+"'] ",l=o.length;while(l--)o[l]=s+ra(o[l]);w=aa.test(a)&&pa(b.parentNode)||b,x=o.join(",")}if(x)try{return H.apply(d,w.querySelectorAll(x)),d}catch(y){}finally{r||b.removeAttribute("id")}}}return i(a.replace(R,"$1"),b,d,e)}function ha(){var a=[];function b(c,e){return a.push(c+" ")>d.cacheLength&&delete b[a.shift()],b[c+" "]=e}return b}function ia(a){return a[u]=!0,a}function ja(a){var b=n.createElement("div");try{return!!a(b)}catch(c){return!1}finally{b.parentNode&&b.parentNode.removeChild(b),b=null}}function ka(a,b){var c=a.split("|"),e=a.length;while(e--)d.attrHandle[c[e]]=b}function la(a,b){var c=b&&a,d=c&&1===a.nodeType&&1===b.nodeType&&(~b.sourceIndex||C)-(~a.sourceIndex||C);if(d)return d;if(c)while(c=c.nextSibling)if(c===b)return-1;return a?1:-1}function ma(a){return function(b){var c=b.nodeName.toLowerCase();return"input"===c&&b.type===a}}function na(a){return function(b){var c=b.nodeName.toLowerCase();return("input"===c||"button"===c)&&b.type===a}}function oa(a){return ia(function(b){return b=+b,ia(function(c,d){var e,f=a([],c.length,b),g=f.length;while(g--)c[e=f[g]]&&(c[e]=!(d[e]=c[e]))})})}function pa(a){return a&&"undefined"!=typeof a.getElementsByTagName&&a}c=ga.support={},f=ga.isXML=function(a){var b=a&&(a.ownerDocument||a).documentElement;return b?"HTML"!==b.nodeName:!1},m=ga.setDocument=function(a){var b,e,g=a?a.ownerDocument||a:v;return g!==n&&9===g.nodeType&&g.documentElement?(n=g,o=g.documentElement,e=g.defaultView,e&&e!==e.top&&(e.addEventListener?e.addEventListener("unload",ea,!1):e.attachEvent&&e.attachEvent("onunload",ea)),p=!f(g),c.attributes=ja(function(a){return a.className="i",!a.getAttribute("className")}),c.getElementsByTagName=ja(function(a){return a.appendChild(g.createComment("")),!a.getElementsByTagName("*").length}),c.getElementsByClassName=$.test(g.getElementsByClassName),c.getById=ja(function(a){return o.appendChild(a).id=u,!g.getElementsByName||!g.getElementsByName(u).length}),c.getById?(d.find.ID=function(a,b){if("undefined"!=typeof b.getElementById&&p){var c=b.getElementById(a);return c&&c.parentNode?[c]:[]}},d.filter.ID=function(a){var b=a.replace(ca,da);return function(a){return a.getAttribute("id")===b}}):(delete d.find.ID,d.filter.ID=function(a){var b=a.replace(ca,da);return function(a){var c="undefined"!=typeof a.getAttributeNode&&a.getAttributeNode("id");return c&&c.value===b}}),d.find.TAG=c.getElementsByTagName?function(a,b){return"undefined"!=typeof b.getElementsByTagName?b.getElementsByTagName(a):c.qsa?b.querySelectorAll(a):void 0}:function(a,b){var c,d=[],e=0,f=b.getElementsByTagName(a);if("*"===a){while(c=f[e++])1===c.nodeType&&d.push(c);return d}return f},d.find.CLASS=c.getElementsByClassName&&function(a,b){return p?b.getElementsByClassName(a):void 0},r=[],q=[],(c.qsa=$.test(g.querySelectorAll))&&(ja(function(a){o.appendChild(a).innerHTML="<a id='"+u+"'></a><select id='"+u+"-\f]' msallowcapture=''><option selected=''></option></select>",a.querySelectorAll("[msallowcapture^='']").length&&q.push("[*^$]="+L+"*(?:''|\"\")"),a.querySelectorAll("[selected]").length||q.push("\\["+L+"*(?:value|"+K+")"),a.querySelectorAll("[id~="+u+"-]").length||q.push("~="),a.querySelectorAll(":checked").length||q.push(":checked"),a.querySelectorAll("a#"+u+"+*").length||q.push(".#.+[+~]")}),ja(function(a){var b=g.createElement("input");b.setAttribute("type","hidden"),a.appendChild(b).setAttribute("name","D"),a.querySelectorAll("[name=d]").length&&q.push("name"+L+"*[*^$|!~]?="),a.querySelectorAll(":enabled").length||q.push(":enabled",":disabled"),a.querySelectorAll("*,:x"),q.push(",.*:")})),(c.matchesSelector=$.test(s=o.matches||o.webkitMatchesSelector||o.mozMatchesSelector||o.oMatchesSelector||o.msMatchesSelector))&&ja(function(a){c.disconnectedMatch=s.call(a,"div"),s.call(a,"[s!='']:x"),r.push("!=",P)}),q=q.length&&new RegExp(q.join("|")),r=r.length&&new RegExp(r.join("|")),b=$.test(o.compareDocumentPosition),t=b||$.test(o.contains)?function(a,b){var c=9===a.nodeType?a.documentElement:a,d=b&&b.parentNode;return a===d||!(!d||1!==d.nodeType||!(c.contains?c.contains(d):a.compareDocumentPosition&&16&a.compareDocumentPosition(d)))}:function(a,b){if(b)while(b=b.parentNode)if(b===a)return!0;return!1},B=b?function(a,b){if(a===b)return l=!0,0;var d=!a.compareDocumentPosition-!b.compareDocumentPosition;return d?d:(d=(a.ownerDocument||a)===(b.ownerDocument||b)?a.compareDocumentPosition(b):1,1&d||!c.sortDetached&&b.compareDocumentPosition(a)===d?a===g||a.ownerDocument===v&&t(v,a)?-1:b===g||b.ownerDocument===v&&t(v,b)?1:k?J(k,a)-J(k,b):0:4&d?-1:1)}:function(a,b){if(a===b)return l=!0,0;var c,d=0,e=a.parentNode,f=b.parentNode,h=[a],i=[b];if(!e||!f)return a===g?-1:b===g?1:e?-1:f?1:k?J(k,a)-J(k,b):0;if(e===f)return la(a,b);c=a;while(c=c.parentNode)h.unshift(c);c=b;while(c=c.parentNode)i.unshift(c);while(h[d]===i[d])d++;return d?la(h[d],i[d]):h[d]===v?-1:i[d]===v?1:0},g):n},ga.matches=function(a,b){return ga(a,null,null,b)},ga.matchesSelector=function(a,b){if((a.ownerDocument||a)!==n&&m(a),b=b.replace(U,"='$1']"),!(!c.matchesSelector||!p||r&&r.test(b)||q&&q.test(b)))try{var d=s.call(a,b);if(d||c.disconnectedMatch||a.document&&11!==a.document.nodeType)return d}catch(e){}return ga(b,n,null,[a]).length>0},ga.contains=function(a,b){return(a.ownerDocument||a)!==n&&m(a),t(a,b)},ga.attr=function(a,b){(a.ownerDocument||a)!==n&&m(a);var e=d.attrHandle[b.toLowerCase()],f=e&&D.call(d.attrHandle,b.toLowerCase())?e(a,b,!p):void 0;return void 0!==f?f:c.attributes||!p?a.getAttribute(b):(f=a.getAttributeNode(b))&&f.specified?f.value:null},ga.error=function(a){throw new Error("Syntax error, unrecognized expression: "+a)},ga.uniqueSort=function(a){var b,d=[],e=0,f=0;if(l=!c.detectDuplicates,k=!c.sortStable&&a.slice(0),a.sort(B),l){while(b=a[f++])b===a[f]&&(e=d.push(f));while(e--)a.splice(d[e],1)}return k=null,a},e=ga.getText=function(a){var b,c="",d=0,f=a.nodeType;if(f){if(1===f||9===f||11===f){if("string"==typeof a.textContent)return a.textContent;for(a=a.firstChild;a;a=a.nextSibling)c+=e(a)}else if(3===f||4===f)return a.nodeValue}else while(b=a[d++])c+=e(b);return c},d=ga.selectors={cacheLength:50,createPseudo:ia,match:X,attrHandle:{},find:{},relative:{">":{dir:"parentNode",first:!0}," ":{dir:"parentNode"},"+":{dir:"previousSibling",first:!0},"~":{dir:"previousSibling"}},preFilter:{ATTR:function(a){return a[1]=a[1].replace(ca,da),a[3]=(a[3]||a[4]||a[5]||"").replace(ca,da),"~="===a[2]&&(a[3]=" "+a[3]+" "),a.slice(0,4)},CHILD:function(a){return a[1]=a[1].toLowerCase(),"nth"===a[1].slice(0,3)?(a[3]||ga.error(a[0]),a[4]=+(a[4]?a[5]+(a[6]||1):2*("even"===a[3]||"odd"===a[3])),a[5]=+(a[7]+a[8]||"odd"===a[3])):a[3]&&ga.error(a[0]),a},PSEUDO:function(a){var b,c=!a[6]&&a[2];return X.CHILD.test(a[0])?null:(a[3]?a[2]=a[4]||a[5]||"":c&&V.test(c)&&(b=g(c,!0))&&(b=c.indexOf(")",c.length-b)-c.length)&&(a[0]=a[0].slice(0,b),a[2]=c.slice(0,b)),a.slice(0,3))}},filter:{TAG:function(a){var b=a.replace(ca,da).toLowerCase();return"*"===a?function(){return!0}:function(a){return a.nodeName&&a.nodeName.toLowerCase()===b}},CLASS:function(a){var b=y[a+" "];return b||(b=new RegExp("(^|"+L+")"+a+"("+L+"|$)"))&&y(a,function(a){return b.test("string"==typeof a.className&&a.className||"undefined"!=typeof a.getAttribute&&a.getAttribute("class")||"")})},ATTR:function(a,b,c){return function(d){var e=ga.attr(d,a);return null==e?"!="===b:b?(e+="","="===b?e===c:"!="===b?e!==c:"^="===b?c&&0===e.indexOf(c):"*="===b?c&&e.indexOf(c)>-1:"$="===b?c&&e.slice(-c.length)===c:"~="===b?(" "+e.replace(Q," ")+" ").indexOf(c)>-1:"|="===b?e===c||e.slice(0,c.length+1)===c+"-":!1):!0}},CHILD:function(a,b,c,d,e){var f="nth"!==a.slice(0,3),g="last"!==a.slice(-4),h="of-type"===b;return 1===d&&0===e?function(a){return!!a.parentNode}:function(b,c,i){var j,k,l,m,n,o,p=f!==g?"nextSibling":"previousSibling",q=b.parentNode,r=h&&b.nodeName.toLowerCase(),s=!i&&!h;if(q){if(f){while(p){l=b;while(l=l[p])if(h?l.nodeName.toLowerCase()===r:1===l.nodeType)return!1;o=p="only"===a&&!o&&"nextSibling"}return!0}if(o=[g?q.firstChild:q.lastChild],g&&s){k=q[u]||(q[u]={}),j=k[a]||[],n=j[0]===w&&j[1],m=j[0]===w&&j[2],l=n&&q.childNodes[n];while(l=++n&&l&&l[p]||(m=n=0)||o.pop())if(1===l.nodeType&&++m&&l===b){k[a]=[w,n,m];break}}else if(s&&(j=(b[u]||(b[u]={}))[a])&&j[0]===w)m=j[1];else while(l=++n&&l&&l[p]||(m=n=0)||o.pop())if((h?l.nodeName.toLowerCase()===r:1===l.nodeType)&&++m&&(s&&((l[u]||(l[u]={}))[a]=[w,m]),l===b))break;return m-=e,m===d||m%d===0&&m/d>=0}}},PSEUDO:function(a,b){var c,e=d.pseudos[a]||d.setFilters[a.toLowerCase()]||ga.error("unsupported pseudo: "+a);return e[u]?e(b):e.length>1?(c=[a,a,"",b],d.setFilters.hasOwnProperty(a.toLowerCase())?ia(function(a,c){var d,f=e(a,b),g=f.length;while(g--)d=J(a,f[g]),a[d]=!(c[d]=f[g])}):function(a){return e(a,0,c)}):e}},pseudos:{not:ia(function(a){var b=[],c=[],d=h(a.replace(R,"$1"));return d[u]?ia(function(a,b,c,e){var f,g=d(a,null,e,[]),h=a.length;while(h--)(f=g[h])&&(a[h]=!(b[h]=f))}):function(a,e,f){return b[0]=a,d(b,null,f,c),b[0]=null,!c.pop()}}),has:ia(function(a){return function(b){return ga(a,b).length>0}}),contains:ia(function(a){return a=a.replace(ca,da),function(b){return(b.textContent||b.innerText||e(b)).indexOf(a)>-1}}),lang:ia(function(a){return W.test(a||"")||ga.error("unsupported lang: "+a),a=a.replace(ca,da).toLowerCase(),function(b){var c;do if(c=p?b.lang:b.getAttribute("xml:lang")||b.getAttribute("lang"))return c=c.toLowerCase(),c===a||0===c.indexOf(a+"-");while((b=b.parentNode)&&1===b.nodeType);return!1}}),target:function(b){var c=a.location&&a.location.hash;return c&&c.slice(1)===b.id},root:function(a){return a===o},focus:function(a){return a===n.activeElement&&(!n.hasFocus||n.hasFocus())&&!!(a.type||a.href||~a.tabIndex)},enabled:function(a){return a.disabled===!1},disabled:function(a){return a.disabled===!0},checked:function(a){var b=a.nodeName.toLowerCase();return"input"===b&&!!a.checked||"option"===b&&!!a.selected},selected:function(a){return a.parentNode&&a.parentNode.selectedIndex,a.selected===!0},empty:function(a){for(a=a.firstChild;a;a=a.nextSibling)if(a.nodeType<6)return!1;return!0},parent:function(a){return!d.pseudos.empty(a)},header:function(a){return Z.test(a.nodeName)},input:function(a){return Y.test(a.nodeName)},button:function(a){var b=a.nodeName.toLowerCase();return"input"===b&&"button"===a.type||"button"===b},text:function(a){var b;return"input"===a.nodeName.toLowerCase()&&"text"===a.type&&(null==(b=a.getAttribute("type"))||"text"===b.toLowerCase())},first:oa(function(){return[0]}),last:oa(function(a,b){return[b-1]}),eq:oa(function(a,b,c){return[0>c?c+b:c]}),even:oa(function(a,b){for(var c=0;b>c;c+=2)a.push(c);return a}),odd:oa(function(a,b){for(var c=1;b>c;c+=2)a.push(c);return a}),lt:oa(function(a,b,c){for(var d=0>c?c+b:c;--d>=0;)a.push(d);return a}),gt:oa(function(a,b,c){for(var d=0>c?c+b:c;++d<b;)a.push(d);return a})}},d.pseudos.nth=d.pseudos.eq;for(b in{radio:!0,checkbox:!0,file:!0,password:!0,image:!0})d.pseudos[b]=ma(b);for(b in{submit:!0,reset:!0})d.pseudos[b]=na(b);function qa(){}qa.prototype=d.filters=d.pseudos,d.setFilters=new qa,g=ga.tokenize=function(a,b){var c,e,f,g,h,i,j,k=z[a+" "];if(k)return b?0:k.slice(0);h=a,i=[],j=d.preFilter;while(h){(!c||(e=S.exec(h)))&&(e&&(h=h.slice(e[0].length)||h),i.push(f=[])),c=!1,(e=T.exec(h))&&(c=e.shift(),f.push({value:c,type:e[0].replace(R," ")}),h=h.slice(c.length));for(g in d.filter)!(e=X[g].exec(h))||j[g]&&!(e=j[g](e))||(c=e.shift(),f.push({value:c,type:g,matches:e}),h=h.slice(c.length));if(!c)break}return b?h.length:h?ga.error(a):z(a,i).slice(0)};function ra(a){for(var b=0,c=a.length,d="";c>b;b++)d+=a[b].value;return d}function sa(a,b,c){var d=b.dir,e=c&&"parentNode"===d,f=x++;return b.first?function(b,c,f){while(b=b[d])if(1===b.nodeType||e)return a(b,c,f)}:function(b,c,g){var h,i,j=[w,f];if(g){while(b=b[d])if((1===b.nodeType||e)&&a(b,c,g))return!0}else while(b=b[d])if(1===b.nodeType||e){if(i=b[u]||(b[u]={}),(h=i[d])&&h[0]===w&&h[1]===f)return j[2]=h[2];if(i[d]=j,j[2]=a(b,c,g))return!0}}}function ta(a){return a.length>1?function(b,c,d){var e=a.length;while(e--)if(!a[e](b,c,d))return!1;return!0}:a[0]}function ua(a,b,c){for(var d=0,e=b.length;e>d;d++)ga(a,b[d],c);return c}function va(a,b,c,d,e){for(var f,g=[],h=0,i=a.length,j=null!=b;i>h;h++)(f=a[h])&&(!c||c(f,d,e))&&(g.push(f),j&&b.push(h));return g}function wa(a,b,c,d,e,f){return d&&!d[u]&&(d=wa(d)),e&&!e[u]&&(e=wa(e,f)),ia(function(f,g,h,i){var j,k,l,m=[],n=[],o=g.length,p=f||ua(b||"*",h.nodeType?[h]:h,[]),q=!a||!f&&b?p:va(p,m,a,h,i),r=c?e||(f?a:o||d)?[]:g:q;if(c&&c(q,r,h,i),d){j=va(r,n),d(j,[],h,i),k=j.length;while(k--)(l=j[k])&&(r[n[k]]=!(q[n[k]]=l))}if(f){if(e||a){if(e){j=[],k=r.length;while(k--)(l=r[k])&&j.push(q[k]=l);e(null,r=[],j,i)}k=r.length;while(k--)(l=r[k])&&(j=e?J(f,l):m[k])>-1&&(f[j]=!(g[j]=l))}}else r=va(r===g?r.splice(o,r.length):r),e?e(null,g,r,i):H.apply(g,r)})}function xa(a){for(var b,c,e,f=a.length,g=d.relative[a[0].type],h=g||d.relative[" "],i=g?1:0,k=sa(function(a){return a===b},h,!0),l=sa(function(a){return J(b,a)>-1},h,!0),m=[function(a,c,d){var e=!g&&(d||c!==j)||((b=c).nodeType?k(a,c,d):l(a,c,d));return b=null,e}];f>i;i++)if(c=d.relative[a[i].type])m=[sa(ta(m),c)];else{if(c=d.filter[a[i].type].apply(null,a[i].matches),c[u]){for(e=++i;f>e;e++)if(d.relative[a[e].type])break;return wa(i>1&&ta(m),i>1&&ra(a.slice(0,i-1).concat({value:" "===a[i-2].type?"*":""})).replace(R,"$1"),c,e>i&&xa(a.slice(i,e)),f>e&&xa(a=a.slice(e)),f>e&&ra(a))}m.push(c)}return ta(m)}function ya(a,b){var c=b.length>0,e=a.length>0,f=function(f,g,h,i,k){var l,m,o,p=0,q="0",r=f&&[],s=[],t=j,u=f||e&&d.find.TAG("*",k),v=w+=null==t?1:Math.random()||.1,x=u.length;for(k&&(j=g!==n&&g);q!==x&&null!=(l=u[q]);q++){if(e&&l){m=0;while(o=a[m++])if(o(l,g,h)){i.push(l);break}k&&(w=v)}c&&((l=!o&&l)&&p--,f&&r.push(l))}if(p+=q,c&&q!==p){m=0;while(o=b[m++])o(r,s,g,h);if(f){if(p>0)while(q--)r[q]||s[q]||(s[q]=F.call(i));s=va(s)}H.apply(i,s),k&&!f&&s.length>0&&p+b.length>1&&ga.uniqueSort(i)}return k&&(w=v,j=t),r};return c?ia(f):f}return h=ga.compile=function(a,b){var c,d=[],e=[],f=A[a+" "];if(!f){b||(b=g(a)),c=b.length;while(c--)f=xa(b[c]),f[u]?d.push(f):e.push(f);f=A(a,ya(e,d)),f.selector=a}return f},i=ga.select=function(a,b,e,f){var i,j,k,l,m,n="function"==typeof a&&a,o=!f&&g(a=n.selector||a);if(e=e||[],1===o.length){if(j=o[0]=o[0].slice(0),j.length>2&&"ID"===(k=j[0]).type&&c.getById&&9===b.nodeType&&p&&d.relative[j[1].type]){if(b=(d.find.ID(k.matches[0].replace(ca,da),b)||[])[0],!b)return e;n&&(b=b.parentNode),a=a.slice(j.shift().value.length)}i=X.needsContext.test(a)?0:j.length;while(i--){if(k=j[i],d.relative[l=k.type])break;if((m=d.find[l])&&(f=m(k.matches[0].replace(ca,da),aa.test(j[0].type)&&pa(b.parentNode)||b))){if(j.splice(i,1),a=f.length&&ra(j),!a)return H.apply(e,f),e;break}}}return(n||h(a,o))(f,b,!p,e,aa.test(a)&&pa(b.parentNode)||b),e},c.sortStable=u.split("").sort(B).join("")===u,c.detectDuplicates=!!l,m(),c.sortDetached=ja(function(a){return 1&a.compareDocumentPosition(n.createElement("div"))}),ja(function(a){return a.innerHTML="<a href='#'></a>","#"===a.firstChild.getAttribute("href")})||ka("type|href|height|width",function(a,b,c){return c?void 0:a.getAttribute(b,"type"===b.toLowerCase()?1:2)}),c.attributes&&ja(function(a){return a.innerHTML="<input/>",a.firstChild.setAttribute("value",""),""===a.firstChild.getAttribute("value")})||ka("value",function(a,b,c){return c||"input"!==a.nodeName.toLowerCase()?void 0:a.defaultValue}),ja(function(a){return null==a.getAttribute("disabled")})||ka(K,function(a,b,c){var d;return c?void 0:a[b]===!0?b.toLowerCase():(d=a.getAttributeNode(b))&&d.specified?d.value:null}),ga}(a);m.find=s,m.expr=s.selectors,m.expr[":"]=m.expr.pseudos,m.unique=s.uniqueSort,m.text=s.getText,m.isXMLDoc=s.isXML,m.contains=s.contains;var t=m.expr.match.needsContext,u=/^<(\w+)\s*\/?>(?:<\/\1>|)$/,v=/^.[^:#\[\.,]*$/;function w(a,b,c){if(m.isFunction(b))return m.grep(a,function(a,d){return!!b.call(a,d,a)!==c});if(b.nodeType)return m.grep(a,function(a){return a===b!==c});if("string"==typeof b){if(v.test(b))return m.filter(b,a,c);b=m.filter(b,a)}return m.grep(a,function(a){return m.inArray(a,b)>=0!==c})}m.filter=function(a,b,c){var d=b[0];return c&&(a=":not("+a+")"),1===b.length&&1===d.nodeType?m.find.matchesSelector(d,a)?[d]:[]:m.find.matches(a,m.grep(b,function(a){return 1===a.nodeType}))},m.fn.extend({find:function(a){var b,c=[],d=this,e=d.length;if("string"!=typeof a)return this.pushStack(m(a).filter(function(){for(b=0;e>b;b++)if(m.contains(d[b],this))return!0}));for(b=0;e>b;b++)m.find(a,d[b],c);return c=this.pushStack(e>1?m.unique(c):c),c.selector=this.selector?this.selector+" "+a:a,c},filter:function(a){return this.pushStack(w(this,a||[],!1))},not:function(a){return this.pushStack(w(this,a||[],!0))},is:function(a){return!!w(this,"string"==typeof a&&t.test(a)?m(a):a||[],!1).length}});var x,y=a.document,z=/^(?:\s*(<[\w\W]+>)[^>]*|#([\w-]*))$/,A=m.fn.init=function(a,b){var c,d;if(!a)return this;if("string"==typeof a){if(c="<"===a.charAt(0)&&">"===a.charAt(a.length-1)&&a.length>=3?[null,a,null]:z.exec(a),!c||!c[1]&&b)return!b||b.jquery?(b||x).find(a):this.constructor(b).find(a);if(c[1]){if(b=b instanceof m?b[0]:b,m.merge(this,m.parseHTML(c[1],b&&b.nodeType?b.ownerDocument||b:y,!0)),u.test(c[1])&&m.isPlainObject(b))for(c in b)m.isFunction(this[c])?this[c](b[c]):this.attr(c,b[c]);return this}if(d=y.getElementById(c[2]),d&&d.parentNode){if(d.id!==c[2])return x.find(a);this.length=1,this[0]=d}return this.context=y,this.selector=a,this}return a.nodeType?(this.context=this[0]=a,this.length=1,this):m.isFunction(a)?"undefined"!=typeof x.ready?x.ready(a):a(m):(void 0!==a.selector&&(this.selector=a.selector,this.context=a.context),m.makeArray(a,this))};A.prototype=m.fn,x=m(y);var B=/^(?:parents|prev(?:Until|All))/,C={children:!0,contents:!0,next:!0,prev:!0};m.extend({dir:function(a,b,c){var d=[],e=a[b];while(e&&9!==e.nodeType&&(void 0===c||1!==e.nodeType||!m(e).is(c)))1===e.nodeType&&d.push(e),e=e[b];return d},sibling:function(a,b){for(var c=[];a;a=a.nextSibling)1===a.nodeType&&a!==b&&c.push(a);return c}}),m.fn.extend({has:function(a){var b,c=m(a,this),d=c.length;return this.filter(function(){for(b=0;d>b;b++)if(m.contains(this,c[b]))return!0})},closest:function(a,b){for(var c,d=0,e=this.length,f=[],g=t.test(a)||"string"!=typeof a?m(a,b||this.context):0;e>d;d++)for(c=this[d];c&&c!==b;c=c.parentNode)if(c.nodeType<11&&(g?g.index(c)>-1:1===c.nodeType&&m.find.matchesSelector(c,a))){f.push(c);break}return this.pushStack(f.length>1?m.unique(f):f)},index:function(a){return a?"string"==typeof a?m.inArray(this[0],m(a)):m.inArray(a.jquery?a[0]:a,this):this[0]&&this[0].parentNode?this.first().prevAll().length:-1},add:function(a,b){return this.pushStack(m.unique(m.merge(this.get(),m(a,b))))},addBack:function(a){return this.add(null==a?this.prevObject:this.prevObject.filter(a))}});function D(a,b){do a=a[b];while(a&&1!==a.nodeType);return a}m.each({parent:function(a){var b=a.parentNode;return b&&11!==b.nodeType?b:null},parents:function(a){return m.dir(a,"parentNode")},parentsUntil:function(a,b,c){return m.dir(a,"parentNode",c)},next:function(a){return D(a,"nextSibling")},prev:function(a){return D(a,"previousSibling")},nextAll:function(a){return m.dir(a,"nextSibling")},prevAll:function(a){return m.dir(a,"previousSibling")},nextUntil:function(a,b,c){return m.dir(a,"nextSibling",c)},prevUntil:function(a,b,c){return m.dir(a,"previousSibling",c)},siblings:function(a){return m.sibling((a.parentNode||{}).firstChild,a)},children:function(a){return m.sibling(a.firstChild)},contents:function(a){return m.nodeName(a,"iframe")?a.contentDocument||a.contentWindow.document:m.merge([],a.childNodes)}},function(a,b){m.fn[a]=function(c,d){var e=m.map(this,b,c);return"Until"!==a.slice(-5)&&(d=c),d&&"string"==typeof d&&(e=m.filter(d,e)),this.length>1&&(C[a]||(e=m.unique(e)),B.test(a)&&(e=e.reverse())),this.pushStack(e)}});var E=/\S+/g,F={};function G(a){var b=F[a]={};return m.each(a.match(E)||[],function(a,c){b[c]=!0}),b}m.Callbacks=function(a){a="string"==typeof a?F[a]||G(a):m.extend({},a);var b,c,d,e,f,g,h=[],i=!a.once&&[],j=function(l){for(c=a.memory&&l,d=!0,f=g||0,g=0,e=h.length,b=!0;h&&e>f;f++)if(h[f].apply(l[0],l[1])===!1&&a.stopOnFalse){c=!1;break}b=!1,h&&(i?i.length&&j(i.shift()):c?h=[]:k.disable())},k={add:function(){if(h){var d=h.length;!function f(b){m.each(b,function(b,c){var d=m.type(c);"function"===d?a.unique&&k.has(c)||h.push(c):c&&c.length&&"string"!==d&&f(c)})}(arguments),b?e=h.length:c&&(g=d,j(c))}return this},remove:function(){return h&&m.each(arguments,function(a,c){var d;while((d=m.inArray(c,h,d))>-1)h.splice(d,1),b&&(e>=d&&e--,f>=d&&f--)}),this},has:function(a){return a?m.inArray(a,h)>-1:!(!h||!h.length)},empty:function(){return h=[],e=0,this},disable:function(){return h=i=c=void 0,this},disabled:function(){return!h},lock:function(){return i=void 0,c||k.disable(),this},locked:function(){return!i},fireWith:function(a,c){return!h||d&&!i||(c=c||[],c=[a,c.slice?c.slice():c],b?i.push(c):j(c)),this},fire:function(){return k.fireWith(this,arguments),this},fired:function(){return!!d}};return k},m.extend({Deferred:function(a){var b=[["resolve","done",m.Callbacks("once memory"),"resolved"],["reject","fail",m.Callbacks("once memory"),"rejected"],["notify","progress",m.Callbacks("memory")]],c="pending",d={state:function(){return c},always:function(){return e.done(arguments).fail(arguments),this},then:function(){var a=arguments;return m.Deferred(function(c){m.each(b,function(b,f){var g=m.isFunction(a[b])&&a[b];e[f[1]](function(){var a=g&&g.apply(this,arguments);a&&m.isFunction(a.promise)?a.promise().done(c.resolve).fail(c.reject).progress(c.notify):c[f[0]+"With"](this===d?c.promise():this,g?[a]:arguments)})}),a=null}).promise()},promise:function(a){return null!=a?m.extend(a,d):d}},e={};return d.pipe=d.then,m.each(b,function(a,f){var g=f[2],h=f[3];d[f[1]]=g.add,h&&g.add(function(){c=h},b[1^a][2].disable,b[2][2].lock),e[f[0]]=function(){return e[f[0]+"With"](this===e?d:this,arguments),this},e[f[0]+"With"]=g.fireWith}),d.promise(e),a&&a.call(e,e),e},when:function(a){var b=0,c=d.call(arguments),e=c.length,f=1!==e||a&&m.isFunction(a.promise)?e:0,g=1===f?a:m.Deferred(),h=function(a,b,c){return function(e){b[a]=this,c[a]=arguments.length>1?d.call(arguments):e,c===i?g.notifyWith(b,c):--f||g.resolveWith(b,c)}},i,j,k;if(e>1)for(i=new Array(e),j=new Array(e),k=new Array(e);e>b;b++)c[b]&&m.isFunction(c[b].promise)?c[b].promise().done(h(b,k,c)).fail(g.reject).progress(h(b,j,i)):--f;return f||g.resolveWith(k,c),g.promise()}});var H;m.fn.ready=function(a){return m.ready.promise().done(a),this},m.extend({isReady:!1,readyWait:1,holdReady:function(a){a?m.readyWait++:m.ready(!0)},ready:function(a){if(a===!0?!--m.readyWait:!m.isReady){if(!y.body)return setTimeout(m.ready);m.isReady=!0,a!==!0&&--m.readyWait>0||(H.resolveWith(y,[m]),m.fn.triggerHandler&&(m(y).triggerHandler("ready"),m(y).off("ready")))}}});function I(){y.addEventListener?(y.removeEventListener("DOMContentLoaded",J,!1),a.removeEventListener("load",J,!1)):(y.detachEvent("onreadystatechange",J),a.detachEvent("onload",J))}function J(){(y.addEventListener||"load"===event.type||"complete"===y.readyState)&&(I(),m.ready())}m.ready.promise=function(b){if(!H)if(H=m.Deferred(),"complete"===y.readyState)setTimeout(m.ready);else if(y.addEventListener)y.addEventListener("DOMContentLoaded",J,!1),a.addEventListener("load",J,!1);else{y.attachEvent("onreadystatechange",J),a.attachEvent("onload",J);var c=!1;try{c=null==a.frameElement&&y.documentElement}catch(d){}c&&c.doScroll&&!function e(){if(!m.isReady){try{c.doScroll("left")}catch(a){return setTimeout(e,50)}I(),m.ready()}}()}return H.promise(b)};var K="undefined",L;for(L in m(k))break;k.ownLast="0"!==L,k.inlineBlockNeedsLayout=!1,m(function(){var a,b,c,d;c=y.getElementsByTagName("body")[0],c&&c.style&&(b=y.createElement("div"),d=y.createElement("div"),d.style.cssText="position:absolute;border:0;width:0;height:0;top:0;left:-9999px",c.appendChild(d).appendChild(b),typeof b.style.zoom!==K&&(b.style.cssText="display:inline;margin:0;border:0;padding:1px;width:1px;zoom:1",k.inlineBlockNeedsLayout=a=3===b.offsetWidth,a&&(c.style.zoom=1)),c.removeChild(d))}),function(){var a=y.createElement("div");if(null==k.deleteExpando){k.deleteExpando=!0;try{delete a.test}catch(b){k.deleteExpando=!1}}a=null}(),m.acceptData=function(a){var b=m.noData[(a.nodeName+" ").toLowerCase()],c=+a.nodeType||1;return 1!==c&&9!==c?!1:!b||b!==!0&&a.getAttribute("classid")===b};var M=/^(?:\{[\w\W]*\}|\[[\w\W]*\])$/,N=/([A-Z])/g;function O(a,b,c){if(void 0===c&&1===a.nodeType){var d="data-"+b.replace(N,"-$1").toLowerCase();if(c=a.getAttribute(d),"string"==typeof c){try{c="true"===c?!0:"false"===c?!1:"null"===c?null:+c+""===c?+c:M.test(c)?m.parseJSON(c):c}catch(e){}m.data(a,b,c)}else c=void 0}return c}function P(a){var b;for(b in a)if(("data"!==b||!m.isEmptyObject(a[b]))&&"toJSON"!==b)return!1;
@@ -363,139 +363,556 @@ summary {
 
 
 
-<h1 class="title toc-ignore">Supplement for Web Scraping 1</h1>
-<h4 class="author">Mario Giacomazzo</h4>
-<h4 class="date">July 07, 2021</h4>
+<h1 class="title toc-ignore">HW 2 Solutions</h1>
+<h4 class="author">Tom Keefe</h4>
+<h4 class="date">August 30, 2018</h4>
 
 </div>
 
 
-<div id="introduction" class="section level1">
-<h1>Introduction</h1>
-<p>In this tutorial, we will learn how to scrape the web for information. We will look at data spread across multiple websites that is worthy to be joined and analyzed. The R package <code>rvest</code> was developed by Hadley Wickham to provide a user-friendly web scraping experience. Combining <code>rvest</code> with a CSS selector tool, such as <a href="https://selectorgadget.com/">SelectorGadget</a>, or built-in browser developer tools, makes this entire process more efficient and less painful. This tutorial, prescribed by Dr. Mario, will be guided and completed in stages during class. The following lists contain a lot more information that should be observed and cherished. The truths I will bestow upon you are inspired by many of the works below.</p>
-<ul>
-<li>Blog Tutorials for Web Scraping in R Using <code>library(rvest)</code>.
-<ul>
-<li><strong><a href="http://blog.corynissen.com/2015/01/using-rvest-to-scrape-html-table.html">Blog 1</a></strong></li>
-<li><strong><a href="https://blog.rstudio.com/2014/11/24/rvest-easy-web-scraping-with-r/">Blog 2</a></strong></li>
-<li><strong><a href="http://categitau.com/using-rvest-to-scrape-data-from-wikipedia/">Blog 3</a></strong></li>
-<li><strong><a href="https://stat4701.github.io/edav/2015/04/02/rvest_tutorial/">Blog 4</a></strong></li>
-<li><strong><a href="https://www.analyticsvidhya.com/blog/2017/03/beginners-guide-on-web-scraping-in-r-using-rvest-with-hands-on-knowledge/">Blog 5</a></strong></li>
-</ul></li>
-<li>Video Tutorials for Web Scraping in R Using <code>library(rvest)</code>
-<ul>
-<li><strong><a href="https://www.youtube.com/watch?v=4IYfYx4yoAI">Video 1</a></strong></li>
-<li><strong><a href="https://www.youtube.com/watch?v=9ATgpE0yTxA">Video 2</a></strong></li>
-<li><strong><a href="https://www.youtube.com/watch?v=gSbuwYdNYLM">Video 3</a></strong></li>
-</ul></li>
-<li>Information on Open Source SelectorGadget
-<ul>
-<li><strong><a href="https://rvest.tidyverse.org/articles/articles/selectorgadget.html">Blog</a></strong></li>
-<li><strong><a href="https://www.youtube.com/watch?v=A5LIHrpZBnY">Video</a></strong></li>
-</ul></li>
-</ul>
+<div id="instructions" class="section level1">
+<h1>Instructions</h1>
+<p><strong>Exercises:</strong> 1-3 (Pgs. 49-50); 2-4 (Pg. 51); 2,4 (Pg. 54); 1-4 (Pg. 58)</p>
+<p><strong>Assigned:</strong> Friday, August 31, 2018</p>
+<p><strong>Due:</strong> Friday, September 7, 2018 by 5:00 PM</p>
+<p><strong>Submission:</strong> Submit via an electronic document on Sakai. Must be submitted as a html file generated in RStudio. All assigned problems are chosen according to the textbook <em>R for Data Science</em>.</p>
 </div>
-<div id="part-1-violent-crimes-in-us-cities" class="section level1">
-<h1>Part 1: Violent Crimes in US Cities</h1>
-<p>When I was a little boy, my teachers frowned on any information that was cited from online sources. In the early stages of <a href="https://www.wikipedia.org/">Wikipedia</a>, instructors considered it unreliable due to its <em>openly editable</em> format. In academia, Wikipedia is not found in research citations, but is often a first stop in the investigation on almost any topic in any field. A search may not give you all the information you want, but you will often be provided with helpful links to the source of the information. The search for <a href="https://en.wikipedia.org/wiki/Wikipedia">Wikipedia</a> on Wikipedia provides you with a historical overview including positives and negatives.</p>
-<p>Many Wikipedia pages contain information organized in tables. Consider the <a href="https://en.wikipedia.org/wiki/List_of_United_States_cities_by_crime_rate#Crime_rates_per_100.2C000_people_.282012.29">US Crime Rates</a> table that provides the crime rates per 100,000 people for major metropolitan areas in the United States. Statistics are given for violent crimes, property crimes and arson. We desire to convert the HTML table into an R data frame object so we can utilize this information in future analysis.</p>
-<div id="chunk-1-initial-web-scraping-attempt" class="section level2">
-<h2>Chunk 1: Initial Web Scraping Attempt</h2>
-<p>Using <code>rvest</code> functions such as <code>read_html()</code> and <code>html_table()</code>, we create a data frame called <code>VIOLENT</code> that contains all information read from the desired Wikipedia page.</p>
-<pre class="r"><code>URL.VIOLENT=&quot;https://en.wikipedia.org/wiki/List_of_United_States_cities_by_crime_rate#Crime_rates_per_100.2C000_people_.282012.29&quot;
-VIOLENT = URL.VIOLENT %&gt;%
-  read_html() %&gt;%
-  html_table(fill=T) %&gt;%
-  .[[1]]
-str(VIOLENT)</code></pre>
+<div id="chapter-3-pgs.-49-50" class="section level1">
+<h1>Chapter 3 (Pgs. 49-50)</h1>
+<div id="exercise-1" class="section level2">
+<h2>Exercise 1</h2>
+<div id="a-had-an-arrival-delay-of-2-or-more-hours" class="section level3">
+<h3>a) Had an arrival delay of 2 or more hours</h3>
+<pre class="r"><code>filter(flights, arr_delay &gt;= 120)</code></pre>
+<pre><code>## # A tibble: 10,200 x 19
+##     year month   day dep_time sched_dep_time dep_delay arr_time sched_arr_time
+##    &lt;int&gt; &lt;int&gt; &lt;int&gt;    &lt;int&gt;          &lt;int&gt;     &lt;dbl&gt;    &lt;int&gt;          &lt;int&gt;
+##  1  2013     1     1      811            630       101     1047            830
+##  2  2013     1     1      848           1835       853     1001           1950
+##  3  2013     1     1      957            733       144     1056            853
+##  4  2013     1     1     1114            900       134     1447           1222
+##  5  2013     1     1     1505           1310       115     1638           1431
+##  6  2013     1     1     1525           1340       105     1831           1626
+##  7  2013     1     1     1549           1445        64     1912           1656
+##  8  2013     1     1     1558           1359       119     1718           1515
+##  9  2013     1     1     1732           1630        62     2028           1825
+## 10  2013     1     1     1803           1620       103     2008           1750
+## # ... with 10,190 more rows, and 11 more variables: arr_delay &lt;dbl&gt;,
+## #   carrier &lt;chr&gt;, flight &lt;int&gt;, tailnum &lt;chr&gt;, origin &lt;chr&gt;, dest &lt;chr&gt;,
+## #   air_time &lt;dbl&gt;, distance &lt;dbl&gt;, hour &lt;dbl&gt;, minute &lt;dbl&gt;, time_hour &lt;dttm&gt;</code></pre>
 </div>
-<div id="chunk-2-initial-selection-of-violent-crimes-and-cleaning" class="section level2">
-<h2>Chunk 2: Initial Selection of Violent Crimes and Cleaning</h2>
-<p>You probably noticed an issue with the first row. Why do you think this occurred? Carefully, examine the webpage table to identify the cause. Also, we only want the violent crime statistics for each city and state. What columns do we need to keep?</p>
-<pre class="r"><code>VIOLENT2=VIOLENT[-c(1:2),1:8]
-colnames(VIOLENT2)=c(&quot;State&quot;,&quot;City&quot;,&quot;Population&quot;,&quot;Total&quot;,&quot;Murder&quot;,&quot;Rape&quot;,&quot;Robbery&quot;,&quot;Assault&quot;)
-str(VIOLENT2)</code></pre>
+<div id="b-flew-to-houston-iah-or-hou" class="section level3">
+<h3>b) Flew to Houston (<code>IAH</code> or <code>HOU</code>)</h3>
+<pre class="r"><code>filter(flights, dest==&quot;IAH&quot; | dest==&quot;HOU&quot;)</code></pre>
+<pre><code>## # A tibble: 9,313 x 19
+##     year month   day dep_time sched_dep_time dep_delay arr_time sched_arr_time
+##    &lt;int&gt; &lt;int&gt; &lt;int&gt;    &lt;int&gt;          &lt;int&gt;     &lt;dbl&gt;    &lt;int&gt;          &lt;int&gt;
+##  1  2013     1     1      517            515         2      830            819
+##  2  2013     1     1      533            529         4      850            830
+##  3  2013     1     1      623            627        -4      933            932
+##  4  2013     1     1      728            732        -4     1041           1038
+##  5  2013     1     1      739            739         0     1104           1038
+##  6  2013     1     1      908            908         0     1228           1219
+##  7  2013     1     1     1028           1026         2     1350           1339
+##  8  2013     1     1     1044           1045        -1     1352           1351
+##  9  2013     1     1     1114            900       134     1447           1222
+## 10  2013     1     1     1205           1200         5     1503           1505
+## # ... with 9,303 more rows, and 11 more variables: arr_delay &lt;dbl&gt;,
+## #   carrier &lt;chr&gt;, flight &lt;int&gt;, tailnum &lt;chr&gt;, origin &lt;chr&gt;, dest &lt;chr&gt;,
+## #   air_time &lt;dbl&gt;, distance &lt;dbl&gt;, hour &lt;dbl&gt;, minute &lt;dbl&gt;, time_hour &lt;dttm&gt;</code></pre>
 </div>
-<div id="chunk-3-fixing-variable-types" class="section level2">
-<h2>Chunk 3: Fixing Variable Types</h2>
-<p>The subheadings in the Wikipedia table create problems when parsed to data frame. The presence of this problem causes known numeric variables to be treated as categorical variables. We need to use functions inside and outside <code>tidyverse</code> to fix this issue.</p>
-<pre class="r"><code>VIOLENT3=VIOLENT2 %&gt;%
-            mutate_at(3:8,str_replace_all,pattern=&quot;,&quot;,replacement=&quot;&quot;) %&gt;%
-            mutate_at(3:8,as.numeric)
-str(VIOLENT3)</code></pre>
+<div id="c-were-operated-by-united-american-or-delta" class="section level3">
+<h3>c) Were operated by United, American, or Delta</h3>
+<pre class="r"><code>filter(flights, carrier %in% c(&quot;UA&quot;, &quot;AA&quot;, &quot;DL&quot;))</code></pre>
+<pre><code>## # A tibble: 139,504 x 19
+##     year month   day dep_time sched_dep_time dep_delay arr_time sched_arr_time
+##    &lt;int&gt; &lt;int&gt; &lt;int&gt;    &lt;int&gt;          &lt;int&gt;     &lt;dbl&gt;    &lt;int&gt;          &lt;int&gt;
+##  1  2013     1     1      517            515         2      830            819
+##  2  2013     1     1      533            529         4      850            830
+##  3  2013     1     1      542            540         2      923            850
+##  4  2013     1     1      554            600        -6      812            837
+##  5  2013     1     1      554            558        -4      740            728
+##  6  2013     1     1      558            600        -2      753            745
+##  7  2013     1     1      558            600        -2      924            917
+##  8  2013     1     1      558            600        -2      923            937
+##  9  2013     1     1      559            600        -1      941            910
+## 10  2013     1     1      559            600        -1      854            902
+## # ... with 139,494 more rows, and 11 more variables: arr_delay &lt;dbl&gt;,
+## #   carrier &lt;chr&gt;, flight &lt;int&gt;, tailnum &lt;chr&gt;, origin &lt;chr&gt;, dest &lt;chr&gt;,
+## #   air_time &lt;dbl&gt;, distance &lt;dbl&gt;, hour &lt;dbl&gt;, minute &lt;dbl&gt;, time_hour &lt;dttm&gt;</code></pre>
 </div>
-<div id="chunk-4-identifying-problematic-cases-in-city" class="section level2">
-<h2>Chunk 4: Identifying Problematic Cases in <code>City</code></h2>
-<p>Using <code>str_detect()</code> we can identify cases in <code>City</code> where unwanted characters {“,”,“0” to “9”} make an appearance.</p>
-<pre class="r"><code>VIOLENT3[str_detect(VIOLENT3$City,&quot;[,(0-9)]{1}&quot;),]$City
-VIOLENT3[str_detect(VIOLENT3$City,&quot;[:digit:]&quot;),]$City
-VIOLENT3[str_detect(VIOLENT3$State,&quot;[,(0-9)]{1}&quot;),]$State</code></pre>
+<div id="d-departed-in-summer-july-august-and-september" class="section level3">
+<h3>d) Departed in summer (July, August, and September)</h3>
+<pre class="r"><code>filter(flights, month %in% c(7,8,9))</code></pre>
+<pre><code>## # A tibble: 86,326 x 19
+##     year month   day dep_time sched_dep_time dep_delay arr_time sched_arr_time
+##    &lt;int&gt; &lt;int&gt; &lt;int&gt;    &lt;int&gt;          &lt;int&gt;     &lt;dbl&gt;    &lt;int&gt;          &lt;int&gt;
+##  1  2013     7     1        1           2029       212      236           2359
+##  2  2013     7     1        2           2359         3      344            344
+##  3  2013     7     1       29           2245       104      151              1
+##  4  2013     7     1       43           2130       193      322             14
+##  5  2013     7     1       44           2150       174      300            100
+##  6  2013     7     1       46           2051       235      304           2358
+##  7  2013     7     1       48           2001       287      308           2305
+##  8  2013     7     1       58           2155       183      335             43
+##  9  2013     7     1      100           2146       194      327             30
+## 10  2013     7     1      100           2245       135      337            135
+## # ... with 86,316 more rows, and 11 more variables: arr_delay &lt;dbl&gt;,
+## #   carrier &lt;chr&gt;, flight &lt;int&gt;, tailnum &lt;chr&gt;, origin &lt;chr&gt;, dest &lt;chr&gt;,
+## #   air_time &lt;dbl&gt;, distance &lt;dbl&gt;, hour &lt;dbl&gt;, minute &lt;dbl&gt;, time_hour &lt;dttm&gt;</code></pre>
 </div>
-<div id="chunk-5-cleaning-problematic-cities" class="section level2">
-<h2>Chunk 5: Cleaning Problematic Cities</h2>
-<p>The unwanted characters {“,”,“0” to “9”} are special, but not our friends. In Wikipedia, they were used for indicating footnote information. We need to efficiently fix these occurrences by banishing them to the abyss. We see this in both cities and states. Also, there are other scenarios where cities have unusual names that may be problematic when involving additional data.</p>
-<pre class="r"><code>VIOLENT4 = VIOLENT3 %&gt;%
-              mutate(City=str_replace_all(City,&quot;[,(0-9){1}]&quot;,&quot;&quot;)) %&gt;%
-              mutate(State=str_replace_all(State,&quot;[,(0-9){1}]&quot;,&quot;&quot;))
-
-VIOLENT5 = VIOLENT4 %&gt;% 
-              mutate(City=ifelse(City==&quot;Charlotte-Mecklenburg&quot;,&quot;Charlotte&quot;,City))
-
-VIOLENT6 = VIOLENT5 %&gt;%
-              mutate(City=str_replace(City,&quot; Metro&quot;,&quot;&quot;))
-
-write_csv(VIOLENT6,&quot;FINAL_VIOLENT.CSV&quot;)</code></pre>
+<div id="e-arrived-more-than-2-hours-late-but-didnt-leave-late" class="section level3">
+<h3>e) Arrived more than 2 hours late, but didn’t leave late</h3>
+<pre class="r"><code>filter(flights, arr_delay &gt;= 120, dep_delay &lt;= 0)</code></pre>
+<pre><code>## # A tibble: 29 x 19
+##     year month   day dep_time sched_dep_time dep_delay arr_time sched_arr_time
+##    &lt;int&gt; &lt;int&gt; &lt;int&gt;    &lt;int&gt;          &lt;int&gt;     &lt;dbl&gt;    &lt;int&gt;          &lt;int&gt;
+##  1  2013     1    27     1419           1420        -1     1754           1550
+##  2  2013    10     7     1350           1350         0     1736           1526
+##  3  2013    10     7     1357           1359        -2     1858           1654
+##  4  2013    10    16      657            700        -3     1258           1056
+##  5  2013    11     1      658            700        -2     1329           1015
+##  6  2013     3    18     1844           1847        -3       39           2219
+##  7  2013     4    17     1635           1640        -5     2049           1845
+##  8  2013     4    18      558            600        -2     1149            850
+##  9  2013     4    18      655            700        -5     1213            950
+## 10  2013     5    22     1827           1830        -3     2217           2010
+## # ... with 19 more rows, and 11 more variables: arr_delay &lt;dbl&gt;, carrier &lt;chr&gt;,
+## #   flight &lt;int&gt;, tailnum &lt;chr&gt;, origin &lt;chr&gt;, dest &lt;chr&gt;, air_time &lt;dbl&gt;,
+## #   distance &lt;dbl&gt;, hour &lt;dbl&gt;, minute &lt;dbl&gt;, time_hour &lt;dttm&gt;</code></pre>
+</div>
+<div id="f-were-delayed-by-at-least-an-hour-but-made-up-over-30-minutes-in-flight" class="section level3">
+<h3>f) Were delayed by at least an hour, but made up over 30 minutes in flight</h3>
+<pre class="r"><code>filter(flights, dep_delay &gt;= 60, sched_arr_time+dep_delay-arr_time &gt; 30)</code></pre>
+<pre><code>## # A tibble: 4,893 x 19
+##     year month   day dep_time sched_dep_time dep_delay arr_time sched_arr_time
+##    &lt;int&gt; &lt;int&gt; &lt;int&gt;    &lt;int&gt;          &lt;int&gt;     &lt;dbl&gt;    &lt;int&gt;          &lt;int&gt;
+##  1  2013     1     1      848           1835       853     1001           1950
+##  2  2013     1     1     2205           1720       285       46           2040
+##  3  2013     1     1     2312           2000       192       21           2110
+##  4  2013     1     1     2323           2200        83       22           2313
+##  5  2013     1     1     2343           1724       379      314           1938
+##  6  2013     1     2      126           2250       156      233           2359
+##  7  2013     1     2     2145           1925       140       54           2244
+##  8  2013     1     2     2225           1930       175      231           2219
+##  9  2013     1     2     2259           2100       119      122           2332
+## 10  2013     1     2     2309           2200        69        5           2307
+## # ... with 4,883 more rows, and 11 more variables: arr_delay &lt;dbl&gt;,
+## #   carrier &lt;chr&gt;, flight &lt;int&gt;, tailnum &lt;chr&gt;, origin &lt;chr&gt;, dest &lt;chr&gt;,
+## #   air_time &lt;dbl&gt;, distance &lt;dbl&gt;, hour &lt;dbl&gt;, minute &lt;dbl&gt;, time_hour &lt;dttm&gt;</code></pre>
+<p>Note, <code>filter(flights, dep_delay &gt;= 60, sched_arr_time+dep_delay-arr_time &gt; 30)</code> should receive half credit. The reason this doesn’t quite work is cases where the scheduled arrival is before midnight, and the actual arrival is after midnight. Then the subtraction doesn’t work out properly.</p>
+</div>
+<div id="g-departed-between-midnight-and-6-am-inclusive" class="section level3">
+<h3>g) Departed between midnight and 6 am (inclusive)</h3>
+<p>You may have noticed that this data codes midnight as 2400 instead of 0. So, the most correct answer is <code>filter(flights, dep_time &lt;= 600 | dep_time==2400)</code>. But, the following is perfectly acceptable:</p>
+<pre class="r"><code>filter(flights, dep_time &lt;= 600)</code></pre>
+<pre><code>## # A tibble: 9,344 x 19
+##     year month   day dep_time sched_dep_time dep_delay arr_time sched_arr_time
+##    &lt;int&gt; &lt;int&gt; &lt;int&gt;    &lt;int&gt;          &lt;int&gt;     &lt;dbl&gt;    &lt;int&gt;          &lt;int&gt;
+##  1  2013     1     1      517            515         2      830            819
+##  2  2013     1     1      533            529         4      850            830
+##  3  2013     1     1      542            540         2      923            850
+##  4  2013     1     1      544            545        -1     1004           1022
+##  5  2013     1     1      554            600        -6      812            837
+##  6  2013     1     1      554            558        -4      740            728
+##  7  2013     1     1      555            600        -5      913            854
+##  8  2013     1     1      557            600        -3      709            723
+##  9  2013     1     1      557            600        -3      838            846
+## 10  2013     1     1      558            600        -2      753            745
+## # ... with 9,334 more rows, and 11 more variables: arr_delay &lt;dbl&gt;,
+## #   carrier &lt;chr&gt;, flight &lt;int&gt;, tailnum &lt;chr&gt;, origin &lt;chr&gt;, dest &lt;chr&gt;,
+## #   air_time &lt;dbl&gt;, distance &lt;dbl&gt;, hour &lt;dbl&gt;, minute &lt;dbl&gt;, time_hour &lt;dttm&gt;</code></pre>
 </div>
 </div>
-<div id="part-2-geographical-locations-of-us-cities" class="section level1">
-<h1>Part 2: Geographical Locations of US Cities</h1>
-<p>The <a href="https://cran.r-project.org/web/packages/noncensus/noncensus.pdf"><code>noncensus</code></a> package in R contains preloaded datasets useful for population studies. Imagine if we wanted to plot the crime information from <code>VIOLENT6</code> on a US map. What information would we need?</p>
-<div id="chunk-1-read-in-zip-data" class="section level2">
-<h2>Chunk 1: Read in ZIP Data</h2>
-<p>The data in <code>zip_codes</code> provided in the <code>noncensus</code> package gives us important geographical information for all US cities.</p>
-<pre class="r"><code>data(zip_codes)
-ZIP=zip_codes
-str(ZIP)</code></pre>
+<div id="exercise-2" class="section level2">
+<h2>Exercise 2</h2>
+<p>The <code>between</code> helper is a way to write (x &gt;= a) &amp; (x &lt;= b) in a way that is easy to remember and is easy to read.</p>
+<pre class="r"><code>?between</code></pre>
+<pre><code>## starting httpd help server ... done</code></pre>
+<p>We can use <code>between</code> to rewrite the queries above that used numeric comparisons ((d) and (f)):</p>
+<pre class="r"><code>filter(flights, between(month, 7, 9))</code></pre>
+<pre><code>## # A tibble: 86,326 x 19
+##     year month   day dep_time sched_dep_time dep_delay arr_time sched_arr_time
+##    &lt;int&gt; &lt;int&gt; &lt;int&gt;    &lt;int&gt;          &lt;int&gt;     &lt;dbl&gt;    &lt;int&gt;          &lt;int&gt;
+##  1  2013     7     1        1           2029       212      236           2359
+##  2  2013     7     1        2           2359         3      344            344
+##  3  2013     7     1       29           2245       104      151              1
+##  4  2013     7     1       43           2130       193      322             14
+##  5  2013     7     1       44           2150       174      300            100
+##  6  2013     7     1       46           2051       235      304           2358
+##  7  2013     7     1       48           2001       287      308           2305
+##  8  2013     7     1       58           2155       183      335             43
+##  9  2013     7     1      100           2146       194      327             30
+## 10  2013     7     1      100           2245       135      337            135
+## # ... with 86,316 more rows, and 11 more variables: arr_delay &lt;dbl&gt;,
+## #   carrier &lt;chr&gt;, flight &lt;int&gt;, tailnum &lt;chr&gt;, origin &lt;chr&gt;, dest &lt;chr&gt;,
+## #   air_time &lt;dbl&gt;, distance &lt;dbl&gt;, hour &lt;dbl&gt;, minute &lt;dbl&gt;, time_hour &lt;dttm&gt;</code></pre>
+<pre class="r"><code>filter(flights, between(dep_time, 0, 600))</code></pre>
+<pre><code>## # A tibble: 9,344 x 19
+##     year month   day dep_time sched_dep_time dep_delay arr_time sched_arr_time
+##    &lt;int&gt; &lt;int&gt; &lt;int&gt;    &lt;int&gt;          &lt;int&gt;     &lt;dbl&gt;    &lt;int&gt;          &lt;int&gt;
+##  1  2013     1     1      517            515         2      830            819
+##  2  2013     1     1      533            529         4      850            830
+##  3  2013     1     1      542            540         2      923            850
+##  4  2013     1     1      544            545        -1     1004           1022
+##  5  2013     1     1      554            600        -6      812            837
+##  6  2013     1     1      554            558        -4      740            728
+##  7  2013     1     1      555            600        -5      913            854
+##  8  2013     1     1      557            600        -3      709            723
+##  9  2013     1     1      557            600        -3      838            846
+## 10  2013     1     1      558            600        -2      753            745
+## # ... with 9,334 more rows, and 11 more variables: arr_delay &lt;dbl&gt;,
+## #   carrier &lt;chr&gt;, flight &lt;int&gt;, tailnum &lt;chr&gt;, origin &lt;chr&gt;, dest &lt;chr&gt;,
+## #   air_time &lt;dbl&gt;, distance &lt;dbl&gt;, hour &lt;dbl&gt;, minute &lt;dbl&gt;, time_hour &lt;dttm&gt;</code></pre>
 </div>
-<div id="chunk-2-summarize-for-joining" class="section level2">
-<h2>Chunk 2: Summarize for Joining</h2>
-<p>Many US metropolitan areas cover multiple zip codes. Using <code>group_by()</code> and <code>summarize()</code>, we can obtain the average position for each combination of city and state.</p>
-<pre class="r"><code>ZIP2 = ZIP %&gt;%
-        group_by(city,state) %&gt;%
-        summarize(lat=mean(latitude),lon=mean(longitude)) %&gt;%
-        ungroup()
-write_csv(ZIP2,&quot;FINAL_ZIP.CSV&quot;)</code></pre>
+<div id="exercise-3" class="section level2">
+<h2>Exercise 3</h2>
+<pre class="r"><code>filter(flights, is.na(dep_time))</code></pre>
+<pre><code>## # A tibble: 8,255 x 19
+##     year month   day dep_time sched_dep_time dep_delay arr_time sched_arr_time
+##    &lt;int&gt; &lt;int&gt; &lt;int&gt;    &lt;int&gt;          &lt;int&gt;     &lt;dbl&gt;    &lt;int&gt;          &lt;int&gt;
+##  1  2013     1     1       NA           1630        NA       NA           1815
+##  2  2013     1     1       NA           1935        NA       NA           2240
+##  3  2013     1     1       NA           1500        NA       NA           1825
+##  4  2013     1     1       NA            600        NA       NA            901
+##  5  2013     1     2       NA           1540        NA       NA           1747
+##  6  2013     1     2       NA           1620        NA       NA           1746
+##  7  2013     1     2       NA           1355        NA       NA           1459
+##  8  2013     1     2       NA           1420        NA       NA           1644
+##  9  2013     1     2       NA           1321        NA       NA           1536
+## 10  2013     1     2       NA           1545        NA       NA           1910
+## # ... with 8,245 more rows, and 11 more variables: arr_delay &lt;dbl&gt;,
+## #   carrier &lt;chr&gt;, flight &lt;int&gt;, tailnum &lt;chr&gt;, origin &lt;chr&gt;, dest &lt;chr&gt;,
+## #   air_time &lt;dbl&gt;, distance &lt;dbl&gt;, hour &lt;dbl&gt;, minute &lt;dbl&gt;, time_hour &lt;dttm&gt;</code></pre>
+<pre class="r"><code># Then nrow will give us the number of rows.
+nrow(filter(flights, is.na(dep_time)))</code></pre>
+<pre><code>## [1] 8255</code></pre>
+<p>There are 8255 rows with missing <code>dep_time</code>. For these rows, other missing columns are <code>dep_delay</code>, <code>arr_time</code>, <code>arr_delay</code>, and <code>air_time</code>. These rows may represent canceled flights.</p>
 </div>
-<div id="chunk-3-assessing-future-join-issues" class="section level2">
-<h2>Chunk 3: Assessing Future Join Issues</h2>
-<p>Run the code below. What makes merging <code>ZIP2</code> with <code>VIOLENT6</code> problematic?</p>
-<pre class="r"><code>head(VIOLENT6[,1:4],3)
-head(ZIP2,3)</code></pre>
+</div>
+<div id="chapter-3-pg.-51" class="section level1">
+<h1>Chapter 3 (Pg. 51)</h1>
+<div id="exercise-2-1" class="section level2">
+<h2>Exercise 2</h2>
+<pre class="r"><code># Most delayed flights. Note, I&#39;m interpreting this as the greatest values of dep_delay. Other reasonable interpretations might be based on arr_delay, or a combination of both.
+arrange(flights, desc(dep_delay))</code></pre>
+<pre><code>## # A tibble: 336,776 x 19
+##     year month   day dep_time sched_dep_time dep_delay arr_time sched_arr_time
+##    &lt;int&gt; &lt;int&gt; &lt;int&gt;    &lt;int&gt;          &lt;int&gt;     &lt;dbl&gt;    &lt;int&gt;          &lt;int&gt;
+##  1  2013     1     9      641            900      1301     1242           1530
+##  2  2013     6    15     1432           1935      1137     1607           2120
+##  3  2013     1    10     1121           1635      1126     1239           1810
+##  4  2013     9    20     1139           1845      1014     1457           2210
+##  5  2013     7    22      845           1600      1005     1044           1815
+##  6  2013     4    10     1100           1900       960     1342           2211
+##  7  2013     3    17     2321            810       911      135           1020
+##  8  2013     6    27      959           1900       899     1236           2226
+##  9  2013     7    22     2257            759       898      121           1026
+## 10  2013    12     5      756           1700       896     1058           2020
+## # ... with 336,766 more rows, and 11 more variables: arr_delay &lt;dbl&gt;,
+## #   carrier &lt;chr&gt;, flight &lt;int&gt;, tailnum &lt;chr&gt;, origin &lt;chr&gt;, dest &lt;chr&gt;,
+## #   air_time &lt;dbl&gt;, distance &lt;dbl&gt;, hour &lt;dbl&gt;, minute &lt;dbl&gt;, time_hour &lt;dttm&gt;</code></pre>
+<pre class="r"><code># Earliest leaving flights. This could be interpreted as the flights that left earliest in the day, or the flights that left earliest in the year, or the flights that left earliest compared to their scheduled departure time. I&#39;ll interpret it as the flights that left earliest in the day. 
+arrange(flights, dep_time)</code></pre>
+<pre><code>## # A tibble: 336,776 x 19
+##     year month   day dep_time sched_dep_time dep_delay arr_time sched_arr_time
+##    &lt;int&gt; &lt;int&gt; &lt;int&gt;    &lt;int&gt;          &lt;int&gt;     &lt;dbl&gt;    &lt;int&gt;          &lt;int&gt;
+##  1  2013     1    13        1           2249        72      108           2357
+##  2  2013     1    31        1           2100       181      124           2225
+##  3  2013    11    13        1           2359         2      442            440
+##  4  2013    12    16        1           2359         2      447            437
+##  5  2013    12    20        1           2359         2      430            440
+##  6  2013    12    26        1           2359         2      437            440
+##  7  2013    12    30        1           2359         2      441            437
+##  8  2013     2    11        1           2100       181      111           2225
+##  9  2013     2    24        1           2245        76      121           2354
+## 10  2013     3     8        1           2355         6      431            440
+## # ... with 336,766 more rows, and 11 more variables: arr_delay &lt;dbl&gt;,
+## #   carrier &lt;chr&gt;, flight &lt;int&gt;, tailnum &lt;chr&gt;, origin &lt;chr&gt;, dest &lt;chr&gt;,
+## #   air_time &lt;dbl&gt;, distance &lt;dbl&gt;, hour &lt;dbl&gt;, minute &lt;dbl&gt;, time_hour &lt;dttm&gt;</code></pre>
+<p>Does something jump out to you about this?</p>
+<p>This output should put midnight departures at the top, but the earliest departures here are at 12:01 AM. As your data science skills mature, you will start recognizing this as an <em>issue with how the data was coded</em>. The authors of this data chose to use 2400 as midnight, instead of 0.</p>
+</div>
+<div id="exercise-3-1" class="section level2">
+<h2>Exercise 3</h2>
+<p>I’m interpreting this to be the distance between the airports divided by the time in the air. Another natural interpretation of “fastest” is simply <code>air_time</code>, e.g. “Raleigh to Wilmington is a fast flight”.</p>
+<p>A vital piece of being a data scientist is being precise about what you’re asking the data. The issues of interpretation in the above questions indicate how natural questions may be imprecise.</p>
+<pre class="r"><code>arrange(flights, desc(distance/air_time))</code></pre>
+<pre><code>## # A tibble: 336,776 x 19
+##     year month   day dep_time sched_dep_time dep_delay arr_time sched_arr_time
+##    &lt;int&gt; &lt;int&gt; &lt;int&gt;    &lt;int&gt;          &lt;int&gt;     &lt;dbl&gt;    &lt;int&gt;          &lt;int&gt;
+##  1  2013     5    25     1709           1700         9     1923           1937
+##  2  2013     7     2     1558           1513        45     1745           1719
+##  3  2013     5    13     2040           2025        15     2225           2226
+##  4  2013     3    23     1914           1910         4     2045           2043
+##  5  2013     1    12     1559           1600        -1     1849           1917
+##  6  2013    11    17      650            655        -5     1059           1150
+##  7  2013     2    21     2355           2358        -3      412            438
+##  8  2013    11    17      759            800        -1     1212           1255
+##  9  2013    11    16     2003           1925        38       17             36
+## 10  2013    11    16     2349           2359       -10      402            440
+## # ... with 336,766 more rows, and 11 more variables: arr_delay &lt;dbl&gt;,
+## #   carrier &lt;chr&gt;, flight &lt;int&gt;, tailnum &lt;chr&gt;, origin &lt;chr&gt;, dest &lt;chr&gt;,
+## #   air_time &lt;dbl&gt;, distance &lt;dbl&gt;, hour &lt;dbl&gt;, minute &lt;dbl&gt;, time_hour &lt;dttm&gt;</code></pre>
+</div>
+<div id="exercise-4" class="section level2">
+<h2>Exercise 4</h2>
+<p>Longest and shortest can be interpreted as either time or distance. I’ll use distance.</p>
+<pre class="r"><code>arrange(flights, desc(distance)) # longest distance</code></pre>
+<pre><code>## # A tibble: 336,776 x 19
+##     year month   day dep_time sched_dep_time dep_delay arr_time sched_arr_time
+##    &lt;int&gt; &lt;int&gt; &lt;int&gt;    &lt;int&gt;          &lt;int&gt;     &lt;dbl&gt;    &lt;int&gt;          &lt;int&gt;
+##  1  2013     1     1      857            900        -3     1516           1530
+##  2  2013     1     2      909            900         9     1525           1530
+##  3  2013     1     3      914            900        14     1504           1530
+##  4  2013     1     4      900            900         0     1516           1530
+##  5  2013     1     5      858            900        -2     1519           1530
+##  6  2013     1     6     1019            900        79     1558           1530
+##  7  2013     1     7     1042            900       102     1620           1530
+##  8  2013     1     8      901            900         1     1504           1530
+##  9  2013     1     9      641            900      1301     1242           1530
+## 10  2013     1    10      859            900        -1     1449           1530
+## # ... with 336,766 more rows, and 11 more variables: arr_delay &lt;dbl&gt;,
+## #   carrier &lt;chr&gt;, flight &lt;int&gt;, tailnum &lt;chr&gt;, origin &lt;chr&gt;, dest &lt;chr&gt;,
+## #   air_time &lt;dbl&gt;, distance &lt;dbl&gt;, hour &lt;dbl&gt;, minute &lt;dbl&gt;, time_hour &lt;dttm&gt;</code></pre>
+<pre class="r"><code>arrange(flights, distance) # shortest distance</code></pre>
+<pre><code>## # A tibble: 336,776 x 19
+##     year month   day dep_time sched_dep_time dep_delay arr_time sched_arr_time
+##    &lt;int&gt; &lt;int&gt; &lt;int&gt;    &lt;int&gt;          &lt;int&gt;     &lt;dbl&gt;    &lt;int&gt;          &lt;int&gt;
+##  1  2013     7    27       NA            106        NA       NA            245
+##  2  2013     1     3     2127           2129        -2     2222           2224
+##  3  2013     1     4     1240           1200        40     1333           1306
+##  4  2013     1     4     1829           1615       134     1937           1721
+##  5  2013     1     4     2128           2129        -1     2218           2224
+##  6  2013     1     5     1155           1200        -5     1241           1306
+##  7  2013     1     6     2125           2129        -4     2224           2224
+##  8  2013     1     7     2124           2129        -5     2212           2224
+##  9  2013     1     8     2127           2130        -3     2304           2225
+## 10  2013     1     9     2126           2129        -3     2217           2224
+## # ... with 336,766 more rows, and 11 more variables: arr_delay &lt;dbl&gt;,
+## #   carrier &lt;chr&gt;, flight &lt;int&gt;, tailnum &lt;chr&gt;, origin &lt;chr&gt;, dest &lt;chr&gt;,
+## #   air_time &lt;dbl&gt;, distance &lt;dbl&gt;, hour &lt;dbl&gt;, minute &lt;dbl&gt;, time_hour &lt;dttm&gt;</code></pre>
 </div>
 </div>
-<div id="part-3-linking-state-names-to-state-abbreviations" class="section level1">
-<h1>Part 3: Linking State Names to State Abbreviations</h1>
-<p>Using your favorite search engine, you can look up the government established abbreviations for each state in the US of A. An HTML table found at <a href="https://state.1keydata.com/state-abbreviations.php" class="uri">https://state.1keydata.com/state-abbreviations.php</a> makes this connection for us. However, the way this data is presented is not in the <em>tidy</em> spirit. Soap can’t clean this, unless it is the <a href="https://www.dove.com/us/en/washing-and-bathing/beauty-bar.html">Dove Beauty Bar</a>.</p>
-<div id="chunk-1-web-scraping-table-of-state-abbreviations" class="section level2">
-<h2>Chunk 1: Web Scraping Table of State Abbreviations</h2>
-<pre class="r"><code>URL.STATE_ABBREV = &quot;https://state.1keydata.com/state-abbreviations.php&quot;
-STATE_ABBREV = URL.STATE_ABBREV %&gt;%
-                read_html() %&gt;%
-                html_table(fill=T) %&gt;%
-                .[[3]] %&gt;%
-                .[-1,]
-
-head(STATE_ABBREV)</code></pre>
+<div id="chapter-3-pg.-54" class="section level1">
+<h1>Chapter 3 (Pg. 54)</h1>
+<div id="exercise-2-2" class="section level2">
+<h2>Exercise 2</h2>
+<p>What happens if you include the name of a variable multiple times in a <code>select()</code> call?</p>
+<p>Let’s try!</p>
+<pre class="r"><code>select(flights, c(flight, origin, origin, dest, origin))</code></pre>
+<pre><code>## # A tibble: 336,776 x 3
+##    flight origin dest 
+##     &lt;int&gt; &lt;chr&gt;  &lt;chr&gt;
+##  1   1545 EWR    IAH  
+##  2   1714 LGA    IAH  
+##  3   1141 JFK    MIA  
+##  4    725 JFK    BQN  
+##  5    461 LGA    ATL  
+##  6   1696 EWR    ORD  
+##  7    507 EWR    FLL  
+##  8   5708 LGA    IAD  
+##  9     79 JFK    MCO  
+## 10    301 LGA    ORD  
+## # ... with 336,766 more rows</code></pre>
+<p>Once you use a variable, it is ignored. This is useful for avoiding repeats when using the <code>everything()</code> helper, for example.</p>
 </div>
-<div id="chunk-2-transforming-the-table" class="section level2">
-<h2>Chunk 2: Transforming the Table</h2>
-<pre class="r"><code>STATE_ABBREV_TOP = STATE_ABBREV[,1:2]
-names(STATE_ABBREV_TOP)=c(&quot;State&quot;,&quot;state&quot;)
-STATE_ABBREV_BOT = STATE_ABBREV[,3:4]
-names(STATE_ABBREV_BOT)=c(&quot;State&quot;,&quot;state&quot;)
-STATE_ABBREV2=rbind(STATE_ABBREV_TOP,STATE_ABBREV_BOT) %&gt;% arrange(State)
-head(STATE_ABBREV2)
-write_csv(STATE_ABBREV2,&quot;FINAL_STATE_ABBREV.CSV&quot;)</code></pre>
+<div id="exercise-4-1" class="section level2">
+<h2>Exercise 4</h2>
+<p>Does the result of running the following code surprise you? How do the select helpers deal with case by default? How can you change this default?</p>
+<p>Let’s try!</p>
+<pre class="r"><code>select(flights, contains(&quot;TIME&quot;))</code></pre>
+<pre><code>## # A tibble: 336,776 x 6
+##    dep_time sched_dep_time arr_time sched_arr_time air_time time_hour          
+##       &lt;int&gt;          &lt;int&gt;    &lt;int&gt;          &lt;int&gt;    &lt;dbl&gt; &lt;dttm&gt;             
+##  1      517            515      830            819      227 2013-01-01 05:00:00
+##  2      533            529      850            830      227 2013-01-01 05:00:00
+##  3      542            540      923            850      160 2013-01-01 05:00:00
+##  4      544            545     1004           1022      183 2013-01-01 05:00:00
+##  5      554            600      812            837      116 2013-01-01 06:00:00
+##  6      554            558      740            728      150 2013-01-01 05:00:00
+##  7      555            600      913            854      158 2013-01-01 06:00:00
+##  8      557            600      709            723       53 2013-01-01 06:00:00
+##  9      557            600      838            846      140 2013-01-01 06:00:00
+## 10      558            600      753            745      138 2013-01-01 06:00:00
+## # ... with 336,766 more rows</code></pre>
+<p>By default, the select helpers ignore case. This can be overridden with <code>ignore.case=FALSE</code>:</p>
+<pre class="r"><code>select(flights, contains(&quot;TIME&quot;, ignore.case=FALSE))</code></pre>
+<pre><code>## # A tibble: 336,776 x 0</code></pre>
+<p>Observe that no columns were matched.</p>
+</div>
+</div>
+<div id="chapter-3-pg.-58" class="section level1">
+<h1>Chapter 3 (Pg. 58)</h1>
+<div id="exercise-1-1" class="section level2">
+<h2>Exercise 1</h2>
+<p>Elements of dep_time have the form HHMM, so 3:30 PM is 1530. We want this to be the number of minutes past midnight. First we extract the hour (e.g. 15) by “floor dividing” by 100. 1530 divided by 100 is 15.3, and the floor of 15.3 is 15.</p>
+<p>Then we extract the minutes past the hour by “modding” 1530 by 100. This means we ask for the remainder of 1530 when divided by 100. This remainder is 30, as desired.</p>
+<p>Then we multiply the hours by 60, and add the minutes past the hour.</p>
+<pre class="r"><code>transmute(flights, 
+          dep_hour = dep_time %/% 100, 
+          dep_minute = dep_time %% 100, 
+          dep_minutes_past_midnight = 60*dep_hour + dep_minute
+)</code></pre>
+<pre><code>## # A tibble: 336,776 x 3
+##    dep_hour dep_minute dep_minutes_past_midnight
+##       &lt;dbl&gt;      &lt;dbl&gt;                     &lt;dbl&gt;
+##  1        5         17                       317
+##  2        5         33                       333
+##  3        5         42                       342
+##  4        5         44                       344
+##  5        5         54                       354
+##  6        5         54                       354
+##  7        5         55                       355
+##  8        5         57                       357
+##  9        5         57                       357
+## 10        5         58                       358
+## # ... with 336,766 more rows</code></pre>
+<pre class="r"><code>transmute(flights, 
+          sched_dep_hour = sched_dep_time %/% 100, 
+          sched_dep_minute = sched_dep_time %% 100, 
+          sched_dep_minutes_past_midnight = 60*sched_dep_hour + sched_dep_minute
+)</code></pre>
+<pre><code>## # A tibble: 336,776 x 3
+##    sched_dep_hour sched_dep_minute sched_dep_minutes_past_midnight
+##             &lt;dbl&gt;            &lt;dbl&gt;                           &lt;dbl&gt;
+##  1              5               15                             315
+##  2              5               29                             329
+##  3              5               40                             340
+##  4              5               45                             345
+##  5              6                0                             360
+##  6              5               58                             358
+##  7              6                0                             360
+##  8              6                0                             360
+##  9              6                0                             360
+## 10              6                0                             360
+## # ... with 336,766 more rows</code></pre>
+</div>
+<div id="exercise-2-3" class="section level2">
+<h2>Exercise 2</h2>
+<p>The <code>air_time</code> should be equivalent to the <code>arr_time - dep_time</code>, but I’m sure there will be problems related to how times are represented in this dataset. Let’s see!</p>
+<pre class="r"><code>transmute(flights, air_time, arr_time - dep_time)</code></pre>
+<pre><code>## # A tibble: 336,776 x 2
+##    air_time `arr_time - dep_time`
+##       &lt;dbl&gt;                 &lt;int&gt;
+##  1      227                   313
+##  2      227                   317
+##  3      160                   381
+##  4      183                   460
+##  5      116                   258
+##  6      150                   186
+##  7      158                   358
+##  8       53                   152
+##  9      140                   281
+## 10      138                   195
+## # ... with 336,766 more rows</code></pre>
+<p>It seems that arr_time - dep_time is greater than air_time! Consider a flight that leaves at 4:45 AM and arrives at 5:15 AM. The <code>air_time</code> should be 30 minutes. However, the <code>arr_time - dep_time</code> will be <code>515-445</code>, which is 70! Converting arr_time and dep_time to minutes past midnight as in the previous exercise should help:</p>
+<pre class="r"><code>transmute(flights, 
+          dep_hour = dep_time %/% 100, 
+          dep_minute = dep_time %% 100, 
+          dep_minutes_past_midnight = 60*dep_hour + dep_minute,
+          arr_hour = arr_time %/% 100, 
+          arr_minute = arr_time %% 100, 
+          arr_minutes_past_midnight = 60*arr_hour + arr_minute,
+          air_time,
+          arr_minutes_past_midnight-dep_minutes_past_midnight
+)</code></pre>
+<pre><code>## # A tibble: 336,776 x 8
+##    dep_hour dep_minute dep_minutes_pas~ arr_hour arr_minute arr_minutes_pas~
+##       &lt;dbl&gt;      &lt;dbl&gt;            &lt;dbl&gt;    &lt;dbl&gt;      &lt;dbl&gt;            &lt;dbl&gt;
+##  1        5         17              317        8         30              510
+##  2        5         33              333        8         50              530
+##  3        5         42              342        9         23              563
+##  4        5         44              344       10          4              604
+##  5        5         54              354        8         12              492
+##  6        5         54              354        7         40              460
+##  7        5         55              355        9         13              553
+##  8        5         57              357        7          9              429
+##  9        5         57              357        8         38              518
+## 10        5         58              358        7         53              473
+## # ... with 336,766 more rows, and 2 more variables: air_time &lt;dbl&gt;,
+## #   `arr_minutes_past_midnight - dep_minutes_past_midnight` &lt;dbl&gt;</code></pre>
+<p>These still don’t line up. Maybe there’s a timezone issue? Let’s look at the Newark-San Francisco flights:</p>
+<pre class="r"><code>select(
+  filter(flights, origin==&#39;EWR&#39;, dest==&#39;SFO&#39;),
+  dep_time, arr_time, air_time
+)</code></pre>
+<pre><code>## # A tibble: 5,127 x 3
+##    dep_time arr_time air_time
+##       &lt;int&gt;    &lt;int&gt;    &lt;dbl&gt;
+##  1      558      923      361
+##  2      746     1119      373
+##  3      826     1145      357
+##  4     1105     1428      356
+##  5     1217     1525      345
+##  6     1518     1837      348
+##  7     1729     2052      360
+##  8     1915     2242      351
+##  9     2108       25      354
+## 10      605      851      329
+## # ... with 5,117 more rows</code></pre>
+<p>As we can see, the <code>air_time</code> for EWR-SFO flights is about six hours, but <code>arr_time - dep_time</code> is about three hours. That’s because there’s an additional 3 hours time difference between Newark and SFO.</p>
+<p>To fix this entirely, we need to know how many hours to add to the arr_time by looking at the timezone of the destination airport. We would need to “join” this data to our <code>flights</code> table, which we haven’t yet covered.</p>
+</div>
+<div id="exercise-3-2" class="section level2">
+<h2>Exercise 3</h2>
+<pre class="r"><code>select(flights, dep_time, sched_dep_time, dep_delay)</code></pre>
+<pre><code>## # A tibble: 336,776 x 3
+##    dep_time sched_dep_time dep_delay
+##       &lt;int&gt;          &lt;int&gt;     &lt;dbl&gt;
+##  1      517            515         2
+##  2      533            529         4
+##  3      542            540         2
+##  4      544            545        -1
+##  5      554            600        -6
+##  6      554            558        -4
+##  7      555            600        -5
+##  8      557            600        -3
+##  9      557            600        -3
+## 10      558            600        -2
+## # ... with 336,766 more rows</code></pre>
+<p>The dep_time should equal <code>sched_dep_time + dep_delay</code> (keeping in mind that flights that leave early have negative <code>dep_delay</code>).</p>
+</div>
+<div id="exercise-4-2" class="section level2">
+<h2>Exercise 4</h2>
+<p>Note, we already did this the easy way in an earlier exercise when we used <code>arrange</code> to sort by dep_delay. Now we have to use a ranking function explicitly.</p>
+<pre class="r"><code>flights_with_delays &lt;- mutate(flights, top_delay=dense_rank(-dep_delay))
+filter(flights_with_delays, top_delay &lt;= 10)</code></pre>
+<pre><code>## # A tibble: 10 x 20
+##     year month   day dep_time sched_dep_time dep_delay arr_time sched_arr_time
+##    &lt;int&gt; &lt;int&gt; &lt;int&gt;    &lt;int&gt;          &lt;int&gt;     &lt;dbl&gt;    &lt;int&gt;          &lt;int&gt;
+##  1  2013     1     9      641            900      1301     1242           1530
+##  2  2013     1    10     1121           1635      1126     1239           1810
+##  3  2013    12     5      756           1700       896     1058           2020
+##  4  2013     3    17     2321            810       911      135           1020
+##  5  2013     4    10     1100           1900       960     1342           2211
+##  6  2013     6    15     1432           1935      1137     1607           2120
+##  7  2013     6    27      959           1900       899     1236           2226
+##  8  2013     7    22      845           1600      1005     1044           1815
+##  9  2013     7    22     2257            759       898      121           1026
+## 10  2013     9    20     1139           1845      1014     1457           2210
+## # ... with 12 more variables: arr_delay &lt;dbl&gt;, carrier &lt;chr&gt;, flight &lt;int&gt;,
+## #   tailnum &lt;chr&gt;, origin &lt;chr&gt;, dest &lt;chr&gt;, air_time &lt;dbl&gt;, distance &lt;dbl&gt;,
+## #   hour &lt;dbl&gt;, minute &lt;dbl&gt;, time_hour &lt;dttm&gt;, top_delay &lt;int&gt;</code></pre>
+<p>Let’s just make sure that this lines up with what <code>arrange</code> produces:</p>
+<pre class="r"><code>arrange(flights, desc(dep_delay))</code></pre>
+<pre><code>## # A tibble: 336,776 x 19
+##     year month   day dep_time sched_dep_time dep_delay arr_time sched_arr_time
+##    &lt;int&gt; &lt;int&gt; &lt;int&gt;    &lt;int&gt;          &lt;int&gt;     &lt;dbl&gt;    &lt;int&gt;          &lt;int&gt;
+##  1  2013     1     9      641            900      1301     1242           1530
+##  2  2013     6    15     1432           1935      1137     1607           2120
+##  3  2013     1    10     1121           1635      1126     1239           1810
+##  4  2013     9    20     1139           1845      1014     1457           2210
+##  5  2013     7    22      845           1600      1005     1044           1815
+##  6  2013     4    10     1100           1900       960     1342           2211
+##  7  2013     3    17     2321            810       911      135           1020
+##  8  2013     6    27      959           1900       899     1236           2226
+##  9  2013     7    22     2257            759       898      121           1026
+## 10  2013    12     5      756           1700       896     1058           2020
+## # ... with 336,766 more rows, and 11 more variables: arr_delay &lt;dbl&gt;,
+## #   carrier &lt;chr&gt;, flight &lt;int&gt;, tailnum &lt;chr&gt;, origin &lt;chr&gt;, dest &lt;chr&gt;,
+## #   air_time &lt;dbl&gt;, distance &lt;dbl&gt;, hour &lt;dbl&gt;, minute &lt;dbl&gt;, time_hour &lt;dttm&gt;</code></pre>
+<p>As desired, these are the same flights.</p>
 </div>
 </div>
 

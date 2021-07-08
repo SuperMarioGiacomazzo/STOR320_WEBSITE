@@ -1,0 +1,207 @@
+---
+title: "Analysis 2: Connecting Country Level Data"
+author: "FIRSTNAME LASTNAME"
+date:  "`r format(Sys.time(), '%B %d, %Y')`"
+output: html_document
+---
+
+# Instructions
+
+**Overview:** For each question, show your R code that you used to answer each question in the provided chunks. When a written response is required, be sure to answer the entire question in complete sentences outside the code chunks. When figures are required, be sure to follow all requirements to receive full credit. Point values are assigned for every part of this analysis.
+
+**Helpful:** Make sure you knit the document as you go through the assignment. Check all your results in the created HTML file.
+
+**Submission:** Submit via an electronic document on Sakai. Must be submitted as an HTML file generated in RStudio. 
+
+```{r setup, include=F}
+knitr::opts_chunk$set(echo = TRUE)
+options(scipen=999)
+library(tidyverse) 
+library(rvest)
+```
+
+# Introduction
+
+Many times in data science, your data will be split between many different sources, some of which may be online. In this analysis assignment, we will webscrape country level data from multiple websites, clean the data individually, and merge the data. The website [Worldometers](https://www.worldometers.info/) contains very interesting country level data that when connected may allow us to learn interesting things about the wonderful world in which we exist:
+
+Follow the steps to accomplish specific tasks, and do not modify code on lines with the comment **#DO NOT CHANGE**. Add code in R code chunks wherever you see COMPLETE. After completing each code chunk, change `eval=FALSE` to `eval=TRUE` and **knit** the document.
+
+# Assignment
+
+## Part 1: GDP by Country
+
+Information at [Worldometer GDP](https://www.worldometers.info/gdp/gdp-by-country/) contains GDP data from 2017 published by the world bank. GDP is the monetary value of goods and services produced within a country over a period of time. On this website, GDP is presented in dollars.
+ 
+### Q1 *(3 Points)*
+
+Webscrape the data from https://www.worldometers.info/gdp/gdp-by-country/ into a data frame in R called `GDP`. If done correctly, you should have a new object in R called `GDP` which is a data frame with 189 observations and 8 variables.
+
+```{r,eval=FALSE}
+URL.GDP="https://www.worldometers.info/gdp/gdp-by-country/" #DO NOT CHANGE
+
+GDP = COMPLETE
+
+head(GDP) #DO NOT CHANGE
+```
+
+### Q2 *(2 Points)*
+
+Remove the first and fourth variables from `GDP` and create a new data frame named `GDP2` based on this change.
+
+```{r,eval=FALSE}
+GDP2 = COMPLETE
+
+head(GDP2) #DO NOT CHANGE
+```
+
+### Q3 *(3 Points)*
+
+Create a new data frame named `GDP3` based off `GDP2` where the variables `GDP (nominal, 2017)`,`GDP  growth`, `Population (2017)`, `GDP  per capita`, and `Share of World GDP` to `GDP`, `Growth`, `Population`, `PerCapita`, and `Share`, respectively. Be careful!! In the original variable names, there are two spaces between "GDP" and "growth" in `GDP growth` and two spaces between "GDP" and "per capita" in GDP  per capita`.
+
+```{r,eval=FALSE}
+GDP3 = COMPLETE
+
+names(GDP3) #DO NOT CHANGE
+```
+
+
+### Q4 *(3 Points)*
+
+Next, we must clean the data so there are no dollar signs or percent signs in the data using `str_replace()`. The dollar sign is a special character and must be referenced as `\\$`. Create a new data frame named `GDP4` where the dollar signs and percent signs are removed from all necessary variables.
+
+```{r, eval=FALSE}
+COMPLETE
+
+str(GDP4) #DO NOT CHANGE
+```
+
+### Q5 *(3 Points)*
+
+Next, create a new data frame named `GDP5` where all commas are removed from potentially numeric variables using `str_replace_all()`.
+
+```{r, eval=FALSE}
+COMPLETE
+
+str(GDP5) #DO NOT CHANGE
+```
+
+### Q6 *(2 Points)*
+
+Use the `as.numeric()` function to create a new data frame called `GDP6` where all the variables except `Country` are changed to numeric variables.
+
+```{r, eval=FALSE}
+COMPLETE
+
+str(GDP6) #DO NOT CHANGE
+```
+
+
+### Q7 *(2 Points)*
+
+Rewrite over the original `GDP` variable with a new variable called `GDP` that is in **trillions of dollars** rather than in actual dollars. Rewrite over the original `Population` variable with a new variable of the same name that is in **millions of people** rather than in actual people. You are scaling the original variables to change the units. Save your changes in a new data frame called `GDP7`.
+
+```{r, eval=FALSE}
+COMPLETE
+
+GDP7[1:10,c(2,4)]  #DO NOT CHANGE
+```
+
+## Part 2: More Relevant Data for Countries
+
+Check out the Wikipedia page (https://en.wikipedia.org/wiki/Education_Index) which contains education metrics for all countries from 2015 which were released in the 2016 Human Development Report.
+
+Check out the Johns Hopkins page (https://coronavirus.jhu.edu/data/mortality) which contains education metrics for all countries from 2015 which were released in the 2016 Human Development Report.
+
+### Q1 *(4 Points)*
+
+Webscrape the data from (https://en.wikipedia.org/wiki/Education_Index) into a data frame in R called `EDU` and only keep the 2 variables with each country's name along with its education index from 2019. Also, rename the variable named "2019" to "ED.Index".
+
+```{r,eval=FALSE}
+URL.EDU="https://en.wikipedia.org/wiki/Education_Index" #DO NOT CHANGE
+
+EDU = COMPLETE
+
+head(EDU) #DO NOT CHANGE
+```
+
+
+### Q2 *(4 Points)*
+
+Webscrape the data from (https://coronavirus.jhu.edu/data/mortality) into a data frame in R called `COVID` and make the variables named `Confirmed`, `Deaths`, and `Case-Fatality` numeric by first removing the commas and percent signs and then by using the `as.numeric()` function.
+
+```{r,eval=FALSE}
+URL.COVID="https://coronavirus.jhu.edu/data/mortality" #DO NOT CHANGE
+
+COVID = COMPLETE
+
+str(COVID) #DO NOT CHANGE
+```
+
+## Part 3: Merging the Datasets and Follow-up 
+
+Now, we are going to merge the datasets for maximum gains. Make sure you carefully read the instructions for each question. Be very careful in this part of the assignment.
+
+### Q1 *(2 Points)*
+
+The dataset named `GDP7` is our primary dataset. Create a new dataset called `GDP7.EDU` that brings the education data from `EDU` into the dataset `GDP7`. 
+
+```{r,eval=FALSE}
+COMPLETE
+
+head(GDP7.EDU) #DO NOT CHANGE
+```
+
+
+### Q2 *(3 Points)*
+
+Use code to find out how many countries in `GDP7.EDU` have missing values for Education Index. Place your code and answer in the appropriate spaces below.
+
+Code *(1 Point)*:
+```{r,eval=FALSE}
+COMPLETE
+```
+
+Answer *(2 Point)*: (Place your answer here in complete sentences.)
+
+
+### Q3 *(3 Points)*
+
+Closely inspect the original datasets and answer the following questions about `GDP7.EDU` in complete sentences. You can use the code chunk below if needed, but this is not required. If you don't reference the appropriate dataset or you are not specific in your answers, you will get 0 points.
+
+```{r,eval=FALSE}
+#
+```
+
+Why is there no education index for Russia in the dataset `GDP7.EDU`?
+
+Answer *(1 Point)*: (Place your answer here in complete sentences.)
+
+Why is there no education index for the Democratic Republic of the Congo in the dataset `GDP7.EDU`?
+
+Answer *(1 Point)*: (Place your answer here in complete sentences.)
+
+Why is there no education index for Tuvalu in the dataset `GDP7.EDU`?
+
+Answer *(1 Point)*: (Place your answer here in complete sentences.)
+
+
+### Q4 *(2 Points)*
+
+Suppose we want to see if countries with higher GDP are less affected by the coronavirus. Merge the data from `GDP7` into the the data frame named `COVID` to create a new dataset named `GDP7.COVID`. The dataset `COVID` is now our primary dataset.
+
+```{r,eval=FALSE}
+COMPLETE
+
+head(GDP7.COVID) #DO NOT CHANGE
+```
+
+### Q5 *(4 Points)*
+
+In the data frame you created `GDP7.COVID`, there are some countries without GDP that are definitely in the dataset `GDP7`. Fix the country names in the dataset `GDP7` for the countries: "Democratic Republic of the Congo", "Republic of the Congo", "Sao Tome and Principe", and "Saint Kitts and Nevis". Then, redo the merge from the previous question, creating a new dataset named `GDP7.COVID.2`. Make sure the merge doesn't miss the GDP's for these specific countries, and remember that you are joining the modified data from `GDP7` into `COVID`.
+
+```{r, eval=FALSE}
+COMPLETE
+
+head(filter(GDP7.COVID.2,Country %in% c("Democratic Republic of the Congo","Republic of the Congo", "Sao Tome and Principe","Saint Kitts and Nevis"))) #DO NOT CHANGE
+```
+
