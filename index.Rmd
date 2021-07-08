@@ -154,7 +154,7 @@ All HW and Analysis assignments are to be submitted via **[Sakai](https://sakai.
 | July 2  |        | [A1](Analysis/Analysis 1/Analysis-1.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/blob/master/Analysis/Analysis%201/Analysis%201.zip))      |           |   July 7 (5:00 PM)     |
 | July 7  | [HW3](Homework/HW 3/HW-3.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Homework/HW%203/HW%203.Rmd))       |       |           |   July 9 (5:00 PM)     |
 | July 9  | [HW4](Homework/HW 4/HW-4.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Homework/HW%204/HW%204.Rmd))       |       |           |   July 12 (5:00 PM)     |
-| July 12  |  | [A2](Analysis/Analysis 2/Analysis-2.html)([.zip]())        |           |   July 14 (5:00 PM)     |
+| July 12  |  | [A2](Analysis/Analysis 2/Analysis-2.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/blob/master/Analysis/Analysis%202/Analysis%202.zip))        |           |   July 14 (5:00 PM)     |
 | July 14  | [HW5](Homework/HW 5/HW-5.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Homework/HW%205/HW%205.Rmd))       |       |           |   July 16 (5:00 PM)     |
 | July 16  |  | [A3]()([.Rmd]())        |           |   July 19 (5:00 PM)     |
 | July 19  | [HW6](Homework/HW 6/HW-6.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Homework/HW%206/HW%206.Rmd))       |       |           |   July 21 (5:00 PM)     |
