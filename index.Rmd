@@ -115,8 +115,8 @@ This course is an application-driven introduction to data science. Statistical a
 || [Tidy Data 1](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=aefa6878-3eca-4341-a9c2-ad5d0162a941) | [Slides](Lecture/Tidy Data 1/Tidy_Data_1_Lecture.pdf) ||
 |July 7| [Tidy Data 2](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2d03f632-1967-48e7-9030-ad5e01760e13) | [Slides](Lecture/Tidy Data 2/Tidy_Data_2_Lecture.pdf) ||
 || [Web Scraping I](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2d03f632-1967-48e7-9030-ad5e01760e13) | [Slides](Lecture/Web Scraping 1/Web_Scraping_1_Lecture.pdf) | [Preview](Supplement/Web Scraping 1/Supplement.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Supplement/Web%20Scraping%201/Supplement.Rmd)) |
-|July 8| Web Scraping II | [Slides](Lecture/Web Scraping 2/Web_Scraping_2_Lecture.pdf) | [Preview](Supplement/Web Scraping 2/Supplement.html)([.zip](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Supplement/Web%20Scraping%202/Supplement.zip)) |
-||Joins I| [Slides](Lecture/Joins 1/Joins_1_Lecture.pdf) ||
+|July 8| [Web Scraping II](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4855370f-be15-4833-8148-ad5f0163bc86) | [Slides](Lecture/Web Scraping 2/Web_Scraping_2_Lecture.pdf) | [Preview](Supplement/Web Scraping 2/Supplement.html)([.zip](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Supplement/Web%20Scraping%202/Supplement.zip)) |
+|| [Joins I](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4855370f-be15-4833-8148-ad5f0163bc86) | [Slides](Lecture/Joins 1/Joins_1_Lecture.pdf) ||
 |July 12| Joins II | [Slides](Lecture/Joins 2/Joins_2_Lecture.pdf) ||
 || Final Project II| [Slides](Lecture/Final Project 2/Final_Project_2_Lecture.pdf) ||
 |July 13| Factors |||

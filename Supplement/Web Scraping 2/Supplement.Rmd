@@ -43,11 +43,11 @@ The data frame `VIOLENT` links city and state names to violent crime statistics,
 
 # Part 1: Connection to Population Change and Density
 
-Recall the Wikipedia page listing the [crime rates](https://en.wikipedia.org/wiki/List_of_United_States_cities_by_crime_rate) of US cities. This information comes from an FBI report from 2015. Suppose we wanted to investigate the effect of crime in 2015 on current population data in 2019. An HTML table, provided online, reports the [2019 population density and percentage change](http://worldpopulationreview.com/us-cities/) of 100 major US cities. Why is this information useful when related to violent crimes and what would you expect to discover?
+Recall the Wikipedia page listing the [crime rates](https://en.wikipedia.org/wiki/List_of_United_States_cities_by_crime_rate) of US cities. This information comes from an FBI report from 2015. Suppose we wanted to investigate the effect of crime in 2015 on current population data in 2021. An HTML table, provided online, reports the [2021 population density and percentage change](http://worldpopulationreview.com/us-cities/) of 100 major US cities. Why is this information useful when related to violent crimes and what would you expect to discover?
 
 ## Chunk 1: Web Scraping and Variable Selection
 
-We start by web scraping the population statistics table into R using functions from `rvest`. Additionally, we only select the variables of interest `Change` and `2019 Density` and the keys `Name` and `State` required to link this information to violent crimes. 
+We start by web scraping the population statistics table into R using functions from `rvest`. Additionally, we only select the variables of interest `Change` and `2021 Density` and the keys `Name` and `State` required to link this information to violent crimes. 
 
 ```{r,eval=F}
 URL.US_CENSUS = "http://worldpopulationreview.com/us-cities/"
@@ -55,7 +55,7 @@ US_CENSUS = URL.US_CENSUS %>%
               read_html() %>%
               html_table(header=T,fill=T) %>%
               .[[1]] %>%
-              select(c(2,3,6,7) )
+              select(c(2:7) )
 str(US_CENSUS)
 ```
 
@@ -65,9 +65,12 @@ Ideally, variables `Change` and `2019 Density` should be numeric. The following 
 
 ```{r,eval=F}
 US_CENSUS2 = US_CENSUS %>%
-                rename(Density=names(US_CENSUS)[4]) %>%
+                rename(Density=names(US_CENSUS)[6]) %>%
                 mutate(Change=as.numeric(str_replace(Change,"%",""))) %>%
-                mutate(Density=as.numeric(str_replace_all(Density,"[,]","")))
+                mutate(Density=as.numeric(str_replace_all(Density,"[,]",""))) %>%
+                mutate(`2021 Pop.`=as.numeric(str_replace_all(`2021 Pop.`,"[,]",""))) %>%
+                mutate(`2010 Census`=as.numeric(str_replace_all(`2010 Census`,"[,]",""))) %>%
+                mutate(Change=(`2021 Pop.`-`2010 Census`)/`2010 Census`*100)
 
 write_csv(US_CENSUS2,"FINAL_CENSUS.CSV")
 ```
