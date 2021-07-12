@@ -120,12 +120,12 @@ This course is an application-driven introduction to data science. Statistical a
 |July 12| Joins II | [Slides](Lecture/Joins 2/Joins_2_Lecture.pdf) ||
 || Final Project II| [Slides](Lecture/Final Project 2/Final_Project_2_Lecture.pdf) ||
 |July 13| Factors | [Slides](Lecture/Factors/Factors_Lecture.pdf) ||
-||Programming I| [Slides](Lecture/Programming 1/Programming_1_Lecture.pdf) | [Preview]()([.zip]())  |
-|July 14| Programming II| [Slides](Lecture/Programming 2/Programming_2_Lecture.pdf) | [Preview]()([.zip]()) |
+||Programming I| [Slides](Lecture/Programming 1/Programming_1_Lecture.pdf) | [Preview](Supplement/Programming 1/Supplement.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Supplement/Programming%201/Supplement.Rmd))  |
+|July 14| Programming II| [Slides](Lecture/Programming 2/Programming_2_Lecture.pdf) | [Preview](Supplement/Programming 2/Supplement.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Supplement/Programming%202/Supplement.Rmd)) |
 || Programming III| [Slides](Lecture/Programming 3/Programming_3_Lecture.pdf) ||
 || Programming IV| [Slides](Lecture/Programming 4/Programming_4_Lecture.pdf) ||
 |July 15|Modeling 1| [Slides](Lecture/Modeling 1/Modeling_1_Lecture.pdf) ||
-||Modeling 2| [Slides](Lecture/Modeling 2/Modeling_2_Lecture.pdf) | [Preview]()([.zip]()) |
+||Modeling 2| [Slides](Lecture/Modeling 2/Modeling_2_Lecture.pdf) | [Preview](Supplement/Modeling 2/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/blob/master/Supplement/Modeling%202/Supplement.zip)) |
 |July 19| Modeling 3|||
 ||Modeling 4| ||
 |July 20| Modeling 5|||
@@ -155,7 +155,7 @@ All HW and Analysis assignments are to be submitted via **[Sakai](https://sakai.
 | July 9  | [HW4](Homework/HW 4/HW-4.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Homework/HW%204/HW%204.Rmd))       |       |           |   July 12 (5:00 PM)     |
 | July 12  |  | [A2](Analysis/Analysis 2/Analysis-2.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/blob/master/Analysis/Analysis%202/Analysis%202.zip))        |           |   July 14 (5:00 PM)     |
 | July 14  | [HW5](Homework/HW 5/HW-5.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Homework/HW%205/HW%205.Rmd))       |       |           |   July 16 (5:00 PM)     |
-| July 16  |  | [A3](Analysis/Analysis 3/Analysis-3.html)([zip]())        |           |   July 19 (5:00 PM)     |
+| July 16  |  | [A3](Analysis/Analysis 3/Analysis-3.html)([zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/blob/master/Analysis/Analysis%203/Analysis%203.zip))        |           |   July 19 (5:00 PM)     |
 | July 19  | [HW6](Homework/HW 6/HW-6.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Homework/HW%206/HW%206.Rmd))       |       |           |   July 21 (5:00 PM)     |
 | July 21  | [HW7](Homework/HW 7/HW-7.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Homework/HW%207/HW%207.Rmd))       |       |           |   July 23 (5:00 PM)     |
 | July 23  |      | [A4]()([.Rmd]())          |           |   July 28 (5:00 PM)     |
@@ -212,7 +212,7 @@ This final project will be divided into four parts worth a total of 100 points. 
     
 * **[P3: Final Written Paper](Final Project/Final_Paper.html)** *(40 Points)*
     + [Template](Final Project/Final-Paper-Template.html)([.Rmd](https://drive.google.com/file/d/19oG11IaUnAkPe8BUE7SAXS2BOeVLIZdT/view?usp=sharing))
-    + [Group Scoring](hhttps://docs.google.com/forms/d/e/1FAIpQLScslh7rwnjd2VZ99VH66_4PJM7c8oJ_4olJt7-34hRW82Nq2A/viewform?usp=sf_link)
+    + [Group Scoring](https://docs.google.com/forms/d/e/1FAIpQLScslh7rwnjd2VZ99VH66_4PJM7c8oJ_4olJt7-34hRW82Nq2A/viewform?usp=sf_link)
     
 * **[P4: Final Presentation](Final Project/Final_Presentation.html)** *(30 Points)*
 
