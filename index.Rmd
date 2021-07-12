@@ -212,7 +212,7 @@ This final project will be divided into four parts worth a total of 100 points. 
     
 * **[P3: Final Written Paper](Final Project/Final_Paper.html)** *(40 Points)*
     + [Template](Final Project/Final-Paper-Template.html)([.Rmd](https://drive.google.com/file/d/19oG11IaUnAkPe8BUE7SAXS2BOeVLIZdT/view?usp=sharing))
-    + [Group Scoring](https://docs.google.com/forms/d/e/1FAIpQLSdpsXNOkT1c0gdcujcggb-hg-YoAKO5k-RdGBywwO1pr0YEXg/viewform?usp=sf_link)
+    + [Group Scoring](hhttps://docs.google.com/forms/d/e/1FAIpQLScslh7rwnjd2VZ99VH66_4PJM7c8oJ_4olJt7-34hRW82Nq2A/viewform?usp=sf_link)
     
 * **[P4: Final Presentation](Final Project/Final_Presentation.html)** *(30 Points)*
 
