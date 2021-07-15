@@ -121,9 +121,9 @@ This course is an application-driven introduction to data science. Statistical a
 || [Final Project II](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=cd08819b-51b5-4827-8748-ad63015ecf8d) | [Slides](Lecture/Final Project 2/Final_Project_2_Lecture.pdf) ||
 |July 13| [Factors](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0275f828-f705-4d34-bfd4-ad640169bd26) | [Slides](Lecture/Factors/Factors_Lecture.pdf) ||
 || [Programming I](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0275f828-f705-4d34-bfd4-ad640169bd26) | [Slides](Lecture/Programming 1/Programming_1_Lecture.pdf) | [Preview](Supplement/Programming 1/Supplement.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Supplement/Programming%201/Supplement.Rmd))  |
-|July 14| Programming II| [Slides](Lecture/Programming 2/Programming_2_Lecture.pdf) | [Preview](Supplement/Programming 2/Supplement.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Supplement/Programming%202/Supplement.Rmd)) |
-|| Programming III| [Slides](Lecture/Programming 3/Programming_3_Lecture.pdf) ||
-|| Programming IV| [Slides](Lecture/Programming 4/Programming_4_Lecture.pdf) ||
+|July 14| [Programming II](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a21f5ea6-2491-406d-94f3-ad650169129c) | [Slides](Lecture/Programming 2/Programming_2_Lecture.pdf) | [Preview](Supplement/Programming 2/Supplement.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Supplement/Programming%202/Supplement.Rmd)) |
+|| [Programming III](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a21f5ea6-2491-406d-94f3-ad650169129c) | [Slides](Lecture/Programming 3/Programming_3_Lecture.pdf) ||
+|| [Programming IV](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a21f5ea6-2491-406d-94f3-ad650169129c) | [Slides](Lecture/Programming 4/Programming_4_Lecture.pdf) ||
 |July 15|Modeling 1| [Slides](Lecture/Modeling 1/Modeling_1_Lecture.pdf) ||
 ||Modeling 2| [Slides](Lecture/Modeling 2/Modeling_2_Lecture.pdf) | [Preview](Supplement/Modeling 2/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/blob/master/Supplement/Modeling%202/Supplement.zip)) |
 |July 19| Modeling 3|||
