@@ -135,10 +135,10 @@ TEST5 =TEST4 %>%
 
 ## Chunk 1: Logistic Model Investigation
 ```{r,echo=F,eval=F}
-set.seed(INTEGER)
+set.seed(216)
 EXAMPLE=tibble(
   x=rnorm(10000,mean=0,sd=5),
-  y=7+12/(1+exp(4-1*x))
+  y=7+12/(1+exp(-1-0.5*x))
 )
 ggplot(data=EXAMPLE) +
   geom_point(aes(x=x,y=y)) +
@@ -163,7 +163,7 @@ MSE.logistic=function(COEF,DATA){
 logistic.mod=optim(
   par=c(min(TRAIN$W,na.rm=T),
         max(TRAIN$W,na.rm=T)-min(TRAIN$W,na.rm=T),
-        median(TRAIN$A,na.rm=T),
+        mean(TRAIN$A,na.rm=T),
         1),           #Smart Starting Values
   fn=MSE.logistic,    #Function to Minimize
   DATA=TRAIN          #Required Argument
