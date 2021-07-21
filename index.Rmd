@@ -179,7 +179,7 @@ setwd("D:/Mario Documents/UNC/STOR 320/STOR320_WEBSITE/Group Assignments")
 Groups=read.csv(file="STOR320 Group Assignments - 2.csv")
 
 datatable(Groups,class="display",options = list(scrollX=F,
-            columnDefs = list(list(className = 'dt-center', targets = 0:4))),rownames=F)
+            columnDefs = list(list(className = 'dt-center', targets = 0:6))),rownames=F)
 
 ```
 
