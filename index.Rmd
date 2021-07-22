@@ -156,10 +156,10 @@ All HW and Analysis assignments are to be submitted via **[Sakai](https://sakai.
 | July 9  | [HW4](Homework/HW 4/HW-4.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Homework/HW%204/HW%204.Rmd))       |       | [Solutions](Solutions/HW_4_Solutions.html)             |   July 12 (5:00 PM)     |
 | July 12  |  | [A2](Analysis/Analysis 2/Analysis-2.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/blob/master/Analysis/Analysis%202/Analysis%202.zip))        | [Solutions](Solutions/Solutions-2.html)            |   July 14 (5:00 PM)     |
 | July 14  | [HW5](Homework/HW 5/HW-5.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Homework/HW%205/HW%205.Rmd))       |       | [Solutions](Solutions/HW_5_Solutions.html)            |   July 16 (5:00 PM)     |
-| July 16  |  | [A3](Analysis/Analysis 3/Analysis-3.html)([zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/blob/master/Analysis/Analysis%203/Analysis%203.zip))        |          |   July 19 (5:00 PM)     |
+| July 16  |  | [A3](Analysis/Analysis 3/Analysis-3.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/blob/master/Analysis/Analysis%203/Analysis%203.zip))        |          |   July 19 (5:00 PM)     |
 | July 19  | [HW6](Homework/HW 6/HW-6.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Homework/HW%206/HW%206.Rmd))       |       |           |   July 21 (5:00 PM)     |
 | July 21  | [HW7](Homework/HW 7/HW-7.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Homework/HW%207/HW%207.Rmd))       |       |           |   July 23 (5:00 PM)     |
-| July 23  |      | [A4](Analysis/Analysis 4/Analysis-4.html)([.zip]())          |           |   July 28 (5:00 PM)     |
+| July 23  |      | [A4](Analysis/Analysis 4/Analysis-4.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/blob/master/Analysis/Analysis%204/Analysis%204.zip))          |           |   July 28 (5:00 PM)     |
 |          |        |             |           |      |
 
 # **Final Project Details**
