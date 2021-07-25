@@ -135,8 +135,9 @@ This course is an application-driven introduction to data science. Statistical a
 |July 22| [Modeling 8](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9fada78c-139c-4257-a65e-ad6d016f1401) | [Slides](Lecture/Modeling 8/Modeling_8_Lecture.pdf) | [Preview](Supplement/Modeling 8/Supplement.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Supplement/Modeling%208/Supplement.Rmd)) |
 || [Modeling 9](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9fada78c-139c-4257-a65e-ad6d016f1401) | [Slides](Lecture/Modeling 9/Modeling_9_Lecture.pdf) | [Preview](Supplement/Modeling 9/Supplement.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Supplement/Modeling%209/Supplement.Rmd)) |
 |July 26|EDA Meeting|||
-|July 27| R Shiny |||
-|July 28|Data Ethics|||
+|July 27| Modeling 9 (Cont.) | [Slides](Lecture/Modeling 9/Modeling_9_Lecture.pdf) |[Preview](Supplement/Modeling 9/Supplement.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Supplement/Modeling%209/Supplement.Rmd))|
+|| R Shiny | [Slides](Lecture/R Shiny/R_Shiny_Lecture.pdf) | Preview([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/blob/master/Supplement/R%20Shiny/Supplement.zip))|
+|July 28| Data Ethics | [Slides](Lecture/Data Ethics/Data_Ethics_Lecture.pdf) ||
 |July 29|Final Paper|||
 ||| ||
 |||||
