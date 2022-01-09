@@ -69,16 +69,33 @@ This course is an application-driven introduction to data science. Statistical a
 - Instructor: **[Mario Giacomazzo](http://www.supermariogiacomazzo.com/)**
 
 - Lab Instructors: 
-    - **[Kentaro Hoffman](http://stat-or.unc.edu/people/graduate-students-department)**
-    - **[Haixu Ma](http://stat-or.unc.edu/people/graduate-students-department)**
+    - **[Ian Ferer](http://stat-or.unc.edu/people/graduate-students-department)**
+    - **[Henry Flury](http://stat-or.unc.edu/people/graduate-students-department)**
+    - **[Zichao Li](http://stat-or.unc.edu/people/graduate-students-department)**
 
-- Course Syllabus: **[Section 1](Syllabi/STOR 320 Section 1 Syllabus.pdf)**
+- Course Syllabus: 
+    - **[Section 1](Syllabi/STOR 320 Section 1 Syllabus.pdf)**
+    - **[Section 2](Syllabi/STOR 320 Section 2 Syllabus.pdf)**
 
-- Lab Sections:
-    - 320.400: F from 3PM to 5PM by Kentaro
-    - 320.401: F from 3PM to 5PM by Haixu
-    
+- Lab Sections for Section 1:
+    - 320.400: W, 4:40PM - 5:30PM, Hanes 107, Ian
+    - 320.401: F 4:40PM - 5:30PM, Hanes 107, Ian
+    - 320.402: W, 5:45PM - 6:35PM, Murray G205, Ian
+    - 320.403: F, 2:30PM - 3:20PM, Hamilton 452, Henry
+
+- Lab Sections for Section 2:
+    - 320.404: W, 4:40PM - 5:30PM, Hanes 112, Zichao
+    - 320.405: F, 4:40PM - 5:30PM, Dey 203, Zichao
+    - 320.406: F, 5:45PM - 6:35PM, Dey 203, Zichao
+    - 320.407: W, 2:30PM - 3:20PM, Peabody 2066, Henry
+   
 - **[University Approved Absences](https://unc-ch.formstack.com/forms/university_approved_absence_request?sso=5f3154c3179f5)**: Fill out the online form.
+
+- Office Hours and Zoom Links:
+    - **[Dr. Mario:](https://unc.zoom.us/j/98181811021)** T, 8AM - 2PM
+    - **[Ian:](https://unc.zoom.us/j/6062060059)** Th, 11AM - 1PM
+    - **[Hank:](https://unc.zoom.us/j/96051493738)** TTh, 1PM - 2PM
+    - **[Zichao:](https://unc.zoom.us/j/6459419100?pwd=UEtCWjc5WUw1K2N2bUM3cFFJNWlzQT09)** F, 2PM - 4PM, Passcode: Stor 320
 
   </div>
   <div class="column">
@@ -86,61 +103,52 @@ This course is an application-driven introduction to data science. Statistical a
   </div>
 </div> 
 
-
-- Zoom Links:
-    - **[Lectures:](https://unc.zoom.us/j/96699599976?pwd=U2c3MWFMRWttaDRqUCsrU1RMWlZHUT09)** M-Th from 3PM to 5PM, (PW: supermario)
-    - **[Lab 320.400:](https://unc.zoom.us/j/92961532515)** F from 3PM to 5PM
-    - **[Lab 320.401:](https://unc.zoom.us/j/98250322923?from=addon)** F from 3PM to 5PM
-    - **[Dr. Mario Office Hours:](https://unc.zoom.us/j/94748742288)** M-F from 9AM to 10AM
-    - **[Kentaro's Office Hours:](https://unc.zoom.us/j/92961532515)** M-F from 5PM to 6PM
-    - **[Haixu's Office Hours:](https://unc.zoom.us/j/98250322923?from=addon)** M-F from 1:30PM to 2:30PM **[Wed. Only](https://unc.zoom.us/j/95473527183)** 
-
-
+une 29
 # **Course Material**
 
 | Date | Lecture | Slides | Supplement |
 |------|---------|--------:|---------:|
-|June 28| [Introduction](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=445d8ab1-6f83-4302-af45-ad500023e7ed) | [Slides](Lecture/Introduction/Intro_Lecture.pdf)||
-||[Data Visualization](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=445d8ab1-6f83-4302-af45-ad500023e7ed)|[Slides](Lecture/Data Visualization/Data_Visualization_Lecture.pdf)|[Preview](Supplement/Data Visualization/Supplement.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Supplement/Data%20Visualization/Supplement.Rmd))|
-|June 29| [Workflow in RMarkdown](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2c971d4c-fc53-4c59-b91e-ad500134e423) | [Slides](Lecture/Workflow/Workflow_Lecture.pdf) ||
-|| [Data Transformation I](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2c971d4c-fc53-4c59-b91e-ad500134e423) | [Slides](Lecture/Data Transformation 1/Data_Transformation_1_Lecture.pdf) ||
-|June 30| [Data Transformation II](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=96c34d13-a772-428d-a213-ad500164b1ec) | [Slides](Lecture/Data Transformation 2/Data_Transformation_2_Lecture.pdf)||
-|| [Data Transformation III](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=96c34d13-a772-428d-a213-ad500164b1ec) | [Slides](Lecture/Data Transformation 3/Data_Transformation_3_Lecture.pdf)||
-|| [Data Transformation IV](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=96c34d13-a772-428d-a213-ad500164b1ec) | [Slides](Lecture/Data Transformation 4/Data_Transformation_4_Lecture.pdf)||
-|July 1| [Exploratory Data Analysis I](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b29b7d84-7fa7-45a2-b480-ad5100382e0e)  | [Slides](Lecture/Exploratory Data Analysis 1/Exploratory_Data_Analysis_1_Lecture.pdf) ||
-|| [Exploratory Data Analysis II](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b29b7d84-7fa7-45a2-b480-ad5100382e0e) |[Slides](Lecture/Exploratory Data Analysis 2/Exploratory_Data_Analysis_2_Lecture.pdf)||
-|| [Final Project I](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b29b7d84-7fa7-45a2-b480-ad5100382e0e) | [Slides](Lecture/Final Project 1/Final_Project_1_Lecture.pdf)||
-|July 5| [No Class](https://www.youtube.com/watch?v=0E4haJHYUJw) |||
-|July 6| [Data Import](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=aefa6878-3eca-4341-a9c2-ad5d0162a941) | [Slides](Lecture/Data Import/Data_Import_Lecture.pdf)||
-|| [Tidy Data 1](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=aefa6878-3eca-4341-a9c2-ad5d0162a941) | [Slides](Lecture/Tidy Data 1/Tidy_Data_1_Lecture.pdf) ||
-|July 7| [Tidy Data 2](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2d03f632-1967-48e7-9030-ad5e01760e13) | [Slides](Lecture/Tidy Data 2/Tidy_Data_2_Lecture.pdf) ||
-|| [Web Scraping I](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2d03f632-1967-48e7-9030-ad5e01760e13) | [Slides](Lecture/Web Scraping 1/Web_Scraping_1_Lecture.pdf) | [Preview](Supplement/Web Scraping 1/Supplement.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Supplement/Web%20Scraping%201/Supplement.Rmd)) |
-|July 8| [Web Scraping II](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4855370f-be15-4833-8148-ad5f0163bc86) | [Slides](Lecture/Web Scraping 2/Web_Scraping_2_Lecture.pdf) | [Preview](Supplement/Web Scraping 2/Supplement.html)([.zip](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Supplement/Web%20Scraping%202/Supplement.zip)) |
-|| [Joins I](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4855370f-be15-4833-8148-ad5f0163bc86) | [Slides](Lecture/Joins 1/Joins_1_Lecture.pdf) ||
-|July 12| [Joins II](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=cd08819b-51b5-4827-8748-ad63015ecf8d) | [Slides](Lecture/Joins 2/Joins_2_Lecture.pdf) ||
-|| [Final Project II](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=cd08819b-51b5-4827-8748-ad63015ecf8d) | [Slides](Lecture/Final Project 2/Final_Project_2_Lecture.pdf) ||
-|July 13| [Factors](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0275f828-f705-4d34-bfd4-ad640169bd26) | [Slides](Lecture/Factors/Factors_Lecture.pdf) ||
-|| [Programming I](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0275f828-f705-4d34-bfd4-ad640169bd26) | [Slides](Lecture/Programming 1/Programming_1_Lecture.pdf) | [Preview](Supplement/Programming 1/Supplement.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Supplement/Programming%201/Supplement.Rmd))  |
-|July 14| [Programming II](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a21f5ea6-2491-406d-94f3-ad650169129c) | [Slides](Lecture/Programming 2/Programming_2_Lecture.pdf) | [Preview](Supplement/Programming 2/Supplement.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Supplement/Programming%202/Supplement.Rmd)) |
-|| [Programming III](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a21f5ea6-2491-406d-94f3-ad650169129c) | [Slides](Lecture/Programming 3/Programming_3_Lecture.pdf) ||
-|| [Programming IV](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a21f5ea6-2491-406d-94f3-ad650169129c) | [Slides](Lecture/Programming 4/Programming_4_Lecture.pdf) ||
-|July 15| [Modeling 1](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a719b544-da11-474d-a73f-ad66016d60af) | [Slides](Lecture/Modeling 1/Modeling_1_Lecture.pdf) ||
-|| [Modeling 2](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a719b544-da11-474d-a73f-ad66016d60af) | [Slides](Lecture/Modeling 2/Modeling_2_Lecture.pdf) | [Preview](Supplement/Modeling 2/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/blob/master/Supplement/Modeling%202/Supplement.zip)) |
-|July 19| [Modeling 3](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=5aad15fa-12e5-424b-a1b0-ad6a0164e7f7) | [Slides](Lecture/Modeling 3/Modeling_3_Lecture.pdf) | [Preview](Supplement/Modeling 3/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/blob/master/Supplement/Modeling%203/Supplement.zip)) |
-|| [Modeling 4](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=5aad15fa-12e5-424b-a1b0-ad6a0164e7f7) | [Slides](Lecture/Modeling 4/Modeling_4_Lecture.pdf) | [Preview](Supplement/Modeling 4/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/blob/master/Supplement/Modeling%204/Supplement.zip)) |
-|July 20| [Modeling 5](https://unc.zoom.us/rec/play/j71Vj-ugk4oFYYHW2pP2IYYcsHE_Zdigwk6RXH_jXVdHi-AULXmWg-fYDLBGnP5LYk9TRkmVBbjnPvZk.0BrzUPJ6f8pRvDQ5?autoplay=true&startTime=1626807554000) | [Slides](Lecture/Modeling 5/Modeling_5_Lecture.pdf) ||
-|| [Modeling 6](https://unc.zoom.us/rec/play/j71Vj-ugk4oFYYHW2pP2IYYcsHE_Zdigwk6RXH_jXVdHi-AULXmWg-fYDLBGnP5LYk9TRkmVBbjnPvZk.0BrzUPJ6f8pRvDQ5?autoplay=true&startTime=1626807554000) | [Slides](Lecture/Modeling 6/Modeling_6_Lecture.pdf) ||
-|July 21| [Modeling 6 (Cont.)](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c1559514-8c54-4a25-bada-ad6c016b90a1) | [Slides](Lecture/Modeling 6/Modeling_6_Lecture.pdf) ||
-|| [Modeling 7](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c1559514-8c54-4a25-bada-ad6c016b90a1) | [Slides](Lecture/Modeling 7/Modeling_7_Lecture.pdf) | [Preview](Supplement/Modeling 7/Supplement.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Supplement/Modeling%207/Supplement.Rmd)) |
-|July 22| [Modeling 8](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9fada78c-139c-4257-a65e-ad6d016f1401) | [Slides](Lecture/Modeling 8/Modeling_8_Lecture.pdf) | [Preview](Supplement/Modeling 8/Supplement.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Supplement/Modeling%208/Supplement.Rmd)) |
-|| [Modeling 9](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9fada78c-139c-4257-a65e-ad6d016f1401) | [Slides](Lecture/Modeling 9/Modeling_9_Lecture.pdf) | [Preview](Supplement/Modeling 9/Supplement.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Supplement/Modeling%209/Supplement.Rmd)) |
-|July 26|EDA Meeting|||
-|July 27| [Modeling 9 (Cont.)](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=174e94f0-3bf1-4d6b-85b2-ad72016469db) | [Slides](Lecture/Modeling 9/Modeling_9_Lecture.pdf) |[Preview](Supplement/Modeling 9/Supplement.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Supplement/Modeling%209/Supplement.Rmd))|
-|| [R Shiny](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=174e94f0-3bf1-4d6b-85b2-ad72016469db) | [Slides](Lecture/R Shiny/R_Shiny_Lecture.pdf) | Preview([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/blob/master/Supplement/R%20Shiny/Supplement.zip))|
-|July 28| [Data Ethics](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=ac172ff1-4508-4beb-96a0-ad73015878e1) | [Slides](Lecture/Data Ethics/Data_Ethics_Lecture.pdf) ||
-|July 29|Final Paper|||
-||| ||
-|||||
+|Jan 11| Introduction | [Slides](Lecture/Introduction/Intro_Lecture.pdf)||
+|Jan 13|Data Visualization|[Slides](Lecture/Data Visualization/Data_Visualization_Lecture.pdf)|[Preview](Supplement/Data Visualization/Supplement.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Supplement/Data%20Visualization/Supplement.Rmd))|
+|Jan 18| Workflow in RMarkdown | [Slides](Lecture/Workflow/Workflow_Lecture.pdf) ||
+|Jan 20| Data Transformation I | [Slides](Lecture/Data Transformation 1/Data_Transformation_1_Lecture.pdf) ||
+|Jan 25| Data Transformation II | [Slides](Lecture/Data Transformation 2/Data_Transformation_2_Lecture.pdf)||
+|Jan 27| Data Transformation III | [Slides](Lecture/Data Transformation 3/Data_Transformation_3_Lecture.pdf)||
+|Feb 1 | Data Transformation IV | [Slides](Lecture/Data Transformation 4/Data_Transformation_4_Lecture.pdf)||
+|Feb 3| Exploratory Data Analysis I  | [Slides](Lecture/Exploratory Data Analysis 1/Exploratory_Data_Analysis_1_Lecture.pdf) ||
+|Feb 8| Exploratory Data Analysis II |[Slides](Lecture/Exploratory Data Analysis 2/Exploratory_Data_Analysis_2_Lecture.pdf)||
+|Feb 10| Final Project I | [Slides](Lecture/Final Project 1/Final_Project_1_Lecture.pdf)||
+|Feb 15| Data Import | [Slides](Lecture/Data Import/Data_Import_Lecture.pdf)||
+|Feb 17| Tidy Data 1 | [Slides](Lecture/Tidy Data 1/Tidy_Data_1_Lecture.pdf) ||
+|Feb 22| Tidy Data 2 | [Slides](Lecture/Tidy Data 2/Tidy_Data_2_Lecture.pdf) ||
+|Feb 24| Web Scraping I | [Slides](Lecture/Web Scraping 1/Web_Scraping_1_Lecture.pdf) | [Preview](Supplement/Web Scraping 1/Supplement.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Supplement/Web%20Scraping%201/Supplement.Rmd)) |
+|March 1| Web Scraping II | [Slides](Lecture/Web Scraping 2/Web_Scraping_2_Lecture.pdf) | [Preview](Supplement/Web Scraping 2/Supplement.html)([.zip](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Supplement/Web%20Scraping%202/Supplement.zip)) |
+|March 3| Joins I | [Slides](Lecture/Joins 1/Joins_1_Lecture.pdf) ||
+|March 8| Joins II | [Slides](Lecture/Joins 2/Joins_2_Lecture.pdf) ||
+|March 10| Final Project II | [Slides](Lecture/Final Project 2/Final_Project_2_Lecture.pdf) ||
+|March 15|Spring Brizzeak|||
+|March 17|Spring Brizzeak|||
+|March 22| Factors | [Slides](Lecture/Factors/Factors_Lecture.pdf) ||
+|March 24| Programming I | [Slides](Lecture/Programming 1/Programming_1_Lecture.pdf) | [Preview](Supplement/Programming 1/Supplement.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Supplement/Programming%201/Supplement.Rmd))  |
+|March 29| Programming II | [Slides](Lecture/Programming 2/Programming_2_Lecture.pdf) | [Preview](Supplement/Programming 2/Supplement.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Supplement/Programming%202/Supplement.Rmd)) |
+| March 31 | [Programming III](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a21f5ea6-2491-406d-94f3-ad650169129c) | [Slides](Lecture/Programming 3/Programming_3_Lecture.pdf) ||
+|April 5| Programming IV | [Slides](Lecture/Programming 4/Programming_4_Lecture.pdf) ||
+|April 7| Modeling 1 | [Slides](Lecture/Modeling 1/Modeling_1_Lecture.pdf) ||
+|April 12| Modeling 2 | [Slides](Lecture/Modeling 2/Modeling_2_Lecture.pdf) | [Preview](Supplement/Modeling 2/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/blob/master/Supplement/Modeling%202/Supplement.zip)) |
+|April 14| [Modeling 3](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=5aad15fa-12e5-424b-a1b0-ad6a0164e7f7) | [Slides](Lecture/Modeling 3/Modeling_3_Lecture.pdf) | [Preview](Supplement/Modeling 3/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/blob/master/Supplement/Modeling%203/Supplement.zip)) |
+<!-- || [Modeling 4](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=5aad15fa-12e5-424b-a1b0-ad6a0164e7f7) | [Slides](Lecture/Modeling 4/Modeling_4_Lecture.pdf) | [Preview](Supplement/Modeling 4/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/blob/master/Supplement/Modeling%204/Supplement.zip)) | -->
+<!-- |July 20| [Modeling 5](https://unc.zoom.us/rec/play/j71Vj-ugk4oFYYHW2pP2IYYcsHE_Zdigwk6RXH_jXVdHi-AULXmWg-fYDLBGnP5LYk9TRkmVBbjnPvZk.0BrzUPJ6f8pRvDQ5?autoplay=true&startTime=1626807554000) | [Slides](Lecture/Modeling 5/Modeling_5_Lecture.pdf) || -->
+<!-- || [Modeling 6](https://unc.zoom.us/rec/play/j71Vj-ugk4oFYYHW2pP2IYYcsHE_Zdigwk6RXH_jXVdHi-AULXmWg-fYDLBGnP5LYk9TRkmVBbjnPvZk.0BrzUPJ6f8pRvDQ5?autoplay=true&startTime=1626807554000) | [Slides](Lecture/Modeling 6/Modeling_6_Lecture.pdf) || -->
+<!-- |July 21| [Modeling 6 (Cont.)](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c1559514-8c54-4a25-bada-ad6c016b90a1) | [Slides](Lecture/Modeling 6/Modeling_6_Lecture.pdf) || -->
+<!-- || [Modeling 7](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c1559514-8c54-4a25-bada-ad6c016b90a1) | [Slides](Lecture/Modeling 7/Modeling_7_Lecture.pdf) | [Preview](Supplement/Modeling 7/Supplement.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Supplement/Modeling%207/Supplement.Rmd)) | -->
+<!-- |July 22| [Modeling 8](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9fada78c-139c-4257-a65e-ad6d016f1401) | [Slides](Lecture/Modeling 8/Modeling_8_Lecture.pdf) | [Preview](Supplement/Modeling 8/Supplement.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Supplement/Modeling%208/Supplement.Rmd)) | -->
+<!-- || [Modeling 9](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9fada78c-139c-4257-a65e-ad6d016f1401) | [Slides](Lecture/Modeling 9/Modeling_9_Lecture.pdf) | [Preview](Supplement/Modeling 9/Supplement.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Supplement/Modeling%209/Supplement.Rmd)) | -->
+<!-- |July 26|EDA Meeting||| -->
+<!-- |July 27| [Modeling 9 (Cont.)](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=174e94f0-3bf1-4d6b-85b2-ad72016469db) | [Slides](Lecture/Modeling 9/Modeling_9_Lecture.pdf) |[Preview](Supplement/Modeling 9/Supplement.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Supplement/Modeling%209/Supplement.Rmd))| -->
+<!-- || [R Shiny](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=174e94f0-3bf1-4d6b-85b2-ad72016469db) | [Slides](Lecture/R Shiny/R_Shiny_Lecture.pdf) | Preview([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/blob/master/Supplement/R%20Shiny/Supplement.zip))| -->
+<!-- |July 28| [Data Ethics](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=ac172ff1-4508-4beb-96a0-ad73015878e1) | [Slides](Lecture/Data Ethics/Data_Ethics_Lecture.pdf) || -->
+<!-- |July 29|Final Paper||| -->
+<!-- ||||| -->
 
 
 
@@ -150,18 +158,19 @@ All HW and Analysis assignments are to be submitted via **[Sakai](https://sakai.
 
 | Assigned | Homework (HW) | Analysis (A) |Solutions| Due Date (Time) |
 |----------|:--------:|:-------------:|:-------------:|----------------:|
-| June 28  | [HW1](Homework/HW 1/HW-1.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Homework/HW%201/HW%201.Rmd))       |       | [Solutions](Solutions/HW_1_Solutions.html) |   June 30 (5:00 PM)     |
-| June 30  | [HW2](Homework/HW 2/HW-2.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Homework/HW%202/HW%202.Rmd))       |       |[Solutions](Solutions/HW_2_Solutions.html)|   July 2 (5:00 PM)     |
-| July 2  |        | [A1](Analysis/Analysis 1/Analysis-1.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/blob/master/Analysis/Analysis%201/Analysis%201.zip))      |  [Solutions](Solutions/Solutions-1.html)          |   July 7 (5:00 PM)     |
-| July 7  | [HW3](Homework/HW 3/HW-3.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Homework/HW%203/HW%203.Rmd))       |       | [Solutions](Solutions/HW_3_Solutions.html)           |   July 9 (5:00 PM)     |
-| July 9  | [HW4](Homework/HW 4/HW-4.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Homework/HW%204/HW%204.Rmd))       |       | [Solutions](Solutions/HW_4_Solutions.html)             |   July 12 (5:00 PM)     |
-| July 12  |  | [A2](Analysis/Analysis 2/Analysis-2.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/blob/master/Analysis/Analysis%202/Analysis%202.zip))        | [Solutions](Solutions/Solutions-2.html)            |   July 14 (5:00 PM)     |
-| July 14  | [HW5](Homework/HW 5/HW-5.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Homework/HW%205/HW%205.Rmd))       |       | [Solutions](Solutions/HW_5_Solutions.html)            |   July 16 (5:00 PM)     |
-| July 16  |  | [A3](Analysis/Analysis 3/Analysis-3.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/blob/master/Analysis/Analysis%203/Analysis%203.zip))        |[Solutions](Solutions/Solutions-3.html)          |   July 19 (5:00 PM)     |
-| July 19  | [HW6](Homework/HW 6/HW-6.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Homework/HW%206/HW%206.Rmd))       |        | [Solutions](Solutions/HW_6_Solutions.html)            |   July 21 (5:00 PM)     |
-| July 21  | [HW7](Homework/HW 7/HW-7.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Homework/HW%207/HW%207.Rmd))       |       |[Solutions](Solutions/HW_7_Solutions.html)            |   July 23 (5:00 PM)     |
-| July 23  |      | [A4](Analysis/Analysis 4/Analysis-4.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/blob/master/Analysis/Analysis%204/Analysis%204.zip))          | [Solutions](Solutions/Solutions-4.html)           |   July 28 (5:00 PM)     |
+| Jan 13  | [HW1]()([.Rmd]())       |       | Solutions |   Jan 20 (5:00 PM)     |
 |          |        |             |           |      |
+<!-- | June 30  | [HW2](Homework/HW 2/HW-2.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Homework/HW%202/HW%202.Rmd))       |       |[Solutions](Solutions/HW_2_Solutions.html)|   July 2 (5:00 PM)     | -->
+<!-- | July 2  |        | [A1](Analysis/Analysis 1/Analysis-1.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/blob/master/Analysis/Analysis%201/Analysis%201.zip))      |  [Solutions](Solutions/Solutions-1.html)          |   July 7 (5:00 PM)     | -->
+<!-- | July 7  | [HW3](Homework/HW 3/HW-3.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Homework/HW%203/HW%203.Rmd))       |       | [Solutions](Solutions/HW_3_Solutions.html)           |   July 9 (5:00 PM)     | -->
+<!-- | July 9  | [HW4](Homework/HW 4/HW-4.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Homework/HW%204/HW%204.Rmd))       |       | [Solutions](Solutions/HW_4_Solutions.html)             |   July 12 (5:00 PM)     | -->
+<!-- | July 12  |  | [A2](Analysis/Analysis 2/Analysis-2.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/blob/master/Analysis/Analysis%202/Analysis%202.zip))        | [Solutions](Solutions/Solutions-2.html)            |   July 14 (5:00 PM)     | -->
+<!-- | July 14  | [HW5](Homework/HW 5/HW-5.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Homework/HW%205/HW%205.Rmd))       |       | [Solutions](Solutions/HW_5_Solutions.html)            |   July 16 (5:00 PM)     | -->
+<!-- | July 16  |  | [A3](Analysis/Analysis 3/Analysis-3.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/blob/master/Analysis/Analysis%203/Analysis%203.zip))        |[Solutions](Solutions/Solutions-3.html)          |   July 19 (5:00 PM)     | -->
+<!-- | July 19  | [HW6](Homework/HW 6/HW-6.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Homework/HW%206/HW%206.Rmd))       |        | [Solutions](Solutions/HW_6_Solutions.html)            |   July 21 (5:00 PM)     | -->
+<!-- | July 21  | [HW7](Homework/HW 7/HW-7.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Homework/HW%207/HW%207.Rmd))       |       |[Solutions](Solutions/HW_7_Solutions.html)            |   July 23 (5:00 PM)     | -->
+<!-- | July 23  |      | A4([.zip]())          | Solutions        |   July 28 (5:00 PM)     | -->
+
 
 # **Final Project Details**
 
@@ -172,15 +181,15 @@ For the final project, each section of STOR 320 will be divided (ideally) into r
 To find your research group, see the table below:
 
 ```{r,echo=F,results="asis",message=F}
-library(DT)
-library(tidyverse)
-
-setwd("D:/Mario Documents/UNC/STOR 320/STOR320_WEBSITE/Group Assignments")
-
-Groups=read.csv(file="STOR320 Group Assignments - 2.csv")
-
-datatable(Groups,class="display",options = list(scrollX=F,
-            columnDefs = list(list(className = 'dt-center', targets = 0:6))),rownames=F)
+# library(DT)
+# library(tidyverse)
+# 
+# setwd("D:/Mario Documents/UNC/STOR 320/STOR320_WEBSITE/Group Assignments")
+# 
+# Groups=read.csv(file="STOR320 Group Assignments - 2.csv")
+# 
+# datatable(Groups,class="display",options = list(scrollX=F,
+#             columnDefs = list(list(className = 'dt-center', targets = 0:6))),rownames=F)
 
 ```
 
@@ -279,18 +288,3 @@ This final project will be divided into four parts worth a total of 100 points. 
 
 This page was last updated on `r Sys.time()` Eastern Time.
 
-
-
-<!-- |Oct. 16| [Modeling I](https://unc.zoom.us/rec/share/62Hg-e1XmdU6xlTsxyIxfm7F3jV6WS_aFfzaaDh-xlfD8PMIfqtpKZ8kVzYFC83X.N3a2qL06uLZRU8cz?startTime=1602868394000) |[Slides](https://drive.google.com/file/d/1HsXbt9c5GFkSv8sRTC5XlTL_4Q8b44dT/view?usp=sharing)|| -->
-<!-- |Oct. 21| [Modeling II](https://unc.zoom.us/rec/share/xZCfmOqjztp8hj-9xnvAYnF96ZHS1VDpjyG0m2XsLnbyF3fBUMT7no3XlvSyiZ0a.zKXUx7rHjlb7KAVo?startTime=1603300774000) |[Slides](https://drive.google.com/file/d/1uKhequdrElCylMVL33G7DA1Bc-z3kHIq/view?usp=sharing)| [Preview](Supplement/Modeling 2/Supplement.html)([.zip](https://drive.google.com/file/d/1v9KMXdLArGP1AWrQhrGPjOU44LjZ0Noh/view?usp=sharing)) | -->
-<!-- |Oct. 23| [Modeling III](https://unc.zoom.us/rec/share/yyvBCWg2pFB2SrS-YMBpqrGDQWqoczhZnfEu0iqWp0nB6YiTPqHTF3mscTZiJdfN.4Ueebkti8RqNIn1I?startTime=1603473569000) |[Slides](https://drive.google.com/file/d/1N9lLVOSXYImIIgKVYfHY0STJ076WczxV/view?usp=sharing)| [Preview](Supplement/Modeling 3/Supplement.html)([.zip](https://drive.google.com/file/d/15hBJp-W3BtBiiQ1GVg3awt8y5064CKKh/view?usp=sharing)) | -->
-<!-- |Oct. 26| [Modeling IV](https://unc.zoom.us/rec/share/GxjhJbt12LwrQp_4CTDrNGMg2Z2mfk27sGSRVxr0hp-mpMeONqDaZy1hEgm76MXY.ZDDQNpE2SBjpcRvP?startTime=1603732772000) |[Slides](https://drive.google.com/file/d/17mIXSqjMvuVLIYLrNhpNeuqMorcfYwUd/view?usp=sharing)| [Preview](Supplement/Modeling 4/Supplement.html)([.zip](https://drive.google.com/file/d/1gwi-J7pdjXWS69Bu-AVKv4Xu1hVQrjSa/view?usp=sharing)) | -->
-<!-- |Oct. 28| [Modeling V](https://unc.zoom.us/rec/share/ZQnTHLgYjhlFl159DQsoeLXvDNuhHd02VQfPDtLtPAQ0g-_TLWI4IUapDNB1vLi8.YzvKtGpe0WoxYsk1?startTime=1603905603000) |[Slides](https://drive.google.com/file/d/12o1WJNz6uSfLbl-_V2ITamxfhgLEJydM/view?usp=sharing)|| -->
-<!-- |Oct. 30| [Modeling VI](https://unc.zoom.us/rec/share/L57JQCXQJ6aQb6Jcoi6gme4M7HLh0xUtLgh_Dmu4OSW3SEjOpq9XAFWyBy7LBHeq.jss3eJ5Blrm34hyT?startTime=1604078240000) |[Slides](https://drive.google.com/file/d/1-yDT0up68BCgNpU3r5pSFOFeJ5Mejpuz/view?usp=sharing)|| -->
-<!-- |Nov. 2| [Modeling VII](https://unc.zoom.us/rec/share/sNvbRVWhBgkdkHa5KUk9PEuAUedvviFsEbktmKoR0x_rdoDk3q5WZx9IW2isugtw.zd93n7A__0MRqwan?startTime=1604341200000) |[Slides](https://drive.google.com/file/d/1Bi04Ytc6JqXkUcU7C-MeeOGtUK9Tr5cd/view?usp=sharing)| [Preview](Supplement/Modeling 7/Supplement.html)([.Rmd](https://drive.google.com/file/d/1ON8XxM28xfq_Mhc04-NuJs_mm6dWQP-e/view?usp=sharing)) | -->
-<!-- |Nov. 4| [Modeling VIII](https://unc.zoom.us/rec/share/p95DbG-_KWAH_dzq_mmP_zA--UY3QPsjHdn1NxEptArfn0Km-mkSC6PxvadJbqz-.3aIy1m0flF2TE56R?startTime=1604514023000) |[Slides](https://drive.google.com/file/d/1zp-zG4ii5PZdlpaq95v5S9MO5LsEXh1X/view?usp=sharing)| [Preview](Supplement/Modeling 8/Supplement.html)([.Rmd](https://drive.google.com/file/d/15JGWTShjR0T6GTv4ogMfpW5sb7jnqiXV/view?usp=sharing)) | -->
-<!-- |Nov. 6| [Modeling IX]() |[Slides](https://drive.google.com/file/d/1DgDOKe2Nj8hqZJCUAlYeatb0mGtGqeGC/view?usp=sharing)| [Preview](Supplement/Modeling 9/Supplement.html)([.Rmd](https://drive.google.com/file/d/1IhIUfUsYm889-q8tHIH5jboHGSldKr83/view?usp=sharing)) | -->
-<!-- |Nov. 9| [R Shiny]() |[Slides](https://drive.google.com/file/d/1tzDNVSmNEsfajomAzeyKbN-zMWp0LXZp/view?usp=sharing)|[Preview](https://drmariogiacomazzo.shinyapps.io/Gapminder_Part3/)([.zip](https://drive.google.com/file/d/1B-3RH_7gQmK-JWVHe7Xf4qA39NR-5XBd/view?usp=sharing))| -->
-<!-- |Nov. 11| [Advanced Shiny ]()([Frances Tong](https://twitter.com/francestong?lang=en)) |[Slides](https://francestong.shinyapps.io/stor320_shiny/)|| -->
-<!-- |Nov. 13| [Data Ethics]() |[Slides](https://drive.google.com/file/d/1Hji5bw9x9NsjUuOL2qUVAr4nfbc3dn74/view?usp=sharing)|| -->
-<!-- |Nov. 16|Final Project Work Day||| -->
