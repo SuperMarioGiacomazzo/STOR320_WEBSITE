@@ -74,8 +74,8 @@ This course is an application-driven introduction to data science. Statistical a
     - **[Zichao Li](http://stat-or.unc.edu/people/graduate-students-department)**
 
 - Course Syllabus: 
-    - **[Section 1](Syllabi/STOR 320 Section 1 Syllabus.pdf)**
-    - **[Section 2](Syllabi/STOR 320 Section 2 Syllabus.pdf)**
+    - **[Section 1](Syllabi/STOR 320 Section 1 Syllabus.pdf)**: TTh, 2:00PM – 3:15PM, Gardner 105
+    - **[Section 2](Syllabi/STOR 320 Section 2 Syllabus.pdf)**: TTh, 3:30PM – 4:45PM, Gardner 105
 
 - Lab Sections for Section 1:
     - 320.400: W, 4:40PM - 5:30PM, Hanes 107, Ian
@@ -110,45 +110,43 @@ une 29
 |------|---------|--------:|---------:|
 |Jan 11| Introduction | [Slides](Lecture/Introduction/Intro_Lecture.pdf)||
 |Jan 13|Data Visualization|[Slides](Lecture/Data Visualization/Data_Visualization_Lecture.pdf)|[Preview](Supplement/Data Visualization/Supplement.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Supplement/Data%20Visualization/Supplement.Rmd))|
-|Jan 18| Workflow in RMarkdown | [Slides](Lecture/Workflow/Workflow_Lecture.pdf) ||
-|Jan 20| Data Transformation I | [Slides](Lecture/Data Transformation 1/Data_Transformation_1_Lecture.pdf) ||
-|Jan 25| Data Transformation II | [Slides](Lecture/Data Transformation 2/Data_Transformation_2_Lecture.pdf)||
-|Jan 27| Data Transformation III | [Slides](Lecture/Data Transformation 3/Data_Transformation_3_Lecture.pdf)||
-|Feb 1 | Data Transformation IV | [Slides](Lecture/Data Transformation 4/Data_Transformation_4_Lecture.pdf)||
-|Feb 3| Exploratory Data Analysis I  | [Slides](Lecture/Exploratory Data Analysis 1/Exploratory_Data_Analysis_1_Lecture.pdf) ||
-|Feb 8| Exploratory Data Analysis II |[Slides](Lecture/Exploratory Data Analysis 2/Exploratory_Data_Analysis_2_Lecture.pdf)||
-|Feb 10| Final Project I | [Slides](Lecture/Final Project 1/Final_Project_1_Lecture.pdf)||
-|Feb 15| Data Import | [Slides](Lecture/Data Import/Data_Import_Lecture.pdf)||
-|Feb 17| Tidy Data 1 | [Slides](Lecture/Tidy Data 1/Tidy_Data_1_Lecture.pdf) ||
-|Feb 22| Tidy Data 2 | [Slides](Lecture/Tidy Data 2/Tidy_Data_2_Lecture.pdf) ||
-|Feb 24| Web Scraping I | [Slides](Lecture/Web Scraping 1/Web_Scraping_1_Lecture.pdf) | [Preview](Supplement/Web Scraping 1/Supplement.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Supplement/Web%20Scraping%201/Supplement.Rmd)) |
-|March 1| Web Scraping II | [Slides](Lecture/Web Scraping 2/Web_Scraping_2_Lecture.pdf) | [Preview](Supplement/Web Scraping 2/Supplement.html)([.zip](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Supplement/Web%20Scraping%202/Supplement.zip)) |
-|March 3| Joins I | [Slides](Lecture/Joins 1/Joins_1_Lecture.pdf) ||
-|March 8| Joins II | [Slides](Lecture/Joins 2/Joins_2_Lecture.pdf) ||
-|March 10| Final Project II | [Slides](Lecture/Final Project 2/Final_Project_2_Lecture.pdf) ||
+|| Workflow in RMarkdown | [Slides](Lecture/Workflow/Workflow_Lecture.pdf) ||
+|Jan 18| Data Transformation I | [Slides](Lecture/Data Transformation 1/Data_Transformation_1_Lecture.pdf) ||
+|| Data Transformation II | [Slides](Lecture/Data Transformation 2/Data_Transformation_2_Lecture.pdf)||
+|Jan 20| Data Transformation III | [Slides](Lecture/Data Transformation 3/Data_Transformation_3_Lecture.pdf)||
+|| Data Transformation IV | [Slides](Lecture/Data Transformation 4/Data_Transformation_4_Lecture.pdf)||
+|Jan 25| Exploratory Data Analysis I  | [Slides](Lecture/Exploratory Data Analysis 1/Exploratory_Data_Analysis_1_Lecture.pdf) ||
+|| Exploratory Data Analysis II |[Slides](Lecture/Exploratory Data Analysis 2/Exploratory_Data_Analysis_2_Lecture.pdf)||
+|Jan 27| Final Project I | [Slides](Lecture/Final Project 1/Final_Project_1_Lecture.pdf)||
+|| Data Import | [Slides](Lecture/Data Import/Data_Import_Lecture.pdf)||
+|| Tidy Data 1 | [Slides](Lecture/Tidy Data 1/Tidy_Data_1_Lecture.pdf) ||
+|| Tidy Data 2 | [Slides](Lecture/Tidy Data 2/Tidy_Data_2_Lecture.pdf) ||
+|| Web Scraping I | [Slides](Lecture/Web Scraping 1/Web_Scraping_1_Lecture.pdf) | [Preview](Supplement/Web Scraping 1/Supplement.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Supplement/Web%20Scraping%201/Supplement.Rmd)) |
+|| Web Scraping II | [Slides](Lecture/Web Scraping 2/Web_Scraping_2_Lecture.pdf) | [Preview](Supplement/Web Scraping 2/Supplement.html)([.zip](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Supplement/Web%20Scraping%202/Supplement.zip)) |
+|| Joins I | [Slides](Lecture/Joins 1/Joins_1_Lecture.pdf) ||
+|| Joins II | [Slides](Lecture/Joins 2/Joins_2_Lecture.pdf) ||
+|| Final Project II | [Slides](Lecture/Final Project 2/Final_Project_2_Lecture.pdf) ||
 |March 15|Spring Brizzeak|||
 |March 17|Spring Brizzeak|||
-|March 22| Factors | [Slides](Lecture/Factors/Factors_Lecture.pdf) ||
-|March 24| Programming I | [Slides](Lecture/Programming 1/Programming_1_Lecture.pdf) | [Preview](Supplement/Programming 1/Supplement.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Supplement/Programming%201/Supplement.Rmd))  |
-|March 29| Programming II | [Slides](Lecture/Programming 2/Programming_2_Lecture.pdf) | [Preview](Supplement/Programming 2/Supplement.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Supplement/Programming%202/Supplement.Rmd)) |
-| March 31 | [Programming III](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a21f5ea6-2491-406d-94f3-ad650169129c) | [Slides](Lecture/Programming 3/Programming_3_Lecture.pdf) ||
-|April 5| Programming IV | [Slides](Lecture/Programming 4/Programming_4_Lecture.pdf) ||
-|April 7| Modeling 1 | [Slides](Lecture/Modeling 1/Modeling_1_Lecture.pdf) ||
-|April 12| Modeling 2 | [Slides](Lecture/Modeling 2/Modeling_2_Lecture.pdf) | [Preview](Supplement/Modeling 2/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/blob/master/Supplement/Modeling%202/Supplement.zip)) |
-|April 14| [Modeling 3](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=5aad15fa-12e5-424b-a1b0-ad6a0164e7f7) | [Slides](Lecture/Modeling 3/Modeling_3_Lecture.pdf) | [Preview](Supplement/Modeling 3/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/blob/master/Supplement/Modeling%203/Supplement.zip)) |
-<!-- || [Modeling 4](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=5aad15fa-12e5-424b-a1b0-ad6a0164e7f7) | [Slides](Lecture/Modeling 4/Modeling_4_Lecture.pdf) | [Preview](Supplement/Modeling 4/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/blob/master/Supplement/Modeling%204/Supplement.zip)) | -->
-<!-- |July 20| [Modeling 5](https://unc.zoom.us/rec/play/j71Vj-ugk4oFYYHW2pP2IYYcsHE_Zdigwk6RXH_jXVdHi-AULXmWg-fYDLBGnP5LYk9TRkmVBbjnPvZk.0BrzUPJ6f8pRvDQ5?autoplay=true&startTime=1626807554000) | [Slides](Lecture/Modeling 5/Modeling_5_Lecture.pdf) || -->
-<!-- || [Modeling 6](https://unc.zoom.us/rec/play/j71Vj-ugk4oFYYHW2pP2IYYcsHE_Zdigwk6RXH_jXVdHi-AULXmWg-fYDLBGnP5LYk9TRkmVBbjnPvZk.0BrzUPJ6f8pRvDQ5?autoplay=true&startTime=1626807554000) | [Slides](Lecture/Modeling 6/Modeling_6_Lecture.pdf) || -->
-<!-- |July 21| [Modeling 6 (Cont.)](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c1559514-8c54-4a25-bada-ad6c016b90a1) | [Slides](Lecture/Modeling 6/Modeling_6_Lecture.pdf) || -->
-<!-- || [Modeling 7](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c1559514-8c54-4a25-bada-ad6c016b90a1) | [Slides](Lecture/Modeling 7/Modeling_7_Lecture.pdf) | [Preview](Supplement/Modeling 7/Supplement.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Supplement/Modeling%207/Supplement.Rmd)) | -->
-<!-- |July 22| [Modeling 8](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9fada78c-139c-4257-a65e-ad6d016f1401) | [Slides](Lecture/Modeling 8/Modeling_8_Lecture.pdf) | [Preview](Supplement/Modeling 8/Supplement.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Supplement/Modeling%208/Supplement.Rmd)) | -->
-<!-- || [Modeling 9](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9fada78c-139c-4257-a65e-ad6d016f1401) | [Slides](Lecture/Modeling 9/Modeling_9_Lecture.pdf) | [Preview](Supplement/Modeling 9/Supplement.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Supplement/Modeling%209/Supplement.Rmd)) | -->
-<!-- |July 26|EDA Meeting||| -->
-<!-- |July 27| [Modeling 9 (Cont.)](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=174e94f0-3bf1-4d6b-85b2-ad72016469db) | [Slides](Lecture/Modeling 9/Modeling_9_Lecture.pdf) |[Preview](Supplement/Modeling 9/Supplement.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Supplement/Modeling%209/Supplement.Rmd))| -->
-<!-- || [R Shiny](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=174e94f0-3bf1-4d6b-85b2-ad72016469db) | [Slides](Lecture/R Shiny/R_Shiny_Lecture.pdf) | Preview([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/blob/master/Supplement/R%20Shiny/Supplement.zip))| -->
-<!-- |July 28| [Data Ethics](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=ac172ff1-4508-4beb-96a0-ad73015878e1) | [Slides](Lecture/Data Ethics/Data_Ethics_Lecture.pdf) || -->
-<!-- |July 29|Final Paper||| -->
-<!-- ||||| -->
+|| Factors | [Slides](Lecture/Factors/Factors_Lecture.pdf) ||
+|| Programming I | [Slides](Lecture/Programming 1/Programming_1_Lecture.pdf) | [Preview](Supplement/Programming 1/Supplement.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Supplement/Programming%201/Supplement.Rmd))  |
+|| Programming II | [Slides](Lecture/Programming 2/Programming_2_Lecture.pdf) | [Preview](Supplement/Programming 2/Supplement.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Supplement/Programming%202/Supplement.Rmd)) |
+|| Programming III | [Slides](Lecture/Programming 3/Programming_3_Lecture.pdf) ||
+|| Programming IV | [Slides](Lecture/Programming 4/Programming_4_Lecture.pdf) ||
+|| Modeling 1 | [Slides](Lecture/Modeling 1/Modeling_1_Lecture.pdf) ||
+|| Modeling 2 | [Slides](Lecture/Modeling 2/Modeling_2_Lecture.pdf) | [Preview](Supplement/Modeling 2/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/blob/master/Supplement/Modeling%202/Supplement.zip)) |
+|April 14| Best Thursday |||
+|| Modeling 3 | [Slides](Lecture/Modeling 3/Modeling_3_Lecture.pdf) | [Preview](Supplement/Modeling 3/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/blob/master/Supplement/Modeling%203/Supplement.zip)) |
+|| Modeling 4 | [Slides](Lecture/Modeling 4/Modeling_4_Lecture.pdf) | [Preview](Supplement/Modeling 4/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/blob/master/Supplement/Modeling%204/Supplement.zip)) |
+|| Modeling 5 | [Slides](Lecture/Modeling 5/Modeling_5_Lecture.pdf) ||
+|| Modeling 6 | [Slides](Lecture/Modeling 6/Modeling_6_Lecture.pdf) ||
+|| Modeling 7 | [Slides](Lecture/Modeling 7/Modeling_7_Lecture.pdf) | [Preview](Supplement/Modeling 7/Supplement.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Supplement/Modeling%207/Supplement.Rmd)) |
+|| Modeling 8 | [Slides](Lecture/Modeling 8/Modeling_8_Lecture.pdf) | [Preview](Supplement/Modeling 8/Supplement.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Supplement/Modeling%208/Supplement.Rmd)) |
+|| Modeling 9 | [Slides](Lecture/Modeling 9/Modeling_9_Lecture.pdf) | [Preview](Supplement/Modeling 9/Supplement.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Supplement/Modeling%209/Supplement.Rmd)) |
+|| R Shiny | [Slides](Lecture/R Shiny/R_Shiny_Lecture.pdf) | Preview([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/blob/master/Supplement/R%20Shiny/Supplement.zip))|
+|| Data Ethics | [Slides](Lecture/Data Ethics/Data_Ethics_Lecture.pdf) ||
+||Final Paper|||
+|||||
 
 
 
@@ -158,9 +156,9 @@ All HW and Analysis assignments are to be submitted via **[Sakai](https://sakai.
 
 | Assigned | Homework (HW) | Analysis (A) |Solutions| Due Date (Time) |
 |----------|:--------:|:-------------:|:-------------:|----------------:|
-| Jan 13  | [HW1]()([.Rmd]())       |       | Solutions |   Jan 20 (5:00 PM)     |
+| Jan 13  | [HW1]()([.zip]())       |       | Solutions |   Jan 20 (5:00 PM)     |
 |          |        |             |           |      |
-<!-- | June 30  | [HW2](Homework/HW 2/HW-2.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Homework/HW%202/HW%202.Rmd))       |       |[Solutions](Solutions/HW_2_Solutions.html)|   July 2 (5:00 PM)     | -->
+| Jan 20  | [HW2]()([.zip]())       |       | Solutions |   Jan 27 (5:00 PM)     |
 <!-- | July 2  |        | [A1](Analysis/Analysis 1/Analysis-1.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/blob/master/Analysis/Analysis%201/Analysis%201.zip))      |  [Solutions](Solutions/Solutions-1.html)          |   July 7 (5:00 PM)     | -->
 <!-- | July 7  | [HW3](Homework/HW 3/HW-3.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Homework/HW%203/HW%203.Rmd))       |       | [Solutions](Solutions/HW_3_Solutions.html)           |   July 9 (5:00 PM)     | -->
 <!-- | July 9  | [HW4](Homework/HW 4/HW-4.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Homework/HW%204/HW%204.Rmd))       |       | [Solutions](Solutions/HW_4_Solutions.html)             |   July 12 (5:00 PM)     | -->
@@ -223,19 +221,19 @@ This final project will be divided into four parts worth a total of 100 points. 
     
 * **[P3: Final Written Paper](Final Project/Final_Paper.html)** *(40 Points)*
     + [Template](Final Project/Final-Paper-Template.html)([.Rmd](https://drive.google.com/file/d/19oG11IaUnAkPe8BUE7SAXS2BOeVLIZdT/view?usp=sharing))
-    + [Group Scoring](https://docs.google.com/forms/d/e/1FAIpQLScslh7rwnjd2VZ99VH66_4PJM7c8oJ_4olJt7-34hRW82Nq2A/viewform?usp=sf_link)
     
 * **[P4: Final Presentation](Final Project/Final_Presentation.html)** *(30 Points)*
 
     
 ## Due Dates of Individual Parts
 
-| Part | Description |Method of Submission| Due Date (Time) |
-|------|-------------|-------------------|----------------:|
-| P1  | Project Proposal| Zoom + Sakai | July 8 (11:59PM)|
-| P2  | Exploratory Data Analysis | Zoom + Sakai | July 22 (11:59PM)|
-| P3  | Final Written Paper|Sakai| July 29 (11:59PM)|
-| P4  | Final Presentation|Sakai + Class| August 3 (3:00PM)|
+| Part | Description |Method of Submission| Involvement Survey |Due Date (Time) |
+|------|-------------|-------------------|-------------------|----------------:|
+| P1  | Project Proposal| Zoom + Sakai | [Survey 1](https://docs.google.com/forms/d/e/1FAIpQLScslh7rwnjd2VZ99VH66_4PJM7c8oJ_4olJt7-34hRW82Nq2A/viewform?usp=sf_link) |February 10 (11:59PM)|
+| P2  | Exploratory Data Analysis | Zoom + Sakai | Survey 2 |March 24 (11:59PM)|
+| P3  | Final Written Paper|Sakai| Survey 3 |April 26 (11:59PM)|
+| P4  | Final Presentation (Section 1) |Sakai + Class| Survey 4 | May 5 (3:00PM) |
+| P4  | Final Presentation (Section 2) |Sakai + Class| Survey 4 | April 30 (7:00PM) |
 ||||
 
 ## Above Average Final Projects
