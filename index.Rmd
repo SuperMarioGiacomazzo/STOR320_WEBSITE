@@ -180,11 +180,11 @@ This course is an application-driven introduction to data science. Statistical a
 
 # **Assignment Tracker**
 
-All HW and Analysis assignments are to be submitted via **[Sakai](https://sakai.unc.edu/welcome/)**. 
+All HW and Analysis assignments are to be submitted via **[Sakai](https://sakai.unc.edu/welcome/)**. Unzip folder and complete your homework using Rmd file. 
 
 | Assigned | Homework (HW) | Analysis (A) |Solutions| Due Date (Time) |
 |----------|:--------:|:-------------:|:-------------:|----------------:|
-| Jan 13  | [HW1]()([.zip]())       |       | Solutions |   Jan 20 (5:00 PM)     |
+| Jan 13  | [HW1](Homework/HW 1/HW-1.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%201/HW%201.zip))       |       | Solutions |   Jan 20 (5:00 PM)     |
 | Jan 20  | [HW2]()([.zip]())       |       | Solutions |   Jan 27 (5:00 PM)     |
 |          |        |             |           |      |
 <!-- | July 2  |        | [A1](Analysis/Analysis 1/Analysis-1.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/blob/master/Analysis/Analysis%201/Analysis%201.zip))      |  [Solutions](Solutions/Solutions-1.html)          |   July 7 (5:00 PM)     | -->
