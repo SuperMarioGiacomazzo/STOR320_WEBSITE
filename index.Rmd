@@ -103,7 +103,7 @@ This course is an application-driven introduction to data science. Statistical a
   </div>
 </div> 
 
-une 29
+
 # **Course Material**
 
 | Date | Lecture | Slides | Supplement |
@@ -145,10 +145,38 @@ une 29
 || Modeling 9 | [Slides](Lecture/Modeling 9/Modeling_9_Lecture.pdf) | [Preview](Supplement/Modeling 9/Supplement.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Supplement/Modeling%209/Supplement.Rmd)) |
 || R Shiny | [Slides](Lecture/R Shiny/R_Shiny_Lecture.pdf) | Preview([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/blob/master/Supplement/R%20Shiny/Supplement.zip))|
 || Data Ethics | [Slides](Lecture/Data Ethics/Data_Ethics_Lecture.pdf) ||
-||Final Paper|||
+||Final Paper|||====
 |||||
 
+# **Lab Schedule**
 
+| Date | 320.400 | 320.401 |320.402| 320.403 | 320.404 | 320.405 | 320.406 | 320.407 |
+|----------|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
+| Jan 19 | Lab 1  |  | Lab 1  |  | Lab 1 |  |  | Lab 1   |
+| Jan 21 |   | Lab 1  |   | Lab 1 |  | Lab 1  |  Lab 1  |   |
+| Jan 26 | Lab 2  |  | Lab 2  |  | Lab 2 |  |  | Lab 2   |
+| Jan 28 |   | Lab 2  |   | Lab 2 |  | Lab 2  |  Lab 2  |   |
+| Feb 2 | Lab 3  |  | Lab 3  |  | Lab 3 |  |  | Lab 3   |
+| Feb 4 |   | Lab 3  |   | Lab 3 |  | Lab 3  |  Lab 3  |   |
+| Feb 9 | Lab 4  |  | Lab 4  |  | Lab 4 |  |  | Lab 4   |
+| Feb 11 |   | Lab 4  |   | Lab 4 |  | Lab 4  |  Lab 4  |   |
+| Feb 16 | Lab 5  |  | Lab 5  |  | Lab 5 |  |  | Lab 5   |
+| Feb 18 |   | Lab 5  |   | Lab 5 |  | Lab 5  |  Lab 5  |   |
+| Feb 23 | Lab 6  |  | Lab 6  |  | Lab 6 |  |  | Lab 6   |
+| Feb 25 |   | Lab 6  |   | Lab 6 |  | Lab 6  |  Lab 6  |   |
+| Mar 2 | Lab 7  |  | Lab 7  |  | Lab 7 |  |  | Lab 7   |
+| Mar 4 |   | Lab 7  |   | Lab 7 |  | Lab 7  |  Lab 7  |   |
+| Mar 9 | Lab 8  |  | Lab 8  |  | Lab 8 |  |  | Lab 8   |
+| Mar 11 |   | Lab 8  |   | Lab 8 |  | Lab 8  |  Lab 8  |   |
+| Mar 23 | Lab 9  |  | Lab 9  |  | Lab 9 |  |  | Lab 9   |
+| Mar 25 |   | Lab 9  |   | Lab 9 |  | Lab 9  |  Lab 9  |   |
+| Mar 30 | Lab 10  |  | Lab 10  |  | Lab 10 |  |  | Lab 10   |
+| April 1 |   | Lab 10  |   | Lab 10 |  | Lab 10  |  Lab 10  |   |
+| April 6 | Lab 11  |  | Lab 11  |  | Lab 11 |  |  | Lab 11   |
+| April 8 |   | Lab 11  |   | Lab 11 |  | Lab 11  |  Lab 11  |   |
+| April 20 | Lab 12  |  | Lab 12  |  | Lab 12 |  |  | Lab 12   |
+| April 22 |   | Lab 12  |   | Lab 12 |  | Lab 12  |  Lab 12  |   |
+||||||||||
 
 # **Assignment Tracker**
 
