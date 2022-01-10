@@ -145,7 +145,7 @@ This course is an application-driven introduction to data science. Statistical a
 || Modeling 9 | [Slides](Lecture/Modeling 9/Modeling_9_Lecture.pdf) | [Preview](Supplement/Modeling 9/Supplement.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Supplement/Modeling%209/Supplement.Rmd)) |
 || R Shiny | [Slides](Lecture/R Shiny/R_Shiny_Lecture.pdf) | Preview([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/blob/master/Supplement/R%20Shiny/Supplement.zip))|
 || Data Ethics | [Slides](Lecture/Data Ethics/Data_Ethics_Lecture.pdf) ||
-||Final Paper|||====
+||Final Paper|||
 |||||
 
 # **Lab Schedule**
@@ -185,8 +185,8 @@ All HW and Analysis assignments are to be submitted via **[Sakai](https://sakai.
 | Assigned | Homework (HW) | Analysis (A) |Solutions| Due Date (Time) |
 |----------|:--------:|:-------------:|:-------------:|----------------:|
 | Jan 13  | [HW1]()([.zip]())       |       | Solutions |   Jan 20 (5:00 PM)     |
-|          |        |             |           |      |
 | Jan 20  | [HW2]()([.zip]())       |       | Solutions |   Jan 27 (5:00 PM)     |
+|          |        |             |           |      |
 <!-- | July 2  |        | [A1](Analysis/Analysis 1/Analysis-1.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/blob/master/Analysis/Analysis%201/Analysis%201.zip))      |  [Solutions](Solutions/Solutions-1.html)          |   July 7 (5:00 PM)     | -->
 <!-- | July 7  | [HW3](Homework/HW 3/HW-3.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Homework/HW%203/HW%203.Rmd))       |       | [Solutions](Solutions/HW_3_Solutions.html)           |   July 9 (5:00 PM)     | -->
 <!-- | July 9  | [HW4](Homework/HW 4/HW-4.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Homework/HW%204/HW%204.Rmd))       |       | [Solutions](Solutions/HW_4_Solutions.html)             |   July 12 (5:00 PM)     | -->
