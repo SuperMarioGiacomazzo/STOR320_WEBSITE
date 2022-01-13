@@ -180,24 +180,34 @@ This course is an application-driven introduction to data science. Statistical a
 
 # **Assignment Tracker**
 
-All HW and Analysis assignments are to be submitted via **[Sakai](https://sakai.unc.edu/welcome/)**. Unzip folder and complete your homework using Rmd file. 
+All HW and Analysis assignments are to be submitted via **[Sakai](https://sakai.unc.edu/welcome/)**. Unzip folder and complete your homework using Rmd file. The table below shows all the assignments sorted by Due Date
 
-| Assigned | Homework (HW) | Analysis (A) |Solutions| Due Date (Time) |
-|----------|:--------:|:-------------:|:-------------:|----------------:|
-| Jan 13  | [HW1](Homework/HW 1/HW-1.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%201/HW%201.zip))       |       | Solutions |   Jan 20 (5:00 PM)     |
-| Jan 19  | [LAB1]()([.zip]())       |       |  |   Jan 26 (2:30 PM)     |
-| Jan 20  | [HW2]()([.zip]())       |       | Solutions |   Jan 27 (5:00 PM)     |
-| Jan 26  | [LAB2]()([.zip]())       |       |  |   Feb 2 (2:30 PM)     |
-| Jan 27  |        | [A1]()([.zip]())      |  Solutions       |   Feb 10 (5:00 PM)     |
-| Feb 10  | [HW3]()([.zip]())       |       | Solutions         |   Feb 17  (5:00 PM)     |
-| Feb 17 | [HW4]()([.zip]())       |       | Solutions             |   Feb 24 (5:00 PM)     |
-| Feb 24  |  | [A2]()([.zip]())        | Solutions            |   Mar 10 (5:00 PM)     |
-| Mar 10  | [HW5](Homewo)([.zip]())       |       | Solutions            |   Mar 24 (5:00 PM)     |
-| Mar 24  |  | [A3]()([.zip]())        |Solutions          |   Mar 31 (5:00 PM)     |
-| Mar 31  | [HW6]()([.zip]())       |        | Solutions           |   Apr 7 (5:00 PM)     |
-| Apr 7  | [HW7]()([.zip]())       |       | Solutions            |   Apr 14 (5:00 PM)     |
-| Apr 14  |      | [A4]()([.zip]())          | Solutions        |   Apr 21 (5:00 PM)     |
-|          |        |             |           |      |
+| Assigned | Lab (L) |Homework (HW) | Analysis (A) |Solutions| Due Date (Time) |
+|----------|:--------:|:--------:|:-------------:|:-------------:|----------------:|
+| Jan 13  | |[HW1](Homework/HW 1/HW-1.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%201/HW%201.zip))       |       | Solutions |   Jan 20 (5:00 PM)     |
+| Jan 19  | [L1]()([.zip]())|       |       |  |   Jan 26 (2:30 PM)     |
+| Jan 20  | |[HW2]()([.zip]())       |       | Solutions |   Jan 27 (5:00 PM)     |
+| Jan 26  | [L2]()([.zip]())|       |       |  |   Feb 2 (2:30 PM)     |
+| Feb 2  | [L3]()([.zip]())|       |       |  |   Feb 9 (2:30 PM)     |
+| Jan 27  |      |  | [A1]()([.zip]())      |  Solutions       |   Feb 10 (5:00 PM)     |
+| Feb 9  | [L4]()([.zip]())|       |       |  |   Feb 16 (2:30 PM)     |
+| Feb 10  | |[HW3]()([.zip]())       |       | Solutions         |   Feb 17  (5:00 PM)     |
+| Feb 16  | [L5]()([.zip]())|       |       |  |   Feb 23 (2:30 PM)     |
+| Feb 17 | |[HW4]()([.zip]())       |       | Solutions             |   Feb 24 (5:00 PM)     |
+| Feb 23  | [L6]()([.zip]())|       |       |  |   Mar 2 (2:30 PM)     |
+| Mar 2  | [L7]()([.zip]())|       |       |  |   Mar 9 (2:30 PM)     |
+| Feb 24  | | | [A2]()([.zip]())        | Solutions            |   Mar 10 (5:00 PM)     |
+| Mar 9  | [L8]()([.zip]())|       |       |  |   Mar 23 (2:30 PM)     |
+| Mar 10  | |[HW5]()([.zip]())       |       | Solutions            |   Mar 24 (5:00 PM)     |
+| Mar 23  | [L9]()([.zip]())|       |       |  |   Mar 30 (2:30 PM)     |
+| Mar 24  | | | [A3]()([.zip]())        |Solutions          |   Mar 31 (5:00 PM)     |
+| Mar 30  | [L10]()([.zip]())|       |       |  |   Apr 6 (2:30 PM)     |
+| Mar 31  | |[HW6]()([.zip]())       |        | Solutions           |   Apr 7 (5:00 PM)     |
+| Apr 6  | [L11]()([.zip]())|       |       |  |   Apr 13 (2:30 PM)     |
+| Apr 7  | |[HW7]()([.zip]())       |       | Solutions            |   Apr 14 (5:00 PM)     |
+| Apr 14  |   |   | [A4]()([.zip]())          | Solutions        |   Apr 21 (5:00 PM)     |
+| Apr 20  | [L12]()([.zip]())|       |       |  |   Apr 27 (2:30 PM)     |
+|          |   |     |             |           |      |
 
 
 
