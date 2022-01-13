@@ -92,7 +92,7 @@ This course is an application-driven introduction to data science. Statistical a
 - **[University Approved Absences](https://unc-ch.formstack.com/forms/university_approved_absence_request?sso=5f3154c3179f5)**: Fill out the online form.
 
 - Office Hours and Zoom Links:
-    - **[Dr. Mario:](https://unc.zoom.us/j/98181811021)** T, 8AM - 2PM
+    - **[Dr. Mario:](https://unc.zoom.us/j/98181811021)** M, 8AM - 2PM
     - **[Ian:](https://unc.zoom.us/j/6062060059)** Th, 11AM - 1PM
     - **[Hank:](https://unc.zoom.us/j/96051493738)** TTh, 1PM - 2PM
     - **[Zichao:](https://unc.zoom.us/j/6459419100?pwd=UEtCWjc5WUw1K2N2bUM3cFFJNWlzQT09)** F, 2PM - 4PM, Passcode: Stor 320
@@ -289,19 +289,17 @@ This final project will be divided into four parts worth a total of 100 points. 
 
 # **Reading**
 
-- **[R for Data Science](https://drive.google.com/file/d/1Wca-b3m6CTbBQqO7tUEh_CdD3xVgjYVb/view?usp=sharing)** (R4DS)
+- **[R for Data Science](R for Data Science- Import, Tidy, Transform, Visualize, and Model Data.pdf)** (R4DS)
 
-- **[R Programming for Data Science](https://drive.google.com/file/d/1XVF5v4MTBhIp_dq9MzTI0TtPfVrF6eaZ/view?usp=sharing)** (RP4DS)
+- **[R Programming for Data Science](Using R at UNC for Mac Users.pdf)** (RP4DS)
 
-- **[Text Mining with R](https://www.tidytextmining.com/)** (TMwR)
+- **[The Art of R Programming](The Art of R Programming.pdf)** (AoRP)
 
-- **[The Art of R Programming](https://drive.google.com/file/d/1gR7Yr9-pIZ-f315bZCXfDj9yPWaZDflD/view?usp=sharing)** (AoRP)
-
-- **[A First Course in Statistical Programming with R](https://drive.google.com/file/d/1NBadpF5MLWI3AFsyWo3nbpQnL8sWeZdT/view?usp=sharing)** (FCSPR)
+- **[A First Course in Statistical Programming with R](A First Course in Statistical Programming with R.pdf)** (FCSPR)
 
 - **[ModernDive](https://moderndive.com/index.html)** (MD)
 
-- **[An Introduction to Statistical Learning](https://drive.google.com/file/d/1jKxVWG89KvWr_-70sOeEeLK4CUB09sRu/view?usp=sharing)** (ISLR)
+- **[An Introduction to Statistical Learning](An Introduction to Statistical Learning.pdf)** (ISLR)
 
 
 # **Additional resources**
@@ -314,9 +312,9 @@ This final project will be divided into four parts worth a total of 100 points. 
 
 - **[Instructions for Accessing R Studio on the UNC Server](https://drive.google.com/file/d/1ATZO-wpuqzHbXVnJqm7wXpt-yfMbo2Jy/view?usp=sharing)**
 
-- **[Rmarkdown Cheat Sheet](https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf)**
+- **[Rmarkdown Cheat Sheet](Cheat Sheet/rmarkdown.pdf)**
 
-- **[ggplot2 Cheat Sheet](https://github.com/rstudio/cheatsheets/raw/master/data-visualization-2.1.pdf)**
+- **[ggplot2 Cheat Sheet](Cheat Sheet/data-visualization.pdf)**
 
 - **[Color Options](https://paulvanderlaken.files.wordpress.com/2017/08/ggplot2-color-colours-names-cheatsheet.png?w=559&amp;h=1024)**
 
