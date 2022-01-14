@@ -109,8 +109,8 @@ This course is an application-driven introduction to data science. Statistical a
 | Date | Lecture | Slides | Supplement |
 |------|---------|--------:|---------:|
 |Jan 11| [Introduction](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=70ba750d-6c05-48e2-897d-ae1b000620b5) | [Slides](Lecture/Introduction/Intro_Lecture.pdf)||
-|Jan 13|Data Visualization|[Slides](Lecture/Data Visualization/Data_Visualization_Lecture.pdf)|[Preview](Supplement/Data Visualization/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Data%20Visualization/Supplement.zip))|
-|| Workflow in RMarkdown | [Slides](Lecture/Workflow/Workflow_Lecture.pdf) ||
+|Jan 13|[Data Visualization](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=8ce00bd2-fcae-4599-a617-ae1c013922dd)|[Slides](Lecture/Data Visualization/Data_Visualization_Lecture.pdf)|[Preview](Supplement/Data Visualization/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Data%20Visualization/Supplement.zip))|
+|| [Workflow in RMarkdown](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=8ce00bd2-fcae-4599-a617-ae1c013922dd) | [Slides](Lecture/Workflow/Workflow_Lecture.pdf) ||
 |Jan 18| Data Transformation I | [Slides](Lecture/Data Transformation 1/Data_Transformation_1_Lecture.pdf) ||
 || Data Transformation II | [Slides](Lecture/Data Transformation 2/Data_Transformation_2_Lecture.pdf)||
 |Jan 20| Data Transformation III | [Slides](Lecture/Data Transformation 3/Data_Transformation_3_Lecture.pdf)||
