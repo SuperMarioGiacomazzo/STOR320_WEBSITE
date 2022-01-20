@@ -200,13 +200,13 @@ All HW and Analysis assignments are to be submitted via **[Sakai](https://sakai.
 | Mar 2  | [L7]()([.zip]())|       |       |  |   Mar 9 (2:30 PM)     |
 | Feb 24  | | | [A2]()([.zip]())        | Solutions            |   Mar 10 (5:00 PM)     |
 | Mar 9  | [L8]()([.zip]())|       |       |  |   Mar 23 (2:30 PM)     |
-| Mar 10  | |[HW5]()([.zip]())       |       | Solutions            |   Mar 24 (5:00 PM)     |
+| Mar 10  | |[HW5](Homework/HW 5/HW-5.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%205/HW%205.zip))       |       | Solutions            |   Mar 24 (5:00 PM)     |
 | Mar 23  | [L9]()([.zip]())|       |       |  |   Mar 30 (2:30 PM)     |
 | Mar 24  | | | [A3]()([.zip]())        |Solutions          |   Mar 31 (5:00 PM)     |
 | Mar 30  | [L10]()([.zip]())|       |       |  |   Apr 6 (2:30 PM)     |
-| Mar 31  | |[HW6]()([.zip]())       |        | Solutions           |   Apr 7 (5:00 PM)     |
+| Mar 31  | |[HW6](Homework/HW 6/HW-6.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%206/HW%206.zip))       |        | Solutions           |   Apr 7 (5:00 PM)     |
 | Apr 6  | [L11]()([.zip]())|       |       |  |   Apr 13 (2:30 PM)     |
-| Apr 7  | |[HW7]()([.zip]())       |       | Solutions            |   Apr 14 (5:00 PM)     |
+| Apr 7  | |[HW7](Homework/HW 7/HW-7.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%207/HW%207zip))       |       | Solutions            |   Apr 14 (5:00 PM)     |
 | Apr 14  |   |   | [A4]()([.zip]())          | Solutions        |   Apr 21 (5:00 PM)     |
 | Apr 20  | [L12]()([.zip]())|       |       |  |   Apr 27 (2:30 PM)     |
 |          |   |     |             |           |      |
