@@ -113,8 +113,8 @@ This course is an application-driven introduction to data science. Statistical a
 || [Workflow in RMarkdown](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=8ce00bd2-fcae-4599-a617-ae1c013922dd) | [Slides](Lecture/Workflow/Workflow_Lecture.pdf) ||
 |Jan 18| [Data Transformation I](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=eeb3862a-4620-4329-9f90-ae210151ed11) | [Slides](Lecture/Data Transformation 1/Data_Transformation_1_Lecture.pdf) ||
 || [Data Transformation II](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=eeb3862a-4620-4329-9f90-ae210151ed11) | [Slides](Lecture/Data Transformation 2/Data_Transformation_2_Lecture.pdf)||
-|Jan 20| Data Transformation III | [Slides](Lecture/Data Transformation 3/Data_Transformation_3_Lecture.pdf)||
-|| Data Transformation IV | [Slides](Lecture/Data Transformation 4/Data_Transformation_4_Lecture.pdf)||
+|Jan 20| [Data Transformation III](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=29e86eed-823b-45a2-b1eb-ae23013980b6) | [Slides](Lecture/Data Transformation 3/Data_Transformation_3_Lecture.pdf)||
+|| [Data Transformation IV](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=29e86eed-823b-45a2-b1eb-ae23013980b6) | [Slides](Lecture/Data Transformation 4/Data_Transformation_4_Lecture.pdf)||
 |Jan 25| Exploratory Data Analysis I  | [Slides](Lecture/Exploratory Data Analysis 1/Exploratory_Data_Analysis_1_Lecture.pdf) ||
 || Exploratory Data Analysis II |[Slides](Lecture/Exploratory Data Analysis 2/Exploratory_Data_Analysis_2_Lecture.pdf)||
 |Jan 27| Final Project I | [Slides](Lecture/Final Project 1/Final_Project_1_Lecture.pdf)||
@@ -184,39 +184,39 @@ This course is an application-driven introduction to data science. Statistical a
 
 All HW and Analysis assignments are to be submitted via **[Sakai](https://sakai.unc.edu/welcome/)**. Unzip folder and complete your homework using Rmd file. The table below shows all the assignments sorted by Due Date
 
-| Assigned | Lab (L) |Homework (HW) | Analysis (A) |Solutions| Due Date (Time) |
-|----------|:--------:|:--------:|:-------------:|:-------------:|----------------:|
-| Jan 13  | |[HW1](Homework/HW 1/HW-1.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%201/HW%201.zip))       |       | Solutions |   Jan 20 (5:00 PM)     |
-| Jan 19  | [L1](Lab/Lab 1/Lab-1.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab%201/Lab%201.zip))|       |       |  |   Jan 26 (2:30 PM)     |
-| Jan 20  | |[HW2](Homework/HW 2/HW-2.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%202/HW%202.zip))       |       | Solutions |   Jan 27 (5:00 PM)     |
-| Jan 26  | [L2]()([.zip]())|       |       |  |   Feb 2 (2:30 PM)     |
-| Feb 2  | [L3]()([.zip]())|       |       |  |   Feb 9 (2:30 PM)     |
-| Jan 27  |      |  | [A1]()([.zip]())      |  Solutions       |   Feb 10 (5:00 PM)     |
-| Feb 9  | [L4]()([.zip]())|       |       |  |   Feb 16 (2:30 PM)     |
-| Feb 10  | |[HW3](Homework/HW 3/HW-3.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%203/HW%203.zip))       |       | Solutions         |   Feb 17  (5:00 PM)     |
-| Feb 16  | [L5]()([.zip]())|       |       |  |   Feb 23 (2:30 PM)     |
-| Feb 17 | |[HW4](Homework/HW 4/HW-4.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%204/HW%204.zip))       |       | Solutions             |   Feb 24 (5:00 PM)     |
-| Feb 23  | [L6]()([.zip]())|       |       |  |   Mar 2 (2:30 PM)     |
-| Mar 2  | [L7]()([.zip]())|       |       |  |   Mar 9 (2:30 PM)     |
-| Feb 24  | | | [A2]()([.zip]())        | Solutions            |   Mar 10 (5:00 PM)     |
-| Mar 9  | [L8]()([.zip]())|       |       |  |   Mar 23 (2:30 PM)     |
-| Mar 10  | |[HW5](Homework/HW 5/HW-5.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%205/HW%205.zip))       |       | Solutions            |   Mar 24 (5:00 PM)     |
-| Mar 23  | [L9]()([.zip]())|       |       |  |   Mar 30 (2:30 PM)     |
-| Mar 24  | | | [A3]()([.zip]())        |Solutions          |   Mar 31 (5:00 PM)     |
-| Mar 30  | [L10]()([.zip]())|       |       |  |   Apr 6 (2:30 PM)     |
-| Mar 31  | |[HW6](Homework/HW 6/HW-6.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%206/HW%206.zip))       |        | Solutions           |   Apr 7 (5:00 PM)     |
-| Apr 6  | [L11]()([.zip]())|       |       |  |   Apr 13 (2:30 PM)     |
-| Apr 7  | |[HW7](Homework/HW 7/HW-7.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%207/HW%207zip))       |       | Solutions            |   Apr 14 (5:00 PM)     |
-| Apr 14  |   |   | [A4]()([.zip]())          | Solutions        |   Apr 21 (5:00 PM)     |
-| Apr 20  | [L12]()([.zip]())|       |       |  |   Apr 27 (2:30 PM)     |
-|          |   |     |             |           |      |
+| Assigned | Lab (L) |Homework (HW) | Analysis (A) | Due Date (Time) |
+|----------|:--------:|:--------:|:-------------:|----------------:|
+| Jan 13  | |[HW1](Homework/HW 1/HW-1.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%201/HW%201.zip))       |       |   Jan 20 (5:00 PM)     |
+| Jan 19  | [L1](Lab/Lab 1/Lab-1.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab%201/Lab%201.zip))|       |       |    Jan 26 (2:30 PM)     |
+| Jan 20  | |[HW2](Homework/HW 2/HW-2.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%202/HW%202.zip))       |       |   Jan 27 (5:00 PM)     |
+| Jan 26  | [L2](Lab/Lab 2/Lab-2.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab%202/Lab%202.zip))|       |       |     Feb 2 (2:30 PM)     |
+| Feb 2  | [L3]()([.zip]())|       |       |     Feb 9 (2:30 PM)     |
+| Jan 27  |      |  | [A1]()([.zip]())      |     Feb 10 (5:00 PM)     |
+| Feb 9  | [L4]()([.zip]())|       |       |     Feb 16 (2:30 PM)     |
+| Feb 10  | |[HW3](Homework/HW 3/HW-3.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%203/HW%203.zip))       |       |    Feb 17  (5:00 PM)     |
+| Feb 16  | [L5]()([.zip]())|       |       |     Feb 23 (2:30 PM)     |
+| Feb 17 | |[HW4](Homework/HW 4/HW-4.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%204/HW%204.zip))       |                    |   Feb 24 (5:00 PM)     |
+| Feb 23  | [L6]()([.zip]())|       |       |     Mar 2 (2:30 PM)     |
+| Mar 2  | [L7]()([.zip]())|       |       |     Mar 9 (2:30 PM)     |
+| Feb 24  | | | [A2]()([.zip]())        |    Mar 10 (5:00 PM)     |
+| Mar 9  | [L8]()([.zip]())|       |       |     Mar 23 (2:30 PM)     |
+| Mar 10  | |[HW5](Homework/HW 5/HW-5.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%205/HW%205.zip))       |       |    Mar 24 (5:00 PM)     |
+| Mar 23  | [L9]()([.zip]())|       |       |     Mar 30 (2:30 PM)     |
+| Mar 24  | | | [A3]()([.zip]())                  |   Mar 31 (5:00 PM)     |
+| Mar 30  | [L10]()([.zip]())|       |       |     Apr 6 (2:30 PM)     |
+| Mar 31  | |[HW6](Homework/HW 6/HW-6.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%206/HW%206.zip))       |        |    Apr 7 (5:00 PM)     |
+| Apr 6  | [L11]()([.zip]())|       |       |     Apr 13 (2:30 PM)     |
+| Apr 7  | |[HW7](Homework/HW 7/HW-7.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%207/HW%207zip))       |                   |   Apr 14 (5:00 PM)     |
+| Apr 14  |   |   | [A4]()([.zip]())          |   Apr 21 (5:00 PM)     |
+| Apr 20  | [L12]()([.zip]())|       |       |     Apr 27 (2:30 PM)     |
+|          |   |     |             |           |      
 
 
 
 
 # **Final Project Details**
 
-For the final project, each section of STOR 320 will be divided (ideally) into reasearch groups of size 5. To ensure fairness, students will be assigned randomly based on the `sample` function in **R**. If you don't get in a group you like, try being better at luck.
+For the final project, each section of STOR 320 will be divided (ideally) into research groups of size 5 or 6. To ensure fairness, students will be assigned randomly based on the `sample` function in **R**. If you don't get in a group you like, try being better at luck.
 
 ## Research Group Assignments
 
@@ -241,7 +241,7 @@ Although everyone is responsible for the entire project, each member of the grou
 
 - **The Creator:** Schedule and Meet with Dr. Mario to Propose Your Group's Research Idea, Lead Designer in Slides
 
-- **The Interpreter:** Schedule and Meet with Dr. Mario to Share Findings from Exploratory Analysis, Evaluate Practice Presentation
+- **The Interpreter(s):** Schedule and Meet with Dr. Mario to Share Findings from Exploratory Analysis, Evaluate Practice Presentation
 
 - **The Orator(s):** Give a Captivating 3-5 Minute Slideshow Presentation During Final Exam Day
 
