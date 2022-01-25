@@ -119,32 +119,32 @@ This course is an application-driven introduction to data science. Statistical a
 || Exploratory Data Analysis II |[Slides](Lecture/Exploratory Data Analysis 2/Exploratory_Data_Analysis_2_Lecture.pdf)||
 |Jan 27| Final Project I | [Slides](Lecture/Final Project 1/Final_Project_1_Lecture.pdf)||
 || Data Import | [Slides](Lecture/Data Import/Data_Import_Lecture.pdf)||
-|Feb 1| Tidy Data 1 | [Slides](Lecture/Tidy Data 1/Tidy_Data_1_Lecture.pdf) ||
+|Feb 1|Work on EDA|||
+|Feb 3| Tidy Data 1 | [Slides](Lecture/Tidy Data 1/Tidy_Data_1_Lecture.pdf) ||
 || Tidy Data 2 | [Slides](Lecture/Tidy Data 2/Tidy_Data_2_Lecture.pdf) ||
-|Feb 3| Web Scraping I | [Slides](Lecture/Web Scraping 1/Web_Scraping_1_Lecture.pdf) | [Preview](Supplement/Web Scraping 1/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Web%20Scraping%201/Supplement.zip)) |
-|Feb 8| Web Scraping II | [Slides](Lecture/Web Scraping 2/Web_Scraping_2_Lecture.pdf) | [Preview](Supplement/Web Scraping 2/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Web%20Scraping%202/Supplement.zip)) |
-|Feb 10| Joins I | [Slides](Lecture/Joins 1/Joins_1_Lecture.pdf) ||
+|Feb 8| Web Scraping I | [Slides](Lecture/Web Scraping 1/Web_Scraping_1_Lecture.pdf) | [Preview](Supplement/Web Scraping 1/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Web%20Scraping%201/Supplement.zip)) |
+|Feb 10| Web Scraping II | [Slides](Lecture/Web Scraping 2/Web_Scraping_2_Lecture.pdf) | [Preview](Supplement/Web Scraping 2/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Web%20Scraping%202/Supplement.zip)) |
+|Feb 15| Joins I | [Slides](Lecture/Joins 1/Joins_1_Lecture.pdf) ||
 || Joins II | [Slides](Lecture/Joins 2/Joins_2_Lecture.pdf) ||
-|Feb 15| Final Project II | [Slides](Lecture/Final Project 2/Final_Project_2_Lecture.pdf) ||
+|Feb 17| Final Project II | [Slides](Lecture/Final Project 2/Final_Project_2_Lecture.pdf) ||
 || Factors | [Slides](Lecture/Factors/Factors_Lecture.pdf) ||
-|Feb 17| Programming I | [Slides](Lecture/Programming 1/Programming_1_Lecture.pdf) | [Preview](Supplement/Programming 1/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Programming%201/Supplement.zip))  |
-|Feb 22| Programming II | [Slides](Lecture/Programming 2/Programming_2_Lecture.pdf) | [Preview](Supplement/Programming 2/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/blob/master/Supplement/Programming%202/Supplement.zip)) |
-|Feb 24| Programming III | [Slides](Lecture/Programming 3/Programming_3_Lecture.pdf) ||
+|Feb 22| Programming I | [Slides](Lecture/Programming 1/Programming_1_Lecture.pdf) | [Preview](Supplement/Programming 1/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Programming%201/Supplement.zip))  |
+|Feb 24| Programming II | [Slides](Lecture/Programming 2/Programming_2_Lecture.pdf) | [Preview](Supplement/Programming 2/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/blob/master/Supplement/Programming%202/Supplement.zip)) |
+|Mar 1| Programming III | [Slides](Lecture/Programming 3/Programming_3_Lecture.pdf) ||
 || Programming IV | [Slides](Lecture/Programming 4/Programming_4_Lecture.pdf) ||
-|March 1|????|||
-|March 3| Modeling 1 | [Slides](Lecture/Modeling 1/Modeling_1_Lecture.pdf) ||
-|March 8| Modeling 2 | [Slides](Lecture/Modeling 2/Modeling_2_Lecture.pdf) | [Preview](Supplement/Modeling 2/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/blob/master/Supplement/Modeling%202/Supplement.zip)) |
-|March 10| Modeling 3 | [Slides](Lecture/Modeling 3/Modeling_3_Lecture.pdf) | [Preview](Supplement/Modeling 3/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/blob/master/Supplement/Modeling%203/Supplement.zip)) |
+|Mar 3| Modeling 1 | [Slides](Lecture/Modeling 1/Modeling_1_Lecture.pdf) ||
+|Mar 8| Modeling 2 | [Slides](Lecture/Modeling 2/Modeling_2_Lecture.pdf) | [Preview](Supplement/Modeling 2/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/blob/master/Supplement/Modeling%202/Supplement.zip)) |
+|Mar 10| Modeling 3 | [Slides](Lecture/Modeling 3/Modeling_3_Lecture.pdf) | [Preview](Supplement/Modeling 3/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/blob/master/Supplement/Modeling%203/Supplement.zip)) |
 |March 15|Spring Brizzeak|||
 |March 17|Spring Brizzeak|||
-|March 22|Work on EDA|||
-|March 24| Modeling 4 | [Slides](Lecture/Modeling 4/Modeling_4_Lecture.pdf) | [Preview](Supplement/Modeling 4/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/blob/master/Supplement/Modeling%204/Supplement.zip)) |
-|March 29| Modeling 5 | [Slides](Lecture/Modeling 5/Modeling_5_Lecture.pdf) ||
-|March 31| Modeling 6 | [Slides](Lecture/Modeling 6/Modeling_6_Lecture.pdf) ||
-|April 5| Modeling 7 | [Slides](Lecture/Modeling 7/Modeling_7_Lecture.pdf) | [Preview](Supplement/Modeling 7/Supplement.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Supplement/Modeling%207/Supplement.Rmd)) |
-|April 7| Modeling 8 | [Slides](Lecture/Modeling 8/Modeling_8_Lecture.pdf) | [Preview](Supplement/Modeling 8/Supplement.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Supplement/Modeling%208/Supplement.Rmd)) |
-|April 12| Modeling 9 | [Slides](Lecture/Modeling 9/Modeling_9_Lecture.pdf) | [Preview](Supplement/Modeling 9/Supplement.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Supplement/Modeling%209/Supplement.Rmd)) |
-|April 14| Best Thursday |||
+|Mar 22|Work on EDA|||
+|Mar 24| Modeling 4 | [Slides](Lecture/Modeling 4/Modeling_4_Lecture.pdf) | [Preview](Supplement/Modeling 4/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/blob/master/Supplement/Modeling%204/Supplement.zip)) |
+|Mar 29| Modeling 5 | [Slides](Lecture/Modeling 5/Modeling_5_Lecture.pdf) ||
+|Mar 31| Modeling 6 | [Slides](Lecture/Modeling 6/Modeling_6_Lecture.pdf) ||
+|Apr 5| Modeling 7 | [Slides](Lecture/Modeling 7/Modeling_7_Lecture.pdf) | [Preview](Supplement/Modeling 7/Supplement.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Supplement/Modeling%207/Supplement.Rmd)) |
+|Apr 7| Modeling 8 | [Slides](Lecture/Modeling 8/Modeling_8_Lecture.pdf) | [Preview](Supplement/Modeling 8/Supplement.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Supplement/Modeling%208/Supplement.Rmd)) |
+|Apr 12| Modeling 9 | [Slides](Lecture/Modeling 9/Modeling_9_Lecture.pdf) | [Preview](Supplement/Modeling 9/Supplement.html)([.Rmd](https://sakai.unc.edu/access/content/group/b7e3f3b2-6be6-4cad-8268-9ad7e7a7bc91/Supplement/Modeling%209/Supplement.Rmd)) |
+|Apr 14| Best Thursday |||
 |Apr 19| R Shiny | [Slides](Lecture/R Shiny/R_Shiny_Lecture.pdf) | Preview([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/blob/master/Supplement/R%20Shiny/Supplement.zip))|
 |Apr 21| Data Ethics | [Slides](Lecture/Data Ethics/Data_Ethics_Lecture.pdf) ||
 |Apr 26|Work on Final Paper|||
