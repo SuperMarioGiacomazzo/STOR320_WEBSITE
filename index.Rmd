@@ -115,11 +115,11 @@ This course is an application-driven introduction to data science. Statistical a
 || [Data Transformation II](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=eeb3862a-4620-4329-9f90-ae210151ed11) | [Slides](Lecture/Data Transformation 2/Data_Transformation_2_Lecture.pdf)||
 |Jan 20| [Data Transformation III](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=29e86eed-823b-45a2-b1eb-ae23013980b6) | [Slides](Lecture/Data Transformation 3/Data_Transformation_3_Lecture.pdf)||
 || [Data Transformation IV](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=29e86eed-823b-45a2-b1eb-ae23013980b6) | [Slides](Lecture/Data Transformation 4/Data_Transformation_4_Lecture.pdf)||
-|Jan 25| Exploratory Data Analysis I  | [Slides](Lecture/Exploratory Data Analysis 1/Exploratory_Data_Analysis_1_Lecture.pdf) ||
-|| Exploratory Data Analysis II |[Slides](Lecture/Exploratory Data Analysis 2/Exploratory_Data_Analysis_2_Lecture.pdf)||
+|Jan 25| [Exploratory Data Analysis I](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0454cc6d-2269-4480-8e31-ae280138aae5)  | [Slides](Lecture/Exploratory Data Analysis 1/Exploratory_Data_Analysis_1_Lecture.pdf) ||
+|| [Exploratory Data Analysis II](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0454cc6d-2269-4480-8e31-ae280138aae5) |[Slides](Lecture/Exploratory Data Analysis 2/Exploratory_Data_Analysis_2_Lecture.pdf)||
 |Jan 27| Final Project I | [Slides](Lecture/Final Project 1/Final_Project_1_Lecture.pdf)||
 || Data Import | [Slides](Lecture/Data Import/Data_Import_Lecture.pdf)||
-|Feb 1|Work on EDA|||
+|Feb 1|Work on EDA| [Zoom Link](https://unc.zoom.us/j/98181811021) ||
 |Feb 3| Tidy Data 1 | [Slides](Lecture/Tidy Data 1/Tidy_Data_1_Lecture.pdf) ||
 || Tidy Data 2 | [Slides](Lecture/Tidy Data 2/Tidy_Data_2_Lecture.pdf) ||
 |Feb 8| Web Scraping I | [Slides](Lecture/Web Scraping 1/Web_Scraping_1_Lecture.pdf) | [Preview](Supplement/Web Scraping 1/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Web%20Scraping%201/Supplement.zip)) |
@@ -218,20 +218,34 @@ All HW and Analysis assignments are to be submitted via **[Sakai](https://sakai.
 
 For the final project, each section of STOR 320 will be divided (ideally) into research groups of size 5 or 6. To ensure fairness, students will be assigned randomly based on the `sample` function in **R**. If you don't get in a group you like, try being better at luck.
 
-## Research Group Assignments
+To find your research group, see the tables below:
 
-To find your research group, see the table below:
+## Research Group Assignments for Section 1
 
 ```{r,echo=F,results="asis",message=F}
-# library(DT)
-# library(tidyverse)
-# 
-# setwd("D:/Mario Documents/UNC/STOR 320/STOR320_WEBSITE/Group Assignments")
-# 
-# Groups=read.csv(file="STOR320 Group Assignments - 2.csv")
-# 
-# datatable(Groups,class="display",options = list(scrollX=F,
-#             columnDefs = list(list(className = 'dt-center', targets = 0:6))),rownames=F)
+library(DT)
+library(tidyverse)
+
+setwd("D:/Mario Documents/UNC/STOR 320/STOR320_WEBSITE/Group Assignments")
+
+Groups=read.csv(file="STOR320.001 Group Assignments - 2.csv")
+
+datatable(Groups,class="display",options = list(scrollX=F,
+            columnDefs = list(list(className = 'dt-center', targets = 0:5))),rownames=F)
+```
+
+## Research Group Assignments for Section 2
+
+```{r,echo=F,results="asis",message=F}
+library(DT)
+library(tidyverse)
+
+setwd("D:/Mario Documents/UNC/STOR 320/STOR320_WEBSITE/Group Assignments")
+
+Groups=read.csv(file="STOR320.002 Group Assignments - 2.csv")
+
+datatable(Groups,class="display",options = list(scrollX=F,
+            columnDefs = list(list(className = 'dt-center', targets = 0:5))),rownames=F)
 
 ```
 
