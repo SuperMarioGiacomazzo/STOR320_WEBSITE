@@ -191,7 +191,7 @@ All HW and Analysis assignments are to be submitted via **[Sakai](https://sakai.
 | Jan 20  | |[HW2](Homework/HW 2/HW-2.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%202/HW%202.zip))       |       |   Jan 27 (5:00 PM)     |
 | Jan 26  | [L2](Lab/Lab 2/Lab-2.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab%202/Lab%202.zip))|       |       |     Feb 2 (2:30 PM)     |
 | Feb 2  | [L3]()([.zip]())|       |       |     Feb 9 (2:30 PM)     |
-| Jan 27  |      |  | [A1]()([.zip]())      |     Feb 10 (5:00 PM)     |
+| Jan 27  |      |  | [A1](Analysis/Analysis 1/Analysis-1.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Analysis/Analysis%201/Analysis%201.zip))      |     Feb 10 (5:00 PM)     |
 | Feb 9  | [L4]()([.zip]())|       |       |     Feb 16 (2:30 PM)     |
 | Feb 10  | |[HW3](Homework/HW 3/HW-3.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%203/HW%203.zip))       |       |    Feb 17  (5:00 PM)     |
 | Feb 16  | [L5]()([.zip]())|       |       |     Feb 23 (2:30 PM)     |
