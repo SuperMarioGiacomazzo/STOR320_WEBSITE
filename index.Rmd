@@ -117,8 +117,8 @@ This course is an application-driven introduction to data science. Statistical a
 || [Data Transformation IV](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=29e86eed-823b-45a2-b1eb-ae23013980b6) | [Slides](Lecture/Data Transformation 4/Data_Transformation_4_Lecture.pdf)||
 |Jan 25| [Exploratory Data Analysis I](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0454cc6d-2269-4480-8e31-ae280138aae5)  | [Slides](Lecture/Exploratory Data Analysis 1/Exploratory_Data_Analysis_1_Lecture.pdf) ||
 || [Exploratory Data Analysis II](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0454cc6d-2269-4480-8e31-ae280138aae5) |[Slides](Lecture/Exploratory Data Analysis 2/Exploratory_Data_Analysis_2_Lecture.pdf)||
-|Jan 27| Final Project I | [Slides](Lecture/Final Project 1/Final_Project_1_Lecture.pdf)||
-|| Data Import | [Slides](Lecture/Data Import/Data_Import_Lecture.pdf)||
+|Jan 27| [Final Project I](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=420fd93e-ce8f-422f-8eeb-ae2a0138a8ed) | [Slides](Lecture/Final Project 1/Final_Project_1_Lecture.pdf)||
+|| [Data Import](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=420fd93e-ce8f-422f-8eeb-ae2a0138a8ed) | [Slides](Lecture/Data Import/Data_Import_Lecture.pdf)||
 |Feb 1|Work on EDA| [Zoom Link](https://unc.zoom.us/j/98181811021) ||
 |Feb 3| Tidy Data 1 | [Slides](Lecture/Tidy Data 1/Tidy_Data_1_Lecture.pdf) ||
 || Tidy Data 2 | [Slides](Lecture/Tidy Data 2/Tidy_Data_2_Lecture.pdf) ||
@@ -173,11 +173,11 @@ This course is an application-driven introduction to data science. Statistical a
 | Mar 23 | Lab 9  |  | Lab 9  |  | Lab 9 |  |  | Lab 9   |
 | Mar 25 |   | Lab 9  |   | Lab 9 |  | Lab 9  |  Lab 9  |   |
 | Mar 30 | Lab 10  |  | Lab 10  |  | Lab 10 |  |  | Lab 10   |
-| April 1 |   | Lab 10  |   | Lab 10 |  | Lab 10  |  Lab 10  |   |
-| April 6 | Lab 11  |  | Lab 11  |  | Lab 11 |  |  | Lab 11   |
-| April 8 |   | Lab 11  |   | Lab 11 |  | Lab 11  |  Lab 11  |   |
-| April 20 | Lab 12  |  | Lab 12  |  | Lab 12 |  |  | Lab 12   |
-| April 22 |   | Lab 12  |   | Lab 12 |  | Lab 12  |  Lab 12  |   |
+| Apr 1 |   | Lab 10  |   | Lab 10 |  | Lab 10  |  Lab 10  |   |
+| Apr 6 | Lab 11  |  | Lab 11  |  | Lab 11 |  |  | Lab 11   |
+| Apr 8 |   | Lab 11  |   | Lab 11 |  | Lab 11  |  Lab 11  |   |
+| Apr 20 | Lab 12  |  | Lab 12  |  | Lab 12 |  |  | Lab 12   |
+| Apr 22 |   | Lab 12  |   | Lab 12 |  | Lab 12  |  Lab 12  |   |
 ||||||||||
 
 # **Assignment Tracker**
@@ -190,7 +190,7 @@ All HW and Analysis assignments are to be submitted via **[Sakai](https://sakai.
 | Jan 19  | [L1](Lab/Lab 1/Lab-1.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab%201/Lab%201.zip))|       |       |    Jan 26 (2:30 PM)     |
 | Jan 20  | |[HW2](Homework/HW 2/HW-2.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%202/HW%202.zip))       |       |   Jan 27 (5:00 PM)     |
 | Jan 26  | [L2](Lab/Lab 2/Lab-2.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab%202/Lab%202.zip))|       |       |     Feb 2 (2:30 PM)     |
-| Feb 2  | [L3]()([.zip]())|       |       |     Feb 9 (2:30 PM)     |
+| Feb 2  | [L3](Lab/Lab 3/Lab-3.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab%203/Lab%203.zip))|       |       |     Feb 9 (2:30 PM)     |
 | Jan 27  |      |  | [A1](Analysis/Analysis 1/Analysis-1.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Analysis/Analysis%201/Analysis%201.zip))      |     Feb 10 (5:00 PM)     |
 | Feb 9  | [L4]()([.zip]())|       |       |     Feb 16 (2:30 PM)     |
 | Feb 10  | |[HW3](Homework/HW 3/HW-3.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%203/HW%203.zip))       |       |    Feb 17  (5:00 PM)     |
@@ -220,7 +220,7 @@ For the final project, each section of STOR 320 will be divided (ideally) into r
 
 To find your research group, see the tables below:
 
-## Research Group Assignments for Section 1
+## Group Assignments for Section 1
 
 ```{r,echo=F,results="asis",message=F}
 library(DT)
@@ -234,7 +234,7 @@ datatable(Groups,class="display",options = list(scrollX=F,
             columnDefs = list(list(className = 'dt-center', targets = 0:5))),rownames=F)
 ```
 
-## Research Group Assignments for Section 2
+## Group Assignments for Section 2
 
 ```{r,echo=F,results="asis",message=F}
 library(DT)
@@ -288,10 +288,10 @@ This final project will be divided into four parts worth a total of 100 points. 
 | Part | Description |Method of Submission| Involvement Survey |Due Date (Time) |
 |------|-------------|-------------------|-------------------|----------------:|
 | P1  | Project Proposal| Zoom + Sakai | [Survey 1](https://docs.google.com/forms/d/e/1FAIpQLScslh7rwnjd2VZ99VH66_4PJM7c8oJ_4olJt7-34hRW82Nq2A/viewform?usp=sf_link) |February 10 (11:59PM)|
-| P2  | Exploratory Data Analysis | Zoom + Sakai | Survey 2 |March 24 (11:59PM)|
-| P3  | Final Written Paper|Sakai| Survey 3 |April 26 (11:59PM)|
-| P4  | Final Presentation (Section 1) |Sakai + Class| Survey 4 | May 5 (3:00PM) |
-| P4  | Final Presentation (Section 2) |Sakai + Class| Survey 4 | April 30 (7:00PM) |
+| P2  | Exploratory Data Analysis | Zoom + Sakai | [Survey 2](https://docs.google.com/forms/d/e/1FAIpQLScY8EYu2GtgiHcbP3kVHGosSCx89rIc76WgW_Tx950HMzLM8g/viewform?usp=sf_link) |March 24 (11:55PM)|
+| P3  | Final Written Paper|Sakai| [Survey 3](https://docs.google.com/forms/d/e/1FAIpQLSdQMrAQV_pjERKMsV3mXyC4unrdrlfFVQ_MYWhKma7rP1yo1A/viewform?usp=sf_link) |April 26 (11:55PM)|
+| P4  | Final Presentation (Section 1) |Sakai + Class| [Survey 4](https://docs.google.com/forms/d/e/1FAIpQLSdTW_KLZWWWVpNWVudyXXwkQztOUJmZdlcFtJZovoTzRwfwLw/viewform?usp=sf_link) | May 5 (3:00PM) |
+| P4  | Final Presentation (Section 2) |Sakai + Class| [Survey 4](https://docs.google.com/forms/d/e/1FAIpQLSdTW_KLZWWWVpNWVudyXXwkQztOUJmZdlcFtJZovoTzRwfwLw/viewform?usp=sf_link) | April 30 (7:00PM) |
 ||||
 
 ## Above Average Final Projects
