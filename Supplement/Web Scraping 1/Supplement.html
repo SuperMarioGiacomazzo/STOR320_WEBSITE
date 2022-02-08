@@ -11,7 +11,7 @@
 
 <meta name="author" content="Mario Giacomazzo" />
 
-<meta name="date" content="2021-07-07" />
+<meta name="date" content="2022-02-08" />
 
 <title>Supplement for Web Scraping 1</title>
 
@@ -365,7 +365,7 @@ summary {
 
 <h1 class="title toc-ignore">Supplement for Web Scraping 1</h1>
 <h4 class="author">Mario Giacomazzo</h4>
-<h4 class="date">July 07, 2021</h4>
+<h4 class="date">February 08, 2022</h4>
 
 </div>
 
@@ -412,7 +412,7 @@ str(VIOLENT)</code></pre>
 <div id="chunk-2-initial-selection-of-violent-crimes-and-cleaning" class="section level2">
 <h2>Chunk 2: Initial Selection of Violent Crimes and Cleaning</h2>
 <p>You probably noticed an issue with the first row. Why do you think this occurred? Carefully, examine the webpage table to identify the cause. Also, we only want the violent crime statistics for each city and state. What columns do we need to keep?</p>
-<pre class="r"><code>VIOLENT2=VIOLENT[-c(1:2),1:8]
+<pre class="r"><code>VIOLENT2=VIOLENT[-1,1:8]
 colnames(VIOLENT2)=c(&quot;State&quot;,&quot;City&quot;,&quot;Population&quot;,&quot;Total&quot;,&quot;Murder&quot;,&quot;Rape&quot;,&quot;Robbery&quot;,&quot;Assault&quot;)
 str(VIOLENT2)</code></pre>
 </div>
@@ -435,14 +435,17 @@ VIOLENT3[str_detect(VIOLENT3$State,&quot;[,(0-9)]{1}&quot;),]$State</code></pre>
 <h2>Chunk 5: Cleaning Problematic Cities</h2>
 <p>The unwanted characters {“,”,“0” to “9”} are special, but not our friends. In Wikipedia, they were used for indicating footnote information. We need to efficiently fix these occurrences by banishing them to the abyss. We see this in both cities and states. Also, there are other scenarios where cities have unusual names that may be problematic when involving additional data.</p>
 <pre class="r"><code>VIOLENT4 = VIOLENT3 %&gt;%
-              mutate(City=str_replace_all(City,&quot;[,(0-9){1}]&quot;,&quot;&quot;)) %&gt;%
-              mutate(State=str_replace_all(State,&quot;[,(0-9){1}]&quot;,&quot;&quot;))
+              mutate(City=str_replace_all(City,&quot;[,(0-9)]{1}&quot;,&quot;&quot;)) %&gt;%
+              mutate(State=str_replace_all(State,&quot;[,(0-9)]{1}&quot;,&quot;&quot;))
 
 VIOLENT5 = VIOLENT4 %&gt;% 
               mutate(City=ifelse(City==&quot;Charlotte-Mecklenburg&quot;,&quot;Charlotte&quot;,City))
 
 VIOLENT6 = VIOLENT5 %&gt;%
-              mutate(City=str_replace(City,&quot; Metro&quot;,&quot;&quot;))
+              mutate(City=str_replace(City,&quot; Metro&quot;,&quot;&quot;)) %&gt;%
+              mutate(State=str_replace(State,&quot; U.S. state&quot;,&quot;&quot;)) %&gt;%
+              mutate(State=str_replace(State,&quot; state&quot;,&quot;&quot;))
+              
 
 write_csv(VIOLENT6,&quot;FINAL_VIOLENT.CSV&quot;)</code></pre>
 </div>
