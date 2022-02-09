@@ -53,8 +53,9 @@ Using `rvest` functions such as `read_html()` and `html_table()`, we create a da
 URL.VIOLENT="https://en.wikipedia.org/wiki/List_of_United_States_cities_by_crime_rate#Crime_rates_per_100.2C000_people_.282012.29"
 VIOLENT = URL.VIOLENT %>%
   read_html() %>%
-  html_table(fill=T) %>%
+  html_table(fill=TRUE) %>%
   .[[1]]
+
 str(VIOLENT)
 ```
 
