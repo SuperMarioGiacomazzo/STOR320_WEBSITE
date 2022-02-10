@@ -122,8 +122,8 @@ This course is an application-driven introduction to data science. Statistical a
 |Feb 1|Work on Proposal| [Zoom Link](https://unc.zoom.us/j/98181811021) ||
 |Feb 3| [Data Import (Cont.)](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4ab19c80-513e-4786-b1e5-ae3101397291) | [Slides](Lecture/Data Import/Data_Import_Lecture.pdf)||
 || [Tidy Data 1](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4ab19c80-513e-4786-b1e5-ae3101397291) | [Slides](Lecture/Tidy Data 1/Tidy_Data_1_Lecture.pdf) ||
-|Feb 8| Tidy Data 2 | [Slides](Lecture/Tidy Data 2/Tidy_Data_2_Lecture.pdf) ||
-|| Web Scraping I | [Slides](Lecture/Web Scraping 1/Web_Scraping_1_Lecture.pdf) | [Preview](Supplement/Web Scraping 1/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Web%20Scraping%201/Supplement.zip)) |
+|Feb 8| [Tidy Data 2](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=ba5bb3ed-5d47-44c6-b5d4-ae36015205ba) | [Slides](Lecture/Tidy Data 2/Tidy_Data_2_Lecture.pdf) ||
+|| [Web Scraping I](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=ba5bb3ed-5d47-44c6-b5d4-ae36015205ba) | [Slides](Lecture/Web Scraping 1/Web_Scraping_1_Lecture.pdf) | [Preview](Supplement/Web Scraping 1/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Web%20Scraping%201/Supplement.zip)) |
 |Feb 10| Web Scraping II | [Slides](Lecture/Web Scraping 2/Web_Scraping_2_Lecture.pdf) | [Preview](Supplement/Web Scraping 2/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Web%20Scraping%202/Supplement.zip)) |
 |Feb 15| Joins I | [Slides](Lecture/Joins 1/Joins_1_Lecture.pdf) ||
 || Joins II | [Slides](Lecture/Joins 2/Joins_2_Lecture.pdf) ||
