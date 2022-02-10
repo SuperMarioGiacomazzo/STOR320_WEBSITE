@@ -1,4 +1,4 @@
-Lab,Name,Group,Role,Proposal Date,Proposal Time
+yy,Name,Group,Role,Proposal Date,Proposal Time
 Lab 404,"Ma, Erin",1,,2/11/2022,10:00AM - 10:05AM
 Lab 404,"Xiao, Jiyuan",1,C,2/11/2022,10:00AM - 10:05AM
 Lab 404,"Morton, Alexander",1,,2/11/2022,10:00AM - 10:05AM
@@ -11,12 +11,12 @@ Lab 404,"Calikoglu, Serdar",2,,2/11/2022,12:40PM - 12:45PM
 Lab 404,"Dulaney, Casey",2,C,2/11/2022,12:40PM - 12:45PM
 Lab 404,"Zhang, Weiye",2,,2/11/2022,12:40PM - 12:45PM
 Lab 404,"Mccraw, Christian",2,,2/11/2022,12:40PM - 12:45PM
-Lab 404,"Tuz, Alex",3,,,
-Lab 404,"Mukherji, Nishtha",3,,,
-Lab 404,"Mo, Junchao",3,,,
-Lab 404,"Muckenfuss, Robert",3,,,
-Lab 404,"Rammani, Davindra",3,,,
-Lab 404,"Le, Trang",3,,,
+Lab 404,"Tuz, Alex",3,C,2/11/2022,12:10PM - 12:15PM
+Lab 404,"Mukherji, Nishtha",3,,2/11/2022,12:10PM - 12:15PM
+Lab 404,"Mo, Junchao",3,,2/11/2022,12:10PM - 12:15PM
+Lab 404,"Muckenfuss, Robert",3,,2/11/2022,12:10PM - 12:15PM
+Lab 404,"Rammani, Davindra",3,,2/11/2022,12:10PM - 12:15PM
+Lab 404,"Le, Trang",3,,2/11/2022,12:10PM - 12:15PM
 Lab 404,"Goroshnik, Benjamin",4,,2/7/2022,1:30PM - 1:35PM
 Lab 404,"Garine, Amit",4,,2/7/2022,1:30PM - 1:35PM
 Lab 404,"Dong, Andy",4,,2/7/2022,1:30PM - 1:35PM
@@ -53,11 +53,11 @@ Lab 405,"Baker, Carson",9,C,2/14/2022,1:10PM - 1:15PM
 Lab 405,"Fagan, Conor",9,,2/14/2022,1:10PM - 1:15PM 
 Lab 405,"Liu, Peiyi",9,,2/14/2022,1:10PM - 1:15PM 
 Lab 405,"Weindorf, Lawrence",9,,2/14/2022,1:10PM - 1:15PM 
-Lab 406,"Lim, Prisca",10,,2/7/2022,11:20AM - 11:25AM
-Lab 406,"Marcellus, Jack",10,,2/7/2022,11:20AM - 11:25AM
-Lab 406,"Zhou, Xiangyu",10,,2/7/2022,11:20AM - 11:25AM
-Lab 406,"Woody, Lauren",10,,2/7/2022,11:20AM - 11:25AM
-Lab 406,"Gao, Shan",10,C,2/7/2022,11:20AM - 11:25AM
+Lab 406,"Lim, Prisca",10,,2/11/2022,1:20PM - 1:25PM
+Lab 406,"Marcellus, Jack",10,,2/11/2022,1:20PM - 1:25PM
+Lab 406,"Zhou, Xiangyu",10,,2/11/2022,1:20PM - 1:25PM
+Lab 406,"Woody, Lauren",10,,2/11/2022,1:20PM - 1:25PM
+Lab 406,"Gao, Shan",10,C,2/11/2022,1:20PM - 1:25PM
 Lab 406,"Hu, Yue",11,C,2/4/2022,10:10AM - 10:15AM
 Lab 406,"Qiu, Yutong",11,O,2/4/2022,10:10AM - 10:15AM
 Lab 406,"Xu, Haorong",11,D,2/4/2022,10:10AM - 10:15AM
