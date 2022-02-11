@@ -11,7 +11,7 @@
 
 <meta name="author" content="Mario Giacomazzo" />
 
-<meta name="date" content="2022-02-09" />
+<meta name="date" content="2022-02-10" />
 
 <title>Supplement for Web Scraping 2</title>
 
@@ -365,7 +365,7 @@ summary {
 
 <h1 class="title toc-ignore">Supplement for Web Scraping 2</h1>
 <h4 class="author">Mario Giacomazzo</h4>
-<h4 class="date">February 09, 2022</h4>
+<h4 class="date">February 10, 2022</h4>
 
 </div>
 
@@ -412,6 +412,7 @@ US_CENSUS = URL.US_CENSUS %&gt;%
               html_table(header=T,fill=T) %&gt;%
               .[[1]] %&gt;%
               select(c(2:7) )
+
 str(US_CENSUS)</code></pre>
 </div>
 <div id="chunk-2-population-change-and-density-variables-to-numeric" class="section level2">
