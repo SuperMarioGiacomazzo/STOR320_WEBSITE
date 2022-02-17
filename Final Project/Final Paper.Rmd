@@ -32,7 +32,15 @@ The Deliverer is responsible for compiling all the information into the RMarkdow
 
 In the final HTML document, there should be absolutely no R code. The writing and proofreading of the document should be shared by all members of the group. In each section, there are points removed for spelling and grammatical errors. All figures should have appropriate legends, titles, and colors. All tables should be displayed in HTML format using the `xtable` or `kable` packages. Each required figure and table is worth 2 points. The first point is for the appropriateness of the figure/table for the situation and the second point is based on aesthetics. You are encouraged to use Markdown syntax for subsections, bold, italic, hyperlink, tables, etc.
 
-Five points of the final project is based on an average score measuring overall contribution as seen by you and the other members of your group. Each group member should score every person in their group on a continuous scale from 0 (Bad) to 5 (Good). You are encouraged to score yourself, but this will not be used in the final calculation. Before the due date of the final paper, every member is required to upload a CSV document with two columns to Sakai. The first column should contain the full names of all members of the group, including yourself, and the second column should contain the score that indicates the level of contribution. An example CSV template is provided on the course website. You are encouraged to download this template and modify the names and ranks. If there are any particular members that were extremely helpful or extremely useless, please send me an email. Your name and this information will remain private between me and you. If you fail to submit this group scoring via Sakai, I will give the other members a score of 5.
+Besides the rubric items for each of the individual sections, you will be graded based off the following aspects:
+
+- Professionalism: There should be no R code anywhere in your final document. All figures and tables should use the same colors for consistency. You should format variable names by **bolding** or *italicizing*. If the data was used in other articles or ideas from other authors were used, there should be references or acknowledgments. Writing should be at a high level. You should proofread and edit in multiple drafts.
+
+- Difficulty, Creativity, Ambition: Based on what other groups did, how does your group compare. Was there any attempt at web scraping or pulling in outside data? Did you attempt modeling techniques not used in class? Did you focus on interesting questions or look at obvious questions? Did you exhibit an ability to create graphics that were not focused on in class? What was the balance between the difficulty of your data and the difficulty of your analysis?
+
+- Followed Template: You can add subheadings using proper formatting, but you should follow the instructions in the template.
+
+- Spelling and Grammar: Every spelling or grammatical error will result in you losing points. This paper should be proofread for errors.
 
 # **Rubric**
 
@@ -40,21 +48,18 @@ Five points of the final project is based on an average score measuring overall 
 |-------|------:|
 |Introduction: 2 Questions Clearly Defined|2 Points|
 |Introduction: Am I Interested?|2 Points|
-|Introduction: Free of Spelling and Grammatical Errors|1 Point|
 |Data: Adequately Describes Data|2 Points|
 |Data: 1 Descriptive Table| 2 Points|
 |Data: 1 Descriptive Figure| 2 Points|
-|Data: Free of Spelling and Grammatical Errors|1 Point|
 |Results: Appropriate Methods Using Multiple Models|3 Points|
 |Results: Adequately Explains Results| 3 Points|
 |Results: 4 Figures and/or Tables| 8 Points|
-|Results: Free of Spelling and Grammatical Errors|2 Points|
 |Conclusion: Summarize Questions with Results |2 Points|
 |Conclusion: Do I Want to Learn More? |2 Points|
-|Conclusion: Free of Spelling and Grammatical Errors|1 Point|
-|Overall: No R Code|1 Point|
-|Overall: Followed RMarkdown Template|1 Point|
-|Individual Score|5 Points|
+|Overall: Professionalism (No R Code, Formatting, Well-Written) |3 Points|
+|Overall: Difficulty, Creativity, and Ambition|3 Points|
+|Overall: Followed Template |2 Points|
+|Overall: Spelling and Grammatical Errors|4 Points|
 |**Total**|**40 Points**|
 |||
 
