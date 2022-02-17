@@ -125,8 +125,8 @@ This course is an application-driven introduction to data science. Statistical a
 |Feb 8| [Tidy Data 2](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=ba5bb3ed-5d47-44c6-b5d4-ae36015205ba) | [Slides](Lecture/Tidy Data 2/Tidy_Data_2_Lecture.pdf) ||
 || [Web Scraping I](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=ba5bb3ed-5d47-44c6-b5d4-ae36015205ba) | [Slides](Lecture/Web Scraping 1/Web_Scraping_1_Lecture.pdf) | [Preview](Supplement/Web Scraping 1/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Web%20Scraping%201/Supplement.zip)) |
 |Feb 10| [Web Scraping II](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0848a774-f138-4ed3-b3aa-ae3801529a5c) | [Slides](Lecture/Web Scraping 2/Web_Scraping_2_Lecture.pdf) | [Preview](Supplement/Web Scraping 2/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Web%20Scraping%202/Supplement.zip)) |
-|Feb 15| Joins I | [Slides](Lecture/Joins 1/Joins_1_Lecture.pdf) ||
-|| Joins II | [Slides](Lecture/Joins 2/Joins_2_Lecture.pdf) ||
+|Feb 15| [Joins I](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=99d7cb89-8c15-4a1a-ab17-ae3d0139b235) | [Slides](Lecture/Joins 1/Joins_1_Lecture.pdf) ||
+|| [Joins II](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=99d7cb89-8c15-4a1a-ab17-ae3d0139b235) | [Slides](Lecture/Joins 2/Joins_2_Lecture.pdf) ||
 |Feb 17| Final Project II | [Slides](Lecture/Final Project 2/Final_Project_2_Lecture.pdf) ||
 || Factors | [Slides](Lecture/Factors/Factors_Lecture.pdf) ||
 |Feb 22| Programming I | [Slides](Lecture/Programming 1/Programming_1_Lecture.pdf) | [Preview](Supplement/Programming 1/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Programming%201/Supplement.zip))  |
