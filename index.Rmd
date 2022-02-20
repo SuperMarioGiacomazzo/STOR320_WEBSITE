@@ -127,9 +127,9 @@ This course is an application-driven introduction to data science. Statistical a
 |Feb 10| [Web Scraping II](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0848a774-f138-4ed3-b3aa-ae3801529a5c) | [Slides](Lecture/Web Scraping 2/Web_Scraping_2_Lecture.pdf) | [Preview](Supplement/Web Scraping 2/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Web%20Scraping%202/Supplement.zip)) |
 |Feb 15| [Joins I](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=99d7cb89-8c15-4a1a-ab17-ae3d0139b235) | [Slides](Lecture/Joins 1/Joins_1_Lecture.pdf) ||
 || [Joins II](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=99d7cb89-8c15-4a1a-ab17-ae3d0139b235) | [Slides](Lecture/Joins 2/Joins_2_Lecture.pdf) ||
-|Feb 17| Final Project II | [Slides](Lecture/Final Project 2/Final_Project_2_Lecture.pdf) ||
-|| Factors | [Slides](Lecture/Factors/Factors_Lecture.pdf) ||
-|Feb 22| Programming I | [Slides](Lecture/Programming 1/Programming_1_Lecture.pdf) | [Preview](Supplement/Programming 1/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Programming%201/Supplement.zip))  |
+|Feb 17| [Final Project II](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=370393ce-6326-4327-b04d-ae3f0139779f) | [Slides](Lecture/Final Project 2/Final_Project_2_Lecture.pdf) ||
+|Feb 22| Factors | [Slides](Lecture/Factors/Factors_Lecture.pdf) ||
+|| Programming I | [Slides](Lecture/Programming 1/Programming_1_Lecture.pdf) | [Preview](Supplement/Programming 1/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Programming%201/Supplement.zip))  |
 |Feb 24| Programming II | [Slides](Lecture/Programming 2/Programming_2_Lecture.pdf) | [Preview](Supplement/Programming 2/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/blob/master/Supplement/Programming%202/Supplement.zip)) |
 |Mar 1| Programming III | [Slides](Lecture/Programming 3/Programming_3_Lecture.pdf) ||
 || Programming IV | [Slides](Lecture/Programming 4/Programming_4_Lecture.pdf) ||
@@ -197,7 +197,7 @@ All HW and Analysis assignments are to be submitted via **[Sakai](https://sakai.
 | Feb 10  | |[HW3](Homework/HW 3/HW-3.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%203/HW%203.zip))       |       |    Feb 17  (5:00 PM)     |
 | Feb 16  | [L5](Lab/Lab 5/Lab-5.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab%205/Lab%205.zip))|       |       |     Feb 23 (2:30 PM)     |
 | Feb 17 | |[HW4](Homework/HW 4/HW-4.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%204/HW%204.zip))       |                    |   Feb 24 (5:00 PM)     |
-| Feb 23  | [L6]()([.zip]())|       |       |     Mar 2 (2:30 PM)     |
+| Feb 23  | [L6](Lab/Lab 6/Lab-6.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab%206/Lab%206.zip))|       |       |     Mar 2 (2:30 PM)     |
 | Mar 2  | [L7]()([.zip]())|       |       |     Mar 9 (2:30 PM)     |
 | Feb 24  | | | [A2](Analysis/Analysis 2/Analysis-2.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Analysis/Analysis%202/Analysis%202.zip))        |    Mar 10 (5:00 PM)     |
 | Mar 9  | [L8]()([.zip]())|       |       |     Mar 23 (2:30 PM)     |
