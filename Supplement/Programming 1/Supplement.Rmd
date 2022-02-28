@@ -60,6 +60,7 @@ if(x > 0){
 } else{
   message("Unable to Take Logarithm")
 }
+
 ```
 
 ## Chunk 4: Fixing Potential Problem in Chunk 3
@@ -106,8 +107,8 @@ ggplot() +
 
 ## Chunk 1: Checking Geometric Series Proof with *for* loop
 ```{r,eval = F}
-a=BLANK #Any Number
-r=BLANK #Any Number Between -1 and 1: abs(r)<1
+a=2 #Any Number
+r=0.5 #Any Number Between -1 and 1: abs(r)<1
 
 theoretical.limit=a/(1-r)
 
@@ -141,26 +142,26 @@ print(ABSOLUTE.ERROR)
 
 ## Chunk 2: Checking Geometric Series Proof with *while* loop
 ```{r,eval=F}
-a=BLANK
-r=BLANK
+a=2
+r=2
 
 FINISH=a
 k=0
 while(abs(FINISH-a/(1-r)) > 1e-10) {
   k=k+1
   FINISH = FINISH + a*r^k
-  #if(k>100) break
+  if(k>100) break
 }
 print(c(k,FINISH))
 ```
 
 ## Chunk 3: Saving Steps in Geometric Series for Figure
 ```{r,eval=F}
-a=10
-r=-0.75
+a=BLANK
+r=BLANK
 theoretical.limit=a/(1-r)
 
-K=10 #How Many Steps Do You Want to Save?
+K=100 #How Many Steps Do You Want to Save?
 
 summation=rep(NA,(K+1))
 summation[1]=a
