@@ -45,7 +45,7 @@ rownames(CORR.CIGAR2)=names(Cigar)[-1]
 colnames(CORR.CIGAR2)=names(Cigar)[-1]
 for(j in 1:8){
   for(k in 1:8){
-    CORR.CIGAR2[BLANK,BLANK]=cor(Cigar[,BLANK],Cigar[,BLANK])
+    CORR.CIGAR2[j,k]=cor(Cigar[,j+1],Cigar[,k+1])
   }
 }
 print(round(CORR.CIGAR2,3))
@@ -103,7 +103,7 @@ print(na.omit(FiveSum.HI3))
 
 ## Chunk 1: Sampling from Known Distributions
 ```{r,eval=F}
-x1=rnorm(BLANK,mean=3,sd=2)
+x1=rnorm(BLANK,mean=82,sd=2)
 ggplot()+geom_histogram(aes(x1))
 
 x2=rbinom(BLANK,size=10,prob=1/6)
