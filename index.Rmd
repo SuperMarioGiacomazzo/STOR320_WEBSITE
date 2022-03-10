@@ -133,9 +133,10 @@ This course is an application-driven introduction to data science. Statistical a
 |Mar 1| [Programming II](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b9100e86-01e9-44c5-a604-ae4b013923d2) | [Slides](Lecture/Programming 2/Programming_2_Lecture.pdf) | [Preview](Supplement/Programming 2/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Programming%202/Supplement.zip)) |
 || [Programming III](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b9100e86-01e9-44c5-a604-ae4b013923d2) | [Slides](Lecture/Programming 3/Programming_3_Lecture.pdf) ||
 |Mar 3| [Modeling 1](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9121aab6-6218-4d9c-b5f4-ae4d0138f7be) | [Slides](Lecture/Modeling 1/Modeling_1_Lecture.pdf) ||
-|Mar 8| Programming III (Cont.) | [Slides](Lecture/Programming 3/Programming_3_Lecture.pdf) ||
-|| Modeling 2 | [Slides](Lecture/Modeling 2/Modeling_2_Lecture.pdf) | [Preview](Supplement/Modeling 2/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%202/Supplement.zip)) |
-|Mar 10| Modeling 3 | [Slides](Lecture/Modeling 3/Modeling_3_Lecture.pdf) | [Preview](Supplement/Modeling 3/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%203/Supplement.zip)) |
+|Mar 8| [Programming III (Cont.)](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b66c5423-dff1-44d8-b81c-ae52013a386b) | [Slides](Lecture/Programming 3/Programming_3_Lecture.pdf) ||
+|| [Modeling 1 (Cont.)](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b66c5423-dff1-44d8-b81c-ae52013a386b) | [Slides](Lecture/Modeling 1/Modeling_1_Lecture.pdf) ||
+|Mar 10| Modeling 2 | [Slides](Lecture/Modeling 2/Modeling_2_Lecture.pdf) | [Preview](Supplement/Modeling 2/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%202/Supplement.zip)) |
+|| Modeling 3 | [Slides](Lecture/Modeling 3/Modeling_3_Lecture.pdf) | [Preview](Supplement/Modeling 3/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%203/Supplement.zip)) |
 |March 15|Spring Brizzeak|||
 |March 17|Spring Brizzeak|||
 |Mar 22|Work on EDA|||
@@ -203,7 +204,7 @@ All HW and Analysis assignments are to be submitted via **[Sakai](https://sakai.
 | Mar 9  | [L8](Lab/Lab 8/Lab-8.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab%208/Lab%208.zip))|       |       |     Mar 23 (2:30 PM)     |
 | Mar 10  | |[HW5](Homework/HW 5/HW-5.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%205/HW%205.zip))       |       |    Mar 24 (5:00 PM)     |
 | Mar 23  | [L9]()([.zip]())|       |       |     Mar 30 (2:30 PM)     |
-| Mar 24  | | | [A3]()([.zip]())                  |   Mar 31 (5:00 PM)     |
+| Mar 24  | | | [A3](Analysis/Analysis 3/Analysis-3.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Analysis/Analysis%203/Analysis%203.zip))                  |   Mar 31 (5:00 PM)     |
 | Mar 30  | [L10]()([.zip]())|       |       |     Apr 6 (2:30 PM)     |
 | Mar 31  | |[HW6](Homework/HW 6/HW-6.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%206/HW%206.zip))       |        |    Apr 7 (5:00 PM)     |
 | Apr 6  | [L11]()([.zip]())|       |       |     Apr 13 (2:30 PM)     |
