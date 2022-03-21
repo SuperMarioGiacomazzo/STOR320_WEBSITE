@@ -46,7 +46,7 @@ DATA %>% filter(L==Location) %>%
   
 ```
 
-##Chunk 3: Split Data into Train and Test Sets
+## Chunk 3: Split Data into Train and Test Sets
 ```{r,eval=F}
 set.seed(INTEGER)
 TEST.LOCATIONS=sample(x=unique(DATA$L),size=3,replace=F)
@@ -55,7 +55,7 @@ TRAIN = anti_join(DATA,tibble(L=TEST.LOCATIONS),by="L")
 TEST = semi_join(DATA,tibble(L=TEST.LOCATIONS),by="L")
 ```
 
-##Chunk 4: Plots of Relationship for Train and Test Data
+## Chunk 4: Plots of Relationship for Train and Test Data
 ```{r,echo=F,eval=F}
 WAPLOT2.func=function(DATA){
   ggplot(data=DATA)+
@@ -69,29 +69,29 @@ WAPLOT2.func(TEST)
 ```
 
 
-#Part 2: Linear Regression Model
+# Part 2: Linear Regression Model
 
-##Chunk 1: Fitting Linear Model to Train Data
+## Chunk 1: Fitting Linear Model to Train Data
 ```{r,echo=F,eval=F}
 linmod=lm(W~A,data=TRAIN)
 summary(linmod)
 ```
 
-##Chunk 2: Getting Predictions from Linear Model
+## Chunk 2: Getting Predictions from Linear Model
 ```{r,eval=F}
 TRAIN2 = TRAIN %>% add_predictions(linmod,var="linpred")
 TEST2 = TEST %>% add_predictions(linmod,var="linpred")
 ```
 
-##Chunk 3: Getting Residuals from Linear Model
+## Chunk 3: Getting Residuals from Linear Model
 ```{r,eval=F}
 TRAIN3 = TRAIN2 %>% add_residuals(linmod,var="linres")
 TEST3 = TEST2 %>% add_residuals(linmod,var="linres")
 ```
 
-#Part 3: Polynomial Regression Model
+# Part 3: Polynomial Regression Model
 
-##Chunk 1: Fitting Polynomial Regression Models
+## Chunk 1: Fitting Polynomial Regression Models
 ```{r,eval=F}
 poly2mod=lm(W~A+I(A^2),data=TRAIN)
 poly3mod=lm(W~A+I(A^2)+I(A^3),data=TRAIN)
@@ -99,7 +99,7 @@ poly4mod=lm(W~A+I(A^2)+I(A^3)+I(A^4),data=TRAIN)
 anova(linmod,poly2mod,poly3mod,poly4mod,test="Chisq")
 ```
 
-##Chunk 2: Getting Predictions from Polynomial Models
+## Chunk 2: Getting Predictions from Polynomial Models
 ```{r,eval=F}
 TRAIN4 =TRAIN3 %>% 
   add_predictions(poly2mod,var="poly2pred") %>%
@@ -112,7 +112,7 @@ TEST4 =TEST3 %>%
   add_predictions(poly4mod,var="poly4pred")
 ```
 
-##Chunk 3: Getting Residuals from Polynomial Models
+## Chunk 3: Getting Residuals from Polynomial Models
 ```{r,eval=F}
 TRAIN5 =TRAIN4 %>% 
   add_predictions(poly2mod,var="poly2pred") %>%

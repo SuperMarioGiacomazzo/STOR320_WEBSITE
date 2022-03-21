@@ -11,7 +11,7 @@
 
 <meta name="author" content="Mario Giacomazzo" />
 
-<meta name="date" content="2022-03-10" />
+<meta name="date" content="2022-03-20" />
 
 <title>Supplement for Modeling 2</title>
 
@@ -365,7 +365,7 @@ summary {
 
 <h1 class="title toc-ignore">Supplement for Modeling 2</h1>
 <h4 class="author">Mario Giacomazzo</h4>
-<h4 class="date">March 10, 2022</h4>
+<h4 class="date">March 20, 2022</h4>
 
 </div>
 
@@ -391,28 +391,46 @@ summary {
 </div>
 <div id="chunk-2-location-specific-relationship" class="section level2">
 <h2>Chunk 2: Location-Specific Relationship</h2>
-<p>##Chunk 3: Split Data into Train and Test Sets</p>
+</div>
+<div id="chunk-3-split-data-into-train-and-test-sets" class="section level2">
+<h2>Chunk 3: Split Data into Train and Test Sets</h2>
 <pre class="r"><code>set.seed(INTEGER)
 TEST.LOCATIONS=sample(x=unique(DATA$L),size=3,replace=F)
 
 TRAIN = anti_join(DATA,tibble(L=TEST.LOCATIONS),by=&quot;L&quot;)
 TEST = semi_join(DATA,tibble(L=TEST.LOCATIONS),by=&quot;L&quot;)</code></pre>
-<p>##Chunk 4: Plots of Relationship for Train and Test Data</p>
-<p>#Part 2: Linear Regression Model</p>
-<p>##Chunk 1: Fitting Linear Model to Train Data</p>
-<p>##Chunk 2: Getting Predictions from Linear Model</p>
+</div>
+<div id="chunk-4-plots-of-relationship-for-train-and-test-data" class="section level2">
+<h2>Chunk 4: Plots of Relationship for Train and Test Data</h2>
+</div>
+</div>
+<div id="part-2-linear-regression-model" class="section level1">
+<h1>Part 2: Linear Regression Model</h1>
+<div id="chunk-1-fitting-linear-model-to-train-data" class="section level2">
+<h2>Chunk 1: Fitting Linear Model to Train Data</h2>
+</div>
+<div id="chunk-2-getting-predictions-from-linear-model" class="section level2">
+<h2>Chunk 2: Getting Predictions from Linear Model</h2>
 <pre class="r"><code>TRAIN2 = TRAIN %&gt;% add_predictions(linmod,var=&quot;linpred&quot;)
 TEST2 = TEST %&gt;% add_predictions(linmod,var=&quot;linpred&quot;)</code></pre>
-<p>##Chunk 3: Getting Residuals from Linear Model</p>
+</div>
+<div id="chunk-3-getting-residuals-from-linear-model" class="section level2">
+<h2>Chunk 3: Getting Residuals from Linear Model</h2>
 <pre class="r"><code>TRAIN3 = TRAIN2 %&gt;% add_residuals(linmod,var=&quot;linres&quot;)
 TEST3 = TEST2 %&gt;% add_residuals(linmod,var=&quot;linres&quot;)</code></pre>
-<p>#Part 3: Polynomial Regression Model</p>
-<p>##Chunk 1: Fitting Polynomial Regression Models</p>
+</div>
+</div>
+<div id="part-3-polynomial-regression-model" class="section level1">
+<h1>Part 3: Polynomial Regression Model</h1>
+<div id="chunk-1-fitting-polynomial-regression-models" class="section level2">
+<h2>Chunk 1: Fitting Polynomial Regression Models</h2>
 <pre class="r"><code>poly2mod=lm(W~A+I(A^2),data=TRAIN)
 poly3mod=lm(W~A+I(A^2)+I(A^3),data=TRAIN)
 poly4mod=lm(W~A+I(A^2)+I(A^3)+I(A^4),data=TRAIN)
 anova(linmod,poly2mod,poly3mod,poly4mod,test=&quot;Chisq&quot;)</code></pre>
-<p>##Chunk 2: Getting Predictions from Polynomial Models</p>
+</div>
+<div id="chunk-2-getting-predictions-from-polynomial-models" class="section level2">
+<h2>Chunk 2: Getting Predictions from Polynomial Models</h2>
 <pre class="r"><code>TRAIN4 =TRAIN3 %&gt;% 
   add_predictions(poly2mod,var=&quot;poly2pred&quot;) %&gt;%
   add_predictions(poly3mod,var=&quot;poly3pred&quot;) %&gt;%
@@ -422,7 +440,9 @@ TEST4 =TEST3 %&gt;%
   add_predictions(poly2mod,var=&quot;poly2pred&quot;) %&gt;%
   add_predictions(poly3mod,var=&quot;poly3pred&quot;) %&gt;%
   add_predictions(poly4mod,var=&quot;poly4pred&quot;)</code></pre>
-<p>##Chunk 3: Getting Residuals from Polynomial Models</p>
+</div>
+<div id="chunk-3-getting-residuals-from-polynomial-models" class="section level2">
+<h2>Chunk 3: Getting Residuals from Polynomial Models</h2>
 <pre class="r"><code>TRAIN5 =TRAIN4 %&gt;% 
   add_predictions(poly2mod,var=&quot;poly2pred&quot;) %&gt;%
   add_predictions(poly3mod,var=&quot;poly3pred&quot;) %&gt;%
