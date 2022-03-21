@@ -199,17 +199,17 @@ print(CV.func(try))  #Do Not Change
 
 The `apply()` function is very helpful for applying functions to rows or columns of matrices. Google this function to see examples of how it is used. 
 
-Use `apply()` with your function `CV.func()` to create a vector called `RANGE.MONTH.TRAIN` that contains the CV of each row in `SD.TEMP.TRAIN`.
+Use `apply()` with your function `CV.func()` to create a vector called `CV.MONTH.TRAIN` that contains the CV of each row in `SD.TEMP.TRAIN`.
 
-Use `apply()` with your function `CV.func()` to create a vector called `RANGE.DAY.TRAIN` that contains the CV of each column in `SD.TEMP.TRAIN`.
+Use `apply()` with your function `CV.func()` to create a vector called `CV.DAY.TRAIN` that contains the CV of each column in `SD.TEMP.TRAIN`.
 
 Code and Output:
 ```{r,eval=F}
 
 COMPLETE
 
-print(SD.MONTH.TRAIN) #Do Not Change
-print(SD.DAY.TRAIN) #Do Not Change
+print(CV.MONTH.TRAIN) #Do Not Change
+print(CV.DAY.TRAIN) #Do Not Change
 ```
 
 ### Q4 *(8 Points)*
