@@ -1,9 +1,9 @@
 Lab,Name,Group,Role,EDA Date,EDA Time
-Lab 400,"Darnell, Cade",1,O,,
-Lab 400,"Martin, William",1,C,,
-Lab 400,"Bacon, Katherine",1,D,,
-Lab 400,"Reid, Alexander",1,I,,
-Lab 400,"Le, Long",1,O,,
+Lab 400,"Darnell, Cade",1,O,3/21/2022,12:00PM - 12:10PM
+Lab 400,"Martin, William",1,C,3/21/2022,12:00PM - 12:10PM
+Lab 400,"Bacon, Katherine",1,D,3/21/2022,12:00PM - 12:10PM
+Lab 400,"Reid, Alexander",1,I,3/21/2022,12:00PM - 12:10PM
+Lab 400,"Le, Long",1,O,3/21/2022,12:00PM - 12:10PM
 Lab 400,"Ambardar, Avish",2,O,,
 Lab 400,"Przykucki, Emily",2,O,,
 Lab 400,"Paschal, Sarah",2,I,,
@@ -52,11 +52,11 @@ Lab 402,"Low, Simon",10,O,,
 Lab 402,"Brown, Hannah",10,O,,
 Lab 402,"Wang, Kiki",10,C,,
 Lab 402,"Winborne, Paul",10,I,,
-Lab 402,"Miller, Eric",11,I,,
-Lab 402,"Wood, Ethan",11,D,,
-Lab 402,"Westmoreland, Kara",11,O,,
-Lab 402,"Kasuganti, Sarika",11,O,,
-Lab 402,"Sun, Mingling",11,C,,
+Lab 402,"Miller, Eric",11,I,3/30/2022,11:00AM - 11:10AM
+Lab 402,"Wood, Ethan",11,D,3/30/2022,11:00AM - 11:10AM
+Lab 402,"Westmoreland, Kara",11,O,3/30/2022,11:00AM - 11:10AM
+Lab 402,"Kasuganti, Sarika",11,O,3/30/2022,11:00AM - 11:10AM
+Lab 402,"Sun, Mingling",11,C,3/30/2022,11:00AM - 11:10AM
 Lab 402,"Dickinson, John",12,I,,
 Lab 402,"Yao, Yudi",12,D,,
 Lab 402,"Almodovar, Fabian",12,O,,

@@ -224,32 +224,11 @@ To find your research group, see the tables below:
 
 ## Group Assignments for Section 1
 
-```{r,echo=F,results="asis",message=F}
-library(DT)
-library(tidyverse)
-
-setwd("D:/Mario Documents/UNC/STOR 320/STOR320_WEBSITE/Group Assignments")
-
-Groups=read.csv(file="STOR320.001 Group Assignments - 2.csv")
-
-datatable(Groups,class="display",options = list(scrollX=F,
-            columnDefs = list(list(className = 'dt-center', targets = 0:5))),rownames=F)
-```
+preservea219e971057785e9
 
 ## Group Assignments for Section 2
 
-```{r,echo=F,results="asis",message=F}
-library(DT)
-library(tidyverse)
-
-setwd("D:/Mario Documents/UNC/STOR 320/STOR320_WEBSITE/Group Assignments")
-
-Groups=read.csv(file="STOR320.002 Group Assignments - 2.csv")
-
-datatable(Groups,class="display",options = list(scrollX=F,
-            columnDefs = list(list(className = 'dt-center', targets = 0:5))),rownames=F)
-
-```
+preserveb82574996b38ee5a
 
 ## Four Roles
 
@@ -342,5 +321,5 @@ This final project will be divided into four parts worth a total of 100 points. 
 
 - **[R Shiny Cheat Sheet](https://shiny.rstudio.com/images/shiny-cheatsheet.pdf)**
 
-This page was last updated on `r Sys.time()` Eastern Time.
+This page was last updated on 2022-03-21 21:10:41 Eastern Time.
 
