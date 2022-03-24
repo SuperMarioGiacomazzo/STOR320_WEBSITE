@@ -251,7 +251,7 @@ When you have data that is organized chronologically, there are some cool featur
 
 We can create a new variable called `Pressure Percent Change` in TRAIN.FINAL that currently contains all missing values. If we wanted to change the 4th observation of `Pressure Percent Change` to 32, we could use the code `TRAIN.FINAL$`Pressure Percent Change`[4]=32`. Each value of `Pressure Percent Change` can be calculated from the following formula:
 
-$\textrm{Pressure Percent Change Today}=\frac{\textrm{Pressure Today}-\textrm{Pressure Yesterday}}{\textrm{Pressure Yesterday}}$
+$\textrm{Pressure Percent Change Today}=100*\frac{\textrm{Pressure Today}-\textrm{Pressure Yesterday}}{\textrm{Pressure Yesterday}}$
 
 Use a loop to replace each missing value in the new variable called `Pressure Percent Change` with the actual value according to the formula. If you don't use a loop, you will get 0 points. 
 
@@ -268,7 +268,7 @@ plot(TRAIN.FINAL$`Pressure Percent Change`,type="l") #Do Not Change
 
 We create a new variable called `Pressure 3-Day Average` in TRAIN.FINAL that starts with all missing values. If we wanted to change the 3rd observation of `Pressure 3-Day Average` to 50, we could use the code `TRAIN.FINAL$`Pressure 3-Day Average`[3]=50`. Each value of `Pressure 3-Day Average` can be calculated from the following formula:
 
-$\textrm{Pressure 3-Day Average}=100*\frac{\textrm{Pressure Yesterday}+\textrm{Pressure Today}+\textrm{Pressure Tomorrow}}{3}$
+$\textrm{Pressure 3-Day Average}=\frac{\textrm{Pressure Yesterday}+\textrm{Pressure Today}+\textrm{Pressure Tomorrow}}{3}$
 
 Use a loop to replace each missing value in the new variable called `Pressure 3-Day Average` with the actual value according to the formula. If you don't use a loop, you will get 0 points.
 

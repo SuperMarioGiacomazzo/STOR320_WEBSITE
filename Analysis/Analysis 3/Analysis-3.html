@@ -11,7 +11,7 @@
 
 <meta name="author" content="Mario Giacomazzo" />
 
-<meta name="date" content="2022-03-21" />
+<meta name="date" content="2022-03-24" />
 
 <title>Analysis 3: Statistical Programming with Daily Delhi Climate Data</title>
 
@@ -365,7 +365,7 @@ summary {
 
 <h1 class="title toc-ignore">Analysis 3: Statistical Programming with Daily Delhi Climate Data</h1>
 <h4 class="author">Mario Giacomazzo</h4>
-<h4 class="date">March 21, 2022</h4>
+<h4 class="date">March 24, 2022</h4>
 
 </div>
 
@@ -585,7 +585,7 @@ t.test(x=WEEKDAY.PRESSURE,y=WEEKEND.PRESSURE) #Do Not Change</code></pre>
 <div id="q1-4-points-2" class="section level3">
 <h3>Q1 <em>(4 Points)</em></h3>
 <p>We can create a new variable called <code>Pressure Percent Change</code> in TRAIN.FINAL that currently contains all missing values. If we wanted to change the 4th observation of <code>Pressure Percent Change</code> to 32, we could use the code <code>TRAIN.FINAL$</code>Pressure Percent Change<code>[4]=32</code>. Each value of <code>Pressure Percent Change</code> can be calculated from the following formula:</p>
-<p><span class="math inline">\(\textrm{Pressure Percent Change Today}=\frac{\textrm{Pressure Today}-\textrm{Pressure Yesterday}}{\textrm{Pressure Yesterday}}\)</span></p>
+<p><span class="math inline">\(\textrm{Pressure Percent Change Today}=100*\frac{\textrm{Pressure Today}-\textrm{Pressure Yesterday}}{\textrm{Pressure Yesterday}}\)</span></p>
 <p>Use a loop to replace each missing value in the new variable called <code>Pressure Percent Change</code> with the actual value according to the formula. If you don’t use a loop, you will get 0 points.</p>
 <p>Code and Output (4 Points):</p>
 <pre class="r"><code>TRAIN.FINAL$`Pressure Percent Change`=NA #Do Not Change
@@ -597,7 +597,7 @@ plot(TRAIN.FINAL$`Pressure Percent Change`,type=&quot;l&quot;) #Do Not Change</c
 <div id="q2-4-points-1" class="section level3">
 <h3>Q2 <em>(4 Points)</em></h3>
 <p>We create a new variable called <code>Pressure 3-Day Average</code> in TRAIN.FINAL that starts with all missing values. If we wanted to change the 3rd observation of <code>Pressure 3-Day Average</code> to 50, we could use the code <code>TRAIN.FINAL$</code>Pressure 3-Day Average<code>[3]=50</code>. Each value of <code>Pressure 3-Day Average</code> can be calculated from the following formula:</p>
-<p><span class="math inline">\(\textrm{Pressure 3-Day Average}=100*\frac{\textrm{Pressure Yesterday}+\textrm{Pressure Today}+\textrm{Pressure Tomorrow}}{3}\)</span></p>
+<p><span class="math inline">\(\textrm{Pressure 3-Day Average}=\frac{\textrm{Pressure Yesterday}+\textrm{Pressure Today}+\textrm{Pressure Tomorrow}}{3}\)</span></p>
 <p>Use a loop to replace each missing value in the new variable called <code>Pressure 3-Day Average</code> with the actual value according to the formula. If you don’t use a loop, you will get 0 points.</p>
 <p>Code and Output (4 Points):</p>
 <pre class="r"><code>TRAIN.FINAL$`Pressure 3-Day Average`=NA #Do Not Change
