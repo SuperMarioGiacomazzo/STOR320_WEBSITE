@@ -138,7 +138,7 @@ TEST5 =TEST4 %>%
 set.seed(216)
 EXAMPLE=tibble(
   x=rnorm(10000,mean=0,sd=5),
-  y=7+12/(1+exp(-1-0.5*x))
+  y=7+12/(1+exp(4-1*x))
 )
 ggplot(data=EXAMPLE) +
   geom_point(aes(x=x,y=y)) +
@@ -150,6 +150,7 @@ ggplot(data=EXAMPLE) +
 logistic.model=function(COEF,DATA){
   pred=COEF[1]+COEF[2]/(1+exp(COEF[3]-COEF[4]*DATA$A))
 }
+
 MSE.logistic=function(COEF,DATA){
   error=DATA$W-logistic.model(DATA=DATA,COEF=COEF)
   sq.error=error^2
