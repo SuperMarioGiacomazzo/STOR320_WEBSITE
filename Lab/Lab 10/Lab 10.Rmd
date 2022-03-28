@@ -1,0 +1,151 @@
+---
+title: "Lab 10: Programming"
+author: "FIRSTNAME LASTNAME"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,warning=F)
+options(scipen=999)
+library(tidyverse)
+```
+
+# Introduction
+
+In this lab, you will practice writing functions and using loop functions in R. The loop functions are:
+
+- `lapply()`: Loop over a list and evaluate a function on each element
+
+- `sapply()`: Same as `lapply` but try to simplify the result
+
+- `apply()`: Apply a function over the margins of an array
+
+- `tapply()`: Apply a function over subsets of a vector
+
+- `mapply()`: Multivariate version of `lapply`
+
+# Simulation study
+Suppose that $X_1,\ldots,X_n$ are independent and identically distributed (iid) binomial random variables such that
+\[
+  P(X_i=x\mid k,p)
+  ={k\choose x}p^x(1-p)^{k-x},\quad x=0,1,\ldots,k
+\]
+for all $i=1,\ldots,n$. Assume that both $k$ and $p$ are unknown and use the method of moments to obtain point estimators of both parameters. This somewhat unusual application of the binomial model has
+been used to estimate crime rates for crimes that are known to have many unreported
+occurrences. For such a crime, both the true reporting rate, $p$, and the total number
+of occurrences, $k$, are unknown. Equating the first two sample moments to those of the population yields the system
+of equations
+\[
+  \bar X=kp
+  \quad\text{and}\quad
+  \frac1n\sum_{i=1}^nX_i^2=kp(1-p)+k^2p^2,
+\]
+where $\bar X$ is the sample mean. Solving for $k$ and $p$ leads to
+\[
+  \hat k=\frac{\bar X^2}{\bar X-(1/n)\sum_{i=1}^n(X_i-\bar X)^2}
+  \quad\text{and}\quad
+  \hat p=\frac{\bar X}{\hat k}.
+\]
+It is difficult to analyze the performance of $\hat k$ and $\hat p$ analytically so you are asked to perform a simulation study using `R`. The idea is to generate random samples and investigate the performance of $\hat k$ and $\hat p$ using random samples.
+
+### Q1 (1 point)
+
+Generate a single simple random sample vector `x` of length `n = 50` from the binomial distribution with the parameters `k = 10`, `p = 0.4`. 
+
+```{r, eval=F}
+k = VALUE
+p = VALUE
+x = rbinom(50,k,p)
+
+hist(x) #Do Not Change
+```
+
+### Q2 (4 points)
+
+Write a function that takes a sample vector as its input and returns the estimates of `k` and `p` given above. Observe the output of your function and make sure your estimates of $k$ and $p$ are close to the truth.
+
+```{r, eval=F}
+est_kp = function(x){
+  X_bar = COMPLETE
+  n = length(x)
+  k_hat = COMPLETE
+  p_hat = COMPLETE
+  return(c(k_hat,p_hat))
+}
+
+est_kp(rbinom(5000,k,p)) #Do Not Change
+```
+
+### Q3 (4 points)
+
+Generate `N = 1000` samples of size `n = 50` (as in the first question) and calculate `N = 1000` estimates of $k$ and `N = 1000` estimates of $p$. Please use Loop functions (apply, etc.) in this part. Make sure `rbinom` and `est_kp` functions are used in this part. Also, observe the output of the first ten samples. You will see the estimates of $k$ in the first row and the estimates of $p$ in the second row.
+
+```{r, eval=F}
+N = 1000
+data = matrix(rbinom(N*50,k,p),N)
+E50 = apply(COMPLETE,COMPLETE,COMPLETE)
+
+E50[,1:10] #Do Not Change
+```
+
+### Q4 (2 points)
+
+Repeat Question 3 when `n <- 100` and when `n <- 250`. 
+
+```{r, eval=F}
+E100 = COMPLETE
+E250 = COMPLETE
+
+E100[,1:10] #Do Not Change
+E250[,1:10] #Do Not Change
+```
+
+### Q5 (3 points)
+
+Estimate the bias and the mean squared error (MSE) of $\hat k$ and the bias and the MSE of $\hat p$ for each sample size (`n <- 50`, `n <- 100` and `n <- 250`). Do the estimators seem to overestimate or underestimate the parameters? Think about this and answer the follow-up question.
+
+```{r, eval=F}
+# bias
+rowMeans(FILL)-c(10,.4)
+COMPLETE_THE_OTHER_TWO
+
+# mse
+rowMeans((FILL-c(10,.4))^2)
+COMPLETE_THE_OTHER_TWO
+```
+
+*Question:* How do the bias and the MSE change when the sample size increases?
+
+REPLACE YOUR ANSWER HERE WITH COMPLETE SENTENCES
+
+### Q6 (3 points)
+
+Make a single plot using `ggplot2` that contains three box plots of the estimates of the parameter $k$ when `n = 50`, `n = 100`, `n = 250` (the first from the left box plot has to describe the estimates when `n = 50`, the second from the left box plot has to describe the estimates when `n = 100` and the third from the left box plot has to describe the estimates `n = 250`). Include the true value of the parameter as a red horizontal line (`geom_hline()` and use the argument `color`) and label the plot appropriately.
+
+You will need to construct a dataset to do this which is the point of the first part of the code. Run the code in parts to see what is happening.
+
+```{r,eval=F}
+df_k<-tibble(
+  n=factor(rep(c("50","100","250"),each=N),c("50","100","250")),
+  Estimates=c(COMPLETE)
+  )
+ggplot(data = df_k, mapping = aes(x = FILL, y = FILL)) +
+	FUNCTION +
+	geom_hline(yintercept = k, colour = "red")
+```
+
+### Q7 (3 points)
+
+The estimates $\hat k$ can result in values that are far away from the true value of the parameter when the sample size is small and the box plots might not be particularly informative in such a situation. Remove the estimates from the plot that are outside of the interval $[0,50]$ so that the box plots are more informative.
+
+You are redoing the plot from the previous question without extreme estimates for $k$.
+
+```{r, eval=F}
+ggplot(
+  data = filter(df_k, CONDITION), 
+  mapping = aes(x = FILL, y = FILL)
+  ) +
+	FUNCTION +
+	geom_hline(yintercept = k, colour = "red")
+```
