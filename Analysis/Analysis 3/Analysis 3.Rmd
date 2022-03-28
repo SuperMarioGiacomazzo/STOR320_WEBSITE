@@ -223,7 +223,7 @@ x=c(x,5) #Do Not Change
 print(x) #Do Not Change
 ```
 
-Below, I created two empty objects named `WEEKDAY.PRESSURE` and `WEEKEND.PRESSURE`. I want you to loop through each row in `TRAIN.FINAL` moving through the data in chronological order. If the row involves a weekend, I want you to add the humidity of that day to `WEEKEND.PRESSURE`, otherwise, I want you to add the humidity of that day to `WEEKDAY.PRESSURE`. For our purposes, only Saturday and Sunday are considered weekends. Also, your code needs to utilize a loop and an if-else control structure or you will get 0 points. At the end, `WEEKDAY.PRESSURE` and `WEEKEND.PRESSURE` should be vectors.
+Below, I created two empty objects named `WEEKDAY.PRESSURE` and `WEEKEND.PRESSURE`. I want you to loop through each row in `TRAIN.FINAL` moving through the data in chronological order. If the row involves a weekend, I want you to add the pressure of that day to `WEEKEND.PRESSURE`, otherwise, I want you to add the pressure of that day to `WEEKDAY.PRESSURE`. For our purposes, only Saturday and Sunday are considered weekends. Also, your code needs to utilize a loop and an if-else control structure or you will get 0 points. At the end, `WEEKDAY.PRESSURE` and `WEEKEND.PRESSURE` should be vectors.
 
 The last line of code performs a basic t-test . In the space provided below, I want you to explain what this t-test function is being used to test and summarise what we learn about pressure from this t-test. Write in complete sentences using words as if you were explaining this to someone who knows very little about statistics. Explain what you learned about pressure, do not just explain what a t-test is. They don't care about that nonsense, because they have a life.
 
