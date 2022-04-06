@@ -144,9 +144,10 @@ This course is an application-driven introduction to data science. Statistical a
 || [Modeling 5](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f39039e1-4878-4006-aed1-ae670128a399) | [Slides](Lecture/Modeling 5/Modeling_5_Lecture.pdf) ||
 |Mar 31| [Modeling 5 (Cont.)](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=617d9642-0215-4417-8684-ae690128e058) | [Slides](Lecture/Modeling 5/Modeling_5_Lecture.pdf) ||
 || [Modeling 6](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=617d9642-0215-4417-8684-ae690128e058) | [Slides](Lecture/Modeling 6/Modeling_6_Lecture.pdf) ||
-|Apr 5| Modeling 6 (Cont.) | [Slides](Lecture/Modeling 6/Modeling_6_Lecture.pdf) ||
-|| Modeling 7 | [Slides](Lecture/Modeling 7/Modeling_7_Lecture.pdf) | [Preview](Supplement/Modeling 7/Supplement.html)([.Rmd](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%207/Supplement.zip)) |
-|Apr 7| Modeling 8 | [Slides](Lecture/Modeling 8/Modeling_8_Lecture.pdf) | [Preview](Supplement/Modeling 8/Supplement.html)([.Rmd](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%208/Supplement.zip)) |
+|Apr 5| [Modeling 6 (Cont.)](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d96b6d45-3b43-4094-9aac-ae6e0128ba69) | [Slides](Lecture/Modeling 6/Modeling_6_Lecture.pdf) ||
+|| [Modeling 7](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d96b6d45-3b43-4094-9aac-ae6e0128ba69) | [Slides](Lecture/Modeling 7/Modeling_7_Lecture.pdf) | [Preview](Supplement/Modeling 7/Supplement.html)([.Rmd](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%207/Supplement.zip)) |
+|Apr 7| Modeling 7 (Cont.) | [Slides](Lecture/Modeling 7/Modeling_7_Lecture.pdf) | [Preview](Supplement/Modeling 7/Supplement.html)([.Rmd](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%207/Supplement.zip)) |
+|| Modeling 8 | [Slides](Lecture/Modeling 8/Modeling_8_Lecture.pdf) | [Preview](Supplement/Modeling 8/Supplement.html)([.Rmd](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%208/Supplement.zip)) |
 |Apr 12| Modeling 9 | [Slides](Lecture/Modeling 9/Modeling_9_Lecture.pdf) | [Preview](Supplement/Modeling 9/Supplement.html)([.Rmd](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%209/Supplement.zip)) |
 |Apr 14| Best Thursday |||
 |Apr 19| R Shiny | [Slides](Lecture/R Shiny/R_Shiny_Lecture.pdf) | Preview([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/R%20Shiny/Supplement.zip))|
