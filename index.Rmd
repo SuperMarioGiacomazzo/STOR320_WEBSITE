@@ -209,7 +209,7 @@ All HW and Analysis assignments are to be submitted via **[Sakai](https://sakai.
 | Mar 24  | | | [A3](Analysis/Analysis 3/Analysis-3.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Analysis/Analysis%203/Analysis%203.zip))                  |   Mar 31 (5:00 PM)     |
 | Mar 30  | [L10](Lab/Lab 10/Lab-10.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab%2010/Lab%2010.zip))|       |       |     Apr 6 (2:30 PM)     |
 | Mar 31  | |[HW6](Homework/HW 6/HW-6.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%206/HW%206.zip))       |        |    Apr 7 (5:00 PM)     |
-| Apr 6  | [L11](Lab/Lab 11/Lab-11.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab%2011/Lab%20110.zip))|       |       |     Apr 13 (2:30 PM)     |
+| Apr 6  | [L11](Lab/Lab 11/Lab-11.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab%2011/Lab%2011.zip))|       |       |     Apr 13 (2:30 PM)     |
 | Apr 7  | |[HW7](Homework/HW 7/HW-7.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%207/HW%207zip))       |                   |   Apr 14 (5:00 PM)     |
 | Apr 14  |   |   | [A4](Analysis/Analysis 4/Analysis-4.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Analysis/Analysis%204/Analysis%204.zip))          |   Apr 21 (5:00 PM)     |
 | Apr 20  | [L12]()([.zip]())|       |       |     Apr 27 (2:30 PM)     |
