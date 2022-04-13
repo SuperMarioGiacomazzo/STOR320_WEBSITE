@@ -22,9 +22,9 @@ What is *big data*? According to **[Wikipedia](https://en.wikipedia.org/wiki/Big
 
 Suppose we have a response variable $Y$ and $p=1000$ predictor variables. It is highly unlikely that all the predictor variables are relevant explaining the variation of $Y$. Furthermore, it is highly unlikely that all the predictor variables are useful for maker future predictions $\hat{Y}$. Today, we take a look at helpful methods for simultaneously parameter estimation and variable selection for the classic linear model. 
 
-#Part 1: Simulate and Meditate
+# Part 1: Simulate and Meditate
 
-##Chunk 1: Simulate Data
+## Chunk 1: Simulate Data
 ```{r,eval=T}
 set.seed(216)
 X=matrix(rnorm(100000),500,200)
@@ -36,7 +36,7 @@ y=X%*%beta+epsilon
 SIM.DATA=data.frame(y=y,X=X)
 ```
 
-##Chunk 2: Fit Linear Model
+## Chunk 2: Fit Linear Model
 ```{r,eval=T}
 lm.model=lm(y~.,data=SIM.DATA)
 glance(lm.model)
@@ -64,7 +64,7 @@ ggplot(param.lm[11:200,]) +
   xlab("X11:X200")
 ```
 
-##Chunk 3: Linear Model for Each Potential Predictor
+## Chunk 3: Linear Model for Each Potential Predictor
 ```{r,eval=T}
 COEF=rep(NA,200)
 P.VAL=rep(NA,200)
@@ -88,7 +88,7 @@ tibble(ACTUAL=ACTUAL,KEEP=KEEP) %>%
   table() %>% prop.table()
 ```
 
-##Chunk 4: Modifying the Cutoff For P-Values
+## Chunk 4: Modifying the Cutoff For P-Values
 ```{r,eval=T}
 Cutoff = 0.2
 
@@ -218,7 +218,7 @@ var.names=names(X)
 dim(X)
 ```
 
-##Chunk 2: Multiple Regularized Models
+## Chunk 2: Multiple Regularized Models
 ```{r,eval=F}
 set.seed(216)
 cvmod.0=cv.glmnet(y=y,x=as.matrix(X),alpha=0)
@@ -246,7 +246,7 @@ MOD.RESULT=tibble(alpha=c(0,0.25,0.5,0.75,1),
 print(MOD.RESULT)
 ```
 
-##Chunk 3: Using the Best Model
+## Chunk 3: Using the Best Model
 ```{r,eval=F}
 best.alpha=MOD.RESULT$alpha[which.min(MOD.RESULT$CV.Error)]
 best.lambda=MOD.RESULT$lambda[which.min(MOD.RESULT$CV.Error)]
