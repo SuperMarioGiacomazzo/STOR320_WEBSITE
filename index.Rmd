@@ -150,8 +150,8 @@ This course is an application-driven introduction to data science. Statistical a
 || [Modeling 8](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f62588ea-3909-4b88-81f4-ae7001297c99) | [Slides](Lecture/Modeling 8/Modeling_8_Lecture.pdf) | [Preview](Supplement/Modeling 8/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%208/Supplement.zip)) |
 |Apr 12| COVID |  | |
 |Apr 14| Best Thursday |||
-|Apr 19| Modeling 9 | [Slides](Lecture/Modeling 9/Modeling_9_Lecture.pdf) | [Preview](Supplement/Modeling 9/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%209/Supplement.zip)) |
-|| R Shiny | [Slides](Lecture/R Shiny/R_Shiny_Lecture.pdf) | Preview([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/R%20Shiny/Supplement.zip))|
+|Apr 19| [Modeling 9](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=84a2d96a-d5e1-4ea4-948e-ae7c0128f3f0) | [Slides](Lecture/Modeling 9/Modeling_9_Lecture.pdf) | [Preview](Supplement/Modeling 9/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%209/Supplement.zip)) |
+|| [R Shiny](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=84a2d96a-d5e1-4ea4-948e-ae7c0128f3f0) | [Slides](Lecture/R Shiny/R_Shiny_Lecture.pdf) | Preview([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/R%20Shiny/Supplement.zip))|
 |Apr 21| R Shiny (Cont.) | [Slides](Lecture/R Shiny/R_Shiny_Lecture.pdf) | Preview([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/R%20Shiny/Supplement.zip))|
 || Guest Speaker | | |
 |Apr 26|Work on Final Paper|||
