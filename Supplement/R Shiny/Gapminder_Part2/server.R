@@ -60,7 +60,7 @@ shinyServer(function(input, output) {
             Q3=quantile(get(input$INvariable),0.75),
             MAX=max(get(input$INvariable)),
             CHANGE=MAX-MIN,
-            MEAN=sd(get(input$INvariable)),
+            MEAN=mean(get(input$INvariable)),
             SD=sd(get(input$INvariable))
       )
   })
