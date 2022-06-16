@@ -75,16 +75,16 @@ This course is an application-driven introduction to data science. Statistical a
 - Course Syllabus: **[Section 1](Syllabi/STOR 320 Section 1 Syllabus.pdf)**
 
 - Lab Sections:
-    - 320.400: F, 3:00PM - 5:00PM, Hanes 107, Wan
-    - 320.401: F 3:00PM - 5:00PM, AR 116, Henry
+    - 320.400: F, 3PM - 5PM, Hanes 107, Wan
+    - 320.401: F, 3PM - 5PM, AR 116, Henry
    
 - **[University Approved Absences](https://unc-ch.formstack.com/forms/university_approved_absence_request?sso=5f3154c3179f5)**: Fill out the online form.
 
 - Zoom Links:
-    - **[Lectures:](https://unc.zoom.us/j/95739388906?pwd=bTluWTQ3Y2FRczIrNkJGZlNjYkVLUT09)** M-Th from 3PM to 5PM, (PW: supermario)
+    - **[Lectures:](https://unc.zoom.us/j/95739388906?pwd=bTluWTQ3Y2FRczIrNkJGZlNjYkVLUT09)** M-Th, 3PM - 5PM, (PW: supermario)
     - **[Mario Office Hours:](https://unc.zoom.us/j/94042835979)** M-F, 30min Before & After Class
     - **[Wan Office Hours:]()** M-F, TBD
-    - **[Hank:]()** M-F, TBD
+    - **[Hank:](https://unc.zoom.us/j/95542614777)** M-F, 10AM - 11AM
 
   </div>
   <div class="column">
