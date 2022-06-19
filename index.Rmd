@@ -70,21 +70,21 @@ This course is an application-driven introduction to data science. Statistical a
 
 - Lab Instructors: 
     - **[Wan Zhang](http://stat-or.unc.edu/people/graduate-students-department)**
-    - **[Henry Flury](http://stat-or.unc.edu/people/graduate-students-department)**
+    - **[Hank Flury](http://stat-or.unc.edu/people/graduate-students-department)**
 
 - Course Syllabus: **[Section 1](Syllabi/STOR 320 Section 1 Syllabus.pdf)**
 
 - Lab Sections:
-    - 320.400: F, 3PM - 5PM, Hanes 107, Wan
-    - 320.401: F, 3PM - 5PM, AR 116, Henry
+    - 320.400: F, 3PM - 5PM, Hanes Hall 107, Wan
+    - 320.401: F, 3PM - 5PM, Hanes Art Center 116, Henry
    
 - **[University Approved Absences](https://unc-ch.formstack.com/forms/university_approved_absence_request?sso=5f3154c3179f5)**: Fill out the online form.
 
 - Zoom Links:
     - **[Lectures:](https://unc.zoom.us/j/95739388906?pwd=bTluWTQ3Y2FRczIrNkJGZlNjYkVLUT09)** M-Th, 3PM - 5PM, (PW: supermario)
     - **[Mario Office Hours:](https://unc.zoom.us/j/94042835979)** M-F, 30min Before & After Class
-    - **[Wan Office Hours:]()** M-F, TBD
-    - **[Hank:](https://unc.zoom.us/j/95542614777)** M-F, 10AM - 11AM
+    - **[Wan Office Hours:](https://unc.zoom.us/j/95218285975?pwd=dG1PMDhidFd3WnpyU1dJTXdOVG9aZz09)** M-F, 1PM - 2PM, (PW: 754226)
+    - **[Hank Office Hours:](https://unc.zoom.us/j/95542614777)** M-F, 10AM - 11AM
 
   </div>
   <div class="column">
