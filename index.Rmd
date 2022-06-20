@@ -140,18 +140,18 @@ All HW, Lab, and Analysis assignments are to be submitted via **[Sakai](https://
 |----------|:--------:|:--------:|:-------------:|----------------:|
 | June 20  | |[HW1](Homework/HW 1/HW-1.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%201/HW%201.zip))       |       |   June 22 (5:00 PM)     |
 | June 22  | |[HW2](Homework/HW 2/HW-2.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%202/HW%202.zip))       |       |   June 24 (5:00 PM)     |
-| June 24  | [L1]()([.zip]())|       |       |    June 24 (5:00 PM)     |
+| June 24  | [L1]()([.zip]())|       |       |    June 24 (11:55 PM)     |
 | June 24  |      |  | [A1]()([.zip]())      |     June 27 (5:00 PM)     |
 | June 27  | |[HW3](Homework/HW 3/HW-3.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%203/HW%203.zip))       |       |    June 29  (5:00 PM)     |
 | June 29 | |[HW4](Homework/HW 4/HW-4.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%204/HW%204.zip))       |                    |   July 1 (5:00 PM)     |
-| July 1  | [L2]()([.zip]())|       |       |     July 1 (5:00 PM)     |
+| July 1  | [L2]()([.zip]())|       |       |     July 1 (11:55 PM)     |
 | July 1  | | | [A2]()([.zip]())        |    July 6 (5:00 PM)     |
 | July 6  | |[HW5](Homework/HW 5/HW-5.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%205/HW%205.zip))       |       |    July 8 (5:00 PM)     |
-| July 8  | [L3]()([.zip]())|       |       |     July 8 (5:00 PM)     |
+| July 8  | [L3]()([.zip]())|       |       |     July 8 (11:55 PM)     |
 | July 8  | | | [A3]()([.zip]())                  |   July 11 (5:00 PM)     |
 | July 11  | |[HW6](Homework/HW 6/HW-6.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%206/HW%206.zip))       |        |    July 13 (5:00 PM)     |
 | July 13  | |[HW7](Homework/HW 7/HW-7.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%207/HW%207.zip))       |                   |   July 15 (5:00 PM)     |
-| July 15  | [L4]()([.zip]())|       |       |     July 15 (5:00 PM)     |
+| July 15  | [L4]()([.zip]())|       |       |     July 15 (11:55 PM)     |
 | July 15  |   |   | [A4]()([.zip]())          |   July 20  (5:00 PM)     |
 |          |   |     |             |           |
 
