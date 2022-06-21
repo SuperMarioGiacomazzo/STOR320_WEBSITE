@@ -97,10 +97,10 @@ This course is an application-driven introduction to data science. Statistical a
 
 | Date | Lecture | Slides | Supplement |
 |------|---------|--------:|---------:|
-|June 20| Introduction | [Slides](Lecture/Introduction/Intro_Lecture.pdf)||
-|| Data Visualization|[Slides](Lecture/Data Visualization/Data_Visualization_Lecture.pdf)|[Preview](Supplement/Data Visualization/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Data%20Visualization/Supplement.zip))|
-|| Workflow in RMarkdown | [Slides](Lecture/Workflow/Workflow_Lecture.pdf) ||
-|June 21| Data Transformation I | [Slides](Lecture/Data Transformation 1/Data_Transformation_1_Lecture.pdf) ||
+|June 20| [Introduction](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f269fa8c-59a6-4391-8da6-aeba01667749) | [Slides](Lecture/Introduction/Intro_Lecture.pdf)||
+|| [Data Visualization](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f269fa8c-59a6-4391-8da6-aeba01667749) |[Slides](Lecture/Data Visualization/Data_Visualization_Lecture.pdf)|[Preview](Supplement/Data Visualization/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Data%20Visualization/Supplement.zip))|
+|June 21| Workflow in RMarkdown | [Slides](Lecture/Workflow/Workflow_Lecture.pdf) ||
+|| Data Transformation I | [Slides](Lecture/Data Transformation 1/Data_Transformation_1_Lecture.pdf) ||
 || Data Transformation II | [Slides](Lecture/Data Transformation 2/Data_Transformation_2_Lecture.pdf)||
 |June 22| Data Transformation III | [Slides](Lecture/Data Transformation 3/Data_Transformation_3_Lecture.pdf)||
 || Data Transformation IV | [Slides](Lecture/Data Transformation 4/Data_Transformation_4_Lecture.pdf)||
