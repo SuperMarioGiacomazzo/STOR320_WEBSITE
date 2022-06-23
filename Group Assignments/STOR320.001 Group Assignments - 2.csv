@@ -1,99 +1,29 @@
-Lab,Name,Group,Role,EDA Date,EDA Time
-Lab 400,"Darnell, Cade",1,O,3/21/2022,12:00PM - 12:10PM
-Lab 400,"Martin, William",1,C,3/21/2022,12:00PM - 12:10PM
-Lab 400,"Bacon, Katherine",1,D,3/21/2022,12:00PM - 12:10PM
-Lab 400,"Reid, Alexander",1,I,3/21/2022,12:00PM - 12:10PM
-Lab 400,"Le, Long",1,O,3/21/2022,12:00PM - 12:10PM
-Lab 400,"Ambardar, Avish",2,O,4/11/2022,9:00AM - 9:10AM
-Lab 400,"Przykucki, Emily",2,O,4/11/2022,9:00AM - 9:10AM
-Lab 400,"Paschal, Sarah",2,I,4/11/2022,9:00AM - 9:10AM
-Lab 400,"Wang, Hongze",2,D,4/11/2022,9:00AM - 9:10AM
-Lab 400,"Patel, Pooja",2,C,4/11/2022,9:00AM - 9:10AM
-Lab 400,"Myoung, Sooho",3,I,3/30/2022,11:30AM - 11:40AM
-Lab 400,"Coffey, Duncan",3,O,3/30/2022,11:30AM - 11:40AM
-Lab 400,"Kazazian, Haig",3,C,3/30/2022,11:30AM - 11:40AM
-Lab 400,"Brown, Bryson",3,O,3/30/2022,11:30AM - 11:40AM
-Lab 400,"Xu, Zoe",3,D,3/30/2022,11:30AM - 11:40AM
-Lab 400,"Hassell, Miles",4,O,4/6/2022,3:00PM - 3:10PM
-Lab 400,"Eubanks, Miles",4,D,4/6/2022,3:00PM - 3:10PM
-Lab 400,"Callihan, Lindsay",4,C,4/6/2022,3:00PM - 3:10PM
-Lab 400,"Dean, Tyler",4,O,4/6/2022,3:00PM - 3:10PM
-Lab 400,"Hwang, Jack",4,I,4/6/2022,3:00PM - 3:10PM
-Lab 400,"Coleman, Rachel",5,I,3/25/2022,9:00AM - 9:10AM
-Lab 400,"Chung, Shen",5,D,3/25/2022,9:00AM - 9:10AM
-Lab 400,"Boyd, Hunter",5,O,3/25/2022,9:00AM - 9:10AM
-Lab 400,"Walker, Max",5,O,3/25/2022,9:00AM - 9:10AM
-Lab 400,"Duffy, Madison",5,C,3/25/2022,9:00AM - 9:10AM
-Lab 400,"Brain, Irena",6,I,4/1/2022,1:15PM - 1:25PM
-Lab 400,"Boudreau, Katherine",6,I,4/1/2022,1:15PM - 1:25PM
-Lab 400,"Liu, Andy",6,D,4/1/2022,1:15PM - 1:25PM
-Lab 400,"Yu, Junyan",6,O,4/1/2022,1:15PM - 1:25PM
-Lab 400,"Willse, Jada",6,C,4/1/2022,1:15PM - 1:25PM
-Lab 400,"Srebnik, Emma Rudy",6,O,4/1/2022,1:15PM - 1:25PM
-Lab 401,"Lan, Kaiwen",7,I,4/15/2022,1:00PM - 1:10PM
-Lab 401,"Binley, Dylan",7,C,4/15/2022,1:00PM - 1:10PM
-Lab 401,"Arora, Manas",7,O,4/15/2022,1:00PM - 1:10PM
-Lab 401,"Chen, Andy",7,O,4/15/2022,1:00PM - 1:10PM
-Lab 401,"Jimenez-Lemus, Uriel",7,D,4/15/2022,1:00PM - 1:10PM
-Lab 401,"Wang, Vivi",8,I,3/30/2022,10:15AM - 10:25AM
-Lab 401,"Buchner, Bradley",8,I,3/30/2022,10:15AM - 10:25AM
-Lab 401,"Ross, Alex",8,O,3/30/2022,10:15AM - 10:25AM
-Lab 401,"Gasia, Carter",8,O,3/30/2022,10:15AM - 10:25AM
-Lab 401,"Do, Linh",8,C,3/30/2022,10:15AM - 10:25AM
-Lab 401,"Nguyen, Anh",8,D,3/30/2022,10:15AM - 10:25AM
-Lab 401,"Yang, Andrew",9,I,4/22/2022,11:30AM - 11:40AM
-Lab 401,"Liu, Shihang",9,D,4/22/2022,11:30AM - 11:40AM
-Lab 401,"De Oliveira, Leonardo",9,O,4/22/2022,11:30AM - 11:40AM
-Lab 401,"Yang, Thea",9,O,4/22/2022,11:30AM - 11:40AM
-Lab 401,"Cooper, Brian",9,C,4/22/2022,11:30AM - 11:40AM
-Lab 401,"Huang, Zeyan",9,I,4/22/2022,11:30AM - 11:40AM
-Lab 402,"Kang, Minsoo",10,D,4/6/2022,1:30PM - 1:40PM
-Lab 402,"Low, Simon",10,O,4/6/2022,1:30PM - 1:40PM
-Lab 402,"Brown, Hannah",10,O,4/6/2022,1:30PM - 1:40PM
-Lab 402,"Wang, Kiki",10,C,4/6/2022,1:30PM - 1:40PM
-Lab 402,"Winborne, Paul",10,I,4/6/2022,1:30PM - 1:40PM
-Lab 402,"Miller, Eric",11,I,3/30/2022,11:00AM - 11:10AM
-Lab 402,"Wood, Ethan",11,D,3/30/2022,11:00AM - 11:10AM
-Lab 402,"Westmoreland, Kara",11,O,3/30/2022,11:00AM - 11:10AM
-Lab 402,"Kasuganti, Sarika",11,O,3/30/2022,11:00AM - 11:10AM
-Lab 402,"Sun, Mingling",11,C,3/30/2022,11:00AM - 11:10AM
-Lab 402,"Dickinson, John",12,I,4/1/2022,12:20PM - 12:30PM
-Lab 402,"Yao, Yudi",12,D,4/1/2022,12:20PM - 12:30PM
-Lab 402,"Almodovar, Fabian",12,O,4/1/2022,12:20PM - 12:30PM
-Lab 402,"Helms, Ryan",12,O,4/1/2022,12:20PM - 12:30PM
-Lab 402,"Thomas, Athena",12,C,4/1/2022,12:20PM - 12:30PM
-Lab 402,"Rao, Arya",13,I,4/15/2022,10:30AM - 10:40AM
-Lab 402,"Yang, Yuan",13,D,4/15/2022,10:30AM - 10:40AM
-Lab 402,"Gill, Keerthan",13,C,4/15/2022,10:30AM - 10:40AM
-Lab 402,"Vora, Rohan",13,O,4/15/2022,10:30AM - 10:40AM
-Lab 402,"Selle, John",13,O,4/15/2022,10:30AM - 10:40AM
-Lab 402,"Kacvinsky, Matt",14,I,3/30/2022,1:30PM - 1:40PM
-Lab 402,"Wall, Avery",14,D,3/30/2022,1:30PM - 1:40PM
-Lab 402,"Mankad, Akshay",14,O,3/30/2022,1:30PM - 1:40PM
-Lab 402,"Sigafose, Sig",14,C,3/30/2022,1:30PM - 1:40PM
-Lab 402,"Stringer, Wilson",14,O,3/30/2022,1:30PM - 1:40PM
-Lab 402,"Bryant, Isaac",14,I,3/30/2022,1:30PM - 1:40PM
-Lab 403,"Santana-Garcia, Daniel",15,O,3/23/2022,1:30PM - 1:40PM
-Lab 403,"Ye, Tianrui",15,I,3/23/2022,1:30PM - 1:40PM
-Lab 403,"Malone, Elizabeth",15,O,3/23/2022,1:30PM - 1:40PM
-Lab 403,"Cao, Zhi",15,D,3/23/2022,1:30PM - 1:40PM
-Lab 403,"Gandhi, Kavish",15,I,3/23/2022,1:30PM - 1:40PM
-Lab 403,"Garg, Ananya",15,C,3/23/2022,1:30PM - 1:40PM
-Lab 403,"Almvide Lundberg, David",16,I,4/21/2022,12:00PM - 12:10PM
-Lab 403,"Mahavadi, Soumya",16,I,4/21/2022,12:00PM - 12:10PM
-Lab 403,"Murali, Anita",16,D,4/21/2022,12:00PM - 12:10PM
-Lab 403,"Lindogan, Peyton",16,O,4/21/2022,12:00PM - 12:10PM
-Lab 403,"Pai, Shefali",16,O,4/21/2022,12:00PM - 12:10PM
-Lab 403,"Brooks, Sarah",16,C,4/21/2022,12:00PM - 12:10PM
-Lab 403,"Hu, Wenqiong",17,O,3/28/2022,1:15PM - 1:25PM
-Lab 403,"Fan, Yiyang",17,I,3/28/2022,1:15PM - 1:25PM
-Lab 403,"Zhang, Zihan",17,I,3/28/2022,1:15PM - 1:25PM
-Lab 403,"Straight, Julia",17,D,3/28/2022,1:15PM - 1:25PM
-Lab 403,"Burroughs, Joseph",17,C,3/28/2022,1:15PM - 1:25PM
-Lab 403,"Sudhini, Rindha",17,O,3/28/2022,1:15PM - 1:25PM
-Lab 403,"Groce, Carson",18,D,3/30/2022,11:15AM - 11:25AM
-Lab 403,"Sridhar, Koushik",18,I,3/30/2022,11:15AM - 11:25AM
-Lab 403,"Steiner, Annabel",18,O,3/30/2022,11:15AM - 11:25AM
-Lab 403,"Hyde, John",18,I,3/30/2022,11:15AM - 11:25AM
-Lab 403,"Barrow, Julia",18,O,3/30/2022,11:15AM - 11:25AM
-Lab 403,"Shi, Yujia",18,C,3/30/2022,11:15AM - 11:25AM
+Lab,Last Name,First Name,Group,Role,Proposal Date,Proposal Time
+Lab 400,Pignone,Kevin,1,,,
+Lab 400,Fu,Ganrong,1,,,
+Lab 400,Cheng,Amy,1,,,
+Lab 400,Lin,Jenny,1,,,
+Lab 400,Wu,Chengting,1,,,
+Lab 400,Chaudhary,Sanjana,2,,,
+Lab 400,Hua,Chen,2,,,
+Lab 400,Graham,Kaden,2,,,
+Lab 400,Furbee,Abrah,2,,,
+Lab 400,Munagala,Yeshashvi,2,,,
+Lab 400,Howard,Christopher,3,,,
+Lab 400,Wang,Xi,3,,,
+Lab 400,Wu,Jiazhen,3,,,
+Lab 400,Zhang,Yuchuan,3,,,
+Lab 400,Divi,Varun,3,,,
+Lab 401,Wang,David,4,,,
+Lab 401,Harris,Courtney,4,,,
+Lab 401,Cicale,Austin,4,,,
+Lab 401,Wang,Ivy,4,,,
+Lab 401,Laughon,Christopher,5,,,
+Lab 401,Raymer,Mason,5,,,
+Lab 401,Tandri,Manasa,5,,,
+Lab 401,Smith,Wesley,5,,,
+Lab 401,Fleischer,William,6,,,
+Lab 401,Sage,William,6,,,
+Lab 401,Feng,Chuxuan,6,,,
+Lab 401,Du,Xi,6,,,
+Lab 401,Harding,Jeffrey,6,,,

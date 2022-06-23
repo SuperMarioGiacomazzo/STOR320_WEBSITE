@@ -160,7 +160,7 @@ All HW, Lab, and Analysis assignments are to be submitted via **[Sakai](https://
 
 # **Final Project Details**
 
-For the final project, each section of STOR 320 will be divided (ideally) into research groups of size 5 or 6. To ensure fairness, students will be assigned randomly based on the `sample` function in **R**. If you don't get in a group you like, try being better at luck.
+For the final project, each section of STOR 320 will be divided (ideally) into research groups of size 4 or 5. To ensure fairness, students will be assigned randomly based on the `sample` function in **R**. If you don't get in a group you like, try being better at luck.
 
 ## Group Assignments
 
@@ -168,12 +168,12 @@ For the final project, each section of STOR 320 will be divided (ideally) into r
 library(DT)
 library(tidyverse)
 
-# setwd("D:/Mario Documents/UNC/STOR 320/STOR320_WEBSITE/Group Assignments")
-# 
-# Groups=read.csv(file="STOR320.001 Group Assignments - 2.csv")
-# 
-# datatable(Groups,class="display",options = list(scrollX=F,
-#             columnDefs = list(list(className = 'dt-center', targets = 0:5))),rownames=F)
+setwd("D:/Mario Documents/UNC/STOR 320/STOR320_WEBSITE/Group Assignments")
+
+Groups=read.csv(file="STOR320.001 Group Assignments - 2.csv")
+
+datatable(Groups,class="display",options = list(scrollX=F,
+             columnDefs = list(list(className = 'dt-center', targets = 0:5))),rownames=F)
 ```
 
 ## Four Roles
