@@ -106,8 +106,8 @@ This course is an application-driven introduction to data science. Statistical a
 || [Data Transformation IV](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4f5c9047-bfd7-4193-8b53-aebc016778f8) | [Slides](Lecture/Data Transformation 4/Data_Transformation_4_Lecture.pdf)||
 |June 23| [Exploratory Data Analysis I](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=fd2e0e36-22e9-4a17-a3b0-aebd015f124c)  | [Slides](Lecture/Exploratory Data Analysis 1/Exploratory_Data_Analysis_1_Lecture.pdf) ||
 || [Exploratory Data Analysis II](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=fd2e0e36-22e9-4a17-a3b0-aebd015f124c) |[Slides](Lecture/Exploratory Data Analysis 2/Exploratory_Data_Analysis_2_Lecture.pdf)||
-|June 27| Final Project I | [Slides](Lecture/Final Project 1/Final_Project_1_Lecture.pdf)||
-|| Data Import | [Slides](Lecture/Data Import/Data_Import_Lecture.pdf)||
+|June 27| [Final Project I](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e736e269-1a81-4bd7-a3da-aec101673715) | [Slides](Lecture/Final Project 1/Final_Project_1_Lecture.pdf)||
+|| [Data Import](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e736e269-1a81-4bd7-a3da-aec101673715) | [Slides](Lecture/Data Import/Data_Import_Lecture.pdf)||
 |June 28| Tidy Data 1 | [Slides](Lecture/Tidy Data 1/Tidy_Data_1_Lecture.pdf) ||
 || Tidy Data 2 | [Slides](Lecture/Tidy Data 2/Tidy_Data_2_Lecture.pdf) ||
 |June 29| Web Scraping I | [Slides](Lecture/Web Scraping 1/Web_Scraping_1_Lecture.pdf) | [Preview](Supplement/Web Scraping 1/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Web%20Scraping%201/Supplement.zip)) |
