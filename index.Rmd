@@ -214,7 +214,7 @@ This final project will be divided into four parts worth a total of 100 points. 
 
 | Part | Description |Method of Submission| Involvement Survey |Due Date (Time) |
 |------|-------------|-------------------|-------------------|----------------:|
-| P1  | Project Proposal| Zoom + Sakai | [Survey 1](https://docs.google.com/forms/d/e/1FAIpQLScslh7rwnjd2VZ99VH66_4PJM7c8oJ_4olJt7-34hRW82Nq2A/viewform?usp=sf_link) |June 30 (11:59PM)|
+| P1  | Project Proposal| Zoom + Sakai | [Survey 1](https://docs.google.com/forms/d/e/1FAIpQLScslh7rwnjd2VZ99VH66_4PJM7c8oJ_4olJt7-34hRW82Nq2A/viewform?usp=sf_link) |June 30 (11:55PM)|
 | P2  | Exploratory Data Analysis | Zoom + Sakai | [Survey 2](https://docs.google.com/forms/d/e/1FAIpQLScY8EYu2GtgiHcbP3kVHGosSCx89rIc76WgW_Tx950HMzLM8g/viewform?usp=sf_link) |July 14 (11:55PM)|
 | P3  | Final Written Paper|Sakai| [Survey 3](https://docs.google.com/forms/d/e/1FAIpQLSdQMrAQV_pjERKMsV3mXyC4unrdrlfFVQ_MYWhKma7rP1yo1A/viewform?usp=sf_link) |July 21 (11:55PM)|
 | P4  | Final Presentation |Sakai + Class| [Survey 4](https://docs.google.com/forms/d/e/1FAIpQLSdTW_KLZWWWVpNWVudyXXwkQztOUJmZdlcFtJZovoTzRwfwLw/viewform?usp=sf_link) | July 26 (3:00PM) |
