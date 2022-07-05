@@ -112,8 +112,8 @@ This course is an application-driven introduction to data science. Statistical a
 || [Tidy Data 2](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c816b220-16c7-4235-b1be-aec20153e26d) | [Slides](Lecture/Tidy Data 2/Tidy_Data_2_Lecture.pdf) ||
 |June 29| [Web Scraping I](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6431e78a-d7d1-49c5-aa32-aec3016accae) | [Slides](Lecture/Web Scraping 1/Web_Scraping_1_Lecture.pdf) | [Preview](Supplement/Web Scraping 1/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Web%20Scraping%201/Supplement.zip)) |
 || [Web Scraping II](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6431e78a-d7d1-49c5-aa32-aec3016accae) | [Slides](Lecture/Web Scraping 2/Web_Scraping_2_Lecture.pdf) | [Preview](Supplement/Web Scraping 2/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Web%20Scraping%202/Supplement.zip)) |
-|June 30| [Joins I]() | [Slides](Lecture/Joins 1/Joins_1_Lecture.pdf) ||
-|| [Joins II]() | [Slides](Lecture/Joins 2/Joins_2_Lecture.pdf) ||
+|June 30| [Joins I](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3148a9d0-5cd6-40b1-a656-aec40164053d) | [Slides](Lecture/Joins 1/Joins_1_Lecture.pdf) ||
+|| [Joins II](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3148a9d0-5cd6-40b1-a656-aec40164053d) | [Slides](Lecture/Joins 2/Joins_2_Lecture.pdf) ||
 |July 4| Fireworks Day |||
 |July 5| Final Project II | [Slides](Lecture/Final Project 2/Final_Project_2_Lecture.pdf) ||
 || Factors | [Slides](Lecture/Factors/Factors_Lecture.pdf) ||
