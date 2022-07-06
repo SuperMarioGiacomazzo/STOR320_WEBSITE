@@ -153,7 +153,7 @@ All HW, Lab, and Analysis assignments are to be submitted via **[Sakai](https://
 | July 11  | |[HW6](Homework/HW 6/HW-6.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%206/HW%206.zip))       |        |    July 13 (5:00 PM)     |
 | July 13  | |[HW7](Homework/HW 7/HW-7.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%207/HW%207.zip))       |                   |   July 15 (5:00 PM)     |
 | July 15  | L4|       |       |     July 15 (11:55 PM)     |
-| July 15  |   |   | [A4]()([.zip]())          |   July 20  (5:00 PM)     |
+| July 15  |   |   | [A4](Analysis/Analysis 4/Analysis-4.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Analysis/Analysis%204/Analysis%204.zip))          |   July 20  (5:00 PM)     |
 |          |   |     |             |           |
 
 
