@@ -115,13 +115,14 @@ This course is an application-driven introduction to data science. Statistical a
 |June 30| [Joins I](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3148a9d0-5cd6-40b1-a656-aec40164053d) | [Slides](Lecture/Joins 1/Joins_1_Lecture.pdf) ||
 || [Joins II](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3148a9d0-5cd6-40b1-a656-aec40164053d) | [Slides](Lecture/Joins 2/Joins_2_Lecture.pdf) ||
 |July 4| Fireworks Day |||
-|July 5| Final Project II | [Slides](Lecture/Final Project 2/Final_Project_2_Lecture.pdf) ||
-|| Factors | [Slides](Lecture/Factors/Factors_Lecture.pdf) ||
-|July 6| Programming I | [Slides](Lecture/Programming 1/Programming_1_Lecture.pdf) | [Preview](Supplement/Programming 1/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Programming%201/Supplement.zip))  |
-|| Programming II | [Slides](Lecture/Programming 2/Programming_2_Lecture.pdf) | [Preview](Supplement/Programming 2/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Programming%202/Supplement.zip)) |
-|July 7| Programming III | [Slides](Lecture/Programming 3/Programming_3_Lecture.pdf) ||
-|| Modeling 1 | [Slides](Lecture/Modeling 1/Modeling_1_Lecture.pdf) ||
-|July 11| Modeling 2 | [Slides](Lecture/Modeling 2/Modeling_2_Lecture.pdf) | [Preview](Supplement/Modeling 2/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%202/Supplement.zip)) |
+|July 5| [Final Project II](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e53f3c1c-0eb3-407f-b7a8-aec90165189d) | [Slides](Lecture/Final Project 2/Final_Project_2_Lecture.pdf) ||
+|| [Factors](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e53f3c1c-0eb3-407f-b7a8-aec90165189d) | [Slides](Lecture/Factors/Factors_Lecture.pdf) ||
+|July 6| Factors (Cont.) | [Slides](Lecture/Factors/Factors_Lecture.pdf) ||
+|| Programming I | [Slides](Lecture/Programming 1/Programming_1_Lecture.pdf) | [Preview](Supplement/Programming 1/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Programming%201/Supplement.zip))  |
+|July 7| Programming II | [Slides](Lecture/Programming 2/Programming_2_Lecture.pdf) | [Preview](Supplement/Programming 2/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Programming%202/Supplement.zip)) |
+|| Programming III | [Slides](Lecture/Programming 3/Programming_3_Lecture.pdf) ||
+|July 11| Modeling 1 | [Slides](Lecture/Modeling 1/Modeling_1_Lecture.pdf) ||
+|| Modeling 2 | [Slides](Lecture/Modeling 2/Modeling_2_Lecture.pdf) | [Preview](Supplement/Modeling 2/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%202/Supplement.zip)) |
 |July 12| Modeling 3 | [Slides](Lecture/Modeling 3/Modeling_3_Lecture.pdf) | [Preview](Supplement/Modeling 3/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%203/Supplement.zip)) |
 |July 13| Modeling 4 | [Slides](Lecture/Modeling 4/Modeling_4_Lecture.pdf) | [Preview](Supplement/Modeling 4/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%204/Supplement.zip)) |
 |July 14| Modeling 5 | [Slides](Lecture/Modeling 5/Modeling_5_Lecture.pdf) ||
@@ -148,7 +149,7 @@ All HW, Lab, and Analysis assignments are to be submitted via **[Sakai](https://
 | July 1  | | | [A2](Analysis/Analysis 2/Analysis-2.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Analysis/Analysis%202/Analysis%202.zip))        |    July 6 (5:00 PM)     |
 | July 6  | |[HW5](Homework/HW 5/HW-5.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%205/HW%205.zip))       |       |    July 8 (5:00 PM)     |
 | July 8  | L3|       |       |     July 8 (11:55 PM)     |
-| July 8  | | | [A3]()([.zip]())                  |   July 11 (5:00 PM)     |
+| July 8  | | | [A3](Analysis/Analysis 3/Analysis-3.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Analysis/Analysis%203/Analysis%203.zip))                  |   July 11 (5:00 PM)     |
 | July 11  | |[HW6](Homework/HW 6/HW-6.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%206/HW%206.zip))       |        |    July 13 (5:00 PM)     |
 | July 13  | |[HW7](Homework/HW 7/HW-7.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%207/HW%207.zip))       |                   |   July 15 (5:00 PM)     |
 | July 15  | L4|       |       |     July 15 (11:55 PM)     |
