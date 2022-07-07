@@ -117,8 +117,8 @@ This course is an application-driven introduction to data science. Statistical a
 |July 4| Fireworks Day |||
 |July 5| [Final Project II](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e53f3c1c-0eb3-407f-b7a8-aec90165189d) | [Slides](Lecture/Final Project 2/Final_Project_2_Lecture.pdf) ||
 || [Factors](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e53f3c1c-0eb3-407f-b7a8-aec90165189d) | [Slides](Lecture/Factors/Factors_Lecture.pdf) ||
-|July 6| Factors (Cont.) | [Slides](Lecture/Factors/Factors_Lecture.pdf) ||
-|| Programming I | [Slides](Lecture/Programming 1/Programming_1_Lecture.pdf) | [Preview](Supplement/Programming 1/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Programming%201/Supplement.zip))  |
+|July 6| [Factors (Cont.)](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=222796af-cb26-4564-992c-aeca0164adbb) | [Slides](Lecture/Factors/Factors_Lecture.pdf) ||
+|| [Programming I](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=222796af-cb26-4564-992c-aeca0164adbb) | [Slides](Lecture/Programming 1/Programming_1_Lecture.pdf) | [Preview](Supplement/Programming 1/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Programming%201/Supplement.zip))  |
 |July 7| Programming II | [Slides](Lecture/Programming 2/Programming_2_Lecture.pdf) | [Preview](Supplement/Programming 2/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Programming%202/Supplement.zip)) |
 || Programming III | [Slides](Lecture/Programming 3/Programming_3_Lecture.pdf) ||
 |July 11| Modeling 1 | [Slides](Lecture/Modeling 1/Modeling_1_Lecture.pdf) ||

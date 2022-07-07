@@ -1,28 +1,28 @@
-Lab,Last Name,First Name,Group,Role,Proposal Date,Proposal Time
-Lab 400,Pignone,Kevin,1,O,5-Jul,2:40PM - 2:45PM
-Lab 400,Fu,Ganrong,1,I,5-Jul,2:40PM - 2:45PM
-Lab 400,Cheng,Amy,1,D,5-Jul,2:40PM - 2:45PM
-Lab 400,Lin,Jenny,1,O,5-Jul,2:40PM - 2:45PM
-Lab 400,Wu,Chengting,1,C,5-Jul,2:40PM - 2:45PM
-Lab 400,Chaudhary,Sanjana,2,O,5-Jul,2:30PM - 2:35PM
-Lab 400,Hua,Chen,2,I,5-Jul,2:30PM - 2:35PM
-Lab 400,Graham,Kaden,2,D,5-Jul,2:30PM - 2:35PM
-Lab 400,Furbee,Abrah,2,C,5-Jul,2:30PM - 2:35PM
-Lab 400,Munagala,Yeshashvi,2,O,5-Jul,2:30PM - 2:35PM
-Lab 400,Howard,Christopher,3,O,5-Jul,2:50PM - 2:55PM
-Lab 400,Wang,Xi,3,C,5-Jul,2:50PM - 2:55PM
-Lab 400,Wu,Jiazhen,3,I,5-Jul,2:50PM - 2:55PM
-Lab 400,Zhang,Yuchuan,3,D,5-Jul,2:50PM - 2:55PM
-Lab 400,Divi,Varun,3,O,5-Jul,2:50PM - 2:55PM
-Lab 401,Wang,David,4,O,1-Jul,2:30PM - 2:35PM
-Lab 401,Harris,Courtney,4,C,1-Jul,2:30PM - 2:35PM
-Lab 401,Cicale,Austin,4,I,1-Jul,2:30PM - 2:35PM
-Lab 401,Wang,Ivy,4,D,1-Jul,2:30PM - 2:35PM
-Lab 401,Laughon,Christopher,5,D,30-Jun,5:00PM - 5:05PM
-Lab 401,Raymer,Mason,5,I,30-Jun,5:00PM - 5:05PM
-Lab 401,Tandri,Manasa,5,C,30-Jun,5:00PM - 5:05PM
-Lab 401,Smith,Wesley,5,O,30-Jun,5:00PM - 5:05PM
-Lab 401,Sage,William,6,D,1-Jul,5:00PM - 5:05PM
-Lab 401,Feng,Chuxuan,6,C,1-Jul,5:00PM - 5:05PM
-Lab 401,Du,Xi,6,I,1-Jul,5:00PM - 5:05PM
-Lab 401,Harding,Jeffrey,6,O,1-Jul,5:00PM - 5:05PM
+Lab,Last Name,First Name,Group,Role,EDA Date,EDA Time
+Lab 400,Pignone,Kevin,1,O,,
+Lab 400,Fu,Ganrong,1,I,,
+Lab 400,Cheng,Amy,1,D,,
+Lab 400,Lin,Jenny,1,O,,
+Lab 400,Wu,Chengting,1,C,,
+Lab 400,Chaudhary,Sanjana,2,O,,
+Lab 400,Hua,Chen,2,I,,
+Lab 400,Graham,Kaden,2,D,,
+Lab 400,Furbee,Abrah,2,C,,
+Lab 400,Munagala,Yeshashvi,2,O,,
+Lab 400,Howard,Christopher,3,O,,
+Lab 400,Wang,Xi,3,C,,
+Lab 400,Wu,Jiazhen,3,I,,
+Lab 400,Zhang,Yuchuan,3,D,,
+Lab 400,Divi,Varun,3,O,,
+Lab 401,Wang,David,4,O,,
+Lab 401,Harris,Courtney,4,C,,
+Lab 401,Cicale,Austin,4,I,,
+Lab 401,Wang,Ivy,4,D,,
+Lab 401,Laughon,Christopher,5,D,,
+Lab 401,Raymer,Mason,5,I,,
+Lab 401,Tandri,Manasa,5,C,,
+Lab 401,Smith,Wesley,5,O,,
+Lab 401,Sage,William,6,D,,
+Lab 401,Feng,Chuxuan,6,C,,
+Lab 401,Du,Xi,6,I,,
+Lab 401,Harding,Jeffrey,6,O,,

@@ -162,9 +162,7 @@ levels(race.summary$race)
 
 ```{r}
 ggplot(race.summary) + 
-  geom_point(aes(x=avg.tv,y=race),size=4) +
-  xlab("") + ylab("") +
-  theme_minimal()
+  geom_bar(aes(y=avg.tv,x=race),stat="identity",size=4)
 ```
 
 ```{r}

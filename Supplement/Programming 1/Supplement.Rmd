@@ -65,7 +65,8 @@ if(x > 0){
 
 ## Chunk 4: Fixing Potential Problem in Chunk 3
 ```{r,eval=F}
-x=BLANK
+x=-3
+
 if(is.numeric(x)){
   if(x > 0){
     print(log(x))
@@ -94,6 +95,7 @@ print(y2)
 ```
 
 ## Chunk 6: Nested `ifelse()` Statements
+
 ```{r,eval=F}
 x=rnorm(1000,mean=0,sd=1)
 y=ifelse(abs(x)<1,"Within 1 SD",ifelse(abs(x)>2,"Far Far Away","Between 1 and 2 SD"))
@@ -108,7 +110,7 @@ ggplot() +
 ## Chunk 1: Checking Geometric Series Proof with *for* loop
 ```{r,eval = F}
 a=2 #Any Number
-r=0.5 #Any Number Between -1 and 1: abs(r)<1
+r=-0.5 #Any Number Between -1 and 1: abs(r)<1
 
 theoretical.limit=a/(1-r)
 
@@ -143,7 +145,7 @@ print(ABSOLUTE.ERROR)
 ## Chunk 2: Checking Geometric Series Proof with *while* loop
 ```{r,eval=F}
 a=2
-r=2
+r=0.5
 
 FINISH=a
 k=0
