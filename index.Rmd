@@ -121,11 +121,11 @@ This course is an application-driven introduction to data science. Statistical a
 || [Programming I](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=222796af-cb26-4564-992c-aeca0164adbb) | [Slides](Lecture/Programming 1/Programming_1_Lecture.pdf) | [Preview](Supplement/Programming 1/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Programming%201/Supplement.zip))  |
 |July 7| [Programming II](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=bcdec2b3-4159-4f40-9a55-aecb01612183) | [Slides](Lecture/Programming 2/Programming_2_Lecture.pdf) | [Preview](Supplement/Programming 2/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Programming%202/Supplement.zip)) |
 || [Programming III](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=bcdec2b3-4159-4f40-9a55-aecb01612183) | [Slides](Lecture/Programming 3/Programming_3_Lecture.pdf) ||
-|July 11| Programming III (Cont.) | [Slides](Lecture/Programming 3/Programming_3_Lecture.pdf) ||
-|| Modeling 1 | [Slides](Lecture/Modeling 1/Modeling_1_Lecture.pdf) ||
+|July 11| [Programming III (Cont.)](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=1ac6209c-70ae-47ab-bfea-aecf0164cf5c) | [Slides](Lecture/Programming 3/Programming_3_Lecture.pdf) ||
+|| [Modeling 1](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=1ac6209c-70ae-47ab-bfea-aecf0164cf5c) | [Slides](Lecture/Modeling 1/Modeling_1_Lecture.pdf) ||
 |July 12| Modeling 2 | [Slides](Lecture/Modeling 2/Modeling_2_Lecture.pdf) | [Preview](Supplement/Modeling 2/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%202/Supplement.zip)) |
-|| Modeling 3 | [Slides](Lecture/Modeling 3/Modeling_3_Lecture.pdf) | [Preview](Supplement/Modeling 3/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%203/Supplement.zip)) |
-|July 13| Modeling 4 | [Slides](Lecture/Modeling 4/Modeling_4_Lecture.pdf) | [Preview](Supplement/Modeling 4/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%204/Supplement.zip)) |
+|July 13| Modeling 3 | [Slides](Lecture/Modeling 3/Modeling_3_Lecture.pdf) | [Preview](Supplement/Modeling 3/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%203/Supplement.zip)) |
+|| Modeling 4 | [Slides](Lecture/Modeling 4/Modeling_4_Lecture.pdf) | [Preview](Supplement/Modeling 4/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%204/Supplement.zip)) |
 |July 14| Modeling 5 | [Slides](Lecture/Modeling 5/Modeling_5_Lecture.pdf) ||
 |July 18| Modeling 6 | [Slides](Lecture/Modeling 6/Modeling_6_Lecture.pdf) ||
 || Modeling 7 | [Slides](Lecture/Modeling 7/Modeling_7_Lecture.pdf) | [Preview](Supplement/Modeling 7/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%207/Supplement.zip)) |
