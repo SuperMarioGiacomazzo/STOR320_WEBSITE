@@ -36,14 +36,13 @@ ggplot(data=DATA) +
 ## Chunk 2: Location-Specific Relationship
 
 ```{r,echo=F,eval=F}
-Location = 219
+Location = 105
 
 DATA %>% filter(L==Location) %>%
   ggplot()+
     geom_point(aes(x=A,y=W),alpha=0.3)+
     geom_smooth(aes(x=A,y=W)) +
     theme_minimal()
-  
 ```
 
 ## Chunk 3: Split Data into Train and Test Sets
