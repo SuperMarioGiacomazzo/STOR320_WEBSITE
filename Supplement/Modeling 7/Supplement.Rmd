@@ -212,7 +212,7 @@ ggplot(data=tibble(possible.k,accuracy.k)) +
   theme_minimal() +
   xlab("Choice of k") +
   ylab("Percentage of Accurate Predictions") +
-  theme(text=element_text(size=20))
+  theme(text=element_text(size=15))
 ```
 
 ##Chunk 3: Using Optimal $k$-NN for Prediction
