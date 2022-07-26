@@ -66,7 +66,7 @@ This course is an application-driven introduction to data science. Statistical a
 <div class="row">
   <div class="column">
 
-- Instructor: **[Mario Giacomazzo](http://www.supermariogiacomazzo.com/)**
+- Instructor: **[Mario Giacomazzo](https://www.supermariogiacomazzo.com/)**
 
 - Lab Instructors: 
     - **[Wan Zhang](http://stat-or.unc.edu/people/graduate-students-department)**
