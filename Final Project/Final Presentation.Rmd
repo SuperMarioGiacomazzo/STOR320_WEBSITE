@@ -38,7 +38,7 @@ The final presentations will take place on the final exam day as scheduled by th
 # **Rubric**
 
 |Requirement|Points|
-|-------|------:|
+|:-------|------:|
 |Explanation of Question of Interest|3 Points|
 |Explanation of Data|3 Points|
 |Explanation of Methods|3 Points|
