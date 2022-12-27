@@ -66,25 +66,36 @@ This course is an application-driven introduction to data science. Statistical a
 <div class="row">
   <div class="column">
 
-- Instructor: **[Mario Giacomazzo](https://www.supermariogiacomazzo.com/)**
+- Instructor: **[Mario Giacomazzo](http://www.supermariogiacomazzo.com/)**
 
 - Lab Instructors: 
-    - **[Wan Zhang](http://stat-or.unc.edu/people/graduate-students-department)**
-    - **[Hank Flury](http://stat-or.unc.edu/people/graduate-students-department)**
+    - **[Haixu Ma](http://stat-or.unc.edu/people/graduate-students-department)**
+    - **[Ian Ferer](http://stat-or.unc.edu/people/graduate-students-department)**
+    - **[Charles Zhao](http://stat-or.unc.edu/people/graduate-students-department)**
 
-- Course Syllabus: **[Section 1](Syllabi/STOR 320 Section 1 Syllabus.pdf)**
+- Course Syllabus: 
+    - **[Section 1](Syllabi/STOR 320 Section 1 Syllabus.pdf)**: TTh, 2:00PM – 3:15PM, Gardner 105
+    - **[Section 2](Syllabi/STOR 320 Section 2 Syllabus.pdf)**: TTh, 3:30PM – 4:45PM, Gardner 105
 
-- Lab Sections:
-    - 320.400: F, 3PM - 5PM, Hanes Hall 107, Wan
-    - 320.401: F, 3PM - 5PM, Hanes Art Center 116, Henry
+- Lab Sections for Section 1:
+    - 320.400: W, 4:40PM - 5:30PM, Hanes 107, Ian
+    - 320.401: F 4:40PM - 5:30PM, Hanes 107, Ian
+    - 320.402: W, 5:45PM - 6:35PM, Murray G205, Ian
+    - 320.403: F, 2:30PM - 3:20PM, Hamilton 452, Henry
+
+- Lab Sections for Section 2:
+    - 320.404: W, 4:40PM - 5:30PM, Hanes 112, Zichao
+    - 320.405: F, 4:40PM - 5:30PM, Dey 203, Zichao
+    - 320.406: F, 5:45PM - 6:35PM, Dey 203, Zichao
+    - 320.407: W, 2:30PM - 3:20PM, Peabody 2066, Henry
    
 - **[University Approved Absences](https://unc-ch.formstack.com/forms/university_approved_absence_request?sso=5f3154c3179f5)**: Fill out the online form.
 
-- Zoom Links:
-    - **[Lectures:](https://unc.zoom.us/j/95739388906?pwd=bTluWTQ3Y2FRczIrNkJGZlNjYkVLUT09)** M-Th, 3PM - 5PM, (PW: supermario)
-    - **[Mario Office Hours:](https://unc.zoom.us/j/95754222897)** M-F, 30min Before & After Class
-    - **[Wan Office Hours:](https://unc.zoom.us/j/95218285975?pwd=dG1PMDhidFd3WnpyU1dJTXdOVG9aZz09)** M-F, 1PM - 2PM, (PW: 754226)
-    - **[Hank Office Hours:](https://unc.zoom.us/j/95542614777)** M-F, 10AM - 11AM
+- Office Hours and Zoom Links:
+    - **[Dr. Mario:](https://unc.zoom.us/j/98181811021)** M, 8AM - 2PM
+    - **[Ian:](https://unc.zoom.us/j/6062060059)** Th, 11AM - 1PM
+    - **[Hank:](https://unc.zoom.us/j/96051493738)** TTh, 1PM - 2PM
+    - **[Zichao:](https://unc.zoom.us/j/6459419100?pwd=UEtCWjc5WUw1K2N2bUM3cFFJNWlzQT09)** F, 2PM - 4PM, Passcode: Stor 320
 
   </div>
   <div class="column">
@@ -97,86 +108,123 @@ This course is an application-driven introduction to data science. Statistical a
 
 | Date | Lecture | Slides | Supplement |
 |------|---------|--------:|---------:|
-|June 20| [Introduction](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f269fa8c-59a6-4391-8da6-aeba01667749) | [Slides](Lecture/Introduction/Intro_Lecture.pdf)||
-|| [Data Visualization](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f269fa8c-59a6-4391-8da6-aeba01667749) |[Slides](Lecture/Data Visualization/Data_Visualization_Lecture.pdf)|[Preview](Supplement/Data Visualization/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Data%20Visualization/Supplement.zip))|
-|June 21| [Workflow in RMarkdown](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c0672529-7abe-458f-a6cd-aebb015c1c67) | [Slides](Lecture/Workflow/Workflow_Lecture.pdf) ||
-|| [Data Transformation I](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c0672529-7abe-458f-a6cd-aebb015c1c67) | [Slides](Lecture/Data Transformation 1/Data_Transformation_1_Lecture.pdf) ||
-|| [Data Transformation II](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c0672529-7abe-458f-a6cd-aebb015c1c67) | [Slides](Lecture/Data Transformation 2/Data_Transformation_2_Lecture.pdf)||
-|June 22| [Data Transformation III](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4f5c9047-bfd7-4193-8b53-aebc016778f8) | [Slides](Lecture/Data Transformation 3/Data_Transformation_3_Lecture.pdf)||
-|| [Data Transformation IV](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4f5c9047-bfd7-4193-8b53-aebc016778f8) | [Slides](Lecture/Data Transformation 4/Data_Transformation_4_Lecture.pdf)||
-|June 23| [Exploratory Data Analysis I](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=fd2e0e36-22e9-4a17-a3b0-aebd015f124c)  | [Slides](Lecture/Exploratory Data Analysis 1/Exploratory_Data_Analysis_1_Lecture.pdf) ||
-|| [Exploratory Data Analysis II](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=fd2e0e36-22e9-4a17-a3b0-aebd015f124c) |[Slides](Lecture/Exploratory Data Analysis 2/Exploratory_Data_Analysis_2_Lecture.pdf)||
-|June 27| [Final Project I](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e736e269-1a81-4bd7-a3da-aec101673715) | [Slides](Lecture/Final Project 1/Final_Project_1_Lecture.pdf)||
-|| [Data Import](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e736e269-1a81-4bd7-a3da-aec101673715) | [Slides](Lecture/Data Import/Data_Import_Lecture.pdf)||
-|June 28| [Tidy Data 1](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c816b220-16c7-4235-b1be-aec20153e26d) | [Slides](Lecture/Tidy Data 1/Tidy_Data_1_Lecture.pdf) ||
-|| [Tidy Data 2](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c816b220-16c7-4235-b1be-aec20153e26d) | [Slides](Lecture/Tidy Data 2/Tidy_Data_2_Lecture.pdf) ||
-|June 29| [Web Scraping I](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6431e78a-d7d1-49c5-aa32-aec3016accae) | [Slides](Lecture/Web Scraping 1/Web_Scraping_1_Lecture.pdf) | [Preview](Supplement/Web Scraping 1/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Web%20Scraping%201/Supplement.zip)) |
-|| [Web Scraping II](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6431e78a-d7d1-49c5-aa32-aec3016accae) | [Slides](Lecture/Web Scraping 2/Web_Scraping_2_Lecture.pdf) | [Preview](Supplement/Web Scraping 2/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Web%20Scraping%202/Supplement.zip)) |
-|June 30| [Joins I](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3148a9d0-5cd6-40b1-a656-aec40164053d) | [Slides](Lecture/Joins 1/Joins_1_Lecture.pdf) ||
-|| [Joins II](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3148a9d0-5cd6-40b1-a656-aec40164053d) | [Slides](Lecture/Joins 2/Joins_2_Lecture.pdf) ||
-|July 4| Fireworks Day |||
-|July 5| [Final Project II](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e53f3c1c-0eb3-407f-b7a8-aec90165189d) | [Slides](Lecture/Final Project 2/Final_Project_2_Lecture.pdf) ||
-|| [Factors](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e53f3c1c-0eb3-407f-b7a8-aec90165189d) | [Slides](Lecture/Factors/Factors_Lecture.pdf) ||
-|July 6| [Factors (Cont.)](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=222796af-cb26-4564-992c-aeca0164adbb) | [Slides](Lecture/Factors/Factors_Lecture.pdf) ||
-|| [Programming I](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=222796af-cb26-4564-992c-aeca0164adbb) | [Slides](Lecture/Programming 1/Programming_1_Lecture.pdf) | [Preview](Supplement/Programming 1/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Programming%201/Supplement.zip))  |
-|July 7| [Programming II](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=bcdec2b3-4159-4f40-9a55-aecb01612183) | [Slides](Lecture/Programming 2/Programming_2_Lecture.pdf) | [Preview](Supplement/Programming 2/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Programming%202/Supplement.zip)) |
-|| [Programming III](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=bcdec2b3-4159-4f40-9a55-aecb01612183) | [Slides](Lecture/Programming 3/Programming_3_Lecture.pdf) ||
-|July 11| [Programming III (Cont.)](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=1ac6209c-70ae-47ab-bfea-aecf0164cf5c) | [Slides](Lecture/Programming 3/Programming_3_Lecture.pdf) ||
-|| [Modeling 1](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=1ac6209c-70ae-47ab-bfea-aecf0164cf5c) | [Slides](Lecture/Modeling 1/Modeling_1_Lecture.pdf) ||
-|July 12| [Modeling 2](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=7c15d9dd-7dc4-43a3-92be-aed001663573) | [Slides](Lecture/Modeling 2/Modeling_2_Lecture.pdf) | [Preview](Supplement/Modeling 2/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%202/Supplement.zip)) |
-|July 13| [Modeling 3](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=fbd19563-dcd3-41e3-a8ed-aed101653a58) | [Slides](Lecture/Modeling 3/Modeling_3_Lecture.pdf) | [Preview](Supplement/Modeling 3/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%203/Supplement.zip)) |
-|| [Modeling 4](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=fbd19563-dcd3-41e3-a8ed-aed101653a58) | [Slides](Lecture/Modeling 4/Modeling_4_Lecture.pdf) | [Preview](Supplement/Modeling 4/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%204/Supplement.zip)) |
-|July 14| [Modeling 5](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=072ef86f-f210-454f-a281-aed20167a86c) | [Slides](Lecture/Modeling 5/Modeling_5_Lecture.pdf) ||
-|July 18| [Modeling 6](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c0780aea-7d85-4298-9c87-aed601658725) | [Slides](Lecture/Modeling 6/Modeling_6_Lecture.pdf) ||
-|| [Modeling 7](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c0780aea-7d85-4298-9c87-aed601658725) | [Slides](Lecture/Modeling 7/Modeling_7_Lecture.pdf) | [Preview](Supplement/Modeling 7/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%207/Supplement.zip)) |
-|July 19| [Modeling 8](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=7c79206f-0664-474c-9a37-aed70165e394) | [Slides](Lecture/Modeling 8/Modeling_8_Lecture.pdf) | [Preview](Supplement/Modeling 8/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%208/Supplement.zip)) |
-|| [Modeling 9](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=7c79206f-0664-474c-9a37-aed70165e394) | [Slides](Lecture/Modeling 9/Modeling_9_Lecture.pdf) | [Preview](Supplement/Modeling 9/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%209/Supplement.zip)) |
-|July 20| R Shiny | [Slides](Lecture/R Shiny/R_Shiny_Lecture.pdf) | Preview([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/R%20Shiny/Supplement.zip))|
-|July 21| Work On Final Paper |  | |
+|Jan 9| Introduction | [Slides](Lecture/Introduction/Intro_Lecture.pdf)||
+|Jan 11|Data Visualization|[Slides](Lecture/Data Visualization/Data_Visualization_Lecture.pdf)|[Preview](Supplement/Data Visualization/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Data%20Visualization/Supplement.zip))|
+|Jan 13| Workflow in RMarkdown | [Slides](Lecture/Workflow/Workflow_Lecture.pdf) ||
+|Jan 16| Data Transformation I | [Slides](Lecture/Data Transformation 1/Data_Transformation_1_Lecture.pdf) ||
+|Jan 18| [Data Transformation II](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=eeb3862a-4620-4329-9f90-ae210151ed11) | [Slides](Lecture/Data Transformation 2/Data_Transformation_2_Lecture.pdf)||
+|Jan 20| [Data Transformation III](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=29e86eed-823b-45a2-b1eb-ae23013980b6) | [Slides](Lecture/Data Transformation 3/Data_Transformation_3_Lecture.pdf)||
+|| [Data Transformation IV](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=29e86eed-823b-45a2-b1eb-ae23013980b6) | [Slides](Lecture/Data Transformation 4/Data_Transformation_4_Lecture.pdf)||
+|Jan 25| [Exploratory Data Analysis I](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0454cc6d-2269-4480-8e31-ae280138aae5)  | [Slides](Lecture/Exploratory Data Analysis 1/Exploratory_Data_Analysis_1_Lecture.pdf) ||
+|| [Exploratory Data Analysis II](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0454cc6d-2269-4480-8e31-ae280138aae5) |[Slides](Lecture/Exploratory Data Analysis 2/Exploratory_Data_Analysis_2_Lecture.pdf)||
+|Jan 27| [Final Project I](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=420fd93e-ce8f-422f-8eeb-ae2a0138a8ed) | [Slides](Lecture/Final Project 1/Final_Project_1_Lecture.pdf)||
+|| [Data Import](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=420fd93e-ce8f-422f-8eeb-ae2a0138a8ed) | [Slides](Lecture/Data Import/Data_Import_Lecture.pdf)||
+|Feb 1|Work on Proposal| [Zoom Link](https://unc.zoom.us/j/98181811021) ||
+|Feb 3| [Data Import (Cont.)](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4ab19c80-513e-4786-b1e5-ae3101397291) | [Slides](Lecture/Data Import/Data_Import_Lecture.pdf)||
+|| [Tidy Data 1](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4ab19c80-513e-4786-b1e5-ae3101397291) | [Slides](Lecture/Tidy Data 1/Tidy_Data_1_Lecture.pdf) ||
+|Feb 8| [Tidy Data 2](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=ba5bb3ed-5d47-44c6-b5d4-ae36015205ba) | [Slides](Lecture/Tidy Data 2/Tidy_Data_2_Lecture.pdf) ||
+|| [Web Scraping I](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=ba5bb3ed-5d47-44c6-b5d4-ae36015205ba) | [Slides](Lecture/Web Scraping 1/Web_Scraping_1_Lecture.pdf) | [Preview](Supplement/Web Scraping 1/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Web%20Scraping%201/Supplement.zip)) |
+|Feb 10| [Web Scraping II](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0848a774-f138-4ed3-b3aa-ae3801529a5c) | [Slides](Lecture/Web Scraping 2/Web_Scraping_2_Lecture.pdf) | [Preview](Supplement/Web Scraping 2/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Web%20Scraping%202/Supplement.zip)) |
+|Feb 15| [Joins I](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=99d7cb89-8c15-4a1a-ab17-ae3d0139b235) | [Slides](Lecture/Joins 1/Joins_1_Lecture.pdf) ||
+|| [Joins II](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=99d7cb89-8c15-4a1a-ab17-ae3d0139b235) | [Slides](Lecture/Joins 2/Joins_2_Lecture.pdf) ||
+|Feb 17| [Final Project II](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=370393ce-6326-4327-b04d-ae3f0139779f) | [Slides](Lecture/Final Project 2/Final_Project_2_Lecture.pdf) ||
+|Feb 22| [Factors](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2d1b1095-7de6-4bfe-b3a5-ae440139a60f) | [Slides](Lecture/Factors/Factors_Lecture.pdf) ||
+|Feb 24| [Programming I](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=5f316131-4c3c-4a24-9584-ae46013906bf) | [Slides](Lecture/Programming 1/Programming_1_Lecture.pdf) | [Preview](Supplement/Programming 1/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Programming%201/Supplement.zip))  |
+|Mar 1| [Programming II](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b9100e86-01e9-44c5-a604-ae4b013923d2) | [Slides](Lecture/Programming 2/Programming_2_Lecture.pdf) | [Preview](Supplement/Programming 2/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Programming%202/Supplement.zip)) |
+|| [Programming III](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b9100e86-01e9-44c5-a604-ae4b013923d2) | [Slides](Lecture/Programming 3/Programming_3_Lecture.pdf) ||
+|Mar 3| [Modeling 1](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9121aab6-6218-4d9c-b5f4-ae4d0138f7be) | [Slides](Lecture/Modeling 1/Modeling_1_Lecture.pdf) ||
+|Mar 8| [Programming III (Cont.)](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b66c5423-dff1-44d8-b81c-ae52013a386b) | [Slides](Lecture/Programming 3/Programming_3_Lecture.pdf) ||
+|| [Modeling 1 (Cont.)](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b66c5423-dff1-44d8-b81c-ae52013a386b) | [Slides](Lecture/Modeling 1/Modeling_1_Lecture.pdf) ||
+|Mar 10| [Modeling 2](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f20e2410-513c-4cd8-8e54-ae540139946a) | [Slides](Lecture/Modeling 2/Modeling_2_Lecture.pdf) | [Preview](Supplement/Modeling 2/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%202/Supplement.zip)) |
+|March 15|Spring Brizzeak|||
+|March 17|Spring Brizzeak|||
+|Mar 22|Work on EDA|||
+|Mar 24| [Modeling 3](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=03d79cc0-c2a9-45df-87b2-ae620128b8f4) | [Slides](Lecture/Modeling 3/Modeling_3_Lecture.pdf) | [Preview](Supplement/Modeling 3/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%203/Supplement.zip)) |
+|Mar 29| [Modeling 4](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f39039e1-4878-4006-aed1-ae670128a399) | [Slides](Lecture/Modeling 4/Modeling_4_Lecture.pdf) | [Preview](Supplement/Modeling 4/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%204/Supplement.zip)) |
+|| [Modeling 5](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f39039e1-4878-4006-aed1-ae670128a399) | [Slides](Lecture/Modeling 5/Modeling_5_Lecture.pdf) ||
+|Mar 31| [Modeling 5 (Cont.)](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=617d9642-0215-4417-8684-ae690128e058) | [Slides](Lecture/Modeling 5/Modeling_5_Lecture.pdf) ||
+|| [Modeling 6](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=617d9642-0215-4417-8684-ae690128e058) | [Slides](Lecture/Modeling 6/Modeling_6_Lecture.pdf) ||
+|Apr 5| [Modeling 6 (Cont.)](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d96b6d45-3b43-4094-9aac-ae6e0128ba69) | [Slides](Lecture/Modeling 6/Modeling_6_Lecture.pdf) ||
+|| [Modeling 7](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d96b6d45-3b43-4094-9aac-ae6e0128ba69) | [Slides](Lecture/Modeling 7/Modeling_7_Lecture.pdf) | [Preview](Supplement/Modeling 7/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%207/Supplement.zip)) |
+|Apr 7| [Modeling 7 (Cont.)](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f62588ea-3909-4b88-81f4-ae7001297c99) | [Slides](Lecture/Modeling 7/Modeling_7_Lecture.pdf) | [Preview](Supplement/Modeling 7/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%207/Supplement.zip)) |
+|| [Modeling 8](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f62588ea-3909-4b88-81f4-ae7001297c99) | [Slides](Lecture/Modeling 8/Modeling_8_Lecture.pdf) | [Preview](Supplement/Modeling 8/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%208/Supplement.zip)) |
+|Apr 12| COVID |  | |
+|Apr 14| Best Thursday |||
+|Apr 19| [Modeling 9](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=84a2d96a-d5e1-4ea4-948e-ae7c0128f3f0) | [Slides](Lecture/Modeling 9/Modeling_9_Lecture.pdf) | [Preview](Supplement/Modeling 9/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%209/Supplement.zip)) |
+|| [R Shiny](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=84a2d96a-d5e1-4ea4-948e-ae7c0128f3f0) | [Slides](Lecture/R Shiny/R_Shiny_Lecture.pdf) | Preview([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/R%20Shiny/Supplement.zip))|
+|Apr 21| R Shiny (Cont.) | [Slides](Lecture/R Shiny/R_Shiny_Lecture.pdf) | Preview([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/R%20Shiny/Supplement.zip))|
+|| Guest Speaker | | |
+|Apr 26|Work on Final Paper|||
 |||||
 
 # **Assignment Tracker**
 
-All HW, Lab, and Analysis assignments are to be submitted via **[Sakai](https://sakai.unc.edu/welcome/)**. Unzip the folder, open the Rmd file, and submit as HTML. The table below shows all the assignments sorted by Due Date:
+All HW,m Lab, and Analysis assignments are to be submitted via Canvas. Unzip folder and complete your homework using **Rmd** file. The table below shows all the assignments sorted by Due Date
 
 | Assigned | Lab (L) |Homework (HW) | Analysis (A) | Due Date (Time) |
 |----------|:--------:|:--------:|:-------------:|----------------:|
-| June 20  | |[HW1](Homework/HW 1/HW-1.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%201/HW%201.zip))       |       |   June 22 (5:00 PM)     |
-| June 22  | |[HW2](Homework/HW 2/HW-2.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%202/HW%202.zip))       |       |   June 24 (5:00 PM)     |
-| June 24  | L1|       |       |    June 24 (11:55 PM)     |
-| June 24  |      |  | [A1](Analysis/Analysis 1/Analysis-1.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Analysis/Analysis%201/Analysis%201.zip))      |     June 27 (5:00 PM)     |
-| June 27  | |[HW3](Homework/HW 3/HW-3.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%203/HW%203.zip))       |       |    June 29  (5:00 PM)     |
-| June 29 | |[HW4](Homework/HW 4/HW-4.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%204/HW%204.zip))       |                    |   July 1 (5:00 PM)     |
-| July 1  | L2|       |       |     July 1 (11:55 PM)     |
-| July 1  | | | [A2](Analysis/Analysis 2/Analysis-2.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Analysis/Analysis%202/Analysis%202.zip))        |    July 6 (5:00 PM)     |
-| July 6  | |[HW5](Homework/HW 5/HW-5.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%205/HW%205.zip))       |       |    July 8 (5:00 PM)     |
-| July 8  | L3|       |       |     July 8 (11:55 PM)     |
-| July 8  | | | [A3](Analysis/Analysis 3/Analysis-3.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Analysis/Analysis%203/Analysis%203.zip))                  |   July 11 (5:00 PM)     |
-| July 11  | |[HW6](Homework/HW 6/HW-6.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%206/HW%206.zip))       |        |    July 13 (5:00 PM)     |
-| July 13  | |[HW7](Homework/HW 7/HW-7.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%207/HW%207.zip))       |                   |   July 15 (5:00 PM)     |
-| July 15  | L4|       |       |     July 15 (11:55 PM)     |
-| July 15  |   |   | [A4](Analysis/Analysis 4/Analysis-4.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Analysis/Analysis%204/Analysis%204.zip))          |   July 20  (5:00 PM)     |
+| Jan 13  | |[HW1](Homework/HW 1/HW-1.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%201/HW%201.zip))       |       |   Jan 20 (5:00 PM)     |
 |          |   |     |             |           |
+<!-- | Jan 19  | [L1](Lab/Lab 1/Lab-1.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab%201/Lab%201.zip))|       |       |    Jan 26 (2:30 PM)     | -->
+<!-- | Jan 20  | |[HW2](Homework/HW 2/HW-2.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%202/HW%202.zip))       |       |   Jan 27 (5:00 PM)     | -->
+<!-- | Jan 26  | [L2](Lab/Lab 2/Lab-2.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab%202/Lab%202.zip))|       |       |     Feb 2 (2:30 PM)     | -->
+<!-- | Feb 2  | [L3](Lab/Lab 3/Lab-3.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab%203/Lab%203.zip))|       |       |     Feb 9 (2:30 PM)     | -->
+<!-- | Jan 27  |      |  | [A1](Analysis/Analysis 1/Analysis-1.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Analysis/Analysis%201/Analysis%201.zip))      |     Feb 10 (5:00 PM)     | -->
+<!-- | Feb 9  | [L4](Lab/Lab 4/Lab-4.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab%204/Lab%204.zip))|       |       |     Feb 16 (2:30 PM)     | -->
+<!-- | Feb 10  | |[HW3](Homework/HW 3/HW-3.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%203/HW%203.zip))       |       |    Feb 17  (5:00 PM)     | -->
+<!-- | Feb 16  | [L5](Lab/Lab 5/Lab-5.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab%205/Lab%205.zip))|       |       |     Feb 23 (2:30 PM)     | -->
+<!-- | Feb 17 | |[HW4](Homework/HW 4/HW-4.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%204/HW%204.zip))       |                    |   Feb 24 (5:00 PM)     | -->
+<!-- | Feb 23  | [L6](Lab/Lab 6/Lab-6.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab%206/Lab%206.zip))|       |       |     Mar 2 (2:30 PM)     | -->
+<!-- | Mar 2  | [L7](Lab/Lab 7/Lab-7.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab%207/Lab%207.zip))|       |       |     Mar 9 (2:30 PM)     | -->
+<!-- | Feb 24  | | | [A2](Analysis/Analysis 2/Analysis-2.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Analysis/Analysis%202/Analysis%202.zip))        |    Mar 10 (5:00 PM)     | -->
+<!-- | Mar 9  | [L8](Lab/Lab 8/Lab-8.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab%208/Lab%208.zip))|       |       |     Mar 23 (2:30 PM)     | -->
+<!-- | Mar 10  | |[HW5](Homework/HW 5/HW-5.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%205/HW%205.zip))       |       |    Mar 24 (5:00 PM)     | -->
+<!-- | Mar 23  | [L9](Lab/Lab 9/Lab-9.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab%209/Lab%209.zip))|       |       |     Mar 30 (2:30 PM)     | -->
+<!-- | Mar 24  | | | [A3](Analysis/Analysis 3/Analysis-3.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Analysis/Analysis%203/Analysis%203.zip))                  |   Mar 31 (5:00 PM)     | -->
+<!-- | Mar 30  | [L10](Lab/Lab 10/Lab-10.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab%2010/Lab%2010.zip))|       |       |     Apr 6 (2:30 PM)     | -->
+<!-- | Mar 31  | |[HW6](Homework/HW 6/HW-6.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%206/HW%206.zip))       |        |    Apr 7 (5:00 PM)     | -->
+<!-- | Apr 6  | [L11](Lab/Lab 11/Lab-11.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab%2011/Lab%2011.zip))|       |       |     Apr 13 (2:30 PM)     | -->
+<!-- | Apr 7  | |[HW7](Homework/HW 7/HW-7.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%207/HW%207.zip))       |                   |   Apr 18 (5:00 PM)     | -->
+<!-- | Apr 14  |   |   | [A4](Analysis/Analysis 4/Analysis-4.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Analysis/Analysis%204/Analysis%204.zip))          |   Apr 21 (5:00 PM)     | -->
+<!-- | Apr 20  | [L12](Lab/Lab 12/Lab-12.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab%2012/Lab%2012.zip))|       |       |     Apr 27 (2:30 PM)     | -->
+
 
 
 
 
 # **Final Project Details**
 
-For the final project, each section of STOR 320 will be divided (ideally) into research groups of size 4 or 5. To ensure fairness, students will be assigned randomly based on the `sample` function in **R**. If you don't get in a group you like, try being better at luck.
+For the final project, each section of STOR 320 will be divided (ideally) into research groups of size 5 or 6. To ensure fairness, students will be assigned randomly based on the `sample` function in **R**. If you don't get in a group you like, try being better at luck.
 
-## Group Assignments
+To find your research group, see the tables below:
 
-```{r,echo=F,results="asis",message=FALSE, warning=FALSE}
-library(DT)
-library(tidyverse)
+## Group Assignments for Section 1
 
-setwd("D:/Mario Documents/UNC/STOR 320/STOR320_WEBSITE/Group Assignments")
+```{r,echo=F,results="asis",message=F}
+# library(DT)
+# library(tidyverse)
+# 
+# setwd("D:/Mario Documents/UNC/STOR 320/STOR320_WEBSITE/Group Assignments")
+# 
+# Groups=read.csv(file="STOR320.001 Group Assignments - 2.csv")
+# 
+# datatable(Groups,class="display",options = list(scrollX=F,
+#             columnDefs = list(list(className = 'dt-center', targets = 0:5))),rownames=F)
+```
 
-Groups=read.csv(file="STOR320.001 Group Assignments - 2.csv")
+## Group Assignments for Section 2
 
-datatable(Groups,class="display",options = list(scrollX=F,
-             columnDefs = list(list(className = 'dt-center', targets = 0:5))),rownames=F)
+```{r,echo=F,results="asis",message=F}
+# library(DT)
+# library(tidyverse)
+# 
+# setwd("D:/Mario Documents/UNC/STOR 320/STOR320_WEBSITE/Group Assignments")
+# 
+# Groups=read.csv(file="STOR320.002 Group Assignments - 2.csv")
+# 
+# datatable(Groups,class="display",options = list(scrollX=F,
+#             columnDefs = list(list(className = 'dt-center', targets = 0:5))),rownames=F)
+
 ```
 
 ## Four Roles
@@ -210,17 +258,18 @@ This final project will be divided into four parts worth a total of 100 points. 
 * **[P3: Final Written Paper](Final Project/Final-Paper.html)** *(40 Points)*
     + [Template](Final Project/Final-Paper-Template.html)([.Rmd](https://drive.google.com/file/d/19oG11IaUnAkPe8BUE7SAXS2BOeVLIZdT/view?usp=sharing))
     
-* **[P4: Final Presentation](Final Project/Final-Presentation.html)** *(30 Points)*
+* **[P4: Final Presentation](Final Project/Final_Presentation.html)** *(30 Points)*
 
     
 ## Due Dates of Individual Parts
 
 | Part | Description |Method of Submission| Involvement Survey |Due Date (Time) |
 |------|-------------|-------------------|-------------------|----------------:|
-| P1  | Project Proposal| Zoom + Sakai | [Survey 1](https://docs.google.com/forms/d/e/1FAIpQLScslh7rwnjd2VZ99VH66_4PJM7c8oJ_4olJt7-34hRW82Nq2A/viewform?usp=sf_link) |June 30 (11:55PM)|
-| P2  | Exploratory Data Analysis | Zoom + Sakai | [Survey 2](https://docs.google.com/forms/d/e/1FAIpQLScY8EYu2GtgiHcbP3kVHGosSCx89rIc76WgW_Tx950HMzLM8g/viewform?usp=sf_link) |July 14 (11:55PM)|
-| P3  | Final Written Paper|Sakai| [Survey 3](https://docs.google.com/forms/d/e/1FAIpQLSdQMrAQV_pjERKMsV3mXyC4unrdrlfFVQ_MYWhKma7rP1yo1A/viewform?usp=sf_link) |July 22 (11:55PM)|
-| P4  | Final Presentation |Sakai + Class| [Survey 4](https://docs.google.com/forms/d/e/1FAIpQLSdTW_KLZWWWVpNWVudyXXwkQztOUJmZdlcFtJZovoTzRwfwLw/viewform?usp=sf_link) | July 26 (3:00PM) |
+| P1  | Project Proposal| Zoom + Sakai | [Survey 1](https://docs.google.com/forms/d/e/1FAIpQLScslh7rwnjd2VZ99VH66_4PJM7c8oJ_4olJt7-34hRW82Nq2A/viewform?usp=sf_link) |February 10 (11:59PM)|
+| P2  | Exploratory Data Analysis | Zoom + Sakai | [Survey 2](https://docs.google.com/forms/d/e/1FAIpQLScY8EYu2GtgiHcbP3kVHGosSCx89rIc76WgW_Tx950HMzLM8g/viewform?usp=sf_link) |March 24 (11:55PM)|
+| P3  | Final Written Paper|Sakai| [Survey 3](https://docs.google.com/forms/d/e/1FAIpQLSdQMrAQV_pjERKMsV3mXyC4unrdrlfFVQ_MYWhKma7rP1yo1A/viewform?usp=sf_link) |April 26 (11:55PM)|
+| P4  | Final Presentation (Section 1) |Sakai + Class| [Survey 4](https://docs.google.com/forms/d/e/1FAIpQLSdTW_KLZWWWVpNWVudyXXwkQztOUJmZdlcFtJZovoTzRwfwLw/viewform?usp=sf_link) | May 5 (12:00PM) |
+| P4  | Final Presentation (Section 2) |Sakai + Class| [Survey 4](https://docs.google.com/forms/d/e/1FAIpQLSdTW_KLZWWWVpNWVudyXXwkQztOUJmZdlcFtJZovoTzRwfwLw/viewform?usp=sf_link) | April 30 (4:00PM) |
 ||||
 
 ## Above Average Final Projects
@@ -265,7 +314,7 @@ This final project will be divided into four parts worth a total of 100 points. 
 
 - **[Data Wrangling Cheat Sheet](https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf)**
 
-- **[Regular Expressions Cheat Sheet](https://evoldyn.gitlab.io/evomics-2018/ref-sheets/R_strings.pdf)**
+- **[Regular Expressions Cheat Sheet](https://rstudio.com/wp-content/uploads/2016/09/RegExCheatsheet.pdf)**
 
 - **[R Shiny Cheat Sheet](https://shiny.rstudio.com/images/shiny-cheatsheet.pdf)**
 
