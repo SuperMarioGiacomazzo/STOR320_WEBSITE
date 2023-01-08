@@ -94,7 +94,7 @@ This course is an application-driven introduction to data science. Statistical a
 - Office Hours and Zoom Links:
     - **[Dr. Mario:](https://unc.zoom.us/j/91059773107)** TTh, 8AM - 11AM
     - **[Haixu:](https://unc.zoom.us/j/93125427262)** Th, 1:30PM - 2:30PM
-    - **[Ian:]()** TBD
+    - **[Ian:]()** M, 12PM - 1PM
     - **[Charles:](https://unc.zoom.us/j/92632008953)** TW, 4:30PM - 5:30PM
 
   </div>
