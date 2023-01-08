@@ -89,7 +89,7 @@ This course is an application-driven introduction to data science. Statistical a
     - 320-406: T, 8:00AM - 8:50AM, Dey 209, Charles
     - 320-407: Th, 8:00AM - 8:50AM, Alumni 205, Charles
    
-- **[University Approved Absences](https://unc-ch.formstack.com/forms/university_approved_absence_request?sso=5f3154c3179f5)**: Fill out the online form.
+- University Approved Absences: **[Online Form](https://unc-ch.formstack.com/forms/university_approved_absence_request?sso=5f3154c3179f5)**
 
 - Office Hours and Zoom Links:
     - **[Dr. Mario:](https://unc.zoom.us/j/91059773107)** TTh, 8AM - 11AM
