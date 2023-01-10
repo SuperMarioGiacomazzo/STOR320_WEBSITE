@@ -74,8 +74,8 @@ This course is an application-driven introduction to data science. Statistical a
     - **[Charles Zhao](http://stat-or.unc.edu/people/graduate-students-department)**
 
 - Course Syllabus: 
-    - **[Section 1](Syllabi/STOR 320 Section 1 Syllabus.pdf)**: TTh, 9:05AM – 9:55AM, Gardner 105
-    - **[Section 2](Syllabi/STOR 320 Section 2 Syllabus.pdf)**: TTh, 10:10AM – 11:00AM, Gardner 105
+    - **[Section 1](Syllabi/STOR 320 Section 1 Syllabus.pdf)**: MWF, 9:05AM – 9:55AM, Gardner 105
+    - **[Section 2](Syllabi/STOR 320 Section 2 Syllabus.pdf)**: MWF, 10:10AM – 11:00AM, Gardner 105
 
 - Lab Sections for Section 1:
     - 320-400: T, 12:30PM - 1:20PM, Hanes 107, Haixu
