@@ -83,7 +83,7 @@ ggplot(data=msleep2) +
   theme_test()
 ```
 
-## Heatmap Examples (Triple Variables)
+## Heatmap Examples (Three Variables)
 
 ```{r}
 ggplot(data=msleep2,aes(x=vore,y=conservation)) + 
