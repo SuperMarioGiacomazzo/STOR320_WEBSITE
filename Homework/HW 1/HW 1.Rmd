@@ -30,6 +30,7 @@ ggplot(data=mpg)
 I see absolutely nothing. There is just a blank space for a graph. Why am I even doing this nonsense?
 
 ## Exercise 2
+
 ```{r}
 dim(mpg)
 nrow(mpg)
@@ -75,6 +76,7 @@ Scatter plots are not meant to visualize the relationship between two categorica
 # Chapter 1 (Pg. 12)
 
 ##  Exercise 1
+
 ```{r}
 #
 ```
