@@ -165,7 +165,7 @@ All HW,m Lab, and Analysis assignments are to be submitted via Canvas. Unzip fol
 | Assigned | Lab (L) |Homework (HW) | Analysis (A) | Due Date (Time) |
 |----------|:--------:|:--------:|:-------------:|----------------:|
 | Jan 13  | |[HW1](Homework/HW 1/HW-1.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%201/HW%201.zip)) ||   Jan 20 (5:00 PM)     |
-| Jan 17  | [L1]()([.zip]())|       |       |    Jan 24 (8:00 AM)     |
+| Jan 17  | [L1](Lab/Lab 1/Lab-1.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab%201/Lab%201.zip))|       |       |    Jan 24 (8:00 AM)     |
 | Jan 20  | |[HW2](Homework/HW 2/HW-2.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%202/HW%202.zip)) ||   Jan 27 (5:00 PM)     |
 | Jan 24  | [L2]()([.zip]())|       |       |     Jan 31 (8:00 AM)     |
 | Jan 27  |      |  | [A1]()([.zip]())      |     Feb 10 (5:00 PM)     |
