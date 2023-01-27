@@ -11,7 +11,7 @@
 
 <meta name="author" content="FIRSTNAME LASTNAME" />
 
-<meta name="date" content="2022-06-22" />
+<meta name="date" content="2023-01-27" />
 
 <title>Analysis 1: UNC Salaries</title>
 
@@ -300,8 +300,8 @@ pre code {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -309,16 +309,9 @@ pre code {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -365,7 +358,7 @@ pre code {
 
 <h1 class="title toc-ignore">Analysis 1: UNC Salaries</h1>
 <h4 class="author">FIRSTNAME LASTNAME</h4>
-<h4 class="date">June 22, 2022</h4>
+<h4 class="date">January 27, 2023</h4>
 
 </div>
 
@@ -384,7 +377,7 @@ yourself.</strong></p>
 through the assignment. Check all your results in the created HTML
 file.</p>
 <p><strong>Submission:</strong> Submit via an electronic document on
-Sakai. Must be submitted as an HTML file generated in RStudio.</p>
+Canvas. Must be submitted as an HTML file generated in RStudio.</p>
 </div>
 <div id="introduction" class="section level1">
 <h1>Introduction</h1>
@@ -417,7 +410,7 @@ the dataset.</p>
 <p>Next, we will examine the type of data contains in these different
 variables.</p>
 <pre class="r"><code>str(salary,give.attr=F)</code></pre>
-<pre><code>## spec_tbl_df [13,001 x 10] (S3: spec_tbl_df/tbl_df/tbl/data.frame)
+<pre><code>## spc_tbl_ [13,001 × 10] (S3: spec_tbl_df/tbl_df/tbl/data.frame)
 ##  $ University: chr [1:13001] &quot;UNC-CH&quot; &quot;UNC-CH&quot; &quot;UNC-CH&quot; &quot;UNC-CH&quot; ...
 ##  $ Last_Name : chr [1:13001] &quot;Jin&quot; &quot;Tien&quot; &quot;McManus&quot; &quot;Rizvi&quot; ...
 ##  $ First_Name: chr [1:13001] &quot;Guifeng&quot; &quot;Hsiao-Chuan&quot; &quot;James&quot; &quot;Imran&quot; ...
@@ -442,15 +435,16 @@ the modifications made to the original data. The rest of the assignment
 will extend off this modified dataset named <code>salary</code> which by
 now should be in your global environment.</p>
 <pre class="r"><code>head(salary,5)</code></pre>
-<pre><code>## # A tibble: 5 x 10
-##   University Last_Name First_Name  INIT    Age Hire_Date Category         Salary
-##   &lt;chr&gt;      &lt;chr&gt;     &lt;chr&gt;       &lt;chr&gt; &lt;dbl&gt;     &lt;dbl&gt; &lt;chr&gt;             &lt;dbl&gt;
-## 1 UNC-CH     Jin       Guifeng     &lt;NA&gt;     61  19970127 IT Database Pro~ 99998 
-## 2 UNC-CH     Tien      Hsiao-Chuan &lt;NA&gt;     58  20081101 IT Database Pro~ 99998 
-## 3 UNC-CH     McManus   James       M        60  20200113 Research Profes~ 99988 
-## 4 UNC-CH     Rizvi     Imran       &lt;NA&gt;     47  20180701 Assistant Profe~ 99988.
-## 5 UNC-CH     O&#39;HARA    RICHARD     J        53  19931213 Research Profes~ 99975 
-## # ... with 2 more variables: Department &lt;chr&gt;, Title &lt;chr&gt;</code></pre>
+<pre><code>## # A tibble: 5 × 10
+##   University Last_Name First_…¹ INIT    Age Hire_…² Categ…³ Salary Depar…⁴ Title
+##   &lt;chr&gt;      &lt;chr&gt;     &lt;chr&gt;    &lt;chr&gt; &lt;dbl&gt;   &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;
+## 1 UNC-CH     Jin       Guifeng  &lt;NA&gt;     61  2.00e7 IT Dat… 99998  Caroli… Appl…
+## 2 UNC-CH     Tien      Hsiao-C… &lt;NA&gt;     58  2.01e7 IT Dat… 99998  Caroli… Appl…
+## 3 UNC-CH     McManus   James    M        60  2.02e7 Resear… 99988  Renais… Rese…
+## 4 UNC-CH     Rizvi     Imran    &lt;NA&gt;     47  2.02e7 Assist… 99988. Biomed… Assi…
+## 5 UNC-CH     O&#39;HARA    RICHARD  J        53  1.99e7 Resear… 99975  Caroli… Rese…
+## # … with abbreviated variable names ¹​First_Name, ²​Hire_Date, ³​Category,
+## #   ⁴​Department</code></pre>
 </div>
 <div id="assignment" class="section level1">
 <h1>Assignment</h1>
@@ -496,10 +490,10 @@ reports the year of the date that the employee was hired.</p>
 <h3>Q4 <em>(2 points)</em></h3>
 <p>Now, we modify <code>salary4</code>. Create a new variable called
 “YrsEmployed” which reports the number of full years the employee has
-worked at UNC. Use the current year and assume that all employees are
-hired January 1. Create a new dataset named <code>salary5</code> and
-again use <code>str()</code> to display the variables in
-<code>salary5</code>.</p>
+worked at UNC. Assume the current year is 2022 and assume that all
+employees are hired January 1. Create a new dataset named
+<code>salary5</code> and again use <code>str()</code> to display the
+variables in <code>salary5</code>.</p>
 <pre class="r"><code>#</code></pre>
 </div>
 <div id="q5-4-points" class="section level3">

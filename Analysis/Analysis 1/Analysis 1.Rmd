@@ -11,7 +11,7 @@ output: html_document
 
 **Helpful:** Make sure you knit the document as you go through the assignment. Check all your results in the created HTML file.
 
-**Submission:** Submit via an electronic document on Sakai. Must be submitted as an HTML file generated in RStudio. 
+**Submission:** Submit via an electronic document on Canvas. Must be submitted as an HTML file generated in RStudio. 
 
 # Introduction
 
@@ -104,7 +104,7 @@ Now, we modify `salary3`. Create a new variable called "HireYear" that only cont
 
 ### Q4 *(2 points)*
 
-Now, we modify `salary4`. Create a new variable called "YrsEmployed" which reports the number of full years the employee has worked at UNC. Use the current year and assume that all employees are hired January 1. Create a new dataset named `salary5` and again use `str()` to display the variables in `salary5`.
+Now, we modify `salary4`. Create a new variable called "YrsEmployed" which reports the number of full years the employee has worked at UNC. Assume the current year is 2022 and assume that all employees are hired January 1. Create a new dataset named `salary5` and again use `str()` to display the variables in `salary5`.
 
 ```{r}
 #
