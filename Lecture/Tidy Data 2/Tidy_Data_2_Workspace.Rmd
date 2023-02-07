@@ -190,16 +190,18 @@ library(tidyverse)
 Aids=Aids2
 names(Aids)
 
+dplyr::select(Aids, sex, status)
+```
+
+```{r, message=FALSE}
 Aids %>%
   dplyr::select(sex,status) %>%
   group_by(sex,status) %>%
   summarize(count=n()) %>%
-  mutate(prop=count/sum(count)) %>%
-  dplyr::select(-count) %>%
-  spread(key=status,value=prop) 
-
-
+  ungroup() %>%
+  spread(key=status,value=count) 
 ```
+
 
 
 
