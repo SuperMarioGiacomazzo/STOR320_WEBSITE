@@ -202,8 +202,33 @@ Aids %>%
   spread(key=status,value=count) 
 ```
 
+```{r, message=FALSE}
+Aids %>%
+  dplyr::select(sex,status) %>%
+  group_by(sex,status) %>%
+  summarize(count=n()) %>%
+  ungroup() %>%
+  mutate(prop=round(count/sum(count),2)) %>%
+  dplyr::select(-count) %>%
+  spread(key=status,value=prop)
+```
 
+```{r, message=FALSE}
+Aids %>%
+  dplyr::select(sex,status, age) %>%
+  group_by(sex,status) %>%
+  summarize(avg.age=mean(age)) %>%
+  ungroup()
+```
 
+```{r, message=FALSE}
+Aids %>%
+  dplyr::select(sex,status, age) %>%
+  group_by(sex,status) %>%
+  summarize(avg.age=mean(age)) %>%
+  ungroup() %>%
+  spread(key=sex,value=avg.age)
+```
 
 
 

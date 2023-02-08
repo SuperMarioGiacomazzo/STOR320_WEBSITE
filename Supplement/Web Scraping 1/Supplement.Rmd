@@ -64,7 +64,7 @@ str(VIOLENT)
 You probably noticed an issue with the first row. Why do you think this occurred? Carefully, examine the webpage table to identify the cause. Also, we only want the violent crime statistics for each city and state. What columns do we need to keep?
 
 ```{r, eval=F}
-VIOLENT2=VIOLENT[-1,1:8]
+VIOLENT2=VIOLENT[-(1:2),1:8]
 colnames(VIOLENT2)=c("State","City","Population","Total","Murder","Rape","Robbery","Assault")
 str(VIOLENT2)
 ```
@@ -75,12 +75,12 @@ The subheadings in the Wikipedia table create problems when parsed to data frame
 
 ```{r, eval=F}
 VIOLENT3=VIOLENT2 %>%
-            mutate_at(3:8,str_replace_all,pattern=",",replacement="") %>%
+            mutate(Population=str_replace_all(Population,pattern=",",replacement="")) %>%
             mutate_at(3:8,as.numeric)
 str(VIOLENT3)
 ```
 
-## Chunk 4: Identifying Problematic Cases in `City`
+## Chunk 4: Identifying Problematic Cases in `City` and `State`
 
 Using `str_detect()` we can identify cases in `City` where unwanted characters {",","0" to "9"} make an appearance.
 
@@ -103,9 +103,7 @@ VIOLENT5 = VIOLENT4 %>%
               mutate(City=ifelse(City=="Charlotte-Mecklenburg","Charlotte",City))
 
 VIOLENT6 = VIOLENT5 %>%
-              mutate(City=str_replace(City," Metro","")) %>%
-              mutate(State=str_replace(State," U.S. state","")) %>%
-              mutate(State=str_replace(State," state",""))
+              mutate(City=str_replace(City," Metro",""))
 
 write_csv(VIOLENT6,"FINAL_VIOLENT.CSV")
 ```

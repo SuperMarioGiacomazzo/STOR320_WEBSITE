@@ -11,7 +11,7 @@
 
 <meta name="author" content="Mario Giacomazzo" />
 
-<meta name="date" content="2023-02-06" />
+<meta name="date" content="2023-02-07" />
 
 <title>Lecture 13 Workspace</title>
 
@@ -358,7 +358,7 @@ pre code {
 
 <h1 class="title toc-ignore">Lecture 13 Workspace</h1>
 <h4 class="author">Mario Giacomazzo</h4>
-<h4 class="date">February 06, 2023</h4>
+<h4 class="date">February 07, 2023</h4>
 
 </div>
 
@@ -3519,6 +3519,42 @@ names(Aids)</code></pre>
 ##   &lt;fct&gt; &lt;int&gt; &lt;int&gt;
 ## 1 F        36    53
 ## 2 M      1046  1708</code></pre>
+<pre class="r"><code>Aids %&gt;%
+  dplyr::select(sex,status) %&gt;%
+  group_by(sex,status) %&gt;%
+  summarize(count=n()) %&gt;%
+  ungroup() %&gt;%
+  mutate(prop=round(count/sum(count),2)) %&gt;%
+  dplyr::select(-count) %&gt;%
+  spread(key=status,value=prop)</code></pre>
+<pre><code>## # A tibble: 2 × 3
+##   sex       A     D
+##   &lt;fct&gt; &lt;dbl&gt; &lt;dbl&gt;
+## 1 F      0.01  0.02
+## 2 M      0.37  0.6</code></pre>
+<pre class="r"><code>Aids %&gt;%
+  dplyr::select(sex,status, age) %&gt;%
+  group_by(sex,status) %&gt;%
+  summarize(avg.age=mean(age)) %&gt;%
+  ungroup()</code></pre>
+<pre><code>## # A tibble: 4 × 3
+##   sex   status avg.age
+##   &lt;fct&gt; &lt;fct&gt;    &lt;dbl&gt;
+## 1 F     A         32.4
+## 2 F     D         42.2
+## 3 M     A         36.9
+## 4 M     D         37.7</code></pre>
+<pre class="r"><code>Aids %&gt;%
+  dplyr::select(sex,status, age) %&gt;%
+  group_by(sex,status) %&gt;%
+  summarize(avg.age=mean(age)) %&gt;%
+  ungroup() %&gt;%
+  spread(key=sex,value=avg.age)</code></pre>
+<pre><code>## # A tibble: 2 × 3
+##   status     F     M
+##   &lt;fct&gt;  &lt;dbl&gt; &lt;dbl&gt;
+## 1 A       32.4  36.9
+## 2 D       42.2  37.7</code></pre>
 
 
 

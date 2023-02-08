@@ -46,11 +46,11 @@ Lab,Name,Group,Role,Prop Date,Prop Time
 401,"Burhans,Cameron Riley",9,,,
 401,"Song,Ziying",9,,,
 401,"Lillard,Hannah Rachel",9,,,
-402,"Hodge,Matthew",10,,,
-402,"Venkatraman,Aparna",10,,,
-402,"Geier,Charlie",10,,,
-402,"Gupta,Nandini",10,,,
-402,"Hu,Annie",10,,,
+402,"Hodge,Matthew",10,,9-Feb,10:15AM - 10:20AM
+402,"Venkatraman,Aparna",10,,9-Feb,10:15AM - 10:20AM
+402,"Geier,Charlie",10,,9-Feb,10:15AM - 10:20AM
+402,"Gupta,Nandini",10,,9-Feb,10:15AM - 10:20AM
+402,"Hu,Annie",10,C,9-Feb,10:15AM - 10:20AM
 402,"Le,Eric Quoc",11,,,
 402,"Sears,Haley Grace",11,,,
 402,"Parks,Adam Harrison",11,,,
@@ -73,7 +73,7 @@ Lab,Name,Group,Role,Prop Date,Prop Time
 402,"Gall,Melanie F",14,,9-Feb,10:45AM - 10:50AM
 403,"Iyengar,Vikram Vardarajan",15,,,
 403,"Salas Chaves,Joserth Jose",15,,,
-403,"Gududuru,Akshay",15,,,
+403,"Gududuru,Akshay",15,C,,
 403,"Kalidindi,Sai Varma",15,,,
 403,"Lu,Pan",15,,,
 403,"Kern,Nathan Taylor",15,,,
