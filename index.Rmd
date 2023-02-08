@@ -160,7 +160,7 @@ This course is an application-driven introduction to data science. Statistical a
 
 # **Assignment Tracker**
 
-All HW,m Lab, and Analysis assignments are to be submitted via Canvas. Unzip folder and complete your homework using **Rmd** file. The table below shows all the assignments sorted by the date assigned.
+All HW, Lab, and Analysis assignments are to be submitted via Canvas. Unzip folder and complete your homework using **Rmd** file. The table below shows all the assignments sorted by the date assigned.
 
 | Assigned | Lab (L) |Homework (HW) | Analysis (A) | Due Date (Time) |
 |----------|:--------:|:--------:|:-------------:|----------------:|
