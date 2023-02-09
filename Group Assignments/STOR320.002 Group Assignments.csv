@@ -5,12 +5,12 @@ Lab,Name,Group,Role,Prop Date,Prop Time
 404,"Noe,Davis L",1,,16-Feb,10:50AM - 10:55AM
 404,"Robbins,Brennan Paul",1,,16-Feb,10:50AM - 10:55AM
 404,"Thiongo,Sandra Mugure",1,,16-Feb,10:50AM - 10:55AM
-404,"Jouran,Daniel Andre",2,,9-Feb,10:10AM - 10:15AM
-404,"Khan,Hamza Ahmad",2,,9-Feb,10:10AM - 10:15AM
-404,"Laney,Seth Conley",2,,9-Feb,10:10AM - 10:15AM
+404,"Jouran,Daniel Andre",2,O,9-Feb,10:10AM - 10:15AM
+404,"Khan,Hamza Ahmad",2,O,9-Feb,10:10AM - 10:15AM
+404,"Laney,Seth Conley",2,I,9-Feb,10:10AM - 10:15AM
 404,"Lu,Savannah",2,C,9-Feb,10:10AM - 10:15AM
-404,"Townsend Jr,Benjamin Cabell",2,,9-Feb,10:10AM - 10:15AM
-404,"Weber,Gibson Anderson",2,,9-Feb,10:10AM - 10:15AM
+404,"Townsend Jr,Benjamin Cabell",2,D,9-Feb,10:10AM - 10:15AM
+404,"Weber,Gibson Anderson",2,I,9-Feb,10:10AM - 10:15AM
 404,"Boyanapalli,Srinidhi",3,,9-Feb,10:20AM - 10:25AM
 404,"Joshi,Girija Krishna",3,,9-Feb,10:20AM - 10:25AM
 404,"Palle,Neha Pavankumar",3,,9-Feb,10:20AM - 10:25AM
@@ -23,12 +23,12 @@ Lab,Name,Group,Role,Prop Date,Prop Time
 404,"Mcgrew,Owen Sanford",4,,16-Feb,10:30AM - 10:35AM
 404,"Mcsweeney,Loralei Graycen",4,,16-Feb,10:30AM - 10:35AM
 404,"Sholar,Olivia Grace",4,C,16-Feb,10:30AM - 10:35AM
-404,"Ali,Hanan Mohamed",5,,,
-404,"Hicks,Tricia Hope",5,,,
-404,"Pantha,Pranish",5,,,
-404,"Patil,Pooja P",5,,,
-404,"Ravindran,Sanjay",5,,,
-404,"Zhou,Zilu",5,,,
+404,"Ali,Hanan Mohamed",5,,17-Feb,1:35PM - 1:40PM
+404,"Hicks,Tricia Hope",5,,17-Feb,1:35PM - 1:40PM
+404,"Pantha,Pranish",5,,17-Feb,1:35PM - 1:40PM
+404,"Patil,Pooja P",5,C,17-Feb,1:35PM - 1:40PM
+404,"Ravindran,Sanjay",5,,17-Feb,1:35PM - 1:40PM
+404,"Zhou,Zilu",5,,17-Feb,1:35PM - 1:40PM
 405,"Abraham,Nikhil",6,D,7-Feb,10:00AM - 10:05AM
 405,"Bell IV,Robert Edward",6,I,7-Feb,10:00AM - 10:05AM
 405,"Mackay,Colin Alexander",6,O,7-Feb,10:00AM - 10:05AM
@@ -53,9 +53,9 @@ Lab,Name,Group,Role,Prop Date,Prop Time
 405,"Lee,Kunhee",9,,16-Feb,10:55AM -11:00AM
 405,"Toney,Audrey Diana",9,C,16-Feb,10:55AM -11:00AM
 405,"Vandre,Dallin James",9,,16-Feb,10:55AM -11:00AM
-405,"Feng,Susi Liu",10,,,
-405,"Fleming,Elizabeth McHale",10,,,
-405,"Xu,Yixuan",10,,,
+405,"Feng,Susi Liu",10,,9-Feb,10:55AM -11:00AM
+405,"Fleming,Elizabeth McHale",10,,9-Feb,10:55AM -11:00AM
+405,"Xu,Yixuan",10,,9-Feb,10:55AM -11:00AM
 406,"Blackman,Claire M",11,,,
 406,"Fisher,Rachael Paige",11,,,
 406,"Padma,Raghuvara",11,,,
@@ -80,8 +80,8 @@ Lab,Name,Group,Role,Prop Date,Prop Time
 406,"Nash,Sydney Elizabeth",14,C,17-Feb,1:30PM - 1:35PM
 406,"Portugal,Manuel Edward",14,,17-Feb,1:30PM - 1:35PM
 406,"Somana,Sai",14,,17-Feb,1:30PM - 1:35PM
-407,"Lam,Uyen",10,,,
-407,"Wu,Yingxuan",10,,,
+407,"Lam,Uyen",10,C,9-Feb,10:55AM -11:00AM
+407,"Wu,Yingxuan",10,,9-Feb,10:55AM -11:00AM
 407,"Hall,Morgan G",15,,9-Feb,9:05AM - 9:10AM
 407,"Luo,Emma Lynn",15,,9-Feb,9:05AM - 9:10AM
 407,"Ma,Tengcan",15,,9-Feb,9:05AM - 9:10AM
