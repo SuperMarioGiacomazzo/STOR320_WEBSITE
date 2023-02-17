@@ -316,7 +316,7 @@ This final project will be divided into four parts worth a total of 100 points. 
 
 - **[Data Wrangling Cheat Sheet](https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf)**
 
-- **[Regular Expressions Cheat Sheet](https://rstudio.com/wp-content/uploads/2016/09/RegExCheatsheet.pdf)**
+- **[Regular Expressions Cheat Sheet](Cheat Sheet/regex.pdf)**
 
 - **[R Shiny Cheat Sheet](https://shiny.rstudio.com/images/shiny-cheatsheet.pdf)**
 
