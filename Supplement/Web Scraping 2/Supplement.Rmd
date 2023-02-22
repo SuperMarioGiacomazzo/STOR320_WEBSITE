@@ -50,7 +50,6 @@ Recall the Wikipedia page listing the [crime rates](https://en.wikipedia.org/wik
 We start by web scraping the population statistics table into R using functions from `rvest`. Additionally, we only select the variables of certain variables of interest. 
 
 ```{r,eval=F}
-library(xml2)
 URL.US_CENSUS = "http://worldpopulationreview.com/us-cities/"
 US_CENSUS = URL.US_CENSUS %>%
               read_html() %>%

@@ -45,7 +45,7 @@ First, use `geom_bar()` to investigate the distribution of level of experience f
 
 ### 1.2: Use a table to find what is the most common  number of years of experience found in the data (1.5 Points). 
 
-Use `group_by(experience)` along with the pipe `%>%` to output the most common amount of years of experience along with the number of occurrences found in the data. The most common value for years of experience is _____ and occurs _____ times. Fill in the blanks with the correct answers, and change `eval=True` to `eval=False` and print out the output that led you to your answer.
+Use `group_by(experience)` along with the pipe `%>%` to output the most common amount of years of experience along with the number of occurrences found in the data. The most common value for years of experience is _____ and occurs _____ times. Fill in the blanks with the correct answers, and change `eval=FALSE` to `eval=TRUE` and print out the output that led you to your answer.
 
 ```{r,eval = FALSE}
 wage %>%
