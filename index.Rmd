@@ -129,7 +129,8 @@ This course is an application-driven introduction to data science. Statistical a
 |Feb 17| Web Scraping I (Cont.) | [Slides](Lecture/Web Scraping 1/Web_Scraping_1_Lecture.pdf) | [Preview](Supplement/Web Scraping 1/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Web%20Scraping%201/Supplement.zip)) |
 |Feb 20 | Web Scraping II | [Slides](Lecture/Web Scraping 2/Web_Scraping_2_Lecture.pdf) | [Preview](Supplement/Web Scraping 2/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Web%20Scraping%202/Supplement.zip)) |
 |Feb 22| Joins I | [Slides](Lecture/Joins 1/Joins_1_Lecture.pdf) ||
-|Feb 24| Joins II| [Slides](Lecture/Joins 2/Joins_2_Lecture.pdf) ||
+|Feb 24| Joins I (Cont.) | [Slides](Lecture/Joins 1/Joins_1_Lecture.pdf) ||
+|| Joins II| [Slides](Lecture/Joins 2/Joins_2_Lecture.pdf) ||
 |Feb 27| Final Project II | [Slides](Lecture/Final Project 2/Final_Project_2_Lecture.pdf) ||
 |Mar 1| Factors | [Slides](Lecture/Factors/Factors_Lecture.pdf) ||
 |Mar 3| Programming I | [Slides](Lecture/Programming 1/Programming_1_Lecture.pdf) | [Preview](Supplement/Programming 1/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Programming%201/Supplement.zip))  |
