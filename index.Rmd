@@ -133,8 +133,10 @@ This course is an application-driven introduction to data science. Statistical a
 || Joins II| [Slides](Lecture/Joins 2/Joins_2_Lecture.pdf) ||
 |Feb 27| Final Project II | [Slides](Lecture/Final Project 2/Final_Project_2_Lecture.pdf) ||
 |Mar 1| Factors | [Slides](Lecture/Factors/Factors_Lecture.pdf) ||
-|Mar 3| Programming I | [Slides](Lecture/Programming 1/Programming_1_Lecture.pdf) | [Preview](Supplement/Programming 1/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Programming%201/Supplement.zip))  |
-|Mar 6| Programming II | [Slides](Lecture/Programming 2/Programming_2_Lecture.pdf) | [Preview](Supplement/Programming 2/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Programming%202/Supplement.zip)) |
+|Mar 3| Factors (Cont.) | [Slides](Lecture/Factors/Factors_Lecture.pdf) ||
+|| Programming I | [Slides](Lecture/Programming 1/Programming_1_Lecture.pdf) | [Preview](Supplement/Programming 1/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Programming%201/Supplement.zip))  |
+|Mar 6| Programming I (Cont.) | [Slides](Lecture/Programming 1/Programming_1_Lecture.pdf) | [Preview](Supplement/Programming 1/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Programming%201/Supplement.zip))  |
+|| Programming II | [Slides](Lecture/Programming 2/Programming_2_Lecture.pdf) | [Preview](Supplement/Programming 2/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Programming%202/Supplement.zip)) |
 |Mar 8| Programming III | [Slides](Lecture/Programming 3/Programming_3_Lecture.pdf) ||
 |Mar 10| Modeling 1 | [Slides](Lecture/Modeling 1/Modeling_1_Lecture.pdf) ||
 |March 13|Spring Brizzeak||No Labs this Week|
@@ -152,7 +154,7 @@ This course is an application-driven introduction to data science. Statistical a
 |Apr 10| Best Friday ||No Labs This Week|
 |Apr 12| R Shiny | [Slides](Lecture/R Shiny/R_Shiny_Lecture.pdf) | Preview([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/R%20Shiny/Supplement.zip))|
 |Apr 14| Data Ethics | [Slides](Lecture/Data Ethics/Data_Ethics_Lecture.pdf) | [Reading](Lecture/Data Ethics/What_is_data_ethics.pdf) |
-|Apr 17|  | | |
+|Apr 17|Guest: Brian Mabe  | | [UCB](https://www.ucbusamap.com/north-carolina-offices) |
 |Apr 19|  | | |
 |Apr 21|  | | |
 |Apr 24|  | | |
@@ -179,8 +181,8 @@ All HW, Lab, and Analysis assignments are to be submitted via Canvas. Unzip fold
 | Feb 24  | | | [A2](Analysis/Analysis 2/Analysis-2.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Analysis/Analysis%202/Analysis%202.zip))        |    Mar 3 (5:00 PM)     |
 | Feb 28  | [L6](Lab/Lab 6/Lab-6.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab%206/Lab%206.zip))|       |       |     Mar 7 (8:00 AM)     |
 | Mar 3  | |[HW5](Homework/HW 5/HW-5.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%205/HW%205.zip)) | | Mar 10 (5:00 PM)|
-| Mar 7  | [L7]()([.zip]())|       |       |     Mar 21 (8:00 AM)     |
-| Mar 10  | | | [A3]()([.zip]())                  |   Mar 24 (5:00 PM)     |
+| Mar 7  | [L7](Lab/Lab 7/Lab-7.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab%207/Lab%207.zip))|       |       |     Mar 21 (8:00 AM)     |
+| Mar 10  | | | [A3](Analysis/Analysis 3/Analysis-3.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Analysis/Analysis%203/Analysis%203.zip))                  |   Mar 24 (5:00 PM)     |
 | Mar 21  | [L8]()([.zip]())|       |       |     Mar 28 (8:00 AM)     |
 | Mar 24  | |[HW6](Homework/HW 6/HW-6.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%206/HW%206.zip))       |        |    Mar 31 (5:00 PM)     |
 | Mar 28  | [L9]()([.zip]())|       |       |     Apr 11 (8:00 AM)     |

@@ -9,11 +9,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
-<meta name="author" content="Mario Giacomazzo" />
+<meta name="author" content="FIRST_NAME LAST_NAME" />
 
-<meta name="date" content="2023-03-02" />
+<meta name="date" content="2023-03-05" />
 
-<title>Supplement for Programming 1</title>
+<title>Analysis 3: Statistical Programming with Daily Delhi Climate Data</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -356,173 +356,384 @@ pre code {
 
 
 
-<h1 class="title toc-ignore">Supplement for Programming 1</h1>
-<h4 class="author">Mario Giacomazzo</h4>
-<h4 class="date">March 02, 2023</h4>
+<h1 class="title toc-ignore">Analysis 3: Statistical Programming with
+Daily Delhi Climate Data</h1>
+<h4 class="author">FIRST_NAME LAST_NAME</h4>
+<h4 class="date">March 05, 2023</h4>
 
 </div>
 
 
+<div id="instructions" class="section level1">
+<h1>Instructions</h1>
+<p><strong>Overview:</strong> For each question, show your R code that
+you used to answer each question in the provided chunks. When a written
+response is required, be sure to answer the entire question in complete
+sentences outside the code chunks. When figures are required, be sure to
+follow all requirements to receive full credit. Point values are
+assigned for every part of this analysis.</p>
+<p><strong>Helpful:</strong> Make sure you knit the document as you go
+through the assignment. Check all your results in the created HTML
+file.</p>
+<p><strong>Submission:</strong> Submit via an electronic document on
+Canvas. Must be submitted as an HTML file generated in RStudio.</p>
+</div>
 <div id="introduction" class="section level1">
 <h1>Introduction</h1>
-<p>In this tutorial, we will try to understand some fundamental control
-structures used in statistical programming. In the beginning, we will
-separately analyze different control structures. The ultimate goal is to
-combine these methods to solve all our computing and life problems. If
-you can imagine it, R can do it. Programming R is downright magical. If
-Morpheus calls, pick up the phone.</p>
+<p>For this assignment, we will be using daily climate time series data
+in the city of Delhi between 2013 and 2017. This data was found on <a href="https://www.kaggle.com/sumanthvrao/daily-climate-time-series-data">Kaggle</a>
+and was collected from Weather Underground API.</p>
+<p>Below is a preview of the 2 datasets. The tibble named
+<code>DELHI.TRAIN</code> contains daily temperature, humidity, wind
+speed, and pressure measurements from 2013 and 2016. The tibble named
+<code>DELHI.TEST</code> contains the same information for 2017. The
+purpose of the test set is to evaluate our conclusions from analyses
+done on the train set.</p>
+<pre class="r"><code>DELHI.TRAIN=as.tibble(read.csv(&quot;DailyDelhiClimateTrain.csv&quot;))[-1462,]    #DO NOT CHANGE
+DELHI.TEST=as.tibble(read.csv(&quot;DailyDelhiClimateTest.csv&quot;))              #DO NOT CHANGE
+head(DELHI.TRAIN)                                                        #DO NOT CHANGE</code></pre>
+<pre><code>## # A tibble: 6 × 5
+##   date       meantemp humidity wind_speed meanpressure
+##   &lt;chr&gt;         &lt;dbl&gt;    &lt;dbl&gt;      &lt;dbl&gt;        &lt;dbl&gt;
+## 1 2013-01-01    10        84.5       0           1016.
+## 2 2013-01-02     7.4      92         2.98        1018.
+## 3 2013-01-03     7.17     87         4.63        1019.
+## 4 2013-01-04     8.67     71.3       1.23        1017.
+## 5 2013-01-05     6        86.8       3.7         1016.
+## 6 2013-01-06     7        82.8       1.48        1018</code></pre>
+<pre class="r"><code>head(DELHI.TEST)                                                         #DO NOT CHANGE</code></pre>
+<pre><code>## # A tibble: 6 × 5
+##   date       meantemp humidity wind_speed meanpressure
+##   &lt;chr&gt;         &lt;dbl&gt;    &lt;dbl&gt;      &lt;dbl&gt;        &lt;dbl&gt;
+## 1 2017-01-01     15.9     85.9       2.74          59 
+## 2 2017-01-02     18.5     77.2       2.89        1018.
+## 3 2017-01-03     17.1     81.9       4.02        1018.
+## 4 2017-01-04     18.7     70.0       4.54        1016.
+## 5 2017-01-05     18.4     74.9       3.3         1014.
+## 6 2017-01-06     19.3     79.3       8.68        1012.</code></pre>
+<p>Follow the steps to accomplish specific tasks, and do not modify code
+on lines with the comment <code>#DO NOT CHANGE</code>. Add code in R
+code chunks wherever you see <code>COMPLETE</code>. Follow instructions
+in each problem. If I ask you to create a loop, then you must create a
+loop. If I ask you to use if-else, you must use if-else.</p>
 </div>
-<div id="part-1-if-else-statements" class="section level1">
-<h1>Part 1: <em>If-Else</em> Statements</h1>
-<div id="chunk-1-illustration-of-if" class="section level2">
-<h2>Chunk 1: Illustration of <em>If</em></h2>
-<pre class="r"><code>x = 3
-if(x &gt; 0){
-  print(log(x))
-}
+<div id="assignment" class="section level1">
+<h1>Assignment</h1>
+<div id="part-1-cleaning-data" class="section level2">
+<h2>Part 1: Cleaning Data</h2>
+<p>We want to start by cleaning the two datasets.</p>
+<div id="q1-4-points" class="section level3">
+<h3>Q1 <em>(4 Points)</em></h3>
+<p>Observe how the following code applied to DELHI.TRAIN splits the
+<code>date</code> variable into three new variables, changes those
+variables to numeric, and then renames all of the variables.</p>
+<pre class="r"><code>OUT = DELHI.TRAIN %&gt;%                                              #DO NOT CHANGE
+  separate(date,into=c(&quot;Year&quot;,&quot;Month&quot;,&quot;Day&quot;),sep=&quot;-&quot;) %&gt;%          #DO NOT CHANGE
+  mutate_at(1:3,as.numeric) %&gt;%                                    #DO NOT CHANGE
+  rename(&quot;Temperature&quot;=&quot;meantemp&quot;,&quot;Humidity&quot;=&quot;humidity&quot;,           #DO NOT CHANGE
+         &quot;Wind Speed&quot;=&quot;wind_speed&quot;,&quot;Pressure&quot;=&quot;meanpressure&quot;)      #DO NOT CHANGE
 
-x = -3
-if(x &gt; 0){
-  print(log(x))
-}</code></pre>
+head(OUT) #DO NOT CHANGE</code></pre>
+<pre><code>## # A tibble: 6 × 7
+##    Year Month   Day Temperature Humidity `Wind Speed` Pressure
+##   &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;       &lt;dbl&gt;    &lt;dbl&gt;        &lt;dbl&gt;    &lt;dbl&gt;
+## 1  2013     1     1       10        84.5         0       1016.
+## 2  2013     1     2        7.4      92           2.98    1018.
+## 3  2013     1     3        7.17     87           4.63    1019.
+## 4  2013     1     4        8.67     71.3         1.23    1017.
+## 5  2013     1     5        6        86.8         3.7     1016.
+## 6  2013     1     6        7        82.8         1.48    1018</code></pre>
+<p>Create a function named <code>clean.func()</code> that takes one
+argument called “data” and then does everything from the code above. We
+want to generalize the code above so we can run the function on both
+datasets <code>DELHI.TRAIN</code> and <code>DELHI.TEST</code>. We want
+to use this function to modify both original datasets
+<code>DELHI.TRAIN</code> and <code>DELHI.TEST</code> to
+<code>TRAIN.CLEAN</code> and <code>TEST.CLEAN</code>, respectively. We
+can do this since both of the orginal datasets are organized the same
+way and have the same variable names.</p>
+<p>Code and Output:</p>
+<pre class="r"><code>clean.func = function(COMPLETE){                                    
+
+  COMPLETE
+  
+  return(COMPLETE)
+}                                                               
+
+TRAIN.CLEAN=clean.func(DELHI.TRAIN) #DO NOT CHANGE
+TEST.CLEAN=clean.func(DELHI.TEST) #DO NOT CHANGE
+head(TRAIN.CLEAN) #DO NOT CHANGE
+head(TEST.CLEAN) #DO NOT CHANGE</code></pre>
 </div>
-<div id="chunk-2-illustration-of-if-else" class="section level2">
-<h2>Chunk 2: Illustration of <em>If-Else</em></h2>
-<pre class="r"><code>x = 3
-if(x &gt; 0){
-  print(log(x))
-} else{
-  message(&quot;Unable to Take Logarithm&quot;)
-}
+<div id="q2-4-points" class="section level3">
+<h3>Q2 <em>(4 Points)</em></h3>
+<p>In the following code, I create a numeric vector called
+<code>month</code> that contains values 1 for January and 2 for
+February. Observe how the following code rewrites over the original
+numeric vector <code>month</code> to a categorical vector with the names
+of months rather than the original numbers.</p>
+<pre class="r"><code>month=c(1,2,2,1,2,2,1,2,1,2)  #DO NOT CHANGE
 
-x = -3
-if(x &gt; 0){
-  print(log(x))
-} else {
-  message(&quot;Unable to Take Logarithm&quot;)
-}</code></pre>
+if(month[1]==1){          #DO NOT CHANGE
+  month[1]=&quot;January&quot;          #DO NOT CHANGE
+} else if(month[1]==2){       #DO NOT CHANGE
+  month[1]=&quot;February&quot;         #DO NOT CHANGE
+}                         #DO NOT CHANGE
+
+if(month[2]==1){          #DO NOT CHANGE
+  month[2]=&quot;January&quot;          #DO NOT CHANGE
+} else if(month[2]==2){       #DO NOT CHANGE
+  month[2]=&quot;February&quot;         #DO NOT CHANGE
+}                         #DO NOT CHANGE
+
+print(month)                 #DO NOT CHANGE</code></pre>
+<pre><code>##  [1] &quot;January&quot;  &quot;February&quot; &quot;2&quot;        &quot;1&quot;        &quot;2&quot;        &quot;2&quot;       
+##  [7] &quot;1&quot;        &quot;2&quot;        &quot;1&quot;        &quot;2&quot;</code></pre>
+<p>Create a function called <code>month.func</code> that has one
+argument <code>month</code> (this would ideally be a numeric vector with
+discrete values 1 through 12) and rewrites over the initial vector
+<code>month</code> to contain month names from “January” to “December”
+rather than numbers.</p>
+<p>After creating two new datasets identical to the previous datasets,
+we rewrite over the original variables named <code>Month</code> using
+our new function applied to the old variable. The “dollar sign” can be
+used to access variables from datasets and even create new variables
+from datasets.</p>
+<p>Code and Output:</p>
+<pre class="r"><code>month.func = function(month){     
+  
+  COMPLETE
+  
+  return(month)                 
+}                                                               
+
+TRAIN.CLEAN.2=TRAIN.CLEAN #DO NOT CHANGE
+TEST.CLEAN.2=TEST.CLEAN #DO NOT CHANGE
+TRAIN.CLEAN.2$Month=month.func(TRAIN.CLEAN$Month) #DO NOT CHANGE
+TEST.CLEAN.2$Month=month.func(TEST.CLEAN$Month) #DO NOT CHANGE
+unique(TRAIN.CLEAN.2$Month) #DO NOT CHANGE
+unique(TEST.CLEAN.2$Month) #DO NOT CHANGE</code></pre>
 </div>
-<div id="chunk-3-potential-problem-of-if-else-statements" class="section level2">
-<h2>Chunk 3: Potential Problem of <em>If-Else</em> Statements</h2>
-<pre class="r"><code>x = BLANK
-if(x &gt; 0){
-  print(log(x))
-}
+<div id="q3-4-points" class="section level3">
+<h3>Q3 <em>(4 Points)</em></h3>
+<p>Currently, the data is sorted by date starting with January 1, 2013.
+Our goal is to change all of the numeric values for day to “Tuesday”,
+“Wednesday”, Thursday”, etc. Run the following code line-by-line and
+observe how the <code>rep()</code>function works.</p>
+<pre class="r"><code>rep(c(&quot;Bill&quot;,&quot;Ted&quot;),times=5)        #DO NOT CHANGE</code></pre>
+<pre><code>##  [1] &quot;Bill&quot; &quot;Ted&quot;  &quot;Bill&quot; &quot;Ted&quot;  &quot;Bill&quot; &quot;Ted&quot;  &quot;Bill&quot; &quot;Ted&quot;  &quot;Bill&quot; &quot;Ted&quot;</code></pre>
+<pre class="r"><code>rep(c(&quot;Bill&quot;,&quot;Ted&quot;),each=2,times=4) #DO NOT CHANGE</code></pre>
+<pre><code>##  [1] &quot;Bill&quot; &quot;Bill&quot; &quot;Ted&quot;  &quot;Ted&quot;  &quot;Bill&quot; &quot;Bill&quot; &quot;Ted&quot;  &quot;Ted&quot;  &quot;Bill&quot; &quot;Bill&quot;
+## [11] &quot;Ted&quot;  &quot;Ted&quot;  &quot;Bill&quot; &quot;Bill&quot; &quot;Ted&quot;  &quot;Ted&quot;</code></pre>
+<pre class="r"><code>rep(c(&quot;Bill&quot;,&quot;Ted&quot;),length.out=11)  #DO NOT CHANGE</code></pre>
+<pre><code>##  [1] &quot;Bill&quot; &quot;Ted&quot;  &quot;Bill&quot; &quot;Ted&quot;  &quot;Bill&quot; &quot;Ted&quot;  &quot;Bill&quot; &quot;Ted&quot;  &quot;Bill&quot; &quot;Ted&quot; 
+## [11] &quot;Bill&quot;</code></pre>
+<pre class="r"><code>rep(c(&quot;Bill&quot;,&quot;Ted&quot;),length.out=12)  #DO NOT CHANGE</code></pre>
+<pre><code>##  [1] &quot;Bill&quot; &quot;Ted&quot;  &quot;Bill&quot; &quot;Ted&quot;  &quot;Bill&quot; &quot;Ted&quot;  &quot;Bill&quot; &quot;Ted&quot;  &quot;Bill&quot; &quot;Ted&quot; 
+## [11] &quot;Bill&quot; &quot;Ted&quot;</code></pre>
+<p>Now, you must use the <code>rep()</code> function to overwrite the
+<code>Day</code> variable replacing the day of the month with the name
+of the day. For this, it is important to know that the first day in the
+training set is a Tuesday. Assume there are no days missing data between
+the first observation in the training set and the last observation of
+the testing set. Also, notice how the last observation in the training
+set is December 31, 2016, and the first observation in the testing set
+is January 1, 2017. If you don’t use the <code>rep()</code> function you
+will get 0 points.</p>
+<p>Code and Output:</p>
+<pre class="r"><code>TRAIN.CLEAN.3=TRAIN.CLEAN.2 #DO NOT CHANGE
+TEST.CLEAN.3=TEST.CLEAN.2   #DO NOT CHANGE
 
-if(x &gt; 0){
-  print(log(x))
-} else{
-  message(&quot;Unable to Take Logarithm&quot;)
-}</code></pre>
+TRAIN.CLEAN.3$Day = rep(COMPLETE)
+TEST.CLEAN.3$Day  = rep(COMPLETE)
+
+unique(TRAIN.CLEAN.3$Day[c(1,1461)]) #DO NOT CHANGE
+unique(TEST.CLEAN.3$Day[c(1,114)]) #DO NOT CHANGE</code></pre>
 </div>
-<div id="chunk-4-fixing-potential-problem-in-chunk-3" class="section level2">
-<h2>Chunk 4: Fixing Potential Problem in Chunk 3</h2>
-<pre class="r"><code>x=-3
+<div id="q4-4-points" class="section level3">
+<h3>Q4 <em>(4 Points)</em></h3>
+<p>Since this is America, we want to drop that Celsius nonsense like it
+is hot. I want you to create a function called
+<code>cels.2.fahr()</code> that converts a temperature (or vector of
+temperatures) measured in Celsius to the equivalent temperature(s) in
+Fahrenheit. Google the formula necessary for this conversion. I am not
+going to help you with these childish things.</p>
+<p>Code and Output:</p>
+<pre class="r"><code>COMPLETE
 
-if(is.numeric(x)){
-  if(x &gt; 0){
-    print(log(x))
-  } else{
-    message(&quot;Unable to Take Logarithm&quot;)
-  }
-} else{
-  message(&quot;No Strings Attached&quot;)
-}</code></pre>
-</div>
-<div id="chunk-5-vectorized-version-with-ifelse" class="section level2">
-<h2>Chunk 5: Vectorized Version with <code>ifelse()</code></h2>
-<pre class="r"><code>x=c(-1,3,200)
-print(log(x))
-
-y1 =  if(x &gt; 0){
-        log(x)
-      } else{
-        NA
-      }
-print(y1)
-
-y2 = ifelse(x&gt;0,log(x),NA)
-print(y2)</code></pre>
-</div>
-<div id="chunk-6-nested-ifelse-statements" class="section level2">
-<h2>Chunk 6: Nested <code>ifelse()</code> Statements</h2>
-<pre class="r"><code>x=rnorm(1000,mean=0,sd=1)
-y=ifelse(abs(x)&lt;1,&quot;Within 1 SD&quot;,ifelse(abs(x)&gt;2,&quot;Far Far Away&quot;,&quot;Between 1 and 2 SD&quot;))
-y.fct=factor(y,levels=c(&quot;Within 1 SD&quot;,&quot;Between 1 and 2 SD&quot;,&quot;Far Far Away&quot;))
-ggplot() +
-  geom_bar(aes(x=y.fct),fill=&quot;lightskyblue1&quot;) +
-  theme_minimal()</code></pre>
+TRAIN.FINAL=TRAIN.CLEAN.3 #DO NOT CHANGE
+TEST.FINAL=TEST.CLEAN.3   #DO NOT CHANGE
+TRAIN.FINAL$Temperature=cels.2.fahr(TRAIN.CLEAN.3$Temperature) #DO NOT CHANGE
+TEST.FINAL$Temperature=cels.2.fahr(TEST.CLEAN.3$Temperature) #DO NOT CHANGE
+TRAIN.FINAL$Temperature[1:10] #DO NOT CHANGE
+TEST.FINAL$Temperature[1:10] #DO NOT CHANGE</code></pre>
 </div>
 </div>
-<div id="part-2-loops" class="section level1">
-<h1>Part 2: Loops</h1>
-<div id="chunk-1-checking-geometric-series-proof-with-for-loop" class="section level2">
-<h2>Chunk 1: Checking Geometric Series Proof with <em>for</em> loop</h2>
-<pre class="r"><code>a=2 #Any Number
-r=-0.5 #Any Number Between -1 and 1: abs(r)&lt;1
+<div id="part-2-summarizing-the-data-from-the-cleaned-train-set" class="section level2">
+<h2>Part 2: Summarizing the Data from the Cleaned Train Set</h2>
+<p>Next, we move to summarizing useful information from the training
+dataset that we created called <code>TRAIN.FINAL</code>. All questions
+in this section only involve the training dataset.</p>
+<div id="q1-4-points-1" class="section level3">
+<h3>Q1 <em>(4 Points)</em></h3>
+<p>Our goal is to create a matrix that summarizes the average
+temperature for each combination of month and day. We start by creating
+a matrix named <code>MEAN.TEMP.TRAIN</code> full of missing values. Use
+a double loop to fill in the matrix with the average temperature for
+each combination of month and day. For example, the element in row 1 and
+column 1 should contain the average temperature of all Mondays in
+Januaries across the years contained in <code>TRAIN.FINAL</code>.</p>
+<p>Code and Output:</p>
+<pre class="r"><code>MEAN.TEMP.TRAIN=matrix(NA,12,7) #DO NOT CHANGE
+rownames(MEAN.TEMP.TRAIN)=c(&quot;January&quot;,&quot;February&quot;,&quot;March&quot;,&quot;April&quot;,&quot;May&quot;,&quot;June&quot;,         #DO NOT CHANGE
+                         &quot;July&quot;,&quot;August&quot;,&quot;September&quot;,&quot;October&quot;,&quot;November&quot;,&quot;December&quot;)  #DO NOT CHANGE
+colnames(MEAN.TEMP.TRAIN)=c(&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,                            #DO NOT CHANGE
+                         &quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;)                      #DO NOT CHANGE
 
-theoretical.limit=a/(1-r)
+for(j in 1:12){    #DO NOT CHANGE
+  for(k in 1:7){   #DO NOT CHANGE
+    
+    COMPLETE
+    
+  }                #DO NOT CHANGE
+}                  #DO NOT CHANGE
 
-START=a
-
-FINISH.1 = START + a*r^1
-
-FINISH.2 = FINISH.1 + a*r^2
-
-FINISH.3 = FINISH.2 + a*r^3
-
-FINISH.10 = a 
-for(k in 1:10){
-  FINISH.10=FINISH.10+a*r^k
-}
-
-FINISH.100 = a 
-for(k in 1:100){
-  FINISH.100=FINISH.100+a*r^k
-}
-
-DATA = tibble(k=c(1,2,3,10,100,&quot;Infinity&quot;),
-            SUMMATION=c(FINISH.1,FINISH.2,FINISH.3,
-                        FINISH.10,FINISH.100,
-                        theoretical.limit))
-print(DATA)
-
-ABSOLUTE.ERROR = abs(FINISH.100-theoretical.limit)
-print(ABSOLUTE.ERROR)</code></pre>
+print(MEAN.TEMP.TRAIN) #DO NOT CHANGE</code></pre>
 </div>
-<div id="chunk-2-checking-geometric-series-proof-with-while-loop" class="section level2">
-<h2>Chunk 2: Checking Geometric Series Proof with <em>while</em>
-loop</h2>
-<pre class="r"><code>a=2
-r=0.5
+<div id="q2-2-points" class="section level3">
+<h3>Q2 <em>(2 Points)</em></h3>
+<p>Run the following code line-by-line and observe what is
+happening.</p>
+<pre class="r"><code>x=c(35,27,28,40)    #DO NOT CHANGE
 
-FINISH=a
-k=0
-while(abs(FINISH-a/(1-r)) &gt; 1e-10) {
-  k=k+1
-  FINISH = FINISH + a*r^k
-  if(k&gt;100) break
-}
-print(c(k,FINISH))</code></pre>
+range=max(x)-min(x) #DO NOT CHANGE
+print(range)        #DO NOT CHANGE</code></pre>
+<pre><code>## [1] 13</code></pre>
+<p>Create a function called <code>RANGE.func</code> that inputs a vector
+and outputs the range of the observations in that vector. You should not
+use the <code>print()</code> function inside of
+<code>RANGE.func()</code>. The code below will test to see if your
+function works.</p>
+<p>Code and Output:</p>
+<pre class="r"><code>COMPLETE
+
+try=c(1,2,3,4,5)        #DO NOT CHANGE
+print(try)              #DO NOT CHANGE
+print(RANGE.func(try))  #DO NOT CHANGE</code></pre>
 </div>
-<div id="chunk-3-saving-steps-in-geometric-series-for-figure" class="section level2">
-<h2>Chunk 3: Saving Steps in Geometric Series for Figure</h2>
-<pre class="r"><code>a=BLANK
-r=BLANK
-theoretical.limit=a/(1-r)
+<div id="q3-2-points" class="section level3">
+<h3>Q3 <em>(2 Points)</em></h3>
+<p>The <code>apply()</code> function is very helpful for applying
+functions to rows or columns of matrices. Google this function to see
+examples of how it is used.</p>
+<p>Use <code>apply()</code> with your function <code>RANGE.func()</code>
+to create a vector called <code>RANGE.MONTH.TRAIN</code> that contains
+the range of each row in <code>MEAN.TEMP.TRAIN</code>.</p>
+<p>Use <code>apply()</code> with your function <code>RANGE.func()</code>
+to create a vector called <code>RANGE.DAY.TRAIN</code> that contains the
+range of each column in <code>MEAN.TEMP.TRAIN</code>.</p>
+<p>Code and Output:</p>
+<pre class="r"><code>COMPLETE
 
-K=100 #How Many Steps Do You Want to Save?
+print(RANGE.MONTH.TRAIN) #DO NOT CHANGE
+print(RANGE.DAY.TRAIN) #DO NOT CHANGE</code></pre>
+</div>
+<div id="q4-8-points" class="section level3">
+<h3>Q4 <em>(8 Points)</em></h3>
+<p>Run the following code line-by-line and observe what is
+happening.</p>
+<pre class="r"><code>x=NULL   #DO NOT CHANGE
+x=c(x,3) #DO NOT CHANGE
+x=c(x,4) #DO NOT CHANGE
+x=c(x,5) #DO NOT CHANGE
+print(x) #DO NOT CHANGE</code></pre>
+<pre><code>## [1] 3 4 5</code></pre>
+<p>Below, I created two empty objects named
+<code>WEEKDAY.HUMIDITY</code> and <code>WEEKEND.HUMIDITY</code>. I want
+you to loop through each row in <code>TRAIN.FINAL</code> moving through
+the data in chronological order. If the row involves a weekend, I want
+you to add the humidity of that day to <code>WEEKEND.HUMIDITY</code>,
+otherwise, I want you to add the humidity of that day to
+<code>WEEKDAY.HUMIDITY</code>. For our purposes, only Saturday and
+Sunday are considered weekends. Also, your code needs to utilize a loop
+and an if-else control structure or you will get 0 points. At the end,
+<code>WEEKDAY.HUMIDITY</code> and <code>WEEKEND.HUMIDITY</code> should
+be vectors.</p>
+<p>The last line of code performs a basic t-test . In the space provided
+below, I want you to explain what this t-test function is being used to
+test and summarise what we learn about humidity from this t-test. Write
+in complete sentences using words as if you were explaining this to
+someone who knows very little about statistics. Explain what you learned
+about humidity, do not just explain what a t-test is. They don’t care
+about that nonsense, because they have a life.</p>
+<p>Code and Output (4 Points):</p>
+<pre class="r"><code>WEEKDAY.HUMIDITY=NULL #DO NOT CHANGE
+WEEKEND.HUMIDITY=NULL #DO NOT CHANGE
 
-summation=rep(NA,(K+1))
-summation[1]=a
-for (k in 1:K) {
-  summation[k+1]=summation[k] + a*r^k
-}
 
-ggplot() +
-  geom_line(aes(x=1:(K+1),y=summation)) +
-  geom_hline(yintercept=theoretical.limit,
-             linetype=&quot;dashed&quot;)</code></pre>
+for(j in 1:1461){   #DO NOT CHANGE
+
+  COMPLETE
+  
+}                   #DO NOT CHANGE
+
+
+t.test(x=WEEKDAY.HUMIDITY,y=WEEKEND.HUMIDITY) #DO NOT CHANGE</code></pre>
+<p>Answer (4 Points): PLACE ANSWER HERE IN COMPLETE SENTENCES</p>
+</div>
+</div>
+<div id="part-3-creating-two-new-variables-helpful-for-time-series-data" class="section level2">
+<h2>Part 3: Creating Two New Variables Helpful for Time Series Data</h2>
+<p>When you have data that is organized chronologically, there are some
+cool features of the data we can explore using lags, differences, moving
+averages, moving ranges, etc. In this section, we will only create these
+variables in the training dataset named <code>TRAIN.FINAL</code>.
+Typically, we would also want to create these same variables in the
+testing dataset named <code>TEST.FINAL</code>.</p>
+<div id="q1-4-points-2" class="section level3">
+<h3>Q1 <em>(4 Points)</em></h3>
+<p>We can create a new variable called
+<code>Pressure Percent Change</code> in TRAIN.FINAL that currently
+contains all missing values. If we wanted to change the 4th observation
+of <code>Pressure Percent Change</code> to 32, we could use the code
+<code>TRAIN.FINAL$</code>Pressure Percent Change<code>[4]=32</code>.
+Each value of <code>Pressure Percent Change</code> can be calculated
+from the following formula:</p>
+<p><span class="math inline">\(\textrm{Pressure Percent
+Change}=\frac{\textrm{Pressure Today}-\textrm{Pressure
+Yesterday}}{\textrm{Pressure Yesterday}}\)</span></p>
+<p>Use a loop to replace each missing value in the new variable called
+<code>Pressure Percent Change</code> with the actual value according to
+the formula. If you don’t use a loop, you will get 0 points.</p>
+<p>Code and Output (4 Points):</p>
+<pre class="r"><code>TRAIN.FINAL$`Pressure Percent Change`=NA #DO NOT CHANGE
+
+COMPLETE
+
+plot(TRAIN.FINAL$`Pressure Percent Change`,type=&quot;l&quot;) #DO NOT CHANGE</code></pre>
+</div>
+<div id="q2-4-points-1" class="section level3">
+<h3>Q2 <em>(4 Points)</em></h3>
+<p>We create a new variable called <code>Pressure 3-Day Average</code>
+in TRAIN.FINAL that starts with all missing values. If we wanted to
+change the 3rd observation of <code>Pressure 3-Day Average</code> to 50,
+we could use the code <code>TRAIN.FINAL$</code>Pressure 3-Day
+Average<code>[3]=50</code>. Each value of
+<code>Pressure 3-Day Average</code> can be calculated from the following
+formula:</p>
+<p><span class="math inline">\(\textrm{Pressure 3-Day
+Average}=\frac{\textrm{Pressure Yesterday}+\textrm{Pressure
+Today}+\textrm{Pressure Tomorrow}}{3}\)</span></p>
+<p>Use a loop to replace each missing value in the new variable called
+<code>Pressure 3-Day Average</code> with the actual value according to
+the formula. If you don’t use a loop, you will get 0 points.</p>
+<p>Code and Output (4 Points):</p>
+<pre class="r"><code>TRAIN.FINAL$`Pressure 3-Day Average`=NA #DO NOT CHANGE
+
+COMPLETE
+
+plot(TRAIN.FINAL$`Pressure 3-Day Average`,type=&quot;l&quot;) #DO NOT CHANGE</code></pre>
+</div>
 </div>
 </div>
 
