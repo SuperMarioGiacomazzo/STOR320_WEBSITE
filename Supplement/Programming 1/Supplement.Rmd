@@ -110,7 +110,7 @@ ggplot() +
 ## Chunk 1: Checking Geometric Series Proof with *for* loop
 ```{r,eval = F}
 a=2 #Any Number
-r=-0.5 #Any Number Between -1 and 1: abs(r)<1
+r=0.5 #Any Number Between -1 and 1: abs(r)<1
 
 theoretical.limit=a/(1-r)
 
@@ -159,8 +159,8 @@ print(c(k,FINISH))
 
 ## Chunk 3: Saving Steps in Geometric Series for Figure
 ```{r,eval=F}
-a=BLANK
-r=BLANK
+a=2
+r=-0.88
 theoretical.limit=a/(1-r)
 
 K=100 #How Many Steps Do You Want to Save?
