@@ -103,10 +103,10 @@ print(na.omit(FiveSum.HI3))
 
 ## Chunk 1: Sampling from Known Distributions
 ```{r,eval=F}
-x1=rnorm(BLANK,mean=82,sd=2)
+x1=rnorm(1000,mean=82,sd=2)
 ggplot()+geom_histogram(aes(x1))
 
-x2=rbinom(BLANK,size=10,prob=1/6)
+x2=rbinom(100,size=10,prob=1/6)
 ggplot()+geom_bar(aes(x2))
 ```
 
