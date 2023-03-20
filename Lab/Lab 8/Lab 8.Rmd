@@ -1,0 +1,92 @@
+---
+title: "Lab 8: More Relational Data"
+author: "FIRSTNAME LASTNAME"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output: html_document
+---
+
+
+```{r setup, include=F}
+options(scipen=999)
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(rvest)
+```
+
+# Linking Important Information to Violent Crimes Data
+
+In this lab, we will join all 5 datasets from the lecture series on web scraping. In the zipped folder, there are *5* CSV files. In this section, we are going to merge all of that data into one object called `FINAL.VIOLENT`. 
+
+```{r,message=F}
+# Data for Part 1
+VIOLENT=read_csv("FINAL_VIOLENT.csv")
+ZIP=read_csv("FINAL_ZIP.csv")
+STATE_ABBREV=read_csv("FINAL_STATE_ABBREV.csv")
+CENSUS=read_csv("FINAL_CENSUS.csv")
+S_VS_D=read_csv("FINAL_SAFE_VS_DANGEROUS.CSV")
+```
+
+## 1: Get Desirable Data (1 Point)
+
+The dataset `S_VS_D` contains a variable `CLASS` where "S=Safe" and "D=Dangerous" according to the article *[These Are the 2018 Safest and Most Dangerous States in the U.S](https://www.securitysales.com/fire-intrusion/2018-safest-most-dangerous-states-us/)* by [Steve Karantzoulidis](https://www.securitysales.com/author/stevek/). We seek to compare the violent crime statistics for states not in this list. Use a filtering join to create a new data frame called `VIOLENT2` that only contains violent crime statistics from the states not represented in the data frame `S_VS_D`.  Use `str(VIOLENT2)` to display the variables and the dimensions of `VIOLENT2`. Do this without renaming any of the variables!!
+
+
+```{r, eval=F}
+VIOLENT2 = anti_join(COMPLETE,by=COMPLETE)
+
+str(VIOLENT2) #Do Not Change
+```
+
+## 2: Fixing Instances in Crime (1 Point)
+
+Start by creating a new data set called `VIOLENT3` based on `VIOLENT2` that fixes some problems in the variable `City`. Specifically, we would like to change "Louisville Metro" and "Nashville Metropolitan" to "Louisville" and "Nashville", respectively. 
+
+```{r, eval=F}
+VIOLENT3=VIOLENT2 %>% mutate(City=ifelse(COMPLETE),
+                             City=ifelse(COMPLETE))
+
+str(filter(VIOLENT3,City %in% c("Louisville","Nashville"))) #Do Not Change
+```
+
+## 3: Merging Data (2 Points)
+
+Next, create a new data frame named `VIOLENT4` that merges the population change and density measures from 2019 contained in `CENSUS` into `VIOLENT3` based on city and state. Use `head(VIOLENT4)` to give a preview of the new merged dataset. Only use a `left_join` for this part.
+
+```{r, eval=F}
+VIOLENT4 = left_join(COMPLETE)
+
+head(VIOLENT4) #Do Not Change
+```
+
+### 3.1: Why is the Washington D.C. missing CENSUS information? Answer in complete sentences. (1 Point)
+
+PLACE YOUR ANSWER HERE
+
+## 4: Merging more Data (2 Points)
+
+Either ambitiously using one-step or less ambitiously using multiple steps merge the longitude and latitude information provided in `ZIP` into  `VIOLENT4` based on city and state. You will need to use `STATE_ABBREV` data to link these two data frames. Your final data frame named `FINAL.VIOLENT` should contain all of the information in `VIOLENT4` along with the variables `lat` and `lon` from `ZIP`. There should be **no** state abbreviations in `FINAL.VIOLENT` since this information is redundant.  Only use `left_join` and do this without renaming a single variable. Use `str(FINAL.VIOLENT)` to preview table.
+
+```{r, eval=F}
+FINAL.VIOLENT = COMPLETE
+
+str(FINAL.VIOLENT) #Do Not Change
+```
+
+### 4.1: Why is the Washington D.C. missing latitude and longitude information? Answer in complete sentences. (1 Point)
+
+PLACE YOUR ANSWER HERE
+
+## 5: Fixing Washington DC (2 Points)
+
+It is not possible to fix Washington DC, but lets try anyway.
+
+In `FINAL.VIOLENT`, we don't have census information or location information for Washington DC. Make modifications to the datasets, `CENSUS` and `STATE_ABBREV`, so that when you merge the datasets again, Washington DC has both census and location information. Then, redo the merges and create a new data frame called `FINAL.VIOLENT.FIX` that is not missing any information. You will probably have to do this in multiple steps. Only use `left_join` for all merges and never rename any variables.
+
+Finally, print out the row of the data pertaining to Washington DC, so that your lab instructor can see that you did it correctly. 
+
+```{r, eval=F}
+COMPLETE
+
+
+filter(FINAL.VIOLENT.FIX,City=="Washington",State=="District Of Columbia") # Do Not Change
+```
