@@ -140,9 +140,10 @@ This course is an application-driven introduction to data science. Statistical a
 |Mar 10| Programming III | [Slides](Lecture/Programming 3/Programming_3_Lecture.pdf) ||
 |March 13|Spring Brizzeak||No Labs this Week|
 |March 15|Spring Brizzeak||No Labs this Week|
-|March 17|Spring Brizzeak||No Labs this Week|
+|March 17|Spring Brizzeak||No Labs this Week|689
 |Mar 20| Modeling 1 | [Slides](Lecture/Modeling 1/Modeling_1_Lecture.pdf) ||
-|Mar 22| Modeling 2 | [Slides](Lecture/Modeling 2/Modeling_2_Lecture.pdf) | [Preview](Supplement/Modeling 2/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%202/Supplement.zip)) |
+|Mar 22| Modeling 1 (Cont.) | [Slides](Lecture/Modeling 1/Modeling_1_Lecture.pdf) ||
+|| Modeling 2 | [Slides](Lecture/Modeling 2/Modeling_2_Lecture.pdf) | [Preview](Supplement/Modeling 2/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%202/Supplement.zip)) |
 |Mar 24| Work on EDA|||
 |Mar 27| Modeling 3 | [Slides](Lecture/Modeling 3/Modeling_3_Lecture.pdf) | [Preview](Supplement/Modeling 3/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%203/Supplement.zip)) |
 |Mar 29| Modeling 4 | [Slides](Lecture/Modeling 4/Modeling_4_Lecture.pdf) | [Preview](Supplement/Modeling 4/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%204/Supplement.zip)) |
@@ -161,7 +162,7 @@ This course is an application-driven introduction to data science. Statistical a
 |Apr 28|Work on Final Paper|||
 |||||
 
-# **Assignment Tracker**
+|Mar 20| Modeling 1 | [Slides](Lecture/Modeling 1/Modeling_1_Lecture.pdf) ||# **Assignment Tracker**
 
 All HW, Lab, and Analysis assignments are to be submitted via Canvas. Unzip folder and complete your homework using **Rmd** file. The table below shows all the assignments sorted by the date assigned.
 
