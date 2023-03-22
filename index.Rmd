@@ -162,7 +162,7 @@ This course is an application-driven introduction to data science. Statistical a
 |Apr 28|Work on Final Paper|||
 |||||
 
-|Mar 20| Modeling 1 | [Slides](Lecture/Modeling 1/Modeling_1_Lecture.pdf) ||# **Assignment Tracker**
+# **Assignment Tracker**
 
 All HW, Lab, and Analysis assignments are to be submitted via Canvas. Unzip folder and complete your homework using **Rmd** file. The table below shows all the assignments sorted by the date assigned.
 
