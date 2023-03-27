@@ -51,11 +51,11 @@ Lab,Name,Group,Role,EDA Date,EDA Time
 402,"Geier,Charlie",10,O,,
 402,"Gupta,Nandini",10,I,,
 402,"Hu,Annie",10,C,,
-402,"Le,Eric Quoc",11,I,,
-402,"Sears,Haley Grace",11,O,,
-402,"Parks,Adam Harrison",11,D,,
-402,"Mabe,Abigail Elizabeth",11,O,,
-402,"Peplinski,Ella Eileen",11,C,,
+402,"Le,Eric Quoc",11,I,4-Apr,8:30AM - 8:40AM
+402,"Sears,Haley Grace",11,O,4-Apr,8:30AM - 8:40AM
+402,"Parks,Adam Harrison",11,D,4-Apr,8:30AM - 8:40AM
+402,"Mabe,Abigail Elizabeth",11,O,4-Apr,8:30AM - 8:40AM
+402,"Peplinski,Ella Eileen",11,C,4-Apr,8:30AM - 8:40AM
 402,"Zhang,Selina",12,,,
 402,"Kolhe,Om A",12,O,,
 402,"Korategere,Divya",12,D,,
@@ -77,18 +77,18 @@ Lab,Name,Group,Role,EDA Date,EDA Time
 403,"Kalidindi,Sai Varma",15,I,23-Mar,9:30AM - 9:40AM
 403,"Lu,Pan",15,O,23-Mar,9:30AM - 9:40AM
 403,"Kern,Nathan Taylor",15,D,23-Mar,9:30AM - 9:40AM
-403,"Jia,Emma",16,O,,
-403,"Jackson,Hailey Jean",16,O,,
-403,"Bhaskar,Vaibhav B",16,C,,
-403,"Shuang,Ruofei",16,I,,
-403,"Verma,Ria Anurag",16,I,,
-403,"Rathod,Trisha R",16,D,,
-403,"Lalgondar,Vivek",17,I,28-Mar,9:20AM - 9:30AM
-403,"Moharana,Prajwal",17,O,28-Mar,9:20AM - 9:30AM
-403,"Orgain,Ella Marie",17,O,28-Mar,9:20AM - 9:30AM
-403,"Leng,Huixue",17,D,28-Mar,9:20AM - 9:30AM
-403,"Wang,Xueting",17,C,28-Mar,9:20AM - 9:30AM
-403,"Boyles,Mason William",17,I,28-Mar,9:20AM - 9:30AM
+403,"Jia,Emma",16,O,4-Apr,10:00AM - 10:10AM
+403,"Jackson,Hailey Jean",16,O,4-Apr,10:00AM - 10:10AM
+403,"Bhaskar,Vaibhav B",16,C,4-Apr,10:00AM - 10:10AM
+403,"Shuang,Ruofei",16,I,4-Apr,10:00AM - 10:10AM
+403,"Verma,Ria Anurag",16,I,4-Apr,10:00AM - 10:10AM
+403,"Rathod,Trisha R",16,D,4-Apr,10:00AM - 10:10AM
+403,"Lalgondar,Vivek",17,I,4-Apr,9:20AM - 9:30AM
+403,"Moharana,Prajwal",17,O,4-Apr,9:20AM - 9:30AM
+403,"Orgain,Ella Marie",17,O,4-Apr,9:20AM - 9:30AM
+403,"Leng,Huixue",17,D,4-Apr,9:20AM - 9:30AM
+403,"Wang,Xueting",17,C,4-Apr,9:20AM - 9:30AM
+403,"Boyles,Mason William",17,I,4-Apr,9:20AM - 9:30AM
 403,"Mehta,Anjali Shwetal",18,O,28-Mar,10:00AM - 10:10AM
 403,"Myler,Jillian Emily",18,D,28-Mar,10:00AM - 10:10AM
 403,"Kouassi-Brou,Betsy Aude-Marie",18,C,28-Mar,10:00AM - 10:10AM
