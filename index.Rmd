@@ -289,11 +289,11 @@ This final project will be divided into four parts worth a total of 100 points. 
 
 - **[R for Data Science](R for Data Science- Import, Tidy, Transform, Visualize, and Model Data.pdf)** (R4DS)
 
-- **[R Programming for Data Science](Using R at UNC for Mac Users.pdf)** (RP4DS)
+- R Programming for Data Science (RP4DS)
 
-- **[The Art of R Programming](The Art of R Programming.pdf)** (AoRP)
+- The Art of R Programming (AoRP)
 
-- **[A First Course in Statistical Programming with R](A First Course in Statistical Programming with R.pdf)** (FCSPR)
+- A First Course in Statistical Programming with R (FCSPR)
 
 - **[ModernDive](https://moderndive.com/index.html)** (MD)
 
