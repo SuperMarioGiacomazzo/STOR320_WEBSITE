@@ -12,6 +12,10 @@ output:
     toc: yes
 ---
 
+```{r setup, include=FALSE} 
+knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
+```
+
 <style type="text/css">
 
 div {
