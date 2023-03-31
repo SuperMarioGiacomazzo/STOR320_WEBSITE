@@ -307,7 +307,7 @@ print(SUMM2)
 
 ## Chunk 4: HTML Formatted Table
 
-```{r,echo=F,eval=F}
+```{r,echo=F,eval=F,results="asis"}
 SUMM3=xtable(SUMM2,digits=4,align=c("l","l","r","r","r"))
 print(SUMM3,include.rownames=F,type="html")
 ```

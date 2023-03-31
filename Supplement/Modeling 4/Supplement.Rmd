@@ -117,7 +117,7 @@ DATA4.PREDICT = DATA4 %>%
           select(predict) %>%
           unnest()
 head(DATA4.PREDICT)
-youtuRMSE.func(actual=DATA4.PREDICT$W,predict=DATA4.PREDICT$.fitted)
+RMSE.func(actual=DATA4.PREDICT$W,predict=DATA4.PREDICT$.fitted)
 ```
 
 
