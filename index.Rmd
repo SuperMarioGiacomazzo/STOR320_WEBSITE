@@ -153,7 +153,8 @@ This course is an application-driven introduction to data science. Statistical a
 |Mar 31| Modeling 4 | [Slides](Lecture/Modeling 4/Modeling_4_Lecture.pdf) | [Preview](Supplement/Modeling 4/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%204/Supplement.zip)) |
 |Apr 3| Modeling 4 (Cont.) | [Slides](Lecture/Modeling 4/Modeling_4_Lecture.pdf) | [Preview](Supplement/Modeling 4/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%204/Supplement.zip)) |
 || Modeling 5 | [Slides](Lecture/Modeling 5/Modeling_5_Lecture.pdf) ||
-|Apr 5| Modeling 6 | [Slides](Lecture/Modeling 6/Modeling_6_Lecture.pdf) ||
+|Apr 5| Modeling 5 (cont.) | [Slides](Lecture/Modeling 5/Modeling_5_Lecture.pdf) ||
+|| Modeling 6 | [Slides](Lecture/Modeling 6/Modeling_6_Lecture.pdf) ||
 |Apr 7| Best Friday ||No Labs This Week|
 |Apr 10| Modeling 7 | [Slides](Lecture/Modeling 7/Modeling_7_Lecture.pdf) | [Preview](Supplement/Modeling 7/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%207/Supplement.zip)) |
 |Apr 12| Modeling 8 | [Slides](Lecture/Modeling 8/Modeling_8_Lecture.pdf) | [Preview](Supplement/Modeling 8/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%208/Supplement.zip)) |
