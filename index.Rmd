@@ -159,7 +159,7 @@ This course is an application-driven introduction to data science. Statistical a
 |Apr 10| Modeling 6 (Cont.) | [Slides](Lecture/Modeling 6/Modeling_6_Lecture.pdf) ||
 |Apr 12| Modeling 7 | [Slides](Lecture/Modeling 7/Modeling_7_Lecture.pdf) | [Preview](Supplement/Modeling 7/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%207/Supplement.zip)) |
 |Apr 14| Modeling 8 | [Slides](Lecture/Modeling 8/Modeling_8_Lecture.pdf) | [Preview](Supplement/Modeling 8/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%208/Supplement.zip)) |
-|Apr 17|Guest: Brian Mabe  | | [UCB](https://www.ucbusamap.com/north-carolina-offices) |
+|Apr 17|Guest: Brian Mabe  | [Slides](Lecture/Industry 1/UCB_presentation_UNC_Data_Science.pdf) | [UCB](https://www.ucbusamap.com/north-carolina-offices) |
 |Apr 19| Modeling 9 | [Slides](Lecture/Modeling 9/Modeling_9_Lecture.pdf) | [Preview](Supplement/Modeling 9/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%209/Supplement.zip)) |
 |Apr 21| R Shiny | [Slides](Lecture/R Shiny/R_Shiny_Lecture.pdf) | Preview([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/R%20Shiny/Supplement.zip))|
 |Apr 24| Data Ethics | [Slides](Lecture/Data Ethics/Data_Ethics_Lecture.pdf) | [Reading](Lecture/Data Ethics/What_is_data_ethics.pdf) |
