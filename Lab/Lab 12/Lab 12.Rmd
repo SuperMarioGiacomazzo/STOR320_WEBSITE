@@ -1,0 +1,35 @@
+---
+title: "Lab 12: Work on Final Project"
+author: "FIRSTNAME LASTNAME"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,warning=F)
+options(scipen=999)
+library(tidyverse)
+```
+
+# Introduction
+
+In this lab, you will work on the final paper with your groups. As you are doing the work with your groups, take notes so you can provide answers to the following questions. Each group member will have to complete one of these forms.
+
+## Q1 (4 Points)
+
+**What individual contributions have you made to the group project?**
+
+ANSWER IN COMPLETE SENTENCES HERE
+
+## Q2 (4 Points)
+
+**What was the most difficult aspect of the group project?**
+
+ANSWER IN COMPLETE SENTENCES HERE
+
+## Q3 (2 Points)
+
+**What suggestions do you have to make the group project better for the future?**
+
+ANSWER IN COMPLETE SENTENCES HERE
+

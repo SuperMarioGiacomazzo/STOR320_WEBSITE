@@ -163,7 +163,7 @@ This course is an application-driven introduction to data science. Statistical a
 |Apr 19| Modeling 9 | [Slides](Lecture/Modeling 9/Modeling_9_Lecture.pdf) | [Preview](Supplement/Modeling 9/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%209/Supplement.zip)) |
 |Apr 21| Work on Final Paper | | |
 |Apr 24| R Shiny | [Slides](Lecture/R Shiny/R_Shiny_Lecture.pdf) | Preview([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/R%20Shiny/Supplement.zip))|
-|Apr 26| Data Ethics | [Slides](Lecture/Data Ethics/Data_Ethics_Lecture.pdf) | [Reading](Lecture/Data Ethics/What_is_data_ethics.pdf) |
+|Apr 26| Work on Final Paper |  | |
 |Apr 28|Work on Final Paper|||
 |||||
 
@@ -195,7 +195,7 @@ All HW, Lab, and Analysis assignments are to be submitted via Canvas. Unzip fold
 | Apr 11  | [L10](Lab/Lab 10/Lab-10.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab%2010/Lab%2010.zip))|       |       |     Apr 18 (8:00 AM)     |
 | Apr 14  |   |   | [A4](Analysis/Analysis 4/Analysis-4.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Analysis/Analysis%204/Analysis%204.zip))  |   Apr 21 (5:00 PM)     |
 | Apr 18  | [L11](Lab/Lab 11/Lab-11.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab%2011/Lab%2011.zip))|       |       |     Apr 25 (8:00 AM)     |
-| Apr 25  | [L12]()([.zip]())|       |       |     Apr 28 (11:59 PM)     |
+| Apr 25  | [L12](Lab/Lab 12/Lab-12.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab%2012/Lab%2012.zip))|       |       |     Apr 28 (11:59 PM)     |
 |   |     |             |  | |         
 
 
