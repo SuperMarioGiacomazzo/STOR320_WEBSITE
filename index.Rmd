@@ -81,18 +81,18 @@ This course is an application-driven introduction to data science. Statistical a
     - **[Section 1](Syllabi/STOR 320 Section 1 Syllabus.pdf)**: MTWTh, 3:00PM – 5:00PM, Hanes 120
 
 - Lab Sections for Section 2:
-    - 320.402: F, 12:45PM - 2:45PM, , Dilshad
-    - 320.403: F, 12:45PM - 2:45PM, , Hui
+    - 320.402: F, 12:45PM - 2:45PM, Dey 205 , Dilshad
+    - 320.403: F, 12:45PM - 2:45PM, Hanes 107 , Hui
 
 - Lab Sections for Section 1:
-    - 320.400: F, 3:00PM - 5:00PM, , Dilshad
-    - 320.401: F, 3:00PM - 5:00PM, , Hui
+    - 320.400: F, 3:00PM - 5:00PM, Hanes 107 , Dilshad
+    - 320.401: F, 3:00PM - 5:00PM, Greenlaw 302, Hui
    
 - University Approved Absences: **[Online Form](https://unc-ch.formstack.com/forms/university_approved_absence_request?sso=5f3154c3179f5)**
 
 - Office Hours and Zoom Links:
     - Dr. Mario: MTWTh, 12:10PM - 12:40PM & 5:05PM - 5:35PM, Hanes 134
-    - Dilshad: 
+    - Dilshad: TBD
     - Hui: MTWTh, 11:00AM - 11:30AM, Hanes B-44
 
   </div>
