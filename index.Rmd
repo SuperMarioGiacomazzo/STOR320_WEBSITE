@@ -92,7 +92,7 @@ This course is an application-driven introduction to data science. Statistical a
 
 - Office Hours and Zoom Links:
     - Dr. Mario: MTWTh, 12:10PM - 12:40PM & 5:05PM - 5:35PM, Hanes 134
-    - Dilshad: TBD
+    - **[Dilshad](https://unc.zoom.us/j/98947664607?pwd=ckRIZStMdkx2Tjl3Ky9BYmlWUDdzdz09)**: MTWTh, 5:30PM - 6:00PM, Zoom (Passcode: 684214)
     - Hui: MTWTh, 11:00AM - 11:30AM, Hanes B-44
 
   </div>
