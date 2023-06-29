@@ -1,95 +1,17 @@
-Lab,Name,Group,Role,EDA Date,EDA Time
-404,"Foster,Mackenzie Arin",1,I,4-Apr,10:30AM - 10:40AM
-404,"Joyce,Kathryn Kylie",1,C,4-Apr,10:30AM - 10:40AM
-404,"King,Jordan Alexis",1,O,4-Apr,10:30AM - 10:40AM
-404,"Noe,Davis L",1,O,4-Apr,10:30AM - 10:40AM
-404,"Robbins,Brennan Paul",1,I,4-Apr,10:30AM - 10:40AM
-404,"Thiongo,Sandra Mugure",1,D,4-Apr,10:30AM - 10:40AM
-404,"Jouran,Daniel Andre",2,O,4-Apr,10:40AM - 10:50AM
-404,"Khan,Hamza Ahmad",2,O,4-Apr,10:40AM - 10:50AM
-404,"Laney,Seth Conley",2,I,4-Apr,10:40AM - 10:50AM
-404,"Lu,Savannah",2,C,4-Apr,10:40AM - 10:50AM
-404,"Townsend Jr,Benjamin Cabell",2,D,4-Apr,10:40AM - 10:50AM
-404,"Weber,Gibson Anderson",2,I,4-Apr,10:40AM - 10:50AM
-404,"Boyanapalli,Srinidhi",3,I,30-Mar,9:10AM - 9:20AM
-404,"Joshi,Girija Krishna",3,O,30-Mar,9:10AM - 9:20AM
-404,"Palle,Neha Pavankumar",3,D,30-Mar,9:10AM - 9:20AM
-404,"Palmieri,Sophia Francesca",3,C,30-Mar,9:10AM - 9:20AM
-404,"Pham,Thanh Truc Nguyen",3,O,30-Mar,9:10AM - 9:20AM
-404,"Polito,Alison Marie",3,I,30-Mar,9:10AM - 9:20AM
-404,"Fleischer,William Connor",4,O,30-Mar,10:20AM - 10:30AM
-404,"Li,Peiyu",4,I,30-Mar,10:20AM - 10:30AM
-404,"Mao,William Bill",4,I,30-Mar,10:20AM - 10:30AM
-404,"Mcgrew,Owen Sanford",4,O,30-Mar,10:20AM - 10:30AM
-404,"Mcsweeney,Loralei Graycen",4,D,30-Mar,10:20AM - 10:30AM
-404,"Sholar,Olivia Grace",4,C,30-Mar,10:20AM - 10:30AM
-404,"Ali,Hanan Mohamed",5,D,23-Mar,10:00AM - 10:10AM
-404,"Hicks,Tricia Hope",5,O,23-Mar,10:00AM - 10:10AM
-404,"Pantha,Pranish",5,I,23-Mar,10:00AM - 10:10AM
-404,"Patil,Pooja P",5,C,23-Mar,10:00AM - 10:10AM
-404,"Ravindran,Sanjay",5,O,23-Mar,10:00AM - 10:10AM
-404,"Zhou,Zilu",5,I,23-Mar,10:00AM - 10:10AM
-405,"Abraham,Nikhil",6,D,13-Apr,10:30AM - 10:40AM
-405,"Bell IV,Robert Edward",6,I,13-Apr,10:30AM - 10:40AM
-405,"Mackay,Colin Alexander",6,O,13-Apr,10:30AM - 10:40AM
-405,"Shabandri,Zayd Suhail",6,O,13-Apr,10:30AM - 10:40AM
-405,"Shen,Murong",6,C,13-Apr,10:30AM - 10:40AM
-405,"Winters,Adalia",6,I,13-Apr,10:30AM - 10:40AM
-405,"Adams,Joseph A",7,I,28-Mar,9:10AM - 9:20AM
-405,"Fitzsimons,Kelly",7,C,28-Mar,9:10AM - 9:20AM
-405,"Geng,Jack",7,D,28-Mar,9:10AM - 9:20AM
-405,"Kim,Hyojin",7,I,28-Mar,9:10AM - 9:20AM
-405,"Peng,Flora",7,O,28-Mar,9:10AM - 9:20AM
-405,"Xie,Gu Wei Tian",7,O,28-Mar,9:10AM - 9:20AM
-405,"Huang,Rong",8,I,21-Mar,10:20AM - 10:30AM
-405,"Shi,Andreas",8,O,21-Mar,10:20AM - 10:30AM
-405,"Stone,Tucker Lloyd",8,D,21-Mar,10:20AM - 10:30AM
-405,"Wang,Qianwen",8,C,21-Mar,10:20AM - 10:30AM
-405,"Warren,Winfield Ming-Shen",8,O,21-Mar,10:20AM - 10:30AM
-405,"Zheng,Liujie",8,I,21-Mar,10:20AM - 10:30AM
-405,"Doby,Dylan Gage",9,D,13-Apr,9:50AM - 10:00AM
-405,"Gebreegziabher,Musie Estifanos",9,O,13-Apr,9:50AM - 10:00AM
-405,"Gorglione,Nicholas",9,O,13-Apr,9:50AM - 10:00AM
-405,"Lee,Kunhee",9,I,13-Apr,9:50AM - 10:00AM
-405,"Toney,Audrey Diana",9,C,13-Apr,9:50AM - 10:00AM
-405,"Vandre,Dallin James",9,I,13-Apr,9:50AM - 10:00AM
-405,"Feng,Susi Liu",10,O,30-Mar,9:30AM - 9:40AM
-405,"Fleming,Elizabeth McHale",10,O,30-Mar,9:30AM - 9:40AM
-405,"Xu,Yixuan",10,D,30-Mar,9:30AM - 9:40AM
-406,"Blackman,Claire M",11,O,28-Mar,9:00AM - 9:10AM
-406,"Fisher,Rachael Paige",11,O,28-Mar,9:00AM - 9:10AM
-406,"Padma,Raghuvara",11,I,28-Mar,9:00AM - 9:10AM
-406,"Reed,Jackson Richard",11,I,28-Mar,9:00AM - 9:10AM
-406,"Twiddy,Spencer Jonathan",11,D,28-Mar,9:00AM - 9:10AM
-406,"Zhu,Sonia",11,C,28-Mar,9:00AM - 9:10AM
-406,"Chiu,Steven Luo",12,O,20-Apr,8:00AM - 8:10AM
-406,"Farmer,Ansley Nikayla",12,D,20-Apr,8:00AM - 8:10AM
-406,"He,Wangchen",12,C,20-Apr,8:00AM - 8:10AM
-406,"Jin,Zhetong",12,I,20-Apr,8:00AM - 8:10AM
-406,"Joshi,Muskaan V",12,I,20-Apr,8:00AM - 8:10AM
-406,"Sun,Jingyi",12,O,20-Apr,8:00AM - 8:10AM
-406,"Dixon,Katie Anne",13,O,18-Apr,9:00AM -9:10AM
-406,"Li,Zhengtao",13,D,18-Apr,9:00AM -9:10AM
-406,"Liu,Yuzhe",13,I,18-Apr,9:00AM -9:10AM
-406,"Marin,Zack A",13,O,18-Apr,9:00AM -9:10AM
-406,"Selom,Jonah Angelo Marcelo",13,I,18-Apr,9:00AM -9:10AM
-406,"Sullivan,Spencer Lloyd",13,C,18-Apr,9:00AM -9:10AM
-406,"Ge,Angela Anyue",14,I,18-Apr,10:00AM - 10:10AM
-406,"Guo,Sophie Ann",14,O,18-Apr,10:00AM - 10:10AM
-406,"Nance,Daniel Barringer",14,I,18-Apr,10:00AM - 10:10AM
-406,"Nash,Sydney Elizabeth",14,C,18-Apr,10:00AM - 10:10AM
-406,"Portugal,Manuel Edward",14,O,18-Apr,10:00AM - 10:10AM
-406,"Somana,Sai",14,D,18-Apr,10:00AM - 10:10AM
-407,"Lam,Uyen",10,C,30-Mar,9:30AM - 9:40AM
-407,"Wu,Yingxuan",10,I,30-Mar,9:30AM - 9:40AM
-407,"Hall,Morgan G",15,O,18-Apr,9:30AM - 9:40AM
-407,"Luo,Emma Lynn",15,O,18-Apr,9:30AM - 9:40AM
-407,"Ma,Tengcan",15,D,18-Apr,9:30AM - 9:40AM
-407,"Zhang,Ziqian",15,C,18-Apr,9:30AM - 9:40AM
-407,"Zhu,Boyang",15,I,18-Apr,9:30AM - 9:40AM
-407,"Arumugam,Lochana",16,O,11-Apr,9:00AM - 9:10AM
-407,"Budd,Adam Phillip",16,I,11-Apr,9:00AM - 9:10AM
-407,"Headrick,Colin Anderson",16,D,11-Apr,9:00AM - 9:10AM
-407,"Khosla,Ritika",16,I,11-Apr,9:00AM - 9:10AM
-407,"Soper,Jeremy Ryan",16,O,11-Apr,9:00AM - 9:10AM
-407,"Tevez,John William",16,C,11-Apr,9:00AM - 9:10AM
+Lab,Name,Group,Role,Proposal Date,Proposal Time
+402,"Acevedo Vega,Arturo",1,,,
+402,"Concepcion,Jacob Dagoberto",1,,,
+402,"Hensley,Isaac Sonny",1,,,
+402,"Myoung,Sarang",1,,,
+402,"Juarez Gonzalez,Daniela",2,,,
+402,"Sigmon,Christian Lance",2,,,
+402,"Francisco,Dylan Edward",2,,,
+402,"Atitsoabui,Elvis Selasi",2,,,
+403,"Zhao,Alyssa",3,,,
+403,"Pathak,Viti",3,,,
+403,"Barnes,Wesley Andrew",3,,,
+403,"Lujan,Abisai",3,,,
+403,"Baird,Mia",4,,,
+403,"Krothapalli,Sai Akhila",4,,,
+403,"Leon,Yulee",4,,,
+403,"Pommerich,Zuntue",4,,,

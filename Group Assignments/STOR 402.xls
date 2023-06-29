@@ -1,232 +1,0 @@
-<!DOCTYPE html>
-<html class='pc chrome mac psc_dir-ltr psc_form-xlarge pt_classic_plus' dir='ltr' lang='en'>
-<!-- Copyright (c) 2000, 2019, Oracle and/or its affiliates. All rights reserved. -->
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><body><table border='1' cellpadding='3' cellspacing='0'>
-<tr>
-<th>Notify</th><th>ID</th><th>Name</th><th>Pronouns</th><th>Units</th><th>Program and Plan</th><th>Level</th></tr>
-<tr>
-<td  ></td>
-<td  >730469865</td>
-<td  >Arnold,Ellis Ruby</td>
-<td  >(She/Her/Hers)</td>
-<td  >0.00</td>
-<td  >AS Bachelor of Science - 
-Statistics and Analytics/Data Science Minor</td>
-<td  >Junior</td>
-<tr>
-<td  ></td>
-<td  >730469891</td>
-<td  >Bach,Ethan Sunjin</td>
-<td  >(He/Him/His)</td>
-<td  >0.00</td>
-<td  >AS Bachelor of Science - 
-Statistics and Analytics</td>
-<td  >Junior</td>
-<tr>
-<td  ></td>
-<td  >730481825</td>
-<td  >Chen,Yixiao</td>
-<td  ></td>
-<td  >0.00</td>
-<td  >AS Bachelor of Science - 
-Computer Science (BS)/Statistics and Analytics</td>
-<td  >Junior</td>
-<tr>
-<td  ></td>
-<td  >730470363</td>
-<td  >Damle,Surabhi Vinayak</td>
-<td  ></td>
-<td  >0.00</td>
-<td  >AS Bachelor of Science - 
-Statistics and Analytics/Honors Program/Data Science Minor/Political Science</td>
-<td  >Junior</td>
-<tr>
-<td  ></td>
-<td  >730321306</td>
-<td  >Fort,Sophia Rose</td>
-<td  ></td>
-<td  >0.00</td>
-<td  >AS Bachelor of Science - 
-Economics (BS)/Statistics and Analytics Minor</td>
-<td  >Senior</td>
-<tr>
-<td  ></td>
-<td  >730483262</td>
-<td  >Gall,Melanie F</td>
-<td  ></td>
-<td  >0.00</td>
-<td  >AS Bachelor of Science - 
-Environmental Sciences/Public Policy Minor/Statistics and Analytics</td>
-<td  >Senior</td>
-<tr>
-<td  ></td>
-<td  >730357052</td>
-<td  >Geier,Charlie</td>
-<td  ></td>
-<td  >0.00</td>
-<td  >AS Bachelor of Arts - 
-Economics (BA)/Statistics and Analytics Minor</td>
-<td  >Senior</td>
-<tr>
-<td  ></td>
-<td  >730475313</td>
-<td  >Gundam,Arul Reddy</td>
-<td  ></td>
-<td  >0.00</td>
-<td  >AS Bachelor of Science - 
-Computer Science (BS)/Statistics and Analytics</td>
-<td  >Junior</td>
-<tr>
-<td  ></td>
-<td  >730567924</td>
-<td  >Gupta,Nandini</td>
-<td  ></td>
-<td  >0.00</td>
-<td  >AS Bachelor - 
-Business Administration/Statistics and Analytics Minor</td>
-<td  >Sophomore</td>
-<tr>
-<td  ></td>
-<td  >730530953</td>
-<td  >Hodge,Matthew</td>
-<td  ></td>
-<td  >0.00</td>
-<td  >AS Bachelor of Arts - 
-Economics (BA)/Entrepreneurship Minor/Statistics and Analytics Minor</td>
-<td  >Senior</td>
-<tr>
-<td  ></td>
-<td  >730465448</td>
-<td  >Hu,Annie</td>
-<td  >(She/Her/Hers)</td>
-<td  >0.00</td>
-<td  >AS Bachelor of Arts - 
-Economics (BA)/Data Science Minor</td>
-<td  >Junior</td>
-<tr>
-<td  ></td>
-<td  >730485215</td>
-<td  >Kolhe,Om A</td>
-<td  ></td>
-<td  >0.00</td>
-<td  >KF Bach Science Business Admin - 
-Business Administration/Statistics and Analytics Minor</td>
-<td  >Junior</td>
-<tr>
-<td  ></td>
-<td  >730476287</td>
-<td  >Korategere,Divya</td>
-<td  >(She/Her/Hers)</td>
-<td  >0.00</td>
-<td  >AS Bachelor of Science - 
-Statistics and Analytics/Honors Program/Business Administration Minor/Data Science Minor</td>
-<td  >Junior</td>
-<tr>
-<td  ></td>
-<td  >730401396</td>
-<td  >Le,Eric Quoc</td>
-<td  ></td>
-<td  >0.00</td>
-<td  >AS Bachelor of Science - 
-Computer Science (BS)/Data Science Minor/Statistics and Analytics Minor</td>
-<td  >Senior</td>
-<tr>
-<td  ></td>
-<td  >730521912</td>
-<td  >Ma,Tianjun</td>
-<td  ></td>
-<td  >0.00</td>
-<td  >AS Bachelor of Science - 
-Statistics and Analytics/Computer Science (BS)</td>
-<td  >Junior</td>
-<tr>
-<td  ></td>
-<td  >730463160</td>
-<td  >Mabe,Abigail Elizabeth</td>
-<td  ></td>
-<td  >0.00</td>
-<td  >AS Bachelor of Science - 
-Statistics and Analytics/Biology (BA)/Data Science Minor</td>
-<td  >Senior</td>
-<tr>
-<td  ></td>
-<td  >730477757</td>
-<td  >Pardo,Diego José</td>
-<td  ></td>
-<td  >0.00</td>
-<td  >KF Bach Science Business Admin - 
-Business Administration/Statistics and Analytics</td>
-<td  >Junior</td>
-<tr>
-<td  ></td>
-<td  >730402805</td>
-<td  >Parks,Adam Harrison</td>
-<td  ></td>
-<td  >0.00</td>
-<td  >AS Bachelor of Science - 
-Statistics and Analytics</td>
-<td  >Junior</td>
-<tr>
-<td  ></td>
-<td  >730462682</td>
-<td  >Peplinski,Ella Eileen</td>
-<td  ></td>
-<td  >0.00</td>
-<td  >IL Bachelor of Science - 
-Information Science/Statistics and Analytics</td>
-<td  >Junior</td>
-<tr>
-<td  ></td>
-<td  >730427337</td>
-<td  >Sears,Haley Grace</td>
-<td  ></td>
-<td  >0.00</td>
-<td  >AS Bachelor of Arts - 
-Economics (BA)/Statistics and Analytics Minor</td>
-<td  >Junior</td>
-<tr>
-<td  ></td>
-<td  >730469477</td>
-<td  >Venkatraman,Aparna</td>
-<td  ></td>
-<td  >0.00</td>
-<td  >KF Bach Science Business Admin - 
-Business Administration/Honors Program/Phil, Politics, and Econ Minor/Statistics and Analytics Minor</td>
-<td  >Junior</td>
-<tr>
-<td  ></td>
-<td  >730526779</td>
-<td  >Yu,Winni Yong-Yu</td>
-<td  >(She/Her/Hers)</td>
-<td  >0.00</td>
-<td  >AS Bachelor of Science - 
-Computer Science (BS)/Statistics and Analytics</td>
-<td  >Junior</td>
-<tr>
-<td  ></td>
-<td  >730581236</td>
-<td  >Zhang,Ashley</td>
-<td  ></td>
-<td  >0.00</td>
-<td  >AS Bachelor - 
-Public Policy/Data Science Minor/Statistics and Analytics Minor</td>
-<td  >Sophomore</td>
-<tr>
-<td  ></td>
-<td  >730509695</td>
-<td  >Zhang,Kemeng</td>
-<td  ></td>
-<td  >0.00</td>
-<td  >AS Bachelor of Science - 
-Statistics and Analytics/Economics (BS)</td>
-<td  >Junior</td>
-<tr>
-<td  ></td>
-<td  >730619940</td>
-<td  >Zhang,Selina</td>
-<td  ></td>
-<td  >0.00</td>
-<td  >AS Bachelor - 
-Economics (BA)/Statistics and Analytics Minor</td>
-<td  >Junior</td>
-</table></body></html>

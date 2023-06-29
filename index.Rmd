@@ -178,32 +178,32 @@ For the final project, each section of STOR 320 will be divided (ideally) into r
 
 To find your research group, see the tables below:
 
-## Group Assignments for Section 1
-
-```{r,echo=F,results="asis",message=F}
-# library(DT)
-# library(tidyverse)
-# 
-# setwd("D:/Mario Documents/UNC/STOR 320/STOR320_WEBSITE/Group Assignments")
-# 
-# Groups=read.csv(file="STOR320.001 Group Assignments.csv")
-# 
-# datatable(Groups,class="display",options = list(scrollX=F,
-#             columnDefs = list(list(className = 'dt-center', targets = 0:5))),rownames=F)
-```
-
 ## Group Assignments for Section 2
 
 ```{r,echo=F,results="asis",message=F}
-# library(DT)
-# library(tidyverse)
-# 
-# setwd("D:/Mario Documents/UNC/STOR 320/STOR320_WEBSITE/Group Assignments")
-# 
-# Groups=read.csv(file="STOR320.002 Group Assignments.csv")
-# 
-# datatable(Groups,class="display",options = list(scrollX=F,
-#             columnDefs = list(list(className = 'dt-center', targets = 0:5))),rownames=F)
+library(DT)
+library(tidyverse)
+
+setwd("D:/Mario Documents/UNC/STOR 320/STOR320_WEBSITE/Group Assignments")
+
+Groups=read.csv(file="STOR320.002 Group Assignments.csv")
+
+datatable(Groups,class="display",options = list(scrollX=F,
+            columnDefs = list(list(className = 'dt-center', targets = 0:5))),rownames=F)
+```
+
+## Group Assignments for Section 1
+
+```{r,echo=F,results="asis",message=F}
+library(DT)
+library(tidyverse)
+
+setwd("D:/Mario Documents/UNC/STOR 320/STOR320_WEBSITE/Group Assignments")
+
+Groups=read.csv(file="STOR320.001 Group Assignments.csv")
+
+datatable(Groups,class="display",options = list(scrollX=F,
+            columnDefs = list(list(className = 'dt-center', targets = 0:5))),rownames=F)
 ```
 
 ## Four Roles

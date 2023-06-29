@@ -1,214 +1,0 @@
-<!DOCTYPE html>
-<html class='pc chrome win psc_dir-ltr psc_form-xlarge pt_classic_plus' dir='ltr' lang='en'>
-<!-- Copyright (c) 2000, 2019, Oracle and/or its affiliates. All rights reserved. -->
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><body><table border='1' cellpadding='3' cellspacing='0'>
-<tr>
-<th>Notify</th><th>ID</th><th>Name</th><th>Pronouns</th><th>Units</th><th>Program and Plan</th><th>Level</th></tr>
-<tr>
-<td  ></td>
-<td  >730481030</td>
-<td  >Bhaskar,Vaibhav B</td>
-<td  ></td>
-<td  >0.00</td>
-<td  >AS Bachelor of Science - 
-Computer Science (BS)/Statistics and Analytics</td>
-<td  >Junior</td>
-<tr>
-<td  ></td>
-<td  >730481220</td>
-<td  >Boyles,Mason William</td>
-<td  ></td>
-<td  >0.00</td>
-<td  >AS Bachelor of Science - 
-Computer Science (BS)/Data Science Minor/Statistics and Analytics</td>
-<td  >Junior</td>
-<tr>
-<td  ></td>
-<td  >730468187</td>
-<td  >Gududuru,Akshay</td>
-<td  ></td>
-<td  >0.00</td>
-<td  >AS Bachelor of Science - 
-Computer Science (BS)/Data Science Minor/Statistics and Analytics</td>
-<td  >Junior</td>
-<tr>
-<td  ></td>
-<td  >730484537</td>
-<td  >Iyengar,Vikram Vardarajan</td>
-<td  ></td>
-<td  >0.00</td>
-<td  >AS Bachelor of Science - 
-Computer Science (BS)/Statistics and Analytics</td>
-<td  >Senior</td>
-<tr>
-<td  ></td>
-<td  >730461034</td>
-<td  >Jackson,Hailey Jean</td>
-<td  ></td>
-<td  >0.00</td>
-<td  >AS Bachelor of Science - 
-Statistics and Analytics/Data Science Minor</td>
-<td  >Junior</td>
-<tr>
-<td  ></td>
-<td  >730475868</td>
-<td  >Jain,Yuvraj</td>
-<td  >(He/Him/His)</td>
-<td  >0.00</td>
-<td  >AS Bachelor of Science - 
-Computer Science (BS)/Data Science Minor</td>
-<td  >Sophomore</td>
-<tr>
-<td  ></td>
-<td  >730395239</td>
-<td  >Jia,Emma</td>
-<td  ></td>
-<td  >0.00</td>
-<td  >AS Bachelor of Science - 
-Computer Science (BS)/Data Science Minor</td>
-<td  >Senior</td>
-<tr>
-<td  ></td>
-<td  >730328867</td>
-<td  >Kalidindi,Sai Varma</td>
-<td  ></td>
-<td  >0.00</td>
-<td  >AS Bachelor of Arts - 
-Economics (BA)/Statistics and Analytics Minor</td>
-<td  >Senior</td>
-<tr>
-<td  ></td>
-<td  >730382185</td>
-<td  >Kern,Nathan Taylor</td>
-<td  ></td>
-<td  >0.00</td>
-<td  >AS Bachelor of Arts - 
-Political Science/Computer Science (BA)/Data Science Minor</td>
-<td  >Junior</td>
-<tr>
-<td  ></td>
-<td  >730283385</td>
-<td  >Kouassi-Brou,Betsy Aude-Marie</td>
-<td  ></td>
-<td  >0.00</td>
-<td  >AS Bachelor of Arts - 
-Economics (BA)/Statistics and Analytics Minor</td>
-<td  >Senior</td>
-<tr>
-<td  ></td>
-<td  >730485383</td>
-<td  >Lalgondar,Vivek</td>
-<td  ></td>
-<td  >0.00</td>
-<td  >AS Bachelor of Science - 
-Computer Science (BS)/Statistics and Analytics</td>
-<td  >Junior</td>
-<tr>
-<td  ></td>
-<td  >730531034</td>
-<td  >Leng,Huixue</td>
-<td  ></td>
-<td  >0.00</td>
-<td  >AS Bachelor of Science - 
-Mathematics (BS)/Statistics and Analytics</td>
-<td  >Senior</td>
-<tr>
-<td  ></td>
-<td  >730521847</td>
-<td  >Lu,Pan</td>
-<td  ></td>
-<td  >0.00</td>
-<td  >AS Bachelor of Science - 
-Computer Science (BS)/Statistics and Analytics</td>
-<td  >Junior</td>
-<tr>
-<td  ></td>
-<td  >730402141</td>
-<td  >Mehta,Anjali Shwetal</td>
-<td  ></td>
-<td  >0.00</td>
-<td  >AS Bachelor of Science - 
-Neuroscience/Chemistry Minor/Data Science Minor</td>
-<td  >Senior</td>
-<tr>
-<td  ></td>
-<td  >730573365</td>
-<td  >Moharana,Prajwal</td>
-<td  ></td>
-<td  >0.00</td>
-<td  >AS Bachelor - 
-Computer Science (BS)/Data Science Minor/Statistics and Analytics</td>
-<td  >Junior</td>
-<tr>
-<td  ></td>
-<td  >730461175</td>
-<td  >Myler,Jillian Emily</td>
-<td  ></td>
-<td  >0.00</td>
-<td  >AS Bachelor of Science - 
-Statistics and Analytics/Exercise &amp; Sport Science Minor</td>
-<td  >Junior</td>
-<tr>
-<td  ></td>
-<td  >730402697</td>
-<td  >Orgain,Ella Marie</td>
-<td  ></td>
-<td  >0.00</td>
-<td  >AS Bachelor of Science - 
-Mathematics (BS)/Data Science Minor/Statistics and Analytics Minor</td>
-<td  >Senior</td>
-<tr>
-<td  ></td>
-<td  >730487983</td>
-<td  >Rathod,Trisha R</td>
-<td  ></td>
-<td  >0.00</td>
-<td  >AS Bachelor of Science - 
-Statistics and Analytics/Data Science Minor</td>
-<td  >Junior</td>
-<tr>
-<td  ></td>
-<td  >730469149</td>
-<td  >Salas Chaves,Joserth Jose</td>
-<td  ></td>
-<td  >0.00</td>
-<td  >AS Bachelor - 
-Statistics and Analytics</td>
-<td  >Sophomore</td>
-<tr>
-<td  ></td>
-<td  >730478709</td>
-<td  >Shuang,Ruofei</td>
-<td  >(She/Her/Hers)</td>
-<td  >0.00</td>
-<td  >AS Bachelor - 
-Economics (BS)/Statistics and Analytics</td>
-<td  >Junior</td>
-<tr>
-<td  ></td>
-<td  >730479415</td>
-<td  >Verma,Ria Anurag</td>
-<td  ></td>
-<td  >0.00</td>
-<td  >KF Bach Science Business Admin - 
-Business Administration/Data Science Minor/Statistics and Analytics Minor</td>
-<td  >Junior</td>
-<tr>
-<td  ></td>
-<td  >730490117</td>
-<td  >Wang,Xueting</td>
-<td  ></td>
-<td  >0.00</td>
-<td  >AS Bachelor of Science - 
-Statistics and Analytics/Economics (BS)</td>
-<td  >Junior</td>
-<tr>
-<td  ></td>
-<td  >730526486</td>
-<td  >Wu,Yutong</td>
-<td  ></td>
-<td  >0.00</td>
-<td  >AS Bachelor of Science - 
-Computer Science (BS)</td>
-<td  >Junior</td>
-</table></body></html>
