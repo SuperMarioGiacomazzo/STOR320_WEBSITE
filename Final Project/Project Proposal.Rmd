@@ -25,7 +25,7 @@ The purpose of the project proposal is to demonstrate your ability to find relev
 # **Requirements**
 All members of the group should be involved in the selection of the data. The data should have at least 5 variables that are not identifiers and will be studied in depth. Out of all the variables, at least 2 should be categorical. If your data only contains numeric variables, your group should decide on how to treat at least two of the variables as categorical. You are able to use multiple datasets in your project, but these will need to be merged at some point. To ensure future parts of the final project go smoothly, I recommend finding a dataset that contains more than 10 variables. To ensure your group is free of plagiarism, I recommend selecting datasets that are not attached to many online analyses. 
 
-Each member of the group is required to design at least two initial questions. These questions can be very general but should not be trivial. I recommend discussing the data as a group, design questions together, and then delegate the questions for future use. In later project parts, your group will be required to investigate these questions and then devise new follow-up questions for future analysis. Think generally about these initial questions so there is room for growth. Choose questions that have not been analyzed online for the data you have selected.
+Each member of the group is required to design at least two initial questions. These questions can be very general but should not be trivial. I recommend discussing the data as a group, design questions together, and then delegate the questions for future use. Each question should be completely unique. In later project parts, your group will be required to investigate these questions and then devise new follow-up questions for future analysis. Think generally about these initial questions so there is room for growth. Choose questions that have not been analyzed online for the data you have selected. Your questions should be well-written as actual questions.  Just because you wrote something down, doesn't mean I am going to give you points.
 
 A template for the project proposal is provided on the course website. In this template, I need to see three key things.
 
@@ -37,16 +37,15 @@ The Deliverer is responsible for compiling all the information into the RMarkdow
 
 The Creator should schedule a 5 minute meeting during office hours of the Instructor. To reserve your 5 minute time slot, email your instructor with a specific 5 minute interval. Time slots will be prioritized according to email and posted on a google spreadsheet linked on the course website. I highly recommend scheduling your project proposal as soon as possible to ensure you have a spot before the deadline. If your Creator fails to schedule the project proposal meeting within 4 days after the deadline, a minimum 2 point penalty will be given. Also, if your Creator fails to attend the meeting that they chose, there will also be some penalty. This penalty applies to your entire group. 
 
-In this meeting, the Creator should come prepared with the dataset downloaded and ready to display on a laptop. The Creator will tell the Instructor where there group found the data and a summary about the variables contained in the data. The Creator should mention how many variables are of interest for future analyses, which of the variables are numerical,and which of the variables are categorical or will be treated as categorical. We will go through your initial questions to detect any problems that may arise.
+In this meeting, the Creator should come prepared with the dataset downloaded and ready to display on a laptop. The Creator will tell the Instructor about the origin of the data and discuss why their group chose that dataset. The Creator should mention how many variables are of interest for future analyses, which of the variables are numerical,and which of the variables are categorical or will be treated as categorical. We will go through your initial questions to detect any problems that may arise.
 
 # **Rubric**
 
 |Requirement|Points|
 |-------|------:|
-|Source of Data Given|1 Point|
-|Data has 5 Variables with 2 Categorical|2 Points|
+|Data has 5 Variables with 2 Categorical|1 Points|
 |Effective Communcation of Data Content|3 Points|
-|At Least 2 Questions Per Group Member|3 Points|
-|Roles of Other Members Assigned|1 Point|
+|2 Questions Per Group Member|4 Points|
+|Template Followed with Source and Roles|2 Point|
 |**Total**|**10 Points**|
 |||
