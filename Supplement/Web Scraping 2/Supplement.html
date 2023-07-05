@@ -11,7 +11,7 @@
 
 <meta name="author" content="Mario Giacomazzo" />
 
-<meta name="date" content="2023-02-20" />
+<meta name="date" content="2023-07-05" />
 
 <title>Supplement for Web Scraping 2</title>
 
@@ -358,7 +358,7 @@ pre code {
 
 <h1 class="title toc-ignore">Supplement for Web Scraping 2</h1>
 <h4 class="author">Mario Giacomazzo</h4>
-<h4 class="date">February 20, 2023</h4>
+<h4 class="date">July 05, 2023</h4>
 
 </div>
 
@@ -424,38 +424,39 @@ crime statistics.</p>
 rates</a> of US cities. This information comes from an FBI report from
 2019. Suppose we wanted to investigate the effect of crime in 2019 on
 current population data in 2022. An HTML table, provided online, reports
-the <a href="http://worldpopulationreview.com/us-cities/">2022
-population density and percentage change</a> of 100 major US cities. Why
-is this information useful when related to violent crimes and what would
-you expect to discover?</p>
+the <a href="https://www.citypopulation.de/en/usa/cities/">Population of
+US States and Cities</a>. Why is this information useful when related to
+violent crimes and what would you expect to discover?</p>
 <div id="chunk-1-web-scraping-and-variable-selection" class="section level2">
 <h2>Chunk 1: Web Scraping and Variable Selection</h2>
 <p>We start by web scraping the population statistics table into R using
 functions from <code>rvest</code>. Additionally, we only select the
 variables of certain variables of interest.</p>
-<pre class="r"><code>URL.US_CENSUS = &quot;http://worldpopulationreview.com/us-cities/&quot;
+<pre class="r"><code>URL.US_CENSUS = &quot;https://www.citypopulation.de/en/usa/cities/&quot;
 US_CENSUS = URL.US_CENSUS %&gt;%
               read_html() %&gt;%
               html_table(header=T,fill=T) %&gt;%
-              .[[1]] %&gt;%
-              select(c(2:7) )
+              .[[3]] %&gt;%
+              select(c(2,4,8,9,10))
+
+US_CENSUS
 
 str(US_CENSUS)</code></pre>
 </div>
 <div id="chunk-2-population-change-and-density-variables-to-numeric" class="section level2">
 <h2>Chunk 2: Population Change and Density Variables to Numeric</h2>
-<p>Ideally, variables <code>Change</code> and <code>Density (mi²)</code>
-should be numeric. The following code starts by giving the variable
-<code>Density (mi²)</code> a more succinct name and then continues to
-provide the necessary mutations required to converting character vectors
-to numeric vectors.</p>
+<p>In this dataset, we have the population of cities in 2020 and 2022.
+We also have the area of each of the cities. Using this information we
+would like to create a variable <code>Change</code> which represents
+percentage change in population from 2020 to 2022, and we would like to
+create a variable called <code>Density</code> which is the population
+density in 2022. In order to do that, we need to start by getting our
+population variables to be numeric.</p>
 <pre class="r"><code>US_CENSUS2 = US_CENSUS %&gt;%
-                rename(Density=names(US_CENSUS)[6]) %&gt;%
-                mutate(Change=as.numeric(str_replace(Change,&quot;%&quot;,&quot;&quot;))) %&gt;%
-                mutate(Density=as.numeric(str_replace_all(Density,&quot;[,]&quot;,&quot;&quot;))) %&gt;%
-                mutate(`2022 Pop.`=as.numeric(str_replace_all(`2022 Pop.`,&quot;[,]&quot;,&quot;&quot;))) %&gt;%
-                mutate(`2010 Census`=as.numeric(str_replace_all(`2010 Census`,&quot;[,]&quot;,&quot;&quot;))) %&gt;%
-                mutate(Change=(`2022 Pop.`-`2010 Census`)/`2010 Census`*100)
+                rename(Pop2020=names(US_CENSUS)[3],Pop2022=names(US_CENSUS)[4]) %&gt;%
+                mutate(Pop2020=as.numeric(str_replace_all(Pop2020,&quot;,&quot;,&quot;&quot;)),Pop2022=as.numeric(str_replace_all(Pop2022,&quot;,&quot;,&quot;&quot;))) %&gt;%
+                mutate(Change=(Pop2022-Pop2020)/Pop2020*100) %&gt;%
+                mutate(Density=Pop2022/Area)
 
 write_csv(US_CENSUS2,&quot;FINAL_CENSUS.CSV&quot;)</code></pre>
 </div>
