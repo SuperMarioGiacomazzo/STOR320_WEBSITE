@@ -161,7 +161,7 @@ All HW, Lab, and Analysis assignments are to be submitted via Canvas. Unzip fold
 | Jul 14 | |[HW5](Homework/HW 5/HW-5.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%205/HW%205.zip)) | | Jul 17 (5:00 PM)|
 | Jul 17  | | | [A3](Analysis/Analysis-3.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Analysis/Analysis%203.zip))                  |   Jul 19 (5:00 PM)     |
 | Jul 19  | |[HW6](Homework/HW 6/HW-6.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%206/HW%206.zip))       |        |    Jul 21 (5:00 PM)     |
-| Jul 21  | [L4](Lab/Lab 4/Lab-4.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab%204/Lab%204.zip))|       |       |     Jul 21 (11:59 PM)     |
+| Jul 21  | [L4](Lab/Summer-Lab-4.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Summer%20Lab%204.zip))|       |       |     Jul 21 (11:59 PM)     |
 | Jul 21  | |[HW7](Homework/HW 7/HW-7.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%207/HW%207.zip))       |                   |   Jul 24 (5:00 PM)     |
 | Jul 24  |   |   | [A4](Analysis/Analysis 4/Analysis-4.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Analysis/Analysis%204/Analysis%204.zip))  |   Jul 26 (5:00 PM)     |
 |   |     |             |  | |         
