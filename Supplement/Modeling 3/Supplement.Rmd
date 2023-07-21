@@ -138,7 +138,7 @@ TEST5 =TEST4 %>%
 set.seed(216)
 EXAMPLE=tibble(
   x=rnorm(10000,mean=0,sd=5),
-  y=7+12/(1+exp(4-1*x))
+  y=7+12/(1+exp(-4-1*x))
 )
 ggplot(data=EXAMPLE) +
   geom_point(aes(x=x,y=y)) +
