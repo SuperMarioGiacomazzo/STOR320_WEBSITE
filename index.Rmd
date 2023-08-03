@@ -213,7 +213,7 @@ Although everyone is responsible for the entire project, each member of the grou
 
 - **The Interpreter(s):** Schedule and Meet with Dr. Mario to Share Findings from Exploratory Analysis, Evaluate Practice Presentation
 
-- **The Orator(s):** Give a Captivating 3-5 Minute Slideshow Presentation During Final Exam Day
+- **The Orator(s):** Give a Captivating 4-7 Minute Slideshow Presentation During Final Exam Day
 
 - **The Deliverer:** Deliver Assignments to Canvas, Polished and On-time
 

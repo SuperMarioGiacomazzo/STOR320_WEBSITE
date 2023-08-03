@@ -39,7 +39,7 @@ SIM.DATA=data.frame(y=y,X=X)
 ## Chunk 2: Fit Linear Model
 ```{r,eval=T}
 lm.model=lm(y~.,data=SIM.DATA)
-glance(lm.model)
+summary(lm.model)
 param.est=lm.model$coefficients
 param.conf=confint(lm.model)
 param.lm=data.frame(cbind(param.est,param.conf))[-1,] #Remove Intercept
@@ -90,7 +90,7 @@ tibble(ACTUAL=ACTUAL,KEEP=KEEP) %>%
 
 ## Chunk 4: Modifying the Cutoff For P-Values
 ```{r,eval=T}
-Cutoff = 0.2
+Cutoff = 0.20
 
 COEF=rep(NA,200)
 P.VAL=rep(NA,200)
