@@ -1,5 +1,5 @@
 ---
-title: '**STOR 320: Intro to Data Science**'
+title: '**STOR 320/STOR 520**'
 geometry: margin=2
 output:
   html_document:
@@ -65,7 +65,12 @@ background-color: #13294B;
 
 </style>
 
-This course is an application-driven introduction to data science. Statistical and computational tools are valued throughout the modern workplace from Silicon Valley startups, to marine biology labs, to Wall Street firms. These tools require technical skills such as programming and statistics. They also require professional skills such as communication, teamwork, problem solving, and critical thinking.
+
+**STOR 320:** Development of basic skill set for data analysis from obtaining data to data carpentry, exploration, modeling, and communication. Topics covered include regression, clustering, classification, algorithmic thinking, and non-standard data objects (networks and text data). 
+
+<span style="color:rgb(0,89,76)">
+**STOR 520**: This course provides hands-on experience working with data sets provided in class and downloaded from certain public websites. Lectures cover basic topics such as R programming, visualization, data wrangling and cleaning, exploratory data analysis, web scraping, data merging, predictive modeling, and elements of machine learning. Programming analyses in more advanced areas of data science.
+</span>
 
 <div class="row">
   <div class="column">
@@ -73,27 +78,25 @@ This course is an application-driven introduction to data science. Statistical a
 - Instructor: **[Mario Giacomazzo](http://www.supermariogiacomazzo.com/)**
 
 - Lab Instructors: 
-    - **[Dilshad Imon](http://stat-or.unc.edu/people/graduate-students-department)**
-    - **[Hui Shen](http://stat-or.unc.edu/people/graduate-students-department)**
+    - **[Dan Meskill](http://stat-or.unc.edu/people/graduate-students-department)**
+    - **[Yuhao Zhou](http://stat-or.unc.edu/people/graduate-students-department)**
 
 - Course Syllabus: 
-    - **[Section 2](Syllabi/STOR 320 Section 2 Syllabus.pdf)**: MTWTh, 12:45PM – 2:45PM, Hanes 107
-    - **[Section 1](Syllabi/STOR 320 Section 1 Syllabus.pdf)**: MTWTh, 3:00PM – 5:00PM, Hanes 120
+    - **[STOR 320](Syllabi/STOR 320 Section 2 Syllabus.pdf)**: TTh, 5:00PM – 6:15PM, Hanes 120
+    - <span style="color:rgb(0,89,76)">**[STOR 520](Syllabi/STOR 520 Section 1 Syllabus.pdf)**: TTh, 5:00PM – 6:15PM, Hanes 120</span>
 
-- Lab Sections for Section 2:
-    - 320.402: F, 12:45PM - 2:45PM, Dey 205 , Dilshad
-    - 320.403: F, 12:45PM - 2:45PM, Hanes 107 , Hui
-
-- Lab Sections for Section 1:
-    - 320.400: F, 3:00PM - 5:00PM, Hanes 107 , Dilshad
-    - 320.401: F, 3:00PM - 5:00PM, Greenlaw 302, Hui
+- Lab Sections:
+    - 320.404: W, 9:05AM - 9:55AM, Philips 222 , Dan
+    - 320.405: F, 9:05AM - 9:55AM, Philips 247 , Dan
+    - 320.406: W, 4:40PM - 5:30PM, Hanes 107 , Yuhao
+    - 320.407: F, 4:40PM - 5:30PM, Hanes 107 , Yuhao
    
 - University Approved Absences: **[Online Form](https://unc-ch.formstack.com/forms/university_approved_absence_request?sso=5f3154c3179f5)**
 
 - Office Hours and Zoom Links:
-    - Dr. Mario: MTWTh, 12:10PM - 12:40PM & 5:05PM - 5:35PM, Hanes 134
-    - **[Dilshad](https://unc.zoom.us/j/98947664607?pwd=ckRIZStMdkx2Tjl3Ky9BYmlWUDdzdz09)**: MTWTh, 5:30PM - 6:00PM, Zoom (Passcode: 684214)
-    - Hui: MTWTh, 11:00AM - 11:30AM, Hanes B-44
+    - Dr. Mario: W, 9AM - 11AM & 12PM - 2PM, Hanes 134
+    - Dan: TBD
+    - Yuhao: TBD
 
   </div>
   <div class="column">
@@ -106,7 +109,7 @@ This course is an application-driven introduction to data science. Statistical a
 
 | Date | Lecture | Slides | Supplement |
 |------|---------|--------:|---------:|
-|Jun 26| Introduction | [Slides](Lecture/Introduction/Intro_Lecture.pdf)||
+|Aug 21| Introduction | [Slides](Lecture/Introduction/Intro_Lecture.pdf)||
 ||Data Visualization|[Slides](Lecture/Data Visualization/Data_Visualization_Lecture.pdf)|[Preview](Supplement/Data Visualization/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Data%20Visualization/Supplement.zip))|
 |Jun 27| Workflow in RMarkdown | [Slides](Lecture/Workflow/Workflow_Lecture.pdf) ||
 || Data Transformation I | [Slides](Lecture/Data Transformation 1/Data_Transformation_1_Lecture.pdf) ||
@@ -177,32 +180,16 @@ For the final project, each section of STOR 320 will be divided (ideally) into r
 
 To find your research group, see the tables below:
 
-## Group Assignments for Section 2
+## Group Assignments for STOR 320
 
 ```{r,echo=F,results="asis",message=F}
-library(DT)
-library(tidyverse)
 
-setwd("D:/Mario Documents/UNC/STOR 320/STOR320_WEBSITE/Group Assignments")
-
-Groups=read.csv(file="STOR320.002 Group Assignments.csv")
-
-datatable(Groups,class="display",options = list(scrollX=F,
-            columnDefs = list(list(className = 'dt-center', targets = 0:5))),rownames=F)
 ```
 
-## Group Assignments for Section 1
+## Group Assignments for STOR 520
 
 ```{r,echo=F,results="asis",message=F}
-library(DT)
-library(tidyverse)
 
-setwd("D:/Mario Documents/UNC/STOR 320/STOR320_WEBSITE/Group Assignments")
-
-Groups=read.csv(file="STOR320.001 Group Assignments.csv")
-
-datatable(Groups,class="display",options = list(scrollX=F,
-            columnDefs = list(list(className = 'dt-center', targets = 0:5))),rownames=F)
 ```
 
 ## Four Roles
