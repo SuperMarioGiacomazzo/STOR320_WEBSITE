@@ -100,7 +100,7 @@ background-color: #13294B;
 
 - University Approved Absences: **[Online Form](https://unc-ch.formstack.com/forms/university_approved_absence_request?sso=5f3154c3179f5)**
 
-- Textbook: **[R For Data Science](R for Data Science- Import, Tidy, Transform, Visualize, and Model Data.pdf)**
+- Textbook: **[R For Data Science](R for Data Science- Import, Tidy, Transform, Visualize, and Model Data.pdf)** (R4DS)
 
   </div>
   <div class="column">
@@ -108,6 +108,14 @@ background-color: #13294B;
   </div>
 </div> 
 
+# **Complete Before First Day of Class**
+- Bookmark this **[course website](https://supermariogiacomazzo.github.io/STOR320_WEBSITE/)** in your browser
+- Get familiar with the course website and Canvas
+- View the syllabus using the hyperlink on the course website
+- Download the **[UNC Check-in App](https://unccheckin.unc.edu/#studentFAQ)** on your Mobile Phone
+- Install **[R](https://cran.r-project.org/)** and **[R Studio](https://www.rstudio.com/products/rstudio/#Desktop)** to your laptop
+- Read Introduction in R4DS
+- Bring your laptop and mobile phone to class
 
 # **Course Material**
 
