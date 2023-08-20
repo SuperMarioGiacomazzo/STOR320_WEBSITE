@@ -86,13 +86,13 @@ background-color: #13294B;
     - <span style="color:rgb(0,89,76)">**[STOR 520](Syllabi/STOR 520 Section 1 Syllabus.pdf)**: TTh, 5:00PM – 6:15PM, Hanes 120</span>
 
 - Lab Sections:
-    - 320.404: W, 9:05AM - 9:55AM, Philips 222 , Dan
-    - 320.405: F, 9:05AM - 9:55AM, Philips 247 , Dan
+    - 320.404: W, 9:05AM - 9:55AM, Phillips 222 , Dan
+    - 320.405: F, 9:05AM - 9:55AM, Phillips 247 , Dan
     - 320.406: W, 4:40PM - 5:30PM, Hanes 107 , Yuhao
     - 320.407: F, 4:40PM - 5:30PM, Hanes 107 , Yuhao
 
 - Office Hours and Zoom Links:
-    - Dr. Mario: W, 9AM - 11AM & 12PM - 2PM, Hanes 134
+    - Dr. Mario: W, 9AM - 11AM/12PM - 2PM, Hanes 134
     - Dan: TTh, 11AM - 12PM, Hanes B-04
     - Yuhao: TTh, 1:15PM - 2:15PM,**[Remote](https://unc.zoom.us/j/94911934010?pwd=WkxUTEMwMzZIQXJtdzZkdHY2OEdRZz09)**
 
@@ -186,7 +186,7 @@ All HW, Lab, and Analysis assignments are to be submitted via Canvas. Unzip fold
 
 | Lab (L) |Homework (HW) | Analysis (A) | <span style="color:rgb(0,89,76)">Mini Project (MP)</span> |Due  |
 |:--------:|:--------:|:-------------:|:----------------:|:----------------:|
-| L1 |       |       |    | Aug 30 (9:05 AM)     |
+| [L1](Lab/Lab-1.html)([.zip]()) |       |       |    | Aug 30 (9:05 AM)     |
 | |[HW1](Homework/HW 1/HW-1.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%201/HW%201.zip)) |||   Sep 1 (5:00 PM)     |
 | L2 |       |       |   | Sep 6 (9:05 AM)     |
 | |[HW2](Homework/HW 2/HW-2.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%202/HW%202.zip)) |||   Sep 8 (5:00 PM)     |

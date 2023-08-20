@@ -1,0 +1,41 @@
+---
+title: "Lab 1: Getting to Know Each Other"
+author: "FIRSTNAME LASTNAME"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Instructions:
+
+The purpose of this lab assignment is to get to know a student in the class, communicate the information learned in writing, and check to see if R Markdown is properly knitting to HTML. Start by putting your full name in the space provided above in the R Markdown file (Replace FIRSTNAME and LASTNAME).
+
+In this first lab, you will interview another student in the class and record this information in the appropriate space below. Find 2 or 3 students nearby to interview. If you are in a group of 3, make sure you work in a circle where person 1 interviews person 2, person 2 interviews person 3, and person 3 interviews person 1. Don't just get the answers required, but actually get to know them..
+
+After you are done, knit the R Markdown file to HTML and submit it to Canvas under Lab 1.
+
+# Interview:
+
+- Name of Student:
+
+- Origin:
+
+- Year in School:
+
+- Major or Minor:
+
+- Involvement on Campus:
+
+- Plans After Graduation:
+
+- Biggest Influence in Your Life:
+
+- Favorite Thing to Do in Your Free Time:
+
+- Positive Thing During the Pandemic:
+
+- Negative Thing During the Pandemic:
+
