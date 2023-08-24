@@ -196,6 +196,7 @@ All HW, Lab, and Analysis assignments are to be submitted via Canvas. Unzip fold
 |:--------:|:--------:|:-------------:|:----------------:|:----------------:|
 | [L1](Lab/Lab-1.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab-1.zip)) |       |       |    | Aug 30 (9:05 AM)     |
 | |[HW1](Homework/HW 1/HW-1.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%201/HW%201.zip)) |||   Sep 1 (5:00 PM)     |
+| | ||[MP1](Mini Project/MP1.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Mini Project/MP1.zip))|   Sep 1 (5:00 PM)     |
 | L2 |       |       |   | Sep 6 (9:05 AM)     |
 | |[HW2](Homework/HW 2/HW-2.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%202/HW%202.zip)) |||   Sep 8 (5:00 PM)     |
 | L3 |       |       |    | Sep 13 (9:05 AM)     |
