@@ -316,7 +316,7 @@ This final project will be divided into four parts worth a total of 100 points. 
 
 - **[Installing R](https://cran.r-project.org/)**
 
-- **[Installing R Studio](https://www.rstudio.com/products/rstudio/#Desktop)**
+- **[Installing R Studio](https://posit.co/download/rstudio-desktop/)**
 
 - **[Additional Necessary Tools for Mac Users](https://mac.r-project.org/tools/)**
 
