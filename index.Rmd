@@ -78,8 +78,8 @@ background-color: #13294B;
 - Instructor: **[Mario Giacomazzo](http://www.supermariogiacomazzo.com/)**
 
 - Lab Instructors: 
-    - **[Dan Meskill](http://stat-or.unc.edu/people/graduate-students-department)**
-    - **[Yuhao Zhou](http://stat-or.unc.edu/people/graduate-students-department)**
+    - **[Dan Meskill](https://stor.unc.edu/people/graduate-students/)**
+    - **[Yuhao Zhou](https://stor.unc.edu/people/graduate-students/)**
 
 - Course Syllabus: 
     - **[STOR 320](Syllabi/STOR 320 Section 2 Syllabus.pdf)**: TTh, 5:00PM – 6:15PM, Hanes 120
@@ -123,10 +123,12 @@ background-color: #13294B;
 |:---------:|:---------:|:---------:|:---------:|
 |Aug 22| Introduction | [Slides](Lecture/Introduction/Intro_Lecture.pdf)||
 ||Data Visualization|[Slides](Lecture/Data Visualization/Data_Visualization_Lecture.pdf)|[Preview](Supplement/Data Visualization/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Data%20Visualization/Supplement.zip))|
-|Aug 24| Workflow in RMarkdown | [Slides](Lecture/Workflow/Workflow_Lecture.pdf) ||
-|| Data Transformation I | [Slides](Lecture/Data Transformation 1/Data_Transformation_1_Lecture.pdf) ||
-| Aug 29     |         |         |          |
-| Aug 31    |         |         |          |
+|Aug 24|Data Visualization|[Slides](Lecture/Data Visualization/Data_Visualization_Lecture.pdf)|[Preview](Supplement/Data Visualization/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Data%20Visualization/Supplement.zip))|
+|| Workflow in RMarkdown | [Slides](Lecture/Workflow/Workflow_Lecture.pdf) ||
+|Aug 29| Data Transformation I | [Slides](Lecture/Data Transformation 1/Data_Transformation_1_Lecture.pdf) ||
+| | Data Transformation II        | [Slides](Lecture/Data Transformation 2/Data_Transformation_2_Lecture.pdf)        |          |
+|Aug 31| Data Transformation III | [Slides](Lecture/Data Transformation 3/Data_Transformation_3_Lecture.pdf)||
+|| Data Transformation IV | [Slides](Lecture/Data Transformation 4/Data_Transformation_4_Lecture.pdf)||
 | Sep 5    |  Well-being Day      |         |          |
 | Sep 7    |       |         |          |
 | Sep 12    |       |         |          |
@@ -155,9 +157,7 @@ background-color: #13294B;
 | Nov 30   |       |         |          |
 | Dec 5   | Work on Project      |         |          |
 |||||
-<!-- |Jun 28| Data Transformation II | [Slides](Lecture/Data Transformation 2/Data_Transformation_2_Lecture.pdf)|| -->
-<!-- || Data Transformation III | [Slides](Lecture/Data Transformation 3/Data_Transformation_3_Lecture.pdf)|| -->
-<!-- || Data Transformation IV | [Slides](Lecture/Data Transformation 4/Data_Transformation_4_Lecture.pdf)|| -->
+
 <!-- |Jun 29 | Exploratory Data Analysis I  | [Slides](Lecture/Exploratory Data Analysis 1/Exploratory_Data_Analysis_1_Lecture.pdf) || -->
 <!-- || Exploratory Data Analysis II |[Slides](Lecture/Exploratory Data Analysis 2/Exploratory_Data_Analysis_2_Lecture.pdf)|| -->
 <!-- |Jul 3| Final Project I | [Slides](Lecture/Final Project 1/Final_Project_1_Lecture.pdf)|| -->
@@ -299,6 +299,8 @@ This final project will be divided into four parts worth a total of 100 points. 
 # **Optional Suggested Reading**
 
 - **[R for Data Science (2E)](https://r4ds.hadley.nz/)** (R4DS2)
+
+- **[R Programming: Zero to Pro](https://r02pro.github.io/)** (RPZP)
 
 - R Programming for Data Science (RP4DS)
 
