@@ -98,7 +98,7 @@ background-color: #13294B;
 
 - Attendance: **[UNC Check-in App](https://unccheckin.unc.edu/)**
 
-- University Approved Absences: **[Online Form](https://unc-ch.formstack.com/forms/university_approved_absence_request?sso=5f3154c3179f5)**
+- University Approved Absences: **[Online Form](https://uaao.unc.edu/university-approved-absences-request/)**
 
 - Textbook: **[R For Data Science](R for Data Science- Import, Tidy, Transform, Visualize, and Model Data.pdf)** (R4DS)
 
@@ -125,11 +125,12 @@ background-color: #13294B;
 ||Data Visualization|[Slides](Lecture/Data Visualization/Data_Visualization_Lecture.pdf)|[Preview](Supplement/Data Visualization/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Data%20Visualization/Supplement.zip))|
 |Aug 24|Data Visualization|[Slides](Lecture/Data Visualization/Data_Visualization_Lecture.pdf)|[Preview](Supplement/Data Visualization/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Data%20Visualization/Supplement.zip))|
 || Workflow in RMarkdown | [Slides](Lecture/Workflow/Workflow_Lecture.pdf) ||
-|Aug 29| Data Transformation I | [Slides](Lecture/Data Transformation 1/Data_Transformation_1_Lecture.pdf) ||
+| Aug 29    |  No Class     |         |          |
+|Aug 31| Data Transformation I | [Slides](Lecture/Data Transformation 1/Data_Transformation_1_Lecture.pdf) ||
 | | Data Transformation II        | [Slides](Lecture/Data Transformation 2/Data_Transformation_2_Lecture.pdf)        |          |
-|Aug 31| Data Transformation III | [Slides](Lecture/Data Transformation 3/Data_Transformation_3_Lecture.pdf)||
-|| Data Transformation IV | [Slides](Lecture/Data Transformation 4/Data_Transformation_4_Lecture.pdf)||
 | Sep 5    |  Well-being Day      |         |          |
+|Sep 7| Data Transformation III | [Slides](Lecture/Data Transformation 3/Data_Transformation_3_Lecture.pdf)||
+|| Data Transformation IV | [Slides](Lecture/Data Transformation 4/Data_Transformation_4_Lecture.pdf)||
 | Sep 7    |       |         |          |
 | Sep 12    |       |         |          |
 | Sep 14    |       |         |          |
@@ -197,7 +198,7 @@ All HW, Lab, and Analysis assignments are to be submitted via Canvas. Unzip fold
 | [L1](Lab/Lab-1.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab-1.zip)) |       |       |    | Aug 30 (9:05 AM)     |
 | |[HW1](Homework/HW 1/HW-1.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%201/HW%201.zip)) |||   Sep 1 (5:00 PM)     |
 | | || <span style="color:#EF426F">[MP1](Mini Project/MP1.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Mini Project/MP1.zip))</span>|   Sep 1 (5:00 PM)     |
-| L2 |       |       |   | Sep 6 (9:05 AM)     |
+| [L2](Lab/Lab-2.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab-2.zip)) |       |       |   | Sep 6 (9:05 AM)     |
 | |[HW2](Homework/HW 2/HW-2.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%202/HW%202.zip)) |||   Sep 8 (5:00 PM)     |
 | L3 |       |       |    | Sep 13 (9:05 AM)     |
 |      |  | A1     |     | Sep 15 (5:00 PM)     |
