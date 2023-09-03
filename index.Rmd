@@ -129,11 +129,13 @@ background-color: #13294B;
 |Aug 31| Data Transformation I | [Slides](Lecture/Data Transformation 1/Data_Transformation_1_Lecture.pdf) ||
 | | Data Transformation II        | [Slides](Lecture/Data Transformation 2/Data_Transformation_2_Lecture.pdf)        |          |
 | Sep 5    |  Well-being Day      |         |          |
-|Sep 7| Data Transformation III | [Slides](Lecture/Data Transformation 3/Data_Transformation_3_Lecture.pdf)||
+| Sep 7 | Data Transformation II  (Cont.)      | [Slides](Lecture/Data Transformation 2/Data_Transformation_2_Lecture.pdf)        | 
+|| Data Transformation III | [Slides](Lecture/Data Transformation 3/Data_Transformation_3_Lecture.pdf)||
 || Data Transformation IV | [Slides](Lecture/Data Transformation 4/Data_Transformation_4_Lecture.pdf)||
-| Sep 7    |       |         |          |
-| Sep 12    |       |         |          |
-| Sep 14    |       |         |          |
+|Sep 12 | Exploratory Data Analysis I  | [Slides](Lecture/Exploratory Data Analysis 1/Exploratory_Data_Analysis_1_Lecture.pdf) ||
+|| Exploratory Data Analysis II |[Slides](Lecture/Exploratory Data Analysis 2/Exploratory_Data_Analysis_2_Lecture.pdf)||
+|Sep 14| Final Project I | [Slides](Lecture/Final Project 1/Final_Project_1_Lecture.pdf)||
+|| Data Import | [Slides](Lecture/Data Import/Data_Import_Lecture.pdf)||
 | Sep 19    |       |         |          |
 | Sep 21    |       |         |          |
 | Sep 26    |       |         |          |
@@ -159,11 +161,7 @@ background-color: #13294B;
 | Dec 5   | Work on Project      |         |          |
 |||||
 
-<!-- |Jun 29 | Exploratory Data Analysis I  | [Slides](Lecture/Exploratory Data Analysis 1/Exploratory_Data_Analysis_1_Lecture.pdf) || -->
-<!-- || Exploratory Data Analysis II |[Slides](Lecture/Exploratory Data Analysis 2/Exploratory_Data_Analysis_2_Lecture.pdf)|| -->
-<!-- |Jul 3| Final Project I | [Slides](Lecture/Final Project 1/Final_Project_1_Lecture.pdf)|| -->
-<!-- || Data Import | [Slides](Lecture/Data Import/Data_Import_Lecture.pdf)|| -->
-<!-- |Jul 4| Holidizzay | No Class|| -->
+
 <!-- |Jul 5| Tidy Data 1 | [Slides](Lecture/Tidy Data 1/Tidy_Data_1_Lecture.pdf) || -->
 <!-- || Tidy Data 2 | [Slides](Lecture/Tidy Data 2/Tidy_Data_2_Lecture.pdf) || -->
 <!-- |Jul 6| Web Scraping I | [Slides](Lecture/Web Scraping 1/Web_Scraping_1_Lecture.pdf) | [Preview](Supplement/Web Scraping 1/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Web%20Scraping%201/Supplement.zip)) | -->
