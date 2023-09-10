@@ -108,7 +108,7 @@ background-color: #13294B;
   </div>
 </div> 
 
-# **Complete Before First Day of Class**
+# **Complete Before First Day**
 - Bookmark this **[course website](https://supermariogiacomazzo.github.io/STOR320_WEBSITE/)** in your browser
 - Get familiar with the course website and Canvas
 - View the syllabus using the hyperlink on the course website
@@ -136,8 +136,10 @@ background-color: #13294B;
 || Exploratory Data Analysis II |[Slides](Lecture/Exploratory Data Analysis 2/Exploratory_Data_Analysis_2_Lecture.pdf)||
 |Sep 14| Final Project I | [Slides](Lecture/Final Project 1/Final_Project_1_Lecture.pdf)||
 || Data Import | [Slides](Lecture/Data Import/Data_Import_Lecture.pdf)||
-| Sep 19    |       |         |          |
-| Sep 21    |       |         |          |
+|Sep 19| Tidy Data 1 | [Slides](Lecture/Tidy Data 1/Tidy_Data_1_Lecture.pdf) ||
+|| Tidy Data 2 | [Slides](Lecture/Tidy Data 2/Tidy_Data_2_Lecture.pdf) ||
+|Sep 21| Web Scraping I | [Slides](Lecture/Web Scraping 1/Web_Scraping_1_Lecture.pdf) | [Preview](Supplement/Web Scraping 1/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Web%20Scraping%201/Supplement.zip)) |
+|| Web Scraping II | [Slides](Lecture/Web Scraping 2/Web_Scraping_2_Lecture.pdf) | [Preview](Supplement/Web Scraping 2/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Web%20Scraping%202/Supplement.zip)) |
 | Sep 26    |       |         |          |
 | Sep 28    |       |         |          |
 | Oct 3    |       |         |          |
@@ -162,10 +164,8 @@ background-color: #13294B;
 |||||
 
 
-<!-- |Jul 5| Tidy Data 1 | [Slides](Lecture/Tidy Data 1/Tidy_Data_1_Lecture.pdf) || -->
-<!-- || Tidy Data 2 | [Slides](Lecture/Tidy Data 2/Tidy_Data_2_Lecture.pdf) || -->
-<!-- |Jul 6| Web Scraping I | [Slides](Lecture/Web Scraping 1/Web_Scraping_1_Lecture.pdf) | [Preview](Supplement/Web Scraping 1/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Web%20Scraping%201/Supplement.zip)) | -->
-<!-- || Web Scraping II | [Slides](Lecture/Web Scraping 2/Web_Scraping_2_Lecture.pdf) | [Preview](Supplement/Web Scraping 2/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Web%20Scraping%202/Supplement.zip)) | -->
+
+
 <!-- |Jul 10| Joins I | [Slides](Lecture/Joins 1/Joins_1_Lecture.pdf) || -->
 <!-- || Joins II| [Slides](Lecture/Joins 2/Joins_2_Lecture.pdf) || -->
 <!-- |Jul 11| Final Project II | [Slides](Lecture/Final Project 2/Final_Project_2_Lecture.pdf) || -->
@@ -202,7 +202,7 @@ All HW, Lab, and Analysis assignments are to be submitted via Canvas. Unzip fold
 | [L3](Lab/Lab-3.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab-3.zip)) |       |       |    | Sep 13 (9:05 AM)     |
 |      |  |  [A1](Analysis/Analysis-1.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Analysis/Analysis-1.zip))     |     | Sep 15 (5:00 PM)     |
 | | || <span style="color:#EF426F">[MP3](Mini Project/MP3.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Mini Project/MP3.zip))</span>|   Sep 15 (5:00 PM)     |
-| L4 |       |       |    | Sep 20 (9:05 AM)     |
+| [L4](Lab/Lab-4.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab-4.zip)) |       |       |    | Sep 20 (9:05 AM)     |
 | | [HW3](Homework/HW 3/HW-3.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%203/HW%203.zip)) | |   | Sep 22  (5:00 PM)   |
 | L5 |       |       |    | Sep 27 (9:05 AM)     |
 | |[HW4](Homework/HW 4/HW-4.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%204/HW%204.zip))   |  |   | Sep 29 (5:00 PM)   |
