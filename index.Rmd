@@ -224,24 +224,44 @@ All HW, Lab, and Analysis assignments are to be submitted via Canvas. Unzip fold
 
 # **Final Project Details**
 
-For the final project, students in STOR 320 will be divided  into research groups of size 5 or 6. To ensure fairness, students will be assigned randomly. Also, I will try to ensure that all students in your group are in your lab section.
-
-To find your research group, see the tables below:
-
 ## Group Assignments for STOR 320
 
-```{r,echo=F,results="asis",message=F}
+For the final project, students in STOR 320 will be divided  into research groups of size 5 or 6. To ensure fairness, students will be assigned randomly. Also, I will try to ensure that all students in your group are in your lab section.
 
+To find your research group, see the table below:
+
+```{r,echo=F,results="asis",message=F}
+library(DT)
+library(tidyverse)
+
+setwd("D:/Mario Documents/UNC/STOR 320/STOR320_WEBSITE/Group Assignments")
+
+Groups1=read.csv(file="STOR320.002 Group Assignments.csv")
+
+arrange(Groups1, Group) %>%
+datatable(class="display",options = list(scrollX=F,
+             columnDefs = list(list(className = 'dt-center', targets = 0:5))),rownames=F)
 ```
 
-<span style="color:#EF426F">For the final project, students in STOR 520 will be divided  into research groups of size 4 or 5. To ensure fairness, students will be assigned randomly. Also, I will try to ensure that all students in your group are in your lab section.</span>
 
-<span style="color:#EF426F">To find your research group, see the tables below:</span>
 
 ## Group Assignments for STOR 520
 
-```{r,echo=F,results="asis",message=F}
+<span style="color:#EF426F">For the final project, students in STOR 520 will be divided  into research groups of size 4 or 5. To ensure fairness, students will be assigned randomly. Also, I will try to ensure that all students in your group are in your lab section.</span>
 
+<span style="color:#EF426F">To find your research group, see the table below:</span>
+
+```{r,echo=F,results="asis",message=F}
+library(DT)
+library(tidyverse)
+
+setwd("D:/Mario Documents/UNC/STOR 320/STOR320_WEBSITE/Group Assignments")
+
+Groups2=read.csv(file="STOR520.001 Group Assignments.csv")
+
+arrange(Groups2, Group) %>%
+datatable(class="display",options = list(scrollX=F,
+             columnDefs = list(list(className = 'dt-center', targets = 0:5))),rownames=F)
 ```
 
 ## Four Roles
