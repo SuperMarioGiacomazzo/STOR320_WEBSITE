@@ -136,7 +136,8 @@ background-color: #13294B;
 || Exploratory Data Analysis II |[Slides](Lecture/Exploratory Data Analysis 2/Exploratory_Data_Analysis_2_Lecture.pdf)||
 |Sep 14| Final Project I | [Slides](Lecture/Final Project 1/Final_Project_1_Lecture.pdf)||
 || Data Import | [Slides](Lecture/Data Import/Data_Import_Lecture.pdf)||
-|Sep 19| Tidy Data 1 | [Slides](Lecture/Tidy Data 1/Tidy_Data_1_Lecture.pdf) ||
+|Sep 19| Data Import (Cont.) | [Slides](Lecture/Data Import/Data_Import_Lecture.pdf)||
+|| Tidy Data 1 | [Slides](Lecture/Tidy Data 1/Tidy_Data_1_Lecture.pdf) ||
 || Tidy Data 2 | [Slides](Lecture/Tidy Data 2/Tidy_Data_2_Lecture.pdf) ||
 |Sep 21| Web Scraping I | [Slides](Lecture/Web Scraping 1/Web_Scraping_1_Lecture.pdf) | [Preview](Supplement/Web Scraping 1/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Web%20Scraping%201/Supplement.zip)) |
 || Web Scraping II | [Slides](Lecture/Web Scraping 2/Web_Scraping_2_Lecture.pdf) | [Preview](Supplement/Web Scraping 2/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Web%20Scraping%202/Supplement.zip)) |
@@ -200,8 +201,8 @@ All HW, Lab, and Analysis assignments are to be submitted via Canvas. Unzip fold
 | | || <span style="color:#EF426F">[MP2](Mini Project/MP2.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Mini Project/MP2.zip))</span>|   Sep 8 (5:00 PM)     |
 | [L2](Lab/Lab-2.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab-2.zip)) |       |       |   | Sep 13 (9:05 AM)     |
 | [L3](Lab/Lab-3.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab-3.zip)) |       |       |    | Sep 13 (9:05 AM)     |
-|      |  |  [A1](Analysis/Analysis-1.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Analysis/Analysis-1.zip))     |     | Sep 15 (5:00 PM)     |
-| | || <span style="color:#EF426F">[MP3](Mini Project/MP3.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Mini Project/MP3.zip))</span>|   Sep 15 (5:00 PM)     |
+|      |  |  [A1](Analysis/Analysis-1.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Analysis/Analysis-1.zip))     |     | Sep 18 (5:00 PM)     |
+| | || <span style="color:#EF426F">[MP3](Mini Project/MP3.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Mini Project/MP3.zip))</span>|   Sep 18 (5:00 PM)     |
 | [L4](Lab/Lab-4.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab-4.zip)) |       |       |    | Sep 20 (9:05 AM)     |
 | | [HW3](Homework/HW 3/HW-3.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%203/HW%203.zip)) | |   | Sep 22  (5:00 PM)   |
 | L5 |       |       |    | Sep 27 (9:05 AM)     |
