@@ -41,12 +41,12 @@ head(Housing2,5)
 
 
 ```{r,message=F}
-FreshBeats=read_csv(url("https://think.cs.vt.edu/corgis/csv/music/music.csv?forcedownload=1"))
+FreshBeats=read_csv(url("https://corgis-edu.github.io/corgis/datasets/csv/music/music.csv"))
 
-FreshBeats2=FreshBeats %>%
-  filter(artist.name=="Word") %>%
-  arrange(desc(artist.hotttnesss)) %>%
-  select(artist.hotttnesss,artist.name,title)
+FreshBeats2 = FreshBeats %>%
+              filter(artist.name=="Word") %>%
+              arrange(desc(artist.hotttnesss)) %>%
+              select(artist.hotttnesss,artist.name,song.title)
 ```
 
 ```{r}

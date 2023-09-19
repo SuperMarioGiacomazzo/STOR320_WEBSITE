@@ -133,18 +133,19 @@ ggplot(tidy4b) +
 
 ```{r}
 untidy5=tribble(
-~Pack,  ~Type, ~Day, ~Month,
-1, "Regular", 1,  8,
-2, "Regular", 2, 8,
-3, "Regular", 3,  9,
-4, "Regular", 4, 9,
+~Type, ~`Average Count`, ~`SD Count`,
+"Regular", 30,  1,
+"Peanut", 22, 3,
+"Peanut Butter", 24,  2,
+"Almond", 18, 3,
 )
 untidy5
 ```
 
 ```{r}
 tidy5=untidy5 %>%
-  unite(swag,Day,Month,sep=":(")
+  unite(`Mean (SD)`,`Average Count`,`SD Count`,sep=" (") %>%
+  mutate(`Mean (SD)`=paste(`Mean (SD)`,")",sep=""))
 tidy5
 ```
 
