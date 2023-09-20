@@ -1,0 +1,123 @@
+---
+title: "Lecture 15 Workspace"
+author: "Mario Giacomazzo"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,warning=F)
+options(scipen=999)
+library(tidyverse)    #Essential Functions
+library(rvest)        #Read Tables From Webpages
+library(noncensus)    #Attach Zips to Cities
+
+
+library(xtable)
+library(rworldmap)
+library(rworldxtra)
+library(ggmap)
+library(ggthemes)
+
+```
+
+[rvest1](http://blog.corynissen.com/2015/01/using-rvest-to-scrape-html-table.html)
+[rvest2](https://blog.rstudio.com/2014/11/24/rvest-easy-web-scraping-with-r/)
+[rvest3](http://categitau.com/using-rvest-to-scrape-data-from-wikipedia/)
+[rvest4](https://stat4701.github.io/edav/2015/04/02/rvest_tutorial/)
+[rvest5](https://www.analyticsvidhya.com/blog/2017/03/beginners-guide-on-web-scraping-in-r-using-rvest-with-hands-on-knowledge/)
+
+[selectorgadget](https://selectorgadget.com/)
+
+[video](https://www.youtube.com/watch?v=4IYfYx4yoAI)
+[video](https://www.youtube.com/watch?v=9ATgpE0yTxA)
+[video](https://www.youtube.com/watch?v=gSbuwYdNYLM)
+
+
+
+[Link](https://en.wikipedia.org/wiki/List_of_United_States_cities_by_crime_rate#Crime_rates_per_100.2C000_people_.282012.29)
+```{r}
+URL.VIOLENT="https://en.wikipedia.org/wiki/List_of_United_States_cities_by_crime_rate#Crime_rates_per_100.2C000_people_.282012.29"
+
+VIOLENT = URL.VIOLENT %>%
+            read_html() %>%
+            html_table(fill=T) %>%
+            .[[2]]
+VIOLENT2=VIOLENT[-1,1:8]
+colnames(VIOLENT2)=c("State","City","Population","Total","Murder","Rape","Robbery","Assault")
+head(VIOLENT2)
+```
+
+[Link](https://cran.r-project.org/web/packages/noncensus/noncensus.pdf)
+```{r}
+data(zip_codes)
+ZIP=zip_codes
+head(ZIP)
+```
+
+[Link](https://state.1keydata.com/state-abbreviations.php)
+```{r}
+URL.STATE_ABBREV = "https://state.1keydata.com/state-abbreviations.php"
+STATE_ABBREV = URL.STATE_ABBREV %>%
+                read_html() %>%
+                html_table(fill=T) %>%
+                .[[3]] %>%
+                .[-1,]
+head(STATE_ABBREV)
+STATE_ABBREV_TOP = STATE_ABBREV[,1:2]
+names(STATE_ABBREV_TOP)=c("State","state")
+STATE_ABBREV_BOT = STATE_ABBREV[,3:4]
+names(STATE_ABBREV_BOT)=c("State","state")
+STATE_ABBREV2=rbind(STATE_ABBREV_TOP,STATE_ABBREV_BOT) %>% arrange(State)
+head(STATE_ABBREV2)
+```
+
+
+```{r}
+#Problems with Wikipedia Violent Crime Data
+str(VIOLENT2)
+VIOLENT3=VIOLENT2 %>%
+            mutate(Population=str_replace_all(Population,",","")) %>%
+            mutate_at(3:8,as.numeric)
+head(VIOLENT3)
+
+VIOLENT3[str_detect(VIOLENT3$City,"[*-]"),]
+VIOLENT4 = VIOLENT3 %>%
+              mutate(City=str_replace_all(City,"[*]",""))
+VIOLENT4 %>%
+  filter(City %in% c("Cleveland","Newark","Portland","Raleigh"))
+VIOLENT5 = VIOLENT4 %>% 
+              mutate(City=ifelse(City=="Charlotte-Mecklenburg","Charlotte",City))
+VIOLENT5[str_detect(VIOLENT3$City,"[*-]"),]
+```
+
+[link](http://worldpopulationreview.com/us-cities/)
+```{r}
+URL.US_CENSUS = "http://worldpopulationreview.com/us-cities/"
+US_CENSUS = URL.US_CENSUS %>%
+              read_html() %>%
+              html_nodes(css="#main-page-content > div > table") %>%
+              html_table(header=T,fill=T) %>%
+              .[[1]]
+head(US_CENSUS)
+```
+
+```{r}
+US_CENSUS2 = US_CENSUS %>%
+                select(Name,State,Change,`2018 Density`) %>%
+                mutate(Change=as.numeric(str_replace(Change,"%",""))) %>%
+                rename(Density=`2018 Density`) %>%
+                mutate(Density=str_replace_all(Density,",","")) 
+
+US_CENSUS2$Density[1]              
+str_replace(US_CENSUS2$Density[1],"/...","")
+
+US_CENSUS3 =US_CENSUS2 %>%
+              mutate(Density = Density)
+```
+
+
+
+
+
+

@@ -1,5 +1,5 @@
 ---
-title: "Supplement for Web Scraping 1"
+title: "Supplement for Web Scraping"
 author: "Mario Giacomazzo"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 output: html_document
@@ -173,3 +173,37 @@ head(STATE_ABBREV2)
 write_csv(STATE_ABBREV2,"FINAL_STATE_ABBREV.CSV")
 ```
 
+# Part 4: Inclusion of Expert Opinion
+
+[SelectorGadget](https://selectorgadget.com/) is a point-and-click CSS selector useful for identifying the [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)  or [XPath](https://en.wikipedia.org/wiki/XPath) to the specific portion of the webpage you want to scrape.
+
+An article at https://www.securitysales.com/fire-intrusion/2018-safest-most-dangerous-states-us/ summarizes a study performed by [WalletHub](https://wallethub.com/edu/safest-states-to-live-in/4566/) which compared all 50 states using 48 key safety indicators. The article provides a link to the source along with lists providing the 10 most safest and 10 most dangerous states. 
+
+## Chunk 1: Web Scraping Top 10 Most Safe and Least Safe States
+
+Using [SelectorGadget](https://selectorgadget.com/), we point-and-click the text information we want on the webpage. This is the list of state names which comprise the most safe and most dangerous states. After deselecting the information we don't want, we can identify the CSS selector that links to the HTML element we want to scrape. Specifically for this case, the CSS selector is *#articleContentWrapper li*. The `html_nodes()` function in `rvest` locates in the HTML code where this CSS selector is being used to present the information visually on the webpage. Since this information is text, we use `html_text()` to read the list of states from the subsetted HTML code into a vector names `SAFE_VS_DANGEROUS`. 
+
+```{r,eval=F}
+URL.SAFE_VS_DANGEROUS = "https://www.securitysales.com/fire-intrusion/2018-safest-most-dangerous-states-us/"
+SAFE_VS_DANGEROUS = URL.SAFE_VS_DANGEROUS %>%
+                      read_html() %>%
+                      html_nodes(css="#articleContentWrapper li") %>%
+                      html_text() 
+
+
+print(SAFE_VS_DANGEROUS)
+```
+
+## Chunk 2: Create a Data Frame Useful for Joining
+
+Upon inspection of `SAFE_VS_DANGEROUS`, we notice that this vector of length *20* contains the top 10 most safe states and most dangerous states in the order they appear on the website. We create  new data frame combining these states with their classification, according to the website, that indicates whether a state is considered safe or dangerous. By linking this information to the violent crimes dataset, we can determine analytically the extent to which violent crimes were considered in this expert opinion. This may lead to either disagreement or agreement with the expert opinion. **The most important thing here is that we don't behave like the miserable bloggers who wave their flag of ignorance with anecdotal evidence.**
+
+```{r,eval=F}
+CLASS=c(rep("S",10),rep("D", 10)) #S=SAFE and D=DANGEROUS
+print(CLASS)
+SAFE_VS_DANGEROUS2=as.tibble(cbind(SAFE_VS_DANGEROUS,CLASS))
+names(SAFE_VS_DANGEROUS2)=c("STATE","CLASS")
+write_csv(SAFE_VS_DANGEROUS2,"FINAL_SAFE_VS_DANGEROUS.CSV")
+head(SAFE_VS_DANGEROUS2)
+tail(SAFE_VS_DANGEROUS2)
+```

@@ -140,12 +140,13 @@ background-color: #13294B;
 || Tidy Data 1 | [Slides](Lecture/Tidy Data 1/Tidy_Data_1_Lecture.pdf) ||
 |Sep 21| Tidy Data 1 (Cont.) | [Slides](Lecture/Tidy Data 1/Tidy_Data_1_Lecture.pdf) ||
 || Tidy Data 2 | [Slides](Lecture/Tidy Data 2/Tidy_Data_2_Lecture.pdf) ||
-|| Web Scraping I | [Slides](Lecture/Web Scraping 1/Web_Scraping_1_Lecture.pdf) | [Preview](Supplement/Web Scraping 1/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Web%20Scraping%201/Supplement.zip)) |
-|| Web Scraping II | [Slides](Lecture/Web Scraping 2/Web_Scraping_2_Lecture.pdf) | [Preview](Supplement/Web Scraping 2/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Web%20Scraping%202/Supplement.zip)) |
+|| Web Scraping| [Slides](Lecture/Web Scraping/Web_Scraping_Lecture.pdf) | [Preview](Supplement/Web Scraping/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Web%20Scraping/Supplement.zip)) |
 |Sep 26| Joins I | [Slides](Lecture/Joins 1/Joins_1_Lecture.pdf) ||
 || Joins II| [Slides](Lecture/Joins 2/Joins_2_Lecture.pdf) ||
-| Sep 28    |       |         |          |
-| Oct 3    |       |         |          |
+|Sep 28| Final Project II | [Slides](Lecture/Final Project 2/Final_Project_2_Lecture.pdf) ||
+|| Factors | [Slides](Lecture/Factors/Factors_Lecture.pdf) ||
+|Oct 3| Programming I | [Slides](Lecture/Programming 1/Programming_1_Lecture.pdf) | [Preview](Supplement/Programming 1/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Programming%201/Supplement.zip))  |
+|| Programming II | [Slides](Lecture/Programming 2/Programming_2_Lecture.pdf) | [Preview](Supplement/Programming 2/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Programming%202/Supplement.zip)) |
 | Oct 5    |  Midterm 1     |         |          |
 | Oct 10    |       |         |          |
 | Oct 12   |       |         |          |
@@ -170,10 +171,8 @@ background-color: #13294B;
 
 
 
-<!-- |Jul 11| Final Project II | [Slides](Lecture/Final Project 2/Final_Project_2_Lecture.pdf) || -->
-<!-- || Factors | [Slides](Lecture/Factors/Factors_Lecture.pdf) || -->
-<!-- |Jul 12| Programming I | [Slides](Lecture/Programming 1/Programming_1_Lecture.pdf) | [Preview](Supplement/Programming 1/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Programming%201/Supplement.zip))  | -->
-<!-- || Programming II | [Slides](Lecture/Programming 2/Programming_2_Lecture.pdf) | [Preview](Supplement/Programming 2/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Programming%202/Supplement.zip)) | -->
+
+
 <!-- |Jul 13| Programming III | [Slides](Lecture/Programming 3/Programming_3_Lecture.pdf) || -->
 <!-- |Jul 17| Modeling 1 | [Slides](Lecture/Modeling 1/Modeling_1_Lecture.pdf) || -->
 <!-- |Jul 18| Work on EDA|| [Remote Office Hours](https://unc.zoom.us/j/9155867425) | -->
@@ -210,7 +209,7 @@ All HW, Lab, and Analysis assignments are to be submitted via Canvas. Unzip fold
 | |[HW4](Homework/HW 4/HW-4.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%204/HW%204.zip))   |  |   | Sep 29 (5:00 PM)   |
 | | || <span style="color:#EF426F">[MP4](Mini Project/MP4.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Mini Project/MP4.zip))</span>|   Sep 29 (5:00 PM)     |
 | L6 |       |       |    | Oct 4 (9:05 AM)     |
-|      |  | A2     |     | Oct 6 (5:00 PM)     |
+|      |  | A2     |     | Oct 9 (5:00 PM)     |
 | L7 |       |       |    | Oct 11 (9:05 AM)     |
 | |[HW5](Homework/HW 5/HW-5.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%205/HW%205.zip)) | | | Oct 13 (5:00 PM)|
 | L8 |       |       |    | Oct 18 (9:05 AM)     |

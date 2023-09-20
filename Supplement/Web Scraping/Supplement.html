@@ -11,9 +11,9 @@
 
 <meta name="author" content="Mario Giacomazzo" />
 
-<meta name="date" content="2023-07-06" />
+<meta name="date" content="2023-09-20" />
 
-<title>Supplement for Web Scraping 1</title>
+<title>Supplement for Web Scraping</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -356,9 +356,9 @@ pre code {
 
 
 
-<h1 class="title toc-ignore">Supplement for Web Scraping 1</h1>
+<h1 class="title toc-ignore">Supplement for Web Scraping</h1>
 <h4 class="author">Mario Giacomazzo</h4>
-<h4 class="date">July 06, 2023</h4>
+<h4 class="date">September 20, 2023</h4>
 
 </div>
 
@@ -555,6 +555,62 @@ names(STATE_ABBREV_BOT)=c(&quot;State&quot;,&quot;Abbrev&quot;)
 STATE_ABBREV2=rbind(STATE_ABBREV_TOP,STATE_ABBREV_BOT) %&gt;% arrange(State)
 head(STATE_ABBREV2)
 write_csv(STATE_ABBREV2,&quot;FINAL_STATE_ABBREV.CSV&quot;)</code></pre>
+</div>
+</div>
+<div id="part-4-inclusion-of-expert-opinion" class="section level1">
+<h1>Part 4: Inclusion of Expert Opinion</h1>
+<p><a href="https://selectorgadget.com/">SelectorGadget</a> is a
+point-and-click CSS selector useful for identifying the <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets">CSS</a> or
+<a href="https://en.wikipedia.org/wiki/XPath">XPath</a> to the specific
+portion of the webpage you want to scrape.</p>
+<p>An article at <a href="https://www.securitysales.com/fire-intrusion/2018-safest-most-dangerous-states-us/" class="uri">https://www.securitysales.com/fire-intrusion/2018-safest-most-dangerous-states-us/</a>
+summarizes a study performed by <a href="https://wallethub.com/edu/safest-states-to-live-in/4566/">WalletHub</a>
+which compared all 50 states using 48 key safety indicators. The article
+provides a link to the source along with lists providing the 10 most
+safest and 10 most dangerous states.</p>
+<div id="chunk-1-web-scraping-top-10-most-safe-and-least-safe-states" class="section level2">
+<h2>Chunk 1: Web Scraping Top 10 Most Safe and Least Safe States</h2>
+<p>Using <a href="https://selectorgadget.com/">SelectorGadget</a>, we
+point-and-click the text information we want on the webpage. This is the
+list of state names which comprise the most safe and most dangerous
+states. After deselecting the information we don’t want, we can identify
+the CSS selector that links to the HTML element we want to scrape.
+Specifically for this case, the CSS selector is
+<em>#articleContentWrapper li</em>. The <code>html_nodes()</code>
+function in <code>rvest</code> locates in the HTML code where this CSS
+selector is being used to present the information visually on the
+webpage. Since this information is text, we use <code>html_text()</code>
+to read the list of states from the subsetted HTML code into a vector
+names <code>SAFE_VS_DANGEROUS</code>.</p>
+<pre class="r"><code>URL.SAFE_VS_DANGEROUS = &quot;https://www.securitysales.com/fire-intrusion/2018-safest-most-dangerous-states-us/&quot;
+SAFE_VS_DANGEROUS = URL.SAFE_VS_DANGEROUS %&gt;%
+                      read_html() %&gt;%
+                      html_nodes(css=&quot;#articleContentWrapper li&quot;) %&gt;%
+                      html_text() 
+
+
+print(SAFE_VS_DANGEROUS)</code></pre>
+</div>
+<div id="chunk-2-create-a-data-frame-useful-for-joining" class="section level2">
+<h2>Chunk 2: Create a Data Frame Useful for Joining</h2>
+<p>Upon inspection of <code>SAFE_VS_DANGEROUS</code>, we notice that
+this vector of length <em>20</em> contains the top 10 most safe states
+and most dangerous states in the order they appear on the website. We
+create new data frame combining these states with their classification,
+according to the website, that indicates whether a state is considered
+safe or dangerous. By linking this information to the violent crimes
+dataset, we can determine analytically the extent to which violent
+crimes were considered in this expert opinion. This may lead to either
+disagreement or agreement with the expert opinion. <strong>The most
+important thing here is that we don’t behave like the miserable bloggers
+who wave their flag of ignorance with anecdotal evidence.</strong></p>
+<pre class="r"><code>CLASS=c(rep(&quot;S&quot;,10),rep(&quot;D&quot;, 10)) #S=SAFE and D=DANGEROUS
+print(CLASS)
+SAFE_VS_DANGEROUS2=as.tibble(cbind(SAFE_VS_DANGEROUS,CLASS))
+names(SAFE_VS_DANGEROUS2)=c(&quot;STATE&quot;,&quot;CLASS&quot;)
+write_csv(SAFE_VS_DANGEROUS2,&quot;FINAL_SAFE_VS_DANGEROUS.CSV&quot;)
+head(SAFE_VS_DANGEROUS2)
+tail(SAFE_VS_DANGEROUS2)</code></pre>
 </div>
 </div>
 
