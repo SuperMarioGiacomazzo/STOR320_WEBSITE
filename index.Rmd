@@ -138,10 +138,12 @@ background-color: #13294B;
 || Data Import | [Slides](Lecture/Data Import/Data_Import_Lecture.pdf)||
 |Sep 19| Data Import (Cont.) | [Slides](Lecture/Data Import/Data_Import_Lecture.pdf)||
 || Tidy Data 1 | [Slides](Lecture/Tidy Data 1/Tidy_Data_1_Lecture.pdf) ||
+|Sep 21| Tidy Data 1 (Cont.) | [Slides](Lecture/Tidy Data 1/Tidy_Data_1_Lecture.pdf) ||
 || Tidy Data 2 | [Slides](Lecture/Tidy Data 2/Tidy_Data_2_Lecture.pdf) ||
-|Sep 21| Web Scraping I | [Slides](Lecture/Web Scraping 1/Web_Scraping_1_Lecture.pdf) | [Preview](Supplement/Web Scraping 1/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Web%20Scraping%201/Supplement.zip)) |
+|| Web Scraping I | [Slides](Lecture/Web Scraping 1/Web_Scraping_1_Lecture.pdf) | [Preview](Supplement/Web Scraping 1/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Web%20Scraping%201/Supplement.zip)) |
 || Web Scraping II | [Slides](Lecture/Web Scraping 2/Web_Scraping_2_Lecture.pdf) | [Preview](Supplement/Web Scraping 2/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Web%20Scraping%202/Supplement.zip)) |
-| Sep 26    |       |         |          |
+|Sep 26| Joins I | [Slides](Lecture/Joins 1/Joins_1_Lecture.pdf) ||
+|| Joins II| [Slides](Lecture/Joins 2/Joins_2_Lecture.pdf) ||
 | Sep 28    |       |         |          |
 | Oct 3    |       |         |          |
 | Oct 5    |  Midterm 1     |         |          |
@@ -167,8 +169,7 @@ background-color: #13294B;
 
 
 
-<!-- |Jul 10| Joins I | [Slides](Lecture/Joins 1/Joins_1_Lecture.pdf) || -->
-<!-- || Joins II| [Slides](Lecture/Joins 2/Joins_2_Lecture.pdf) || -->
+
 <!-- |Jul 11| Final Project II | [Slides](Lecture/Final Project 2/Final_Project_2_Lecture.pdf) || -->
 <!-- || Factors | [Slides](Lecture/Factors/Factors_Lecture.pdf) || -->
 <!-- |Jul 12| Programming I | [Slides](Lecture/Programming 1/Programming_1_Lecture.pdf) | [Preview](Supplement/Programming 1/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Programming%201/Supplement.zip))  | -->
