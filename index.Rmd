@@ -141,7 +141,8 @@ background-color: #13294B;
 |Sep 21| Tidy Data 1 (Cont.) | [Slides](Lecture/Tidy Data 1/Tidy_Data_1_Lecture.pdf) ||
 || Tidy Data 2 | [Slides](Lecture/Tidy Data 2/Tidy_Data_2_Lecture.pdf) ||
 || Web Scraping| [Slides](Lecture/Web Scraping/Web_Scraping_Lecture.pdf) | [Preview](Supplement/Web Scraping/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Web%20Scraping/Supplement.zip)) |
-|Sep 26| Joins I | [Slides](Lecture/Joins 1/Joins_1_Lecture.pdf) ||
+|Sep 26| Web Scraping (Cont.)| [Slides](Lecture/Web Scraping/Web_Scraping_Lecture.pdf) | [Preview](Supplement/Web Scraping/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Web%20Scraping/Supplement.zip)) |
+|| Joins I | [Slides](Lecture/Joins 1/Joins_1_Lecture.pdf) ||
 || Joins II| [Slides](Lecture/Joins 2/Joins_2_Lecture.pdf) ||
 |Sep 28| Final Project II | [Slides](Lecture/Final Project 2/Final_Project_2_Lecture.pdf) ||
 || Factors | [Slides](Lecture/Factors/Factors_Lecture.pdf) ||
