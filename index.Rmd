@@ -262,7 +262,7 @@ library(tidyverse)
 
 setwd("D:/Mario Documents/UNC/STOR 320/STOR320_WEBSITE/Group Assignments")
 
-Groups2=read.csv(file="STOR520.001 Group Assignments.csv")
+Groups2=read.csv(file="STOR520.001 Group Assignments - 2.csv")
 
 arrange(Groups2, Group) %>%
 datatable(class="display",options = list(scrollX=F,
