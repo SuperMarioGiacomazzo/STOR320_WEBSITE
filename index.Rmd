@@ -326,11 +326,7 @@ This final project will be divided into four parts worth a total of 100 points. 
 
 - **[R Programming: Zero to Pro](https://r02pro.github.io/)** (RPZP)
 
-- R Programming for Data Science (RP4DS)
-
-- The Art of R Programming (AoRP)
-
-- A First Course in Statistical Programming with R (FCSPR)
+- **[Hands-On Programming with R](https://rstudio-education.github.io/hopr/)** (HOPR)
 
 - **[ModernDive](https://moderndive.com/index.html)** (MD)
 
