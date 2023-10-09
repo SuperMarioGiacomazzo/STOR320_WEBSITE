@@ -1,0 +1,386 @@
+---
+title: "Analysis 3: Statistical Programming with Daily Delhi Climate Data"
+author: "FIRST_NAME LAST_NAME"
+date:  "`r format(Sys.time(), '%B %d, %Y')`"
+output: html_document
+---
+
+# Instructions
+
+**Overview:** For each question, show your R code that you used to answer each question in the provided chunks. When a written response is required, be sure to answer the entire question in complete sentences outside the code chunks. When figures are required, be sure to follow all requirements to receive full credit. Point values are assigned for every part of this analysis.
+
+**Helpful:** Make sure you knit the document as you go through the assignment. Check all your results in the created HTML file.
+
+**Submission:** Submit via an electronic document on Canvas. Must be submitted as an HTML file generated in RStudio. 
+
+```{r setup, include=F}
+options(scipen=999)
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+# Introduction
+
+For this assignment, we will be using daily climate time series data in the city of Delhi between 2013 and 2017. This data was found on [Kaggle](https://www.kaggle.com/sumanthvrao/daily-climate-time-series-data) and was collected from Weather Underground API.
+
+Below is a preview of the 2 datasets. The tibble named `DELHI.TRAIN` contains daily temperature, humidity, wind speed, and pressure measurements from 2013 and 2016. The tibble named `DELHI.TEST` contains the same information for 2017. The purpose of the test set is to evaluate our conclusions from analyses done on the train set. 
+
+```{r,message=F,warning=F}
+DELHI.TRAIN=as.tibble(read.csv("DailyDelhiClimateTrain.csv"))[-1462,]    #DO NOT CHANGE
+DELHI.TEST=as.tibble(read.csv("DailyDelhiClimateTest.csv"))              #DO NOT CHANGE
+head(DELHI.TRAIN)                                                        #DO NOT CHANGE
+head(DELHI.TEST)                                                         #DO NOT CHANGE
+```
+
+Follow the steps to accomplish specific tasks, and do not modify code on lines with the comment `#DO NOT CHANGE`. Add code in R code chunks wherever you see `COMPLETE`. Follow instructions in each problem. If I ask you to create a loop, then you must create a loop. If I ask you to use if-else, you must use if-else.
+
+# Assignment
+
+## Part 1: Cleaning Data
+
+We want to start by cleaning the two datasets.
+
+### Q1 *(2 Points)*
+
+Observe how the following code applied to `DELHI.TRAIN` creates a "date" variable, splits up the original date variable into year, month, and day, converts thee previously mentioned variables to numeric, renames the weather variables, and then selects variables we want.
+
+```{r} 
+DELHI.TRAIN %>%                                                    #DO NOT CHANGE
+  mutate(Date = as_date(date)) %>%                                 #DO NOT CHANGE
+  separate(date,into=c("Year","Month","Day"),sep="-") %>%          #DO NOT CHANGE
+  mutate_at(1:3,as.numeric) %>%                                    #DO NOT CHANGE
+  rename("Temperature"="meantemp","Humidity"="humidity",           #DO NOT CHANGE
+         "Wind"="wind_speed","Pressure"="meanpressure") %>%        #DO NOT CHANGE
+  select(Date,Temperature,Humidity,Wind,Pressure,Year,Month,Day)   #DO NOT CHANGE
+```
+
+Create a function named `clean.func()` that takes one argument called "data" and then does everything from the code above. We want to generalize the code above so we can run the function on both datasets `DELHI.TRAIN` and `DELHI.TEST`. We want to use this function to modify both original datasets `DELHI.TRAIN` and `DELHI.TEST` to `TRAIN.CLEAN` and `TEST.CLEAN`, respectively. We can do this since both of the orginal datasets are organized the same way and have the same variable names.
+
+Code and Output:
+```{r,eval=F}
+clean.func = function(COMPLETE){                                    
+
+  COMPLETE
+  
+  return(COMPLETE)
+}                                                               
+
+TRAIN.CLEAN=clean.func(DELHI.TRAIN) #DO NOT CHANGE
+TEST.CLEAN=clean.func(DELHI.TEST) #DO NOT CHANGE
+head(TRAIN.CLEAN) #DO NOT CHANGE
+head(TEST.CLEAN) #DO NOT CHANGE
+```
+
+
+### Q2 *(2 Points)*
+
+In the following code, I create a numeric vector called `month` that contains values 1 for January and 2 for February. Observe how the following code rewrites over the original numeric vector `month` to a categorical vector with the names of months rather than the original numbers.
+
+```{r} 
+month=c(1,2,2,1,2,2,1,2,1,2)  #DO NOT CHANGE
+
+if(month[1]==1){          #DO NOT CHANGE
+  month[1]="January"          #DO NOT CHANGE
+} else if(month[1]==2){       #DO NOT CHANGE
+  month[1]="February"         #DO NOT CHANGE
+}                         #DO NOT CHANGE
+
+if(month[2]==1){          #DO NOT CHANGE
+  month[2]="January"          #DO NOT CHANGE
+} else if(month[2]==2){       #DO NOT CHANGE
+  month[2]="February"         #DO NOT CHANGE
+}                         #DO NOT CHANGE
+
+if(month[3]==1){          #DO NOT CHANGE
+  month[3]="January"          #DO NOT CHANGE
+} else if(month[3]==2){       #DO NOT CHANGE
+  month[3]="February"         #DO NOT CHANGE
+}                         #DO NOT CHANGE
+
+print(month)                 #DO NOT CHANGE
+```
+
+Create a function called `month.func` that has one argument `month` (this would ideally be a numeric vector with discrete values 1 through 12) and rewrites over the initial vector `month` to contain month names from "January" to "December" rather than numbers. 
+
+After creating two new datasets identical to the previous datasets, we rewrite over the original variables named `Month` using our new function applied to the old variable. The "dollar sign" can be used to access variables from datasets and even create new variables from datasets.
+
+Code and Output:
+```{r,eval=F}
+month.func = function(month){     
+  
+  COMPLETE
+  
+  return(month)                 
+}                                                               
+
+TRAIN.CLEAN.2=TRAIN.CLEAN #DO NOT CHANGE
+TEST.CLEAN.2=TEST.CLEAN #DO NOT CHANGE
+TRAIN.CLEAN.2$Month=month.func(TRAIN.CLEAN$Month) #DO NOT CHANGE
+TEST.CLEAN.2$Month=month.func(TEST.CLEAN$Month) #DO NOT CHANGE
+unique(TRAIN.CLEAN.2$Month) #DO NOT CHANGE
+unique(TEST.CLEAN.2$Month) #DO NOT CHANGE
+```
+
+
+### Q3 *(2 Points)*
+
+Currently, the data is sorted by date starting with January 1, 2013. Our goal is to change all of the numeric values for day to "Tuesday", "Wednesday", Thursday", etc. Run the following code line-by-line and observe how the `rep()`function works.
+
+```{r} 
+rep(c("Bill","Ted"),times=5)        #DO NOT CHANGE
+rep(c("Bill","Ted"),each=2,times=4) #DO NOT CHANGE
+rep(c("Bill","Ted"),length.out=11)  #DO NOT CHANGE
+rep(c("Bill","Ted"),length.out=12)  #DO NOT CHANGE
+```
+
+Now, you must use the `rep()` function to overwrite the `Day` variable replacing the day of the month with the name of the day. For this, it is important to know that the first day in the training set is a Tuesday. Assume there are no days missing data between the first observation in the training set and the last observation of the testing set. Also, notice how the last observation in the training set is December 31, 2016, and the first observation in the testing set is January 1, 2017. If you don't use the `rep()` function you will get 0 points.
+
+Code and Output:
+```{r,eval=F}
+TRAIN.CLEAN.3=TRAIN.CLEAN.2 #DO NOT CHANGE
+TEST.CLEAN.3=TEST.CLEAN.2   #DO NOT CHANGE
+
+TRAIN.CLEAN.3$Day = rep(COMPLETE)
+TEST.CLEAN.3$Day  = rep(COMPLETE)
+
+unique(TRAIN.CLEAN.3$Day[c(1,1461)]) #DO NOT CHANGE
+unique(TEST.CLEAN.3$Day[c(1,114)]) #DO NOT CHANGE
+```
+
+
+### Q4 *(2 Points)*
+
+I want you to create a function called `cels.2.fahr()` that converts a temperature (or vector of temperatures) measured in Celsius to the equivalent temperature(s) in Fahrenheit. Google the formula necessary for this conversion. 
+
+Code and Output:
+```{r,eval=F}
+
+COMPLETE
+
+TRAIN.FINAL=TRAIN.CLEAN.3 #DO NOT CHANGE
+TEST.FINAL=TEST.CLEAN.3   #DO NOT CHANGE
+TRAIN.FINAL$Temperature=cels.2.fahr(TRAIN.CLEAN.3$Temperature) #DO NOT CHANGE
+TEST.FINAL$Temperature=cels.2.fahr(TEST.CLEAN.3$Temperature) #DO NOT CHANGE
+TRAIN.FINAL$Temperature[1:10] #DO NOT CHANGE
+TEST.FINAL$Temperature[1:10] #DO NOT CHANGE
+```
+
+
+## Part 2: Statistical Programming Problems on Cleaned Data
+
+### Q1 *(4 Points)*
+
+We want to approximate the 95% confidence interval for the average humidity of each combination of month and day. Use the formula, $\bar{x}\pm 2*s_x/\sqrt{n}$. In this formula, $\bar{x}$ would be the average humidity for all observations in a specific month and specific day. Likewise, $s_x$ is the sample standard deviation of the humidity for all observations in a specific month and specific day.
+
+We want to get a 95% confidence interval for every combination of month and day. To do this, we want to create two matrices `LB.HUMID.TRAIN` and `UB.HUMID.TRAIN` that will contain the lower bound and upper bound of each confidence interval, respectively. We start by creating these two matrices full of missing values. 
+
+Use a double loop to fill in each matrix with the appropriate bound of the confidence interval for each combination of month and day. For example, the element in row 1 and column 1 of `LB.HUMID.TRAIN` should contain the lower bound of the 95% confidence interval for the average humidity for all Mondays in January. Likewise, the element in row 2 and column 2 of `UB.HUMID.TRAIN` should contain the upper bound of the 95% confidence interval for the average humidity for all Tuesdays in February.
+
+Hint: Notice the loop goes from 1 to 12 and 1 to 7, but you will need to figure out how to convert these numbers to the appropriate months and days in words to filter the data since we cleaned the data to show the words only.
+
+Code and Output:
+```{r,eval=F}
+LB.HUMID.TRAIN=matrix(NA,12,7) #DO NOT CHANGE
+rownames(LB.HUMID.TRAIN)=c("January","February","March","April","May","June",         #DO NOT CHANGE
+                         "July","August","September","October","November","December")  #DO NOT CHANGE
+colnames(LB.HUMID.TRAIN)=c("Monday","Tuesday","Wednesday",        #DO NOT CHANGE
+                         "Thursday","Friday","Saturday","Sunday")  #DO NOT CHANGE
+
+UB.HUMID.TRAIN=matrix(NA,12,7) #DO NOT CHANGE
+rownames(UB.HUMID.TRAIN)=c("January","February","March","April","May","June",         #DO NOT CHANGE
+                         "July","August","September","October","November","December")  #DO NOT CHANGE
+colnames(UB.HUMID.TRAIN)=c("Monday","Tuesday","Wednesday",        #DO NOT CHANGE
+                         "Thursday","Friday","Saturday","Sunday")  #DO NOT CHANGE
+
+#Run this code and think about what it is doing
+rownames(LB.HUMID.TRAIN)[11] #DO NOT CHANGE
+colnames(UB.HUMID.TRAIN)[5] #DO NOT CHANGE
+
+for(j in 12){    #DO NOT CHANGE
+  for(k in 1:7){   #DO NOT CHANGE
+    
+    COMPLETE
+    
+  }                #DO NOT CHANGE
+}                  #DO NOT CHANGE
+
+print(LB.HUMID.TRAIN) #DO NOT CHANGE
+print(UB.HUMID.TRAIN) #DO NOT CHANGE
+```
+
+### Q2 *(4 Points)*
+
+Run the following code line-by-line and observe what is happening. I am calculating the proportion of the measures that are within the interval based on the lower bound and upper bound.
+
+```{r}
+lowerbound=30 #DO NOT CHANGE
+upperbound=50 #DO NOT CHANGE
+
+measures = c(23, 40, 51, 68, 72, 63, 19) #DO NOT CHANGE
+
+mean(measures > lowerbound & measures < upperbound) #DO NOT CHANGE
+
+```
+
+The object `PROP.HUMID.TEST` is a matrix of the same size as `LB.HUMID.TRAIN` and `UB.HUMID.TRAIN`. For each combination of month and day, I want you to calculate the proportion of time the observed humidity in the test set `TEST.FINAL` is within the 95% confidence interval for the population mean that was estimated from the training set. For example, the element in the third row and fourth column of `PROP.HUMID.TEST` should tell you what proportion of all the Thursdays in March for the year 2017 had a humidity between the element in the third row and fourth column of `LB.HUMID.TRAIN` and the element the third row and fourth column of `UB.HUMID.TRAIN`.
+
+You will notice that there are missing values after April and this is because the data in `TEST.FINAL` only contains data until the April. I want to see the missing values. Also, you should notice that the proportions are extremely small. This should not alarm you because this illustrates a classic misunderstanding of what a confidence interval does. The confidence intervals we calculated in the previous question. inform us on where we think the average humidity is for a specific month and day. Therefore, I may say that I am 95% confident that the average age of all students at UNC is between 19.5 and 22.3 years old, but this DOESN'T mean that 95% of students at UNC are between 19.5 and 22.3 years old. Therefore, I wouldn't use this interval to predict the age of a UNC student since it is very unlikely that student's age is in that interval unless they ARE the average student.
+
+Code and Output:
+```{r,eval=F}
+PROP.HUMID.TEST = matrix(NA,12,7) #DO NOT CHANGE
+
+rownames(PROP.HUMID.TEST)=c("January","February","March","April","May","June",         #DO NOT CHANGE
+                         "July","August","September","October","November","December")  #DO NOT CHANGE
+colnames(PROP.HUMID.TEST)=c("Monday","Tuesday","Wednesday",        #DO NOT CHANGE
+                         "Thursday","Friday","Saturday","Sunday")  #DO NOT CHANGE
+
+for(j in 1:12){         #DO NOT CHANGE
+  for(k in 1:7){        #DO NOT CHANGE
+  
+        COMPLETE
+  
+  }                     #DO NOT CHANGE
+}                       #DO NOT CHANGE 
+  
+print(PROP.HUMID.TEST) #DO NOT CHANGE  
+```
+
+### Q3 *(4 Points)*
+
+Skewness can be measured by dividing the difference between the sample mean and the sample median by the sample standard deviation. Mathematically, this can be written as $Skew = \frac{\bar{x}-MEDIAN_x}{s_x}$. 
+
+In the dataset `TRAIN.FINAL`, we have daily temperatures for the years 2013 to 2016 and months January to December. The empty matrix `SKEW.TEMP.TRAIN` contains 4 rows for the 4 different years and 12 columns for the 12 different months. I want to replace the NA's in `SKEW.TEMP.TRAIN` with the estimated skewness of all temperatures from `TRAIN.FINAL` for each combination of year and month. For example, the element in the 3rd row and 8th column of `SKEW.TEMP.TRAIN` should contain the skewness (based on formula) calculated on all daily temperatures from August 2015.
+
+In this loop, I want you to loop through the years and the month names instead of 1:4 and 1:12. You need to figure out how to convert the year and month to appropriate numeric values for saving the skewness into `SKEW.TEMP.TRAIN`
+
+Code and Output:
+```{r,eval=F}
+SKEW.TEMP.TRAIN=matrix(NA,4,12) #DO NOT CHANGE
+rownames(SKEW.TEMP.TRAIN)=unique(TRAIN.FINAL$Year)  #DO NOT CHANGE
+colnames(SKEW.TEMP.TRAIN)=unique(TRAIN.FINAL$Month)  #DO NOT CHANGE
+
+#Run this code and think about what it is doing
+which(unique(TRAIN.FINAL$Year)==2015)   #DO NOT CHANGE
+which(unique(TRAIN.FINAL$Month)=="August")   #DO NOT CHANGE
+
+
+for(j in 2013:2016){                     #DO NOT CHANGE
+  for(k in unique(TRAIN.FINAL$Month)){   #DO NOT CHANGE
+    
+  COMPLETE
+  
+  }                     #DO NOT CHANGE
+}                      #DO NOT CHANGE
+
+print(SKEW.TEMP.TRAIN) #DO NOT CHANGE
+```
+
+### Q4 *(2 Points)*
+
+The `apply()` function is very helpful for applying functions to rows or columns of matrices. Google this function to see examples of how it is used. 
+
+Use `apply()` with the function `mean()` to create a vector called `AVG.SKEW.per.YEAR` that contains the average of each row in `SKEW.TEMP.TRAIN`.
+
+Use `apply()` with the function `mean()` to create a vector called `AVG.SKEW.per.MONTH` that contains the average of each column in `SKEW.TEMP.TRAIN`.
+
+Code and Output:
+```{r,eval=F}
+AVG.SKEW.per.YEAR=apply(COMPLETE)
+AVG.SKEW.per.MONTH=apply(COMPLETE)
+
+print(AVG.SKEW.per.YEAR) #DO NOT CHANGE
+print(AVG.SKEW.per.MONTH) #DO NOT CHANGE
+```
+
+
+### Q5 *(8 Points)*
+
+Run the following code line-by-line and observe what is happening.
+```{r}
+x=NULL   #DO NOT CHANGE
+x=c(x,3) #DO NOT CHANGE
+x=c(x,4) #DO NOT CHANGE
+x=c(x,5) #DO NOT CHANGE
+print(x) #DO NOT CHANGE
+```
+
+Below, I created two empty objects named `SUMMER.WIND` and `WINTER.WIND`. I want you to loop through each row in `TRAIN.FINAL` moving through the data in chronological order. If the row involves  a summer month (June, July, or August), I want you to add the wind speed of that day to `SUMMER.WIND`. If the row involves  a winter month (December, January, or February), I want you to add the wind speed of that day to `WINTER.WIND`. For the rows involving other months, you should not add those wind speeds to either object, and you should ignore them. 
+
+Also, your code needs to utilize a loop and an if/if-else structure(s) or you will get 0 points. At the end, `SUMMER.WIND` and `WINTER.WIND` should be vectors.
+
+The last line of code performs a basic t-test . In the space provided below, I want you to explain what this t-test function is being used to test and summarise what we learn about wind speed from this t-test. Write in complete sentences using words as if you were explaining this to someone who knows very little about statistics. Explain what you learned about Wind speed, do not just explain what a t-test is. Try to avoid phrases like "reject null hypothesis", "accept alternative hypothesis", or "population mean is not equal to 0". These types of phrases should be reworded in the context of wind speed. **Use a significance level of 0.05 for making your conclusion**
+
+Code and Output (4 Points):
+```{r,eval=F}
+SUMMER.WIND=NULL #DO NOT CHANGE
+WINTER.WIND=NULL #DO NOT CHANGE
+
+for(j in 1:1461){             #DO NOT CHANGE
+ 
+  COMPLETE
+  
+}              #DO NOT CHANGE
+
+
+t.test(x=SUMMER.WIND,y=WINTER.WIND) #DO NOT CHANGE
+```
+
+Answer (4 Points): REPLACE EVERYTHING IN ALL CAPS WITH YOUR ANSWER 
+
+## Part 3: Creating Two New Variables Helpful for Time Series Data
+
+When you have data that is organized chronologically, there are some cool features of the data we can explore using lags, differences, moving averages, moving ranges, etc. In this section, we will only create these variables in the training dataset named `TRAIN.FINAL`. Typically, we would also want to create these same variables in the testing dataset named `TEST.FINAL`.
+
+### Q1 *(3 Points)*
+
+We can create a new variable called `Temp_Change` in TRAIN.FINAL that currently contains all missing values. If we wanted to change the 4th observation of `Temp_Change` to 32, we could use the code `TRAIN.FINALTemp_Change[4]=32`. Each value of `Temp_Change` can be calculated from the following formula:
+
+$\textrm{Temp_Change}=\textrm{Temperature Today}-\textrm{Temperature Yesterday}$
+
+Use a loop to replace each missing value in the new variable called `Temp_Change` with the actual value according to the formula. If you don't use a loop, you will lose points. Then, create a line plot that shows the change in the `Temp_Change` variable over time according to the `Date` variable. A line plot is useful when plotting a variable over time when there is only one measurement per time point. Also, Notice how the x-axis is formatted since we converted our original date variable to a "date" variable in R. Use the `ggplot2` package for making this graphic ONLY.
+
+Code and Output:
+```{r,eval=F}
+TRAIN.FINAL$Temp_Change=NA #DO NOT CHANGE
+
+COMPLETE
+
+TRAIN.FINAL$Temp_Change[1:20] #DO NOT CHANGE
+
+#Put Code for Plot Here
+
+COMPLETE
+
+```
+
+### Q2 *(7 Points)*
+
+We create a new variable called `Temperature 3-Day Average` in TRAIN.FINAL that starts with all missing values.  Each value of `Temperature 3-Day Average` represents a 3-day moving average and can be calculated from the following formula:
+
+$\textrm{Temperature 3-Day Average}=\frac{\textrm{Temperature Yesterday}+\textrm{Temperature Today}+\textrm{Temperature Tomorrow}}{3}$
+
+Also, we create a new variable called `Temperature 5-Day Average` in TRAIN.FINAL that starts with all missing values. Each value of `Temperature 5-Day Average` can be calculated using a formula using a formula similar to the one above. You will need to see the pattern.
+
+Use a loop(s) to replace each missing value in the new variable called `Temperature 3-Day Average` with the actual value according to the formula, and replace each missing value in the new variable called `Temperature 5-Day Average` with the actual value according to a similar modified formula for a 5-day moving average. If you don't use any loop(s), you will get 0 points.
+
+Finally, I want you to use `ggplot2` functions to create a line plot with multiple lines. In this plot, the `Date` variable should be on the x-axis. The y-axis, should be called "Temperature". There should be one line that shows the change in daily temperature for the dates in `TRAIN.FINAL`. There should be another line that shows the change in the 3-day moving average of temperature for the dates in `TRAIN.FINAL`. There should be one last line that shows the change in the 5-day moving average of temperature for the dates in `TRAIN.FINAL`. I want all three of these lines to have different colors and different line types (dashed, etc.). I want you to use a transparency of "alpha=0.2" for the line that you put on top of the other lines, and I want you to use a transparency of "alpha=0.6" for the line that you put in the middle of the two lines. I DO NOT want you to create a legend for these three lines.
+
+Code and Output:
+```{r,eval=F}
+TRAIN.FINAL$`Temperature 3-Day Average`=NA #DO NOT CHANGE
+TRAIN.FINAL$`Temperature 5-Day Average`=NA #DO NOT CHANGE
+
+COMPLETE
+
+TRAIN.FINAL$`Temperature 3-Day Average`[1:20] #DO NOT CHANGE
+TRAIN.FINAL$`Temperature 5-Day Average`[1:20] #DO NOT CHANGE
+
+#Put Code for Plot Here
+
+COMPLETE
+```
+
+
+
+
