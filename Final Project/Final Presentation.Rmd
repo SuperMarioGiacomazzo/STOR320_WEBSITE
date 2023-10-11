@@ -24,25 +24,44 @@ The purpose of the final presentation is to verbally communicate your group's pr
 
 # **Requirements**
 
-In 4 to 7 minutes, you will focus your presentation on a single question. Ideally, this should be 1 of the 2 questions you will write about in your final paper. A slideshow should be used to organize the information. First, you should creatively introduce the question and orally defend why your group found this particular question interesting. Next, you should briefly discuss the data your group used to answer this question. The original source of the data should be given. The source is not the website where you found the data, but who is responsible for gathering the original data. Figures and tables can be used to highlight variables of interest. Last, you should explain the statistical methods you employed to answer the question and the results you discovered. I recommend using multiple modeling techniques.
+In 4 to 7 minutes, you will focus your presentation on a single question. This should be 1 of the 2 questions you will write about in your final paper. A slideshow should be used to organize the information. First, you should creatively introduce the question and orally defend why your group found this particular question interesting. Next, you should briefly discuss the data your group used to answer this question. The original source of the data should be given. The source is not the website where you found the data, but who is responsible for gathering the original data. Figures and tables can be used to highlight variables of interest. Last, you should explain the statistical methods you employed to answer the question and the results you discovered. I recommend using multiple modeling techniques.
 
-During the presentation, I will subjectively assess how well the question is explained, how well the data is explained, how well the methods are explained, and how well the content is organized on a scale from 0 to 3. You should have a well presented introduction and conclusion. Make sure you speak clearly, slowly, and accurately. Any omission of important details regarding the question, data, or methodology, will result in a loss of points. 
+During the presentation, I will subjectively assess how well the question is explained, how well the data is explained, how well the methods/results are explained, and how well the content is organized on a scale from 0 to 3. You should have a well presented introduction and conclusion. Make sure you speak clearly, slowly, and accurately. Any omission of important details regarding the question, data, or methodology, will result in a loss of points. 
 
-The quality of slides will also be subjectively scored on a scale from 0 to 3. Slides should not be cluttered, too wordy, unreadable, or plain. A minimum of 4 visuals is required. These are visuals made from the data. These visuals can come directly from your paper. Each visual should have a purpose in the presentation and should be at the highest level. 
+The quality of slides will also be subjectively scored on a scale from 0 to 3. Slides should not be cluttered, too wordy, unreadable, or plain. A minimum of 4 visuals is required. These are visuals summarizing your data or results. These visuals can come directly from your paper. Each visual should have a purpose in the presentation and should be at the highest level. 
 
 The Orator is solely responsible for giving the presentation.  The Creator should be the lead designer on the slides and the Interpreter should provide the Orator an audience for a practice presentation. Everyone should assist in the making and proofreading of the slides since grammatical and spelling errors will result in a loss of points. While the Orator is presenting, the other members are free to either stand in front of the class or remain seated. After 7 minutes, I will abruptly cut off your presentation.
 
 The final presentations will take place on the final exam day as scheduled by the university. Presentations will be ordered according to the group's number. The Deliverer is responsible for submitting the slides to Canvas. The slides are due before the presentations begin. Attendance of all members is required. Each member that fails to attend will automatically lose five points from their individual grade. 
 
+<span style="color:#EF426F"> Extra Requirement for STOR 520: Students in STOR 520 are required to build and present an Shiny  application. This Shiny application can be used in the presentation of your data or your results. I want this Shiny app to look professional and be helpful in presenting your data or results to the class. You don't need to insert your Shiny app into your slides or send it to me prior to your presentation.  </span>
 
-# **Rubric**
+
+# **Rubric for 320**
 
 |Requirement|Points|
 |:-------|------:|
 |Explanation of Question of Interest|3 Points|
 |Explanation of Data|3 Points|
-|Explanation of Methods|3 Points|
+|Explanation of Methods/Results|3 Points|
 |Organization of Content|3 Points|
+|Quality of Slides|3 Points|
+|4 Visuals|4 Points|
+|Grammatical and/or Spelling Errors|2 Points|
+|Between 4 and 7 Minutes|2 Points|
+|Slides Submitted on Sakai|2 Points|
+|Attendance| 5 Points|
+|**Total**|**30 Points**|
+|||
+
+# **Rubric for 520**
+
+|Requirement|Points|
+|:-------|------:|
+|Explanation of Question of Interest|3 Points|
+|Explanation of Data|3 Points|
+|Explanation of Methods/Results|3 Points|
+|Shiny App|3 Points|
 |Quality of Slides|3 Points|
 |4 Visuals|4 Points|
 |Grammatical and/or Spelling Errors|2 Points|
