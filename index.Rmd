@@ -216,7 +216,7 @@ All HW, Lab, and Analysis assignments are to be submitted via Canvas. Unzip fold
 | [L7](Lab/Lab-7.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab-7.zip)) |       |       |    | Oct 25 (9:05 AM)     |
 |      |  | [A3](Analysis/Analysis-3.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Analysis/Analysis-3.zip))     |     | Oct 27 (5:00 PM)     |
 | | || <span style="color:#EF426F">[MP6](Mini Project/MP6.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Mini Project/MP6.zip))</span>|   Oct 27 (5:00 PM)     |
-| [L8](Lab/Lab-8.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab-7.zip)) |       |       |    | Nov 1 (9:05 AM)     |
+| [L8](Lab/Lab-8.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab-8.zip)) |       |       |    | Nov 1 (9:05 AM)     |
 | |[HW6](Homework/HW 6/HW-6.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%206/HW%206.zip))       |        |    | Nov 3 (5:00 PM)     |
 | | || <span style="color:#EF426F">[MP7](Mini Project/MP7.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Mini Project/MP7.zip))</span>|   Nov 3 (5:00 PM)     |
 | L9 |       |       |    | Nov 8 (9:05 AM)     |
