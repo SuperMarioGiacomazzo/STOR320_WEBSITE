@@ -160,7 +160,8 @@ background-color: #13294B;
 |Nov 7| Modeling 5 | [Slides](Lecture/Modeling 5/Modeling_5_Lecture.pdf) ||
 || Modeling 6 | [Slides](Lecture/Modeling 6/Modeling_6_Lecture.pdf) ||
 | Nov 9   |  **Midterm 2**      |         |          |
-|Nov 14| Modeling 7 | [Slides](Lecture/Modeling 7/Modeling_7_Lecture.pdf) | [Preview](Supplement/Modeling 7/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%207/Supplement.zip)) |
+|Nov 14| Modeling 6 (Cont.) | [Slides](Lecture/Modeling 6/Modeling_6_Lecture.pdf) ||
+|| Modeling 7 | [Slides](Lecture/Modeling 7/Modeling_7_Lecture.pdf) | [Preview](Supplement/Modeling 7/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%207/Supplement.zip)) |
 |Nov 16| Modeling 8 | [Slides](Lecture/Modeling 8/Modeling_8_Lecture.pdf) | [Preview](Supplement/Modeling 8/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%208/Supplement.zip)) |
 || Modeling 9 | [Slides](Lecture/Modeling 9/Modeling_9_Lecture.pdf) | [Preview](Supplement/Modeling 9/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%209/Supplement.zip)) |
 |Nov 21| R Shiny | [Slides](Lecture/R Shiny/R_Shiny_Lecture.pdf) | Preview([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/R%20Shiny/Supplement.zip))|
@@ -220,10 +221,9 @@ All HW, Lab, and Analysis assignments are to be submitted via Canvas. Unzip fold
 | |[HW7](Homework/HW 7/HW-7.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%207/HW%207.zip))       |                   |   | Nov 10 (5:00 PM)     |
 | | || <span style="color:#EF426F">[MP7](Mini Project/MP7.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Mini Project/MP7.zip))</span>|   Nov 10 (5:00 PM)     |
 | [L10](Lab/Lab-10.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab-10.zip)) |       |       |    | Nov 15 (9:05 AM)     |
-|      |  | A4     |     | Nov 17 (5:00 PM)     |
-| | || <span style="color:#EF426F">MP8</span>|   Nov 17 (5:00 PM)     |
-| [L10](Lab/Lab-10.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab-10.zip)) |  
-| L11 |       |       |    | Nov 22 (9:05 AM)     |
+|      |  | [A4](Analysis/Analysis-4.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Analysis/Analysis-4.zip))    |     | Nov 27 (5:00 PM)     |
+| | || <span style="color:#EF426F">[MP8](Mini Project/MP8.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Mini Project/MP8.zip))</span>|   Nov 27 (5:00 PM)     |
+| [L11](Lab/Lab-11.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab-11.zip)) |       |       |    | Nov 29 (9:05 AM)     |
 | L12 |       |       |    | Dec 6 (9:05 AM)     |
 |   |     |             |  | |   
 
