@@ -167,8 +167,9 @@ background-color: #13294B;
 |Nov 21| Modeling 8 (Cont.) | [Slides](Lecture/Modeling 8/Modeling_8_Lecture.pdf) | [Preview](Supplement/Modeling 8/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%208/Supplement.zip)) |
 || Modeling 9 | [Slides](Lecture/Modeling 9/Modeling_9_Lecture.pdf) | [Preview](Supplement/Modeling 9/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%209/Supplement.zip)) |
 | Nov 23   | Thanksgiving      |       | No Labs This Week         |
-|Nov 28| R Shiny | [Slides](Lecture/R Shiny/R_Shiny_Lecture.pdf) | Preview([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/R%20Shiny/Supplement.zip))|
-| Nov 30   |       |         |          |
+|Nov 28| Modeling 9 (Cont.) | [Slides](Lecture/Modeling 9/Modeling_9_Lecture.pdf) | [Preview](Supplement/Modeling 9/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%209/Supplement.zip)) |
+|| R Shiny | [Slides](Lecture/R Shiny/R_Shiny_Lecture.pdf) | Preview([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/R%20Shiny/Supplement.zip))|
+|Nov 30| R Shiny (Cont.) | [Slides](Lecture/R Shiny/R_Shiny_Lecture.pdf) | Preview([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/R%20Shiny/Supplement.zip))|
 | Dec 5   | Work on Project      |         |          |
 |||||
 
@@ -225,7 +226,7 @@ All HW, Lab, and Analysis assignments are to be submitted via Canvas. Unzip fold
 |      |  | [A4](Analysis/Analysis-4.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Analysis/Analysis-4.zip))    |     | Nov 27 (5:00 PM)     |
 | | || <span style="color:#EF426F">[MP8](Mini Project/MP8.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Mini Project/MP8.zip))</span>|   Nov 27 (5:00 PM)     |
 | [L11](Lab/Lab-11.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab-11.zip)) |       |       |    | Nov 29 (9:05 AM)     |
-| L12 |       |       |    | Dec 6 (9:05 AM)     |
+| [L12](Lab/Lab-12.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab-12.zip)) |       |       |    | Dec 6 (9:05 AM)     |
 |   |     |             |  | |   
 
 # **Final Project Details**
