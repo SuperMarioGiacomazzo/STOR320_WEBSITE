@@ -83,20 +83,20 @@ background-color: #13294B;
     - **[STOR 320](Syllabi/STOR 320 Section 2 Syllabus.pdf)**: TTh, 9:30PM – 10:45PM, Hanes 120
 
 - Lab Sections:
-    - 320.400: W, 9:00AM - 9:50AM, Hanes 107 , Anna
-    - 320.401: M, 11:00AM - 11:50AM, Hanes 107 , Anna
-    - 320.402: T, 2:00PM - 2:50PM, Hanes 107 , Anna
-    - 320.403: W, 5:00PM - 5:50PM, Hanes 107 , Nghia
-    - 320.404: F, 9:00AM - 9:50AM, Hanes 107, Nghia
-    - 320.405: Th, 11:00AM - 11:50AM, Hanes 107 , Nghia
-    - 320.406: F, 2:00PM - 2:50PM, Hanes 107 , Ben
-    - 320.407: M, 5:00PM - 5:50PM, Hanes 107 , Ben
+    - 320.400: W, 9AM - 9:50AM, Hanes 107 , Anna
+    - 320.401: M, 11AM - 11:50AM, Hanes 107 , Anna
+    - 320.402: T, 2PM - 2:50PM, Hanes 107 , Anna
+    - 320.403: W, 5PM - 5:50PM, Hanes 107 , Nghia
+    - 320.404: F, 9AM - 9:50AM, Hanes 107, Nghia
+    - 320.405: Th, 11AM - 11:50AM, Hanes 107 , Nghia
+    - 320.406: F, 2PM - 2:50PM, Hanes 107 , Ben
+    - 320.407: M, 5PM - 5:50PM, Hanes 107 , Ben
 
 - Office Hours and Zoom Links:
     - Dr. Mario: W, 9AM - 11AM/12PM - 2PM, Hanes 134
-    - Anna: TBD
-    - Nghia: TBD
-    - Ben: TBD
+    - Anna: T, 12:30PM - 1:30PM, Hanes B-30
+    - Nghia: M, 2PM - 3PM, Hanes B-48
+    - Ben: F, 1PM - 2PM, Hanes B-30
 
 - Attendance: **[UNC Check-in App](https://unccheckin.unc.edu/)**
 
@@ -125,7 +125,7 @@ background-color: #13294B;
 |:---------:|:---------:|:---------:|:---------:|
 | Jan 11 | Introduction | [Slides](Lecture/Introduction/Intro_Lecture.pdf)||
 ||Data Visualization|[Slides](Lecture/Data Visualization/Data_Visualization_Lecture.pdf)|[Preview](Supplement/Data Visualization/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Data%20Visualization/Supplement.zip))|
-| <span style="color:#EF426F">Jan 15</span>      |   <span style="color:#EF426F">MLK</span>     |         |<span style="color:#EF426F">No Labs</span>     |
+| <span style="color:#EF426F">Jan 15</span>      |   <span style="color:#EF426F">MLK</span>     |         |<span style="color:#EF426F">No Labs this Week</span>     |
 | Jan 16 |Data Visualization|[Slides](Lecture/Data Visualization/Data_Visualization_Lecture.pdf)|[Preview](Supplement/Data Visualization/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Data%20Visualization/Supplement.zip))|
 || Workflow in RMarkdown | [Slides](Lecture/Workflow/Workflow_Lecture.pdf) ||
 | <span style="color:#EF426F">Feb 13</span>    |   <span style="color:#EF426F">Well-Being</span>    || <span style="color:#EF426F">No Class & No Labs this Week</span>     |
@@ -211,12 +211,24 @@ All HW, Lab, and Analysis assignments are to be submitted via Canvas. Unzip fold
 | Jan 26|      |  |  A1     |     | Feb 2 (5:00 PM)     |
 | Jan 29| L2 |       |       |   | Feb 5 (11:00 AM)     |
 | Feb 2| | [HW3](Homework/HW 3/HW-3.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%203/HW%203.zip)) | |   | Feb 9  (5:00 PM)   |
+| Feb 5 | L3 |       |       |   | Feb 19 (11:00 AM)     |
 | Feb 9| |[HW4](Homework/HW 4/HW-4.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%204/HW%204.zip))   |  |   | Feb 16 (5:00 PM)   |
-| Feb 16|      |  |  A2     |     | Feb 23 (5:00 PM)     |
-|Feb 23| |[HW5](Homework/HW 5/HW-5.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%205/HW%205.zip)) | | | Mar 1 (5:00 PM)|
-| Mar 1|      |  |  A3     |     | Mar 8 (5:00 PM)     |
-|Mar 8| |[HW6](Homework/HW 6/HW-6.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%206/HW%206.zip))       |        |    | Mar 22 (5:00 PM)     |
-|Mar 22| |[HW7](Homework/HW 7/HW-7.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%207/HW%207.zip))       |                   |   | Mar 29 (5:00 PM)     |
+| Feb 16|      |  |  A2     |     | Mar 1 (5:00 PM)     |
+| Feb 19  | L4 |       |       |   | Feb 26 (11:00 AM)     |
+| Feb 22|      |  |  | M1    | Feb 22 (Class)    |
+| Feb 26  | L5 |       |       |   | Mar 4 (11:00 AM)     |
+|Mar 1| |[HW5](Homework/HW 5/HW-5.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%205/HW%205.zip)) | | | Mar 8 (5:00 PM)|
+| Mar 4  | L6 |       |       |   | Mar 18 (11:00 AM)     |
+| Mar 8|      |  |  A3     |     | Mar 22 (5:00 PM)     |
+| Mar 18  | L7 |       |       |   | Apr 1 (11:00 AM)     |
+|Mar 22| |[HW6](Homework/HW 6/HW-6.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%206/HW%206.zip))       |        |    | Mar 29 (5:00 PM)     |
+|Mar 29| |[HW7](Homework/HW 7/HW-7.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%207/HW%207.zip))       |                   |   | Apr 5 (5:00 PM)     |
+| Apr 1  | L8 |       |       |   | Apr 8 (11:00 AM)     |
+| Apr 4|      |  |  | M2    | Apr 4 (Class)    |
+| Apr 5|      |  |  A4     |     | Apr 19 (5:00 PM)     |
+| Apr 8  | L9 |       |       |   | Apr 15 (11:00 AM)     |
+| Apr 15  | L10 |       |       |   | Apr 22 (11:00 AM)     |
+| Apr 22  | L11 |       |       |   | Apr 29 (11:00 AM)     |
 ||   |     |             |  | |  
 
 
@@ -304,7 +316,8 @@ This final project will be divided into four parts worth a total of 100 points. 
 | P1  | Project Proposal| Meeting + Canvas | [Survey 1](https://docs.google.com/forms/d/e/1FAIpQLScslh7rwnjd2VZ99VH66_4PJM7c8oJ_4olJt7-34hRW82Nq2A/viewform?usp=sf_link) |Feb 13 (11:59PM)|
 | P2  | Exploratory Data Analysis | Meeting + Canvas | [Survey 2](https://docs.google.com/forms/d/e/1FAIpQLScY8EYu2GtgiHcbP3kVHGosSCx89rIc76WgW_Tx950HMzLM8g/viewform?usp=sf_link) |Mar 19 (11:59PM)|
 | P3  | Final Written Paper|Canvas| [Survey 3](https://docs.google.com/forms/d/e/1FAIpQLSdQMrAQV_pjERKMsV3mXyC4unrdrlfFVQ_MYWhKma7rP1yo1A/viewform?usp=sf_link) |Apr 30 (11:59PM)|
-| P4  | Final Presentation  |Canvas + Class| [Survey 4](https://docs.google.com/forms/d/e/1FAIpQLSdTW_KLZWWWVpNWVudyXXwkQztOUJmZdlcFtJZovoTzRwfwLw/viewform?usp=sf_link) | Dec 15 (4PM) |
+| P4  | Final Presentation (Section 1)  |Canvas + Class| [Survey 4](https://docs.google.com/forms/d/e/1FAIpQLSdTW_KLZWWWVpNWVudyXXwkQztOUJmZdlcFtJZovoTzRwfwLw/viewform?usp=sf_link) | May 9 (8:00AM) |
+| P4  | Final Presentation (Section 2)  |Canvas + Class| [Survey 4](https://docs.google.com/forms/d/e/1FAIpQLSdTW_KLZWWWVpNWVudyXXwkQztOUJmZdlcFtJZovoTzRwfwLw/viewform?usp=sf_link) | May 10 (8:00AM) |
 ||||
 
 ## Above Average Final Projects
