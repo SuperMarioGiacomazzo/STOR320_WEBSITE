@@ -66,7 +66,7 @@ background-color: #13294B;
 </style>
 
 
-**STOR 320:** Development of basic skill set for data analysis from obtaining data to data carpentry, exploration, modeling, and communication. Topics covered include regression, clustering, classification, algorithmic thinking, and non-standard data objects (networks and text data). 
+Development of basic skill set for data analysis from obtaining data to data carpentry, exploration, modeling, and communication. Topics covered include regression, clustering, classification, algorithmic thinking, and non-standard data objects (networks and text data). 
 
 <div class="row">
   <div class="column">
@@ -75,28 +75,28 @@ background-color: #13294B;
 
 - Lab Instructors: 
     - **[Anna Myakushina](https://stor.unc.edu/people/graduate-students/)**
-    - **[Nghia Nguyen](https://stor.unc.edu/people/graduate-students/)**
-    - **[Ben Torres Aguilar](https://stor.unc.edu/people/graduate-students/)**
+    - **[Coleman Ferrell](https://stor.unc.edu/people/graduate-students/)**
+    - **[Andrew Nguyen](https://stor.unc.edu/people/graduate-students/)**
 
 - Course Syllabus: 
     - **[STOR 320](Syllabi/STOR 320 Section 1 Syllabus.pdf)**: TTh, 8:00AM – 9:15AM, Hanes 120
     - **[STOR 320](Syllabi/STOR 320 Section 2 Syllabus.pdf)**: TTh, 9:30PM – 10:45PM, Hanes 120
 
 - Lab Sections:
-    - 320.400: W, 9AM - 9:50AM, Hanes 107 , Anna
-    - 320.401: M, 11AM - 11:50AM, Hanes 107 , Anna
-    - 320.402: T, 2PM - 2:50PM, Hanes 107 , Anna
-    - 320.403: W, 5PM - 5:50PM, Hanes 107 , Nghia
-    - 320.404: F, 9AM - 9:50AM, Hanes 107, Nghia
-    - 320.405: Th, 11AM - 11:50AM, Hanes 107 , Nghia
-    - 320.406: F, 2PM - 2:50PM, Hanes 107 , Ben
-    - 320.407: M, 5PM - 5:50PM, Hanes 107 , Ben
+    - 320.400: W, 9AM - 9:50AM, Hanes 107, Anna
+    - 320.401: M, 11AM - 11:50AM, Hanes 107, Coleman 
+    - 320.402: T, 2PM - 2:50PM, Hanes 107, Anna
+    - 320.403: W, 5PM - 5:50PM, Hanes 107, Coleman
+    - 320.404: F, 9AM - 9:50AM, Hanes 107, Coleman
+    - 320.405: Th, 11AM - 11:50AM, Hanes 107, Andrew
+    - 320.406: F, 2PM - 2:50PM, Hanes 107, Andrew
+    - 320.407: M, 5PM - 5:50PM, Hanes 107, Anna
 
 - Office Hours and Zoom Links:
     - Dr. Mario: W, 9AM - 11AM/12PM - 2PM, Hanes 134
     - Anna: T, 12:30PM - 1:30PM, Hanes B-30
-    - Nghia: M, 2PM - 3PM, Hanes B-48
-    - Ben: F, 1PM - 2PM, Hanes B-30
+    - Coleman: TBD
+    - Andrew: TBD
 
 - Attendance: **[UNC Check-in App](https://unccheckin.unc.edu/)**
 
