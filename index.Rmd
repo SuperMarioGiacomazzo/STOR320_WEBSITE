@@ -1,5 +1,5 @@
 ---
-title: '**STOR 320**'
+title: '**STOR 320: Introduction to Data Science**'
 geometry: margin=2
 output:
   html_document:
@@ -95,8 +95,8 @@ Development of basic skill set for data analysis from obtaining data to data car
 - Office Hours and Zoom Links:
     - Dr. Mario: W, 9AM - 11AM/12PM - 2PM, Hanes 134
     - Anna: T, 12:30PM - 1:30PM, Hanes B-30
-    - Coleman: TBD
-    - Andrew: TBD
+    - Coleman: F, 10AM - 11AM, Hanes B-07
+    - Andrew: Th, 12PM - 1PM, Hanes B-01
 
 - Attendance: **[UNC Check-in App](https://unccheckin.unc.edu/)**
 
@@ -123,7 +123,7 @@ Development of basic skill set for data analysis from obtaining data to data car
 
 | Date | Lecture | Slides | Supplement |
 |:---------:|:---------:|:---------:|:---------:|
-| Jan 11 | Introduction | [Slides](Lecture/Introduction/Intro_Lecture.pdf)||
+| Jan 11 | Introduction | [Slides](Lecture/Introduction/Intro_Lecture.pdf)|<span style="color:#EF426F">No Labs this Week</span>|
 ||Data Visualization|[Slides](Lecture/Data Visualization/Data_Visualization_Lecture.pdf)|[Preview](Supplement/Data Visualization/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Data%20Visualization/Supplement.zip))|
 | <span style="color:#EF426F">Jan 15</span>      |   <span style="color:#EF426F">MLK</span>     |         |<span style="color:#EF426F">No Labs this Week</span>     |
 | Jan 16 |Data Visualization|[Slides](Lecture/Data Visualization/Data_Visualization_Lecture.pdf)|[Preview](Supplement/Data Visualization/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Data%20Visualization/Supplement.zip))|
