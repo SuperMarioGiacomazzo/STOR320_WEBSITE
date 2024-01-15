@@ -80,7 +80,7 @@ Development of basic skill set for data analysis from obtaining data to data car
 
 - Course Syllabus: 
     - **[STOR 320](Syllabi/STOR 320 Section 1 Syllabus.pdf)**: TTh, 8:00AM – 9:15AM, Hanes 120
-    - **[STOR 320](Syllabi/STOR 320 Section 2 Syllabus.pdf)**: TTh, 9:30PM – 10:45PM, Hanes 120
+    - **[STOR 320](Syllabi/STOR 320 Section 2 Syllabus.pdf)**: TTh, 9:30AM – 10:45AM, Hanes 120
 
 - Lab Sections:
     - 320.400: W, 9AM - 9:50AM, Hanes 107, Anna
@@ -141,9 +141,6 @@ Development of basic skill set for data analysis from obtaining data to data car
 | Apr 30   | Work on Project      |         | No Class & No Labs this Week          |
 |||||
 
-
-|| Data Transformation III | [Slides](Lecture/Data Transformation 3/Data_Transformation_3_Lecture.pdf)||
-|| Data Transformation IV | [Slides](Lecture/Data Transformation 4/Data_Transformation_4_Lecture.pdf)||
 <!-- |Sep 12 | Exploratory Data Analysis I  | [Slides](Lecture/Exploratory Data Analysis 1/Exploratory_Data_Analysis_1_Lecture.pdf) || -->
 <!-- || Exploratory Data Analysis II |[Slides](Lecture/Exploratory Data Analysis 2/Exploratory_Data_Analysis_2_Lecture.pdf)|| -->
 <!-- |Sep 14| Final Project I | [Slides](Lecture/Final Project 1/Final_Project_1_Lecture.pdf)|| -->
@@ -208,7 +205,7 @@ All HW, Lab, and Analysis assignments are to be submitted via Canvas. Unzip fold
 |:--------:|:--------:|:--------:|:-------------:|:----------------:|:----------------:|
 | Jan 12| |[HW1](Homework/HW 1/HW-1.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%201/HW%201.zip)) |||  Jan 19 (5:00 PM)     |
 | Jan 19| |[HW2](Homework/HW 2/HW-2.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%202/HW%202.zip)) |||   Jan 26 (5:00 PM)     |
-| Jan 22| L1 |       |       |    | Jan 29 (11 AM)     |
+| Jan 22| [L1](Lab/Lab-1.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab-1.zip)) |       |       |    | Jan 29 (11 AM)     |
 | Jan 26|      |  |  A1     |     | Feb 2 (5:00 PM)     |
 | Jan 29| L2 |       |       |   | Feb 5 (11:00 AM)     |
 | Feb 2| | [HW3](Homework/HW 3/HW-3.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%203/HW%203.zip)) | |   | Feb 9  (5:00 PM)   |
