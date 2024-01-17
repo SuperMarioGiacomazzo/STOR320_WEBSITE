@@ -79,8 +79,8 @@ Development of basic skill set for data analysis from obtaining data to data car
     - **[Andrew Nguyen](https://stor.unc.edu/people/graduate-students/)**
 
 - Course Syllabus: 
-    - **[STOR 320](Syllabi/STOR 320 Section 1 Syllabus.pdf)**: TTh, 8:00AM – 9:15AM, Hanes 120
-    - **[STOR 320](Syllabi/STOR 320 Section 2 Syllabus.pdf)**: TTh, 9:30AM – 10:45AM, Hanes 120
+    - **[STOR 320.001](Syllabi/STOR 320 Section 1 Syllabus.pdf)**: TTh, 8:00AM – 9:15AM, Hanes 120
+    - **[STOR 320.002](Syllabi/STOR 320 Section 2 Syllabus.pdf)**: TTh, 9:30AM – 10:45AM, Hanes 120
 
 - Lab Sections:
     - 320.400: W, 9AM - 9:50AM, Hanes 107, Anna
@@ -92,7 +92,7 @@ Development of basic skill set for data analysis from obtaining data to data car
     - 320.406: F, 2PM - 2:50PM, Hanes 107, Andrew
     - 320.407: M, 5PM - 5:50PM, Hanes 107, Anna
 
-- Office Hours and Zoom Links:
+- Office Hours:
     - Dr. Mario: W, 9AM - 11AM/12PM - 2PM, Hanes 134
     - Anna: T, 12:30PM - 1:30PM, Hanes B-30
     - Coleman: F, 10AM - 11AM, Hanes B-07
@@ -133,7 +133,7 @@ Development of basic skill set for data analysis from obtaining data to data car
 |Jan 25| Data Transformation IV | [Slides](Lecture/Data Transformation 4/Data_Transformation_4_Lecture.pdf)||
 | | Exploratory Data Analysis I  | [Slides](Lecture/Exploratory Data Analysis 1/Exploratory_Data_Analysis_1_Lecture.pdf) ||
 || Exploratory Data Analysis II |[Slides](Lecture/Exploratory Data Analysis 2/Exploratory_Data_Analysis_2_Lecture.pdf)||
-|Jan 30 Final Project I | [Slides](Lecture/Final Project 1/Final_Project_1_Lecture.pdf)||
+|Jan 30 | Final Project I | [Slides](Lecture/Final Project 1/Final_Project_1_Lecture.pdf)||
 || Data Import | [Slides](Lecture/Data Import/Data_Import_Lecture.pdf)||
 | <span style="color:#EF426F">Feb 13</span>    |   <span style="color:#EF426F">Well-Being</span>    || <span style="color:#EF426F">No Class & No Labs this Week</span>     |
 |Feb 1| Tidy Data 1 | [Slides](Lecture/Tidy Data 1/Tidy_Data_1_Lecture.pdf) ||
