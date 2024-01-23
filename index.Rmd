@@ -131,7 +131,8 @@ Development of basic skill set for data analysis from obtaining data to data car
 |Jan 23| Data Transformation I (Cont.) | [Slides](Lecture/Data Transformation 1/Data_Transformation_1_Lecture.pdf) ||
 || Data Transformation II        | [Slides](Lecture/Data Transformation 2/Data_Transformation_2_Lecture.pdf)        |          |
 || Data Transformation III | [Slides](Lecture/Data Transformation 3/Data_Transformation_3_Lecture.pdf)||
-|Jan 25| Data Transformation IV | [Slides](Lecture/Data Transformation 4/Data_Transformation_4_Lecture.pdf)||
+|Jan 25| Data Transformation III (Cont.) | [Slides](Lecture/Data Transformation 3/Data_Transformation_3_Lecture.pdf)||
+|| Data Transformation IV | [Slides](Lecture/Data Transformation 4/Data_Transformation_4_Lecture.pdf)||
 | | Exploratory Data Analysis I  | [Slides](Lecture/Exploratory Data Analysis 1/Exploratory_Data_Analysis_1_Lecture.pdf) ||
 || Exploratory Data Analysis II |[Slides](Lecture/Exploratory Data Analysis 2/Exploratory_Data_Analysis_2_Lecture.pdf)||
 |Jan 30 | Final Project I | [Slides](Lecture/Final Project 1/Final_Project_1_Lecture.pdf)||
