@@ -1,0 +1,204 @@
+---
+title: "Lab 2: Basic Data Transformation"
+author: "FIRSTNAME LASTNAME"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output: html_document
+---
+
+```{r , include=FALSE}
+# This is a good place to put libraries required for using the ggplot function
+knitr::opts_chunk$set(echo = TRUE)
+options(scipen=999)
+library(tidyverse) #Loads the dplyr package for data manipulation
+library(nycflights13) #Loads the nycflights13 package for flights data
+```
+
+# Introduction
+
+The main purpose of this tutorial is to put together 4 key functions from **[dplyr](https://dplyr.tidyverse.org/reference/index.html)**. The functions and their purposes are listed as follows:
+
+- `filter()` *Selects Observations Based on Values*
+
+- `arrange()` *Sorts Observations Based on Criteria*
+
+- `select()` or `rename()` *Selects, Deselects, Renames, and Reorders Variables*
+
+- `mutate()` or `transmute()` *Creates New Variables Which Were Originally Nonexistant*
+
+Despite my despise for the entire airline industry, we will practice our skills using the dataset `flights` by loading the R package `nycflights13`. My ultimate wish for you is that by the end of this tutorial you will have tenderly played with this dataset so much that you will also hate the airline industry. If my wish does not come true this hot session, be sure that it will by the end of this semester.
+
+Now in the words of the late, great, **[Frank Sinatra](https://en.wikipedia.org/wiki/Frank_Sinatra)**, come fly with me.-
+
+> Come fly with me, let's fly, let's fly away.
+>
+> -- <cite>Frank Sinatra</cite>
+
+You will need to modify the code chunks so that the code works within each of chunk (usually this means modifying anything in ALL CAPS). You will also need to modify the code outside the code chunk. When you get the desired result for each step, change `eval=F` to `eval=T` and knit the document to HTML to make sure it works. Do not work out of order or skip around. After you complete the lab or by the end of class, you should submit your HTML file to Canvas.
+
+# Part 1: The Uniqueness of Flight Numbers
+
+### 1.1 (0.5 Points)
+
+Using `filter()`, start by creating a new tibble called **f1a** that only contains records from flight number 677.
+```{r,eval=F}
+f1a<-filter(flights, CRITERIA)
+```
+### 1.2 (0.5 Points)
+
+Now, apply `select()` to create a new dataset **f1b** based on **f1a** only containing variables "flight", "carrier", "origin", and "dest".
+```{r,eval=F}
+f1b<-select(f1a, VARIABLES)
+```
+
+### 1.3 (0.5 Points)
+
+Rename the variable "dest" to "destination" in **f1c**.
+```{r,eval=F}
+f1c=rename(f1b,COMPLETE)
+```
+
+### 1.4 (0.5 Points)
+
+Because **f1c** only contains records for flight number 677, sorting by flight number is irrelevant. Create a new dataset **f1d** that is identical in content to **f1c** but is sorted by "carrier" first, "origin" second, and "destination"" last. Use the function `head()`to display the first 10 rows of the data in **f1d**.
+
+```{r,eval=F}
+f1d<-arrange(f1c,VARIABLES)
+head(COMPLETE)
+```
+
+### 1.5 (1.5 Points)
+
+At first glance from the output above, it seems that flight number 677 uniquely represents the flight from _______ to _______ by carrier ________. (Fill in the Blanks). 
+
+### 1.6 (0.5 Points)
+
+To confirm this, create a new dataset **f1e** that is **f1d** sorted by the three variables previously mentioned, all in descending order. The function `desc()` is required here. Follow this by displaying the first 10 rows of the data in **f1d**.
+
+```{r,eval=F}
+f1e<-arrange(f1d,SORT_BY)
+head(COMPLETE)
+```
+
+### 1.7 (1 Point)
+
+Answer the following questions using the output from the previous question:
+
+May we conclude that flight numbers can be mapped to a unique carrier? ________ (*Yes/No*)
+
+Why or why not?
+
+If we know the flight number, carrier, and origin, can we know for sure what the destination will be? ________ (*Yes/No*)
+
+Why or why not?
+
+# Part 2: Time to Get on the Pipe
+
+In the previous section, we created a new tibble every time we wanted to perform a modification to the data. Behold the pipe `%>%`, your path to RAM-saving, sleek code and my path to coins. The pipe `%>%` is used in a similar fashion to `+` in the `ggplot2()` package. It's time to take a magical journey through the tidyverse on the pipe.
+
+### 2.1 (0.5 Points)
+
+Start by using `transmute()` to create a new variable "dep_hr" based on "dep_time" which represents departure time in hours since midnight. Recall the code for this is `dep_hr=dep_time%/%100+(dep_time%%100)/60`. In the same step, do this also for "sched_dep_time","arr_time", and "sched_arr_time" naming the new variables "sched_dep_hr", "arr_hr", and "sched_arr_hr", respectively. Save all these new variables to a new tibble called **f2a**. Use the function `names()` to ensure that **f2a** only contains the new variables and the function `head()` to view the top 5 rows.
+
+```{r, eval=F}
+f2a=transmute(flights,
+          dep_hr=dep_time%/%100+(dep_time%%100)/60,
+          sched_dep_hr=sched_dep_time%/%100+(sched_dep_time%%100)/60,
+          arr_hr=arr_time%/%100+(arr_time%%100)/60,
+          sched_arr_hr=sched_arr_time%/%100+(sched_arr_time%%100)/60)
+names(TIBBLE)
+head(TIBBLE,5)
+```
+
+### 2.2 (0.5 Points)
+
+Now we can create true delay variables, measured in hours, for both departure and arrival. Using `mutate()`, create a new variable "dep_delay_hr" which equals the difference between "dep_hr" and "sched_dep_hr". Analogously, perform the same operation for arrival. Call the new dataset **f2b**.
+
+```{r,eval=F}
+f2b=mutate(f2a,
+           dep_delay_hr=TRANSFORMATION,
+           arr_delay_hr=TRANSFORMATION)
+```
+
+### 2.3 (0.5 Points)
+
+Next, use `mutate()` again to create a new variable called "gain_hr" which is the difference between "arr_delay_hr" and "dep_delay_hr", measured in hours. Within the same step, use the function `percent_rank()` to create a new variable "percent_gain_hr" which represents the percentiles of the previously variable you created. Notice that you can develop variables based on recently transformed variables in the same iteration of `mutate()`, but be careful little buddy because order matters. Name the new dataset **f2c**.
+
+```{r,eval=F}
+f2c=mutate(f2b,
+           gain_hr=TRANSFORMATION,
+           percent_gain_hr=percent_rank(gain_hr))
+```
+
+
+### 2.4 (0.5 Points)
+
+First, critically think about what this new variable "gain_hr" is measuring. When `gain_hr==0`, what does that mean about the flight? What does `gain_hr<0` and `gain_hr>0` indicate. Use `filter()` to select the observations where `percent_gain_hr<0.1` or `percent_gain_hr>0.9` in a new dataset **f2d**. The tibble **f2d** will contain the bottom 10% and top 10% of flights based off "gain_hr".
+
+```{r,eval=F}
+f2d<-filter(f2c,CRITERIA)
+```
+
+### 2.5 (0.5 Points)
+
+Finally, sort the data using `arrange()` from largest to smallest based on the variable "percent_gain_hr". Name the sorted tibble **f2e**. 
+```{r,eval=F}
+f2e<-arrange(f2d,VARIABLE)
+```
+
+### 2.6 (1 Points)
+
+Getting the original data from **flights** to **f2e** required multiple steps. If we know what we want to do with the raw data from `flights`, we can use the pipe `%>%` to obtain the same result without intermittently introducing new tibbles into our global environment. Modify the code below so that the tibble named **f2e.pipedream** is identical to `f2e`.
+
+
+```{r,eval=F}
+f2e.pipedream = flights %>%
+                transmute(COMPLETE) %>%
+                mutate(COMPLETE) %>%
+                mutate(COMPLETE) %>%
+                filter(COMPLETE) %>%
+                arrange(COMPLETE)
+```
+
+The tibble **f2e.pipedream** should identical to **f2e** in the number of observations (67,018), the number of variables (8), and the order of observations. We can check to see if the tibble **f2e** is identical to **f2e.pipedream** using `identical()`. You should see the function return `True` Can you feel the sensation? It's piping hot up in here.
+
+```{r,eval=F}
+identical(f2e,f2e.pipedream)
+```
+
+# Part 3: Measuring Accuracy
+
+### 3.1 (0.5 Points)
+
+How would you measure the accuracy of individual flights? We can say that a flight is accurate if it leaves on time and arrives on time. Suppose we want to create an accuracy measure that captures this information where larger values indicate more inaccurate flights. Try to think of a creative way to measure accuracy by using `mutate()` to construct a new variable named "accuracy". Call the new tibble `f.accuracy`. As a data scientist, the metric you want is not always in the raw data. This is an example of problem that requires a level of innovation for which a job will grant you some cash money.
+
+```{r,eval=F}
+f.accuracy<-mutate(flights,
+                dep_hr=dep_time%/%100+(dep_time%%100)/60,
+                sched_dep_hr=sched_dep_time%/%100+(sched_dep_time%%100)/60,
+                arr_hr=arr_time%/%100+(arr_time%%100)/60,
+                sched_arr_hr=sched_arr_time%/%100+(sched_arr_time%%100)/60,
+                dep_delay_hr=dep_hr-sched_dep_hr,
+                arr_delay_hr=arr_hr-sched_arr_hr,
+                accuracy=TRANSFORMATION)
+head(f.accuracy,6)
+```
+
+### 3.2 (1 Point)
+
+Preparing for comparisons of airline carriers on accuracy, we use the `select()` function to create a new tibble named `f.accuracy2` which only contains the variables "carrier" and "accuracy".  
+```{r,eval=F}
+f.accuracy2=select(f.accuracy,carrier,accuracy)
+```
+
+Next, we can evaluate carriers based on their average accuracy across all flights based on our new metric. Furthermore, the standard deviation of this accuracy metric can help us measure the consistency of these airline carriers in performance. Use the `summarize()` function combined with `group_by()` for quick aggregation on the carrier level. Calculate the average accuracy and the standard deviation of the accuracy for each carrier. I want you to print out the third row of `carrier.summary` in the output.
+
+```{r,eval=F}
+carrier.summary<- f.accuracy2 %>%
+                  group_by(COMPLETE) %>%
+                  summarize(
+                    mean.accuracy=mean(COMPLETE,na.rm=T),
+                    sd.accuracy=sd(COMPLETE,na.rm=T)
+                  )
+```
+
+
