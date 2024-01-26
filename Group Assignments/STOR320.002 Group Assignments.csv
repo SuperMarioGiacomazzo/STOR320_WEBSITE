@@ -1,66 +1,100 @@
-Lab,Name,Group,Role,EDA Date,EDA Time
-Lab 404,"Nguyen, Kristy",1,D,11/15/2023,12:00PM - 12:10PM
-Lab 404,"Layh, Reese",1,O,11/15/2023,12:00PM - 12:10PM
-Lab 404,"Patel, Vishnu",1,O,11/15/2023,12:00PM - 12:10PM
-Lab 404,"Slaoui, Kenza",1,C,11/15/2023,12:00PM - 12:10PM
-Lab 404,"Li, Keyan",1,I,11/15/2023,12:00PM - 12:10PM
-Lab 404,"Modi, Aastha",2,O,11/8/2023,10:20AM - 10:30AM
-Lab 404,"Fan, Xuanji",2,I,11/8/2023,10:20AM - 10:30AM
-Lab 404,"Ganesh, Advika",2,D,11/8/2023,10:20AM - 10:30AM
-Lab 404,"Mcanulty, Cora",2,C,11/8/2023,10:20AM - 10:30AM
-Lab 404,"Bonin, Chase",2,O,11/8/2023,10:20AM - 10:30AM
-Lab 404,"Crooks, Keaton",3,O,11/8/2023,10:10AM - 10:20AM
-Lab 404,"Potter, Lillian",3,C,11/8/2023,10:10AM - 10:20AM
-Lab 404,"Rash, Eric",3,O,11/8/2023,10:10AM - 10:20AM
-Lab 404,"Pires, Rodrigo",3,I,11/8/2023,10:10AM - 10:20AM
-Lab 404,"Chan, Joan",3,D,11/8/2023,10:10AM - 10:20AM
-Lab 405,"Li, Patrick",4,O,11/8/2023,12:00PM - 12:10PM
-Lab 405,"Xu, Alan",4,C,11/8/2023,12:00PM - 12:10PM
-Lab 405,"Mishra, Prateek",4,I,11/8/2023,12:00PM - 12:10PM
-Lab 405,"Wang, Siyu",4,D,11/8/2023,12:00PM - 12:10PM
-Lab 405,"Lin, Qing",4,O,11/8/2023,12:00PM - 12:10PM
-Lab 405,"Ramos, Lesli",5,I,11/8/2023,10:40AM - 10:50AM
-Lab 405,"Trone, Thadius",5,O,11/8/2023,10:40AM - 10:50AM
-Lab 405,"Davis, Walker",5,D,11/8/2023,10:40AM - 10:50AM
-Lab 405,"Gore, Israel",5,C,11/8/2023,10:40AM - 10:50AM
-Lab 405,"Singletary, Elizabeth",5,O,11/8/2023,10:40AM - 10:50AM
-Lab 405,"Guo, Rui",6,I,11/15/2023,9:30AM - 9:40AM
-Lab 405,"Candelo Mosquera, Eve",6,D,11/15/2023,9:30AM - 9:40AM
-Lab 405,"Zhuo, Zihang",6,O,11/15/2023,9:30AM - 9:40AM
-Lab 405,"Wang, Yinglei",6,C,11/15/2023,9:30AM - 9:40AM
-Lab 405,"Ding, Yutian",6,O,11/15/2023,9:30AM - 9:40AM
-Lab 406,"Reynolds, Jason",7,O,11/8/2023,1:00PM - 1:10PM
-Lab 406,"Shamsulhodaey, Ali",7,C,11/8/2023,1:00PM - 1:10PM
-Lab 406,"Adams, Jackson",7,I,11/8/2023,1:00PM - 1:10PM
-Lab 406,"Guo, Zhenrui",7,D,11/8/2023,1:00PM - 1:10PM
-Lab 406,"Thomas, Olivia",7,O,11/8/2023,1:00PM - 1:10PM
-Lab 406,"Thoma, Jacob",8,C,11/8/2023,12:30PM - 12:40PM
-Lab 406,"Pan, Yi",8,D,11/8/2023,12:30PM - 12:40PM
-Lab 406,"Mitchell, Anna",8,I,11/8/2023,12:30PM - 12:40PM
-Lab 406,"Rojas, Nicolette",8,O,11/8/2023,12:30PM - 12:40PM
-Lab 406,"Yeung, Timmy",8,O,11/8/2023,12:30PM - 12:40PM
-Lab 406,"Jolly, Carson",9,D,11/1/2023,10:00AM - 10:10AM
-Lab 406,"Han, Zhuocheng",9,I,11/1/2023,10:00AM - 10:10AM
-Lab 406,"Modlin, Riley",9,C,11/1/2023,10:00AM - 10:10AM
-Lab 406,"Surless, Brian",9,O,11/1/2023,10:00AM - 10:10AM
-Lab 406,"Medamanuri, Rishyendra",9,O,11/1/2023,10:00AM - 10:10AM
-Lab 406,"Lee, Jedidiah",10,D,11/1/2023,10:30AM - 10:40AM
-Lab 406,"Lewis, Andrew",10,I,11/1/2023,10:30AM - 10:40AM
-Lab 406,"Renion, Jaeson",10,C,11/1/2023,10:30AM - 10:40AM
-Lab 406,"Tran, Annie",10,O,11/1/2023,10:30AM - 10:40AM
-Lab 407,"Deshpande, Shardool",10,O,11/1/2023,10:30AM - 10:40AM
-Lab 407,"Patel, Rohit",10,I,11/1/2023,10:30AM - 10:40AM
-Lab 407,"Yu, Wenfei",11,I,11/1/2023,1:50PM - 2:00PM
-Lab 407,"Li, Kevin",11,O,11/1/2023,1:50PM - 2:00PM
-Lab 407,"Zhou, Ruoxi",11,C,11/1/2023,1:50PM - 2:00PM
-Lab 407,"Zhou, Yuhan",11,D,11/1/2023,1:50PM - 2:00PM
-Lab 407,"Gunwani, Arnav",11,O,11/1/2023,1:50PM - 2:00PM
-Lab 407,"Qin, Ziyang",12,I,11/15/2023,1:00PM - 1:10PM
-Lab 407,"Krishna, Aditya",12,C,11/15/2023,1:00PM - 1:10PM
-Lab 407,"Johnson, Zoe",12,D,11/15/2023,1:00PM - 1:10PM
-Lab 407,"Bentley, Tanner",12,O,11/15/2023,1:00PM - 1:10PM
-Lab 407,"Check, Lynn",12,O,11/15/2023,1:00PM - 1:10PM
-Lab 407,"Guo, Yuanchi",13,O,11/1/2023,1:00PM - 1:10PM
-Lab 407,"Sang, Yingning",13,D,11/1/2023,1:00PM - 1:10PM
-Lab 407,"Revankar, Roshan",13,I,11/1/2023,1:00PM - 1:10PM
-Lab 407,"Xu, Zhaokun",13,C,11/1/2023,1:00PM - 1:10PM
+Lab,Name,Group,Role,Proposal Date,Proposal Time
+404,"Regelsberger, Emily",1,,,
+404,"Zapp, Logan",1,,,
+404,"Orozco, Agustin",1,,,
+404,"Giangrasso, Alyssa",1,,,
+404,"Lennard, Arthur",1,,,
+404,"Hughes, Gavin",1,,,
+404,"Zhou, Zihan",2,,,
+404,"Lee, Jinsol",2,,,
+404,"Morton, Embrey",2,,,
+404,"Webb, William",2,,,
+404,"Abolins, Evan",2,,,
+404,"Shah, Mahek",2,,,
+404,"Sachtleben, Joseph",3,,,
+404,"Cuarenta-Olalde, Jennifer",3,,,
+404,"Katsoudas, Katherine",3,,,
+404,"Potier, Jack",3,,,
+404,"Laird, Cael",3,,,
+404,"Fus, Robert",3,,,
+404,"Gibson, Sean",4,,,
+404,"Guskiewicz, Robert",4,,,
+404,"Hobbs, Nora",4,,,
+404,"Zhang, Yiwen",4,,,
+404,"Dong, Joyce",4,,,
+404,"Upadhyay, Veronica",4,,,
+405,"Uribe, Isaac",5,,,
+405,"Dolgoff, Joshua",5,,,
+405,"Horlick, Daniel",5,,,
+405,"Mencer, Benjamin",5,,,
+405,"Seagle, Ashley",5,,,
+405,"Jordan, Emmerson",6,,,
+405,"Holland, Aidan",6,,,
+405,"Greer, Judson",6,,,
+405,"Nguyen, Kelvin",6,,,
+405,"Ladowski, Zachary",6,,,
+405,"Atre, Isha",7,,,
+405,"Guo, Justin",7,,,
+405,"Admasu, Naomi",7,,,
+405,"Bharathkumar, Aditi",7,,,
+405,"Hoffman, Andrew",7,,,
+405,"Ruble, Natalie",8,,,
+405,"Bristol, Audrey",8,,,
+405,"Nally, Brianna",8,,,
+405,"Fang, Daniel",8,,,
+405,"Beard, Sivanaga",8,,,
+405,"Fan, Jennifer",9,,,
+405,"Goskonda, Aakanksh",9,,,
+405,"Plattel, Andrew",9,,,
+405,"Osei-Tutu, David",9,,,
+405,"Butler, Willow",9,,,
+406,"Fabiano-Grossi, Francesca",10,,,
+406,"Manchikatla, Shriya",10,,,
+406,"Ballenger, William",10,,,
+406,"Barnhardt, Alyssa",10,,,
+406,"Eskew, William",10,,,
+406,"Gomez-Meza, Bernardo",10,,,
+406,"Hapuarachchi, Viyathma",11,,,
+406,"Quade, Sean",11,,,
+406,"Sud, Neil",11,,,
+406,"Caulway, Madeline",11,,,
+406,"Song, Kate",11,,,
+406,"Morales, Cassidy",11,,,
+406,"Wright, Holden",12,,,
+406,"Child, Joshua",12,,,
+406,"Beck, Mattilyn",12,,,
+406,"Wang, Yuxin",12,,,
+406,"Chen, Kyle",12,,,
+406,"Pulipaka, Tanvi",12,,,
+406,"Cohn, Asher",13,,,
+406,"Hutter, Ian",13,,,
+406,"Woodburn, Henry",13,,,
+406,"Voloshyn, Davyd",13,,,
+406,"Pederson, Anna",13,,,
+406,"Zhu, Neo",13,,,
+407,"Romanowski, Skye",14,,,
+407,"Whayne, Lynne",14,,,
+407,"Gopinath, Madhumitha",14,,,
+407,"Pollock, Lauren",14,,,
+407,"Ochs, Zachary",14,,,
+407,"Du, Victoria",15,,,
+407,"Zhou, Audrey",15,,,
+407,"Dsouza, Anish",15,,,
+407,"Ackron, Andreas",15,,,
+407,"Marcu, Isra",15,,,
+407,"Wilson, Amir",16,,,
+407,"Gaede, Caroline",16,,,
+407,"Riley, Chloe",16,,,
+407,"Graham, Marshall",16,,,
+407,"Partrick, Meghan",16,,,
+407,"Gentry, Luke",17,,,
+407,"Xiao, Olivia",17,,,
+407,"Abbas, Qasim",17,,,
+407,"Kandukuri, Veera Nihal",17,,,
+407,"Mcdaniel, Troy",17,,,
+407,"Gomez, Edward",18,,,
+407,"Qian, Zhiyan",18,,,
+407,"Sagar, Sasha",18,,,
+407,"Minelli, Jack",18,,,
+407,"Pair, Charlotte",18,,,
+407,"Ma, Charles",18,,,
