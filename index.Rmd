@@ -139,8 +139,8 @@ Development of basic skill set for data analysis from obtaining data to data car
 || Data Import | [Slides](Lecture/Data Import/Data_Import_Lecture.pdf)||
 |Feb 6| Data Import (Cont.) | [Slides](Lecture/Data Import/Data_Import_Lecture.pdf)||
 || Tidy Data 1 | [Slides](Lecture/Tidy Data 1/Tidy_Data_1_Lecture.pdf) ||
-|| Tidy Data 2 | [Slides](Lecture/Tidy Data 2/Tidy_Data_2_Lecture.pdf) ||
-|Feb 8| Web Scraping| [Slides](Lecture/Web Scraping/Web_Scraping_Lecture.pdf) | [Preview](Supplement/Web Scraping/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Web%20Scraping/Supplement.zip)) |
+|Feb 8| Tidy Data 2 | [Slides](Lecture/Tidy Data 2/Tidy_Data_2_Lecture.pdf) ||
+|| Web Scraping| [Slides](Lecture/Web Scraping/Web_Scraping_Lecture.pdf) | [Preview](Supplement/Web Scraping/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Web%20Scraping/Supplement.zip)) |
 | <span style="color:#EF426F">Feb 13</span>    |   <span style="color:#EF426F">Well-Being</span>    || <span style="color:#EF426F">No Class & No Labs this Week</span>     |
 |Feb 15| Joins I | [Slides](Lecture/Joins 1/Joins_1_Lecture.pdf) ||
 || Joins II| [Slides](Lecture/Joins 2/Joins_2_Lecture.pdf) ||
