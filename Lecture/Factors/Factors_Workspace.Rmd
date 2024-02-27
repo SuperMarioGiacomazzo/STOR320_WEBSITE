@@ -149,7 +149,7 @@ glimpse(Social)
 ```{r}
 race.summary = Social %>%
             group_by(race) %>%
-            summarize(
+            dplyr::summarize(
               n=n(),
               avg.age=mean(age,na.rm=T),
               avg.tv=mean(tvhours,na.rm=T)
@@ -163,6 +163,11 @@ levels(race.summary$race)
 ```{r}
 ggplot(race.summary) + 
   geom_bar(aes(y=avg.tv,x=race),stat="identity",size=4)
+```
+
+```{r}
+ggplot(race.summary) + 
+  geom_bar(aes(y=avg.tv,x=fct_reorder(race,avg.tv)),stat="identity",size=4)
 ```
 
 ```{r}
