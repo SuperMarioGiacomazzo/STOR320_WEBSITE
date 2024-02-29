@@ -147,8 +147,8 @@ Development of basic skill set for data analysis from obtaining data to data car
 || Joins II| [Slides](Lecture/Joins 2/Joins_2_Lecture.pdf) ||
 | **Feb 22**    |  **Midterm 1** |  | |
 |Feb 27| Factors | [Slides](Lecture/Factors/Factors_Lecture.pdf) ||
-|| Programming I | [Slides](Lecture/Programming 1/Programming_1_Lecture.pdf) | [Preview](Supplement/Programming 1/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Programming%201/Supplement.zip))  |
-|Feb 29| Programming II | [Slides](Lecture/Programming 2/Programming_2_Lecture.pdf) | [Preview](Supplement/Programming 2/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Programming%202/Supplement.zip)) |
+|Feb 29| Programming I | [Slides](Lecture/Programming 1/Programming_1_Lecture.pdf) | [Preview](Supplement/Programming 1/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Programming%201/Supplement.zip))  |
+|| Programming II | [Slides](Lecture/Programming 2/Programming_2_Lecture.pdf) | [Preview](Supplement/Programming 2/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Programming%202/Supplement.zip)) |
 |Mar 5| Programming III | [Slides](Lecture/Programming 3/Programming_3_Lecture.pdf) ||
 || Final Project II | [Slides](Lecture/Final Project 2/Final_Project_2_Lecture.pdf) ||
 |Mar 7| Modeling 1 | [Slides](Lecture/Modeling 1/Modeling_1_Lecture.pdf) ||
@@ -218,7 +218,7 @@ All HW, Lab, and Analysis assignments are to be submitted via Canvas. Unzip fold
 | Feb 22|      |  |  | M1    | Feb 22 (Class)    |
 | Feb 26  | [L5](Lab/Lab-5.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab-5.zip)) |       |       |   | Mar 4 (11:00 AM)     |
 |Mar 1| |[HW5](Homework/HW 5/HW-5.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%205/HW%205.zip)) | | | Mar 8 (5:00 PM)|
-| Mar 4  | L6 |       |       |   | Mar 18 (11:00 AM)     |
+| Mar 4  | [L6](Lab/Lab-6.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab-6.zip)) |       |       |   | Mar 18 (11:00 AM)     |
 | Mar 8|      |  |  A3     |     | Mar 22 (5:00 PM)     |
 | Mar 18  | L7 |       |       |   | Apr 1 (11:00 AM)     |
 |Mar 22| |[HW6](Homework/HW 6/HW-6.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%206/HW%206.zip))       |        |    | Mar 29 (5:00 PM)     |
