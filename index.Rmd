@@ -148,8 +148,8 @@ Development of basic skill set for data analysis from obtaining data to data car
 | **Feb 22**    |  **Midterm 1** |  | |
 |Feb 27| Factors | [Slides](Lecture/Factors/Factors_Lecture.pdf) ||
 |Feb 29| Programming I | [Slides](Lecture/Programming 1/Programming_1_Lecture.pdf) | [Preview](Supplement/Programming 1/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Programming%201/Supplement.zip))  |
-|| Programming II | [Slides](Lecture/Programming 2/Programming_2_Lecture.pdf) | [Preview](Supplement/Programming 2/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Programming%202/Supplement.zip)) |
-|Mar 5| Programming III | [Slides](Lecture/Programming 3/Programming_3_Lecture.pdf) ||
+|Mar 5| Programming II | [Slides](Lecture/Programming 2/Programming_2_Lecture.pdf) | [Preview](Supplement/Programming 2/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Programming%202/Supplement.zip)) |
+|| Programming III | [Slides](Lecture/Programming 3/Programming_3_Lecture.pdf) ||
 || Final Project II | [Slides](Lecture/Final Project 2/Final_Project_2_Lecture.pdf) ||
 |Mar 7| Modeling 1 | [Slides](Lecture/Modeling 1/Modeling_1_Lecture.pdf) ||
 | <span style="color:#EF426F">Mar 12</span>    |   <span style="color:#EF426F">Spring Break</span>    ||<span style="color:#EF426F">No Class & No Labs this Week </span>     |
