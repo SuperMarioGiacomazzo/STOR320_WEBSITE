@@ -9,11 +9,11 @@ Lab,Name,Group,Role,EDA Date,EDA Time
 400,"Pathak, Deeya",2,O,,
 400,"Hayward, William",2,O,,
 400,"Kwon, Jennifer",2,D,,
-400,"Wu, Ivan",3,I,,
-400,"Yeager, Isabella",3,D,,
-400,"Thornton, Matthew",3,O,,
-400,"Leonard, Iwona",3,C,,
-400,"Bharti, Arya",3,O,,
+400,"Wu, Ivan",3,I,6-Mar,10:00AM - 10:10AM
+400,"Yeager, Isabella",3,D,6-Mar,10:00AM - 10:10AM
+400,"Thornton, Matthew",3,O,6-Mar,10:00AM - 10:10AM
+400,"Leonard, Iwona",3,C,6-Mar,10:00AM - 10:10AM
+400,"Bharti, Arya",3,O,6-Mar,10:00AM - 10:10AM
 400,"Bhat, Uma",4,O,,
 400,"Geng, Sabrina",4,I,,
 400,"Mills, Trenton",4,D,,
@@ -67,12 +67,12 @@ Lab,Name,Group,Role,EDA Date,EDA Time
 402,"Spiwak, Alan",13,D,,
 402,"Murray-Gramlich, Robert",13,I,,
 402,"Joshi, Diya",13,O,,
-402,"Feldt, Arden",14,O,,
-402,"Dondero, John",14,I,,
-402,"Patel, Aadi",14,O,,
-402,"Yerra, Aditi",14,C,,
-402,"Venkatapathy, Varsha",14,D,,
-402,"Kumar, Akhil",14,I,,
+402,"Feldt, Arden",14,O,6-Mar,10:20AM - 10:30AM
+402,"Dondero, John",14,I,6-Mar,10:20AM - 10:30AM
+402,"Patel, Aadi",14,O,6-Mar,10:20AM - 10:30AM
+402,"Yerra, Aditi",14,C,6-Mar,10:20AM - 10:30AM
+402,"Venkatapathy, Varsha",14,D,6-Mar,10:20AM - 10:30AM
+402,"Kumar, Akhil",14,I,6-Mar,10:20AM - 10:30AM
 403,"Albright, John",15,I,,
 403,"Grewal, Kabir",15,O,,
 403,"Samuel, Karina",15,D,,
