@@ -11,12 +11,12 @@ Lab,Name,Group,Role,EDA Date,EDA Time
 404,"Webb, William",2,I,,
 404,"Abolins, Evan",2,D,,
 404,"Shah, Mahek",2,O,,
-404,"Sachtleben, Joseph",3,O,,
-404,"Cuarenta-Olalde, Jennifer",3,D,,
-404,"Katsoudas, Katherine",3,I,,
-404,"Potier, Jack",3,I,,
-404,"Laird, Cael",3,C,,
-404,"Fus, Robert",3,O,,
+404,"Sachtleben, Joseph",3,O,20-Mar,9:00AM - 9:10AM
+404,"Cuarenta-Olalde, Jennifer",3,D,20-Mar,9:00AM - 9:10AM
+404,"Katsoudas, Katherine",3,I,20-Mar,9:00AM - 9:10AM
+404,"Potier, Jack",3,I,20-Mar,9:00AM - 9:10AM
+404,"Laird, Cael",3,C,20-Mar,9:00AM - 9:10AM
+404,"Fus, Robert",3,O,20-Mar,9:00AM - 9:10AM
 404,"Gibson, Sean",4,I,,
 404,"Guskiewicz, Robert",4,D,,
 404,"Hobbs, Nora",4,I,,
@@ -43,11 +43,11 @@ Lab,Name,Group,Role,EDA Date,EDA Time
 405,"Nally, Brianna",8,D,,
 405,"Fang, Daniel",8,O,,
 405,"Beard, Sivanaga",8,O,,
-405,"Fan, Jennifer",9,D,,
-405,"Goskonda, Aakanksh",9,O,,
-405,"Plattel, Andrew",9,O,,
-405,"Osei-Tutu, David",9,I,,
-405,"Butler, Willow",9,C,,
+405,"Fan, Jennifer",9,D,20-Mar,12:00PM - 12:10PM
+405,"Goskonda, Aakanksh",9,O,20-Mar,12:00PM - 12:10PM
+405,"Plattel, Andrew",9,O,20-Mar,12:00PM - 12:10PM
+405,"Osei-Tutu, David",9,I,20-Mar,12:00PM - 12:10PM
+405,"Butler, Willow",9,C,20-Mar,12:00PM - 12:10PM
 406,"Fabiano-Grossi, Francesca",10,O,,
 406,"Manchikatla, Shriya",10,O,,
 406,"Ballenger, William",10,I,,
@@ -77,11 +77,11 @@ Lab,Name,Group,Role,EDA Date,EDA Time
 407,"Gopinath, Madhumitha",14,D,,
 407,"Pollock, Lauren",14,I,,
 407,"Ochs, Zachary",14,O,,
-407,"Du, Victoria",15,D,,
-407,"Zhou, Audrey",15,I,,
-407,"Dsouza, Anish",15,C,,
-407,"Ackron, Andreas",15,O,,
-407,"Marcu, Isra",15,O,,
+407,"Du, Victoria",15,D,20-Mar,12:50PM - 1:00PM 
+407,"Zhou, Audrey",15,I,20-Mar,12:50PM - 1:00PM 
+407,"Dsouza, Anish",15,C,20-Mar,12:50PM - 1:00PM 
+407,"Ackron, Andreas",15,O,20-Mar,12:50PM - 1:00PM 
+407,"Marcu, Isra",15,O,20-Mar,12:50PM - 1:00PM 
 407,"Wilson, Amir",16,I,,
 407,"Gaede, Caroline",16,C,,
 407,"Riley, Chloe",16,O,,
