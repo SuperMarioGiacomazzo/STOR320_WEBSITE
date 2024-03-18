@@ -196,7 +196,7 @@ colnames(UB.HUMID.TRAIN)=c("Monday","Tuesday","Wednesday",        #DO NOT CHANGE
 rownames(LB.HUMID.TRAIN)[11] #DO NOT CHANGE
 colnames(UB.HUMID.TRAIN)[5] #DO NOT CHANGE
 
-for(j in 12){    #DO NOT CHANGE
+for(j in 1:12){    #DO NOT CHANGE
   for(k in 1:7){   #DO NOT CHANGE
     
     COMPLETE
