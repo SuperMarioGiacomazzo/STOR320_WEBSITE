@@ -14,12 +14,12 @@ Lab,Name,Group,Role,EDA Date,EDA Time
 400,"Thornton, Matthew",3,O,6-Mar,10:00AM - 10:10AM
 400,"Leonard, Iwona",3,C,6-Mar,10:00AM - 10:10AM
 400,"Bharti, Arya",3,O,6-Mar,10:00AM - 10:10AM
-400,"Bhat, Uma",4,O,,
-400,"Geng, Sabrina",4,I,,
-400,"Mills, Trenton",4,D,,
-400,"Wang, Heying",4,C,,
-400,"Goli, Archana",4,O,,
-400,"Busick, Hunter",5,O,,
+400,"Bhat, Uma",4,O,20-Mar,1:40PM - 1:50PM
+400,"Geng, Sabrina",4,I,20-Mar,1:40PM - 1:50PM
+400,"Mills, Trenton",4,D,20-Mar,1:40PM - 1:50PM
+400,"Wang, Heying",4,C,20-Mar,1:40PM - 1:50PM
+400,"Goli, Archana",4,O,20-Mar,1:40PM - 1:50PM
+400,"Busick, Hunter",5,O,20-Mar,1:40PM - 1:50PM
 400,"Margiotis, Evangelos",5,I,6-Mar,10:10AM - 10:20AM
 400,"Vogel, Natalie",5,D,6-Mar,10:10AM - 10:20AM
 400,"Gadudasu, Harshini",5,I,6-Mar,10:10AM - 10:20AM
@@ -53,15 +53,14 @@ Lab,Name,Group,Role,EDA Date,EDA Time
 402,"Repak, Lilly",10,C,20-Mar,11:30AM - 11:40AM
 402,"Padala, Nidhi",10,D,20-Mar,11:30AM - 11:40AM
 402,"Lin, Cherry",10,I,20-Mar,11:30AM - 11:40AM
-402,"Krock, Hayden",11,D,,
-402,"Cavanagh, Dillon",11,O,,
-402,"Ham, Lleyton",11,O,,
-402,"Barrios, Kaylah",11,C,,
-402,"Stepanian, Andrew",11,I,,
-402,"Zhang, Dequan",12,I,,
-402,"Jimenez-Willis, Adriana",12,C,,
-402,"Zerai, Feben",12,D,,
-402,"Hall, Ryan",12,,,
+402,"Krock, Hayden",11,D,20-Mar,9:20AM - 9:30AM
+402,"Cavanagh, Dillon",11,O,20-Mar,9:20AM - 9:30AM
+402,"Ham, Lleyton",11,O,20-Mar,9:20AM - 9:30AM
+402,"Barrios, Kaylah",11,C,20-Mar,9:20AM - 9:30AM
+402,"Stepanian, Andrew",11,I,20-Mar,9:20AM - 9:30AM
+402,"Zhang, Dequan",12,I,27-Mar,10:10AM - 10:20AM
+402,"Jimenez-Willis, Adriana",12,C,27-Mar,10:10AM - 10:20AM
+402,"Zerai, Feben",12,D,27-Mar,10:10AM - 10:20AM
 402,"Shen, Sean",13,C,,
 402,"White, Barrett",13,O,,
 402,"Spiwak, Alan",13,D,,
