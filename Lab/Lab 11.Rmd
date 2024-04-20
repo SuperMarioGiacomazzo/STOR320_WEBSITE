@@ -131,12 +131,20 @@ Now, using the codes below, plot the values of `powerVector` (estimated power) a
 
 ```{r, eval = F}
 ## DO NOT CHANGE THIS CHUNK OF CODE
+realPower <- unlist(sapply(effect, pwr.norm.test, n = 4, sig.level = 0.05, alternative = "two.sided")["power", ])
+
+colors0 <- c("Theoretical" = "blue", "Simulation" = "deeppink")
+
 plot_3_2 <- ggplot() +
-  geom_point(aes(x = effect, y = powerVector), color = "blue", size = 0.6) +
-  geom_line(aes(x = effect, y = powerVector), color = "blue", linewidth = 0.3) +
+  geom_point(aes(x = effect, y = powerVector, color = "Simulation"), size = 0.6) +
+  geom_line(aes(x = effect, y = powerVector, color = "Simulation"), linewidth = 0.3) +
+  geom_point(aes(x = effect, y = realPower, color = "Theoretical"), size = 0.6) +
+  geom_line(aes(x = effect, y = realPower, color = "Theoretical"), linewidth = 0.3) +
   labs(x = "Effect",
        y = "Power", 
-       title = "Power of the Z-Test, Standard Deviation 1, Sample Size 4") +
+       title = "Power of the Z-Test, Standard Deviation 1, Sample Size 4",
+       color = "Legend") +
+  scale_color_manual(values = colors0) +
   scale_x_continuous(breaks = seq(-3, 3, by = 0.5), expand = c(0, 0.12)) +
   scale_y_continuous(breaks = seq(0, 1, by = 0.1), expand = c(0, 0), limits = c(-0.025, 1.025))
 

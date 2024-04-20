@@ -11,7 +11,7 @@
 
 <meta name="author" content="Coleman Ferrell and Andrew Nguyen" />
 
-<meta name="date" content="2024-04-14" />
+<meta name="date" content="2024-04-19" />
 
 <title>Lab 11: Simulation and Power</title>
 
@@ -358,7 +358,7 @@ pre code {
 
 <h1 class="title toc-ignore">Lab 11: Simulation and Power</h1>
 <h4 class="author">Coleman Ferrell and Andrew Nguyen</h4>
-<h4 class="date">April 14, 2024</h4>
+<h4 class="date">April 19, 2024</h4>
 
 </div>
 
@@ -515,12 +515,20 @@ powerVector ## DO NOT CHANGE</code></pre>
 curve (given below) against <code>effect</code>. Your plot should look
 like the one in the file <code>Plot_3_2.pdf</code>.</p>
 <pre class="r"><code>## DO NOT CHANGE THIS CHUNK OF CODE
+realPower &lt;- unlist(sapply(effect, pwr.norm.test, n = 4, sig.level = 0.05, alternative = &quot;two.sided&quot;)[&quot;power&quot;, ])
+
+colors0 &lt;- c(&quot;Theoretical&quot; = &quot;blue&quot;, &quot;Simulation&quot; = &quot;deeppink&quot;)
+
 plot_3_2 &lt;- ggplot() +
-  geom_point(aes(x = effect, y = powerVector), color = &quot;blue&quot;, size = 0.6) +
-  geom_line(aes(x = effect, y = powerVector), color = &quot;blue&quot;, linewidth = 0.3) +
+  geom_point(aes(x = effect, y = powerVector, color = &quot;Simulation&quot;), size = 0.6) +
+  geom_line(aes(x = effect, y = powerVector, color = &quot;Simulation&quot;), linewidth = 0.3) +
+  geom_point(aes(x = effect, y = realPower, color = &quot;Theoretical&quot;), size = 0.6) +
+  geom_line(aes(x = effect, y = realPower, color = &quot;Theoretical&quot;), linewidth = 0.3) +
   labs(x = &quot;Effect&quot;,
        y = &quot;Power&quot;, 
-       title = &quot;Power of the Z-Test, Standard Deviation 1, Sample Size 4&quot;) +
+       title = &quot;Power of the Z-Test, Standard Deviation 1, Sample Size 4&quot;,
+       color = &quot;Legend&quot;) +
+  scale_color_manual(values = colors0) +
   scale_x_continuous(breaks = seq(-3, 3, by = 0.5), expand = c(0, 0.12)) +
   scale_y_continuous(breaks = seq(0, 1, by = 0.1), expand = c(0, 0), limits = c(-0.025, 1.025))
 
