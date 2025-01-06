@@ -74,29 +74,32 @@ Development of basic skill set for data analysis from obtaining data to data car
 - Instructor: **[Mario Giacomazzo](http://www.supermariogiacomazzo.com/)**
 
 - Lab Instructors: 
-    - **[Anna Myakushina](https://stor.unc.edu/people/graduate-students/)**
+    - **[Sumit Kumar Kar](https://stor.unc.edu/people/graduate-students/)**
     - **[Coleman Ferrell](https://stor.unc.edu/people/graduate-students/)**
-    - **[Andrew Nguyen](https://stor.unc.edu/people/graduate-students/)**
 
 - Course Syllabus: 
-    - **[STOR 320.001](Syllabi/STOR 320 Section 1 Syllabus.pdf)**: TTh, 8:00AM – 9:15AM, Hanes 120
-    - **[STOR 320.002](Syllabi/STOR 320 Section 2 Syllabus.pdf)**: TTh, 9:30AM – 10:45AM, Hanes 120
+    - **[STOR 320.001](Syllabi/STOR 320 Section 1 Syllabus.pdf)**: MWF, 12:20PM - 1:10PM, Gardner 105
+    - **[STOR 320.002](Syllabi/STOR 320 Section 2 Syllabus.pdf)**: MWF, 1:25PM - 2:15PM, Gardner 105
 
 - Lab Sections:
-    - 320.400: W, 9AM - 9:50AM, Hanes 107, Anna
-    - 320.401: M, 11AM - 11:50AM, Hanes 107, Coleman 
-    - 320.402: T, 2PM - 2:50PM, Hanes 107, Anna
-    - 320.403: W, 5PM - 5:50PM, Hanes 107, Coleman
-    - 320.404: F, 9AM - 9:50AM, Hanes 107, Coleman
-    - 320.405: Th, 11AM - 11:50AM, Hanes 107, Andrew
-    - 320.406: F, 2PM - 2:50PM, Hanes 107, Andrew
-    - 320.407: M, 5PM - 5:50PM, Hanes 107, Anna
+    - 320.400: M, 10:10AM - 11:00AM , Hanes 107, Sumit
+    - 320.401: F, 2:30PM - 3:20PM , Hanes 107, Sumit 
+    - 320.402: T, 2:00PM - 2:50PM , New East 107, Sumit
+    - 320.403: W, 11:00AM - 11:50AM , Hanes 107, Sumit
+    - 320.404: W, 4:40PM - 5:30PM , Hanes 107, Coleman
+    - 320.405: Th, 2:00PM - 2:50PM , Dey 306, Coleman
+    - 320.406: F, 8:00AM - 8:50AM , Hanes 107, Coleman
+    - 320.407: M, 4:40PM - 5:30PM , Hanes 107, Coleman
 
 - Office Hours:
-    - Dr. Mario: W, 9AM - 11AM/12PM - 2PM, Hanes 134
-    - Anna: T, 12:30PM - 1:30PM, Hanes B-30
-    - Coleman: F, 10AM - 11AM, Hanes B-07
-    - Andrew: Th, 12PM - 1PM, Hanes B-01
+    - Dr. Mario for 320.001
+        - M, 2:30PM - 3:30PM, Hanes 134
+        - W, 3:30PM - 4:30PM, Hanes 134
+    - Dr. Mario for 320.002
+        - M, 3:30PM - 4:30PM, Hanes 134
+        - W, 2:30PM - 3:30PM, Hanes 134
+    - Sumit: TBD
+    - Coleman: TBD
 
 - Attendance: **[UNC Check-in App](https://unccheckin.unc.edu/)**
 
