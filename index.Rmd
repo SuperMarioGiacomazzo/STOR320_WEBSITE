@@ -134,7 +134,8 @@ Development of basic skill set for data analysis from obtaining data to data car
 || Workflow in RMarkdown | [Slides](Lecture/Workflow/Workflow_Lecture.pdf) ||
 |Jan 15| Workflow in RMarkdown (Cont.) | [Slides](Lecture/Workflow/Workflow_Lecture.pdf) ||
 || Data Transformation I | [Slides](Lecture/Data Transformation 1/Data_Transformation_1_Lecture.pdf) ||
-|Jan 17| Data Transformation II        | [Slides](Lecture/Data Transformation 2/Data_Transformation_2_Lecture.pdf)        |          |
+|Jan 17| Data Transformation I (Cont.) | [Slides](Lecture/Data Transformation 1/Data_Transformation_1_Lecture.pdf) ||
+|| Data Transformation II        | [Slides](Lecture/Data Transformation 2/Data_Transformation_2_Lecture.pdf)        |          |
 | <span style="color:#EF426F">Jan 20</span>      |   <span style="color:#EF426F">MLK</span>     |         |<span style="color:#EF426F">No Labs this Week</span>     |
 |Jan 22| Data Transformation III | [Slides](Lecture/Data Transformation 3/Data_Transformation_3_Lecture.pdf)||
 |Jan 24| Data Transformation IV | [Slides](Lecture/Data Transformation 4/Data_Transformation_4_Lecture.pdf)||
