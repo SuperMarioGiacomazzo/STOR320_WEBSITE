@@ -161,6 +161,7 @@ Development of basic skill set for data analysis from obtaining data to data car
 | <span style="color:#EF426F">Mar 10</span>    |   <span style="color:#EF426F">Spring Break</span>    ||<span style="color:#EF426F">No Class & No Labs this Week </span>     |
 | <span style="color:#EF426F">Mar 12</span>    |   <span style="color:#EF426F">Spring Break</span>    ||<span style="color:#EF426F">No Class & No Labs this Week</span>     |
 | <span style="color:#EF426F">Mar 14</span>    |   <span style="color:#EF426F">Spring Break</span>    ||<span style="color:#EF426F">No Class & No Labs this Week</span>     |
+|Mar 17|Gerhard Ungerer||[Random Bit LLC](https://randombitcorp.com/)|
 |Mar 19| Modeling 3 | [Slides](Lecture/Modeling 3/Modeling_3_Lecture.pdf) | [Preview](Supplement/Modeling 3/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%203/Supplement.zip)) |
 |Mar 21| Modeling 4 | [Slides](Lecture/Modeling 4/Modeling_4_Lecture.pdf) | [Preview](Supplement/Modeling 4/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%204/Supplement.zip)) |
 |Mar 24| Modeling 5 | [Slides](Lecture/Modeling 5/Modeling_5_Lecture.pdf) ||
