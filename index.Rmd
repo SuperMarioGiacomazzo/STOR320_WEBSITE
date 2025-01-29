@@ -256,16 +256,16 @@ For the final project, students in STOR 320 will be divided  into research group
 If you are in Section 1 and want to find your research group, see the table below:
 
 ```{r,echo=F,results="asis",message=F}
-# library(DT)
-# library(tidyverse)
-# 
-# setwd("D:/Mario Documents/UNC/STOR 320/STOR320_WEBSITE/Group Assignments")
-# 
-# Groups1=read.csv(file="STOR320.001 Group Assignments.csv")
-# 
-# arrange(Groups1, Group) %>%
-# datatable(class="display",options = list(scrollX=F,
-#              columnDefs = list(list(className = 'dt-center', targets = 0:5))),rownames=F)
+library(DT)
+library(tidyverse)
+
+setwd("D:/DoctorMario/UNC/STOR 320/STOR320_WEBSITE/Group Assignments")
+
+Groups1=read.csv(file="STOR320.001_Group_Assignments.csv")
+
+arrange(Groups1, Group) %>%
+datatable(class="display",options = list(scrollX=F,
+             columnDefs = list(list(className = 'dt-center', targets = 0:5))),rownames=F)
 ```
 
 ### Section 2
@@ -273,16 +273,16 @@ If you are in Section 1 and want to find your research group, see the table belo
 If you are in Section 2 and want to find your research group, see the table below:
 
 ```{r,echo=F,results="asis",message=F}
-# library(DT)
-# library(tidyverse)
-# 
-# setwd("D:/Mario Documents/UNC/STOR 320/STOR320_WEBSITE/Group Assignments")
-# 
-# Groups1=read.csv(file="STOR320.002 Group Assignments.csv")
-# 
-# arrange(Groups1, Group) %>%
-# datatable(class="display",options = list(scrollX=F,
-#              columnDefs = list(list(className = 'dt-center', targets = 0:5))),rownames=F)
+library(DT)
+library(tidyverse)
+
+setwd("D:/DoctorMario/UNC/STOR 320/STOR320_WEBSITE/Group Assignments")
+
+Groups1=read.csv(file="STOR320.002_Group_Assignments.csv")
+
+arrange(Groups1, Group) %>%
+datatable(class="display",options = list(scrollX=F,
+             columnDefs = list(list(className = 'dt-center', targets = 0:5))),rownames=F)
 ```
 
 ## Four Roles
