@@ -173,6 +173,8 @@ Development of basic skill set for data analysis from obtaining data to data car
 |Apr 2| Modeling 9 | [Slides](Lecture/Modeling 9/Modeling_9_Lecture.pdf) | [Preview](Supplement/Modeling 9/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%209/Supplement.zip)) |
 |Apr 4| R Shiny | [Slides](Lecture/R Shiny/R_Shiny_Lecture.pdf) | Preview([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/R%20Shiny/Supplement.zip))|
 | <span style="color:#EF426F">Apr 18</span>      |   <span style="color:#EF426F">Well-Being Day</span>     |         |<span style="color:#EF426F">No Labs this Week</span>     |
+| Apr 14    | Alex White  |  | [CliftonLarsonAllen](https://www.claconnect.com/en) |
+| <span style="color:#EF426F">Apr 18</span>      |   <span style="color:#EF426F">Well-Being Day</span>     |         |<span style="color:#EF426F">No Labs this Week</span>     |
 | **Apr 21**    |  **Midterm 2** |  | |
 | Apr 28   | Work on Project      |         | No Class & No Labs this Week|
 |||||
