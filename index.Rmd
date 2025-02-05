@@ -147,7 +147,8 @@ Development of basic skill set for data analysis from obtaining data to data car
 |Jan 31| Final Project I | [Slides](Lecture/Final Project 1/Final_Project_1_Lecture.pdf)||
 |Feb 3| Data Import | [Slides](Lecture/Data Import/Data_Import_Lecture.pdf)||
 |Feb 5| Tidy Data 1 | [Slides](Lecture/Tidy Data 1/Tidy_Data_1_Lecture.pdf) ||
-|Feb 7| Tidy Data 2 | [Slides](Lecture/Tidy Data 2/Tidy_Data_2_Lecture.pdf) ||
+|Feb 7| Tidy Data 1 (Cont.) | [Slides](Lecture/Tidy Data 1/Tidy_Data_1_Lecture.pdf) ||
+|| Tidy Data 2 | [Slides](Lecture/Tidy Data 2/Tidy_Data_2_Lecture.pdf) ||
 | <span style="color:#EF426F">Feb 10</span>      |   <span style="color:#EF426F">Well-Being Day</span>     |         |<span style="color:#EF426F">No Labs this Week</span>     |
 |Feb 12| Web Scraping| [Slides](Lecture/Web Scraping/Web_Scraping_Lecture.pdf) | [Preview](Supplement/Web Scraping/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Web%20Scraping/Supplement.zip)) |
 |Feb 14| Joins I | [Slides](Lecture/Joins 1/Joins_1_Lecture.pdf) ||
