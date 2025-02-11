@@ -177,17 +177,17 @@ write_csv(STATE_ABBREV2,"FINAL_STATE_ABBREV.CSV")
 
 [SelectorGadget](https://selectorgadget.com/) is a point-and-click CSS selector useful for identifying the [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)  or [XPath](https://en.wikipedia.org/wiki/XPath) to the specific portion of the webpage you want to scrape.
 
-An article at https://www.securitysales.com/fire-intrusion/2018-safest-most-dangerous-states-us/ summarizes a study performed by [WalletHub](https://wallethub.com/edu/safest-states-to-live-in/4566/) which compared all 50 states using 48 key safety indicators. The article provides a link to the source along with lists providing the 10 most safest and 10 most dangerous states. 
+An article at https://www.securitysales.com/news/2019-safest-most-dangerous-states/95691/ summarizes a study performed by [WalletHub](https://wallethub.com/edu/safest-states-to-live-in/4566/) which compared all 50 states using 48 key safety indicators. The article provides a link to the source along with lists providing the 10 most safest and 10 most dangerous states. 
 
 ## Chunk 1: Web Scraping Top 10 Most Safe and Least Safe States
 
 Using [SelectorGadget](https://selectorgadget.com/), we point-and-click the text information we want on the webpage. This is the list of state names which comprise the most safe and most dangerous states. After deselecting the information we don't want, we can identify the CSS selector that links to the HTML element we want to scrape. Specifically for this case, the CSS selector is *#articleContentWrapper li*. The `html_nodes()` function in `rvest` locates in the HTML code where this CSS selector is being used to present the information visually on the webpage. Since this information is text, we use `html_text()` to read the list of states from the subsetted HTML code into a vector names `SAFE_VS_DANGEROUS`. 
 
 ```{r,eval=F}
-URL.SAFE_VS_DANGEROUS = "https://www.securitysales.com/fire-intrusion/2018-safest-most-dangerous-states-us/"
+URL.SAFE_VS_DANGEROUS = "https://www.securitysales.com/news/2019-safest-most-dangerous-states/95691/"
 SAFE_VS_DANGEROUS = URL.SAFE_VS_DANGEROUS %>%
                       read_html() %>%
-                      html_nodes(css="#articleContentWrapper li") %>%
+                      html_nodes(css="#main-content li") %>%
                       html_text() 
 
 

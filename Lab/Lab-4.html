@@ -13,7 +13,7 @@
 
 <meta name="date" content="2025-02-11" />
 
-<title>Supplement for Web Scraping</title>
+<title>Lab 4: Tidy Data</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -350,7 +350,7 @@ display: none;
 
 
 
-<h1 class="title toc-ignore">Supplement for Web Scraping</h1>
+<h1 class="title toc-ignore">Lab 4: Tidy Data</h1>
 <h4 class="author">Mario Giacomazzo</h4>
 <h4 class="date">February 11, 2025</h4>
 
@@ -359,252 +359,255 @@ display: none;
 
 <div id="introduction" class="section level1">
 <h1>Introduction</h1>
-<p>In this tutorial, we will learn how to scrape the web for
-information. We will look at data spread across multiple websites that
-is worthy to be joined and analyzed. The R package <code>rvest</code>
-was developed by Hadley Wickham to provide a user-friendly web scraping
-experience. Combining <code>rvest</code> with a CSS selector tool, such
-as <a href="https://selectorgadget.com/">SelectorGadget</a>, or built-in
-browser developer tools, makes this entire process more efficient and
-less painful. This tutorial, prescribed by Dr. Mario, will be guided and
-completed in stages during class. The following lists contain a lot more
-information that should be observed and cherished. The truths I will
-bestow upon you are inspired by many of the works below.</p>
-<ul>
-<li>Blog Tutorials for Web Scraping in R Using
-<code>library(rvest)</code>.
-<ul>
-<li><strong><a href="http://blog.corynissen.com/2015/01/using-rvest-to-scrape-html-table.html">Blog
-1</a></strong></li>
-<li><strong><a href="https://blog.rstudio.com/2014/11/24/rvest-easy-web-scraping-with-r/">Blog
-2</a></strong></li>
-<li><strong><a href="http://categitau.com/using-rvest-to-scrape-data-from-wikipedia/">Blog
-3</a></strong></li>
-<li><strong><a href="https://stat4701.github.io/edav/2015/04/02/rvest_tutorial/">Blog
-4</a></strong></li>
-<li><strong><a href="https://www.analyticsvidhya.com/blog/2017/03/beginners-guide-on-web-scraping-in-r-using-rvest-with-hands-on-knowledge/">Blog
-5</a></strong></li>
-</ul></li>
-<li>Video Tutorials for Web Scraping in R Using
-<code>library(rvest)</code>
-<ul>
-<li><strong><a href="https://www.youtube.com/watch?v=4IYfYx4yoAI">Video
-1</a></strong></li>
-<li><strong><a href="https://www.youtube.com/watch?v=9ATgpE0yTxA">Video
-2</a></strong></li>
-<li><strong><a href="https://www.youtube.com/watch?v=gSbuwYdNYLM">Video
-3</a></strong></li>
-</ul></li>
-<li>Information on Open Source SelectorGadget
-<ul>
-<li><strong><a href="https://rvest.tidyverse.org/articles/articles/selectorgadget.html">Blog</a></strong></li>
-<li><strong><a href="https://www.youtube.com/watch?v=A5LIHrpZBnY">Video</a></strong></li>
-</ul></li>
-</ul>
-</div>
-<div id="part-1-violent-crimes-in-us-cities" class="section level1">
-<h1>Part 1: Violent Crimes in US Cities</h1>
-<p>When I was a little boy, my teachers frowned on any information that
-was cited from online sources. In the early stages of <a href="https://www.wikipedia.org/">Wikipedia</a>, instructors considered
-it unreliable due to its <em>openly editable</em> format. In academia,
-Wikipedia is not found in research citations, but is often a first stop
-in the investigation on almost any topic in any field. A search may not
-give you all the information you want, but you will often be provided
-with helpful links to the source of the information. The search for <a href="https://en.wikipedia.org/wiki/Wikipedia">Wikipedia</a> on
-Wikipedia provides you with a historical overview including positives
-and negatives.</p>
-<p>Many Wikipedia pages contain information organized in tables.
-Consider the <a href="https://en.wikipedia.org/wiki/List_of_United_States_cities_by_crime_rate#Crime_rates_per_100.2C000_people_.282012.29">US
-Crime Rates</a> table that provides the crime rates per 100,000 people
-for major metropolitan areas in the United States. Statistics are given
-for violent crimes, property crimes and arson. We desire to convert the
-HTML table into an R data frame object so we can utilize this
-information in future analysis.</p>
-<div id="chunk-1-initial-web-scraping-attempt" class="section level2">
-<h2>Chunk 1: Initial Web Scraping Attempt</h2>
-<p>Using <code>rvest</code> functions such as <code>read_html()</code>
-and <code>html_table()</code>, we create a data frame called
-<code>VIOLENT</code> that contains all information read from the desired
-Wikipedia page.</p>
-<pre class="r"><code>URL.VIOLENT=&quot;https://en.wikipedia.org/wiki/List_of_United_States_cities_by_crime_rate#Crime_rates_per_100.2C000_people_.282012.29&quot;
-VIOLENT = URL.VIOLENT %&gt;%
-  read_html() %&gt;%
-  html_table(fill=TRUE) %&gt;%
-  .[[1]]
+<p>Baby Mario once had a dream to drop math knowledge on high school
+students. High schools are evaluated based on student achievement on
+standardized test scores. The self-proclaimed king, <a href="http://lebronjames.com/">Lebron James</a>, intends to donate $5
+million to the district and funds will be distributed according to the
+improvement of these high schools in the area of mathematics. Because of
+the king’s proclamation, the bureaucratic district heads have pushed
+high schools to redirect all loose change to mathematics. Teachers of
+english, science, history, and other subjects have been pressured to
+dedicate portions of class time to math education. Teachers of music and
+the arts have been released because the king does not have time for that
+nonsense. The dreams of these children along with the king’s talents
+have been taken to Hollywood.</p>
+<p>The <a href="http://www.clevelandmetroschools.org/">Cleveland school
+district</a> is made up of 20 high schools uniquely identified by
+numbers 1 to 20. Within each high school, a random sample of 20 students
+are selected to participate in this study and are uniquely identified by
+numbers 1 to 20. All 400 students selected are assessed on their
+mathematics skills based on district designed standardized tests in the
+years 2017 and 2018. The scores and corresponding percentiles of these
+selected students for both years are simulated in the following R
+code.</p>
+<pre class="r"><code>school.id=rep(1:20,each=20*2)
+student.id=rep(rep(1:20,each=2),20)
+type=rep(c(&quot;Score&quot;,&quot;Percentile&quot;),20*20)
+score2017=round(rnorm(20*20,mean=50,sd=10),0)
+percentile2017=round(100*pnorm(score2017,mean=mean(score2017),sd=sd(score2017)),0)
+score2018=round(rnorm(20*20,mean=75,sd=4),0)
+percentile2018=round(100*pnorm(score2018,mean=mean(score2018),sd=sd(score2018)),0)
+value2017=c(rbind(score2017,percentile2017))
+value2018=c(rbind(score2018,percentile2018))
 
-str(VIOLENT)</code></pre>
+untidy.school = tibble(
+                  school=school.id,
+                  student=student.id,
+                  type=type,
+                  value2017=value2017,
+                  value2018=value2018) %&gt;% 
+                filter(!(school==1 &amp; student==4)) %&gt;% filter(!(school==12 &amp; student==18)) %&gt;%
+                mutate(value2018=ifelse((school==1 &amp; student==3)|(school==15 &amp; student==18)|
+                                          (school==5 &amp; student==12),NA,value2018))</code></pre>
+<p>Below is an HTML table generated using the <code>xtable</code>
+package in R. For more information regarding this package, see the <a href="https://cran.r-project.org/web/packages/xtable/vignettes/xtableGallery.pdf">xtable
+gallery</a>. The R code in the code chunk converts an R data frame
+object to an HTML table. HTML table attributes can be specified within
+the function <code>print()</code>. The code chunk option
+<code>echo=F</code> prevents the code from showing and the option
+<code>results=&quot;asis&quot;</code> ensures that the resulting HTML table is
+displayed when knitted to HTML. The table provides a preview of the
+first 10 rows of the simulated data. Knit the document to see the HTML
+table below.</p>
+<!-- html table generated in R 4.4.1 by xtable 1.8-4 package -->
+<!-- Tue Feb 11 11:41:03 2025 -->
+<table align="center" , rules="rows" , width="50%," frame="hsides" , border-spacing="5px">
+<tr> <th> school </th> <th> student </th> <th> type </th> <th> value2017 </th> <th> value2018 </th>  </tr>
+  <tr> <td align="center"> 1 </td> <td align="center"> 1 </td> <td align="center"> Score </td> <td align="center"> 71 </td> <td align="center"> 76 </td> </tr>
+  <tr> <td align="center"> 1 </td> <td align="center"> 1 </td> <td align="center"> Percentile </td> <td align="center"> 98 </td> <td align="center"> 60 </td> </tr>
+  <tr> <td align="center"> 1 </td> <td align="center"> 2 </td> <td align="center"> Score </td> <td align="center"> 80 </td> <td align="center"> 75 </td> </tr>
+  <tr> <td align="center"> 1 </td> <td align="center"> 2 </td> <td align="center"> Percentile </td> <td align="center"> 100 </td> <td align="center"> 50 </td> </tr>
+  <tr> <td align="center"> 1 </td> <td align="center"> 3 </td> <td align="center"> Score </td> <td align="center"> 45 </td> <td align="center">  </td> </tr>
+  <tr> <td align="center"> 1 </td> <td align="center"> 3 </td> <td align="center"> Percentile </td> <td align="center"> 34 </td> <td align="center">  </td> </tr>
+  <tr> <td align="center"> 1 </td> <td align="center"> 5 </td> <td align="center"> Score </td> <td align="center"> 45 </td> <td align="center"> 70 </td> </tr>
+  <tr> <td align="center"> 1 </td> <td align="center"> 5 </td> <td align="center"> Percentile </td> <td align="center"> 34 </td> <td align="center"> 11 </td> </tr>
+  <tr> <td align="center"> 1 </td> <td align="center"> 6 </td> <td align="center"> Score </td> <td align="center"> 51 </td> <td align="center"> 70 </td> </tr>
+  <tr> <td align="center"> 1 </td> <td align="center"> 6 </td> <td align="center"> Percentile </td> <td align="center"> 57 </td> <td align="center"> 11 </td> </tr>
+   </table>
+<p>Along with the schools’ inability to appropriately drop math
+knowledge on these kids is their inability to record data in a format
+that is immediately usable. Using our understanding of the
+<code>tidyr</code> package, we can easily convert this table into a form
+that is useful for data analysis.</p>
 </div>
-<div id="chunk-2-initial-selection-of-violent-crimes-and-cleaning" class="section level2">
-<h2>Chunk 2: Initial Selection of Violent Crimes and Cleaning</h2>
-<p>You probably noticed an issue with the first row. Why do you think
-this occurred? Carefully, examine the webpage table to identify the
-cause. Also, we only want the violent crime statistics for each city and
-state. What columns do we need to keep?</p>
-<pre class="r"><code>VIOLENT2=VIOLENT[-(1:2),1:8]
-colnames(VIOLENT2)=c(&quot;State&quot;,&quot;City&quot;,&quot;Population&quot;,&quot;Total&quot;,&quot;Murder&quot;,&quot;Rape&quot;,&quot;Robbery&quot;,&quot;Assault&quot;)
-str(VIOLENT2)</code></pre>
-</div>
-<div id="chunk-3-fixing-variable-types" class="section level2">
-<h2>Chunk 3: Fixing Variable Types</h2>
-<p>The subheadings in the Wikipedia table create problems when parsed to
-data frame. The presence of this problem causes known numeric variables
-to be treated as categorical variables. We need to use functions inside
-and outside <code>tidyverse</code> to fix this issue.</p>
-<pre class="r"><code>VIOLENT3=VIOLENT2 %&gt;%
-            mutate(Population=str_replace_all(Population,pattern=&quot;,&quot;,replacement=&quot;&quot;)) %&gt;%
-            mutate_at(3:8,as.numeric)
-str(VIOLENT3)</code></pre>
-</div>
-<div id="chunk-4-identifying-problematic-cases-in-city-and-state" class="section level2">
-<h2>Chunk 4: Identifying Problematic Cases in <code>City</code> and
-<code>State</code></h2>
-<p>Using <code>str_detect()</code> we can identify cases in
-<code>City</code> where unwanted characters {“,”,“0” to “9”} make an
-appearance.</p>
-<pre class="r"><code>VIOLENT3[str_detect(VIOLENT3$City,&quot;[,(0-9)]{1}&quot;),]$City
-VIOLENT3[str_detect(VIOLENT3$City,&quot;[:digit:]&quot;),]$City
-VIOLENT3[str_detect(VIOLENT3$State,&quot;[,(0-9)]{1}&quot;),]$State</code></pre>
-</div>
-<div id="chunk-5-cleaning-problematic-cities" class="section level2">
-<h2>Chunk 5: Cleaning Problematic Cities</h2>
-<p>The unwanted characters {“,”,“0” to “9”} are special, but not our
-friends. In Wikipedia, they were used for indicating footnote
-information. We need to efficiently fix these occurrences by banishing
-them to the abyss. We see this in both cities and states. Also, there
-are other scenarios where cities have unusual names that may be
-problematic when involving additional data.</p>
-<pre class="r"><code>VIOLENT4 = VIOLENT3 %&gt;%
-              mutate(City=str_replace_all(City,&quot;[,(0-9)]{1}&quot;,&quot;&quot;)) %&gt;%
-              mutate(State=str_replace_all(State,&quot;[,(0-9)]{1}&quot;,&quot;&quot;))
+<div id="part-1-creation-of-a-unique-student-id" class="section level1">
+<h1>Part 1: Creation of a Unique Student ID</h1>
+<p>The variable <code>school</code> uniquely identifies the school, but
+the variable <code>student</code> only uniquely identifies the student
+within the school. The problem is best illustrated by the
+<code>filter()</code> function in <code>dplyr</code>.</p>
+<pre class="r"><code>untidy.school %&gt;% filter(student==1) %&gt;% head(4)</code></pre>
+<pre><code>## # A tibble: 4 × 5
+##   school student type       value2017 value2018
+##    &lt;int&gt;   &lt;int&gt; &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;
+## 1      1       1 Score             71        76
+## 2      1       1 Percentile        98        60
+## 3      2       1 Score             47        77
+## 4      2       1 Percentile        42        69</code></pre>
+<div id="create-a-unique-identifier-1.5-points" class="section level3">
+<h3>1.1: Create a unique identifier (1.5 Points)</h3>
+<p>The subsetted table contains scores and percentiles for two
+completely different children identified by <code>student==1</code>. We
+need to create a unique identifier for each student in the Cleveland
+school district. The <code>unite()</code> function can be utilized to
+create a new variable called <code>CID</code> by concatenating the
+identifiers for <code>school</code> and <code>student</code>. We want
+<code>CID</code> to follow the general form <em>SCHOOL.STUDENT</em>. For
+example, the <code>CID</code> for the first student in the table above
+would be “1.1”.</p>
+<p>Create a new tibble called <code>untidy2.school</code> that fixes
+this problem without dropping the original variables <code>school</code>
+or <code>student</code>. Read the documentation for <code>unite()</code>
+either by searching on google or using <code>?unite</code> to prevent
+the loss of original variables in the creation of a new variable.</p>
+<pre class="r"><code>untidy2.school = untidy.school %&gt;%
+                    unite(COMPLETE)
 
-VIOLENT5 = VIOLENT4 %&gt;% 
-              mutate(City=ifelse(City==&quot;Charlotte-Mecklenburg&quot;,&quot;Charlotte&quot;,City))
+glimpse(untidy2.school) #Do Not Change Lines with the glimpse Function</code></pre>
+</div>
+</div>
+<div id="part-2-gather-variables-with-yearly-values" class="section level1">
+<h1>Part 2: Gather Variables With Yearly Values</h1>
+<div id="create-a-unique-identifier-1.5-points-1" class="section level3">
+<h3>2.1: Create a unique identifier (1.5 Points)</h3>
+<p>The variables <code>value2017</code> and <code>value2018</code>
+contain the scores and percentiles for two different years. In a new
+tibble called <code>untidy3.school</code>, based on
+<code>untidy2.school</code>, we want to create a new variable called
+<code>Year</code> and a new variable called <code>Value</code> that
+display the year and the result from that year, respectively. The
+variable <code>Year</code> should be a numeric vector containing either
+<em>2017</em> or <em>2018</em>. The most efficient way to modify the
+data in this manner is to start by renaming <code>value2017</code> and
+<code>value2018</code> to nonsynctactic names <code>2017</code> and
+<code>2018</code>. Remember that you need to surround nonsyncactic names
+with backticks to achieve this result.</p>
+<pre class="r"><code>untidy3.school = untidy2.school %&gt;%
+                    rename(NEWVAR=OLDVAR,NEWVAR=OLDVAR) %&gt;%
+                    gather(`2017`:`2018`,COMPLETE)
+glimpse(untidy3.school)</code></pre>
+</div>
+</div>
+<div id="part-3-spread-type-of-value-into-multiple-columns" class="section level1">
+<h1>Part 3: Spread Type of Value Into Multiple Columns</h1>
+<div id="create-new-variables-using-spread-1-point" class="section level3">
+<h3>3.1: Create new variables using spread (1 point)</h3>
+<p>The variable <code>type</code> in <code>untidy3.school</code>
+indicates that two completely different variables are contained in the
+recently created variable called <code>Value</code>. Both the scores and
+percentiles of students are contained in <code>Value</code>. Using the
+function <code>spread()</code> we can create two new variables,
+<code>Score</code> and <code>Percentile</code>, that display the
+information contained in <code>Value</code> in separate columns. Using
+<code>untidy3.school</code>, create a new tibble called
+<code>tidy.school</code> that accomplishes these tasks.</p>
+<pre class="r"><code>tidy.school = untidy3.school %&gt;%
+                    spread(COMPLETE) 
+glimpse(tidy.school)</code></pre>
+</div>
+</div>
+<div id="part-4-missing-data-analysis" class="section level1">
+<h1>Part 4: Missing Data Analysis</h1>
+<p>The original data contains explicitly missing and implicitly missing
+values. Instances of both can be visibly seen in the first ten
+observations. Below is a table showing the first 10 observations in the
+cleaned dataset we called <code>tidy.school</code>. To appropriately,
+view this we have to sort our observations by <code>school</code> and
+<code>student</code> as seen in the original dataset
+<code>untidy.school</code>. Knit the document to see the HTML table
+below.</p>
+<p>Based on the table above, you can see that student <em>3</em> from
+school <em>1</em> has a missing score and percentile for the year 2018.
+This is an example of explicitly missing information. In logitudinal
+studies where measures are taken on individuals over a fixed time
+period, this is a common occurrence. Hypothesize a reason for this
+scenario to happen.</p>
+<p>Based on the table above, you can see that student <em>4</em> from
+school <em>1</em> is clearly missing scores and percentiles from both
+years <em>2017</em> and <em>2018</em>. This is an example of implicitly
+missing information. This is a less common occurrence, but try to
+hypothesize a reason for this scenario to happen.</p>
+<div id="convert-implicitly-missing-to-explicitly-missing-1-point" class="section level3">
+<h3>4.1 Convert Implicitly Missing to Explicitly Missing (1 Point)</h3>
+<p>Use the <code>complete()</code> function to convert all implicitly
+missing to explicitly missing. Create a new table called
+<code>tidy2.school</code> that reports missing values as <code>NA</code>
+for all combinations of school, student, and year.</p>
+<pre class="r"><code>tidy2.school=tidy.school %&gt;%
+  complete(VARIABLES)</code></pre>
+<p>The first 10 rows of <code>tidy2.school</code> are displayed
+below.</p>
+<pre class="r"><code>tab.tidy2.school = tidy2.school %&gt;%
+  head(10) %&gt;%
+  xtable(digits=0,align=&quot;ccccccc&quot;)
 
-VIOLENT6 = VIOLENT5 %&gt;%
-              mutate(City=str_replace(City,&quot; Metro&quot;,&quot;&quot;))
+print(tab.tidy2.school,type=&quot;html&quot;,include.rownames=F,
+      html.table.attributes=&quot;align=&#39;center&#39;,
+      rules=&#39;rows&#39;,
+      width=50%,
+      frame=&#39;hsides&#39;,
+      border-spacing=5px&quot;
+)</code></pre>
+</div>
+<div id="fixing-the-data-using-the-pipe-2-points" class="section level3">
+<h3>4.2 Fixing the Data Using the Pipe (2 Points)</h3>
+<p>If you inspect the first 10 rows of <code>tidy2.school</code>, you
+should see that the variable <code>CID</code> is missing for student
+<em>4</em> from school <em>1</em> even though we know that this students
+unique district ID should be <em>“1.4”</em>. Using the pipe
+<code>%&gt;%</code>, combine all previous statements in an order where
+this will not occur. Create a tibble named
+<code>final.tidy.school</code> using a chain of commands that begins
+with calling the original tibble <code>untidy.school</code></p>
+<pre class="r"><code>final.tidy.school = untidy.school %&gt;%
+                      MORE %&gt;%
+                      MORE %&gt;%
+                      ...
 
-write_csv(VIOLENT6,&quot;FINAL_VIOLENT.CSV&quot;)</code></pre>
+glimpse(final.tidy.school)</code></pre>
 </div>
 </div>
-<div id="part-2-geographical-locations-of-us-cities" class="section level1">
-<h1>Part 2: Geographical Locations of US Cities</h1>
-<p>The <a href="https://cran.r-project.org/web/packages/noncensus/noncensus.pdf"><code>noncensus</code></a>
-package in R contains preloaded datasets useful for population studies.
-Imagine if we wanted to plot the crime information from
-<code>VIOLENT6</code> on a US map. What information would we need?</p>
-<div id="chunk-1-read-in-zip-data" class="section level2">
-<h2>Chunk 1: Read in ZIP Data</h2>
-<p>The data in <code>zip_codes</code> provided in the
-<code>noncensus</code> package gives us important geographical
-information for all US cities.</p>
-<pre class="r"><code>data(zip_codes)
-ZIP=zip_codes
-str(ZIP)</code></pre>
+<div id="part-5-summarizing-figures" class="section level1">
+<h1>Part 5: Summarizing Figures</h1>
+<div id="follow-up-question-about-money-distribution-1-point" class="section level3">
+<h3>5.1: Follow-up question about money distribution (1 Point)</h3>
+<p>The figure below uses boxplots to show the distribution of scores in
+the 20 schools for the years 2017 and 2018.</p>
+<pre class="r"><code>ggplot(final.tidy.school) +
+  geom_boxplot(aes(x=as.factor(Year),y=Score,fill=as.factor(school))) + 
+  guides(fill=F)+
+  theme_minimal()</code></pre>
+<p>Question: If you were the district superintendent, how would you
+distribute the King’s ransom to these schools? In other words, how
+should Lebron James distribute the money to the schools. Write your
+answer in complete sentences below:</p>
 </div>
-<div id="chunk-2-summarize-for-joining" class="section level2">
-<h2>Chunk 2: Summarize for Joining</h2>
-<p>Many US metropolitan areas cover multiple zip codes. Using
-<code>group_by()</code> and <code>summarize()</code>, we can obtain the
-average position for each combination of city and state.</p>
-<pre class="r"><code>ZIP2 = ZIP %&gt;%
-        group_by(city,state) %&gt;%
-        summarize(lat=mean(latitude),lon=mean(longitude)) %&gt;%
-        ungroup()
+<div id="follow-up-question-about-inspecting-the-improvement-2-points" class="section level3">
+<h3>5.2: Follow-up question about inspecting the improvement (2
+Points)</h3>
+<p>Using different colors for each student, the next two pictures show
+the change in test scores and percentiles for all students (without
+missing values) sampled from the district. Both of these pictures are
+necessary in understanding the improvement in mathematical knowledge on
+the student level. As you can see, they are very different from each
+other. Hypothesize an educational strategy the district might have taken
+that would have caused this phenomenon to occur.</p>
+<pre class="r"><code>ggplot(final.tidy.school) + 
+  geom_line(aes(x=Year,y=Score,color=as.factor(CID))) +
+  guides(color=F) +
+  scale_x_discrete(breaks=c(2017,2018),labels=c(2017,2018)) +
+  theme_minimal()
 
-write_csv(ZIP2,&quot;FINAL_ZIP.CSV&quot;)</code></pre>
-</div>
-<div id="chunk-3-assessing-future-join-issues" class="section level2">
-<h2>Chunk 3: Assessing Future Join Issues</h2>
-<p>Run the code below. What makes merging <code>ZIP2</code> with
-<code>VIOLENT6</code> problematic?</p>
-<pre class="r"><code>head(VIOLENT6[,1:4],3)
-head(ZIP2,3)</code></pre>
-</div>
-</div>
-<div id="part-3-linking-state-names-to-state-abbreviations" class="section level1">
-<h1>Part 3: Linking State Names to State Abbreviations</h1>
-<p>Using your favorite search engine, you can look up the government
-established abbreviations for each state in the US of A. An HTML table
-found at <a href="https://state.1keydata.com/state-abbreviations.php" class="uri">https://state.1keydata.com/state-abbreviations.php</a> makes
-this connection for us. However, the way this data is presented is not
-in the <em>tidy</em> spirit. Soap can’t clean this, unless it is the <a href="https://www.dove.com/us/en/washing-and-bathing/beauty-bar.html">Dove
-Beauty Bar</a>.</p>
-<div id="chunk-1-web-scraping-table-of-state-abbreviations" class="section level2">
-<h2>Chunk 1: Web Scraping Table of State Abbreviations</h2>
-<pre class="r"><code>URL.STATE_ABBREV = &quot;https://state.1keydata.com/state-abbreviations.php&quot;
-STATE_ABBREV = URL.STATE_ABBREV %&gt;%
-                read_html() %&gt;%
-                html_table(fill=T) %&gt;%
-                .[[3]] %&gt;%
-                .[-1,] 
-
-head(STATE_ABBREV)</code></pre>
-</div>
-<div id="chunk-2-transforming-the-table" class="section level2">
-<h2>Chunk 2: Transforming the Table</h2>
-<pre class="r"><code>STATE_ABBREV_TOP = STATE_ABBREV[,1:2]
-names(STATE_ABBREV_TOP)=c(&quot;State&quot;,&quot;Abbrev&quot;)
-STATE_ABBREV_BOT = STATE_ABBREV[,3:4]
-names(STATE_ABBREV_BOT)=c(&quot;State&quot;,&quot;Abbrev&quot;)
-STATE_ABBREV2=rbind(STATE_ABBREV_TOP,STATE_ABBREV_BOT) %&gt;% arrange(State)
-head(STATE_ABBREV2)
-write_csv(STATE_ABBREV2,&quot;FINAL_STATE_ABBREV.CSV&quot;)</code></pre>
-</div>
-</div>
-<div id="part-4-inclusion-of-expert-opinion" class="section level1">
-<h1>Part 4: Inclusion of Expert Opinion</h1>
-<p><a href="https://selectorgadget.com/">SelectorGadget</a> is a
-point-and-click CSS selector useful for identifying the <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets">CSS</a> or
-<a href="https://en.wikipedia.org/wiki/XPath">XPath</a> to the specific
-portion of the webpage you want to scrape.</p>
-<p>An article at <a href="https://www.securitysales.com/news/2019-safest-most-dangerous-states/95691/" class="uri">https://www.securitysales.com/news/2019-safest-most-dangerous-states/95691/</a>
-summarizes a study performed by <a href="https://wallethub.com/edu/safest-states-to-live-in/4566/">WalletHub</a>
-which compared all 50 states using 48 key safety indicators. The article
-provides a link to the source along with lists providing the 10 most
-safest and 10 most dangerous states.</p>
-<div id="chunk-1-web-scraping-top-10-most-safe-and-least-safe-states" class="section level2">
-<h2>Chunk 1: Web Scraping Top 10 Most Safe and Least Safe States</h2>
-<p>Using <a href="https://selectorgadget.com/">SelectorGadget</a>, we
-point-and-click the text information we want on the webpage. This is the
-list of state names which comprise the most safe and most dangerous
-states. After deselecting the information we don’t want, we can identify
-the CSS selector that links to the HTML element we want to scrape.
-Specifically for this case, the CSS selector is
-<em>#articleContentWrapper li</em>. The <code>html_nodes()</code>
-function in <code>rvest</code> locates in the HTML code where this CSS
-selector is being used to present the information visually on the
-webpage. Since this information is text, we use <code>html_text()</code>
-to read the list of states from the subsetted HTML code into a vector
-names <code>SAFE_VS_DANGEROUS</code>.</p>
-<pre class="r"><code>URL.SAFE_VS_DANGEROUS = &quot;https://www.securitysales.com/news/2019-safest-most-dangerous-states/95691/&quot;
-SAFE_VS_DANGEROUS = URL.SAFE_VS_DANGEROUS %&gt;%
-                      read_html() %&gt;%
-                      html_nodes(css=&quot;#main-content li&quot;) %&gt;%
-                      html_text() 
-
-
-print(SAFE_VS_DANGEROUS)</code></pre>
-</div>
-<div id="chunk-2-create-a-data-frame-useful-for-joining" class="section level2">
-<h2>Chunk 2: Create a Data Frame Useful for Joining</h2>
-<p>Upon inspection of <code>SAFE_VS_DANGEROUS</code>, we notice that
-this vector of length <em>20</em> contains the top 10 most safe states
-and most dangerous states in the order they appear on the website. We
-create new data frame combining these states with their classification,
-according to the website, that indicates whether a state is considered
-safe or dangerous. By linking this information to the violent crimes
-dataset, we can determine analytically the extent to which violent
-crimes were considered in this expert opinion. This may lead to either
-disagreement or agreement with the expert opinion. <strong>The most
-important thing here is that we don’t behave like the miserable bloggers
-who wave their flag of ignorance with anecdotal evidence.</strong></p>
-<pre class="r"><code>CLASS=c(rep(&quot;S&quot;,10),rep(&quot;D&quot;, 10)) #S=SAFE and D=DANGEROUS
-print(CLASS)
-SAFE_VS_DANGEROUS2=as.tibble(cbind(SAFE_VS_DANGEROUS,CLASS))
-names(SAFE_VS_DANGEROUS2)=c(&quot;STATE&quot;,&quot;CLASS&quot;)
-write_csv(SAFE_VS_DANGEROUS2,&quot;FINAL_SAFE_VS_DANGEROUS.CSV&quot;)
-head(SAFE_VS_DANGEROUS2)
-tail(SAFE_VS_DANGEROUS2)</code></pre>
+ggplot(final.tidy.school) + 
+  geom_line(aes(x=Year,y=Percentile,color=as.factor(CID))) +
+  guides(color=F) +
+  scale_x_discrete(breaks=c(2017,2018),labels=c(2017,2018)) +
+  theme_minimal()</code></pre>
+<p>Question: Do you believe the students actually improved in their math
+knowledge? Why or why not? The schools knew that they were going to get
+money based off the improvement of the math scores. What do we learn
+about the grades of the students when compared to each other. Think
+about this and write your answer in a well-written paragraph below:</p>
 </div>
 </div>
 
