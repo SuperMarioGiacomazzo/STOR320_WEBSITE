@@ -10,9 +10,9 @@ knitr::opts_chunk$set(echo = TRUE,warning=F)
 options(scipen=999)
 library(tidyverse)    #Essential Functions
 library(rvest)        #Read Tables From Webpages
-#install.packages("devtools")
+install.packages("devtools")
 library(devtools)
-#install_github("cran/noncensus",force=TRUE)
+install_github("cran/noncensus",force=TRUE)
 library(noncensus)    #Contains Zip Codes for US Cities
 ```
 
