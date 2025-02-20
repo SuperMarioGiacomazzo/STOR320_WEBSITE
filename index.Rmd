@@ -146,19 +146,20 @@ Development of basic skill set for data analysis from obtaining data to data car
 | | Exploratory Data Analysis II |[Slides](Lecture/Exploratory Data Analysis 2/Exploratory_Data_Analysis_2_Lecture.pdf)||
 |Jan 31| Final Project I | [Slides](Lecture/Final Project 1/Final_Project_1_Lecture.pdf)||
 |Feb 3| Data Import | [Slides](Lecture/Data Import/Data_Import_Lecture.pdf)||
-|Feb 5| Tidy Data 1 | [Slides](Lecture/Tidy Data 1/Tidy_Data_1_Lecture.pdf) ||
-|Feb 7| Tidy Data 1 (Cont.) | [Slides](Lecture/Tidy Data 1/Tidy_Data_1_Lecture.pdf) ||
-|| Tidy Data 2 | [Slides](Lecture/Tidy Data 2/Tidy_Data_2_Lecture.pdf) ||
+|Feb 5| Tidy Data I | [Slides](Lecture/Tidy Data 1/Tidy_Data_1_Lecture.pdf) ||
+|Feb 7| Tidy Data I (Cont.) | [Slides](Lecture/Tidy Data 1/Tidy_Data_1_Lecture.pdf) ||
+|| Tidy Data II | [Slides](Lecture/Tidy Data 2/Tidy_Data_2_Lecture.pdf) ||
 | <span style="color:#EF426F">Feb 10</span>      |   <span style="color:#EF426F">Well-Being Day</span>     |         |<span style="color:#EF426F">No Labs this Week</span>     |
 |Feb 12| Web Scraping| [Slides](Lecture/Web Scraping/Web_Scraping_Lecture.pdf) | [Preview](Supplement/Web Scraping/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Web%20Scraping/Supplement.zip)) |
 |Feb 14| Web Scraping (Cont.)| [Slides](Lecture/Web Scraping/Web_Scraping_Lecture.pdf) | [Preview](Supplement/Web Scraping/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Web%20Scraping/Supplement.zip)) |
 |Feb 17| Joins I | [Slides](Lecture/Joins 1/Joins_1_Lecture.pdf) ||
-|Feb 19| Joins II| [Slides](Lecture/Joins 2/Joins_2_Lecture.pdf) ||
-|Feb 21| Factors | [Slides](Lecture/Factors/Factors_Lecture.pdf) ||
+| <span style="color:#EF426F">Feb 19</span>      |   <span style="color:#EF426F">Snow Day</span>     | |<span style="color:#EF426F">Read Announcements</span>     |
+|Feb 21| Joins II| [Slides](Lecture/Joins 2/Joins_2_Lecture.pdf) ||
+|| Factors | [Slides](Lecture/Factors/Factors_Lecture.pdf) ||
 |Feb 24| Programming I | [Slides](Lecture/Programming 1/Programming_1_Lecture.pdf) | [Preview](Supplement/Programming 1/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Programming%201/Supplement.zip))  |
 |Feb 26| Programming II | [Slides](Lecture/Programming 2/Programming_2_Lecture.pdf) | [Preview](Supplement/Programming 2/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Programming%202/Supplement.zip)) |
 |Feb 28| Programming III | [Slides](Lecture/Programming 3/Programming_3_Lecture.pdf) ||
-| **Mar 3**    |  **Midterm 1** |  | |
+| **Mar 3**    |  **Midterm 1** |  | **Introduction to Tidy II** |
 |Mar 5| Final Project II | [Slides](Lecture/Final Project 2/Final_Project_2_Lecture.pdf) ||
 |Mar 7| Modeling 1 | [Slides](Lecture/Modeling 1/Modeling_1_Lecture.pdf) ||
 | <span style="color:#EF426F">Mar 10</span>    |   <span style="color:#EF426F">Spring Break</span>    ||<span style="color:#EF426F">No Class & No Labs this Week </span>     |

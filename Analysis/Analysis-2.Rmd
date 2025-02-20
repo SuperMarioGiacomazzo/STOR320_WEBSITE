@@ -31,7 +31,7 @@ Follow the steps to accomplish specific tasks, and do not modify code on lines w
 
 ## Part 1: GDP by Country
 
-Information at [Worldometer GDP](https://www.worldometers.info/gdp/gdp-by-country/) contains GDP data from 2022 published by the world bank. GDP is the monetary value of goods and services produced within a country over a period of time. On this website, GDP is presented in dollars.
+Information at [Worldometer GDP](https://www.worldometers.info/gdp/gdp-by-country/) contains GDP data from 2023 published by the world bank. GDP is the monetary value of goods and services produced within a country over a period of time. On this website, GDP is presented in dollars.
  
 ### Q1 *(2 Points)*
 
@@ -59,7 +59,7 @@ head(GDP2) #DO NOT CHANGE
 
 ### Q3 *(3 Points)*
 
-Create a new data frame named `GDP3` based off `GDP2` where the variables `GDP (nominal, 2022)`,`GDP  growth`, `Population (2022)`, `GDP  per capita`, and `Share of World GDP` become `GDP`, `Growth`, `Population`, `PerCapita`, and `Share`, respectively. Be careful!! In the original variable names, there are multiple spaces between "GDP" and "growth" in `GDP growth` and multiple spaces between "GDP" and "per capita" in `GDP  per capita`.
+Create a new data frame named `GDP3` based off `GDP2` where the variables `GDP (nominal, 2023)`,`GDP  growth`, `Population (2023)`, `GDP  per capita`, and `Share of World GDP` become `GDP`, `Growth`, `Population`, `PerCapita`, and `Share`, respectively. Be careful!! In the original variable names, there are multiple spaces between "GDP" and "growth" in `GDP growth` and multiple spaces between "GDP" and "per capita" in `GDP  per capita`.
 
 ```{r,eval=FALSE}
 GDP3 = COMPLETE
