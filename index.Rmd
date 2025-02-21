@@ -154,8 +154,8 @@ Development of basic skill set for data analysis from obtaining data to data car
 |Feb 14| Web Scraping (Cont.)| [Slides](Lecture/Web Scraping/Web_Scraping_Lecture.pdf) | [Preview](Supplement/Web Scraping/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Web%20Scraping/Supplement.zip)) |
 |Feb 17| Joins I | [Slides](Lecture/Joins 1/Joins_1_Lecture.pdf) ||
 | <span style="color:#EF426F">Feb 19</span>      |   <span style="color:#EF426F">Snow Day</span>     | |<span style="color:#EF426F">Read Announcements</span>     |
-|Feb 21| Joins II| [Slides](Lecture/Joins 2/Joins_2_Lecture.pdf) ||
-|| Factors | [Slides](Lecture/Factors/Factors_Lecture.pdf) ||
+|Feb 21| [Joins II](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=cf313708-beb8-4b7d-bded-b28b013cba4e)| [Slides](Lecture/Joins 2/Joins_2_Lecture.pdf) ||
+|| [Factors](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=cf313708-beb8-4b7d-bded-b28b013cba4e) | [Slides](Lecture/Factors/Factors_Lecture.pdf) ||
 |Feb 24| Programming I | [Slides](Lecture/Programming 1/Programming_1_Lecture.pdf) | [Preview](Supplement/Programming 1/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Programming%201/Supplement.zip))  |
 |Feb 26| Programming II | [Slides](Lecture/Programming 2/Programming_2_Lecture.pdf) | [Preview](Supplement/Programming 2/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Programming%202/Supplement.zip)) |
 |Feb 28| Programming III | [Slides](Lecture/Programming 3/Programming_3_Lecture.pdf) ||
