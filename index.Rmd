@@ -162,7 +162,8 @@ Development of basic skill set for data analysis from obtaining data to data car
 | **Mar 3**    |  **Midterm 1** |  | **Intro -> Tidy II** |
 |Mar 5| Programming II (Cont.) | [Slides](Lecture/Programming 2/Programming_2_Lecture.pdf) | [Preview](Supplement/Programming 2/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Programming%202/Supplement.zip)) |
 || Programming III | [Slides](Lecture/Programming 3/Programming_3_Lecture.pdf) ||
-|Mar 7| Final Project II | [Slides](Lecture/Final Project 2/Final_Project_2_Lecture.pdf) ||
+|Mar 7| Programming III (Cont.) | [Slides](Lecture/Programming 3/Programming_3_Lecture.pdf) ||
+|| Final Project II | [Slides](Lecture/Final Project 2/Final_Project_2_Lecture.pdf) ||
 | <span style="color:#EF426F">Mar 10</span>    |   <span style="color:#EF426F">Spring Break</span>    ||<span style="color:#EF426F">No Class & No Labs this Week </span>     |
 | <span style="color:#EF426F">Mar 12</span>    |   <span style="color:#EF426F">Spring Break</span>    ||<span style="color:#EF426F">No Class & No Labs this Week</span>     |
 | <span style="color:#EF426F">Mar 14</span>    |   <span style="color:#EF426F">Spring Break</span>    ||<span style="color:#EF426F">No Class & No Labs this Week</span>     |
