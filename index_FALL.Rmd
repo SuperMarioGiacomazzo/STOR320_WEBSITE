@@ -1,0 +1,397 @@
+---
+title: '**STOR 320: Introduction to Data Science**'
+geometry: margin=2
+output:
+  html_document:
+    theme: cosmo
+    toc: yes
+    toc_float: yes
+    includes:
+      in_header: "favicon.html"
+  pdf_document:
+    toc: yes
+---
+
+```{r setup, include=FALSE} 
+knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
+```
+
+<style type="text/css">
+
+div {
+color: #13294B;
+}
+
+#TOC {
+  color: #4B9CD3;
+}
+
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
+  color: #4B9CD3;
+  background-color: #13294B;
+}
+
+a:link {
+    color: #4B9CD3;
+    text-decoration: none;
+}
+
+a:visited {
+        text-decoration: none;
+color: #4B9CD3;
+
+}
+a:hover {
+color: #4B9CD3;
+background-color: #13294B;
+}
+
+.main-container {
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+} 
+
+</style>
+
+
+Development of basic skill set for data analysis from obtaining data to data carpentry, exploration, modeling, and communication. Topics covered include regression, clustering, classification, algorithmic thinking, and non-standard data objects (networks and text data). 
+
+<div class="row">
+  <div class="column">
+
+- Instructor: **[Mario Giacomazzo](http://www.supermariogiacomazzo.com/)**
+
+- Lab Instructors: 
+    - **[Sumit Kumar Kar](https://stor.unc.edu/people/graduate-students/)**
+    - **[Coleman Ferrell](https://stor.unc.edu/people/graduate-students/)**
+    - **[Anna Myakushina](https://stor.unc.edu/people/graduate-students/)**
+
+- Course Syllabus: 
+    - **[STOR 320.001](Syllabi/STOR 320 Section 1 Syllabus.pdf)**: MWF, 12:20PM - 1:10PM, Gardner 105
+    - **[STOR 320.002](Syllabi/STOR 320 Section 2 Syllabus.pdf)**: MWF, 1:25PM - 2:15PM, Gardner 105
+
+- Lab Sections:
+    - 320.400: M, 10:10AM - 11:00AM , Hanes 107, Sumit
+    - 320.401: F, 2:30PM - 3:20PM , Hanes 107, Sumit 
+    - 320.402: T, 2:00PM - 2:50PM , New East 107, Sumit
+    - 320.403: W, 11:00AM - 11:50AM , Hanes 107, Sumit
+    - 320.404: W, 4:40PM - 5:30PM , Hanes 107, Coleman
+    - 320.405: Th, 2:00PM - 2:50PM , Dey 306, Coleman
+    - 320.406: F, 8:00AM - 8:50AM , Hanes 107, Coleman
+    - 320.407: M, 4:40PM - 5:30PM , Hanes 107, Anna
+
+- Office Hours:
+    - Dr. Mario for 320.001
+        - M, 2:30PM - 3:30PM, Hanes 134
+        - W, 3:30PM - 4:30PM, Hanes 134
+    - Dr. Mario for 320.002
+        - M, 3:30PM - 4:30PM, Hanes 134
+        - W, 2:30PM - 3:30PM, Hanes 134
+    - Sumit: M, 12:00PM - 1:00PM, [Zoom](https://unc.zoom.us/j/98437568033)
+    - Coleman: Th, 12:30PM - 1:30PM, Hanes B-07
+    - Anna: T, 4:00PM - 6:00PM, Hanes B-30
+
+- Attendance: **[UNC Check-in App](https://unccheckin.unc.edu/)**
+
+- University Approved Absences: **[Online Form](https://uaao.unc.edu/submit-a-request/)**
+
+- Textbook: **[R For Data Science](R for Data Science- Import, Tidy, Transform, Visualize, and Model Data.pdf)** (R4DS)
+
+  </div>
+  <div class="column">
+  <img src="UNC_Logo.png" width="140px" height="auto">
+  </div>
+</div> 
+
+# **Complete Before First Day**
+- Bookmark this **[course website](https://supermariogiacomazzo.github.io/STOR320_WEBSITE/)** in your browser
+- Get familiar with the course website and Canvas
+- View the syllabus using the hyperlink on the course website
+- Download the **[UNC Check-in App](https://unccheckin.unc.edu/#studentFAQ)** on your Mobile Phone
+- Install **[R](https://cran.r-project.org/)** and **[R Studio](https://www.rstudio.com/products/rstudio/#Desktop)** to your laptop
+- Read Introduction in R4DS
+- Bring your laptop and mobile phone to class
+
+# **Course Material**
+
+| Date | Lecture | Slides | Supplement |
+|:---------:|:---------:|:---------:|:---------:|
+| Jan 8 | Introduction | [Slides](Lecture/Introduction/Intro_Lecture.pdf)|<span style="color:#EF426F">No Labs this Week</span>|
+|Jan 10|Data Visualization|[Slides](Lecture/Data Visualization/Data_Visualization_Lecture.pdf)|[Preview](Supplement/Data Visualization/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Data%20Visualization/Supplement.zip))|
+|Jan 13|Data Visualization (Cont.)|[Slides](Lecture/Data Visualization/Data_Visualization_Lecture.pdf)|[Preview](Supplement/Data Visualization/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Data%20Visualization/Supplement.zip))|
+|| Workflow in RMarkdown | [Slides](Lecture/Workflow/Workflow_Lecture.pdf) ||
+|Jan 15| Workflow in RMarkdown (Cont.) | [Slides](Lecture/Workflow/Workflow_Lecture.pdf) ||
+|| Data Transformation I | [Slides](Lecture/Data Transformation 1/Data_Transformation_1_Lecture.pdf) ||
+|Jan 17| Data Transformation I (Cont.) | [Slides](Lecture/Data Transformation 1/Data_Transformation_1_Lecture.pdf) ||
+|| Data Transformation II        | [Slides](Lecture/Data Transformation 2/Data_Transformation_2_Lecture.pdf)        |          |
+| <span style="color:#EF426F">Jan 20</span>      |   <span style="color:#EF426F">MLK</span>     |         |<span style="color:#EF426F">No Labs this Week</span>     |
+|Jan 22| Data Transformation II (Cont.)       | [Slides](Lecture/Data Transformation 2/Data_Transformation_2_Lecture.pdf)        |          |
+|| Data Transformation III | [Slides](Lecture/Data Transformation 3/Data_Transformation_3_Lecture.pdf)||
+|Jan 24| Data Transformation III (Cont.) | [Slides](Lecture/Data Transformation 3/Data_Transformation_3_Lecture.pdf)||
+|| Data Transformation IV | [Slides](Lecture/Data Transformation 4/Data_Transformation_4_Lecture.pdf)||
+|Jan 27| Exploratory Data Analysis I  | [Slides](Lecture/Exploratory Data Analysis 1/Exploratory_Data_Analysis_1_Lecture.pdf) ||
+|Jan 29| Exploratory Data Analysis I (Cont.)  | [Slides](Lecture/Exploratory Data Analysis 1/Exploratory_Data_Analysis_1_Lecture.pdf) ||
+| | Exploratory Data Analysis II |[Slides](Lecture/Exploratory Data Analysis 2/Exploratory_Data_Analysis_2_Lecture.pdf)||
+|Jan 31| Final Project I | [Slides](Lecture/Final Project 1/Final_Project_1_Lecture.pdf)||
+|Feb 3| Data Import | [Slides](Lecture/Data Import/Data_Import_Lecture.pdf)||
+|Feb 5| Tidy Data I | [Slides](Lecture/Tidy Data 1/Tidy_Data_1_Lecture.pdf) ||
+|Feb 7| Tidy Data I (Cont.) | [Slides](Lecture/Tidy Data 1/Tidy_Data_1_Lecture.pdf) ||
+|| Tidy Data II | [Slides](Lecture/Tidy Data 2/Tidy_Data_2_Lecture.pdf) ||
+| <span style="color:#EF426F">Feb 10</span>      |   <span style="color:#EF426F">Well-Being Day</span>     |         |<span style="color:#EF426F">No Labs this Week</span>     |
+|Feb 12| Web Scraping| [Slides](Lecture/Web Scraping/Web_Scraping_Lecture.pdf) | [Preview](Supplement/Web Scraping/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Web%20Scraping/Supplement.zip)) |
+|Feb 14| Web Scraping (Cont.)| [Slides](Lecture/Web Scraping/Web_Scraping_Lecture.pdf) | [Preview](Supplement/Web Scraping/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Web%20Scraping/Supplement.zip)) |
+|Feb 17| Joins I | [Slides](Lecture/Joins 1/Joins_1_Lecture.pdf) ||
+| <span style="color:#EF426F">Feb 19</span>      |   <span style="color:#EF426F">Snow Day</span>     | |<span style="color:#EF426F">Read Announcements</span>     |
+|Feb 21| [Joins II](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=cf313708-beb8-4b7d-bded-b28b013cba4e)| [Slides](Lecture/Joins 2/Joins_2_Lecture.pdf) ||
+|| [Factors](https://uncch.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=cf313708-beb8-4b7d-bded-b28b013cba4e) | [Slides](Lecture/Factors/Factors_Lecture.pdf) ||
+|Feb 24| Programming I | [Slides](Lecture/Programming 1/Programming_1_Lecture.pdf) | [Preview](Supplement/Programming 1/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Programming%201/Supplement.zip))  |
+|Feb 26| Programming I (Cont.) | [Slides](Lecture/Programming 1/Programming_1_Lecture.pdf) | [Preview](Supplement/Programming 1/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Programming%201/Supplement.zip))  |
+|Feb 28| Programming II | [Slides](Lecture/Programming 2/Programming_2_Lecture.pdf) | [Preview](Supplement/Programming 2/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Programming%202/Supplement.zip)) |
+| **Mar 3**    |  **Midterm 1** |  | **Intro -> Tidy II** |
+|Mar 5| Programming II (Cont.) | [Slides](Lecture/Programming 2/Programming_2_Lecture.pdf) | [Preview](Supplement/Programming 2/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Programming%202/Supplement.zip)) |
+|| Programming III | [Slides](Lecture/Programming 3/Programming_3_Lecture.pdf) ||
+|Mar 7| Programming III (Cont.) | [Slides](Lecture/Programming 3/Programming_3_Lecture.pdf) ||
+|| Final Project II | [Slides](Lecture/Final Project 2/Final_Project_2_Lecture.pdf) ||
+| <span style="color:#EF426F">Mar 10</span>    |   <span style="color:#EF426F">Spring Break</span>    ||<span style="color:#EF426F">No Class & No Labs this Week </span>     |
+| <span style="color:#EF426F">Mar 12</span>    |   <span style="color:#EF426F">Spring Break</span>    ||<span style="color:#EF426F">No Class & No Labs this Week</span>     |
+| <span style="color:#EF426F">Mar 14</span>    |   <span style="color:#EF426F">Spring Break</span>    ||<span style="color:#EF426F">No Class & No Labs this Week</span>     |
+|Mar 17|Gerhard Ungerer|[Slides](Lecture/Industry 2/GUngerer.pdf)|[Random Bit LLC](https://randombitcorp.com/)|
+|Mar 19| Final Project II (Cont.) | [Slides](Lecture/Final Project 2/Final_Project_2_Lecture.pdf) ||
+|| Modeling 1 | [Slides](Lecture/Modeling 1/Modeling_1_Lecture.pdf) ||
+|Mar 21| Modeling 1 (Cont.) | [Slides](Lecture/Modeling 1/Modeling_1_Lecture.pdf) ||
+|| Modeling 2 | [Slides](Lecture/Modeling 2/Modeling_2_Lecture.pdf) | [Preview](Supplement/Modeling 2/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%202/Supplement.zip)) |
+|Mar 24| Modeling 2 (Cont.) | [Slides](Lecture/Modeling 2/Modeling_2_Lecture.pdf) | [Preview](Supplement/Modeling 2/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%202/Supplement.zip)) |
+|Mar 26| Modeling 3 | [Slides](Lecture/Modeling 3/Modeling_3_Lecture.pdf) | [Preview](Supplement/Modeling 3/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%203/Supplement.zip)) |
+|Mar 28| Modeling 3 (Cont.) | [Slides](Lecture/Modeling 3/Modeling_3_Lecture.pdf) | [Preview](Supplement/Modeling 3/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%203/Supplement.zip)) |
+|| Modeling 4 | [Slides](Lecture/Modeling 4/Modeling_4_Lecture.pdf) | [Preview](Supplement/Modeling 4/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%204/Supplement.zip)) |
+|Mar 31| Modeling 4 (Cont.) | [Slides](Lecture/Modeling 4/Modeling_4_Lecture.pdf) | [Preview](Supplement/Modeling 4/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%204/Supplement.zip)) |
+|| Modeling 5 | [Slides](Lecture/Modeling 5/Modeling_5_Lecture.pdf) ||
+|Apr 2| Modeling 5 (Cont.) | [Slides](Lecture/Modeling 5/Modeling_5_Lecture.pdf) ||
+|Apr 4| Modeling 6 | [Slides](Lecture/Modeling 6/Modeling_6_Lecture.pdf) ||
+|Apr 7| Modeling 6 (Cont.) | [Slides](Lecture/Modeling 6/Modeling_6_Lecture.pdf) ||
+|| Modeling 7 | [Slides](Lecture/Modeling 7/Modeling_7_Lecture.pdf) | [Preview](Supplement/Modeling 7/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%207/Supplement.zip)) |
+|Apr 9| Modeling 7 (Cont.) | [Slides](Lecture/Modeling 7/Modeling_7_Lecture.pdf) | [Preview](Supplement/Modeling 7/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%207/Supplement.zip)) |
+|Apr 11| Modeling 8 | [Slides](Lecture/Modeling 8/Modeling_8_Lecture.pdf) | [Preview](Supplement/Modeling 8/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%208/Supplement.zip)) |
+| Apr 14    | Alex White  | [Slides](Lecture/Industry 3/CLA_PRESENT.pdf) | [CliftonLarsonAllen](https://www.claconnect.com/en) |
+|Apr 16| Modeling 9 | [Slides](Lecture/Modeling 9/Modeling_9_Lecture.pdf) | [Preview](Supplement/Modeling 9/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%209/Supplement.zip)) |
+| <span style="color:#EF426F">Apr 18</span>      |   <span style="color:#EF426F">Well-Being Day</span>     |         |<span style="color:#EF426F">No Labs this Week</span>     |
+| **Apr 21**    |  **Midterm 2** |  | |
+|Apr 23| Modeling 9 (Cont.) | [Slides](Lecture/Modeling 9/Modeling_9_Lecture.pdf) | [Preview](Supplement/Modeling 9/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%209/Supplement.zip)) |
+|| R Shiny | [Slides](Lecture/R Shiny/R_Shiny_Lecture.pdf) | Preview([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/R%20Shiny/Supplement.zip))|
+| Apr 25   | Work on Project      |         | |
+| Apr 28   | Work on Project      |         | No Class & No Labs this Week|
+|||||
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# **Assignment Tracker**
+
+All HW, Lab, and Analysis assignments are to be submitted via Canvas. Unzip folder and complete your homework using **Rmd** file. Midterms will be taken on paper in class. The table below shows all the assignments sorted by the assigned date. 
+
+|Assigned| Lab (L) |Homework (HW) | Analysis (A) | Midterm (M) |Due|
+|:--------:|:--------:|:--------:|:-------------:|:----------------:|:----------------:|
+| Jan 10| |[HW1](Homework/HW 1/HW-1.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%201/HW%201.zip)) |||  Jan 17 (5:00 PM)     |
+| Jan 13| [L1](Lab/Lab-1.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab-1.zip)) |       |       |    | Jan 20 (10 AM)     |
+| Jan 17| |[HW2](Homework/HW 2/HW-2.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%202/HW%202.zip)) |||   Jan 24 (5:00 PM)     |
+| Jan 24|      |  |  [A1](Analysis/Analysis-1.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Analysis/Analysis-1.zip))     |     | Feb 7 (5:00 PM)     |
+| Jan 27 | [L2](Lab/Lab-2.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab-2.zip)) |       |       |    | Feb 3 (10 AM)     |
+| Feb 3 | [L3](Lab/Lab-3.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab-3.zip)) |       |       |   | Feb 17 (10:00 AM)     |
+| Feb 7| | [HW3](Homework/HW 3/HW-3.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%203/HW%203.zip)) | |   | Feb 14  (5:00 PM)   |
+| Feb 14| |[HW4](Homework/HW 4/HW-4.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%204/HW%204.zip))   |  |   | Feb 21 (5:00 PM)   |
+| Feb 17  | [L4](Lab/Lab-4.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab-4.zip)) |       |       |   | Feb 24 (10:00 AM)     |
+| Feb 21|      |  |  [A2](Analysis/Analysis-2.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Analysis/Analysis-2.zip))     |     | Feb 28 (5:00 PM)|
+| Feb 24  | [L5](Lab/Lab-5.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab-5.zip)) |       |       |   | Mar 3 (10:00 AM)     |
+|Feb 28| |[HW5](Homework/HW 5/HW-5.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%205/HW%205.zip)) | | | Mar 7 (5:00 PM)|
+| Mar 3|      |  |  | M1    | Mar 3 (Class)    |
+| Mar 3  | [L6](Lab/Lab-6.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab-6.zip)) |       |       |   | Mar 17 (10:00 AM)     |
+| Mar 7|      |  |  [A3](Analysis/Analysis-3.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Analysis/Analysis-3.zip))     |     | Mar 21 (5:00 PM)     |
+| Mar 17  | [L7](Lab/Lab-7.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab-7.zip)) |       |       |   | Mar 24 (10:00 AM)     |
+|Mar 21| |[HW6](Homework/HW 6/HW-6.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%206/HW%206.zip))       |        |    | Mar 28 (5:00 PM)     |
+| Mar 24  | [L8](Lab/Lab-8.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab-8.zip)) |       |       |   | Mar 31 (10:00 AM)     |
+|Mar 28| |[HW7](Homework/HW 7/HW-7.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%207/HW%207.zip))       ||   | Apr 4 (5:00 PM)     |
+| Mar 31  | [L9](Lab/Lab-9.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab-9.zip)) |       |       |   | Apr 7 (10:00 AM)     |
+| Apr 4|      |  |  [A4](Analysis/Analysis-4.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Analysis/Analysis-4.zip))     |     | Apr 18 (5:00 PM)     |
+| Apr 7  | [L10](Lab/Lab-10.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab-10.zip)) |       |       |   | Apr 21 (10:00 AM)     |
+| Apr 21|      |  |  | M2    | Apr 21 (Class)    |
+| Apr 21  | [L11](Lab/Lab-11.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab-11.zip)) |       |       |   | Apr 28 (10:00 AM)     |
+||   |     |             |  | |  
+
+
+
+ 
+
+# **Final Project Details**
+
+## Group Assignments
+
+For the final project, students in STOR 320 will be divided  into research groups of size 5 or 6. To ensure fairness, students will be assigned randomly. Also, I will try to ensure that all students in your group are in your lab section.
+
+### Section 1
+
+If you are in Section 1 and want to find your research group, see the table below:
+
+```{r,echo=F,results="asis",message=F}
+library(DT)
+library(tidyverse)
+
+setwd("D:/DoctorMario/UNC/STOR 320/STOR320_WEBSITE/Group Assignments")
+
+Groups1=read.csv(file="STOR320.001_Group_Assignments.csv")
+
+arrange(Groups1, Group) %>%
+datatable(class="display",options = list(scrollX=F,
+             columnDefs = list(list(className = 'dt-center', targets = 0:5))),rownames=F)
+```
+
+### Section 2
+
+If you are in Section 2 and want to find your research group, see the table below:
+
+```{r,echo=F,results="asis",message=F}
+library(DT)
+library(tidyverse)
+
+setwd("D:/DoctorMario/UNC/STOR 320/STOR320_WEBSITE/Group Assignments")
+
+Groups1=read.csv(file="STOR320.002_Group_Assignments.csv")
+
+arrange(Groups1, Group) %>%
+datatable(class="display",options = list(scrollX=F,
+             columnDefs = list(list(className = 'dt-center', targets = 0:5))),rownames=F)
+```
+
+## Four Roles
+
+Although everyone is responsible for the entire project, each member of the group will be assigned a specific role for accountability and consistency. These four specific roles are described as follows:
+
+- **The Creator:** Schedule and Meet with Dr. Mario to Propose Your Group's Research Idea, Lead Designer in Slides
+
+- **The Interpreter(s):** Schedule and Meet with Dr. Mario to Share Findings from Exploratory Analysis, Evaluate Practice Presentation
+
+- **The Orator(s):** Give a Captivating 3-5 Minute Slideshow Presentation During Final Exam Day
+
+- **The Deliverer:** Deliver Assignments to Canvas, Polished and On-time
+
+## Four Parts Including Point Values
+
+This final project will be divided into four parts worth a total of 100 points. Each part will have a clear rubric as non-subjective as possible. The parts along with total point values are found below:
+
+* **[P1: Project Proposal](Final Project/Project-Proposal.html)** *(10 Points)*
+    + [Template](Final Project/Project-Proposal-Template.html)([.Rmd](https://drive.google.com/file/d/1m5pgDs0NvqdgSMkMR18OCWL6l1egqqYm/view?usp=sharing))
+    + [Data World](https://data.world/)
+    + [US Government Data](https://www.data.gov/)
+    + [Kaggle](https://www.kaggle.com/)
+    + [Free Data Info I](https://www.forbes.com/sites/bernardmarr/2016/02/12/big-data-35-brilliant-and-free-data-sources-for-2016/#63f06f60b54d)
+    + [Free Data Info II](https://r-dir.com/reference/datasets.html)
+
+
+* **[P2: Exploratory Data Analysis](Final Project/Exploratory-Data-Analysis.html)** *(20 Points)*
+    + [Template](Final Project/EDA-Template.html) ([.Rmd](https://drive.google.com/file/d/1zNI0hX9CTg9d77mHOKxebgdwDEmqYebf/view?usp=sharing))
+    
+* **[P3: Final Written Paper](Final Project/Final-Paper.html)** *(40 Points)*
+    + [Template](Final Project/Final-Paper-Template.html)([.Rmd](https://drive.google.com/file/d/19oG11IaUnAkPe8BUE7SAXS2BOeVLIZdT/view?usp=sharing))
+    
+* **[P4: Final Presentation](Final Project/Final-Presentation.html)** *(30 Points)*
+
+    
+## Due Dates of Individual Parts
+
+| Part | Description |Method of Submission| Involvement Survey |Due Date (Time) |
+|------|-------------|-------------------|-------------------|----------------:|
+| P1  | Project Proposal| Meeting + Canvas | [Survey 1](https://docs.google.com/forms/d/e/1FAIpQLScslh7rwnjd2VZ99VH66_4PJM7c8oJ_4olJt7-34hRW82Nq2A/viewform?usp=sf_link) |Feb 14 (11:59PM)|
+| P2  | Exploratory Data Analysis | Meeting + Canvas | [Survey 2](https://docs.google.com/forms/d/e/1FAIpQLScY8EYu2GtgiHcbP3kVHGosSCx89rIc76WgW_Tx950HMzLM8g/viewform?usp=sf_link) |Mar 21 (11:59PM)|
+| P3  | Final Written Paper|Canvas| [Survey 3](https://docs.google.com/forms/d/e/1FAIpQLSdQMrAQV_pjERKMsV3mXyC4unrdrlfFVQ_MYWhKma7rP1yo1A/viewform?usp=sf_link) |Apr 28 (11:59PM)|
+| P4  | Final Presentation (Section 1)  |Canvas + Class| [Survey 4](https://docs.google.com/forms/d/e/1FAIpQLSdTW_KLZWWWVpNWVudyXXwkQztOUJmZdlcFtJZovoTzRwfwLw/viewform?usp=sf_link) | May 8 (12:00PM) |
+| P4  | Final Presentation (Section 2)  |Canvas + Class| [Survey 4](https://docs.google.com/forms/d/e/1FAIpQLSdTW_KLZWWWVpNWVudyXXwkQztOUJmZdlcFtJZovoTzRwfwLw/viewform?usp=sf_link) | May 5 (4:00PM) |
+||||
+
+## Above Average Final Projects
+
+- **[Pokemon](Final Project/SP2019_EX1.html)**
+- **[Seattle Housing](Final Project/SP2019_EX2.html)**
+- **[Missing Migrants](Final Project/SU2019_EX1.html)**
+- **[Youtube](Final Project/FA2019_EX1.html)**
+- **[CDC](Final Project/FA2019_EX2.html)**
+
+
+# **Optional Suggested Reading**
+
+- **[R for Data Science (2E)](https://r4ds.hadley.nz/)** (R4DS2)
+
+- **[R Programming: Zero to Pro](https://r02pro.github.io/)** (RPZP)
+
+- **[Hands-On Programming with R](https://rstudio-education.github.io/hopr/)** (HOPR)
+
+- **[ModernDive](https://moderndive.com/index.html)** (MD)
+
+- **[An Introduction to Statistical Learning](An Introduction to Statistical Learning.pdf)** (ISLR)
+
+
+# **Additional resources**
+
+- **[UNC Check-in App](https://unccheckin.unc.edu/#studentFAQ)**
+
+- **[Installing R](https://cran.r-project.org/)**
+
+- **[Installing R Studio](https://posit.co/download/rstudio-desktop/)**
+
+- **[Additional Necessary Tools for Mac Users](https://mac.r-project.org/tools/)**
+
+- **[Instructions for Accessing R Studio on the UNC Server](https://drive.google.com/file/d/1ATZO-wpuqzHbXVnJqm7wXpt-yfMbo2Jy/view?usp=sharing)**
+
+- **[Rmarkdown Cheat Sheet](Cheat Sheet/rmarkdown.pdf)**
+
+- **[ggplot2 Cheat Sheet](Cheat Sheet/data-visualization.pdf)**
+
+- **[Color Options](https://paulvanderlaken.files.wordpress.com/2017/08/ggplot2-color-colours-names-cheatsheet.png?w=559&amp;h=1024)**
+
+- **[Data Wrangling Cheat Sheet](https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf)**
+
+- **[Regular Expressions Cheat Sheet](Cheat Sheet/regex.pdf)**
+
+- **[R Shiny Cheat Sheet](https://shiny.rstudio.com/images/shiny-cheatsheet.pdf)**
+
+This page was last updated on `r Sys.time()` Eastern Time.
+
