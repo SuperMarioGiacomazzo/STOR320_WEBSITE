@@ -89,7 +89,7 @@ In this course, you will learn the entire process of Data Science: Import, Clean
         - MTWTh, 12:00PM - 12:45PM, Hanes 134
         - MTWTh, 2:45PM - 3:00PM, Hanes 134
     - Callum: M-F, 3:00PM - 3:30PM, Hanes 107
-    - Can: TBD
+    - Can: M-F, 3:30PM - 4:00PM, Hanes B-01
 - Attendance: **[UNC Check-in App](https://unccheckin.unc.edu/)**
 
 - University Approved Absences: **[Online Form](https://uaao.unc.edu/submit-a-request/)**
