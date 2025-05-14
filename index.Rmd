@@ -88,7 +88,7 @@ In this course, you will learn the entire process of Data Science: Import, Clean
     - Dr. Mario for 320.001
         - MTWTh, 12:00PM - 12:45PM, Hanes 134
         - MTWTh, 2:45PM - 3:00PM, Hanes 134
-    - Callum: TBD
+    - Callum: M-F, 3:00PM - 3:30PM, Hanes 107
     - Can: TBD
 - Attendance: **[UNC Check-in App](https://unccheckin.unc.edu/)**
 
