@@ -10,7 +10,6 @@ knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
 ```
 
-
 ```{r}
 #Numeric Vector Named x
 x=c(3,2,1,5,7,8) 
@@ -23,7 +22,7 @@ y=c("H","T","H","T","H","T")
 #Fifth Element of y
 y[5] 
 #3x2 Matrix Named z
-z=matrix(c(3,2,1,5,7,8),
+z=matrix(c(3,"H",1,5,7),
   nrow=2,ncol=3,byrow=T)
 #Prints z
 z
@@ -40,14 +39,12 @@ tbl<-tibble(x=x,y=y)
 tbl
 ```
 
-
 ```{r}
 #Create Dataframe named df
 df<-data.frame(x=x,y=y)
 #Print df
 df
 ```
-
 
 ```{r}
 #Create Plot
@@ -56,7 +53,6 @@ plot1<-ggplot(data=tbl) +
 #Prints Plot
 plot1
 ```
-
 
 ```{r}
 #Randomly Draw 1000 Samples from 
@@ -68,22 +64,9 @@ quantile(x) #Default Quantiles (Min,Quartiles,Max)
 quantile(x,probs=c(0.05,0.95)) #Middle 90%'
 ```
 
-
 ```{r}
 quant.x=quantile(x,probs=c(0.05,0.95))
 ggplot(data=tibble(x=x))+
   geom_density(aes(x=x))+
   geom_vline(xintercept=quant.x,col="red")
 ```
-
-
-
-
-
-
-
-
-
-
-
-

@@ -120,34 +120,35 @@ In this course, you will learn the entire process of Data Science: Import, Clean
 |MAY 15| Workflow in RMarkdown | [Slides](Lecture/Workflow/Workflow_Lecture.pdf) ||
 || Data Transformation I | [Slides](Lecture/Data Transformation 1/Data_Transformation_1_Lecture.pdf) ||
 || Data Transformation II| [Slides](Lecture/Data Transformation 2/Data_Transformation_2_Lecture.pdf) ||
+|MAY 19| Data Transformation II (Cont.)| [Slides](Lecture/Data Transformation 2/Data_Transformation_2_Lecture.pdf) ||
 || Data Transformation III | [Slides](Lecture/Data Transformation 3/Data_Transformation_3_Lecture.pdf)||
 || Data Transformation IV | [Slides](Lecture/Data Transformation 4/Data_Transformation_4_Lecture.pdf)||
-|MAY 19| Exploratory Data Analysis I  | [Slides](Lecture/Exploratory Data Analysis 1/Exploratory_Data_Analysis_1_Lecture.pdf) ||
+|MAY 20| Exploratory Data Analysis I  | [Slides](Lecture/Exploratory Data Analysis 1/Exploratory_Data_Analysis_1_Lecture.pdf) ||
 | | Exploratory Data Analysis II |[Slides](Lecture/Exploratory Data Analysis 2/Exploratory_Data_Analysis_2_Lecture.pdf)||
 || Final Project I | [Slides](Lecture/Final Project 1/Final_Project_1_Lecture.pdf)||
-|MAY 20| Data Import | [Slides](Lecture/Data Import/Data_Import_Lecture.pdf)||
+|MAY 21| Data Import | [Slides](Lecture/Data Import/Data_Import_Lecture.pdf)||
 || Tidy Data I | [Slides](Lecture/Tidy Data 1/Tidy_Data_1_Lecture.pdf) ||
 || Tidy Data II | [Slides](Lecture/Tidy Data 2/Tidy_Data_2_Lecture.pdf) ||
-|MAY 21| Web Scraping| [Slides](Lecture/Web Scraping/Web_Scraping_Lecture.pdf) | [Preview](Supplement/Web Scraping/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Web%20Scraping/Supplement.zip)) |
-|MAY 22| Joins I | [Slides](Lecture/Joins 1/Joins_1_Lecture.pdf) ||
-|| Joins II| [Slides](Lecture/Joins 2/Joins_2_Lecture.pdf) ||
+|MAY 22| Web Scraping| [Slides](Lecture/Web Scraping/Web_Scraping_Lecture.pdf) | [Preview](Supplement/Web Scraping/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Web%20Scraping/Supplement.zip)) |
 |  <span style="color: red;">MAY 26</span>|  <span style="color: red;">Memorial Day (No Class)</span>|  | <span style="color: red;">Remember Me</span> |
-|MAY 27| Factors | [Slides](Lecture/Factors/Factors_Lecture.pdf) ||
+|MAY 27| Joins I | [Slides](Lecture/Joins 1/Joins_1_Lecture.pdf) ||
+|| Joins II| [Slides](Lecture/Joins 2/Joins_2_Lecture.pdf) ||
+|MAY 28| Factors | [Slides](Lecture/Factors/Factors_Lecture.pdf) ||
 || Programming I | [Slides](Lecture/Programming 1/Programming_1_Lecture.pdf) | [Preview](Supplement/Programming 1/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Programming%201/Supplement.zip))  |
-|MAY 28| Programming II | [Slides](Lecture/Programming 2/Programming_2_Lecture.pdf) | [Preview](Supplement/Programming 2/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Programming%202/Supplement.zip)) |
-|| Programming III | [Slides](Lecture/Programming 3/Programming_3_Lecture.pdf) ||
 |MAY 29| Final Project II | [Slides](Lecture/Final Project 2/Final_Project_2_Lecture.pdf) ||
 | |  **Midterm 1** |  | |
-|JUNE 2| Modeling 1 | [Slides](Lecture/Modeling 1/Modeling_1_Lecture.pdf) ||
+|JUNE 2| Programming II | [Slides](Lecture/Programming 2/Programming_2_Lecture.pdf) | [Preview](Supplement/Programming 2/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Programming%202/Supplement.zip)) |
+|| Programming III | [Slides](Lecture/Programming 3/Programming_3_Lecture.pdf) ||
+|JUNE 3| Modeling 1 | [Slides](Lecture/Modeling 1/Modeling_1_Lecture.pdf) ||
 || Modeling 2 | [Slides](Lecture/Modeling 2/Modeling_2_Lecture.pdf) | [Preview](Supplement/Modeling 2/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%202/Supplement.zip)) |
-|JUNE 3| Modeling 3 | [Slides](Lecture/Modeling 3/Modeling_3_Lecture.pdf) | [Preview](Supplement/Modeling 3/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%203/Supplement.zip)) |
+|JUNE 4| Modeling 3 | [Slides](Lecture/Modeling 3/Modeling_3_Lecture.pdf) | [Preview](Supplement/Modeling 3/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%203/Supplement.zip)) |
 || Modeling 4 | [Slides](Lecture/Modeling 4/Modeling_4_Lecture.pdf) | [Preview](Supplement/Modeling 4/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%204/Supplement.zip)) |
-|JUNE 4| Modeling 5 | [Slides](Lecture/Modeling 5/Modeling_5_Lecture.pdf) ||
+|JUNE 5| Modeling 5 | [Slides](Lecture/Modeling 5/Modeling_5_Lecture.pdf) ||
 || Modeling 6 | [Slides](Lecture/Modeling 6/Modeling_6_Lecture.pdf) ||
-|JUNE 5| Modeling 7 | [Slides](Lecture/Modeling 7/Modeling_7_Lecture.pdf) | [Preview](Supplement/Modeling 7/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%207/Supplement.zip)) |
+|JUNE 9| Modeling 7 | [Slides](Lecture/Modeling 7/Modeling_7_Lecture.pdf) | [Preview](Supplement/Modeling 7/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%207/Supplement.zip)) |
 || Modeling 8 | [Slides](Lecture/Modeling 8/Modeling_8_Lecture.pdf) | [Preview](Supplement/Modeling 8/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%208/Supplement.zip)) |
-|JUNE 9| Modeling 9 | [Slides](Lecture/Modeling 9/Modeling_9_Lecture.pdf) | [Preview](Supplement/Modeling 9/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%209/Supplement.zip)) |
-|JUNE 10| R Shiny | [Slides](Lecture/R Shiny/R_Shiny_Lecture.pdf) | Preview([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/R%20Shiny/Supplement.zip))|
+|JUNE 10| Modeling 9 | [Slides](Lecture/Modeling 9/Modeling_9_Lecture.pdf) | [Preview](Supplement/Modeling 9/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%209/Supplement.zip)) |
+|JUNE 11| R Shiny | [Slides](Lecture/R Shiny/R_Shiny_Lecture.pdf) | Preview([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/R%20Shiny/Supplement.zip))|
 |JUNE 12 |  **Midterm 2** |  | |
 | JUNE 17   | Work on Project      |         | |
 |||||
@@ -221,16 +222,16 @@ For the final project, students in STOR 320 will be divided  into research group
 If you want to find your research group, see the table below:
 
 ```{r,echo=F,results="asis",message=F}
-# library(DT)
-# library(tidyverse)
-# 
-# setwd("D:/DoctorMario/UNC/STOR 320/STOR320_WEBSITE/Group Assignments")
-# 
-# Groups1=read.csv(file="STOR320.001_Group_Assignments.csv")
-# 
-# arrange(Groups1, Group) %>%
-# datatable(class="display",options = list(scrollX=F,
-#              columnDefs = list(list(className = 'dt-center', targets = 0:5))),rownames=F)
+library(DT)
+library(tidyverse)
+
+setwd("D:/DoctorMario/UNC/STOR 320/STOR320_WEBSITE/Group Assignments")
+
+Groups1=read.csv(file="STOR320.001_Group_Assignments.csv")
+
+arrange(Groups1, Group) %>%
+datatable(class="display",options = list(scrollX=F,
+             columnDefs = list(list(className = 'dt-center', targets = 0:5))),rownames=F)
 ```
 
 ## Four Roles

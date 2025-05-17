@@ -1,94 +1,14 @@
-Lab,Name,Group,Role,EDA Date,EDA Time
-400,"Palmer,Tess Emeline",1,C,19-Mar,4:20PM - 4:30PM
-400,"Schaefer,Sydney Lucya",1,I,19-Mar,4:20PM - 4:30PM
-400,"Dyer,Jacob Liam",1,O,19-Mar,4:20PM - 4:30PM
-400,"Maitra,Leela S",1,D,19-Mar,4:20PM - 4:30PM
-400,"Conner,Riley Caroline",1,O,19-Mar,4:20PM - 4:30PM
-400,"Sugawara,Ryoto",1,I,19-Mar,4:20PM - 4:30PM
-400,"Koppula,Sai Sri Tejaswi",2,O,26-Mar,3:40PM - 3:50PM
-400,"Devine,Matthew",2,I,26-Mar,3:40PM - 3:50PM
-400,"Hassan,Samiira Sheikuna",2,C,26-Mar,3:40PM - 3:50PM
-400,"Liu,Alex Y",2,O,26-Mar,3:40PM - 3:50PM
-400,"Loo,Joshua Kyung-Ju",2,I,26-Mar,3:40PM - 3:50PM
-400,"Wang,Juezihan",2,D,26-Mar,3:40PM - 3:50PM
-400,"Andrews,Hayden Alexander",3,I,31-Mar,2:30PM - 2:40PM
-400,"Wang,Lufei",3,D,31-Mar,2:30PM - 2:40PM
-400,"Alcaide,Camille",3,I,31-Mar,2:30PM - 2:40PM
-400,"Marello,Anthony Philip",3,O,31-Mar,2:30PM - 2:40PM
-400,"Lee,Jason",3,C,31-Mar,2:30PM - 2:40PM
-400,"Parrish,Courtney Sophia",3,O,31-Mar,2:30PM - 2:40PM
-400,"Kamath,Sapna",4,I,26-Mar,3:30PM - 3:40PM
-400,"Ellerbe,Elizabeth Kirkland",4,D,26-Mar,3:30PM - 3:40PM
-400,"Tian,Peixian Lawrence",4,O,26-Mar,3:30PM - 3:40PM
-400,"Beale,Parker Manning",4,O,26-Mar,3:30PM - 3:40PM
-400,"Brown,Taylor Jade",4,I,26-Mar,3:30PM - 3:40PM
-400,"Deters,Samuel Joseph",4,C,26-Mar,3:30PM - 3:40PM
-400,"Rudisill Jr,Mary Carlton",5,C,2-Apr,3:30PM - 3:40PM
-400,"Gali,Srinithi S",5,I,2-Apr,3:30PM - 3:40PM
-400,"Love,Ford",5,D,2-Apr,3:30PM - 3:40PM
-400,"Schlemmer,Adam Johnathan",5,O,2-Apr,3:30PM - 3:40PM
-400,"Arun,Ashwath",5,I,2-Apr,3:30PM - 3:40PM
-400,"Kasabwala,Kripa Bharat",5,O,2-Apr,3:30PM - 3:40PM
-401,"Huang,Zhishu",12,I,31-Mar,2:40PM - 2:50PM
-401,"Ohta,Melanie Jane",12,D,31-Mar,2:40PM - 2:50PM
-401,"Xie,Eric Yu",12,O,31-Mar,2:40PM - 2:50PM
-401,"Stiles,Parker Benjamin",12,O,31-Mar,2:40PM - 2:50PM
-401,"Chen,Michelle",12,C,31-Mar,2:40PM - 2:50PM
-401,"Baquero,Marianne",12,I,31-Mar,2:40PM - 2:50PM
-401,"Yountz,Ethan Paul",13,I,31-Mar,3:00PM - 3:10PM
-401,"Miller,Owen Hugh",13,O,31-Mar,3:00PM - 3:10PM
-401,"Huffman,Lucas Lee",13,D,31-Mar,3:00PM - 3:10PM
-401,"Gupta,Jiya",13,C,31-Mar,3:00PM - 3:10PM
-401,"Tuttle,Bruce S",13,O,31-Mar,3:00PM - 3:10PM
-401,"Dodda,Sravani Reddy Sai",13,I,31-Mar,3:00PM - 3:10PM
-401,"Li,Mairui",14,O,7-Apr,2:40PM - 2:50PM
-401,"Martinez-Ayala,Vania Itzel",14,D,7-Apr,2:40PM - 2:50PM
-401,"Matada,Siddharth",14,I,7-Apr,2:40PM - 2:50PM
-401,"Feng,Xiaopei",14,O,7-Apr,2:40PM - 2:50PM
-401,"Bon-Harper,Sylvie Constance",14,C,7-Apr,2:40PM - 2:50PM
-401,"Valdivia Diego,Luis Alfredo",15,C,24-Mar,2:30PM - 2:40PM
-401,"Martin,Owen Pepper",15,O,24-Mar,2:30PM - 2:40PM
-401,"Ni,Patricia",15,D,24-Mar,2:30PM - 2:40PM
-401,"Kenny,Fionn Michael",15,O,24-Mar,2:30PM - 2:40PM
-401,"Hariharan Neelakantan,Sai Girish",15,I,24-Mar,2:30PM - 2:40PM
-402,"Arleth,Charles Joseph",10,O,19-Mar,3:30PM - 3:40PM
-402,"Nguyen,Katelyn U",10,C,19-Mar,3:30PM - 3:40PM
-402,"Cheifetz,Sara Lillian",10,D,19-Mar,3:30PM - 3:40PM
-402,"Lin,Fion",10,I,19-Mar,3:30PM - 3:40PM
-402,"Groves,Aidan James",10,O,19-Mar,3:30PM - 3:40PM
-402,"Kumar,Parshant",10,I,19-Mar,3:30PM - 3:40PM
-402,"Larson,Daniel James",11,C,19-Mar,4:10PM - 4:20PM
-402,"Vijaywargia,Arth",11,D,19-Mar,4:10PM - 4:20PM
-402,"Hromcenco,Maria A",11,I,19-Mar,4:10PM - 4:20PM
-402,"Altman,Jacob Samuel",11,O,19-Mar,4:10PM - 4:20PM
-402,"Millen,William V",11,O,19-Mar,4:10PM - 4:20PM
-402,"Hu,Jonathan Haoyu",11,I,19-Mar,4:10PM - 4:20PM
-402,"Pineiro,Jackson Antonio",16,O,19-Mar,4:00PM - 4:10PM
-402,"Kolipaka,Akshara",16,D,19-Mar,4:00PM - 4:10PM
-402,"Ungerer,Anna Marie",16,O,19-Mar,4:00PM - 4:10PM
-402,"Thiemke,Noah Daniel",16,I,19-Mar,4:00PM - 4:10PM
-402,"Leary,Meaghan Marie",16,C,19-Mar,4:00PM - 4:10PM
-403,"Zilles,Zachary Cameron",6,O,19-Mar,3:40PM - 3:50PM
-403,"Dunford,Riley Abigail",6,C,19-Mar,3:40PM - 3:50PM
-403,"Khawaja,Alisha Mahmoud",6,I,19-Mar,3:40PM - 3:50PM
-403,"Stafford,Annalise Claire",6,D,19-Mar,3:40PM - 3:50PM
-403,"Chand,Rohan",6,O,19-Mar,3:40PM - 3:50PM
-403,"Ackhavong,Alisha",6,I,19-Mar,3:40PM - 3:50PM
-403,"Hingoo,Vraj",7,D,9-Apr,3:30PM - 3:40PM
-403,"Bista,Garima",7,O,9-Apr,3:30PM - 3:40PM
-403,"Kidd,Jarrett Morgan",7,C,9-Apr,3:30PM - 3:40PM
-403,"Yi,Yejoon",7,I,9-Apr,3:30PM - 3:40PM
-403,"Radhuber,Brayden Scott",7,O,9-Apr,3:30PM - 3:40PM
-403,"Vanam,Shashank",7,I,9-Apr,3:30PM - 3:40PM
-403,"Hall,Maya Kathryn",8,O,2-Apr,4:00PM - 4:10PM
-403,"Ortega,Anthony",8,D,2-Apr,4:00PM - 4:10PM
-403,"Smith,Wyatt Jacob",8,I,2-Apr,4:00PM - 4:10PM
-403,"Wang,Andrew Zirun",8,I,2-Apr,4:00PM - 4:10PM
-403,"Bond,Jania Ifeoluwa",8,C,2-Apr,4:00PM - 4:10PM
-403,"Carreon,Irvin",8,O,2-Apr,4:00PM - 4:10PM
-403,"Craig,Katherine",9,I,7-Apr,2:30PM - 2:40PM
-403,"Pillutla,Aditya Ram",9,D,7-Apr,2:30PM - 2:40PM
-403,"Robinson,William Mckethan",9,O,7-Apr,2:30PM - 2:40PM
-403,"Edmonds,Jacob D",9,C,7-Apr,2:30PM - 2:40PM
-403,"Yang,Qi",9,I,7-Apr,2:30PM - 2:40PM
-403,"Whitehead Rockas,Zoe Genevieve",9,O,7-Apr,2:30PM - 2:40PM
+Last Name,First Name,Group,Role,EDA Date,EDA Time
+Brown,Maven,1,,,
+Wu,Levin,1,,,
+Bertlshofer,Lily,1,,,
+Baker,Bridget,1,,,
+Ajuonuma,Ifeanyichukwu,2,,,
+Bhat,Nikhil,2,,,
+Holmstrom,James,2,,,
+Pratt,Abigail,2,,,
+Moreira,Mark,3,,,
+Deng,Jake,3,,,
+David,Isaiah,3,,,
+Hu,Yanqiu,3,,,
+Kong,Chenghe,3,,,
