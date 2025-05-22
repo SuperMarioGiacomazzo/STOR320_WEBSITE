@@ -128,8 +128,8 @@ In this course, you will learn the entire process of Data Science: Import, Clean
 || Final Project I | [Slides](Lecture/Final Project 1/Final_Project_1_Lecture.pdf)||
 |MAY 21| Data Import | [Slides](Lecture/Data Import/Data_Import_Lecture.pdf)||
 || Tidy Data I | [Slides](Lecture/Tidy Data 1/Tidy_Data_1_Lecture.pdf) ||
-|| Tidy Data II | [Slides](Lecture/Tidy Data 2/Tidy_Data_2_Lecture.pdf) ||
-|MAY 22| Web Scraping| [Slides](Lecture/Web Scraping/Web_Scraping_Lecture.pdf) | [Preview](Supplement/Web Scraping/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Web%20Scraping/Supplement.zip)) |
+|MAY 22| Tidy Data II | [Slides](Lecture/Tidy Data 2/Tidy_Data_2_Lecture.pdf) ||
+|| Web Scraping| [Slides](Lecture/Web Scraping/Web_Scraping_Lecture.pdf) | [Preview](Supplement/Web Scraping/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Web%20Scraping/Supplement.zip)) |
 |  <span style="color: red;">MAY 26</span>|  <span style="color: red;">Memorial Day (No Class)</span>|  | <span style="color: red;">Remember Me</span> |
 |MAY 27| Joins I | [Slides](Lecture/Joins 1/Joins_1_Lecture.pdf) ||
 || Joins II| [Slides](Lecture/Joins 2/Joins_2_Lecture.pdf) ||
