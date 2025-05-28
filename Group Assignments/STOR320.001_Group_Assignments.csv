@@ -1,14 +1,14 @@
 Last Name,First Name,Group,Role,EDA Date,EDA Time
-Brown,Maven,1,C,27-May,2:45PM - 2:50PM
-Wu,Levin,1,C,27-May,2:45PM - 2:50PM
-Bertlshofer,Lily,1,C,27-May,2:45PM - 2:50PM
+Brown,Maven,1,,27-May,2:45PM - 2:50PM
+Wu,Levin,1,,27-May,2:45PM - 2:50PM
+Bertlshofer,Lily,1,,27-May,2:45PM - 2:50PM
 Baker,Bridget,1,C,27-May,2:45PM - 2:50PM
 Ajuonuma,Ifeanyichukwu,2,,,
 Bhat,Nikhil,2,,,
 Holmstrom,James,2,,,
 Pratt,Abigail,2,,,
-Moreira,Mark,3,C,27-May,12:00PM - 12:05PM
-Deng,Jake,3,C,27-May,12:00PM - 12:05PM
-David,Isaiah,3,C,27-May,12:00PM - 12:05PM
+Moreira,Mark,3,O,27-May,12:00PM - 12:05PM
+Deng,Jake,3,O,27-May,12:00PM - 12:05PM
+David,Isaiah,3,D,27-May,12:00PM - 12:05PM
 Hu,Yanqiu,3,C,27-May,12:00PM - 12:05PM
-Kong,Chenghe,3,C,27-May,12:00PM - 12:05PM
+Kong,Chenghe,3,I,27-May,12:00PM - 12:05PM
