@@ -71,7 +71,7 @@ In this course, you will learn the entire process of Data Science: Import, Clean
 <div class="row">
   <div class="column">
 
-- Instructor: **[Mario Giacomazzo](http://www.supermariogiacomazzo.com/)**
+- Instructor: **[Mario S. J. Giacomazzo](http://www.supermariogiacomazzo.com/)**
 
 - Lab Instructors: 
     - **[Callum Guan](https://stor.unc.edu/people/graduate-students/)**
