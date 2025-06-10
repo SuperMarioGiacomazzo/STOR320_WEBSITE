@@ -113,7 +113,7 @@ print(RESULTS3)
 
 ```{r}
 ERROR.RESULTS = tibble(
-    Model=c("3 Way","No Way"),
+    Model=c("3 Way","Basic"),
     Sensitivity=c(RESULTS1[1,1]/sum(RESULTS1[1,]),RESULTS3[1,1]/sum(RESULTS3[1,])),
     Specificity=c(RESULTS1[2,2]/sum(RESULTS1[2,]),RESULTS3[2,2]/sum(RESULTS3[2,])),
     FPR=c(RESULTS1[2,1]/sum(RESULTS1[2,]),RESULTS3[2,1]/sum(RESULTS3[2,])),
