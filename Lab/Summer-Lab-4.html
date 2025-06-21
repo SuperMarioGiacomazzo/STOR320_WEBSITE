@@ -11,7 +11,7 @@
 
 <meta name="author" content="FIRSTNAME LASTNAME" />
 
-<meta name="date" content="2025-05-14" />
+<meta name="date" content="2025-06-21" />
 
 <title>Summer Lab 4</title>
 
@@ -352,7 +352,7 @@ display: none;
 
 <h1 class="title toc-ignore">Summer Lab 4</h1>
 <h4 class="author">FIRSTNAME LASTNAME</h4>
-<h4 class="date">May 14, 2025</h4>
+<h4 class="date">June 21, 2025</h4>
 
 </div>
 
@@ -378,12 +378,12 @@ will also need to modify the code outside the code chunk. When you get
 the desired result for each step, change <code>Eval=F</code> to
 <code>Eval=T</code> and knit the document to HTML to make sure it works.
 After you complete the lab, you should submit your HTML file of what you
-have completed to Canvas before the deadline.</p>
+have completed to Sakai before the deadline.</p>
 </div>
 <div id="part-1-vector-and-control-structures" class="section level2">
 <h2>Part 1: Vector and Control Structures</h2>
 <div id="points" class="section level3">
-<h3>1.1 (1 points)</h3>
+<h3>1.1 (2 points)</h3>
 <p>Write code that creates a vector <code>x</code> that contains
 <code>100</code> random observations from the standard normal
 distribution (this is the normal distribution with the mean equal to
@@ -392,7 +392,7 @@ the first five random observations in this vector.</p>
 <pre class="r"><code>#</code></pre>
 </div>
 <div id="points-1" class="section level3">
-<h3>1.2 (1 points)</h3>
+<h3>1.2 (2 points)</h3>
 <p>Write code that replaces the observations in the vector
 <code>x</code> that are greater than or equal to <code>0</code> with a
 string of characters <code>&quot;non-negative&quot;</code> and the observations
@@ -402,7 +402,7 @@ out the first five values in this new version of <code>x</code>.</p>
 <pre class="r"><code>#</code></pre>
 </div>
 <div id="points-2" class="section level3">
-<h3>1.3 (1 points)</h3>
+<h3>1.3 (2 points)</h3>
 <p>Write <code>for</code>-Loop to count how many observations in the
 vector <code>x</code> are non-negative and how many observations are
 negative. (There are many easier ways to solve this problem. Use
@@ -416,7 +416,7 @@ observations is 32”.</p>
 <div id="part-2-matrix-and-control-structures" class="section level2">
 <h2>Part 2: Matrix and Control Structures</h2>
 <div id="points-3" class="section level3">
-<h3>2.1 (2 points)</h3>
+<h3>2.1 (4 points)</h3>
 <p>Create a <span class="math inline">\(100000\)</span> by <span class="math inline">\(10\)</span> matrix <code>A</code> with the numbers
 <span class="math inline">\(1:1000000\)</span>. The first row of this
 matrix should be the numbers 1 to 10. The second row of this matrix
@@ -431,7 +431,7 @@ built-in <code>rowSums</code> function.</p>
 sum_row_rowSums[1:5]</code></pre>
 </div>
 <div id="points-4" class="section level3">
-<h3>2.2 (2 points)</h3>
+<h3>2.2 (4 points)</h3>
 <p>Another common loop structure that is used is the <code>while</code>
 loop, which functions much like a <code>for</code> loop, but will only
 run as long as a test condition is <code>TRUE</code>. Modify your
@@ -445,14 +445,14 @@ results from <code>while</code> loop.</p>
 <div id="part-3-data-frame-and-control-structures" class="section level2">
 <h2>Part 3: Data Frame and Control Structures</h2>
 <div id="points-5" class="section level3">
-<h3>3.1 (2 points)</h3>
+<h3>3.1 (4 points)</h3>
 <p>Write a <code>for</code> loop to compute the mean of every column in
 <code>mtcars</code> and save the results to a vector
 <code>col_mean</code>. Ignore missing values when taking the mean.</p>
 <pre class="r"><code>#</code></pre>
 </div>
 <div id="points-6" class="section level3">
-<h3>3.2 (1 points)</h3>
+<h3>3.2 (2 points)</h3>
 <p>Compute the number of unique values in each column of
 <code>iris</code> and print the results during a loop. Use the
 <code>cat()</code> function to print out the values in a sentence with
@@ -463,162 +463,175 @@ unique values for Sepal.Length is 35”.</p>
 </div>
 </div>
 </div>
-<div id="lab-4b-programming" class="section level1">
-<h1>Lab 4b: Programming</h1>
+<div id="lab-4b-modeling-basics" class="section level1">
+<h1>Lab 4b: Modeling Basics</h1>
 <div id="introduction-1" class="section level2">
 <h2>Introduction</h2>
-<p>In this lab, you will practice writing functions and using loop
-functions in R. The loop functions are:</p>
+<p>In this lab, you will build predictive models for board game ratings.
+The dataset below was scraped from <a href="www.boardgamegeek.com">boardgamegeek.com</a> and contains
+information on the top 4,999 board games. Below, you will see a preview
+of the data</p>
+<pre class="r"><code>bgg&lt;-read.csv(&quot;bgg.csv&quot;)
+bgg2=bgg[,c(4:13,15:20)]
+head(bgg2)</code></pre>
+<pre><code>##                                           names min_players max_players
+## 1                                    Gloomhaven           1           4
+## 2                     Pandemic Legacy: Season 1           2           4
+## 3 Through the Ages: A New Story of Civilization           2           4
+## 4                             Terraforming Mars           1           5
+## 5                             Twilight Struggle           2           2
+## 6                          Star Wars: Rebellion           2           4
+##   avg_time min_time max_time year avg_rating geek_rating num_votes age
+## 1      120       60      120 2017    8.98893     8.61858     15376  12
+## 2       60       60       60 2015    8.66140     8.50163     26063  13
+## 3      240      180      240 2015    8.60673     8.30183     12352  14
+## 4      120      120      120 2016    8.38461     8.19914     26004  12
+## 5      180      120      180 2005    8.33954     8.19787     31301  13
+## 6      240      180      240 2016    8.47439     8.16545     13336  14
+##                                                                                                                                                                             mechanic
+## 1 Action / Movement Programming, Co-operative Play, Grid Movement, Hand Management, Modular Board, Role Playing, Simultaneous Action Selection, Storytelling, Variable Player Powers
+## 2                                        Action Point Allowance System, Co-operative Play, Hand Management, Point to Point Movement, Set Collection, Trading, Variable Player Powers
+## 3                                                                                                                      Action Point Allowance System, Auction/Bidding, Card Drafting
+## 4                                                                                             Card Drafting, Hand Management, Set Collection, Tile Placement, Variable Player Powers
+## 5                                                         Area Control / Area Influence, Campaign / Battle Card Driven, Dice Rolling, Hand Management, Simultaneous Action Selection
+## 6                                                                  Area Control / Area Influence, Area Movement, Dice Rolling, Hand Management, Partnerships, Variable Player Powers
+##   owned
+## 1 25928
+## 2 41605
+## 3 15848
+## 4 33340
+## 5 42952
+## 6 20682
+##                                                                                 category
+## 1                                  Adventure, Exploration, Fantasy, Fighting, Miniatures
+## 2                                                                 Environmental, Medical
+## 3                                                      Card Game, Civilization, Economic
+## 4 Economic, Environmental, Industry / Manufacturing, Science Fiction, Territory Building
+## 5                                                     Modern Warfare, Political, Wargame
+## 6              Fighting, Miniatures, Movies / TV / Radio theme, Science Fiction, Wargame
+##                       designer weight
+## 1               Isaac Childres 3.7543
+## 2     Rob Daviau, Matt Leacock 2.8210
+## 3               Vlaada Chvátil 4.3678
+## 4              Jacob Fryxelius 3.2456
+## 5 Ananda Gupta, Jason Matthews 3.5518
+## 6              Corey Konieczka 3.6311</code></pre>
+</div>
+<div id="board-game-analysis" class="section level2">
+<h2>Board Game Analysis</h2>
+<div id="q1-1.5-points" class="section level3">
+<h3>Q1 (1.5 Points)</h3>
+<p>There are 16 variables and we want to create some more. Create a new
+dataframe called <span class="math inline">\(bgg3\)</span> where you use
+the mutate function to create the following variables:</p>
 <ul>
-<li><p><code>lapply()</code>: Loop over a list and evaluate a function
-on each element</p></li>
-<li><p><code>sapply()</code>: Same as <code>lapply</code> but try to
-simplify the result</p></li>
-<li><p><code>apply()</code>: Apply a function over the margins of an
-array</p></li>
-<li><p><code>tapply()</code>: Apply a function over subsets of a
-vector</p></li>
-<li><p><code>mapply()</code>: Multivariate version of
-<code>lapply</code></p></li>
+<li><em>duration=2018-year+1</em></li>
+<li><em>vote.per.year=num_votes/duration</em></li>
+<li><em>own.per.year=owned/duration</em></li>
+<li><em>player.range=max_players-min_players</em></li>
+<li><em>log_vote=log(num_votes+1)</em></li>
+<li><em>log_own=log(owned+1)</em></li>
+<li><em>diff_rating=avg_rating-geek_rating</em></li>
 </ul>
+<pre class="r"><code>head(bgg3)</code></pre>
+<p><strong>Question:</strong> In complete sentences, what is the purpose
+of adding 1 for the log transformed variables?</p>
+<p>YOUR ANSWER IN COMPLETE SENTENCES</p>
+<p><strong>Question:</strong> In complete sentences, what is the purpose
+of adding 1 in the creation of the year variable?</p>
+<p>YOUR ANSWER IN COMPLETE SENTENCES</p>
 </div>
-<div id="simulation-study" class="section level2">
-<h2>Simulation study</h2>
-<p>Suppose that <span class="math inline">\(X_1,\ldots,X_n\)</span> are
-independent and identically distributed (iid) binomial random variables
-such that <span class="math display">\[
-  P(X_i=x\mid k,p)
-  ={k\choose x}p^x(1-p)^{k-x},\quad x=0,1,\ldots,k
-\]</span> for all <span class="math inline">\(i=1,\ldots,n\)</span>.
-Assume that both <span class="math inline">\(k\)</span> and <span class="math inline">\(p\)</span> are unknown and use the method of
-moments to obtain point estimators of both parameters. This somewhat
-unusual application of the binomial model has been used to estimate
-crime rates for crimes that are known to have many unreported
-occurrences. For such a crime, both the true reporting rate, <span class="math inline">\(p\)</span>, and the total number of occurrences,
-<span class="math inline">\(k\)</span>, are unknown. Equating the first
-two sample moments to those of the population yields the system of
-equations <span class="math display">\[
-  \bar X=kp
-  \quad\text{and}\quad
-  \frac1n\sum_{i=1}^nX_i^2=kp(1-p)+k^2p^2,
-\]</span> where <span class="math inline">\(\bar X\)</span> is the
-sample mean. Solving for <span class="math inline">\(k\)</span> and
-<span class="math inline">\(p\)</span> leads to <span class="math display">\[
-  \hat k=\frac{\bar X^2}{\bar X-(1/n)\sum_{i=1}^n(X_i-\bar X)^2}
-  \quad\text{and}\quad
-  \hat p=\frac{\bar X}{\hat k}.
-\]</span> It is difficult to analyze the performance of <span class="math inline">\(\hat k\)</span> and <span class="math inline">\(\hat p\)</span> analytically so you are asked to
-perform a simulation study using <code>R</code>. The idea is to generate
-random samples and investigate the performance of <span class="math inline">\(\hat k\)</span> and <span class="math inline">\(\hat p\)</span> using random samples.</p>
-<div id="point" class="section level3">
-<h3>1.1 (1 point)</h3>
-<p>Generate a single simple random sample vector <code>x</code> of
-length <code>n = 50</code> from the binomial distribution with the
-parameters <code>k = 10</code>, <code>p = 0.4</code>.</p>
-<pre class="r"><code>k = VALUE
-p = VALUE
-x = rbinom(50,k,p)
+<div id="q2-2-points" class="section level3">
+<h3>Q2 (2 Points)</h3>
+<p>We hypothesize the geek rating increases when the number of votes
+increases and/or the ownership increases. Create four scatter plots
+showing the association with geek_rating and the following
+variables:</p>
+<ul>
+<li><em>num_votes</em></li>
+<li><em>owned</em></li>
+<li><em>log_vote</em></li>
+<li><em>log_own</em></li>
+</ul>
+<p><strong>Question:</strong> In complete sentences, describe how the
+relationship changes when you take the log of the independent
+variable.</p>
+<p>YOUR ANSWER IN COMPLETE SENTENCES</p>
+</div>
+<div id="q3-0.5-points" class="section level3">
+<h3>Q3 (0.5 Points)</h3>
+<p>Randomly sample approximately 80% of the data in <code>bgg3</code>
+for a training dataset and the remaining will act as a test set. Call
+the training dataset <code>train.bgg</code> and the testing dataset
+<code>test.bgg</code>.</p>
+<pre class="r"><code>set.seed(COMPLETE)
 
-hist(x) #Do Not Change</code></pre>
-</div>
-<div id="points-7" class="section level3">
-<h3>1.2 (4 points)</h3>
-<p>Write a function that takes a sample vector as its input and returns
-the estimates of <code>k</code> and <code>p</code> given above. Observe
-the output of your function and make sure your estimates of <span class="math inline">\(k\)</span> and <span class="math inline">\(p\)</span> are close to the truth.</p>
-<pre class="r"><code>est_kp = function(x){
-  X_bar = COMPLETE
-  n = length(x)
-  k_hat = COMPLETE
-  p_hat = COMPLETE
-  return(c(k_hat,p_hat))
-}
+bgg4= bgg3 %&gt;%
+        mutate(Set=sample(COMPLETE))
 
-est_kp(rbinom(5000,k,p)) #Do Not Change</code></pre>
+train.bgg&lt;-filter(bgg4,Set==&quot;Train&quot;)
+test.bgg&lt;-filter(bgg4,Set==&quot;Test&quot;)</code></pre>
 </div>
-<div id="points-8" class="section level3">
-<h3>1.3 (4 points)</h3>
-<p>Generate <code>N = 1000</code> samples of size <code>n = 50</code>
-(as in the first question) and calculate <code>N = 1000</code> estimates
-of <span class="math inline">\(k\)</span> and <code>N = 1000</code>
-estimates of <span class="math inline">\(p\)</span>. Please use Loop
-functions (apply, etc.) in this part. Make sure <code>rbinom</code> and
-<code>est_kp</code> functions are used in this part. Also, observe the
-output of the first ten samples. You will see the estimates of <span class="math inline">\(k\)</span> in the first row and the estimates of
-<span class="math inline">\(p\)</span> in the second row.</p>
-<pre class="r"><code>N = 1000
-data = matrix(rbinom(N*50,k,p),N)
-E50 = apply(COMPLETE,COMPLETE,COMPLETE)
+<div id="q4-0.5-points" class="section level3">
+<h3>Q4 (0.5 Points)</h3>
+<p>Now, we want to fit models to the training dataset. Use the
+<code>lm()</code> function to create 3 model objects in R called
+<code>lm1</code>, <code>lm2</code>, <code>lm3</code> based on the
+following linear models, respectively:</p>
+<ul>
+<li><span class="math inline">\(\textrm{geek_rating}=\beta_0+\beta_1
+log(\textrm{num_votes})+\epsilon\)</span></li>
+<li><span class="math inline">\(\textrm{geek_rating}=\beta_0+\beta_1
+log(\textrm{owned})+\epsilon\)</span></li>
+<li><span class="math inline">\(\textrm{geek_rating}=\beta_0+\beta_1
+log(\textrm{owned})+ \beta_2 \textrm{vote.per.year}+ \beta_3
+\textrm{weight} + \epsilon\)</span></li>
+</ul>
+<pre class="r"><code>lm1 = lm(COMPLETE,data=train.bgg)
+lm2 = lm(COMPLETE,data=train.bgg)
+lm3 = lm(COMPLETE,data=train.bgg)</code></pre>
+</div>
+<div id="q5-1-point" class="section level3">
+<h3>Q5 (1 Point)</h3>
+<p>Add predictions and residuals for all 3 models to the test set.
+Create a new data frame called <code>test.bgg2</code> and give all your
+predictions and residuals different names. Use the <code>str()</code>
+function to show these variables were created</p>
+<pre class="r"><code>str(test.bgg2)</code></pre>
+</div>
+<div id="q6-0.5-points" class="section level3">
+<h3>Q6 (0.5 Points)</h3>
+<p>Create a function called <code>MAE.func()</code> that returns the
+mean absolute error based on a vector of the residuals and test your
+function on the vector called <code>test</code>.</p>
+<p>Solution 1:</p>
+<pre class="r"><code>test=c(-5,-2,0,3,5)
 
-E50[,1:10] #Do Not Change</code></pre>
-</div>
-<div id="points-9" class="section level3">
-<h3>1.4 (2 points)</h3>
-<p>Repeat Question 3 when <code>n &lt;- 100</code> and when
-<code>n &lt;- 250</code>.</p>
-<pre class="r"><code>E100 = COMPLETE
-E250 = COMPLETE
 
-E100[,1:10] #Do Not Change
-E250[,1:10] #Do Not Change</code></pre>
-</div>
-<div id="points-10" class="section level3">
-<h3>2.1 (3 points)</h3>
-<p>Estimate the bias and the mean squared error (MSE) of <span class="math inline">\(\hat k\)</span> and the bias and the MSE of <span class="math inline">\(\hat p\)</span> for each sample size
-(<code>n &lt;- 50</code>, <code>n &lt;- 100</code> and
-<code>n &lt;- 250</code>). Do the estimators seem to overestimate or
-underestimate the parameters? Think about this and answer the follow-up
-question.</p>
-<pre class="r"><code># bias
-rowMeans(FILL)-c(10,.4)
-COMPLETE_THE_OTHER_TWO
 
-# mse
-rowMeans((FILL-c(10,.4))^2)
-COMPLETE_THE_OTHER_TWO</code></pre>
-<p><em>Question:</em> How do the bias and the MSE change when the sample
-size increases?</p>
-<p>REPLACE YOUR ANSWER HERE WITH COMPLETE SENTENCES</p>
+MAE.func(test)</code></pre>
 </div>
-<div id="points-11" class="section level3">
-<h3>3.1 (3 points)</h3>
-<p>Make a single plot using <code>ggplot2</code> that contains three box
-plots of the estimates of the parameter <span class="math inline">\(k\)</span> when <code>n = 50</code>,
-<code>n = 100</code>, <code>n = 250</code> (the first from the left box
-plot has to describe the estimates when <code>n = 50</code>, the second
-from the left box plot has to describe the estimates when
-<code>n = 100</code> and the third from the left box plot has to
-describe the estimates <code>n = 250</code>). Include the true value of
-the parameter as a red horizontal line (<code>geom_hline()</code> and
-use the argument <code>color</code>) and label the plot
-appropriately.</p>
-<p>You will need to construct a dataset to do this which is the point of
-the first part of the code. Run the code in parts to see what is
-happening.</p>
-<pre class="r"><code>df_k&lt;-tibble(
-  n=factor(rep(c(&quot;50&quot;,&quot;100&quot;,&quot;250&quot;),each=N),c(&quot;50&quot;,&quot;100&quot;,&quot;250&quot;)),
-  Estimates=c(COMPLETE)
-  )
-ggplot(data = df_k, mapping = aes(x = FILL, y = FILL)) +
-    FUNCTION +
-    geom_hline(yintercept = k, colour = &quot;red&quot;)</code></pre>
+<div id="q7-1-point" class="section level3">
+<h3>Q7 (1 Point)</h3>
+<p>Use your function on the <code>test.bgg2</code> to calculate the
+out-of-sample MAE of all three models based on the associated residuals.
+Make sure you display the mean absolute error from these different
+models in your output.</p>
+<p><strong>Question:</strong> Which model does the best job at
+predicting the geek rating of these board games?</p>
+<p>YOUR ANSWER IN COMPLETE SENTENCES</p>
 </div>
-<div id="points-12" class="section level3">
-<h3>3.2 (3 points)</h3>
-<p>The estimates <span class="math inline">\(\hat k\)</span> can result
-in values that are far away from the true value of the parameter when
-the sample size is small and the box plots might not be particularly
-informative in such a situation. Remove the estimates from the plot that
-are outside of the interval <span class="math inline">\([0,50]\)</span>
-so that the box plots are more informative.</p>
-<p>You are redoing the plot from the previous question without extreme
-estimates for <span class="math inline">\(k\)</span>.</p>
-<pre class="r"><code>ggplot(
-  data = filter(df_k, CONDITION), 
-  mapping = aes(x = FILL, y = FILL)
-  ) +
-    FUNCTION +
-    geom_hline(yintercept = k, colour = &quot;red&quot;)</code></pre>
+<div id="q8-3-points" class="section level3">
+<h3>Q8 (3 Points)</h3>
+<p>For the third model only, use 10-fold cross-validation and measure
+the out-of-sample mean absolute error. Print out the final
+cross-validated mean absolute error.</p>
+<p><strong>Question:</strong> What is the absolute difference between
+the out-of-sample mean absolute error measured using a test set and the
+mean absolute error measured using cross validation? When you type your
+answer in complete sentences use inline R code to calculate the absolute
+difference and input it directly into your sentence.</p>
+<p>YOUR ANSWER IN COMPLETE SENTENCES</p>
 </div>
 </div>
 </div>

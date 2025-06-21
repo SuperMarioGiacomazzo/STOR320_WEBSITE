@@ -37,7 +37,7 @@ The main purpose of this lab is to practice data join skills from Chapter 10. Th
 
 - `anti_join()1` Drops all observations in left dataset that have a match in right dataset.
 
-You will need to modify the code chunks so that the code works within each of chunk (usually this means modifying anything in ALL CAPS). You will also need to modify the code outside the code chunk. When you get the desired result for each step, change `Eval=F` to `Eval=T` and knit the document to HTML to make sure it works. After you complete the lab, you should submit your HTML file of what you have completed to Canvas before the deadline.
+You will need to modify the code chunks so that the code works within each of chunk (usually this means modifying anything in ALL CAPS). You will also need to modify the code outside the code chunk. When you get the desired result for each step, change `Eval=F` to `Eval=T` and knit the document to HTML to make sure it works. After you complete the lab, you should submit your HTML file of what you have completed to Sakai before the deadline.
 
 ## Part 1
 
@@ -198,7 +198,7 @@ In this lab, we will slowly construct the image below via `ggplot`. This chart w
 
 <img src="finalplot.png" style="border:1;">
 
-You will need to modify the code chunks so that the code works within each of chunk. When you get the desired result for each step, change `eval=F` to `eval=T` and knit the document to HTML to make sure it works. Do not work out of order or skip around. After you complete the lab or by the end of class, you should submit your HTML file of what you have completed to Canvas.
+You will need to modify the code chunks so that the code works within each of chunk. When you get the desired result for each step, change `eval=F` to `eval=T` and knit the document to HTML to make sure it works. Do not work out of order or skip around. After you complete the lab or by the end of class, you should submit your HTML file of what you have completed to Sakai.
 
 For ease, we start by reassigning the dataset `presidentialElections` to a new variable called `PE`.
 

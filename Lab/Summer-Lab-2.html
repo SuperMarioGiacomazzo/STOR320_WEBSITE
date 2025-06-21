@@ -11,7 +11,7 @@
 
 <meta name="author" content="FIRSTNAME LASTNAME" />
 
-<meta name="date" content="2025-05-14" />
+<meta name="date" content="2025-06-21" />
 
 <title>Summer Lab 2</title>
 
@@ -352,7 +352,7 @@ display: none;
 
 <h1 class="title toc-ignore">Summer Lab 2</h1>
 <h4 class="author">FIRSTNAME LASTNAME</h4>
-<h4 class="date">May 14, 2025</h4>
+<h4 class="date">June 21, 2025</h4>
 
 </div>
 
@@ -628,19 +628,19 @@ displayed when knitted to HTML. The table provides a preview of the
 first 10 rows of the simulated data. Knit the document to see the HTML
 table below.</p>
 <!-- html table generated in R 4.4.1 by xtable 1.8-4 package -->
-<!-- Wed May 14 10:56:03 2025 -->
+<!-- Sat Jun 21 12:36:39 2025 -->
 <table align="center" , rules="rows" , width="50%," frame="hsides" , border-spacing="5px">
 <tr> <th> school </th> <th> student </th> <th> type </th> <th> value2017 </th> <th> value2018 </th>  </tr>
-  <tr> <td align="center"> 1 </td> <td align="center"> 1 </td> <td align="center"> Score </td> <td align="center"> 37 </td> <td align="center"> 77 </td> </tr>
-  <tr> <td align="center"> 1 </td> <td align="center"> 1 </td> <td align="center"> Percentile </td> <td align="center"> 12 </td> <td align="center"> 69 </td> </tr>
-  <tr> <td align="center"> 1 </td> <td align="center"> 2 </td> <td align="center"> Score </td> <td align="center"> 55 </td> <td align="center"> 81 </td> </tr>
-  <tr> <td align="center"> 1 </td> <td align="center"> 2 </td> <td align="center"> Percentile </td> <td align="center"> 72 </td> <td align="center"> 93 </td> </tr>
-  <tr> <td align="center"> 1 </td> <td align="center"> 3 </td> <td align="center"> Score </td> <td align="center"> 35 </td> <td align="center">  </td> </tr>
-  <tr> <td align="center"> 1 </td> <td align="center"> 3 </td> <td align="center"> Percentile </td> <td align="center"> 8 </td> <td align="center">  </td> </tr>
-  <tr> <td align="center"> 1 </td> <td align="center"> 5 </td> <td align="center"> Score </td> <td align="center"> 54 </td> <td align="center"> 74 </td> </tr>
-  <tr> <td align="center"> 1 </td> <td align="center"> 5 </td> <td align="center"> Percentile </td> <td align="center"> 69 </td> <td align="center"> 41 </td> </tr>
-  <tr> <td align="center"> 1 </td> <td align="center"> 6 </td> <td align="center"> Score </td> <td align="center"> 46 </td> <td align="center"> 79 </td> </tr>
-  <tr> <td align="center"> 1 </td> <td align="center"> 6 </td> <td align="center"> Percentile </td> <td align="center"> 38 </td> <td align="center"> 84 </td> </tr>
+  <tr> <td align="center"> 1 </td> <td align="center"> 1 </td> <td align="center"> Score </td> <td align="center"> 42 </td> <td align="center"> 77 </td> </tr>
+  <tr> <td align="center"> 1 </td> <td align="center"> 1 </td> <td align="center"> Percentile </td> <td align="center"> 21 </td> <td align="center"> 72 </td> </tr>
+  <tr> <td align="center"> 1 </td> <td align="center"> 2 </td> <td align="center"> Score </td> <td align="center"> 72 </td> <td align="center"> 70 </td> </tr>
+  <tr> <td align="center"> 1 </td> <td align="center"> 2 </td> <td align="center"> Percentile </td> <td align="center"> 99 </td> <td align="center"> 10 </td> </tr>
+  <tr> <td align="center"> 1 </td> <td align="center"> 3 </td> <td align="center"> Score </td> <td align="center"> 57 </td> <td align="center">  </td> </tr>
+  <tr> <td align="center"> 1 </td> <td align="center"> 3 </td> <td align="center"> Percentile </td> <td align="center"> 77 </td> <td align="center">  </td> </tr>
+  <tr> <td align="center"> 1 </td> <td align="center"> 5 </td> <td align="center"> Score </td> <td align="center"> 58 </td> <td align="center"> 78 </td> </tr>
+  <tr> <td align="center"> 1 </td> <td align="center"> 5 </td> <td align="center"> Percentile </td> <td align="center"> 80 </td> <td align="center"> 80 </td> </tr>
+  <tr> <td align="center"> 1 </td> <td align="center"> 6 </td> <td align="center"> Score </td> <td align="center"> 58 </td> <td align="center"> 74 </td> </tr>
+  <tr> <td align="center"> 1 </td> <td align="center"> 6 </td> <td align="center"> Percentile </td> <td align="center"> 80 </td> <td align="center"> 41 </td> </tr>
    </table>
 <p>Along with the schools’ inability to appropriately drop math
 knowledge on these kids is their inability to record data in a format
@@ -658,10 +658,10 @@ within the school. The problem is best illustrated by the
 <pre><code>## # A tibble: 4 × 5
 ##   school student type       value2017 value2018
 ##    &lt;int&gt;   &lt;int&gt; &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;
-## 1      1       1 Score             37        77
-## 2      1       1 Percentile        12        69
-## 3      2       1 Score             60        75
-## 4      2       1 Percentile        86        51</code></pre>
+## 1      1       1 Score             42        77
+## 2      1       1 Percentile        21        72
+## 3      2       1 Score             54        70
+## 4      2       1 Percentile        67        10</code></pre>
 <div id="create-a-unique-identifier-1.5-points" class="section level3">
 <h3>1.1: Create a unique identifier (1.5 Points)</h3>
 <p>The subsetted table contains scores and percentiles for two
