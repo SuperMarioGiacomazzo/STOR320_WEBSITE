@@ -71,7 +71,7 @@ In this course, you will learn the entire process of Data Science: Import, Clean
 <div class="row">
   <div class="column">
 
-- Instructor: **[Mario S. J. Giacomazzo](http://www.supermariogiacomazzo.com/)**
+- Instructor: **[Mario Giacomazzo](http://www.supermariogiacomazzo.com/)**
 
 - Lab Instructors: 
     - **[Callum Guan](https://stor.unc.edu/people/graduate-students/)**
@@ -86,7 +86,8 @@ In this course, you will learn the entire process of Data Science: Import, Clean
     - Dr. Mario for 320.001
         - MTWTh, 9:00AM - 9:45AM, Hanes 134
         - MTWTh, 11:45AM - 12:00PM, Hanes 134
-    - Callum: M-F, TBD
+    - Callum: MTWTh, 3:00PM - 3:30PM, Hanes 107
+    
 - Attendance: **[UNC Check-in App](https://unccheckin.unc.edu/)**
 
 - University Approved Absences: **[Online Form](https://uaao.unc.edu/submit-a-request/)**
