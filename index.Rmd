@@ -120,8 +120,9 @@ In this course, you will learn the entire process of Data Science: Import, Clean
 || Data Transformation I | [Slides](Lecture/Data Transformation 1/Data_Transformation_1_Lecture.pdf) ||
 |JUNE 25| Data Transformation II| [Slides](Lecture/Data Transformation 2/Data_Transformation_2_Lecture.pdf) ||
 || Data Transformation III | [Slides](Lecture/Data Transformation 3/Data_Transformation_3_Lecture.pdf)||
+|JUNE 26| Data Transformation III (Cont.) | [Slides](Lecture/Data Transformation 3/Data_Transformation_3_Lecture.pdf)||
 || Data Transformation IV | [Slides](Lecture/Data Transformation 4/Data_Transformation_4_Lecture.pdf)||
-|JUNE 26| Exploratory Data Analysis I  | [Slides](Lecture/Exploratory Data Analysis 1/Exploratory_Data_Analysis_1_Lecture.pdf) ||
+|| Exploratory Data Analysis I  | [Slides](Lecture/Exploratory Data Analysis 1/Exploratory_Data_Analysis_1_Lecture.pdf) ||
 | | Exploratory Data Analysis II |[Slides](Lecture/Exploratory Data Analysis 2/Exploratory_Data_Analysis_2_Lecture.pdf)||
 |JUNE 30| Final Project I | [Slides](Lecture/Final Project 1/Final_Project_1_Lecture.pdf)||
 || Data Import | [Slides](Lecture/Data Import/Data_Import_Lecture.pdf)||
@@ -220,16 +221,16 @@ For the final project, students in STOR 320 will be divided  into research group
 If you want to find your research group, see the table below:
 
 ```{r,echo=F,results="asis",message=F}
-# library(DT)
-# library(tidyverse)
-# 
-# setwd("D:/DoctorMario/UNC/STOR 320/STOR320_WEBSITE/Group Assignments")
-# 
-# Groups1=read.csv(file="STOR320.001_Group_Assignments.csv")
-# 
-# arrange(Groups1, Group) %>%
-# datatable(class="display",options = list(scrollX=F,
-#              columnDefs = list(list(className = 'dt-center', targets = 0:5))),rownames=F)
+library(DT)
+library(tidyverse)
+
+setwd("D:/DoctorMario/UNC/STOR 320/STOR320_WEBSITE/Group Assignments")
+
+Groups1=read.csv(file="STOR320.001_Group_Assignments.csv")
+
+arrange(Groups1, Group) %>%
+datatable(class="display",options = list(scrollX=F,
+             columnDefs = list(list(className = 'dt-center', targets = 0:4))),rownames=F)
 ```
 
 ## Four Roles
