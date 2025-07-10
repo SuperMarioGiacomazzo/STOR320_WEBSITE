@@ -132,7 +132,8 @@ In this course, you will learn the entire process of Data Science: Import, Clean
 |JULY 2| Web Scraping| [Slides](Lecture/Web Scraping/Web_Scraping_Lecture.pdf) | [Preview](Supplement/Web Scraping/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Web%20Scraping/Supplement.zip)) |
 |  <span style="color: red;">JULY 3</span>|  <span style="color: red;">Labs Are Happening Today</span>|  | <span style="color: red;">Go To Your Lab</span> |
 |  <span style="color: red;">JULY 4</span>|  <span style="color: red;">Independence Day (No Class)</span>|  | <span style="color: red;">Remember Me</span> |
-|JULY 7| Joins I | [Slides](Lecture/Joins 1/Joins_1_Lecture.pdf) ||
+|JULY 7| Web Scraping (Cont.) | [Slides](Lecture/Web Scraping/Web_Scraping_Lecture.pdf) | [Preview](Supplement/Web Scraping/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Web%20Scraping/Supplement.zip)) |
+|| Joins I | [Slides](Lecture/Joins 1/Joins_1_Lecture.pdf) ||
 || Joins II| [Slides](Lecture/Joins 2/Joins_2_Lecture.pdf) ||
 |JULY 8| Factors | [Slides](Lecture/Factors/Factors_Lecture.pdf) ||
 | |  **Midterm 1** |  | |

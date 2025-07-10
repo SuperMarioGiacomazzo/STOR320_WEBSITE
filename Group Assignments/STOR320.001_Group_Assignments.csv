@@ -1,13 +1,13 @@
-Name,Group,Role,Proposal Date,Proposal  Time
-"Bazari,Sarah Jiab",2,,,
-"Copland,Nicholas James",2,,,
-"Das,Medha",1,,3-Jul,9:40AM -9:45AM
-"Gusa,Layla Kendeli",1,,3-Jul,9:40AM -9:45AM
-"Hinson,Christian",2,,,
-"Katsoulis,Julia Lee",1,,3-Jul,9:40AM -9:45AM
-"Kim,Will",1,C,3-Jul,9:40AM -9:45AM
-"Lanuza-Zeledon,Adriel Enrique",1,,3-Jul,9:40AM -9:45AM
-"Leo,Emmett Kemper",2,,,
-"Oh,Myeongkwon",1,,3-Jul,9:40AM -9:45AM
-"Rodriguez-Pacheco,Mariana",2,,,
-"Xu,Maggie",2,,,
+Name,Group,Role,EDA Date,EDA Time
+"Das,Medha",1,I,,
+"Gusa,Layla Kendeli",1,O,,
+"Katsoulis,Julia Lee",1,O,,
+"Kim,Will",1,C,,
+"Lanuza-Zeledon,Adriel Enrique",1,D,,
+"Oh,Myeongkwon",1,I,,
+"Bazari,Sarah Jiab",2,I,,
+"Copland,Nicholas James",2,O,,
+"Hinson,Christian",2,O,,
+"Leo,Emmett Kemper",2,D,,
+"Rodriguez-Pacheco,Mariana",2,I,,
+"Xu,Maggie",2,C,,
