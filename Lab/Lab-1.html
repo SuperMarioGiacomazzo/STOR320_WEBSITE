@@ -11,9 +11,9 @@
 
 <meta name="author" content="FIRSTNAME LASTNAME" />
 
-<meta name="date" content="2025-06-21" />
+<meta name="date" content="2026-01-04" />
 
-<title>Summer Lab 2</title>
+<title>Lab 1: Getting to Know Each Other</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -350,484 +350,44 @@ display: none;
 
 
 
-<h1 class="title toc-ignore">Summer Lab 2</h1>
+<h1 class="title toc-ignore">Lab 1: Getting to Know Each Other</h1>
 <h4 class="author">FIRSTNAME LASTNAME</h4>
-<h4 class="date">June 21, 2025</h4>
+<h4 class="date">January 04, 2026</h4>
 
 </div>
 
 
-<div id="lab-2a-exploratory-data-analysis" class="section level1">
-<h1>Lab 2a: Exploratory Data Analysis</h1>
-<div id="introduction" class="section level2">
-<h2>Introduction</h2>
-<p>In this lab assignment, make sure you work in order of the code
-chunks, and <strong>knit</strong> after you complete each code
-chunk.</p>
-<p>Consider the dataset <code>Wages1</code> from the <code>Ecdat</code>
-package.</p>
-<pre><code>##   exper    sex school     wage
-## 1     9 female     13 6.315296
-## 2    12 female     12 5.479770
-## 3    11 female     11 3.642170
-## 4     9 female     14 4.593337
-## 5     8 female     14 2.418157
-## 6     9 female     14 2.094058</code></pre>
-<p>This observational dataset records the years experienced, the years
-schooled, the sex, and the hourly wage for 3,294 workers in 1987. <em>A
-Guide to Modern Econometrics</em> by Marno Verbeek utilizes this data in
-a linear regression context. According to Marno Verbeek, this data is a
-subsample from the US National Longitudinal Study. The purpose of this
-tutorial is to practice the creative process in exploratory data
-analysis of asking questions and then investigating those questions
-using visuals and statistical summaries.</p>
-<p>As a member of the birth class of 1988, I do not have any clue of
-what the workforce looked like in 1987. It is your job to apply your
-detective skills to the information hidden in this data. For future use,
-utilize the modified dataset<code>wage</code> according to the R code
-below:</p>
-<pre class="r"><code>wage=as.tibble(Wages1) %&gt;%
-  rename(experience=exper) %&gt;%
-  arrange(school)</code></pre>
-<pre><code>## Warning: `as.tibble()` was deprecated in tibble 2.0.0.
-## ℹ Please use `as_tibble()` instead.
-## ℹ The signature and semantics have changed, see `?as_tibble`.
-## This warning is displayed once every 8 hours.
-## Call `lifecycle::last_lifecycle_warnings()` to see where this warning was
-## generated.</code></pre>
-<pre class="r"><code>head(wage)</code></pre>
-<pre><code>## # A tibble: 6 × 4
-##   experience sex    school  wage
-##        &lt;int&gt; &lt;fct&gt;   &lt;int&gt; &lt;dbl&gt;
-## 1         18 male        3 5.52 
-## 2         15 male        4 3.56 
-## 3         18 male        4 9.10 
-## 4         10 female      5 0.603
-## 5         11 male        5 3.80 
-## 6         14 male        5 7.50</code></pre>
+<div id="instructions" class="section level1">
+<h1>Instructions:</h1>
+<p>The purpose of this lab assignment is to get to know a student in the
+class, communicate the information learned in writing, and check to see
+if R Markdown is properly knitting to HTML. Start by putting your full
+name in the space provided above in the R Markdown file (Replace
+FIRSTNAME and LASTNAME).</p>
+<p>In this first lab, you will interview another student in the class
+and record this information in the appropriate space below. Find 2 or 3
+students nearby to interview. If you are in a group of 3, make sure you
+work in a circle where person 1 interviews person 2, person 2 interviews
+person 3, and person 3 interviews person 1. Don’t just get the answers
+required, but actually get to know them..</p>
+<p>After you are done, knit the R Markdown file to HTML and submit it to
+Canvas under Lab 1.</p>
 </div>
-<div id="part-1-questions-about-variation" class="section level2">
-<h2>Part 1: Questions About Variation</h2>
-<div id="use-a-figure-to-find-what-is-the-most-common-number-of-years-of-experience-found-in-the-data-0.5-points." class="section level3">
-<h3>1.1: Use a figure to find what is the most common number of years of
-experience found in the data (0.5 Points).</h3>
-<p>First, use <code>geom_bar()</code> to investigate the distribution of
-level of experience found in <code>wage</code>.</p>
-<pre class="r"><code>#</code></pre>
-</div>
-<div id="use-a-table-to-find-what-is-the-most-common-number-of-years-of-experience-found-in-the-data-1.5-points." class="section level3">
-<h3>1.2: Use a table to find what is the most common number of years of
-experience found in the data (1.5 Points).</h3>
-<p>Use <code>group_by(experience)</code> along with the pipe
-<code>%&gt;%</code> to output the most common amount of years of
-experience along with the number of occurrences found in the data. The
-most common value for years of experience is _____ and occurs _____
-times. Fill in the blanks with the correct answers, and change
-<code>eval=True</code> to <code>eval=False</code> and print out the
-output that led you to your answer.</p>
-<pre class="r"><code>wage %&gt;%
-  group_by(experience) %&gt;%
-  COMPLETE</code></pre>
-</div>
-<div id="use-a-figure-to-find-what-is-the-maximum-number-for-years-of-schooling-found-in-the-data.-0.5-points" class="section level3">
-<h3>1.3: Use a figure to find what is the maximum number for years of
-schooling found in the data. (0.5 Points)</h3>
-<p>First, use <code>geom_bar()</code> to visualize the overall
-distribution of level of schooling found in the data.</p>
-<pre class="r"><code>#</code></pre>
-</div>
-<div id="use-a-table-to-find-what-is-the-maximum-number-for-years-of-schooling-found-in-the-data.-1.5-points" class="section level3">
-<h3>1.4: Use a table to find what is the maximum number for years of
-schooling found in the data. (1.5 Points)</h3>
-<p>Next, modify the code in Question 1.2 to display the maximum level of
-schooling and the number of workers in the data that had that number of
-schooling. The maximum number of years in school was ____ years which
-occurred _____ times in our sample. Fill in the blanks with the correct
-answers.</p>
-<pre class="r"><code>#</code></pre>
-</div>
-</div>
-<div id="part-2-questions-about-covariation" class="section level2">
-<h2>Part 2: Questions about Covariation</h2>
-<div id="follow-up-to-questions-1-2-is-there-a-relationship-between-level-of-schooling-and-level-of-experience-1-point" class="section level3">
-<h3>2.1: Follow-up to Questions 1-2: Is there a relationship between
-level of schooling and level of experience? (1 Point)</h3>
-<p>Use <code>geom_point()</code> to display a scatter plot representing
-the relationship between these two discrete numeric variables. Consider
-using <code>alpha=0.1</code> to indicate where the relationship is
-represented the best.</p>
-<p>The years of experience seem to _____ (increase/decrease) as the
-years of schooling increases. Is this what you expected to see? ____
-(yes/no).</p>
-<pre class="r"><code>#</code></pre>
-<p>Question: Practically, what reasons do you hypothesize for this
-observed relationship? Write your answer in complete sentences
-below:</p>
-</div>
-<div id="how-do-hourly-wages-differ-between-males-and-females-1-point" class="section level3">
-<h3>2.2: How do hourly wages differ between males and females? (1
-Point)</h3>
-<p>Use <code>geom_freqpoly()</code> to compare the distribution of wage
-of females to the distribution of wage of males.</p>
-<pre class="r"><code>#</code></pre>
-<p>Question: Where do these distributions look the same and/or where do
-they differ? Write your answer in complete sentences below:</p>
-</div>
-<div id="how-do-hourly-wages-differ-between-males-and-females-1.5-points" class="section level3">
-<h3>2.3: How do hourly wages differ between males and females? (1.5
-Points)</h3>
-<p>Use <code>group_by()</code> along with summarize to report the mean
-<code>wage</code>, standard error of <code>wage</code>, and 95%
-confidence interval for the unknown population mean hourly wage for the
-various levels of <code>sex</code>. The standard error is equal to the
-standard deviation divided by the square root of the sample size. The
-95% confidence interval is approximated by obtaining the lower and upper
-bound of an interval within 2 standard errors of the sample mean. Based
-on the confidence limits, do we have statistical evidence to say that
-the average hourly wage for men was different than the average hourly
-wage for women in 1987? ______ (yes/no).</p>
-<pre class="r"><code>wage %&gt;% 
-  group_by(sex) %&gt;%
-  summarize(n=n(),mean= COMPLETE,se=COMPLETE,
-            lb=COMPLETE,ub=COMPLETE)</code></pre>
-<p>Question: How would you explain your answer in terms of the
-confidence intervals that are constructed below? Write your answer in
-complete sentences below:</p>
-<pre class="r"><code>wage %&gt;% 
-  group_by(sex) %&gt;%
-  summarize(n=n(),mean=mean(wage),se=sd(wage)/sqrt(n),
-            lb=mean-2*se,ub=mean+2*se)</code></pre>
-<pre><code>## # A tibble: 2 × 6
-##   sex        n  mean     se    lb    ub
-##   &lt;fct&gt;  &lt;int&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
-## 1 female  1569  5.15 0.0726  5.00  5.29
-## 2 male    1725  6.31 0.0842  6.14  6.48</code></pre>
-</div>
-<div id="does-the-relationship-between-hourly-wage-and-years-of-experience-differ-between-the-sexes-0.5-points" class="section level3">
-<h3>2.4: Does the relationship between hourly wage and years of
-experience differ between the sexes? (0.5 Points)</h3>
-<p>Use <code>geom_point()</code> along with the option
-<code>color=sex</code> to overlay scatter plots. Does there seem to be a
-clear distinction between female and male regarding this relationship?
-______ (yes/no).</p>
-<pre class="r"><code>#</code></pre>
-</div>
-<div id="does-the-relationship-between-hourly-wage-and-years-of-schooling-differ-between-the-sexes-0.5-points" class="section level3">
-<h3>2.5: Does the relationship between hourly wage and years of
-schooling differ between the sexes? (0.5 Points)</h3>
-<p>Repeat the graphic created in Question 4 replacing
-<code>x=experience</code> with <code>x=school</code>. Does there seem to
-be a clear distinction between female and male regarding this
-relationship? ______ (yes/no).</p>
-<pre class="r"><code>#</code></pre>
-</div>
-<div id="what-is-the-relationship-between-hourly-wage-and-the-interaction-between-the-years-of-experience-and-years-of-schooling-0.5-points" class="section level3">
-<h3>2.6: What is the relationship between hourly wage and the
-interaction between the years of experience and years of schooling? (0.5
-Points)</h3>
-<p>The graphic below summarizes the average hourly wage for the
-different combinations of schooling and experience level. The additional
-<code>facet_grid(~sex)</code> makes comparing the relationship of the
-three key numeric variables between the sexes quite easy.</p>
-<pre class="r"><code>wage %&gt;%
-  group_by(experience,school,sex) %&gt;%
-  summarize(n=n(),mean=mean(wage)) %&gt;%
-  ungroup() %&gt;%
-  ggplot() +
-    geom_tile(aes(x=experience,y=school,fill=mean)) +
-  scale_fill_gradientn(colors=c(&quot;black&quot;,&quot;lightskyblue&quot;,&quot;white&quot;))+
-    facet_grid(~sex) + theme_dark()</code></pre>
-<pre><code>## `summarise()` has grouped output by &#39;experience&#39;, &#39;school&#39;. You can override
-## using the `.groups` argument.</code></pre>
-<p><img src="data:image/png;base64,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" width="672" /></p>
-<p>Question: What are some differences between the sexes regarding this
-relationship that are apparent in this chart? Write your answer in
-complete sentences below:</p>
-</div>
-<div id="what-is-the-relationship-between-hourly-wage-and-the-interaction-between-the-years-of-experience-and-years-of-schooling-1-point" class="section level3">
-<h3>2.7: What is the relationship between hourly wage and the
-interaction between the years of experience and years of schooling? (1
-Point)</h3>
-<p>The next figure is similar to the previous one except that the tile
-color reflects the standard deviation of wage rather than the mean.
-Interactions of experience and school levels containing less than or
-equal to 10 instances are ignored in this image.</p>
-<pre class="r"><code>wage %&gt;%
-  group_by(experience,school,sex) %&gt;%
-  summarize(n=n(),sd=sd(wage)) %&gt;%
-  ungroup() %&gt;%
-  filter(n&gt;10) %&gt;%
-  ggplot() +
-  geom_tile(aes(x=experience,y=school,fill=sd)) +
-  scale_fill_gradientn(colors=c(&quot;black&quot;,&quot;lightskyblue&quot;,&quot;white&quot;))+
-  facet_grid(~sex) + theme_dark()</code></pre>
-<pre><code>## `summarise()` has grouped output by &#39;experience&#39;, &#39;school&#39;. You can override
-## using the `.groups` argument.</code></pre>
-<p><img src="data:image/png;base64,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" width="672" /></p>
-<p>Question: Which plot is generally darker and what does that imply?
-Write your answer in complete sentences below:</p>
-<p>Question: Specifically for the scenario where a worker has 5 years of
-experience and 11 years of schooling, what does the extreme contrast
-between female and male cells imply for this figure? Write your answer
-in complete sentences below:</p>
-</div>
-</div>
-</div>
-<div id="lab-2b-tidy-data" class="section level1">
-<h1>Lab 2b: Tidy Data</h1>
-<div id="introduction-1" class="section level2">
-<h2>Introduction</h2>
-<p>Baby Mario once had a dream to drop math knowledge on high school
-students. High schools are evaluated based on student achievement on
-standardized test scores. The self-proclaimed king, <a href="http://lebronjames.com/">Lebron James</a>, intends to donate $5
-million to the district and funds will be distributed according to the
-improvement of these high schools in the area of mathematics. Because of
-the king’s proclamation, the bureaucratic district heads have pushed
-high schools to redirect all loose change to mathematics. Teachers of
-english, science, history, and other subjects have been pressured to
-dedicate portions of class time to math education. Teachers of music and
-the arts have been released because the king does not have time for that
-nonsense. The dreams of these children along with the king’s talents
-have been taken to Hollywood.</p>
-<p>The <a href="http://www.clevelandmetroschools.org/">Cleveland school
-district</a> is made up of 20 high schools uniquely identified by
-numbers 1 to 20. Within each high school, a random sample of 20 students
-are selected to participate in this study and are uniquely identified by
-numbers 1 to 20. All 400 students selected are assessed on their
-mathematics skills based on district designed standardized tests in the
-years 2017 and 2018. The scores and corresponding percentiles of these
-selected students for both years are simulated in the following R
-code.</p>
-<pre class="r"><code>school.id=rep(1:20,each=20*2)
-student.id=rep(rep(1:20,each=2),20)
-type=rep(c(&quot;Score&quot;,&quot;Percentile&quot;),20*20)
-score2017=round(rnorm(20*20,mean=50,sd=10),0)
-percentile2017=round(100*pnorm(score2017,mean=mean(score2017),sd=sd(score2017)),0)
-score2018=round(rnorm(20*20,mean=75,sd=4),0)
-percentile2018=round(100*pnorm(score2018,mean=mean(score2018),sd=sd(score2018)),0)
-value2017=c(rbind(score2017,percentile2017))
-value2018=c(rbind(score2018,percentile2018))
-
-untidy.school = tibble(
-                  school=school.id,
-                  student=student.id,
-                  type=type,
-                  value2017=value2017,
-                  value2018=value2018) %&gt;% 
-                filter(!(school==1 &amp; student==4)) %&gt;% filter(!(school==12 &amp; student==18)) %&gt;%
-                mutate(value2018=ifelse((school==1 &amp; student==3)|(school==15 &amp; student==18)|
-                                          (school==5 &amp; student==12),NA,value2018))</code></pre>
-<p>Below is an HTML table generated using the <code>xtable</code>
-package in R. For more information regarding this package, see the <a href="https://cran.r-project.org/web/packages/xtable/vignettes/xtableGallery.pdf">xtable
-gallery</a>. The R code in the code chunk converts an R data frame
-object to an HTML table. HTML table attributes can be specified within
-the function <code>print()</code>. The code chunk option
-<code>echo=F</code> prevents the code from showing and the option
-<code>results=&quot;asis&quot;</code> ensures that the resulting HTML table is
-displayed when knitted to HTML. The table provides a preview of the
-first 10 rows of the simulated data. Knit the document to see the HTML
-table below.</p>
-<!-- html table generated in R 4.4.1 by xtable 1.8-4 package -->
-<!-- Sat Jun 21 12:36:39 2025 -->
-<table align="center" , rules="rows" , width="50%," frame="hsides" , border-spacing="5px">
-<tr> <th> school </th> <th> student </th> <th> type </th> <th> value2017 </th> <th> value2018 </th>  </tr>
-  <tr> <td align="center"> 1 </td> <td align="center"> 1 </td> <td align="center"> Score </td> <td align="center"> 42 </td> <td align="center"> 77 </td> </tr>
-  <tr> <td align="center"> 1 </td> <td align="center"> 1 </td> <td align="center"> Percentile </td> <td align="center"> 21 </td> <td align="center"> 72 </td> </tr>
-  <tr> <td align="center"> 1 </td> <td align="center"> 2 </td> <td align="center"> Score </td> <td align="center"> 72 </td> <td align="center"> 70 </td> </tr>
-  <tr> <td align="center"> 1 </td> <td align="center"> 2 </td> <td align="center"> Percentile </td> <td align="center"> 99 </td> <td align="center"> 10 </td> </tr>
-  <tr> <td align="center"> 1 </td> <td align="center"> 3 </td> <td align="center"> Score </td> <td align="center"> 57 </td> <td align="center">  </td> </tr>
-  <tr> <td align="center"> 1 </td> <td align="center"> 3 </td> <td align="center"> Percentile </td> <td align="center"> 77 </td> <td align="center">  </td> </tr>
-  <tr> <td align="center"> 1 </td> <td align="center"> 5 </td> <td align="center"> Score </td> <td align="center"> 58 </td> <td align="center"> 78 </td> </tr>
-  <tr> <td align="center"> 1 </td> <td align="center"> 5 </td> <td align="center"> Percentile </td> <td align="center"> 80 </td> <td align="center"> 80 </td> </tr>
-  <tr> <td align="center"> 1 </td> <td align="center"> 6 </td> <td align="center"> Score </td> <td align="center"> 58 </td> <td align="center"> 74 </td> </tr>
-  <tr> <td align="center"> 1 </td> <td align="center"> 6 </td> <td align="center"> Percentile </td> <td align="center"> 80 </td> <td align="center"> 41 </td> </tr>
-   </table>
-<p>Along with the schools’ inability to appropriately drop math
-knowledge on these kids is their inability to record data in a format
-that is immediately usable. Using our understanding of the
-<code>tidyr</code> package, we can easily convert this table into a form
-that is useful for data analysis.</p>
-</div>
-<div id="part-1-creation-of-a-unique-student-id" class="section level2">
-<h2>Part 1: Creation of a Unique Student ID</h2>
-<p>The variable <code>school</code> uniquely identifies the school, but
-the variable <code>student</code> only uniquely identifies the student
-within the school. The problem is best illustrated by the
-<code>filter()</code> function in <code>dplyr</code>.</p>
-<pre class="r"><code>untidy.school %&gt;% filter(student==1) %&gt;% head(4)</code></pre>
-<pre><code>## # A tibble: 4 × 5
-##   school student type       value2017 value2018
-##    &lt;int&gt;   &lt;int&gt; &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;
-## 1      1       1 Score             42        77
-## 2      1       1 Percentile        21        72
-## 3      2       1 Score             54        70
-## 4      2       1 Percentile        67        10</code></pre>
-<div id="create-a-unique-identifier-1.5-points" class="section level3">
-<h3>1.1: Create a unique identifier (1.5 Points)</h3>
-<p>The subsetted table contains scores and percentiles for two
-completely different children identified by <code>student==1</code>. We
-need to create a unique identifier for each student in the Cleveland
-school district. The <code>unite()</code> function can be utilized to
-create a new variable called <code>CID</code> by concatenating the
-identifiers for <code>school</code> and <code>student</code>. We want
-<code>CID</code> to follow the general form <em>SCHOOL.STUDENT</em>. For
-example, the <code>CID</code> for the first student in the table above
-would be “1.1”.</p>
-<p>Create a new tibble called <code>untidy2.school</code> that fixes
-this problem without dropping the original variables <code>school</code>
-or <code>student</code>. Read the documentation for <code>unite()</code>
-either by searching on google or using <code>?unite</code> to prevent
-the loss of original variables in the creation of a new variable.</p>
-<pre class="r"><code>untidy2.school = untidy.school %&gt;%
-                    unite(COMPLETE)
-
-glimpse(untidy2.school) #Do Not Change Lines with the glimpse Function</code></pre>
-</div>
-</div>
-<div id="part-2-gather-variables-with-yearly-values" class="section level2">
-<h2>Part 2: Gather Variables With Yearly Values</h2>
-<div id="create-a-unique-identifier-1.5-points-1" class="section level3">
-<h3>2.1: Create a unique identifier (1.5 Points)</h3>
-<p>The variables <code>value2017</code> and <code>value2018</code>
-contain the scores and percentiles for two different years. In a new
-tibble called <code>untidy3.school</code>, based on
-<code>untidy2.school</code>, we want to create a new variable called
-<code>Year</code> and a new variable called <code>Value</code> that
-display the year and the result from that year, respectively. The
-variable <code>Year</code> should be a numeric vector containing either
-<em>2017</em> or <em>2018</em>. The most efficient way to modify the
-data in this manner is to start by renaming <code>value2017</code> and
-<code>value2018</code> to nonsynctactic names <code>2017</code> and
-<code>2018</code>. Remember that you need to surround nonsyncactic names
-with backticks to achieve this result.</p>
-<pre class="r"><code>untidy3.school = untidy2.school %&gt;%
-                    rename(NEWVAR=OLDVAR,NEWVAR=OLDVAR) %&gt;%
-                    gather(`2017`:`2018`,COMPLETE)
-glimpse(untidy3.school)</code></pre>
-</div>
-</div>
-<div id="part-3-spread-type-of-value-into-multiple-columns" class="section level2">
-<h2>Part 3: Spread Type of Value Into Multiple Columns</h2>
-<div id="create-new-variables-using-spread-1-point" class="section level3">
-<h3>3.1: Create new variables using spread (1 point)</h3>
-<p>The variable <code>type</code> in <code>untidy3.school</code>
-indicates that two completely different variables are contained in the
-recently created variable called <code>Value</code>. Both the scores and
-percentiles of students are contained in <code>Value</code>. Using the
-function <code>spread()</code> we can create two new variables,
-<code>Score</code> and <code>Percentile</code>, that display the
-information contained in <code>Value</code> in separate columns. Using
-<code>untidy3.school</code>, create a new tibble called
-<code>tidy.school</code> that accomplishes these tasks.</p>
-<pre class="r"><code>tidy.school = untidy3.school %&gt;%
-                    spread(COMPLETE) 
-glimpse(tidy.school)</code></pre>
-</div>
-</div>
-<div id="part-4-missing-data-analysis" class="section level2">
-<h2>Part 4: Missing Data Analysis</h2>
-<p>The original data contains explicitly missing and implicitly missing
-values. Instances of both can be visibly seen in the first ten
-observations. Below is a table showing the first 10 observations in the
-cleaned dataset we called <code>tidy.school</code>. To appropriately,
-view this we have to sort our observations by <code>school</code> and
-<code>student</code> as seen in the original dataset
-<code>untidy.school</code>. Knit the document to see the HTML table
-below.</p>
-<p>Based on the table above, you can see that student <em>3</em> from
-school <em>1</em> has a missing score and percentile for the year 2018.
-This is an example of explicitly missing information. In logitudinal
-studies where measures are taken on individuals over a fixed time
-period, this is a common occurrence. Hypothesize a reason for this
-scenario to happen.</p>
-<p>Based on the table above, you can see that student <em>4</em> from
-school <em>1</em> is clearly missing scores and percentiles from both
-years <em>2017</em> and <em>2018</em>. This is an example of implicitly
-missing information. This is a less common occurrence, but try to
-hypothesize a reason for this scenario to happen.</p>
-<div id="convert-implicitly-missing-to-explicitly-missing-1-point" class="section level3">
-<h3>4.1 Convert Implicitly Missing to Explicitly Missing (1 Point)</h3>
-<p>Use the <code>complete()</code> function to convert all implicitly
-missing to explicitly missing. Create a new table called
-<code>tidy2.school</code> that reports missing values as <code>NA</code>
-for all combinations of school, student, and year.</p>
-<pre class="r"><code>tidy2.school=tidy.school %&gt;%
-  complete(VARIABLES)</code></pre>
-<p>The first 10 rows of <code>tidy2.school</code> are displayed
-below.</p>
-<pre class="r"><code>tab.tidy2.school = tidy2.school %&gt;%
-  head(10) %&gt;%
-  xtable(digits=0,align=&quot;ccccccc&quot;)
-
-print(tab.tidy2.school,type=&quot;html&quot;,include.rownames=F,
-      html.table.attributes=&quot;align=&#39;center&#39;,
-      rules=&#39;rows&#39;,
-      width=50%,
-      frame=&#39;hsides&#39;,
-      border-spacing=5px&quot;
-)</code></pre>
-</div>
-<div id="fixing-the-data-using-the-pipe-2-points" class="section level3">
-<h3>4.2 Fixing the Data Using the Pipe (2 Points)</h3>
-<p>If you inspect the first 10 rows of <code>tidy2.school</code>, you
-should see that the variable <code>CID</code> is missing for student
-<em>4</em> from school <em>1</em> even though we know that this students
-unique district ID should be <em>“1.4”</em>. Using the pipe
-<code>%&gt;%</code>, combine all previous statements in an order where
-this will not occur. Create a tibble named
-<code>final.tidy.school</code> using a chain of commands that begins
-with calling the original tibble <code>untidy.school</code></p>
-<pre class="r"><code>final.tidy.school = untidy.school %&gt;%
-                      MORE %&gt;%
-                      MORE %&gt;%
-                      ...
-
-glimpse(final.tidy.school)</code></pre>
-</div>
-</div>
-<div id="part-5-summarizing-figures" class="section level2">
-<h2>Part 5: Summarizing Figures</h2>
-<div id="follow-up-question-about-money-distribution-1-point" class="section level3">
-<h3>5.1: Follow-up question about money distribution (1 Point)</h3>
-<p>The figure below uses boxplots to show the distribution of scores in
-the 20 schools for the years 2017 and 2018.</p>
-<pre class="r"><code>ggplot(final.tidy.school) +
-  geom_boxplot(aes(x=as.factor(Year),y=Score,fill=as.factor(school))) + 
-  guides(fill=F)+
-  theme_minimal()</code></pre>
-<p>Question: If you were the district superintendent, how would you
-distribute the King’s ransom to these schools? In other words, how
-should Lebron James distribute the money to the schools. Write your
-answer in complete sentences below:</p>
-</div>
-<div id="follow-up-question-about-inspecting-the-improvement-2-points" class="section level3">
-<h3>5.2: Follow-up question about inspecting the improvement (2
-Points)</h3>
-<p>Using different colors for each student, the next two pictures show
-the change in test scores and percentiles for all students (without
-missing values) sampled from the district. Both of these pictures are
-necessary in understanding the improvement in mathematical knowledge on
-the student level. As you can see, they are very different from each
-other. Hypothesize an educational strategy the district might have taken
-that would have caused this phenomenon to occur.</p>
-<pre class="r"><code>ggplot(final.tidy.school) + 
-  geom_line(aes(x=Year,y=Score,color=as.factor(CID))) +
-  guides(color=F) +
-  scale_x_discrete(breaks=c(2017,2018),labels=c(2017,2018)) +
-  theme_minimal()
-
-ggplot(final.tidy.school) + 
-  geom_line(aes(x=Year,y=Percentile,color=as.factor(CID))) +
-  guides(color=F) +
-  scale_x_discrete(breaks=c(2017,2018),labels=c(2017,2018)) +
-  theme_minimal()</code></pre>
-<p>Question: Do you believe the students actually improved in their math
-knowledge? Why or why not? The schools knew that they were going to get
-money based off the improvement of the math scores. What do we learn
-about the grades of the students when compared to each other. Think
-about this and write your answer in a well-written paragraph below:</p>
-</div>
-</div>
+<div id="interview" class="section level1">
+<h1>Interview:</h1>
+<ul>
+<li><p>Name of Student:</p></li>
+<li><p>Origin:</p></li>
+<li><p>Year in School:</p></li>
+<li><p>Major or Minor:</p></li>
+<li><p>Involvement on Campus:</p></li>
+<li><p>Plans After Graduation:</p></li>
+<li><p>Biggest Influence in Your Life:</p></li>
+<li><p>Favorite Thing to Do in Your Free Time:</p></li>
+<li><p>Favorite Movie or Show:</p></li>
+<li><p>Positive Aspect About UNC:</p></li>
+<li><p>Negative Aspect About UNC:</p></li>
+</ul>
 </div>
 
 

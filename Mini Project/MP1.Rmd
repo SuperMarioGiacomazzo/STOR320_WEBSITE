@@ -1,0 +1,69 @@
+---
+title: "Mini Project 1: Using Github"
+author: "FIRSTNAME LASTNAME"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+#This code chunk is for modifying the global options and for loading required R packages
+knitr::opts_chunk$set(echo = TRUE)
+library(rmarkdown)
+library(tinytex)
+library(knitr)
+```
+
+# Instructions:
+
+The purpose of this mini project is to get you familiar with *Git* and *Github*. *Git* is a version control system for tracking changes to files. Data scientists need to be familiar with Git since it is a mechanism for keeping track of changes in your code as you modify it. *Github* allows you to back-up your *Git* repositories in the cloud. It also provides you with a method of collaborating with others on projects and a method of sharing your work with others. Many data scientists use *Git* and *Github* regularly. I provided you with an article in the special reading section written by [Segun Ajibola](https://github.com/segunajibola).
+
+Below is a list of all of the things I want you to do:
+
+1) Sign-up to [Github](https://github.com/). Although there are options that cost money, you should not pay any money. Some of you may already have an account with Github and that is fine.
+
+2) Next, you should upload a picture of you and edit your profile to have a very short paragraph of who you are. See [my github](https://github.com/SuperMarioGiacomazzo) for an example of what I want. Look for the **edit profile** button on the left.
+
+3) Download [Git](https://git-scm.com/download) to your local computer. This will make it possible for you to create *Git* repositories on your computer for tracking changes to files associated with those repositories. Check out the youtube video in special reading for an introduction into Git.
+
+4) The next step is creating a *Git* repository on your local computer that is also a *Github* repository on your account. I use [Github Desktop](https://desktop.github.com/) on my computer instead of the command prompt (terminal if on Mac). There are download links for Windows and Mac. *Github Desktop* is a program you need to download and install to your local computer. The best analogy I can give is that *Git* is like R and *Github Desktop* is like RStudio. Watch the Youtube videos in special reading about github desktop.
+
+5) After watching the videos, I want you to use *Github Desktop* to create a *Git* repository named after you. Start by using *Github Desktop* to create a **New Repository**. To do this, yous will need to know the local path on your computer to the folder that you want to contain the *Git* repository. Then, I **Name** the new repository  *MarioGiacomazzo*. You should use your name. Then, when you click **Create Repository**, you should go to the local path and you will see a subfolder named after you that has been created. There will be files in your repository that *Git* will edit whenever you **Commit** changes to the folder.
+
+6) Now, I want you to find some project or writing you did from the past of which you are proud. This could be a paper from a class, a data analysis, short story, etc. A lot of companies and graduate schools want to see writing samples and if you are in 520, you should have at least one paper or project of which you are proud. Copy and paste your writing sample into the folder on your computer that is now a *Git* repository.
+
+7) Now, *Github Desktop* should identify that a change has been made to the repository. The change is that you added a file that didn't exist before. At the bottom of *Github Desktop* you should see a spot to make a comment or summary. *Git* requires you to give a short summary to remind you why the change was made. I would keep this short like "Writing Sample". Once you provide a summary on why a change was made, then you will be able to *Commit* the changes. This tracks the change to the repository with the summary of why the repository was changed. 
+
+8) Connect your *Github Desktop* to your *Github* account. After this, you should be able to **Push** these changes to the internet using a button in the top right of *Github Desktop*. Once you **Commit** the changes on your computer and then **Push** the changes to your *Github*, you should be able to login to your *Github* account and see the new repository that is named after you along with your writing sample inside the repository. 
+
+9) Once you have completed this, you will need to insert the hyperlink to that *Github* repository. Follow the directions after the special reading section to insert your hyperlink. Then, knit this document to an HTML and submit the HTML to Canvas.
+
+# Special Reading
+
+- [Intro to Git and Github](https://www.freecodecamp.org/news/introduction-to-git-and-github/)
+- [Git Introduction](https://www.youtube.com/watch?v=USjZcfj8yxE)
+- [Github Desktop 1](https://www.youtube.com/watch?v=7NNI9uW8R_o)
+- [Github Desktop 2](https://www.youtube.com/watch?v=8Dd7KRpKeaE)
+- [Github Desktop 3](https://www.youtube.com/watch?v=PvUexC0-D2s)
+
+# Link to Github
+
+Once you have completed all the tasks I asked of you, replace the FIRSTNAME and LASTNAME appropriately and replace the PUT_URL_HERE with the web address to your github repository that you created.
+
+**This needs to be a public repository. It should not be private. I need to be able to verify that you did this assignment.**
+
+[Github Repository for FIRSTNAME LASTNAME](PUT_URL_HERE)
+
+**After you have completed this mini project, knit this file to an HTML file and submit to Canvas by the due date**
+
+# Rubric
+
+|Task|Points|
+|:---:|:---:|
+|Added Photo for Github| 5 Points|
+|Edited Profile with Paragraph | 5 Points|
+|Link to Github Repository Works| 5 Points|
+|Writing Sample is in Repository| 3 Points|
+|Followed  Instructions| 2 Points |
+|||
+
+

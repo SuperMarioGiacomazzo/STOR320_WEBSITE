@@ -11,9 +11,9 @@
 
 <meta name="author" content="FIRSTNAME LASTNAME" />
 
-<meta name="date" content="2025-06-21" />
+<meta name="date" content="2026-01-03" />
 
-<title>Summer Lab 1</title>
+<title>Mini Project 1: Using Github</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -350,442 +350,153 @@ display: none;
 
 
 
-<h1 class="title toc-ignore">Summer Lab 1</h1>
+<h1 class="title toc-ignore">Mini Project 1: Using Github</h1>
 <h4 class="author">FIRSTNAME LASTNAME</h4>
-<h4 class="date">June 21, 2025</h4>
+<h4 class="date">January 03, 2026</h4>
 
 </div>
 
 
-<div id="lab-1a-basic-data-transformation" class="section level1">
-<h1>Lab 1a: Basic Data Transformation</h1>
-<div id="introduction" class="section level2">
-<h2>Introduction</h2>
-<p>The main purpose of this tutorial is to put together 4 key functions
-from <strong><a href="https://dplyr.tidyverse.org/reference/index.html">dplyr</a></strong>.
-The functions and their purposes are listed as follows:</p>
-<ul>
-<li><p><code>filter()</code> <em>Selects Observations Based on
-Values</em></p></li>
-<li><p><code>arrange()</code> <em>Sorts Observations Based on
-Criteria</em></p></li>
-<li><p><code>select()</code> or <code>rename()</code> <em>Selects,
-Deselects, Renames, and Reorders Variables</em></p></li>
-<li><p><code>mutate()</code> or <code>transmute()</code> <em>Creates New
-Variables Which Were Originally Nonexistant</em></p></li>
-</ul>
-<p>Despite my despise for the entire airline industry, we will practice
-our skills using the dataset <code>flights</code> by loading the R
-package <code>nycflights13</code>. My ultimate wish for you is that by
-the end of this tutorial you will have tenderly played with this dataset
-so much that you will also hate the airline industry. If my wish does
-not come true this hot session, be sure that it will by the end of this
-semester.</p>
-<p>Now in the words of the late, great, <strong><a href="https://en.wikipedia.org/wiki/Frank_Sinatra">Frank
-Sinatra</a></strong>, come fly with me.-</p>
-<blockquote>
-<p>Come fly with me, let’s fly, let’s fly away.</p>
-<p>– <cite>Frank Sinatra</cite></p>
-</blockquote>
-<p>You will need to modify the code chunks so that the code works within
-each of chunk (usually this means modifying anything in ALL CAPS). You
-will also need to modify the code outside the code chunk. When you get
-the desired result for each step, change <code>Eval=F</code> to
-<code>Eval=T</code> and knit the document to HTML to make sure it works.
-Do not work out of order or skip around. After you complete the lab or
-by the end of class, you should submit your HTML file to Sakai.</p>
-</div>
-<div id="part-1-the-uniqueness-of-flight-numbers" class="section level2">
-<h2>Part 1: The Uniqueness of Flight Numbers</h2>
-<div id="points" class="section level3">
-<h3>1.1 (0.5 Points)</h3>
-<p>Using <code>filter()</code>, start by creating a new tibble called
-<strong>f1a</strong> that only contains records from flight number
-807.</p>
-<pre class="r"><code>f1a&lt;-filter(flights, CRITERIA)</code></pre>
-</div>
-<div id="points-1" class="section level3">
-<h3>1.2 (0.5 Points)</h3>
-<p>Now, apply <code>select()</code> to create a new dataset
-<strong>f1b</strong> based on <strong>f1a</strong> only containing
-variables “flight”, “carrier”, “origin”, and “dest”.</p>
-<pre class="r"><code>f1b&lt;-select(f1a, VARIABLES)</code></pre>
-</div>
-<div id="points-2" class="section level3">
-<h3>1.3 (0.5 Points)</h3>
-<p>Rename the variable “dest” to “destination” in
-<strong>f1c</strong>.</p>
-<pre class="r"><code>f1c=rename(f1b,COMPLETE)</code></pre>
-</div>
-<div id="points-3" class="section level3">
-<h3>1.4 (0.5 Points)</h3>
-<p>Because <strong>f1c</strong> only contains records for flight number
-807, sorting by flight number is irrelevant. Create a new dataset
-<strong>f1d</strong> that is identical in content to
-<strong>f1c</strong> but is sorted by “carrier” first, “origin” second,
-and “destination”” last. Use the function <code>head()</code>to display
-the first 5 rows of the data in <strong>f1d</strong>.</p>
-<pre class="r"><code>f1d&lt;-arrange(f1c,VARIABLES)
-head(COMPLETE)</code></pre>
-</div>
-<div id="points-4" class="section level3">
-<h3>1.5 (1.5 Points)</h3>
-<p>At first glance from the output above, it seems that flight number
-807 uniquely represents the flight from _______ to _______ by carrier
-________. (Fill in the Blanks).</p>
-</div>
-<div id="points-5" class="section level3">
-<h3>1.6 (0.5 Points)</h3>
-<p>To confirm this, create a new dataset <strong>f1e</strong> that is
-<strong>f1d</strong> sorted by the three variables previously mentioned,
-all in descending order. The function <code>desc()</code> is required
-here. Follow this by displaying the first 18 rows of the data in
-<strong>f1d</strong>.</p>
-<pre class="r"><code>f1e&lt;-arrange(f1d,SORT_BY)
-head(f1e,18)</code></pre>
-</div>
-<div id="point" class="section level3">
-<h3>1.7 (1 Point)</h3>
-<p>Answer the following questions using the output from the previous
-question:</p>
-<p>May we conclude that flight numbers can be mapped to a unique
-carrier? ________ (<em>Yes/No</em>)</p>
-<p>Why or why not?</p>
-<p>If we know the flight number, carrier, and origin, can we know for
-sure what the destination will be? ________ (<em>Yes/No</em>)</p>
-<p>Why or why not?</p>
-</div>
-</div>
-<div id="part-2-time-to-get-on-the-pipe" class="section level2">
-<h2>Part 2: Time to Get on the Pipe</h2>
-<p>In the previous section, we created a new tibble every time we wanted
-to perform a modification to the data. Behold the pipe
-<code>%&gt;%</code>, your path to RAM-saving, sleek code and my path to
-coins. The pipe <code>%&gt;%</code> is used in a similar fashion to
-<code>+</code> in the <code>ggplot2()</code> package. It’s time to take
-a magical journey through the tidyverse on the pipe.</p>
-<div id="points-6" class="section level3">
-<h3>2.1 (0.5 Points)</h3>
-<p>Start by using <code>transmute()</code> to create a new variable
-“dep_hr” based on “dep_time” which represents departure time in hours
-since midnight. Recall the code for this is
-<code>dep_hr=dep_time%/%100+(dep_time%%100)/60</code>. In the same step,
-do this also for “sched_dep_time”,“arr_time”, and “sched_arr_time”
-naming the new variables “sched_dep_hr”, “arr_hr”, and “sched_arr_hr”,
-respectively. Save all these new variables to a new tibble called
-<strong>f2a</strong>. Use the function <code>names()</code> to ensure
-that <strong>f2a</strong> only contains the new variables and the
-function <code>head()</code> to view the top 5 rows.</p>
-<pre class="r"><code>f2a=transmute(flights,
-          dep_hr=dep_time%/%100+(dep_time%%100)/60,
-          sched_dep_hr=sched_dep_time%/%100+(sched_dep_time%%100)/60,
-          arr_hr=arr_time%/%100+(arr_time%%100)/60,
-          sched_arr_hr=sched_arr_time%/%100+(sched_arr_time%%100)/60)
-names(TIBBLE)
-head(TIBBLE,5)</code></pre>
-</div>
-<div id="points-7" class="section level3">
-<h3>2.2 (0.5 Points)</h3>
-<p>Now we can create true delay variables, measured in hours, for both
-departure and arrival. Using <code>mutate()</code>, create a new
-variable “dep_delay_hr” which equals the difference between “dep_hr” and
-“sched_dep_hr”. Analogously, perform the same operation for arrival.
-Call the new dataset <strong>f2b</strong>.</p>
-<pre class="r"><code>f2b=mutate(f2a,
-           dep_delay_hr=TRANSFORMATION,
-           arr_delay_hr=TRANSFORMATION)</code></pre>
-</div>
-<div id="points-8" class="section level3">
-<h3>2.3 (0.5 Points)</h3>
-<p>Next, use <code>mutate()</code> again to create a new variable called
-“gain_hr” which is the difference between “arr_delay_hr” and
-“dep_delay_hr”, measured in hours. Within the same step, use the
-function <code>percent_rank()</code> to create a new variable
-“percent_gain_hr” which represents the percentiles of the previously
-variable you created. Notice that you can develop variables based on
-recently transformed variables in the same iteration of
-<code>mutate()</code>, but be careful little buddy because order
-matters. Name the new dataset <strong>f2c</strong>.</p>
-<pre class="r"><code>f2c=mutate(f2b,
-           gain_hr=TRANSFORMATION,
-           percent_gain_hr=percent_rank(gain_hr))</code></pre>
-</div>
-<div id="points-9" class="section level3">
-<h3>2.4 (0.5 Points)</h3>
-<p>First, critically think about what this new variable “gain_hr” is
-measuring. When <code>gain_hr==0</code>, what does that mean about the
-flight? What does <code>gain_hr&lt;0</code> and
-<code>gain_hr&gt;0</code> indicate. Use <code>filter()</code> to select
-the observations where <code>percent_gain_hr&lt;0.1</code> or
-<code>percent_gain_hr&gt;0.9</code> in a new dataset
-<strong>f2d</strong>. The tibble <strong>f2d</strong> will contain the
-bottom 10% and top 10% of flights based off “gain_hr”.</p>
-<pre class="r"><code>f2d&lt;-filter(f2c,CRITERIA)</code></pre>
-</div>
-<div id="points-10" class="section level3">
-<h3>2.5 (0.5 Points)</h3>
-<p>Finally, sort the data using <code>arrange()</code> from largest to
-smallest based on the variable “percent_gain_hr”. Name the sorted tibble
-<strong>f2e</strong>.</p>
-<pre class="r"><code>f2e&lt;-arrange(f2d,VARIABLE)</code></pre>
-</div>
-<div id="points-11" class="section level3">
-<h3>2.6 (1 Points)</h3>
-<p>Getting the original data from <strong>flights</strong> to
-<strong>f2e</strong> required multiple steps. If we know what we want to
-do with the raw data from <code>flights</code>, we can use the pipe
-<code>%&gt;%</code> to obtain the same result without intermittently
-introducing new tibbles into our global environment. Modify the code
-below so that the tibble named <strong>f2e.pipedream</strong> is
-identical to <code>f2e</code>.</p>
-<pre class="r"><code>f2e.pipedream = flights %&gt;%
-                transmute(COMPLETE) %&gt;%
-                mutate(COMPLETE) %&gt;%
-                mutate(COMPLETE) %&gt;%
-                filter(COMPLETE) %&gt;%
-                arrange(COMPLETE)</code></pre>
-<p>The tibble <strong>f2e.pipedream</strong> should identical to
-<strong>f2e</strong> in the number of observations (67,018), the number
-of variables (8), and the order of observations. We can check to see if
-the tibble <strong>f2e</strong> is identical to
-<strong>f2e.pipedream</strong> using <code>identical()</code>. You
-should see the function return <code>True</code> Can you feel the
-sensation? It’s piping hot up in here.</p>
-<pre class="r"><code>identical(f2e,f2e.pipedream)</code></pre>
-</div>
-</div>
-<div id="part-3-measuring-accuracy" class="section level2">
-<h2>Part 3: Measuring Accuracy</h2>
-<div id="points-12" class="section level3">
-<h3>3.1 (0.5 Points)</h3>
-<p>How would you measure the accuracy of individual flights? We can say
-that a flight is accurate if it leaves on time and arrives on time.
-Suppose we want to create an accuracy measure that captures this
-information where larger values indicate more inaccurate flights. Try to
-think of a creative way to measure accuracy by using
-<code>mutate()</code> to construct a new variable named “accuracy”. Call
-the new tibble <code>f.accuracy</code>. As a data scientist, the metric
-you want is not always in the raw data. This is an example of problem
-that requires a level of innovation for which a job will grant you some
-cash money.</p>
-<pre class="r"><code>f.accuracy&lt;-mutate(flights,
-                dep_hr=dep_time%/%100+(dep_time%%100)/60,
-                sched_dep_hr=sched_dep_time%/%100+(sched_dep_time%%100)/60,
-                arr_hr=arr_time%/%100+(arr_time%%100)/60,
-                sched_arr_hr=sched_arr_time%/%100+(sched_arr_time%%100)/60,
-                dep_delay_hr=dep_hr-sched_dep_hr,
-                arr_delay_hr=arr_hr-sched_arr_hr,
-                accuracy=TRANSFORMATION)
-head(f.accuracy,5)</code></pre>
-</div>
-<div id="points-13" class="section level3">
-<h3>3.2 (1 Points)</h3>
-<p>Preparing for comparisons of airline carriers on accuracy, we use the
-<code>select()</code> function to create a new tibble named
-<code>f.accuracy2</code> which only contains the variables “carrier” and
-“accuracy”.</p>
-<pre class="r"><code>f.accuracy2=select(f.accuracy,carrier,accuracy)</code></pre>
-<p>Next, we can evaluate carriers based on their average accuracy across
-all flights based on our new metric. Furthermore, the standard deviation
-of this accuracy metric can help us measure the consistency of these
-airline carriers in performance. Use the <code>summarize()</code>
-function combined with <code>group_by()</code> for quick aggregation on
-the carrier level. Calculate the average accuracy and the standard
-deviation of the accuracy for each carrier</p>
-<pre class="r"><code>carrier.summary&lt;- f.accuracy2 %&gt;%
-                  group_by(COMPLETE) %&gt;%
-                  summarize(
-                    mean.accuracy=mean(COMPLETE,na.rm=T),
-                    sd.accuracy=sd(COMPLETE,na.rm=T)
-                  )
-carrier.summary</code></pre>
-</div>
-</div>
-</div>
-<div id="lab-1b-advanced-data-transformation" class="section level1">
-<h1>Lab 1b: Advanced Data Transformation</h1>
-<div id="introduction-1" class="section level2">
-<h2>Introduction</h2>
-<p>The main purpose of this tutorial is to put together all 5 key
-functions from <strong><a href="https://dplyr.tidyverse.org/reference/index.html">dplyr</a></strong>
-and use them to create summary tables and delightful graphs in
-RMarkdown. The functions and their purposes are listed as follows:</p>
-<ul>
-<li><p><code>filter()</code> <em>Selects Observations Based on
-Values</em></p></li>
-<li><p><code>arrange()</code> <em>Sorts Observations Based on
-Criteria</em></p></li>
-<li><p><code>select()</code> or <code>rename()</code> <em>Selects,
-Deselects, Renames, and Reorders Variables</em></p></li>
-<li><p><code>mutate()</code> or <code>transmute()</code> <em>Creates New
-Variables Which Were Originally Nonexistant</em></p></li>
-<li><p><code>summarize()</code> <em>Aggregates the Data Based on Helpful
-Summary Statistics</em></p></li>
-</ul>
-<p>To further incite your anger towards the airline industry, we will
-continue to practice our skills using the dataset <code>flights</code>
-by loading the R package <code>nycflights13</code>. Until we learn how
-to fly, this dataset remains relevant.</p>
-<blockquote>
-<p>I’ll spread my wings, and learn how to fly. I’ll do what it takes
-till I touch the sky.</p>
-<p>– <cite>Kelly Clarkson</cite></p>
-</blockquote>
-</div>
-<div id="part-1-summarizing-the-data-4-points" class="section level2">
-<h2>Part 1: Summarizing the Data (4 Points)</h2>
-<p>Using the pipe <code>%&gt;%</code> to chain functions from
-<code>dplyr</code>, modify the code below to create a dataset named
-<code>flight.summary</code> that contains the following ordered
-modfications:</p>
+<div id="instructions" class="section level1">
+<h1>Instructions:</h1>
+<p>The purpose of this mini project is to get you familiar with
+<em>Git</em> and <em>Github</em>. <em>Git</em> is a version control
+system for tracking changes to files. Data scientists need to be
+familiar with Git since it is a mechanism for keeping track of changes
+in your code as you modify it. <em>Github</em> allows you to back-up
+your <em>Git</em> repositories in the cloud. It also provides you with a
+method of collaborating with others on projects and a method of sharing
+your work with others. Many data scientists use <em>Git</em> and
+<em>Github</em> regularly. I provided you with an article in the special
+reading section written by <a href="https://github.com/segunajibola">Segun Ajibola</a>.</p>
+<p>Below is a list of all of the things I want you to do:</p>
 <ol style="list-style-type: decimal">
-<li><p>Starts with the raw dataset <code>flights</code> in the package
-<code>nycflights13</code>.</p></li>
-<li><p>Transform delay variables so that they are measured in minutes
-since midnight, and then create a metric to measure accuracy based on
-those transformed delay variables. <strong>Use the geometric distance
-like seen in lecture.</strong></p></li>
-<li><p>Remove missing observations.</p></li>
-<li><p>Group data based on combinations of “origin”, “dest”, and
-“carrier”.</p></li>
-<li><p>Summarize the data using the number of observations, the accuracy
-mean, the accuracy variance, and the mean distance for each combination
-of “origin”, “dest”, and “carrier”.</p></li>
-<li><p>Filters summarized data to remove all combinations of “origin”,
-“dest”, and “carrier” with less than or equal to 10 flights throughout
-2013.</p></li>
-<li><p>Release the grouping constraint using the function
-<code>ungroup()</code>.</p></li>
-<li><p>Create a variable called “proportion”” that represents the
-proportion of flights within each combination (with more than 10
-flights).</p></li>
-</ol>
-<pre class="r"><code>flight.summary = 
-  
-  #1
-  RAWDATA %&gt;%
-          
-  #2
-  mutate(
-    dep_min       = (dep_time%/%100)*60+dep_time%%100,
-    sched_dep_min = (sched_dep_time%/%100)*60+sched_dep_time%%100,
-    arr_min       = (arr_time%/%100)*60+arr_time%%100,
-    sched_arr_min = (sched_arr_time%/%100)*60+sched_arr_time%%100,
-    dep_delay_min = dep_min-sched_dep_min,
-    arr_delay_min = arr_min-sched_arr_min,
-    accuracy      = ACCURACY_FORMULA
-  ) %&gt;%
-  
-  #3
-  filter(CRITERIA) %&gt;%
-  
-  #4
-  group_by(VARIABLES) %&gt;%
-
-  #5
-  summarize(
-    count=FUNCTION1,
-    mean.acc=FUNCTION2,
-    var.acc=FUNCTION3,
-    mean.dist=FUNCTION4
-  ) %&gt;%
-  
-  #6
-  filter(CRITERIA) %&gt;%
-  
-  #7
-  ungroup() %&gt;%
-  
-  #8
-  mutate(proportion=FORMULA)
-
-head(flight.summary) #DO NOT CHANGE THIS LINE OF CODE</code></pre>
-</div>
-<div id="part-2-building-charts-from-summary-data" class="section level2">
-<h2>Part 2: Building Charts From Summary Data</h2>
-<div id="point-1" class="section level3">
-<h3>2.1 (1 Point)</h3>
-<center>
-<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAGQCAMAAABF6+6qAAABGlBMVEUAAAAAADoAAGYAOmYAOpAAZmYAZrYAujgzMzM6AAA6ADo6AGY6OgA6Ojo6OmY6OpA6ZmY6ZrY6kJA6kLY6kNtNTU1NTW5NTY5NbqtNjshhnP9mAABmADpmAGZmOgBmOmZmOpBmZgBmZmZmkJBmtttmtv9uTU1uTY5ubqtuq6tuq+SOTU2OTY6ObquOjk2OjsiOq+SOyP+QOgCQOjqQOmaQkDqQ2/+rbk2rbo6r5P+2ZgC2Zjq2Zma2kDq2tma225C2/7a2/9u2///Ijk3Ijm7Ijo7IyP/I///bkDrbtmbb25Db/7bb/9vb///kq27kq47k/8jk///r6+vy8vL4dm3/tmb/yI7/25D/5Kv//7b//8j//9v//+T///9FrhYyAAAW/ElEQVR4nO2dC3/cRhXFt6FknRYIDy8kdinlYSguARyKQ1yeTiAm1A5eZDt2ou//NdBbI2kkjbQzc+/cPffXbtbrm+MjzT9zZ0YjeREjEA5iQW0AITMAFsJJACyEkwBYCCdhCta6Ge2vB8NdMhcfQZrWZgMsVj6CNA2wSKTlmwZYJNLyTQMsEmn5pgEWibR80wCLRFq+aYBFIi3fNA+wEIhJgR7LezJrHwCLlY8gTQMsEmn5pgEWibR80wCLRFq+aYDlW3q5dKU8IxtgWTpc+jZaLlOyAjNtywfAcicNsAAWSqFtHwCLlY8gTQMsEmn5pgEWibR80wCLRFq+aYBFIi3fNMAikZZvGmCRSMs3DbBIpOWbBlgk0vJNAywSafmmARaJtHzTAItEWr5pgEUiLd80wCKRlm8aYJFIyzcNsIyys01UVD4Alliw8m2fVD4AFsBy4gNgiQULpdCOD4DFykeQpgEWibR80wCLRFq+aYBFIi3fNMAikZZvGmCRSMs3DbBIpOWbBlgk0vJNAywSafmmARaJtHzTAItEWr5pgEUiLd80wCKRlm8aYJFIyzcNsEik5ZsGWCTS8k0DLBJp+aYBFom0fNP+wXr/bPXoMnl5HGcvAMtuMmsfTsG6OEr+uz6MX+QvAMtuMmsfTsH652+THuvN8/j6MHuJ452dHWs/ELEdoQMr6aSuD18+L1+yz7z9OwryH3+Qpgl6rFdlZ/UGYNlPZu3DKVjJGOsaYyxnyax9OAULs0Knyax9OAVLF94ON8g2CtI0wCKRlm8aYJFIyzcNsEik5ZsGWCTS8k0DLBJp+aYBFom0fNMAi0RavmmARSIt3zTAIpGWbxpgkUjLNw2wSKTlmwZYJNLyTQMsEmn5pgEWibR80wCLRFq+aYBFIi3fNMAyyTb4jSf8TDP0AbCa2Sa/o4mdaY4+AFYzG2BZ8gGwWtkohXZ8ACxWPoI0DbBIpOWbBlgk0vJNAywSafmmARaJtHzTAItEWr5pgEUiLd80wCKRlm8aYJFIyzcNsEik5ZsGWCTS8k0DLBJp+aYBFom0fNMAi0RavmmARSIt3zTAIpGWbxpgkUjLNw2wSKTlmwZYJNLyTQMsEmn5pgEWibR80wCLRFq+aYBFIi3fNA+wEIhJgR7LezJrHwCLlY8gTQMsEmn5pgEWibR80wCLRFq+aYBFIi3fNMAikZZvGmCRSMs3DbBIpOWbBlgk0vJNAywSafmmARaJtHzTAItEWr5pgEUiLd80wCKRlm8aYJFIyzcNsEik5ZsGWCTS8k0DLBJp+aYBFom0fNMAi0RavmmARSIt3zTAIpGWbxpgkUjLNw2wSKTlmwZYJNLyTQMsEmn5pgEWibR80wCLRFq+aYBFIi3fNMAikZZvGmCRSMs3DbBIpOWbBlgk0vJNAywSafmmARaJtHzTAItEWr5pgEUiLd80wCKRlm8aYJFIyzcNsEik5ZsGWCTS8k0DLBJp+aangnXz8LzxJ8BilszahyEOAIthMmsf3ZY/Wyx245vvfHrvbw/Prxb3/nhw8/D1d/cX9wEWt2TWPjoNf/Px6e0nxzcfHScl8D+fHN/up2Aln/34dA5Ybz+/fP9s9TjOXgCW3WTWPjooXCVd08lBOq5KgEpe0/fJn+/+cDwDrPfPHl1eH8YvjrIXgGU3mbUPt2Bd/PrJ5Zvn8fVh9hLHOzs7wyoIsVGUwgysqhTOBOvt5/99cvkyZeplDlaMHstiMmsfXRqSwftBnIOVDt5/Ohmsqw/P0yFaEher1epQ7bEAls1k1j6GaYnjUaA6YGV/o1z7unuCMZazZNY+BmG53U+XHiaClc0fy0lkAhZmha6SWfswxGYCWO+eHmTlsCfP2+EG2UZBmva18p72c/d6V728HW6QbRSkaVzSIZGWb9oXWPWsEGA5TWbto9vy/2vFVLAas0KAtQWmPYHVmBUCrC0w7avHwqzQUzJrH/bBwqzQVzJrHw7AGg5vhxtkGwVp2hdYZ4vFQJfl7XCDbKMgTU8CK4qaYF2ltPwimfDlWwBfP1i0rvbUg/dPjk8Orno3nHo73CDbKEjTpmBFalRgZRSdHcRnP9tNvrj5Xvv6tDorPNvFrNBDMmsf08BKePrz3z87/+p4AKzk46v7AMtDMmsfGrB6S+G909vP/vPZ11/+48vTm/5SGF99+PXT/k0R3g43yDYK0vRGg/e8x4r//Nfd+Ozn30u7rtbiOmaF3pNZ+5gI1tm3D+Krb++mYMXNAXoTLJRCD8msfRiDtchq383Hp+m0LwMrPlHrHXos78msfZiCNRoAy3syax8OwMICqadk1j7sg5VWyoHwdrhBtlGQpn2BNXwzvrfDDbKNgjRtCNbMqEvhyQHA8pLM2ke35TfusfYxxvKTzNqHfbBGwtvhBtlGQZrGrJBEWr5pf7NCbJvxkszahwOwsG3GUzJrH31gLZcdsL46zvc0pJcNzzo9ErbNeE9m7UMD1lKNJljpFcL0evRVd1cMts14T2btYxZY+Z99YA2Ht8MNso2CNG2nFN47vfr+vqY/atz+9Yv+p2p5O9wg2yhI05sO3qse694/NNyoN6zmzzAFWI6TWfswBevk4N2Xp9UYSzM2V2eFJwcYvHtIZu3DFKykCt6PK7A0t9A3eyzcYu8hmbUPU7BGA7fYe09m7cMBWMPh7XCDbKMgTQMsEmn5pn2BdYKL0H6SWfswxGYCWNhB6iuZtY9uy2/cY32FPe9+kln7cABWkPuxlksWPgBWP1hBlsL0sigHHwCrH6wgSyHAsu3DPlhh3kyBUmjZh32wEAht5Djt7TXBKh689iB/KtZJd0s7Fki9J7P2oQFrT40GWOnd8+lz/G5/8pP+3Q0Ay1cyax+TwCp3JJ/tnnXudgZY3pNZ+9CA1V8KE5yuklqYdFrdjXwAy3syax99YLUH73WPdbWbjrQ+aK8pSADLdGrIyjR98uZgZU8oOtlNn/rRuU9HAFjGi1mcTDNI3gysxWJxP/8l0fpf7wWwvCez9mEK1mgIAAul0KIPgMXKR5CmARaJtHzThmDNDIDlPZm1D4DFykeQpgEWibR80wCLRFq+aYBFIi3fNMAikZZvGmCRSMs3DbBIpOWbBlgk0vJNAywSafmmgwBrb8/W4QbZRkGaDgGsdDe0pcMNso2CNA2wbGUzSWbtgxlYKIU8pOWBZe9wg2yjIE0DLBJp+aYBVhQ5k6ZIZu1jm8CKon6ymLQRwAocrA5hTNoIYIUI1lrhqk0WkzYCWEGCVQXAcu5jO8FCKXTuY0vB8igt3zTAIpGWbxpgkUjLNw2wSKTlmwZYJNLyTQMsEmn5pkMCS/9AIfltFKTpgMDqeQSa/DYK0nQgYKVIAazgfbADK2dKXik0e1ogM9MbZDMFy8Lh8mojw+eb8jK9STY7sIb+aQOsjX24SA4ErCyslMLBGzM2k56ejFLIASwrg/fhW8k2kuaRzNqHU7Duvlj96NX7Z6vHcfZiE6yB7etlMsCi9OEUrIuj+OLw+jB+cZS9WARraPt6lcyqFDpIZu3DKVhJXB+9eR5fH2YvcbyzszOms7eXvKRgDWalYM1xiQgu9GDdPbl8mTL1MgcrNrgTOutnRgfvBqVwLGF+tnlychzosRyAdfebV7HaYxmDpY0ppY1HG2U9rzMb2wvW21+9iuOJY6whriaRxaGNAJYbsF6sVqvDObNCbQQIFkqhG7B0scERhFcK3Saz9hESWFvQRkGaBlgk0vJNCwervUIRZBsFaVo2WJ3F+iDbKEjTAGumNNdk1j4AlmUfHpNZ+wBYln14TGbtI1iwOhcLMXhn5SNUsMb3zQTZRkGaBli2spkks/YRKliD+2ayaz9BtlGQpmWBNRD51eog2yhI0wBrpnRn1yHnBuXiQyJYlkthdwM+5wbl4kMkWNOTAZZtHwBrPBulcEY2wMpi/N4MPz4AljOwSH4RpsFtivN9mN1cP0MZYE0Aa3Bje5BgGT4OZIYywPIMVg7JnFJoiADAGs/mBpaFUlh0PzPOjSkDKIXj2ezAmnu4dS3jBpazZNY+pICljpJmlMIi20UpBFhiwJqhPCXb5c3NwYC1rEM2WBv+orgJ2ZMG41N98AZrqQ3hYI0mD+MAsHqS9TCN7wLfGrBGeEApVMOEphFpgOXZh8Vkd8MmA5jGpEMEa97R2iqFfJI3HRr0x3bOCg3/HSnKBtdrmLDiGqxBmqz64AqWloWZYA1dCSylmLDiBKwZNU4qWHt7WhYapXDsaVlGYFVneH7zj1FOBNb8EZMdH9zAyo49vRI9AFYWo8/3izOFLGmow9oULLv/+Ddr0MEat90r7/l5yMDScDMJrKyfGs3a+LSTg2UwYvLio/0ZK7Ci4pQkNOiQaCSPlUIzsPQ+piSTlELXwyZhYCUoVGenREIFY9q5qUuhSXb+x3JpsuHP++C9p1dyN2ySB1ZUvluXXCloOD83aUMZkOUHrHGaOM9OWYG1rrkq36lguX9qMj1Yk3olgGUKVhnKAoHKVfHeDLBZ54akFM6ucQBrKljaBYJ61GVE1qSRPpth0xRlgDUdLG1UHdZksMb/CuWwaa4ywJoFlnLCSyri9YSZHhuwpnRNAMs5WMrJr7CItWOvoaOt5wAm2aYxmNw3kTMqdABrNlimkbZD8TYFK3+X//7L9P/6s6Hw9vsyh2jyYkBu2FnHUr7oLYWGS+qpclTN8qw+WLKaQpr0SuVCxhTlaT6ok3n0WAOeRm90j5U0HVeNz9LkqqHNpA32bU2vcdUFvVHtNcDyAJYKSWulua/9m73YdLCUC0rNmDtiqk0DLEqwFGL2MkgKTqpWGTncLlh1BTIphVGj+QdgmtFGKIWUYFWxV0X2Rd2gw3x0SuHa+MlXVb9iPmwyDM8NysUHY7CKHih9LUvhhMcNFWWt/BsDf2/msMko8Kt7+YBVrIFWK6FKgYvTUZAZWmVZK8BSiezrl8wHTsanPRWsppBWladnbztYOQIqCHWBi/PtByZkVeOlfEQ+ipKb016DZcgswHIHVrb01Kx59azQGKycrOE+Sf0hm5/2JjiJcvJfBZZpZwiwnIFVlbDOR1lylyv166ItNTDplhL0YM288NIkJ8qjBMt+kZ2eveVgFSWs0WN16lWTpV6ait3zuZ6uaRWdyocJArPAGhPtVbaUvd1glbve+0phmRStx66o5O/Lkb8OrEbXtzFY2lJYzgojsw2EAMsdWGUL9NwJPTJs6tCY3UiWf6fLlZq9cSkcTjZdJQFYtsEqepZ2f9EDksJTbw8TF7p9S186sKasppoG1rEowYr2lBhBqYiy1o3smetfU+2WQtP1V/RY49k8wEoL1V47UnKiWVErF0OdNAweYzQLrFJ3CHDjKwYAyypYxfypiA5heZul4+B5nA3y1zg3M5q/tySrM46od+PEgLLl7C0FK7/ukn6RLTqt1QvRFWBxfX2nmOZFxRXqxsaGmf2cEYCdE9kHVt7fVkdoMtnsaSJL2dsI1lq5nlc3VJmiISwdkudg1U97qMjKP8leyw6wKViEZfyidoeVgLWsHikMsEjAyiJrnHKI3miIbKylAWxPWUaoyapQW+c09exhbi5tDZ1Ju/wN/CCA5QSstcKVZiE7+6zaTtMGrNllrcvdNlGjRjbCAKzGdcWRE+mVv0Ef3pPZg1UuW5XvlG9Uw6/6Zug+wtb1EK2cCOhPR2NAPXKVpm7q9E/D054fTVx+oUh5BrD3CO0kcwarnrPrSmEeURTndS0ZYVUjp7VmFpl/LyNrCKxGFD9Ns1JW/Owoqt+YnfalCtbkMZZl/qZBKAas+rRnC1ptsorhujLOSrOy9KiBToevpTFXJc66mzjWrefgGJ32cknX8eDdDYDywCrX4NV19gISFazimmLJVfOJpX092MCpqcAaBbF12gcfm7usZ4UsdpBa52/ABw+wmnenlr1N+WkLj6xLyw9MAUvdSZN9oq2QDWhUHstSaNDDqb/ypDq/7RXQasU3xOWGqXQxBksJpY4tu2TlS1TKDuYuWFGkpi+rOWO3C1PIqu4/NOBKswm1vS0nynbnhwqWYXJQYKlj8WK0pYBSs1YcU/q9NK219a+aMSpdUA9gzVsXp4K1Vjqs5setBVIWpdBRcghg5UvljeIXRTVr62V5K1hBQJTTVv71alVi3ViS0Ayw+gibWAqVQb2uFE4eBwcHVn3Vqq3AD6xltlylgFUBoj4LpPimwkRJm3KRp2RKi4uGrYZaf2jGWN0opx+iwcqPnz9Y1Yh3XcC0rsCKiuJY7Agt72NtkJVnNsFK/7p+/b2BUdy8+zo/afVrn+kBsNYAixdYe9Xz3YtGztmJSrLKpixLoEpN/jYfsMdKH6QfOWVyTR/ZmE09Z1pyGqWwd/C0DWCFUgqLq4HFlZny3bINVlTVuXU9gFJKXlU7K7C03cpSWQ+twGpND5T1BJ1p/d0/tXzPWe+N4MDqfYoAK7CqKeE6X2RSrtrkc70CsahKq3urCqa1DqyeU1LPGUsfCiiNUtizIDgAVtmXCQdLuRzaVOABltI11WxUbVbfEVZ0P420esylPFh5Hak7IXpPSvnN5pMd8neNbq5vpbm/FA4t8vQGwLILVtG+yxyn8pPOmmNUVUeVrGrMVR/rupoHqM/+0wFWcqWslBZ3oLVGV/pS2DjDrQ/UvfemER5YvEuhMpqqV9u7W2fieqC+7HRZypGWO0grSBo/RBMqROVN/AMTPt2JbJhVfUsHqyebB1jVumcKlqYqVcnK9K7uulqS9U6FZUNhAKxGf6TuvNLHGFiNHwuwCMFSLzdrbq0fOgDNjYXloLkF1uD+hs1Pe6PDAlhMwCpiqFPRH0D/4DxLNrtCp5feIBmlkBlYw5um+sHS/a0g2yhI0yGANf0AABZ5skyw1n3dXJBtFKRpsWBZSObiI0jTAItEWr5pgEUiLd80JVjvn60eAyzLyax9eALr+jB+cQSw7Caz9uEJrDfPU7binZ0daz8QsR0xDNbLHKwYPZbFZNY+PIH1BmDZT2btwxNYGGM5SGbtwxNYmBU6SGbtwxNYdXg73CDbKEjTAItEWr5pgEUiLd80wCKRlm+aB1itcLdg6nApFqa9SQMs7sqBSgMs7sqBSs8GC4EYDoCFcBIAC+EkABbCScwBq76CaDEujnLd+sVS3H2x+tErJ9ItUbun5e3nl26kE60fPnfluo45YNV7HuzFi9VRrlu/WFJOiL04dCKdSL187sZ00t6PLt1I3/0ujh2dajXmgFXv0rIWd/9K2j/TrV/sqV8fOZJ+/6dXjpQvfv3k0o3021+uHjmSVmMOWC9deEnAynTrF2vSd08u3UjfffHYkem3n//XlelE6O3vXZ3qOpj0WBlYjv4Z3f3mlbPOUBW1qXyxWq0cScfuXKvBZYyVguWm8L/91StHY4rMsqvRStLNOhtzXh+5cl2H/Fnhi/Qfv6tZ4SNHU7cMLGezQndz2TqwjoVwEgAL4SQAFsJJACyEkwBYCCcBsBBOAmAZxLunBzcPz7O3t5+dE5sJJACWQSRglW9LwBAjAbCSuPnOp4sfPF3sxleLxf04Pktfb767n76P0y+/8WnSY339dLHYffd08SHIMgmAlcTNR8fpfw9fJ93RSVr1bn98evPxafKafvPj05sHyYf/vh+nH6PHMguAFWf1Lfvv34skduObB4sPEszO3/3hOPnm2W6c0fb6QdqDASzDAFixAlZW+67und5+0gXrPAXuAGAZBsCKa7Bef3ScjNOv7sdXSo+V1sT9BKi/JNSd7AIswwBYcQ3WeTZ4v91ffDMlKQUrHWadLT74VvrlySIZuN/uY/BuFAAL4SQAFsJJACyEkwBYCCcBsBBOAmAhnATAQjiJ/wONDN0fstsl0QAAAABJRU5ErkJggg==">
-</center>
-<p>The purpose of creating this plot was to investigate if flight
-accuracy gets worse or better for longer flights. The chart above
-displays the approximated linear relationship between flight accuracy
-and flight distance for each the 3 NYC airports. This first image was
-created using a combination of <code>geom_point()</code> and
-<code>geom_smooth()</code>. Recreate this image using
-<code>ggplot()</code> and remember to modify the defaults of
-<code>geom_smooth()</code> to get linear trend lines without standard
-error regions.</p>
-<pre class="r"><code>ggplot(data=flight.summary) +
-  geom_point(MORE)+
-  geom_smooth(MORE)</code></pre>
-</div>
-<div id="point-2" class="section level3">
-<h3>2.2 (1 Point)</h3>
-<p>The first thing we notice is that not many flights are over 3000
-miles in distance. Design a new plot similar to the one above that
-ignores the scenarios where the distance exceeds 3000. This will prevent
-rare occurrences from effecting our linear trend comparison and present
-these relationships in a zoomed-in window where the majority of data
-exists.</p>
-<pre class="r"><code>ggplot(data=filter(flight.summary,CRITERIA)) +
-  geom_point(MORE)+
-  geom_smooth(MORE)</code></pre>
-</div>
-<div id="point-3" class="section level3">
-<h3>2.3 (1 Point)</h3>
-<p>Answer the following question using complete sentences:</p>
-<p>Each trend line is doing different things. Which of the three
-originating airports is doing the worst regarding the relationship
-between flight accuracy and flight distance? Explain why.</p>
-<p>REPLACE THIS WITH YOUR ANSWER</p>
-</div>
-</div>
-<div id="part-3-build-a-nice-table-to-be-displayed-in-rmarkdown-1-point" class="section level2">
-<h2>Part 3: Build a Nice Table to Be Displayed in RMarkdown (1
-Point)</h2>
-<p>The dataset we created, <code>flight.summary</code>, summarizes the
-raw data but still contains 370 observations. Below I have provided
-code, that produces a dataset called <code>flight.summary2</code> that
-only contains the top 5 and bottom 5 combinations of “origin”, “dest”,
-and “carrier” based on mean accuracy. Closely examine this code and
-ensure that you understand what is happening here. Set
-<code>eval=T</code> to create <code>flight.summary2</code>.</p>
-<pre class="r"><code>flight.summary2 = 
-  flight.summary %&gt;%
-  mutate(rank=min_rank(mean.acc)) %&gt;%
-  filter(min_rank(mean.acc)&lt;=5 | min_rank(desc(mean.acc))&lt;=5) %&gt;%
-  arrange(rank)</code></pre>
-<p>The <code>kable()</code> function in the <code>knitr</code> package
-allows for creating HTML tables. For information about the
-<code>kable</code> package, click <strong><a href="https://bookdown.org/yihui/rmarkdown-cookbook/kable.html">here</a></strong>
-Furthermore, the <code>kableExtra</code> package allows you to add
-beauty to those internet-ready tables. Click <strong><a href="http://haozhu233.github.io/kableExtra/awesome_table_in_html.html">here</a></strong>
-for a helpful introduction.</p>
-<p>Once you understand the function of <code>kable()</code> and the
-modifications you can apply, start an R code chunk to place the
-information required to produce an HTML table of
-<code>flight.summary2</code>.</p>
-<pre class="r"><code>#</code></pre>
-</div>
-<div id="part-4-additional-questions-2-points" class="section level2">
-<h2>Part 4: Additional Questions (2 Points)</h2>
-<p>In this class you will be forced to analyze data you probably care
-very little about. <em>This is the part in the class where you begin to
-act like you care.</em> An important rule in this class is to “love thy
-data as thyself.” Consider the <code>flights</code> data from both the
-view of the airline executive and the customer. Given what you know
-about the data, write two questions that you would want to answer that
-would influence how you buy airline tickets.</p>
-<ol style="list-style-type: decimal">
-<li><p>WRITE A QUESTION HERE THAT YOU COULD ANSWER FROM THE DATA YOU
-HAVE</p></li>
-<li><p>WRITE A QUESTION HERE THAT WOULD REQUIRE YOU TO GET ADDITIONAL
-INFORMATION AND HOW WOULD YOU GO ABOUT GETTING THAT INFORMATION OR WHERE
-COULD YOU GO TO GET THAT INFORMATION</p></li>
+<li><p>Sign-up to <a href="https://github.com/">Github</a>. Although
+there are options that cost money, you should not pay any money. Some of
+you may already have an account with Github and that is fine.</p></li>
+<li><p>Next, you should upload a picture of you and edit your profile to
+have a very short paragraph of who you are. See <a href="https://github.com/SuperMarioGiacomazzo">my github</a> for an
+example of what I want. Look for the <strong>edit profile</strong>
+button on the left.</p></li>
+<li><p>Download <a href="https://git-scm.com/download">Git</a> to your
+local computer. This will make it possible for you to create
+<em>Git</em> repositories on your computer for tracking changes to files
+associated with those repositories. Check out the youtube video in
+special reading for an introduction into Git.</p></li>
+<li><p>The next step is creating a <em>Git</em> repository on your local
+computer that is also a <em>Github</em> repository on your account. I
+use <a href="https://desktop.github.com/">Github Desktop</a> on my
+computer instead of the command prompt (terminal if on Mac). There are
+download links for Windows and Mac. <em>Github Desktop</em> is a program
+you need to download and install to your local computer. The best
+analogy I can give is that <em>Git</em> is like R and <em>Github
+Desktop</em> is like RStudio. Watch the Youtube videos in special
+reading about github desktop.</p></li>
+<li><p>After watching the videos, I want you to use <em>Github
+Desktop</em> to create a <em>Git</em> repository named after you. Start
+by using <em>Github Desktop</em> to create a <strong>New
+Repository</strong>. To do this, yous will need to know the local path
+on your computer to the folder that you want to contain the <em>Git</em>
+repository. Then, I <strong>Name</strong> the new repository
+<em>MarioGiacomazzo</em>. You should use your name. Then, when you click
+<strong>Create Repository</strong>, you should go to the local path and
+you will see a subfolder named after you that has been created. There
+will be files in your repository that <em>Git</em> will edit whenever
+you <strong>Commit</strong> changes to the folder.</p></li>
+<li><p>Now, I want you to find some project or writing you did from the
+past of which you are proud. This could be a paper from a class, a data
+analysis, short story, etc. A lot of companies and graduate schools want
+to see writing samples and if you are in 520, you should have at least
+one paper or project of which you are proud. Copy and paste your writing
+sample into the folder on your computer that is now a <em>Git</em>
+repository.</p></li>
+<li><p>Now, <em>Github Desktop</em> should identify that a change has
+been made to the repository. The change is that you added a file that
+didn’t exist before. At the bottom of <em>Github Desktop</em> you should
+see a spot to make a comment or summary. <em>Git</em> requires you to
+give a short summary to remind you why the change was made. I would keep
+this short like “Writing Sample”. Once you provide a summary on why a
+change was made, then you will be able to <em>Commit</em> the changes.
+This tracks the change to the repository with the summary of why the
+repository was changed.</p></li>
+<li><p>Connect your <em>Github Desktop</em> to your <em>Github</em>
+account. After this, you should be able to <strong>Push</strong> these
+changes to the internet using a button in the top right of <em>Github
+Desktop</em>. Once you <strong>Commit</strong> the changes on your
+computer and then <strong>Push</strong> the changes to your
+<em>Github</em>, you should be able to login to your <em>Github</em>
+account and see the new repository that is named after you along with
+your writing sample inside the repository.</p></li>
+<li><p>Once you have completed this, you will need to insert the
+hyperlink to that <em>Github</em> repository. Follow the directions
+after the special reading section to insert your hyperlink. Then, knit
+this document to an HTML and submit the HTML to Canvas.</p></li>
 </ol>
 </div>
+<div id="special-reading" class="section level1">
+<h1>Special Reading</h1>
+<ul>
+<li><a href="https://www.freecodecamp.org/news/introduction-to-git-and-github/">Intro
+to Git and Github</a></li>
+<li><a href="https://www.youtube.com/watch?v=USjZcfj8yxE">Git
+Introduction</a></li>
+<li><a href="https://www.youtube.com/watch?v=7NNI9uW8R_o">Github Desktop
+1</a></li>
+<li><a href="https://www.youtube.com/watch?v=8Dd7KRpKeaE">Github Desktop
+2</a></li>
+<li><a href="https://www.youtube.com/watch?v=PvUexC0-D2s">Github Desktop
+3</a></li>
+</ul>
+</div>
+<div id="link-to-github" class="section level1">
+<h1>Link to Github</h1>
+<p>Once you have completed all the tasks I asked of you, replace the
+FIRSTNAME and LASTNAME appropriately and replace the PUT_URL_HERE with
+the web address to your github repository that you created.</p>
+<p><strong>This needs to be a public repository. It should not be
+private. I need to be able to verify that you did this
+assignment.</strong></p>
+<p><a href="PUT_URL_HERE">Github Repository for FIRSTNAME
+LASTNAME</a></p>
+<p><strong>After you have completed this mini project, knit this file to
+an HTML file and submit to Canvas by the due date</strong></p>
+</div>
+<div id="rubric" class="section level1">
+<h1>Rubric</h1>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Task</th>
+<th align="center">Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">Added Photo for Github</td>
+<td align="center">5 Points</td>
+</tr>
+<tr class="even">
+<td align="center">Edited Profile with Paragraph</td>
+<td align="center">5 Points</td>
+</tr>
+<tr class="odd">
+<td align="center">Link to Github Repository Works</td>
+<td align="center">5 Points</td>
+</tr>
+<tr class="even">
+<td align="center">Writing Sample is in Repository</td>
+<td align="center">3 Points</td>
+</tr>
+<tr class="odd">
+<td align="center">Followed Instructions</td>
+<td align="center">2 Points</td>
+</tr>
+<tr class="even">
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
 </div>
 
 
