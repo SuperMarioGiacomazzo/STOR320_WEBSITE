@@ -184,15 +184,6 @@ Data Science can be defined as the intersection between mathematics/statistics, 
 
 
 
-
-
-
-
-
-
-
-
-
 # **Assignment Tracker**
 
 All HW, Lab, and Mini Project assignments are to be submitted via Canvas. Unzip folder and complete your homework using **Rmd** file. Midterms will be taken on paper in class. The table below shows all the assignments sorted by the assigned date. 
