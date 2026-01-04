@@ -113,12 +113,12 @@ Data Science can be defined as the intersection between mathematics/statistics, 
 
 | Date | Lecture | Slides | Supplement |
 |:---------:|:---------:|:---------:|:---------:|
-| JAN 7 | Introduction | [Slides](Lecture/Introduction/Intro_Lecture.pdf)||
+| JAN 7 | Introduction | [Slides](Lecture/Introduction/Intro_Lecture.pdf)| No Labs This Week|
 | JAN 9|Data Visualization|[Slides](Lecture/Data Visualization/Data_Visualization_Lecture.pdf)|[Preview](Supplement/Data Visualization/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Data%20Visualization/Supplement.zip))|
 |JAN 12| Workflow in RMarkdown | [Slides](Lecture/Workflow/Workflow_Lecture.pdf) ||
 |JAN 14| Data Transformation I | [Slides](Lecture/Data Transformation 1/Data_Transformation_1_Lecture.pdf) ||
 |JAN 16| Data Transformation II| [Slides](Lecture/Data Transformation 2/Data_Transformation_2_Lecture.pdf) ||
-| JAN 19 | MLK | No Labs This Week ||
+| JAN 19 | MLK |  |No Labs This Week|
 |JAN 21| Data Transformation III | [Slides](Lecture/Data Transformation 3/Data_Transformation_3_Lecture.pdf)||
 |JAN 23| Data Transformation IV | [Slides](Lecture/Data Transformation 4/Data_Transformation_4_Lecture.pdf)||
 |JAN 26| Exploratory Data Analysis I  | [Slides](Lecture/Exploratory Data Analysis 1/Exploratory_Data_Analysis_1_Lecture.pdf) ||
@@ -127,7 +127,7 @@ Data Science can be defined as the intersection between mathematics/statistics, 
 |FEB 2| Data Import | [Slides](Lecture/Data Import/Data_Import_Lecture.pdf)||
 |FEB 4| Tidy Data I | [Slides](Lecture/Tidy Data 1/Tidy_Data_1_Lecture.pdf) ||
 |FEB 6| Tidy Data II | [Slides](Lecture/Tidy Data 2/Tidy_Data_2_Lecture.pdf) ||
-| FEB 9 | Well-being Day| No Labs This Week ||
+| FEB 9 | Well-being Day|  |No Labs This Week|
 |FEB 11| Web Scraping| [Slides](Lecture/Web Scraping/Web_Scraping_Lecture.pdf) | [Preview](Supplement/Web Scraping/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Web%20Scraping/Supplement.zip)) |
 |FEB 13| Joins I | [Slides](Lecture/Joins 1/Joins_1_Lecture.pdf) ||
 |FEB 16| Joins II| [Slides](Lecture/Joins 2/Joins_2_Lecture.pdf) ||
@@ -142,17 +142,17 @@ Data Science can be defined as the intersection between mathematics/statistics, 
 |MAR 9| Modeling 3 | [Slides](Lecture/Modeling 3/Modeling_3_Lecture.pdf) | [Preview](Supplement/Modeling 3/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%203/Supplement.zip)) |
 |MAR 11| Modeling 4 | [Slides](Lecture/Modeling 4/Modeling_4_Lecture.pdf) | [Preview](Supplement/Modeling 4/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%204/Supplement.zip)) |
 |MAR 13| Modeling 5 | [Slides](Lecture/Modeling 5/Modeling_5_Lecture.pdf) ||
-|MAR 16 | Spring Break| No Labs This Week  ||
-|MAR 18 | Spring Break| No Labs This Week ||
-|MAR 20 | Spring Break| No Labs This Week ||
+|MAR 16 | Spring Break|   |No Labs This Week|
+|MAR 18 | Spring Break|  |No Labs This Week|
+|MAR 20 | Spring Break|  |No Labs This Week|
 |MAR 23| Modeling 6 | [Slides](Lecture/Modeling 6/Modeling_6_Lecture.pdf) ||
 |MAR 25| Modeling 7 | [Slides](Lecture/Modeling 7/Modeling_7_Lecture.pdf) | [Preview](Supplement/Modeling 7/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%207/Supplement.zip)) |
 |MAR 27| Modeling 8 | [Slides](Lecture/Modeling 8/Modeling_8_Lecture.pdf) | [Preview](Supplement/Modeling 8/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%208/Supplement.zip)) |
 |MAR 30| Modeling 9 | [Slides](Lecture/Modeling 9/Modeling_9_Lecture.pdf) | [Preview](Supplement/Modeling 9/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%209/Supplement.zip)) |
 |APR 1| R Shiny | [Slides](Lecture/R Shiny/R_Shiny_Lecture.pdf)|Preview([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/R%20Shiny/Supplement.zip))|
-|APR 3 | Best Friday| Labs Will Occur This Week||
+|APR 3 | Best Friday| |Labs Will Occur This Week|
 |APR 15 |  **Midterm 2** |  | |
-|APR 27| Work on Final Project | No Labs This Week | |
+|APR 27| Work on Final Project |  |No Labs This Week |
 |||||
 
 
