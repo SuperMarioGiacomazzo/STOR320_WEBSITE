@@ -118,11 +118,11 @@ Data Science can be defined as the intersection between mathematics/statistics, 
 | JAN 12|Data Visualization (Cont.)|[Slides](Lecture/Data Visualization/Data_Visualization_Lecture.pdf)|[Preview](Supplement/Data Visualization/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Data%20Visualization/Supplement.zip))|
 || Workflow in RMarkdown | [Slides](Lecture/Workflow/Workflow_Lecture.pdf) ||
 |JAN 14| Workflow in RMarkdown (Cont.)| [Slides](Lecture/Workflow/Workflow_Lecture.pdf) ||
-|| Data Transformation I | [Slides](Lecture/Data Transformation 1/Data_Transformation_1_Lecture.pdf) ||4
+|| Data Transformation I | [Slides](Lecture/Data Transformation 1/Data_Transformation_1_Lecture.pdf) ||
 |JAN 16| Data Transformation I (Cont.)| [Slides](Lecture/Data Transformation 1/Data_Transformation_1_Lecture.pdf) ||
-|| Data Transformation II| [Slides](Lecture/Data Transformation 2/Data_Transformation_2_Lecture.pdf) ||
 | JAN 19 | MLK |  |No Labs This Week|
-|JAN 21| Data Transformation III | [Slides](Lecture/Data Transformation 3/Data_Transformation_3_Lecture.pdf)||
+|JAN 21| Data Transformation II| [Slides](Lecture/Data Transformation 2/Data_Transformation_2_Lecture.pdf) ||
+|| Data Transformation III | [Slides](Lecture/Data Transformation 3/Data_Transformation_3_Lecture.pdf)||
 |JAN 23| Data Transformation IV | [Slides](Lecture/Data Transformation 4/Data_Transformation_4_Lecture.pdf)||
 |JAN 26| Exploratory Data Analysis I  | [Slides](Lecture/Exploratory Data Analysis 1/Exploratory_Data_Analysis_1_Lecture.pdf) ||
 |JAN 28| Exploratory Data Analysis II |[Slides](Lecture/Exploratory Data Analysis 2/Exploratory_Data_Analysis_2_Lecture.pdf)||
