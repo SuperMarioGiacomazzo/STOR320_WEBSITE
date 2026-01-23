@@ -123,7 +123,8 @@ Data Science can be defined as the intersection between mathematics/statistics, 
 | JAN 19 | MLK |  |No Labs This Week|
 |JAN 21| Data Transformation II| [Slides](Lecture/Data Transformation 2/Data_Transformation_2_Lecture.pdf) ||
 || Data Transformation III | [Slides](Lecture/Data Transformation 3/Data_Transformation_3_Lecture.pdf)||
-|JAN 23| Data Transformation IV | [Slides](Lecture/Data Transformation 4/Data_Transformation_4_Lecture.pdf)||
+|JAN 23| Data Transformation III (Cont.) | [Slides](Lecture/Data Transformation 3/Data_Transformation_3_Lecture.pdf)||
+|| Data Transformation IV | [Slides](Lecture/Data Transformation 4/Data_Transformation_4_Lecture.pdf)||
 |JAN 26| Exploratory Data Analysis I  | [Slides](Lecture/Exploratory Data Analysis 1/Exploratory_Data_Analysis_1_Lecture.pdf) ||
 |JAN 28| Exploratory Data Analysis II |[Slides](Lecture/Exploratory Data Analysis 2/Exploratory_Data_Analysis_2_Lecture.pdf)||
 |JAN 30| Final Project I | [Slides](Lecture/Final Project 1/Final_Project_1_Lecture.pdf)||
