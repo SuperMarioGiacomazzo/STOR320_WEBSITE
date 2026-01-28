@@ -233,34 +233,34 @@ All HW, Lab, and Mini Project assignments are to be submitted via Canvas. Unzip 
 
 ## Group Assignments
 
-For the final project, students will be divided  into research groups of size 4 or 5. To ensure fairness, students will be assigned randomly. Also, I will try to ensure that all students in your group are in your lab section.
+For the final project, students will be divided  into research groups of size 3. To ensure fairness, students will be assigned randomly. Also, I will try to ensure that all students in your group are in your lab section.
 
 If you want to find your research group, see the table below:
 
 ```{r,echo=F,results="asis",message=F}
-# library(DT)
-# library(tidyverse)
-# 
-# setwd("D:/DoctorMario/UNC/STOR 320/STOR320_WEBSITE/Group Assignments")
-# 
-# Groups1=read.csv(file="STOR320.001_Group_Assignments.csv")
-# 
-# arrange(Groups1, Group) %>%
-# datatable(class="display",options = list(scrollX=F,
-#              columnDefs = list(list(className = 'dt-center', targets = 0:4))),rownames=F)
+library(DT)
+library(tidyverse)
+
+setwd("D:/DoctorMario/UNC/STOR 320/STOR320_WEBSITE/Group Assignments")
+
+Groups1=read.csv(file="STOR320.001_Group_Assignments.csv")
+
+arrange(Groups1, Group) %>%
+datatable(class="display",options = list(scrollX=F,
+             columnDefs = list(list(className = 'dt-center', targets = 0:5))),rownames=F)
 ```
 
 ## Four Roles
 
 Although everyone is responsible for the entire project, each member of the group will be assigned a specific role for accountability and consistency. These four specific roles are described as follows:
 
-- **The Creator:** Schedule and Meet with Dr. Mario to Propose Your Group's Research Idea, Lead Designer in Slides
+- **The Creator:** Schedule and Meet with Dr. Mario to Propose Your Group's Research Idea &bull; Lead Designer in Slides
 
-- **The Interpreter(s):** Schedule and Meet with Dr. Mario to Share Findings from Exploratory Analysis, Evaluate Practice Presentation
+- **The Interpreter(s):** Schedule and Meet with Dr. Mario to Share Findings from Exploratory Analysis &bull; Evaluate Practice Presentation.
 
-- **The Orator(s):** Give a Captivating 3-5 Minute Slideshow Presentation During Final Exam Day
+- **The Orator(s):** Give a Captivating 3-5 Minute Slideshow Presentation During Final Exam Day &bull; Due to Group Size, Everyone Will Be an Orator.
 
-- **The Deliverer:** Deliver Assignments to Canvas, Polished and On-time
+- **The Deliverer:** Deliver Assignments to Canvas 	&bull; Proofread Everything and Submit On-time
 
 ## Four Parts Including Point Values
 
