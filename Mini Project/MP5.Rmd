@@ -182,7 +182,7 @@ filter(EDU3, Country %in% c("Bolivia","DR Congo","Czech Republic (Czechia)", #DO
 
 Check out the Wikipedia page (https://en.wikipedia.org/wiki/List_of_countries_by_total_health_expenditure_per_capita). On this webpage there is a table that uses OECD data and shows each country's total spending (public and private) on health per capita in PPP international dollars.
 
-### Q1 *(6 Points)*
+### Q1 *(4 Points)*
 
 Webscrape the appropriate table discussed above from (https://en.wikipedia.org/wiki/List_of_countries_by_total_health_expenditure_per_capita), create a new variable called `Health.Change` that is the 2024 value minus the 2020 value, then remove the variables named `2020`, `2021`, `2022`, `2023`, and `2024`, then remove countries that having missing values due to the fact that we don't know the health care spending amount for either 2024 or 2020. The final data frame should be called `HEALTH` and should only contain two variables `Locations` and `Health.Change`. You will need to do some data cleaning to perform the calculation.
 
@@ -206,7 +206,7 @@ GDP7.EDU3 = COMPLETE
 str(GDP7.EDU3) #DO NOT CHANGE
 ```
 
-### Q2 *(2 Points)*
+### Q2 *(4 Points)*
 
 I want you to write code to fix two country names in `HEALTH` so that when you merge the data from `GDP7` into `HEALTH` you don't have any missing values.  After fixing the two country names in `HEALTH`, use a right join appropriately to merge the data from `GDP7` into `HEALTH` so you have the three GDP-related variables with the `Health.Change` variable, but only for OECD countries. I want the merged dataset to be called `GDP7.HEALTH`. This can be done in multiple lines of code. I don't care if you do all this with string of code connected via the pipe. I do care that `GDP7.HEALTH` is created using a **right join**.
 
