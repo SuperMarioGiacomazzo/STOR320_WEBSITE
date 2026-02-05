@@ -207,14 +207,15 @@ All HW, Lab, and Mini Project assignments are to be submitted via Canvas. Unzip 
 | JAN 16  |      |  | [MP3](Mini Project/MP3.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Mini Project/MP3.zip))      |     FEB 6 (5:00 PM)     |
 | JAN 26 | [L2](Lab/Lab-2.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab-2.zip))|       |       |    FEB 2 (4:45 PM)     |
 | JAN 30| |[HW3](Homework/HW 3/HW-3.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%203/HW%203.zip))       |       |    OPTIONAL    |
-| JAN 30  |      |  | [MP4](Mini Project/MP4.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Mini Project/MP4.zip))      |     FEB 13 (5:00 PM)     |
 | FEB 2 | [L3](Lab/Lab-3.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab-3.zip))|       |       |    FEB 9 (4:45 PM)     |
 | FEB 6| |[HW4](Homework/HW 4/HW-4.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%204/HW%204.zip))       |                    |   OPTIONAL     |
-| FEB 13  |      |  | [MP5](Mini Project/MP5.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Mini Project/MP5.zip))      |     FEB 20 (5:00 PM)     |
+| FEB 6  |      |  | [MP4](Mini Project/MP4.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Mini Project/MP4.zip))      |     FEB 20 (5:00 PM)     |
 | FEB 16 | [L4](Lab/Lab-4.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab-4.zip))|       |       |    FEB 23 (4:45 PM)     |
 | FEB 20 | |[HW5](Homework/HW 5/HW-5.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%205/HW%205.zip))       |       |    OPTIONAL    |
-| FEB 20  | | | [MP6](Mini Project/MP6.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Mini Project/MP6.zip))                |   MAR 6 (5:00 PM)     |
+| FEB 20  |      |  | [MP5](Mini Project/MP5.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Mini Project/MP5.zip))      |     FEB 27 (5:00 PM)     |
+| FEB 27  | | | [MP6](Mini Project/MP6.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Mini Project/MP6.zip))                |   MAR 6 (5:00 PM)     |
 | FEB 23 | [L5](Lab/Lab-5.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab-5.zip))|       |       |    MAR 2 (4:45 PM)     |
+| FEB 27  | | | [MP6](Mini Project/MP6.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Mini Project/MP6.zip))                |   MAR 6 (5:00 PM)     |
 | MAR 2 | [L6](Lab/Lab-6.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab-6.zip))|       |       |    MAR 9 (4:45 PM)     |
 | MAR 6  | |[HW6](Homework/HW 6/HW-6.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Homework/HW%206/HW%206.zip))       |        |    OPTIONAL     |
 | MAR 9 | [L7](Lab/Lab-7.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Lab/Lab-7.zip))|       |       |    MAR 16 (4:45 PM)     |
