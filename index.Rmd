@@ -134,12 +134,12 @@ Data Science can be defined as the intersection between mathematics/statistics, 
 |FEB 4| Exploratory Data Analysis II (Cont.)|[Slides](Lecture/Exploratory Data Analysis 2/Exploratory_Data_Analysis_2_Lecture.pdf)||
 || Final Project I | [Slides](Lecture/Final Project 1/Final_Project_1_Lecture.pdf)||
 |FEB 6| Data Import | [Slides](Lecture/Data Import/Data_Import_Lecture.pdf)||
-|| Tidy Data I | [Slides](Lecture/Tidy Data 1/Tidy_Data_1_Lecture.pdf) ||
-|| Tidy Data II | [Slides](Lecture/Tidy Data 2/Tidy_Data_2_Lecture.pdf) ||
 | FEB 9 | Well-being Day|  |No Labs This Week|
-|FEB 11| Web Scraping| [Slides](Lecture/Web Scraping/Web_Scraping_Lecture.pdf) | [Preview](Supplement/Web Scraping/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Web%20Scraping/Supplement.zip)) |
-|FEB 13| Joins I | [Slides](Lecture/Joins 1/Joins_1_Lecture.pdf) ||
-|FEB 16| Joins II| [Slides](Lecture/Joins 2/Joins_2_Lecture.pdf) ||
+|FEB 11| Tidy Daa I | [Slides](Lecture/Tidy Data 1/Tidy_Data_1_Lecture.pdf) ||
+|| Tidy Data II | [Stlides](Lecture/Tidy Data 2/Tidy_Data_2_Lecture.pdf) ||
+|FEB 13| Web Scraping| [Slides](Lecture/Web Scraping/Web_Scraping_Lecture.pdf) | [Preview](Supplement/Web Scraping/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Web%20Scraping/Supplement.zip)) |
+|FEB 16| Joins I | [Slides](Lecture/Joins 1/Joins_1_Lecture.pdf) ||
+|| Joins II| [Slides](Lecture/Joins 2/Joins_2_Lecture.pdf) ||
 |FEB 18 |  **Midterm 1** |  | |
 |FEB 20| Factors | [Slides](Lecture/Factors/Factors_Lecture.pdf) ||
 |FEB 23| Programming I | [Slides](Lecture/Programming 1/Programming_1_Lecture.pdf) | [Preview](Supplement/Programming 1/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Programming%201/Supplement.zip))  |
