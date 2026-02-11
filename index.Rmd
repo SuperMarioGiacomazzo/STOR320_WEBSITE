@@ -135,8 +135,8 @@ Data Science can be defined as the intersection between mathematics/statistics, 
 || Final Project I | [Slides](Lecture/Final Project 1/Final_Project_1_Lecture.pdf)||
 |FEB 6| Data Import | [Slides](Lecture/Data Import/Data_Import_Lecture.pdf)||
 | FEB 9 | Well-being Day|  |No Labs This Week|
-|FEB 11| Tidy Daa I | [Slides](Lecture/Tidy Data 1/Tidy_Data_1_Lecture.pdf) ||
-|| Tidy Data II | [Stlides](Lecture/Tidy Data 2/Tidy_Data_2_Lecture.pdf) ||
+|FEB 11| Tidy Data I | [Slides](Lecture/Tidy Data 1/Tidy_Data_1_Lecture.pdf) ||
+|| Tidy Data II | [Slides](Lecture/Tidy Data 2/Tidy_Data_2_Lecture.pdf) ||
 |FEB 13| Web Scraping| [Slides](Lecture/Web Scraping/Web_Scraping_Lecture.pdf) | [Preview](Supplement/Web Scraping/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Web%20Scraping/Supplement.zip)) |
 |FEB 16| Joins I | [Slides](Lecture/Joins 1/Joins_1_Lecture.pdf) ||
 || Joins II| [Slides](Lecture/Joins 2/Joins_2_Lecture.pdf) ||
