@@ -140,9 +140,10 @@ Data Science can be defined as the intersection between mathematics/statistics, 
 || Web Scraping| [Slides](Lecture/Web Scraping/Web_Scraping_Lecture.pdf) | [Preview](Supplement/Web Scraping/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Web%20Scraping/Supplement.zip)) |
 |FEB 16| Web Scraping| [Slides](Lecture/Web Scraping/Web_Scraping_Lecture.pdf) | [Preview](Supplement/Web Scraping/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Web%20Scraping/Supplement.zip)) |
 |FEB 18 |  **Midterm 1** |  | |
-|FEB 20| Joins I | [Slides](Lecture/Joins 1/Joins_1_Lecture.pdf) ||
-|| Joins II| [Slides](Lecture/Joins 2/Joins_2_Lecture.pdf) ||
-|FEB 23| Factors | [Slides](Lecture/Factors/Factors_Lecture.pdf) ||
+|FEB 20| Web Scraping (Cont.)| [Slides](Lecture/Web Scraping/Web_Scraping_Lecture.pdf) | [Preview](Supplement/Web Scraping/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Web%20Scraping/Supplement.zip)) |
+|| Joins I | [Slides](Lecture/Joins 1/Joins_1_Lecture.pdf) ||
+|FEB 23| Joins II| [Slides](Lecture/Joins 2/Joins_2_Lecture.pdf) ||
+|| Factors | [Slides](Lecture/Factors/Factors_Lecture.pdf) ||
 |FEB 25| Programming I | [Slides](Lecture/Programming 1/Programming_1_Lecture.pdf) | [Preview](Supplement/Programming 1/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Programming%201/Supplement.zip))  |
 |FEB 27| Programming II | [Slides](Lecture/Programming 2/Programming_2_Lecture.pdf) | [Preview](Supplement/Programming 2/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Programming%202/Supplement.zip)) |
 |MAR 2| Programming III | [Slides](Lecture/Programming 3/Programming_3_Lecture.pdf) ||
