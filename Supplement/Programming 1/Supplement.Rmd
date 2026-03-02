@@ -14,7 +14,7 @@ library(Ecdat)        #Contains Economic Datasets
 
 # Introduction
 
-In this tutorial, we will try to understand some fundamental control structures used in statistical programming. In the beginning, we will separately analyze different control structures. The ultimate goal is to combine these methods to solve all our computing and life problems. If you can imagine it, R can do it. Programming R is downright magical. If Morpheus calls, pick up the phone.
+In this tutorial, we will try to understand some fundamental control structures used in statistical programming. In the beginning, we will separately analyze different control structures. The ultimate goal is to combine these methods to solve all our computing and life problems. If you can imagine it, R can do it. Programming in R is downright magical. If Morpheus calls, pick up the phone.
 
 # Part 1: *If-Else* Statements
 
