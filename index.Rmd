@@ -152,7 +152,8 @@ Data Science can be defined as the intersection between mathematics/statistics, 
 || Programming III | [Slides](Lecture/Programming 3/Programming_3_Lecture.pdf) ||
 |MAR 9| Programming III (Cont.)| [Slides](Lecture/Programming 3/Programming_3_Lecture.pdf) ||
 || Final Project II | [Slides](Lecture/Final Project 2/Final_Project_2_Lecture.pdf) ||
-|MAR 11| Modeling 1 | [Slides](Lecture/Modeling 1/Modeling_1_Lecture.pdf) ||
+|MAR 11| Final Project II (Cont.) | [Slides](Lecture/Final Project 2/Final_Project_2_Lecture.pdf) ||
+|| Modeling 1 | [Slides](Lecture/Modeling 1/Modeling_1_Lecture.pdf) ||
 |MAR 13| Modeling 2 | [Slides](Lecture/Modeling 2/Modeling_2_Lecture.pdf) | [Preview](Supplement/Modeling 2/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%202/Supplement.zip)) |
 |MAR 16 | Spring Break|   |No Labs This Week|
 |MAR 18 | Spring Break|  |No Labs This Week|
