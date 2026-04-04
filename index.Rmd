@@ -166,7 +166,8 @@ Data Science can be defined as the intersection between mathematics/statistics, 
 |APR 1| Modeling 4 (Cont.) | [Slides](Lecture/Modeling 4/Modeling_4_Lecture.pdf) | [Preview](Supplement/Modeling 4/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%204/Supplement.zip)) |
 || Modeling 5 | [Slides](Lecture/Modeling 5/Modeling_5_Lecture.pdf) ||
 |APR 3 | Best Friday| |Labs Will Occur This Week|
-|APR 6| Modeling 6 | [Slides](Lecture/Modeling 6/Modeling_6_Lecture.pdf) ||
+|APR 6| Modeling 5 (Cont.) | [Slides](Lecture/Modeling 5/Modeling_5_Lecture.pdf) ||
+|| Modeling 6 | [Slides](Lecture/Modeling 6/Modeling_6_Lecture.pdf) ||
 |APR 8| Modeling 7 | [Slides](Lecture/Modeling 7/Modeling_7_Lecture.pdf) | [Preview](Supplement/Modeling 7/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%207/Supplement.zip)) |
 |APR 10| Modeling 8 | [Slides](Lecture/Modeling 8/Modeling_8_Lecture.pdf) | [Preview](Supplement/Modeling 8/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%208/Supplement.zip)) |
 |APR 13| Modeling 9 | [Slides](Lecture/Modeling 9/Modeling_9_Lecture.pdf) | [Preview](Supplement/Modeling 9/Supplement.html)([.zip](https://github.com/SuperMarioGiacomazzo/STOR320_WEBSITE/raw/master/Supplement/Modeling%209/Supplement.zip)) |
@@ -348,9 +349,13 @@ This final project will be divided into four parts worth a total of 100 points. 
 
 - **[Color Options](https://paulvanderlaken.files.wordpress.com/2017/08/ggplot2-color-colours-names-cheatsheet.png?w=559&amp;h=1024)**
 
-- **[Data Wrangling Cheat Sheet](https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf)**
+- **[dplyr Cheat Sheet](https://www.rstudio.com/wp-content/uploads/2015/02/dplyr_cheat_sheet.pdf)**
+
+- **[stringr Cheat Sheet](https://www.rstudio.com/wp-content/uploads/2015/02/strings.pdf)**
 
 - **[Regular Expressions Cheat Sheet](Cheat Sheet/regex.pdf)**
+
+- **[gganimate Cheat Sheet](https://www.rstudio.com/wp-content/uploads/2015/02/gganimate.pdf)**
 
 - **[R Shiny Cheat Sheet](https://shiny.rstudio.com/images/shiny-cheatsheet.pdf)**
 
